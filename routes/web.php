@@ -25,6 +25,7 @@ Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');
+Route::get('/post-test/{slug}', [PostController::class, 'postTest'])->name('post-test');
 
 Route::get('/products', [PluginController::class, 'index'])->name('products');
 Route::get('/get-plugin/{plugin}', [PluginController::class, 'downloadPlugin'])->name('downloadPlugin');

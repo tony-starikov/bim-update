@@ -49,7 +49,7 @@ return [
     'tinymce' => [
         'file_manager' => 'laravel-filemanager', // or 'laravel-filemanager' prefix for lfm
         'token' => env('MOONSHINE_TINYMCE_TOKEN', 'irutijbisqu1390ndid3ut0x2r77fbr6qb8dj58usxrwzceh'),
-        'version' => env('MOONSHINE_TINYMCE_VERSION', '5'),
+        'version' => env('MOONSHINE_TINYMCE_VERSION', '6'),
     ],
     'socialite' => [
         // 'driver' => 'path_to_image_for_button'

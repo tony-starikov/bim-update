@@ -30,8 +30,10 @@ class PostResource extends Resource
             Block::make([
                 Text::make('Title', 'title_en')->sortable()->required(),
                 Slug::make('Slug')->from('title_en')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
+                Text::make('Date', 'date')->sortable()->hint('Month, Day, Year - Time'),
                 TinyMce::make('Content')->hideOnIndex(),
-                Image::make('Image')->disk('public')->dir('posts')->removable()
+                Image::make('Image')->disk('public')->dir('posts')->removable(),
+                Image::make('Background image', 'bg_image')->disk('public')->dir('posts')->removable(),
             ]),
 
         ];

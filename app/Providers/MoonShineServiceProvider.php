@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Post;
 use App\MoonShine\Resources\PostResource;
+use App\MoonShine\Resources\SeoResource;
 use Illuminate\Support\ServiceProvider;
 use MoonShine\MoonShine;
 use MoonShine\Menu\MenuGroup;
@@ -25,11 +26,15 @@ class MoonShineServiceProvider extends ServiceProvider
 //                    ->icon('bookmark'),
 //            ])->translatable(),
 
-            MenuGroup::make('Blog', [
-                MenuItem::make('Posts', new PostResource())
-                    ->icon('heroicons.outline.book-open')
-                    ->badge(fn() => Post::query()->count()),
-            ])->icon('heroicons.book-open'),
+//            MenuGroup::make('Blog', [
+//
+//            ])->icon('heroicons.book-open'),
+            MenuItem::make('Posts', new PostResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => Post::query()->count()),
+
+            MenuItem::make('SEO', new SeoResource())
+                ->icon('heroicons.outline.book-open'),
         ]);
     }
 }

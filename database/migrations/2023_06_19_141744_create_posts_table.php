@@ -16,11 +16,11 @@ return new class extends Migration
             $table->text('title_en')->nullable();
             $table->string('slug')->nullable();
             $table->text('image')->nullable();
+            $table->text('bg_image')->nullable();
+            $table->string('date')->nullable();
             $table->integer('show_status')->default(1);
             $table->integer('recommend')->default(0);
             $table->text('content')->nullable();
-            $table->text('files')->nullable();
-            $table->text('images')->nullable();
             $table->timestamps();
         });
     }
