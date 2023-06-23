@@ -151,7 +151,7 @@
                     </div>
                     <div class="col-7 px-0 ps-4 align-self-stretch position-relative">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h1 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -164,7 +164,7 @@
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
                             <div class="col-lg-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h4 d-block my-2 mx-4">READ MORE</span>
                                 </a>
                             </div>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="col-7 px-5 align-self-stretch position-relative">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h2 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -192,7 +192,7 @@
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
                             <div class="col-lg-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h4 d-block my-2 mx-4">READ MORE</span>
                                 </a>
                             </div>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="col-7 px-5 align-self-stretch position-relative">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h4 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
                             <div class="col-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h5 d-block my-1">READ MORE</span>
                                 </a>
                             </div>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="col-12 mt-3">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h4 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -248,7 +248,7 @@
                         </div>
                         <div class="row w-100">
                             <div class="col-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h5 d-block my-1">READ MORE</span>
                                 </a>
                             </div>
@@ -263,7 +263,7 @@
                     </div>
                     <div class="col-12 mt-3">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h4 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -276,7 +276,7 @@
                         </div>
                         <div class="row w-100">
                             <div class="col-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h5 d-block my-1">READ MORE</span>
                                 </a>
                             </div>
@@ -291,7 +291,7 @@
                     </div>
                     <div class="col-12 mt-3">
                         <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post) }}">
+                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
                                 <h6 class="h4 fw-bold">
                                     {{ $post->title_en }}
                                 </h6>
@@ -304,7 +304,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12 text-center">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none mx-auto" style="background-color: #6bdcdb" href="{{ route('post', $post) }}" role="button">
+                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none mx-auto" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
                                     <span class="fw-bold h5 d-block my-1">READ MORE</span>
                                 </a>
                             </div>

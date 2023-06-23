@@ -26,8 +26,10 @@ class PostController extends Controller
         return view('blog', compact('page_info', 'posts', 'services', 'menuItems', 'contacts'));
     }
 
-    public function show(Post $post)
+    public function show($slug)
     {
+        $post = Post::where('slug', $slug)->first();
+
         $services = Service::all();
 
         $menuItems = MenuItem::all();

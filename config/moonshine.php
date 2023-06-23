@@ -44,24 +44,23 @@ return [
     ],
     'locales' => [
         'en',
-        'ru',
     ],
     'middlewares' => [],
     'tinymce' => [
-        'file_manager' => false, // or 'laravel-filemanager' prefix for lfm
-        'token' => env('MOONSHINE_TINYMCE_TOKEN', ''),
-        'version' => env('MOONSHINE_TINYMCE_VERSION', '6'),
+        'file_manager' => 'laravel-filemanager', // or 'laravel-filemanager' prefix for lfm
+        'token' => env('MOONSHINE_TINYMCE_TOKEN', 'irutijbisqu1390ndid3ut0x2r77fbr6qb8dj58usxrwzceh'),
+        'version' => env('MOONSHINE_TINYMCE_VERSION', '5'),
     ],
     'socialite' => [
         // 'driver' => 'path_to_image_for_button'
     ],
     'header' => null, // blade path
     'footer' => [
-        'copyright' => 'Made with ❤️ by <a href="https://cutcode.dev" class="font-semibold text-purple hover:text-pink" target="_blank">CutCode</a>',
-        'nav' => [
-            'https://github.com/moonshine-software/moonshine/blob/1.5.x/LICENSE.md' => 'License',
-            'https://moonshine.cutcode.dev' => 'Documentation',
-            'https://github.com/moonshine-software/moonshine' => 'GitHub',
-        ],
+//        'copyright' => 'Made with ❤️ by <a href="https://cutcode.dev" class="font-semibold text-purple hover:text-pink" target="_blank">CutCode</a>',
+//        'nav' => [
+//            'https://github.com/moonshine-software/moonshine/blob/1.5.x/LICENSE.md' => 'License',
+//            'https://moonshine.cutcode.dev' => 'Documentation',
+//            'https://github.com/moonshine-software/moonshine' => 'GitHub',
+//        ],
     ],
 ];
