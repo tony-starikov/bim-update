@@ -657,7 +657,7 @@
                                     </div>
                                     <div class="service-overlay">
                                         <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
-                                            <a target="_blank" class="text-decoration-none w-100 align-self-center" href="{{ route('downloadService', [$service->slug]) }}">
+                                            <a @if($service->show_page !== 1) target="_blank" @endif class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                                 <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
                                                     <span class="fw-bold h4 d-block my-2">MORE INFO</span>
                                                 </button>

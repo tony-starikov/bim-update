@@ -26,6 +26,8 @@ class DatabaseSeeder extends Seeder
             TestimonialSeeder::class,
             WorkSeeder::class,
             ContactSeeder::class,
+            MoonshineUserSeeder::class,
+            SeoSeeder::class,
         ]);
     }
 }

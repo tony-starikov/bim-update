@@ -2,7 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Achievement;
+use App\Models\Contact;
+use App\Models\MenuItem;
+use App\Models\Page;
 use App\Models\Service;
+use App\Models\Star;
+use App\Models\Teammate;
+use App\Models\Testimonial;
+use App\Models\Work;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -16,5 +24,20 @@ class ServiceController extends Controller
         $headers = ['Content-Type: application/pdf'];
 
         return response()->file($myFile, $headers);
+    }
+
+    public function showService($slug)
+    {
+        $page_info = Page::where('name', 'main')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+//        $service = Service::where('slug', $slug)->first();
+
+        $contacts = Contact::all();
+
+        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info'));
     }
 }

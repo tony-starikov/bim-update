@@ -33,6 +33,7 @@ Route::get('/get-plugin/{plugin}', [PluginController::class, 'downloadPlugin'])-
 Route::get('/families', [FamilyController::class, 'index'])->name('families');
 Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])->name('downloadFamily');
 
+Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('showService');
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
 Route::get('/test', [PageController::class, 'test'])->name('test');
