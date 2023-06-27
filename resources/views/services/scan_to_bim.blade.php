@@ -658,12 +658,12 @@
                         <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="">
                     </div>
                     <div class="col-11">
-                        <a class="btn border-0 shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn border-0 shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <span class="h2 fw-semibold">
                                 What types of projects can benefit from scan to BIM service?
                             </span>
                         </a>
-                        <div class="collapse" id="collapseExample2">
+                        <div class="collapse" id="collapseExample3">
                             <div class="card card-body h5 fw-normal border-0">
                                 Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document.
                             </div>
@@ -676,12 +676,12 @@
                         <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="">
                     </div>
                     <div class="col-11">
-                        <a class="btn border-0 shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn border-0 shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <span class="h2 fw-semibold">
                                 What are the benefits of scan to BIM service?
                             </span>
                         </a>
-                        <div class="collapse" id="collapseExample2">
+                        <div class="collapse" id="collapseExample4">
                             <div class="card card-body h5 fw-normal border-0">
                                 Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document.
                             </div>
