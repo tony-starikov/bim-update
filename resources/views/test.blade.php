@@ -2836,4 +2836,148 @@
         </div>
     </div>
     <!-- Modal END -->
+
+    <script>
+        let elms = document.getElementsByClassName( 'splide' );
+
+        let configs = [
+            {
+                type   : 'loop',
+                perPage: 3,
+                padding: { left: '10%', right: '10%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '10%', right: '10%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '5%', right: '5%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 1,
+                padding: { left: '15%', right: '15%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 1,
+                padding: { left: '15%', right: '15%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 1,
+                arrows: boolean = true,
+            },
+
+            // port
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '20%', right: '20%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '15%', right: '25%' },
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '10%', right: '10%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '5%', right: '15%' },
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '10%', right: '10%' },
+                arrows: boolean = true,
+            },
+            {
+                type   : 'loop',
+                perPage: 2,
+                padding: { left: '5%', right: '15%' },
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 1,
+                padding: { left: '20%', right: '20%' },
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 1,
+                padding: { left: '10%', right: '10%' },
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 1,
+                arrows: boolean = true,
+            },
+
+            //team
+
+            {
+                type   : 'loop',
+                perPage: 4,
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 4,
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 3,
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 3,
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 2,
+                arrows: boolean = true,
+            },
+
+            {
+                type   : 'loop',
+                perPage: 1,
+                arrows: boolean = true,
+            },
+        ];
+
+        for ( let i = 0; i < elms.length; i++ ) {
+            new Splide( elms[ i ], configs[ i ] ).mount();
+        }
+    </script>
 @endsection

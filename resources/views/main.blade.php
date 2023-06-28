@@ -2896,11 +2896,7 @@
         </div>
     </div>
 
-@endsection
-
-@section('js')
     <script>
-
         let elms = document.getElementsByClassName( 'splide' );
 
         let configs = [
@@ -3042,24 +3038,31 @@
         for ( let i = 0; i < elms.length; i++ ) {
             new Splide( elms[ i ], configs[ i ] ).mount();
         }
-
-        @foreach($services as $service)
-        $(document).ready(function() {
-            let url_{{ $service->slug }} = $("#{{ $service->slug }}_video").attr('src');
-
-            $("#{{ $service->slug }}").on('hide.bs.modal', function() {
-                $("#{{ $service->slug }}_video").attr('src', '');
-                $("#{{ $service->slug }}_video").attr('src', url_{{ $service->slug }} );
-            });
-
-            {{--$("#{{ $service->slug }}").on('shown.bs.modal', function() {--}}
-            {{--    $("#{{ $service->slug }}_video").attr('src', url_{{ $service->slug }} );--}}
-            {{--});--}}
-        });
-        @endforeach
-
     </script>
+
 @endsection
+
+{{--@push('scripts')--}}
+{{--    <script>--}}
+
+{{--        @foreach($services as $service)--}}
+{{--        $(document).ready(function() {--}}
+{{--            let url_{{ $service->slug }} = $("#{{ $service->slug }}_video").attr('src');--}}
+
+{{--            $("#{{ $service->slug }}").on('hide.bs.modal', function() {--}}
+{{--                $("#{{ $service->slug }}_video").attr('src', '');--}}
+{{--                $("#{{ $service->slug }}_video").attr('src', url_{{ $service->slug }} );--}}
+{{--            });--}}
+
+{{--            $("#{{ $service->slug }}").on('shown.bs.modal', function() {--}}
+{{--                $("#{{ $service->slug }}_video").attr('src', url_{{ $service->slug }} );--}}
+{{--            });--}}
+{{--        });--}}
+{{--        @endforeach--}}
+
+{{--    </script>--}}
+
+{{--@endpush--}}
 
 @section('modals')
     @foreach($services as $service)
