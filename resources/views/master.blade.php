@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="w-100" lang="ua">
 <head>
+@yield('analytics_first')
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -192,6 +193,7 @@
     </style>
 </head>
 <body>
+@yield('analytics_second')
 
 <div class="container-fluid d-none d-xxl-block px-5">
     <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
