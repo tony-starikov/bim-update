@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('parameter_2')->nullable();
             $table->text('parameter_3')->nullable();
             $table->text('description')->nullable();
+            $table->text('department')->nullable();
             $table->text('image')->nullable();
             $table->text('image_small')->nullable();
             $table->timestamps();

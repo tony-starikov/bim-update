@@ -34,10 +34,12 @@ class ServiceController extends Controller
 
         $services = Service::all();
 
+        $works = Work::where('department', 'scan-to-bim')->get();
+
 //        $service = Service::where('slug', $slug)->first();
 
         $contacts = Contact::all();
 
-        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info'));
+        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info', 'works'));
     }
 }
