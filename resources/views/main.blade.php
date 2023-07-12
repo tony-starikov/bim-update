@@ -5,462 +5,261 @@
 {{--@section('description', $page_info->description)--}}
 
 @section('main')
-    <div class="container-fluid d-none d-xxl-block" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container p-5">
-            <div class="row px-5 mt-2">
-                <div class="col-12 mt-5 order-first">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 display-5">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-{{--                        <span class="d-inline-block d-sm-none">M</span>--}}
-{{--                        <span class="d-none d-sm-inline-block d-md-none">SM</span>--}}
-{{--                        <span class="d-none d-md-inline-block d-lg-none">MD</span>--}}
-{{--                        <span class="d-none d-lg-inline-block d-xl-none">LG</span>--}}
-{{--                        <span class="d-none d-xl-inline-block d-xxl-none">XL</span>--}}
-{{--                        <span class="d-none d-xxl-inline-block">XXL</span>--}}
-                    </h2>
-                    <h2 class="text-white h1 fw-semibold">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
-                </div>
-            </div>
 
-            <div class="row px-5 mt-4">
-                <div class="col-5 d-flex align-items-center">
-                    <div>
-                        @foreach($stars as $star)
-                            @if($star->title_en !== 'Contact')
-                                <div class="row my-2">
-                                    <div class="col-2 ps-4 pe-2 d-flex align-items-center">
-                                        <img src="/images/{{ $star->image_small }}" class="img-fluid w-75">
-                                    </div>
-                                    <div class="col-10 px-0 d-flex align-items-center">
-                                        <h5 class="text-white fw-semibold m-0">
-                                            <small class="text-uppercase">
-                                                {{ $star->title_en }}
-                                            </small>
-                                        </h5>
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
+    <div id="bg-video">
+        <video id="video" poster="/images/poster.png" autoplay playsinline muted loop>
+            <source src="/images/bg_video.webm" type="video/webm">
+            <source src="/images/bg_video.mp4" type="video/mp4">
+        </video>
+
+        <div class="container-fluid d-none d-xxl-block" style="height: 100vh;">
+            <div class="container p-5">
+                <div class="row px-5 mt-2">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold mt-5 display-5">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h2 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-7 px-0 order-md-4 order-lg-3 d-flex align-items-center">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
-                </div>
-            </div>
-
-            <div class="row px-5 pb-4 mt-5">
-                <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h4 d-block my-2">CONTACT US</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-xl-block d-xxl-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container p-5">
-            <div class="row px-5">
-                <div class="col-12 mt-5">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 h1">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                    </h2>
-                    <h2 class="text-white h2 fw-semibold" style="width: 80%">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="row px-5 mt-4">
-                <div class="col-5 d-flex align-items-center">
-                    <div>
-                        @foreach($stars as $star)
-                            @if($star->title_en !== 'Contact')
-                                <div class="row mb-2">
-                                    <div class="col-2 ps-4 pe-0 d-flex align-items-center">
-                                        <img src="/images/{{ $star->image_small }}" class="img-fluid w-75">
-                                    </div>
-                                    <div class="col-10 px-0 d-flex align-items-center">
-                                        <h6 class="text-white fw-semibold m-0">
-                                            <small class="text-uppercase">
-                                                {{ $star->title_en }}
-                                            </small>
-                                        </h6>
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
+                <div class="row p-5 my-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                        </a>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-7 px-0 order-md-4 order-lg-3 d-flex align-items-center">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
-                </div>
-            </div>
-
-            <div class="row px-5 pb-4 mt-5">
-                <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container p-5">
-            <div class="row px-5">
-                <div class="col-12 mt-3">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 h1">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                    </h2>
-                    <h2 class="text-white h2 fw-semibold w-100">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="row px-5 mt-4">
-                <div class="col-5 d-flex align-items-center">
-                    <div>
-                        @foreach($stars as $star)
-                            @if($star->title_en !== 'Contact')
-                                <div class="row my-2">
-                                    <div class="col-2 ps-3 pe-2 d-flex align-items-center">
-                                        <img src="/images/{{ $star->image_small }}" class="img-fluid w-100">
-                                    </div>
-                                    <div class="col-10 px-0 pe-2 d-flex align-items-center">
-                                        <h6 class="text-white fw-semibold m-0">
-                                            <small>
-                                                {{ $star->title_en }}
-                                            </small>
-                                        </h6>
-                                    </div>
-                                </div>
-                            @endif
-                        @endforeach
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-7 px-0 order-md-4 order-lg-3 d-flex align-items-center">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
-                </div>
-            </div>
-
-            <div class="row px-5 pb-4 mt-5">
-                <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container pb-5">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 h2">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="row mt-2">
-                <div class="col-7">
+                <div class="row px-5 mt-4 d-flex justify-content-between">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact')
-                            <div class="row my-2">
-                                <div class="col-1 pe-0 d-flex align-items-center">
-                                    <img src="/images/{{ $star->image_small }}" class="img-fluid w-100">
-                                </div>
-                                <div class="col-11 d-flex align-items-center">
-                                    <h6 class="text-white fw-semibold m-0">
-                                        <small>
-                                            {{ $star->title_en }}
-                                        </small>
-                                    </h6>
-                                </div>
+                            <div class="col-2 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-100">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    {{ $star->title_en }}
+                                </h6>
                             </div>
                         @endif
                     @endforeach
                 </div>
 
-                <div class="col-5 d-flex align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-
-                <div class="col-12 d-flex">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
-                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid d-none d-sm-block d-md-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container pb-5">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 h2">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
+        <div class="container-fluid d-none d-xl-block d-xxl-none" style="height: 100vh;">
+            <div class="container p-5">
+                <div class="row px-5 mt-2">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold mt-5 display-5">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h2 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mt-2">
-                <div class="col-7">
+                <div class="row p-5 my-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row px-5 mt-4 d-flex justify-content-between">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact')
-                            <div class="row my-2">
-                                <div class="col-2 pe-3 d-flex align-items-center">
-                                    <img src="/images/{{ $star->image_small }}" class="img-fluid w-100">
-                                </div>
-                                <div class="col-10 ps-0 d-flex align-items-center">
-                                    <h6 class="text-white ps-0 fw-semibold m-0">
-                                        <small>
-                                            {{ $star->title_en }}
-                                        </small>
-                                    </h6>
-                                </div>
+                            <div class="col-2 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-100">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    {{ $star->title_en }}
+                                </h6>
                             </div>
                         @endif
                     @endforeach
                 </div>
 
-                <div class="col-5 d-flex align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-
-                <div class="col-12 d-flex">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
-                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fluid d-sm-none" style="background: url(/images/{{ $page_info->pageItems->where('name', 'main_bg_image')->first()->value }}) no-repeat center center local; background-size: cover;">
-        <div class="container pb-4">
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h1 class="d-none">Bimprove</h1>
-                    <h2 class="text-white fw-bold mt-5 h2">
-                        {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
-                    </h2>
-                    <h2 class="text-white h4 fw-semibold">
-                        <small>
-                            {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
-                        </small>
-                    </h2>
+        <div class="container-fluid d-none d-lg-block d-xl-none" style="height: 100vh;">
+            <div class="container p-5">
+                <div class="row px-5">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold h2">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h5 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mt-2">
-                <div class="col-12">
+                <div class="row p-5 py-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row px-5 mt-4 d-flex justify-content-evenly">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact')
-                            <div class="row my-2">
-                                <div class="col-1 pe-0 d-flex align-items-center">
-                                    <img src="/images/{{ $star->image_small }}" class="img-fluid w-100">
-                                </div>
-                                <div class="col-11 d-flex align-items-center">
-                                    <h6 class="text-white ps-1 fw-semibold m-0">
-                                        <small>
-                                            {{ $star->title_en }}
-                                        </small>
-                                    </h6>
-                                </div>
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
                             </div>
                         @endif
                     @endforeach
                 </div>
+
             </div>
+        </div>
 
-            <div class="row mt-3">
-
-                <div class="col-12 d-flex">
-                    <video
-                        id="my-video"
-                        class="video-js w-100"
-                        height="100%"
-                        width="100%"
-                        controls
-                        loop
-                        muted
-                        autoplay
-                        preload="auto"
-                        poster="MY_VIDEO_POSTER.jpg"
-                        data-setup="{}"
-                    >
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_mp4')->first()->value }}" type="video/mp4" />
-                        <source src="/images/{{ $page_info->pageItems->where('name', 'video_webm')->first()->value }}" type="video/webm" />
-                        <p class="vjs-no-js">
-                            To view this video please enable JavaScript, and consider upgrading to a
-                            web browser that
-                            <a href="https://videojs.com/html5-video-support/" target="_blank"
-                            >supports HTML5 video</a
-                            >
-                        </p>
-                    </video>
+        <div class="container-fluid d-none d-md-block d-lg-none" style="height: 100vh;">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold h2">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h4 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
+                    </div>
                 </div>
+
+                <div class="row p-5 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row px-5 mt-4 d-flex justify-content-evenly">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact')
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
             </div>
+        </div>
 
-            <div class="row mt-4">
-                <div class="col-12 d-flex align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                        <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                    </a>
+        <div class="container-fluid d-none d-sm-block d-md-none" style="height: 100vh;">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold h3">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h5 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
+                    </div>
                 </div>
+
+                <div class="row p-5 py-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">CONTACT US</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-4 d-flex justify-content-evenly">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact')
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid d-sm-none" style="height: 100vh;">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 mt-5 text-center">
+                        <h1 class="d-none">Bimprove</h1>
+                        <h2 class="text-white fw-bold h4">
+                            {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                        </h2>
+                        <h2 class="text-white h6 fw-semibold">
+                            <small>
+                                {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                            </small>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row p-5 py-3 d-flex justify-content-center">
+                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">CONTACT US</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mt-4 d-flex justify-content-evenly">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact')
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
             </div>
         </div>
     </div>
-
-
 
 {{--    ABOUT--}}
     <div id="about">
@@ -611,9 +410,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 {{--    SERVICES--}}
     <div id="services">
@@ -940,10 +736,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 
 {{--    ACHIEVEMENTS--}}
     <div id="achivements">
@@ -1304,9 +1096,6 @@
         </div>
     </div>
 
-
-
-
 {{--    STARS--}}
     <div id="stars">
         <div class="container-fluid d-none d-xxl-block">
@@ -1323,7 +1112,7 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1374,7 +1163,7 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1425,7 +1214,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1476,7 +1265,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1527,7 +1316,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1578,7 +1367,7 @@
                             <div class="col-12 my-3">
                                 <div class="card h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center p-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6">
+                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>

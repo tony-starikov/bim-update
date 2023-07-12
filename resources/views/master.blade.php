@@ -289,7 +289,7 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 menu-button-xxl" style="background-color: #43aeb6">
                         <span class="fw-bold h6 d-block m-0">CONTACT&nbsp;US</span>
                     </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
@@ -392,7 +392,7 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4 menu-button-xl" style="background-color: #43aeb6">
                         <span class="fw-bold h6 small text-white d-block m-2">CONTACT&nbsp;US</span>
                     </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
@@ -495,7 +495,7 @@
                     </ul>
                 </div>
                 <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4" style="background-color: #43aeb6">
+                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4 menu-button-lg" style="background-color: #43aeb6">
                         <span class="fw-bold small text-white d-block m-1 mx-2">CONTACT&nbsp;US</span>
                     </a>
                     <div class="d-flex d-lg-none justify-content-end align-items-center">
@@ -519,9 +519,9 @@
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <a href="{{ route('contact') }}" class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4 menu-button" style="background-color: #43aeb6" type="button">
                         <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
-                    </button>
+                    </a>
 
                     <img src="/images/menu-open.png" class="img align-self-center" width="60px" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 </div>
