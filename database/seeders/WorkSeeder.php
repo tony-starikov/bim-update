@@ -17,7 +17,7 @@ class WorkSeeder extends Seeder
             [
                 'id' => 1,
                 'title_first' => 'METALLURGY',
-                'title_second' => 'COMBINE AZOVSTAL',
+                'title_second' => 'COMBINE',
                 'subtitle' => 'Scan to BIM',
                 'disciplines' => 'MEP',
                 'parameter_1' => 'LOD: 200',
@@ -125,9 +125,9 @@ class WorkSeeder extends Seeder
                 'title_second' => ' ',
                 'subtitle' => 'Telecom design',
                 'disciplines' => ' ',
-                'parameter_1' => 'LOD building: 300',
-                'parameter_2' => 'LOD equipment: 500',
-                'parameter_3' => 'LOD structure: 500',
+                'parameter_1' => 'LOD build.: 300',
+                'parameter_2' => 'LOD equip.: 500',
+                'parameter_3' => 'LOD struct.: 500',
                 'description' => "Modeling of the building by point cloud. Modeling of 2 steel structures with equipment (Antennas, RRU, cabinets) for 3 sectors and cable trays between them. Safety objects. Production drawings.
                 ",
                 'department' => '',

@@ -45,7 +45,7 @@ class TeammateSeeder extends Seeder
             [
                 'name_en' => 'Yurii',
                 'surname_en' => 'Kupshinskiy',
-                'position_en' => 'Architect',
+                'position_en' => 'Project Manager',
                 'image' => 'teammates/Yurii_1x.png',
                 'linkedin_url' => 'https://www.linkedin.com/in/yurii-kupchynskyi-0a634b217/',
             ],
@@ -64,11 +64,18 @@ class TeammateSeeder extends Seeder
                 'linkedin_url' => 'https://www.linkedin.com/in/olgavynogradova/',
             ],
             [
-                'name_en' => 'Illia',
-                'surname_en' => 'Karpenko',
-                'position_en' => 'Director of BIM content creation department',
-                'image' => 'teammates/Illia_1x.png',
-                'linkedin_url' => 'https://www.linkedin.com/in/illia-karpenko-551a1a257/',
+                'name_en' => 'Tetiana',
+                'surname_en' => 'Budko',
+                'position_en' => 'Project Manager',
+                'image' => 'teammates/Tetiana_1x.png',
+                'linkedin_url' => 'https://www.linkedin.com/in/tetiana-budko-885959249/',
+            ],
+            [
+                'name_en' => 'Renata',
+                'surname_en' => 'Symonian',
+                'position_en' => 'Project Manager',
+                'image' => 'teammates/Renata_1x.png',
+                'linkedin_url' => 'https://www.linkedin.com/in/renata-symonian-994a27249/',
             ],
         ]);
     }
