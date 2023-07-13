@@ -64,6 +64,13 @@ class TeammateSeeder extends Seeder
                 'linkedin_url' => 'https://www.linkedin.com/in/olgavynogradova/',
             ],
             [
+                'name_en' => 'Illia',
+                'surname_en' => 'Karpenko',
+                'position_en' => 'Head of BIM Content Creation',
+                'image' => 'teammates/Illia_1x.png',
+                'linkedin_url' => 'https://www.linkedin.com/in/illia-karpenko-551a1a257/',
+            ],
+            [
                 'name_en' => 'Tetiana',
                 'surname_en' => 'Budko',
                 'position_en' => 'Project Manager',
