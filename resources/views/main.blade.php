@@ -30,7 +30,7 @@
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                        <a id="button-first-screen-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
@@ -70,7 +70,7 @@
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
+                        <a id="button-first-screen-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
@@ -110,7 +110,7 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
+                        <a id="button-first-screen-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
@@ -152,7 +152,7 @@
 
                 <div class="row p-5 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
+                        <a id="button-first-screen-md" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
@@ -194,7 +194,7 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
+                        <a id="button-first-screen-sm" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
                             <span class="fw-bold h6 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
@@ -236,7 +236,7 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
+                        <a id="button-first-screen" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
                             <span class="fw-bold h6 d-block my-2">CONTACT US</span>
                         </a>
                     </div>
