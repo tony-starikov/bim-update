@@ -23,7 +23,7 @@
 
                 <div class="row px-5 pb-4 mt-5 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50 px-0" style="background-color: #43aeb6">
                             <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -123,8 +123,8 @@
 
                 <div class="row px-5 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75 px-0" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -173,8 +173,8 @@
 
                 <div class="row px-2 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -918,6 +918,50 @@
         </div>
     </div>
 
+    <div id="DOWNLOAD">
+        <div class="container-fluid d-none d-xl-block">
+            <div class="container p-5 pt-0">
+                <div class="row p-5 pt-0">
+                    <div class="col-12 text-center">
+                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-none d-lg-block d-xl-none">
+            <div class="container p-5 pt-0">
+                <div class="row p-5 pt-0">
+                    <div class="col-12 text-center">
+                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-lg-none">
+            <div class="container">
+                <div class="row py-5 pt-0">
+                    <div class="col-12 text-center">
+                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="POINT">
         <div class="container-fluid d-none d-lg-block">
             <div class="container p-5 pt-0">
@@ -927,154 +971,162 @@
                             WHAT WE MAKE BY THE POINT CLOUD?
                         </h2>
                     </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                    <div class="col-4">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Residential Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Residential Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Educational Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Institutional Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Educational Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Historical Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Institutional Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Historical Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Business Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Mercantile Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Business Buildings
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+
+                    <div class="col-4">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Mercantile Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Industrial Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Industrial Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Storages
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Storages
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Parkings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Parkings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Special Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Bridges
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Roads
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Special Buildings
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+
+                    <div class="col-4">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Bridges
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Transmission towers
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Roads
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Transmission towers
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Radio masts and towers
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Radio masts and towers
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Monuments
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Monuments
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1089,161 +1141,331 @@
                             WHAT WE MAKE BY THE POINT CLOUD?
                         </h2>
                     </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                    <div class="col-6">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Residential Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Residential Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Educational Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Institutional Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Educational Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Historical Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Business Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Institutional Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Mercantile Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Industrial Buildings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Historical Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Business Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Mercantile Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Industrial Buildings
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Storages
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Parkings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Storages
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                    <div class="col-6">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Parkings
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Special Buildings
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Special Buildings
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Bridges
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Bridges
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Roads
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Transmission towers
+                                </h4>
+                            </div>
                         </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Roads
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Radio masts and towers
+                                </h4>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Transmission towers
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Radio masts and towers
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="row mt-4 pt-3 d-flex align-items-center">
-                        <div class="col-1">
-                            <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
-                        </div>
-                        <div class="col-11">
-                            <h4 class="fw-bold">
-                                Monuments
-                            </h4>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Monuments
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid d-md-none">
+        <div class="container-fluid d-none d-sm-block d-md-none">
+            <div class="container py-5 pt-0">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="fw-bold h2">
+                            WHAT WE MAKE BY THE POINT CLOUD?
+                        </h2>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Residential Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Educational Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Institutional Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Historical Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Business Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Mercantile Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Industrial Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Storages
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Parkings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Special Buildings
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Bridges
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Roads
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Transmission towers
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Radio masts and towers
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pt-3 d-flex align-items-center">
+                            <div class="col-2">
+                                <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="fw-bold">
+                                    Monuments
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid d-sm-none">
             <div class="container py-5 pt-0">
                 <div class="row">
                     <div class="col-12">
@@ -2659,7 +2881,7 @@
 
                     <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-12 text-center p-5">
-                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
+                            <a id="button-scan2bim-our-projects-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
                                 <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                             </a>
                         </div>
@@ -2728,7 +2950,7 @@
 
                     <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-12 text-center p-5">
-                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
+                            <a id="button-scan2bim-our-projects-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
                                 <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                             </a>
                         </div>
@@ -2797,7 +3019,7 @@
 
                     <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-12 text-center p-5">
-                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                            <a id="button-scan2bim-our-projects-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
                                 <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                             </a>
                         </div>
@@ -2866,7 +3088,7 @@
 
                     <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-12 text-center p-5">
-                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                            <a id="button-scan2bim-our-projects-md" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
                                 <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                             </a>
                         </div>
@@ -2935,7 +3157,7 @@
 
                     <div class="row p-0 mx-auto mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-12 text-center p-5">
-                            <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
+                            <a id="button-scan2bim-our-projects" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
                                 <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                             </a>
                         </div>
@@ -3285,61 +3507,17 @@
         </div>
     </div>
 
-    <div id="DOWNLOAD">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5 pt-0">
-                <div class="row p-5 pt-0">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5 pt-0">
-                <div class="row p-5 pt-0">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-lg-none">
-            <div class="container">
-                <div class="row py-5 pt-0">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="calendar">
         <div class="container-fluid d-none d-xxl-block" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-6">
                         <h2 class="text-white fw-bold display-5 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h1 fw-semibold mt-4">
                             <small>
-                                {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                                Book a consultation at your convenience!
                             </small>
                         </h2>
                         <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
@@ -3358,11 +3536,11 @@
                 <div class="row p-5">
                     <div class="col-6">
                         <h2 class="text-white fw-bold display-5 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h1 fw-semibold mt-4">
                             <small>
-                                {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                                Book a consultation at your convenience!
                             </small>
                         </h2>
                         <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
@@ -3381,10 +3559,10 @@
                 <div class="row p-5">
                     <div class="col-6">
                         <h2 class="text-white fw-bold h1 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h4 fw-semibold mt-4">
-                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                            Book a consultation at your convenience!
                         </h2>
                         <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
@@ -3402,10 +3580,10 @@
                 <div class="row py-5">
                     <div class="col-7">
                         <h2 class="text-white fw-bold h1 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h4 fw-semibold mt-4">
-                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                            Book a consultation at your convenience!
                         </h2>
                         <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
@@ -3423,18 +3601,15 @@
                 <div class="row py-5">
                     <div class="col-12">
                         <h2 class="text-white fw-bold h2 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h4 fw-semibold mt-4">
-                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                            Book a consultation at your convenience!
                         </h2>
                         <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
-                    {{--                    <div class="col-4 d-flex align-items-center">--}}
-                    {{--                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">--}}
-                    {{--                    </div>--}}
                 </div>
             </div>
         </div>
@@ -3444,10 +3619,10 @@
                 <div class="row py-5">
                     <div class="col-12">
                         <h2 class="text-white fw-bold h1 w-100">
-                            {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
                         </h2>
                         <h2 class="text-white h4 fw-semibold mt-4">
-                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                            Book a consultation at your convenience!
                         </h2>
                         <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>

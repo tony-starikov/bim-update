@@ -186,7 +186,7 @@
 
         #video {
             width: 100%;
-            height: 100vh;
+            height: 100%;
             object-fit: cover;
             position: absolute;
             top: 0;
@@ -519,10 +519,6 @@
                     </a>
                 </div>
                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4 menu-button" style="background-color: #43aeb6" type="button">
-                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
-                    </a>
-
                     <img src="/images/menu-open.png" class="img align-self-center" width="60px" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 </div>
             </div>
@@ -969,14 +965,22 @@
                     <div class="row">
                         <div class="col-12">
                             <a class="text-decoration-none" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">
-                                <h6 class="fw-semibold text-white">{{ $contacts->where('name', 'phone')->first()->info }}</h6>
+                                <h6 class="fw-semibold text-white">
+                                    <small>
+                                        {{ $contacts->where('name', 'phone')->first()->info }}
+                                    </small>
+                                </h6>
                             </a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
                             <a class="text-decoration-none" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">
-                                <h6 class="fw-semibold text-white">{{ $contacts->where('name', 'email')->first()->info }}</h6>
+                                <h6 class="fw-semibold text-white">
+                                    <small>
+                                        {{ $contacts->where('name', 'email')->first()->info }}
+                                    </small>
+                                </h6>
                             </a>
                         </div>
                     </div>
@@ -986,34 +990,56 @@
             <div class="row border-bottom border-white border-2 py-3">
                 <div class="col-6">
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h6 class="fw-semibold text-white">SERVICES</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                SERVICES
+                            </small>
+                        </h6>
                     </a>
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h6 class="fw-semibold text-white">PORTFOLIO</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                PORTFOLIO
+                            </small>
+                        </h6>
                     </a>
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h6 class="fw-semibold text-white">ABOUT</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                ABOUT
+                            </small>
+                        </h6>
                     </a>
                 </div>
                 <div class="col-6">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h6 class="fw-semibold text-white">BLOG</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                BLOG
+                            </small>
+                        </h6>
                     </a>
                     <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h6 class="fw-semibold text-white">PRODUCTS</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                PRODUCTS
+                            </small>
+                        </h6>
                     </a>
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="fw-semibold text-white">TEAM</h6>
+                        <h6 class="fw-semibold text-white">
+                            <small>
+                                TEAM
+                            </small>
+                        </h6>
                     </a>
                 </div>
             </div>
 
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <p class="card-text text-white fw-bold h6">
-                        <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
-                        </small>
+                    <p class="text-white fw-semibold small">
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
@@ -1043,10 +1069,6 @@
                                     </a>
                                 </div>
                                 <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
-                                    </button>
-
                                     <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
                                         <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
                                     </a>
@@ -1179,6 +1201,17 @@
 
                             @endif
                         @endforeach
+
+                            <div class="col-12 text-center my-2">
+                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
+                                    CONTACT US
+                                </a>
+                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
+                                    <span class="my-1 mx-0 h5 fw-bold d-block">
+                                        CONTACT US
+                                    </span>
+                                </a>
+                            </div>
 
                     </div>
                 </div>

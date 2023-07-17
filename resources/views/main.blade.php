@@ -8,11 +8,11 @@
 
     <div id="bg-video">
         <video id="video" poster="/images/poster.png" autoplay playsinline muted loop>
-            <source src="/images/bg_video.webm" type="video/webm">
-            <source src="/images/bg_video.mp4" type="video/mp4">
+            <source src="/images/bg_video_last.webm" type="video/webm">
+            <source src="/images/bg_video_last.mp4" type="video/mp4">
         </video>
 
-        <div class="container-fluid d-none d-xxl-block" style="height: 100vh;">
+        <div class="container-fluid d-none d-xxl-block">
             <div class="container p-5">
                 <div class="row px-5 mt-2">
                     <div class="col-12 mt-5 text-center">
@@ -52,7 +52,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="height: 100vh;">
+        <div class="container-fluid d-none d-xl-block d-xxl-none">
             <div class="container p-5">
                 <div class="row px-5 mt-2">
                     <div class="col-12 mt-5 text-center">
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="height: 100vh;">
+        <div class="container-fluid d-none d-lg-block d-xl-none">
             <div class="container p-5">
                 <div class="row px-5">
                     <div class="col-12 mt-5 text-center">
@@ -134,7 +134,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-md-block d-lg-none" style="height: 100vh;">
+        <div class="container-fluid d-none d-md-block d-lg-none">
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-12 mt-5 text-center">
@@ -176,7 +176,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-none d-sm-block d-md-none" style="height: 100vh;">
+        <div class="container-fluid d-none d-sm-block d-md-none">
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-12 mt-5 text-center">
@@ -200,16 +200,21 @@
                     </div>
                 </div>
 
-                <div class="row mt-4 d-flex justify-content-evenly">
+                <div class="row pb-3 d-flex justify-content-between">
                     @foreach($stars as $star)
-                        @if($star->title_en !== 'Contact')
-                            <div class="col-4 text-center">
+                        @if($star->title_en !== 'Contact' and $star->id !== 5 and $star->id !== 4)
+                            <div class="col-4 mt-4 text-center">
                                 <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
-                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
-                                    <small>
-                                        {{ $star->title_en }}
-                                    </small>
-                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
+                <div class="row pb-4 d-flex justify-content-evenly">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3)
+                            <div class="col-4 mt-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
                             </div>
                         @endif
                     @endforeach
@@ -218,7 +223,7 @@
             </div>
         </div>
 
-        <div class="container-fluid d-sm-none" style="height: 100vh;">
+        <div class="container-fluid d-sm-none">
             <div class="container pt-5">
                 <div class="row">
                     <div class="col-12 mt-5 text-center">
@@ -242,16 +247,21 @@
                     </div>
                 </div>
 
-                <div class="row mt-4 d-flex justify-content-evenly">
+                <div class="row pb-3 d-flex justify-content-between">
                     @foreach($stars as $star)
-                        @if($star->title_en !== 'Contact')
-                            <div class="col-4 text-center">
+                        @if($star->title_en !== 'Contact' and $star->id !== 5 and $star->id !== 4)
+                            <div class="col-4 mt-4 text-center">
                                 <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
-                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
-                                    <small>
-                                        {{ $star->title_en }}
-                                    </small>
-                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
+                <div class="row pb-4 d-flex justify-content-evenly">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3)
+                            <div class="col-4 mt-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
                             </div>
                         @endif
                     @endforeach
@@ -453,7 +463,7 @@
                                     </div>
                                     <div class="service-overlay">
                                         <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
-                                            <a @if($service->show_page !== 1) target="_blank" @endif class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else href="{{ route('downloadService', [$service->slug]) }}" @endif>
+                                            <a class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                                 <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
                                                     <span class="fw-bold h4 d-block my-2">MORE INFO</span>
                                                 </button>
@@ -508,7 +518,7 @@
                                         </h6>
                                     </div>
                                     <div class="service-overlay">
-                                        <a target="_blank" class="text-decoration-none d-flex align-self-center h-100 px-5" href="{{ route('downloadService', [$service->slug]) }}">
+                                        <a class="text-decoration-none d-flex align-self-center h-100 px-5" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                             <button class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center" style="background-color: #43aeb6" type="button">
                                                 <span class="fw-bold h4 d-block my-2">MORE INFO</span>
                                             </button>
@@ -562,7 +572,7 @@
                                         </h6>
                                     </div>
                                     <div class="service-overlay">
-                                        <a target="_blank" class="text-decoration-none d-flex align-self-center h-100 px-5" href="{{ route('downloadService', [$service->slug]) }}">
+                                        <a class="text-decoration-none d-flex align-self-center h-100 px-5" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                             <button class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6" type="button">
                                                 <span class="fw-bold h4 d-block my-2">MORE INFO</span>
                                             </button>
@@ -618,7 +628,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent" style="background-color: #6de1df">
-                                    <a target="_blank" href="{{ route('downloadService', [$service->slug]) }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
+                                    <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
                                         <span class="fw-bold h5 d-block my-2">MORE INFO</span>
                                     </a>
                                 </div>
@@ -671,7 +681,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent" style="background-color: #6de1df">
-                                    <a target="_blank" href="{{ route('downloadService', [$service->slug]) }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
+                                    <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
                                         <span class="fw-bold h5 d-block my-2">MORE INFO</span>
                                     </a>
                                 </div>
@@ -724,7 +734,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer border-0 bg-transparent" style="background-color: #6de1df">
-                                    <a target="_blank" href="{{ route('downloadService', [$service->slug]) }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
+                                    <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 align-self-center shadow-none" style="background-color: #43aeb6">
                                         <span class="fw-bold h5 d-block my-2">MORE INFO</span>
                                     </a>
                                 </div>
@@ -1112,7 +1122,7 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
+                                        <a id="button-five-stars-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1163,7 +1173,7 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
+                                        <a id="button-five-stars-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1214,7 +1224,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
+                                        <a id="button-five-stars-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1265,7 +1275,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
+                                        <a id="button-five-stars-md" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1316,7 +1326,7 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
+                                        <a id="button-five-stars-sm" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
@@ -1367,7 +1377,7 @@
                             <div class="col-12 my-3">
                                 <div class="card h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center p-5" style="background-color: #6de1df">
-                                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars" style="background-color: #43aeb6">
+                                        <a id="button-five-stars" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars" style="background-color: #43aeb6">
                                             <span class="fw-bold h5 d-block my-2">CONTACT US</span>
                                         </a>
                                     </div>
