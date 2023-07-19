@@ -145,7 +145,7 @@
             @foreach($posts as $post)
                 <div class="d-none d-xxl-flex row p-5">
                     <div class="col-5 px-0 ps-2">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
@@ -173,7 +173,7 @@
                 </div>
                 <div class="d-none d-xl-flex d-xxl-none row p-5">
                     <div class="col-5">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="d-none d-lg-flex d-xl-none row p-5">
                     <div class="col-5">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="d-none d-md-flex d-lg-none row pt-5">
                     <div class="col-12">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
@@ -257,7 +257,7 @@
                 </div>
                 <div class="d-none d-sm-flex d-md-none row pt-5">
                     <div class="col-12">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
@@ -285,7 +285,7 @@
                 </div>
                 <div class="d-flex d-sm-none row pt-5">
                     <div class="col-12">
-                        <a href="{{ route('post', $post) }}">
+                        <a href="{{ route('post', $post->slug) }}">
                             <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
                         </a>
                     </div>
