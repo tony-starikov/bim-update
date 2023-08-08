@@ -116,9 +116,24 @@
                     </div>
                 </div>
 
-                <div class="row px-5 mt-4 d-flex justify-content-evenly">
+                <div class="row px-5 mt-4">
                     @foreach($stars as $star)
-                        @if($star->title_en !== 'Contact')
+                        @if($star->title_en !== 'Contact' and $star->id !== 4 and $star->id !== 5 )
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
+                <div class="row px-5 d-flex justify-content-center">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3 )
                             <div class="col-4 text-center">
                                 <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
                                 <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
@@ -158,9 +173,24 @@
                     </div>
                 </div>
 
-                <div class="row px-5 mt-4 d-flex justify-content-evenly">
+                <div class="row px-5 mt-4">
                     @foreach($stars as $star)
-                        @if($star->title_en !== 'Contact')
+                        @if($star->title_en !== 'Contact' and $star->id !== 4 and $star->id !== 5 )
+                            <div class="col-4 text-center">
+                                <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
+                                <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
+                                    <small>
+                                        {{ $star->title_en }}
+                                    </small>
+                                </h6>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
+                <div class="row px-5 mt-4 justify-content-center">
+                    @foreach($stars as $star)
+                        @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3 )
                             <div class="col-4 text-center">
                                 <img src="/images/{{ $star->image_big }}" class="img-fluid w-50">
                                 <h6 class="text-white fw-semibold text-uppercase px-0 py-4 m-0">
@@ -200,7 +230,7 @@
                     </div>
                 </div>
 
-                <div class="row pb-3 d-flex justify-content-between">
+                <div class="row pb-0">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact' and $star->id !== 5 and $star->id !== 4)
                             <div class="col-4 mt-4 text-center">
@@ -210,7 +240,7 @@
                     @endforeach
                 </div>
 
-                <div class="row pb-4 d-flex justify-content-evenly">
+                <div class="row pb-4 d-flex justify-content-center">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3)
                             <div class="col-4 mt-4 text-center">
@@ -247,7 +277,7 @@
                     </div>
                 </div>
 
-                <div class="row pb-3 d-flex justify-content-between">
+                <div class="row pb-0">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact' and $star->id !== 5 and $star->id !== 4)
                             <div class="col-4 mt-4 text-center">
@@ -257,7 +287,7 @@
                     @endforeach
                 </div>
 
-                <div class="row pb-4 d-flex justify-content-evenly">
+                <div class="row pb-4 d-flex justify-content-center">
                     @foreach($stars as $star)
                         @if($star->title_en !== 'Contact' and $star->id !== 1 and $star->id !== 2 and $star->id !== 3)
                             <div class="col-4 mt-4 text-center">
@@ -1366,57 +1396,53 @@
         <div class="container-fluid d-sm-none">
             <div class="container py-5">
                 <div class="row pt-5">
-                    <h2 class="h1 fw-bold pb-0">
+                    <h2 class="h1 fw-bold pb-3">
                         {{ $page_info->pageItems->where('name', 'stars_header')->first()->value }}
                     </h2>
                 </div>
-                <div class="row">
 
-                    @foreach($stars as $star)
-                        @if($star->title_en == 'Contact')
-                            <div class="col-12 my-3">
-                                <div class="card h-100" style="border: none; border-radius: 0;">
-                                    <div class="d-flex align-items-center p-5" style="background-color: #6de1df">
-                                        <a id="button-five-stars" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars" style="background-color: #43aeb6">
-                                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
-                                        </a>
-                                    </div>
-                                </div>
+                <div class="row mx-0 px-0 pb-5">
+                    <div class="col-12 mx-0 px-0">
+                        <section class="splide" aria-label="Slide Container Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+
+                                    @foreach($stars as $star)
+                                        @if($star->title_en !== 'Contact')
+                                            <li class="splide__slide">
+                                                <div class="card p-3 pb-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-8 d-flex align-items-center">
+                                                                <h5 class="fw-bold">
+                                                                    <small>
+                                                                        {{ $star->title_en }}
+                                                                    </small>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <img src="/images/{{ $star->image }}" class="img-fluid w-100 bg-transparent">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer border-0 d-flex align-items-center" style="background-color: #ffffff">
+                                                        <h6 class="text-secondary py-4">
+                                                            {{ $star->description_en }}
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        @endif
+                                    @endforeach
+                                </ul>
                             </div>
-                        @else
-                            <div class="col-12 my-3">
-                                <div class="card p-3 pb-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
-                                    <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-8 d-flex align-items-center">
-                                                <h5 class="fw-bold">
-                                                    <small>
-                                                        {{ $star->title_en }}
-                                                    </small>
-                                                </h5>
-                                            </div>
-                                            <div class="col-4">
-                                                <img src="/images/{{ $star->image }}" class="img-fluid w-100 bg-transparent">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer border-0 d-flex align-items-center" style="background-color: #ffffff">
-                                        <h6 class="text-secondary py-4">
-                                            {{ $star->description_en }}
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                    @endforeach
+                        </section>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
-
-
-
 
 {{--    TESTIMONIALS--}}
     <div id="testimonials">
@@ -1716,9 +1742,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 {{--    PORTFOLIO--}}
     <div id="portfolio">
@@ -2307,9 +2330,6 @@
         </div>
     </div>
 
-
-
-
 {{--    TEAM--}}
     <div id="team">
         <div class="container-fluid d-none d-xxl-block pt-5 px-0" style="background: url(/images/teammates/team_bg.png) no-repeat center center local; background-size: cover;">
@@ -2559,10 +2579,6 @@
         </div>
     </div>
 
-
-
-
-
 {{--    CALENDAR--}}
     <div id="calendar">
         <div class="container-fluid d-none d-xxl-block" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
@@ -2699,6 +2715,15 @@
         let elms = document.getElementsByClassName( 'splide' );
 
         let configs = [
+            // stars
+
+            {
+                type   : 'loop',
+                perPage: 1,
+                arrows: boolean = true,
+            },
+
+
             {
                 type   : 'loop',
                 perPage: 3,

@@ -6,6 +6,7 @@ use App\Models\Contact;
 use App\Models\Family;
 use App\Models\MenuItem;
 use App\Models\Page;
+use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,9 @@ class FamilyController extends Controller
 
         $contacts = Contact::all();
 
-        return view('families', compact('page_info', 'families', 'services', 'menuItems', 'contacts'));
+        $posts = Post::take(5)->get();
+
+        return view('families', compact('page_info', 'families', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function downloadFamily(Family $family)

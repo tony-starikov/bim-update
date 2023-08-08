@@ -20,12 +20,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'main'])->name('main');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/estimates-project', [PageController::class, 'estimates'])->name('estimates');
 Route::get('/success', [PageController::class, 'success'])->name('success');
+Route::get('/thank-you-page', [PageController::class, 'thanks'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');
-Route::get('/post-test/{slug}', [PostController::class, 'postTest'])->name('post-test');
 
 Route::get('/products', [PluginController::class, 'index'])->name('products');
 Route::get('/get-plugin/{plugin}', [PluginController::class, 'downloadPlugin'])->name('downloadPlugin');
@@ -35,5 +36,3 @@ Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])-
 
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('showService');
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
-
-Route::get('/test', [PageController::class, 'test'])->name('test');

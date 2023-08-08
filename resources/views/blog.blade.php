@@ -159,7 +159,7 @@
                         </div>
                         <div class="row">
                             <h5 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h5>
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
@@ -187,7 +187,7 @@
                         </div>
                         <div class="row">
                             <h5 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h5>
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
@@ -215,7 +215,7 @@
                         </div>
                         <div class="row">
                             <h6 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h6>
                         </div>
                         <div class="row mt-5 w-100 position-absolute bottom-0">
@@ -243,7 +243,7 @@
                         </div>
                         <div class="row">
                             <h6 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h6>
                         </div>
                         <div class="row w-100">
@@ -271,7 +271,7 @@
                         </div>
                         <div class="row">
                             <h6 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h6>
                         </div>
                         <div class="row w-100">
@@ -299,7 +299,7 @@
                         </div>
                         <div class="row">
                             <h6 class="text-secondary">
-                                Month, Day, Year - Time
+                                {{ $post->date }}
                             </h6>
                         </div>
                         <div class="row">
@@ -312,8 +312,6 @@
                     </div>
                 </div>
             @endforeach
-
-
 
                 <div class="row d-lg-none p-5">
                     <div class="col-12">

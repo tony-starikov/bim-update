@@ -6,6 +6,7 @@ use App\Models\Achievement;
 use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
+use App\Models\Post;
 use App\Models\Service;
 use App\Models\Star;
 use App\Models\Teammate;
@@ -40,6 +41,8 @@ class ServiceController extends Controller
 
         $contacts = Contact::all();
 
-        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info', 'works'));
+        $posts = Post::take(5)->get();
+
+        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts'));
     }
 }

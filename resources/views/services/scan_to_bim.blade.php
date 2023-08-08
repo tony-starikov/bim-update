@@ -3290,100 +3290,100 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4 d-flex align-items-center">
+                    <div class="row p-0 mx-2 mt-4">
                         <div class="col-1">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-11">
+                        <div class="col-11 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h3 fw-semibold">
+                                <span class="h4 fw-semibold">
                                     What is Level of detail?
                                 </span>
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4 d-flex align-items-center">
+                    <div class="row p-0 mx-2 mt-4">
                         <div class="col-1">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-11">
+                        <div class="col-11 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                            <span class="h3 fw-semibold">
+                            <span class="h4 fw-semibold">
                                 How long does it take to complete a scan to BIM project?
                             </span>
                             </a>
                             <div class="collapse" id="collapseExample1">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     The duration of a scan to BIM project depends on several factors such as the complexity of the project, the scope of work, the size of the area to be scanned, and the accuracy required. Typically, a scan to BIM project can take anywhere from a few weeks to several months to complete.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4 d-flex align-items-center">
+                    <div class="row p-0 mx-2 mt-4">
                         <div class="col-1">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-11">
+                        <div class="col-11 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                            <span class="h3 fw-semibold">
+                            <span class="h4 fw-semibold">
                                 What are the deliverables of scan to BIM service?
                             </span>
                             </a>
                             <div class="collapse" id="collapseExample2">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     The deliverables of a scan to BIM service can vary depending on the requirements of the project. However, some common deliverables include 3D models, 2D drawings, point clouds, clash detection reports, and as-built documentation. These deliverables can be used for various purposes such as construction planning, facility management, and renovation projects.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4 d-flex align-items-center">
+                    <div class="row p-0 mx-2 mt-4">
                         <div class="col-1">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-11">
+                        <div class="col-11 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                            <span class="h3 fw-semibold">
+                            <span class="h4 fw-semibold">
                                 What types of projects can benefit from scan to BIM service?
                             </span>
                             </a>
                             <div class="collapse" id="collapseExample3">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Scan to BIM service can benefit a wide range of projects, including those in the architecture, engineering, and construction industries. Some examples include renovation and retrofit projects, heritage preservation, building information modeling, and plant design and construction.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4 d-flex align-items-center">
+                    <div class="row p-0 mx-2 mt-4">
                         <div class="col-1">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-11">
+                        <div class="col-11 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                            <span class="h3 fw-semibold">
+                            <span class="h4 fw-semibold">
                                 What are the benefits of scan to BIM service?
                             </span>
                             </a>
                             <div class="collapse" id="collapseExample4">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Scan to BIM service offers several benefits, such as accurate and detailed documentation of existing conditions, improved project planning and coordination, reduced construction time and costs, and enhanced facility management. Scan to BIM service can also help to identify potential clashes or design issues early on, minimizing rework and changes during the construction phase. Overall, scan to BIM service can lead to more efficient and cost-effective project delivery.
                                 </div>
                             </div>
@@ -3403,100 +3403,100 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mt-4 d-flex align-items-center">
-                        <div class="col-2">
+                    <div class="row p-0 mt-4">
+                        <div class="col-2 pe-0">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" class="img-fluid mb-2" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 ps-0 mt-2">
                             <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h4 fw-semibold">
+                                <span class="h5 fw-semibold">
                                     What is Level of detail?
                                 </span>
                             </a>
                             <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mt-4 d-flex align-items-center">
-                        <div class="col-2">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="row p-0 mt-4">
+                        <div class="col-2 pe-0">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" class="img-fluid mb-2" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-10">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h4 fw-semibold">
+                        <div class="col-10 ps-0 mt-2">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                                <span class="h5 fw-semibold">
                                     How long does it take to complete a scan to BIM project?
                                 </span>
                             </a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body h6 fw-normal border-0">
                                     The duration of a scan to BIM project depends on several factors such as the complexity of the project, the scope of work, the size of the area to be scanned, and the accuracy required. Typically, a scan to BIM project can take anywhere from a few weeks to several months to complete.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mt-4 d-flex align-items-center">
-                        <div class="col-2">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="row p-0 mt-4">
+                        <div class="col-2 pe-0">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" class="img-fluid mb-2" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-10">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h4 fw-semibold">
+                        <div class="col-10 ps-0 mt-2">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                <span class="h5 fw-semibold">
                                     What are the deliverables of scan to BIM service?
                                 </span>
                             </a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body h6 fw-normal border-0">
                                     The deliverables of a scan to BIM service can vary depending on the requirements of the project. However, some common deliverables include 3D models, 2D drawings, point clouds, clash detection reports, and as-built documentation. These deliverables can be used for various purposes such as construction planning, facility management, and renovation projects.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mt-4 d-flex align-items-center">
-                        <div class="col-2">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="row p-0 mt-4">
+                        <div class="col-2 pe-0">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" class="img-fluid mb-2" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-10">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h4 fw-semibold">
+                        <div class="col-10 ps-0 mt-2">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                                <span class="h5 fw-semibold">
                                     What types of projects can benefit from scan to BIM service?
                                 </span>
                             </a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Scan to BIM service can benefit a wide range of projects, including those in the architecture, engineering, and construction industries. Some examples include renovation and retrofit projects, heritage preservation, building information modeling, and plant design and construction.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row p-0 mt-4 d-flex align-items-center">
-                        <div class="col-2">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <div class="row p-0 mt-4">
+                        <div class="col-2 pe-0">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
                                 <img src="/images/service/scan_to_bim_images/faq/arrow.png" class="img-fluid mb-2" alt="arrow">
                             </a>
                         </div>
-                        <div class="col-10">
-                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <span class="h4 fw-semibold">
+                        <div class="col-10 ps-0 mt-2">
+                            <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                <span class="h5 fw-semibold">
                                     What are the benefits of scan to BIM service?
                                 </span>
                             </a>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body h5 fw-normal border-0">
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card card-body h6 fw-normal border-0">
                                     Scan to BIM service offers several benefits, such as accurate and detailed documentation of existing conditions, improved project planning and coordination, reduced construction time and costs, and enhanced facility management. Scan to BIM service can also help to identify potential clashes or design issues early on, minimizing rework and changes during the construction phase. Overall, scan to BIM service can lead to more efficient and cost-effective project delivery.
                                 </div>
                             </div>

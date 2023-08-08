@@ -36,19 +36,8 @@ class PostController extends Controller
 
         $contacts = Contact::all();
 
-        return view('post', compact('post', 'services', 'menuItems', 'contacts'));
-    }
+        $posts = Post::take(5)->get();
 
-    public function postTest($slug)
-    {
-        $post = Post::where('slug', $slug)->first();
-
-        $services = Service::all();
-
-        $menuItems = MenuItem::all();
-
-        $contacts = Contact::all();
-
-        return view('post-test', compact('post', 'services', 'menuItems', 'contacts'));
+        return view('post', compact('post', 'services', 'menuItems', 'contacts', 'posts'));
     }
 }

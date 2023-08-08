@@ -6,6 +6,7 @@ use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Plugin;
+use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,9 @@ class PluginController extends Controller
 
         $contacts = Contact::all();
 
-        return view('products', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts'));
+        $posts = Post::take(5)->get();
+
+        return view('products', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function downloadPlugin(Plugin $plugin)

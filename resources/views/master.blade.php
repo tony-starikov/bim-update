@@ -56,69 +56,69 @@
             opacity: 1 !important; /* Firefox */
             color: #ffffff !important;
             font-size: 1.25rem !important;
-            padding-left: 0 !important;
+            padding-left: 1rem !important;
         }
         form.footer-form input[placeholder] {
             opacity: 1 !important; /* Firefox */
             color: #ffffff !important;
             font-size: 1.25rem !important;
-            padding-left: 0 !important;
+            padding-left: 1rem !important;
         }
 
-        form.subscribe-form input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: transparent !important;
-        }
-        form.subscribe-form input::placeholder {
-            opacity: 1 !important; /* Firefox */
-            color: #9a9a9a !important;
-            border-color: #9a9a9a !important;
-            font-size: 1.25rem !important;
-            padding-left: 0 !important;
-        }
-        form.subscribe-form input[placeholder] {
-            opacity: 1 !important; /* Firefox */
-            color: #9a9a9a !important;
-            border-color: #9a9a9a !important;
-            font-size: 1.25rem !important;
-            padding-left: 0 !important;
-        }
+        /*form.subscribe-form input {*/
+        /*    -webkit-appearance: none;*/
+        /*    -moz-appearance: none;*/
+        /*    appearance: none;*/
+        /*    background-color: transparent !important;*/
+        /*}*/
+        /*form.subscribe-form input::placeholder {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: #9a9a9a !important;*/
+        /*    border-color: #9a9a9a !important;*/
+        /*    font-size: 1.25rem !important;*/
+        /*    padding-left: 0 !important;*/
+        /*}*/
+        /*form.subscribe-form input[placeholder] {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: #9a9a9a !important;*/
+        /*    border-color: #9a9a9a !important;*/
+        /*    font-size: 1.25rem !important;*/
+        /*    padding-left: 0 !important;*/
+        /*}*/
 
-        form.donate-form input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: #fff !important;
-        }
-        form.donate-form select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            background-color: #fff !important;
-        }
-        form.donate-form input::placeholder {
-            opacity: 1 !important; /* Firefox */
-            color: #9a9a9a !important;
-            border-color: #fff !important;
-            font-size: 1.4rem !important;
-            padding: 10px !important;
-        }
-        form.donate-form select {
-            opacity: 1 !important; /* Firefox */
-            color: #9a9a9a !important;
-            border-color: #fff !important;
-            font-size: 1.4rem !important;
-            padding: 10px !important;
-        }
-        form.donate-form input[placeholder] {
-            opacity: 1 !important; /* Firefox */
-            color: #9a9a9a !important;
-            border-color: #fff !important;
-            font-size: 1.4rem !important;
-            padding: 10px !important;
-        }
+        /*form.donate-form input {*/
+        /*    -webkit-appearance: none;*/
+        /*    -moz-appearance: none;*/
+        /*    appearance: none;*/
+        /*    background-color: #fff !important;*/
+        /*}*/
+        /*form.donate-form select {*/
+        /*    -webkit-appearance: none;*/
+        /*    -moz-appearance: none;*/
+        /*    appearance: none;*/
+        /*    background-color: #fff !important;*/
+        /*}*/
+        /*form.donate-form input::placeholder {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: #9a9a9a !important;*/
+        /*    border-color: #fff !important;*/
+        /*    font-size: 1.4rem !important;*/
+        /*    padding: 10px !important;*/
+        /*}*/
+        /*form.donate-form select {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: #9a9a9a !important;*/
+        /*    border-color: #fff !important;*/
+        /*    font-size: 1.4rem !important;*/
+        /*    padding: 10px !important;*/
+        /*}*/
+        /*form.donate-form input[placeholder] {*/
+        /*    opacity: 1 !important; !* Firefox *!*/
+        /*    color: #9a9a9a !important;*/
+        /*    border-color: #fff !important;*/
+        /*    font-size: 1.4rem !important;*/
+        /*    padding: 10px !important;*/
+        /*}*/
 
         .portfolio-container {
             position: relative;
@@ -610,8 +610,13 @@
                 </div>
                 <div class="col-2">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                        <h5 class="ps-1 fw-semibold text-white text-center mb-4">Blog</h5>
                     </a>
+                    @foreach($posts as $post)
+                        <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
+                            <h6 class="px-0 ps-5 ms-4 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
+                        </a>
+                    @endforeach
                 </div>
                 <div class="col-2 text-center">
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
@@ -721,8 +726,13 @@
                 </div>
                 <div class="col-2">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="fw-semibold text-white text-center mb-4">Blog</h5>
+                        <h5 class="ms-1 fw-semibold text-white text-center mb-4">Blog</h5>
                     </a>
+                    @foreach($posts as $post)
+                        <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
+                            <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
+                        </a>
+                    @endforeach
                 </div>
                 <div class="col-2 text-center">
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
