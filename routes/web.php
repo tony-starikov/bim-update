@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EstimationController;
 use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PluginController;
@@ -20,7 +21,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'main'])->name('main');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::get('/estimates-project', [PageController::class, 'estimates'])->name('estimates');
 Route::get('/success', [PageController::class, 'success'])->name('success');
 Route::get('/thank-you-page', [PageController::class, 'thanks'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
@@ -36,3 +36,6 @@ Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])-
 
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('showService');
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
+
+Route::get('/estimates-project', [EstimationController::class, 'show'])->name('estimates');
+Route::post('/estimates-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');

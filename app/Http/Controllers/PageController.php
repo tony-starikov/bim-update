@@ -56,20 +56,6 @@ class PageController extends Controller
         return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
-    public function estimates()
-    {
-
-        $menuItems = MenuItem::all();
-
-        $services = Service::all();
-
-        $contacts = Contact::all();
-
-        $posts = Post::take(5)->get();
-
-        return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts'));
-    }
-
     public function success()
     {
         $page_info = Page::where('name', 'contacts')->first();
