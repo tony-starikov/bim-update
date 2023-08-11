@@ -23,7 +23,7 @@
 
                 <div class="row px-5 pb-4 mt-5 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50 px-0" style="background-color: #43aeb6">
+                        <a href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50 px-0" style="background-color: #43aeb6">
                             <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -73,7 +73,7 @@
 
                 <div class="row px-5 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                        <a href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
                             <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -123,7 +123,7 @@
 
                 <div class="row px-5 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75 px-0" style="background-color: #43aeb6">
+                        <a href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75 px-0" style="background-color: #43aeb6">
                             <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -173,7 +173,7 @@
 
                 <div class="row px-2 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
+                        <a href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
                             <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>

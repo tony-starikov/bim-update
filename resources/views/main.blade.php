@@ -29,9 +29,9 @@
                 </div>
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="col-12 col-md-5 col-lg-5 order-md-3 order-lg-4">
+                        <a id="button-first-screen-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -69,9 +69,9 @@
                 </div>
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="col-12 col-md-5 col-lg-6 order-md-3 order-lg-4">
+                        <a id="button-first-screen-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -109,9 +109,9 @@
                 </div>
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                    <div class="col-12 col-md-5 col-lg-6 order-md-3 order-lg-4">
+                        <a id="button-first-screen-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-1">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -166,9 +166,9 @@
                 </div>
 
                 <div class="row p-5 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-md" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                    <div class="col-12 col-md-8 col-lg-3 order-md-3 order-lg-4">
+                        <a id="button-first-screen-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-1">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -223,9 +223,9 @@
                 </div>
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-sm" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">CONTACT US</span>
+                    <div class="col-10 col-md-5 col-lg-3 order-md-3 order-lg-4">
+                        <a id="button-first-screen-sm" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-1">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -271,8 +271,8 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen" href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">CONTACT US</span>
+                        <a id="button-first-screen" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-1">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -1152,8 +1152,8 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a id="button-five-stars-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
-                                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                                        <a id="button-five-stars-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
+                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1202,9 +1202,9 @@
                         @if($star->title_en == 'Contact')
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
-                                    <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a id="button-five-stars-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
-                                            <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                                    <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
+                                        <a id="button-five-stars-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
+                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1254,8 +1254,8 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
-                                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                                        <a id="button-five-stars-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
+                                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1305,8 +1305,8 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-md" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
-                                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                                        <a id="button-five-stars-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
+                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1356,8 +1356,8 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-sm" href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
-                                            <span class="fw-bold h5 d-block my-2">CONTACT US</span>
+                                        <a id="button-five-stars-sm" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
+                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1381,7 +1381,9 @@
                                     </div>
                                     <div class="card-footer p-0 border-0 d-flex align-items-center" style="background-color: #ffffff">
                                         <h6 class="text-secondary px-3 py-4">
-                                            {{ $star->description_en }}
+                                            <small>
+                                                {{ $star->description_en }}
+                                            </small>
                                         </h6>
                                     </div>
                                 </div>

@@ -65,6 +65,20 @@
             padding-left: 1rem !important;
         }
 
+        form.footer-form textarea {
+            font-size: 1.25rem !important;
+        }
+
+        form.footer-form input[type=file]::file-selector-button {
+            color: white;
+            background-color: transparent;
+        }
+
+        form.footer-form input[type=file]::file-selector-button:hover {
+            color: white;
+            background-color: transparent;
+        }
+
         /*form.subscribe-form input {*/
         /*    -webkit-appearance: none;*/
         /*    -moz-appearance: none;*/

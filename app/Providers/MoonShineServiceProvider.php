@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Estimation;
 use App\Models\Post;
+use App\MoonShine\Resources\EstimationResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\SeoResource;
 use Illuminate\Support\ServiceProvider;
@@ -32,6 +34,10 @@ class MoonShineServiceProvider extends ServiceProvider
             MenuItem::make('Posts', new PostResource())
                 ->icon('heroicons.outline.book-open')
                 ->badge(fn() => Post::query()->count()),
+
+            MenuItem::make('Estimation', new EstimationResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => Estimation::query()->count()),
 
             MenuItem::make('SEO', new SeoResource())
                 ->icon('heroicons.outline.book-open'),

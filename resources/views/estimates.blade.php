@@ -13,7 +13,7 @@
                 @if ($errors->any())
                     <div class="alert alert-warning mt-5">
                         @foreach ($errors->all() as $error)
-                            <h6 class="m-0">{{ $error }}</h6>
+                            <h6 class="m-0"> - {{ $error }}</h6>
                         @endforeach
                     </div>
                 @endif
@@ -35,15 +35,19 @@
                         </small>
                     </h2>
 
-                    <form method="post" class="text-white footer-form" action="{{route('estimatesProcessing')}}">
+                    <form method="post" class="text-white footer-form" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">
                         @csrf
 
+                        <h4 class="fw-bold my-4">
+                            Email<sup class="text-danger">*</sup>
+                        </h4>
+
                         <div class="my-3">
-                            <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="email" name="email" placeholder="Email" value="{{old('email', '')}}" aria-label=".form-control-lg example">
+                            <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="email" name="email" placeholder="Write your email" value="{{old('email', '')}}" aria-label=".form-control-lg example">
                         </div>
 
                         <h4 class="fw-bold my-4">
-                            Disciplines
+                            Disciplines<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -106,13 +110,13 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="disciplines-other" value="{{old('disciplines-other', '')}}" placeholder="Write your discipline">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="disciplines-other" value="{{old('disciplines-other', '')}}" placeholder="Write your discipline">
                                 </div>
                             </div>
                         </div>
 
                         <h4 class="fw-bold my-4">
-                            Project Units
+                            Project Units<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -140,14 +144,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Project language
+                            Project language<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -189,14 +193,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="language-other" value="{{old('language-other', '')}}" placeholder="Write other language" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="language-other" value="{{old('language-other', '')}}" placeholder="Write other language" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Type of the building\construction
+                            Type of the building/construction<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -245,14 +249,24 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="type-other" value="{{old('type-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="type-other" value="{{old('type-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
+
+                        <h4 class="fw-bold my-4">
+                            Building/construction area<sup class="text-danger">*</sup>
+                        </h4>
+
                         <div class="my-3">
                             <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="area" value="{{old('area', '')}}" placeholder="Building/construction area" aria-label=".form-control-lg example">
                         </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            Height of a building/construction<sup class="text-danger">*</sup>
+                        </h4>
 
                         <div class="my-3">
                             <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="height" value="{{old('height', '')}}" placeholder="Height of a building/construction" aria-label=".form-control-lg example">
@@ -260,7 +274,7 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Incoming data
+                            Incoming data<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -337,14 +351,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Incoming Point Cloud
+                            Incoming Point Cloud<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -379,14 +393,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Task for modeling
+                            Task for modeling<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -435,14 +449,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            The purpose of the model
+                            The purpose of the model<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -491,14 +505,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="purpose-other" value="{{old('purpose-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="purpose-other" value="{{old('purpose-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Deliverables
+                            Deliverables<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -554,14 +568,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            Revit version
+                            Revit version<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -617,14 +631,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            LOD (Level of Detail)
+                            LOD (Level of Detail)<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -666,14 +680,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            LOI (Level of Information)
+                            LOI (Level of Information)<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -713,11 +727,11 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Project accuracy
+                            Project accuracy<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="accuracy" value="Other" {{ (old('accuracy') == '10 mm' ) ? 'checked' : '' }} id="accuracy1" style="width: 30px; height: 30px;">
+                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="accuracy" value="10 mm" {{ (old('accuracy') == '10 mm' ) ? 'checked' : '' }} id="accuracy1" style="width: 30px; height: 30px;">
                             <label class="form-check-label fw-bold ms-1 mt-2 h5" for="accuracy1">
                                 10 mm
                             </label>
@@ -748,14 +762,14 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
 
 
                         <h4 class="fw-bold my-4">
-                            In the absence of initial data or answers from the customer, the contractor has the right to independently indicate the delivery of the project for the number of downtime days
+                            In the absence of initial data or answers from the customer, the contractor has the right to independently indicate the delivery of the project for the number of downtime days<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -774,7 +788,7 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Possibility of making independent technical decisions by the performer
+                            Possibility of making independent technical decisions by the performer<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -793,7 +807,7 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Providing models and / or reports to control the work process
+                            Providing models and / or reports to control the work process<sup class="text-danger">*</sup>
                         </h4>
 
                         <div class="form-check d-flex align-items-center mb-3">
@@ -842,10 +856,46 @@
                             </div>
                             <div class="col-9">
                                 <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="reports-other" value="{{old('reports-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="reports-other" value="{{old('reports-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            Comment
+                        </h4>
+
+                        <div class="mb-3">
+                            <textarea class="form-control fw-bold border border-4 border-white px-2 shadow-none bg-transparent text-white" id="comment" name="comment" rows="3">{{old('comment', '')}}</textarea>
+                        </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            Upload project files
+                        </h4>
+
+                        <div class="mb-3">
+                            <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none bg-transparent text-white" type="file" name="files[]" id="files" multiple>
+                        </div>
+
+                        <h4 class="fw-bold my-4">
+                            Link to the drive, dropbox etc...
+                        </h4>
+
+                        <div class="mb-4">
+                            <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="link" placeholder="Link on cloud" value="{{old('link', '')}}" aria-label=".form-control-lg example">
+                        </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            Project reference
+                        </h4>
+
+                        <div class="mb-4">
+                            <input class="form-control form-control-lg fw-bold border border-4 border-white px-2 shadow-none" type="text" name="reference" placeholder="Reference to object" value="{{old('reference', '')}}" aria-label=".form-control-lg example">
+                        </div>
+
 
                         <button type="submit" class="btn btn-primary btn-lg border-0 w-50 fw-bold shadow-none mb-4 mb-lg-0 mt-4" style="background-color: #6bdcdb">
                             <span class="fw-bold h4 d-block my-1">SUBMIT</span>
