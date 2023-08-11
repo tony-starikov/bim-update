@@ -2830,7 +2830,7 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4">
+                    <div class="row p-0 mt-4">
                         @foreach($works as $work)
                             <div class="col-6 mt-4">
                                 <div class="portfolio-container">
@@ -2879,13 +2879,14 @@
                         @endforeach
                     </div>
 
-                    <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
-                        <div class="col-12 text-center p-5">
-                            <a id="button-scan2bim-our-projects-xxl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
+                            <a id="button-scan2bim-our-projects-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                                <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -2899,7 +2900,7 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4">
+                    <div class="row p-0 mt-4">
                         @foreach($works as $work)
                             <div class="col-6 mt-4">
                                 <div class="portfolio-container">
@@ -2948,10 +2949,10 @@
                         @endforeach
                     </div>
 
-                    <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
-                        <div class="col-12 text-center p-5">
-                            <a id="button-scan2bim-our-projects-xl" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-25" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
+                            <a id="button-scan2bim-our-projects-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                                <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                             </a>
                         </div>
                     </div>
@@ -2968,7 +2969,7 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4">
+                    <div class="row p-0 mt-4">
                         @foreach($works as $work)
                             <div class="col-6 mt-4">
                                 <div class="portfolio-container">
@@ -3017,10 +3018,10 @@
                         @endforeach
                     </div>
 
-                    <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
-                        <div class="col-12 text-center p-5">
-                            <a id="button-scan2bim-our-projects-lg" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
+                            <a id="button-scan2bim-our-projects-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                                <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                             </a>
                         </div>
                     </div>
@@ -3037,7 +3038,7 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0 mx-2 mt-4">
+                    <div class="row p-0 mt-4">
                         @foreach($works as $work)
                             <div class="col-6 mt-4">
                                 <div class="portfolio-container">
@@ -3086,10 +3087,10 @@
                         @endforeach
                     </div>
 
-                    <div class="row p-0 mx-3 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
-                        <div class="col-12 text-center p-5">
-                            <a id="button-scan2bim-our-projects-md" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                    <div class="row px-2 mt-4">
+                        <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
+                            <a id="button-scan2bim-our-projects-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                                <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                             </a>
                         </div>
                     </div>
@@ -3106,60 +3107,62 @@
                         </h2>
                     </div>
 
-                    <div class="row p-0">
-                        @foreach($works as $work)
-                            <div class="col-12 mx-auto mt-4">
-                                <div class="portfolio-container">
-                                    <div class="card border-0 w-100 text-bg-dark">
-                                        <img src="/images/{{ $work->image }}" class="img-fluid w-100" alt="...">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="row text-white">
-                                            <div class="col-12 p-2 px-4">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-7">
-                                                        <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_first }}</h4>
-                                                        <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_second }}</h4>
-                                                        <h5 style="font-size: 2.8vw; min-height: 2.8vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
+                    <div class="col-12">
+                        <div class="row">
+                            @foreach($works as $work)
+                                <div class="col-12 mt-4">
+                                    <div class="portfolio-container">
+                                        <div class="card border-0 w-100 text-bg-dark">
+                                            <img src="/images/{{ $work->image }}" class="img-fluid w-100" alt="...">
+                                        </div>
+                                        <div class="overlay">
+                                            <div class="row text-white">
+                                                <div class="col-12 p-2 px-4">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-7">
+                                                            <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_first }}</h4>
+                                                            <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_second }}</h4>
+                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
+                                                        </div>
+                                                        <div class="col-5 ps-0 mt-2">
+                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
+                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
+                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-5 ps-0 mt-2">
-                                                        <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
-                                                        <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
-                                                        <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->disciplines }}</h5>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->disciplines }}</h5>
-                                                    </div>
-                                                </div>
 
-                                                <div class="row m-0 border-bottom border-3 border-white">
-                                                </div>
-
-                                                <div class="row d-flex align-items-center">
-                                                    <div class="col-4 d-flex justify-content-center">
-                                                        <img src="/images/{{ $work->image_small }}" class="img-fluid w-100 mt-2" alt="...">
+                                                    <div class="row m-0 border-bottom border-3 border-white">
                                                     </div>
-                                                    <div class="col-8 px-0 d-flex justify-content-center">
-                                                        <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
-                                                            {{ $work->description }}
-                                                        </h6>
+
+                                                    <div class="row d-flex align-items-center">
+                                                        <div class="col-4 d-flex justify-content-center">
+                                                            <img src="/images/{{ $work->image_small }}" class="img-fluid w-100 mt-2" alt="...">
+                                                        </div>
+                                                        <div class="col-8 px-0 d-flex justify-content-center">
+                                                            <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
+                                                                {{ $work->description }}
+                                                            </h6>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
-                    </div>
+                            @endforeach
+                        </div>
 
-                    <div class="row p-0 mx-auto mt-4" style="border: 4px solid; border-color: #6ad9d8;">
-                        <div class="col-12 text-center p-5">
-                            <a id="button-scan2bim-our-projects" href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
-                            </a>
+                        <div class="row px-2 mt-4">
+                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
+                                <a id="button-scan2bim-our-projects" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
