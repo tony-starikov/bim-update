@@ -53,16 +53,17 @@
             background-color: transparent !important;
         }
         form.footer-form input::placeholder {
-            opacity: 1 !important; /* Firefox */
-            color: #ffffff !important;
-            font-size: 1.25rem !important;
-            padding-left: 1rem !important;
+            /*opacity: 1 !important; !* Firefox *!*/
+            color: #9a9a9a !important;
+            font-size: 1.5rem !important;
+            padding-left: 0 !important;
         }
         form.footer-form input[placeholder] {
-            opacity: 1 !important; /* Firefox */
-            color: #ffffff !important;
-            font-size: 1.25rem !important;
-            padding-left: 1rem !important;
+            /*opacity: 1 !important; !* Firefox *!*/
+            color: #9a9a9a !important;
+            font-size: 1.5rem !important;
+            padding-left: 0 !important;
+            /*padding-bottom: 0 !important;*/
         }
 
         form.footer-form textarea {
@@ -70,13 +71,15 @@
         }
 
         form.footer-form input[type=file]::file-selector-button {
-            color: white;
-            background-color: transparent;
+            color: #9a9a9a;
+            padding-left: 1.5rem;
+            /*background-color: transparent;*/
         }
 
         form.footer-form input[type=file]::file-selector-button:hover {
-            color: white;
-            background-color: transparent;
+            color: #9a9a9a;
+            padding-left: 1.5rem;
+            /*background-color: transparent;*/
         }
 
         /*form.subscribe-form input {*/
