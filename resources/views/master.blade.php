@@ -207,7 +207,8 @@
 
         #video {
             width: 100%;
-            height: 100%;
+            /*height: 100%;*/
+            min-height: 100vh;
             object-fit: cover;
             position: absolute;
             top: 0;

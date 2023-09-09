@@ -130,7 +130,7 @@ class WorkSeeder extends Seeder
                 'parameter_3' => 'LOD struct.: 500',
                 'description' => "Modeling of the building by point cloud. Modeling of 2 steel structures with equipment (Antennas, RRU, cabinets) for 3 sectors and cable trays between them. Safety objects. Production drawings.
                 ",
-                'department' => '',
+                'department' => 'telecom-design',
                 'image' => 'works/Rooftop_1x.png',
                 'image_small' => 'works/Rooftop_small.png',
             ],
@@ -145,7 +145,7 @@ class WorkSeeder extends Seeder
                 'parameter_3' => 'Time: 43h',
                 'description' => "Modeling of the tower with equipment supports at the top. Analytical model. Equipment. Cable trays. Safety objects. The area around the tower.
                 ",
-                'department' => '',
+                'department' => 'telecom-design',
                 'image' => 'works/Towe_1x.png',
                 'image_small' => 'works/Tower_small.png',
             ],

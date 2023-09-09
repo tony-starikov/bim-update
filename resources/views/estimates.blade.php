@@ -6,7 +6,7 @@
 
 @section('main')
 
-    <div class="container-fluid d-none d-xl-block" style="background-image: url(/images/estimates/header3.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+    <div class="container-fluid d-none d-xl-block" style="background-image: url(/images/estimates/header_main.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row px-0 px-lg-5 my-0 my-lg-5">
 
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-lg-block d-xl-none" style="background-image: url(/images/estimates/header3.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+    <div class="container-fluid d-none d-lg-block d-xl-none" style="background-image: url(/images/estimates/header_main.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row px-0 px-lg-5 my-0">
 
@@ -122,7 +122,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background-image: url(/images/estimates/header3.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+    <div class="container-fluid d-none d-md-block d-lg-none" style="background-image: url(/images/estimates/header_main.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row px-0 px-lg-5 py-5">
 
@@ -180,7 +180,7 @@
         </div>
     </div>
 
-    <div class="container-fluid d-md-none" style="background-image: url(/images/estimates/header3.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+    <div class="container-fluid d-md-none" style="background-image: url(/images/estimates/header_main.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row px-0 px-lg-5 py-5">
 
@@ -1365,14 +1365,6 @@
                 </div>
             </div>
             <div class="row align-items-center">
-
-                {{--                @if ($errors->any())--}}
-                {{--                    <div class="alert alert-warning mt-5">--}}
-                {{--                        @foreach ($errors->all() as $error)--}}
-                {{--                            <h6 class="m-0"> - {{ $error }}</h6>--}}
-                {{--                        @endforeach--}}
-                {{--                    </div>--}}
-                {{--                @endif--}}
 
                 <div class="col-12 mt-5">
                     <form method="post" class="text-white footer-form" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">

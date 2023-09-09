@@ -28,7 +28,7 @@ class ServiceSeeder extends Seeder
                 'image' => 'service/Telecom_3.png',
                 'slug' => 'telecom-design',
                 'presentation' => 'presentations/telecom_design.pdf',
-                'show_page' => 0,
+                'show_page' => 1,
             ],
             [
                 'title_en' => 'Scan to BIM',

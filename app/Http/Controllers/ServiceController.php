@@ -35,14 +35,14 @@ class ServiceController extends Controller
 
         $services = Service::all();
 
-        $works = Work::where('department', 'scan-to-bim')->get();
-
-//        $service = Service::where('slug', $slug)->first();
+        $works = Work::where('department', $slug)->get();
 
         $contacts = Contact::all();
 
         $posts = Post::take(5)->get();
 
-        return view('services.scan_to_bim', compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts'));
+        $viewName = 'services.' . str_replace("-", "_", $slug);
+
+        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts'));
     }
 }

@@ -34,7 +34,7 @@
                         {{ $post->date }}
                     </h5>
                 </div>
-                <div class="col-12">
+                <div class="col-12" style="font-family: 'Montserrat', sans-serif !important;">
                     {!! $post->content !!}
                 </div>
             </div>
@@ -68,7 +68,7 @@
                             {{ $post->date }}
                         </h6>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12" style="font-family: 'Montserrat', sans-serif !important;">
                         {!! $post->content !!}
                     </div>
                 </div>

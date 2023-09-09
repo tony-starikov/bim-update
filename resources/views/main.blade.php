@@ -8,13 +8,13 @@
 
     <div id="bg-video">
         <video id="video" poster="/images/poster.png" autoplay playsinline muted loop>
-            <source src="/images/bg_video_last.webm" type="video/webm">
-            <source src="/images/bg_video_last.mp4" type="video/mp4">
+            <source src="/images/video/bg_video_new_1.webm" type="video/webm">
+            <source src="images/video/bg_video_new_1.mp4" type="video/mp4">
         </video>
 
-        <div class="container-fluid d-none d-xxl-block">
+        <div class="container-fluid d-none d-xxl-block" style="min-height: 100vh;">
             <div class="container p-5">
-                <div class="row px-5 mt-2">
+                <div class="row px-5 mt-2 align-items-center">
                     <div class="col-12 mt-5 text-center">
                         <h1 class="d-none">Bimprove</h1>
                         <h2 class="text-white fw-bold mt-5 display-5">
@@ -29,9 +29,9 @@
                 </div>
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-5 order-md-3 order-lg-4">
-                        <a id="button-first-screen-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                    <div class="col-12 col-md-5 col-lg-4 order-md-3 order-lg-4">
+                        <a id="button-first-screen-xxl" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
@@ -69,9 +69,9 @@
                 </div>
 
                 <div class="row p-5 my-3 d-flex justify-content-center">
-                    <div class="col-12 col-md-5 col-lg-6 order-md-3 order-lg-4">
-                        <a id="button-first-screen-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                    <div class="col-12 col-md-5 col-lg-5 order-md-3 order-lg-4">
+                        <a id="button-first-screen-xl" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xl" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-6 order-md-3 order-lg-4">
-                        <a id="button-first-screen-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-1">ESTIMATE YOUR PROJECT</span>
+                        <a id="button-first-screen-lg" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-lg" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-1">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
@@ -167,8 +167,8 @@
 
                 <div class="row p-5 d-flex justify-content-center">
                     <div class="col-12 col-md-8 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-1">ESTIMATE YOUR PROJECT</span>
+                        <a id="button-first-screen-md" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-md" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-1">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
@@ -224,8 +224,8 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-10 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen-sm" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-1">ESTIMATE YOUR PROJECT</span>
+                        <a id="button-first-screen-sm" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-sm" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-1">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
@@ -271,8 +271,8 @@
 
                 <div class="row p-5 py-3 d-flex justify-content-center">
                     <div class="col-12 col-md-5 col-lg-3 order-md-3 order-lg-4">
-                        <a id="button-first-screen" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-1">ESTIMATE YOUR PROJECT</span>
+                        <a id="button-first-screen" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-1">OUR SERVICES</span>
                         </a>
                     </div>
                 </div>
