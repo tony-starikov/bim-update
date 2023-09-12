@@ -20,7 +20,7 @@ class ServiceSeeder extends Seeder
                 'image' => 'service/MEP_coordination_3.png',
                 'slug' => 'mep-coordination',
                 'presentation' => 'presentations/mep_coordination.pdf',
-                'show_page' => 0,
+                'show_page' => 1,
             ],
             [
                 'title_en' => 'Telecom Design',
