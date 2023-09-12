@@ -44,6 +44,6 @@ class EstimationController extends Controller
 
         Estimation::create($parameters);
 
-        return back()->with('success', 'Estimation started');
+        return redirect()->route('thanks');
     }
 }
