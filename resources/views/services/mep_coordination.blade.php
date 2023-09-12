@@ -3591,7 +3591,7 @@
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
                         <span class="fw-bold h4 d-block my-2">
                             DOWNLOAD PRESENTATION
                         </span>
@@ -3605,7 +3605,7 @@
             <div class="container p-5">
                 <div class="row p-5">
                     <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
                         <span class="fw-bold h4 d-block my-2">
                             DOWNLOAD PRESENTATION
                         </span>
@@ -3619,7 +3619,7 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
                         <span class="fw-bold h4 d-block my-2">
                             DOWNLOAD PRESENTATION
                         </span>
