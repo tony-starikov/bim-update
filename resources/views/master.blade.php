@@ -625,21 +625,19 @@
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
                         <h5 class="fw-semibold text-white text-center mb-4">About</h5>
                     </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">Team</h6>
+                    </a>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="ps-1 fw-semibold text-white text-center mb-4">Blog</h5>
+                        <h5 class="ps-5 ms-3 fw-semibold text-white mb-4">Blog</h5>
                     </a>
                     @foreach($posts as $post)
                         <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
-                            <h6 class="px-0 ps-5 ms-4 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
+                            <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
                         </a>
                     @endforeach
-                </div>
-                <div class="col-2 text-center">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h5 class="fw-semibold text-white mb-4">Team</h5>
-                    </a>
                 </div>
                 <div class="col-2">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
@@ -741,21 +739,19 @@
                     <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
                         <h5 class="fw-semibold text-white text-center mb-4">About</h5>
                     </a>
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
+                        <h6 class="px-0 ps-5 ms-1 text-white border-bottom-2 border-white small">Team</h6>
+                    </a>
                 </div>
-                <div class="col-2">
+                <div class="col-4">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="ms-1 fw-semibold text-white text-center mb-4">Blog</h5>
+                        <h5 class="ps-5 fw-semibold text-white mb-4">Blog</h5>
                     </a>
                     @foreach($posts as $post)
                         <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
-                            <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
+                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
                         </a>
                     @endforeach
-                </div>
-                <div class="col-2 text-center">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h5 class="fw-semibold text-white mb-4">Team</h5>
-                    </a>
                 </div>
                 <div class="col-2">
                     <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
