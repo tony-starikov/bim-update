@@ -22,32 +22,41 @@
                     <div class="row">
                         <div class="col-12 px-0 mt-3">
                             <h2 class="display-5 text-white fw-bold mt-5 mb-0">
-                                BIM ESTIMATES FOR YOUR PROJECT
+                                BIM ESTIMATES FOR YOUR PROJECT<br>
+                                SCAN TO BIM SERVICE
                             </h2>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-8 px-0 mt-5">
-                            <h2 class="text-white">
+                            <h3 class="text-white">
                                 Get an estimate for your BIM project from BIMprove LLC. Personalized approach to each client.
-                            </h2>
+                            </h3>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-8 px-0 mt-5">
-                            <h2 class="text-white">
+                            <h3 class="text-white">
                                 Our team of experts will analyze the unique requirements of your project and provide an accurate and detailed estimate.
-                            </h2>
+                            </h3>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-5 px-0 mt-5">
-                            <h2 class="text-white">
-                                Request an estimate now to maximize the potential of your BIM project.
-                            </h2>
+                            <h3 class="text-white">
+                                Request a free estimate now!
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 px-0 mt-2">
+                            <h6 class="text-white">
+                                Maximize the potential of your BIM project.
+                            </h6>
                         </div>
                     </div>
 
@@ -80,32 +89,41 @@
                     <div class="row">
                         <div class="col-12 px-0 mt-3">
                             <h2 class="display-6 text-white fw-bold mt-5 mb-0">
-                                BIM ESTIMATES FOR YOUR PROJECT
+                                BIM ESTIMATES FOR YOUR PROJECT<br>
+                                SCAN TO BIM SERVICE
                             </h2>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-10 px-0 mt-5">
-                            <h4 class="text-white">
+                            <h5 class="text-white">
                                 Get an estimate for your BIM project from BIMprove LLC. Personalized approach to each client.
-                            </h4>
+                            </h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-8 px-0 mt-5">
-                            <h4 class="text-white">
+                            <h5 class="text-white">
                                 Our team of experts will analyze the unique requirements of your project and provide an accurate and detailed estimate.
-                            </h4>
+                            </h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-5 px-0 mt-5">
-                            <h4 class="text-white">
-                                Request an estimate now to maximize the potential of your BIM project.
-                            </h4>
+                            <h5 class="text-white">
+                                Request a free estimate now!
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 px-0 mt-2">
+                            <h6 class="text-white">
+                                Maximize the potential of your BIM project.
+                            </h6>
                         </div>
                     </div>
 
@@ -138,32 +156,41 @@
                     <div class="row">
                         <div class="col-12 px-0 mt-3">
                             <h2 class="h2 text-white fw-bold mt-5 mb-0">
-                                BIM ESTIMATES FOR YOUR PROJECT
+                                BIM ESTIMATES FOR YOUR PROJECT<br>
+                                SCAN TO BIM SERVICE
                             </h2>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-10 px-0 mt-5">
-                            <h4 class="text-white">
+                            <h5 class="text-white">
                                 Get an estimate for your BIM project from BIMprove LLC. Personalized approach to each client.
-                            </h4>
+                            </h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-8 px-0 mt-5">
-                            <h4 class="text-white">
+                            <h5 class="text-white">
                                 Our team of experts will analyze the unique requirements of your project and provide an accurate and detailed estimate.
-                            </h4>
+                            </h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-5 px-0 mt-5">
-                            <h4 class="text-white">
-                                Request an estimate now to maximize the potential of your BIM project.
-                            </h4>
+                            <h5 class="text-white">
+                                Request a free estimate now!
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5 px-0 mt-2">
+                            <h6 class="text-white">
+                                Maximize the potential of your BIM project.
+                            </h6>
                         </div>
                     </div>
 
@@ -196,7 +223,8 @@
                     <div class="row">
                         <div class="col-12 mt-2">
                             <h2 class="h2 text-white fw-bold mt-5 mb-0">
-                                BIM ESTIMATES FOR YOUR PROJECT
+                                BIM ESTIMATES FOR YOUR PROJECT<br>
+                                SCAN TO BIM SERVICE
                             </h2>
                         </div>
                     </div>
@@ -220,14 +248,22 @@
                     <div class="row">
                         <div class="col-12 mt-4">
                             <h5 class="text-white">
-                                Request an estimate now to maximize the potential of your BIM project.
+                                Request a free estimate now!
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 mt-2">
+                            <h5 class="text-white">
+                                Maximize the potential of your BIM project.
                             </h5>
                         </div>
                     </div>
 
 
                     <div class="row justify-content-center">
-                        <div class="col-7 mt-4">
+                        <div class="col-9 mt-4">
                             <a href="#estimation4" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
                                 <span class="fw-bold h6 d-block my-2">ESTIMATE PROJECT <i class="las la-lg la-arrow-down"></i></span>
                             </a>
