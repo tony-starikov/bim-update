@@ -1152,9 +1152,12 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                        <a id="button-five-stars-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">
-                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                        </a>
+{{--                                        <a id="button-five-stars-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 button-five-stars-xxl" style="background-color: #43aeb6">--}}
+{{--                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>--}}
+{{--                                        </a>--}}
+                                        <button id="button-five-stars-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1203,9 +1206,12 @@
                             <div class="col-12 col-sm-6 col-lg-4 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">
-                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                        </a>
+{{--                                        <a id="button-five-stars-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn border-0 rounded-4 shadow-none w-100 button-five-stars-xl" style="background-color: #43aeb6">--}}
+{{--                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>--}}
+{{--                                        </a>--}}
+                                        <button id="button-five-stars-xl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1254,9 +1260,12 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">
-                                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                        </a>
+{{--                                        <a id="button-five-stars-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-lg" style="background-color: #43aeb6">--}}
+{{--                                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>--}}
+{{--                                        </a>--}}
+                                        <button id="button-five-stars-lg" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1305,9 +1314,12 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">
-                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                        </a>
+{{--                                        <a id="button-five-stars-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-md" style="background-color: #43aeb6">--}}
+{{--                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>--}}
+{{--                                        </a>--}}
+                                        <button id="button-five-stars-md" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1356,9 +1368,12 @@
                             <div class="col-6 my-3">
                                 <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                     <div class="d-flex align-items-center h-50 px-3" style="background-color: #6de1df">
-                                        <a id="button-five-stars-sm" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">
-                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                        </a>
+{{--                                        <a id="button-five-stars-sm" href="{{ route('estimates') }}" role="button" class="btn btn-primary border-0 rounded-4 shadow-none w-100 button-five-stars-sm" style="background-color: #43aeb6">--}}
+{{--                                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>--}}
+{{--                                        </a>--}}
+                                        <button id="button-five-stars-sm" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

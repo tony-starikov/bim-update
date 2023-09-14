@@ -226,7 +226,16 @@
                         <p class="h5 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <h2 class="fw-semibold mt-5 mb-3">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                                    <span class="fw-bold h4 d-block my-2">
+                                        DOWNLOAD PRESENTATION
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="fw-semibold mb-3">
                             What disciplines we work with?
                         </h2>
                     </div>
@@ -294,7 +303,16 @@
                         <p class="h5 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <h2 class="fw-semibold mt-5 mb-3">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                                    <span class="fw-bold h4 d-block my-2">
+                                        DOWNLOAD PRESENTATION
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h2 class="fw-semibold mb-3">
                             What disciplines we work with?
                         </h2>
                     </div>
@@ -362,7 +380,16 @@
                         <p class="h6 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <h4 class="fw-semibold mt-5 mb-3">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                                    <span class="fw-bold h5 d-block my-2">
+                                        DOWNLOAD PRESENTATION
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="fw-semibold mb-3">
                             What disciplines we work with?
                         </h4>
                     </div>
@@ -430,7 +457,16 @@
                         <p class="h6 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <h4 class="fw-semibold mt-5 mb-3">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                                    <span class="fw-bold h5 d-block my-2">
+                                        DOWNLOAD PRESENTATION
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="fw-semibold mb-3">
                             What disciplines we work with?
                         </h4>
                     </div>
@@ -498,7 +534,16 @@
                         <p class="h6 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <h4 class="fw-semibold mt-5 mb-3">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                                    <span class="fw-bold h5 d-block my-2">
+                                        DOWNLOAD PRESENTATION
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="fw-semibold mb-3">
                             What disciplines we work with?
                         </h4>
                     </div>
@@ -1188,6 +1233,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="h5 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1292,6 +1345,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1391,6 +1452,12 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1493,6 +1560,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1593,6 +1665,11 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-12">
+                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -2500,31 +2577,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2559,31 +2636,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2618,37 +2695,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2683,37 +2760,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2748,19 +2825,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2795,19 +2872,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2842,37 +2919,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                             </ul>
                                         </div>
                                     </section>
-                                </div>
-
-                                <div class="col-12">
-                                    <p class="h5 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                        Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -2906,31 +2977,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -2965,31 +3036,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.jpg" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -3024,37 +3095,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -3089,37 +3160,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -3154,19 +3225,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -3201,19 +3272,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -3248,37 +3319,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.png" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                             </ul>
                                         </div>
                                     </section>
-                                </div>
-
-                                <div class="col-12">
-                                    <p class="h5 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                        Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -3580,50 +3645,6 @@
                                 {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="DOWNLOAD">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-lg-none">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -758,6 +758,49 @@
                     </div>
                 </div>
             </div>
+            <div id="DOWNLOAD">
+                <div class="container-fluid d-none d-xl-block">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-none d-lg-block d-xl-none">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-lg-none">
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid" style="background: url('/images/service/telecom_design_images/services/steel/propose.jpg') no-repeat center center local; background-size: cover;">
                 <div class="container px-5">
                     <div class="row px-5">
@@ -841,6 +884,49 @@
                     </div>
                 </div>
             </div>
+            <div id="DOWNLOAD">
+                <div class="container-fluid d-none d-xl-block">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-none d-lg-block d-xl-none">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-lg-none">
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid" style="background: url('/images/service/telecom_design_images/services/steel/propose.jpg') no-repeat center center local; background-size: cover;">
                 <div class="container px-5 py-4">
                     <div class="row px-5">
@@ -919,6 +1005,49 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="DOWNLOAD">
+                <div class="container-fluid d-none d-xl-block">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-none d-lg-block d-xl-none">
+                    <div class="container p-5">
+                        <div class="row p-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-lg-none">
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="col-12 text-center">
+                                <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <span class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1451,50 +1580,6 @@
                                 {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="DOWNLOAD">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-lg-none">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12 text-center">
-                        <a href="{{ route('downloadService', 'telecom-design') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                        <span class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </span>
-                        </a>
                     </div>
                 </div>
             </div>
