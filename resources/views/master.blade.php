@@ -52,15 +52,23 @@
             appearance: none;
             background-color: transparent !important;
         }
+        /*form.footer-form input[type='checkbox']:checked:after {*/
+        /*    !*content: '✔';*!*/
+        /*    color: red;*/
+        /*    font-weight: bold;*/
+        /*    content: 'x';*/
+        /*    display: block;*/
+        /*    text-align: center;*/
+        /*}*/
         form.footer-form input::placeholder {
             /*opacity: 1 !important; !* Firefox *!*/
-            color: #9a9a9a !important;
+            color: white !important;
             font-size: 1.5rem !important;
             padding-left: 0 !important;
         }
         form.footer-form input[placeholder] {
             /*opacity: 1 !important; !* Firefox *!*/
-            color: #9a9a9a !important;
+            color: white !important;
             font-size: 1.5rem !important;
             padding-left: 0 !important;
             /*padding-bottom: 0 !important;*/

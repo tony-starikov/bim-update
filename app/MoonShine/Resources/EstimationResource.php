@@ -5,6 +5,7 @@ namespace App\MoonShine\Resources;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Estimation;
 
+use MoonShine\Fields\Json;
 use MoonShine\Fields\Text;
 use MoonShine\Resources\Resource;
 use MoonShine\Fields\ID;
@@ -26,22 +27,23 @@ class EstimationResource extends Resource
         return [
             ID::make()->sortable(),
             Email::make('E-mail', 'email'),
-            Text::make('Disciplines', 'disciplines')->hideOnIndex(),
+            Json::make('Disciplines', 'disciplines')->keyValue('#', 'Value')->hideOnIndex(),
             Text::make('Project Units', 'units')->hideOnIndex(),
-            Text::make('Project language', 'language')->hideOnIndex(),
             Text::make('Type of the building', 'type')->hideOnIndex(),
             Text::make('Construction area', 'area')->hideOnIndex(),
             Text::make('Construction height', 'height')->hideOnIndex(),
-            Text::make('Incoming data', 'data')->hideOnIndex(),
-            Text::make('Incoming Point Cloud', 'incoming_point_cloud')->hideOnIndex(),
-            Text::make('Task for modeling', 'task_for_modeling')->hideOnIndex(),
-            Text::make('Revit version', 'revit_version')->hideOnIndex(),
+            Json::make('Incoming data', 'data')->keyValue('#', 'Value')->hideOnIndex(),
+            Json::make('Incoming Point Cloud', 'cloud')->keyValue('#', 'Value')->hideOnIndex(),
+            Json::make('Task for modeling', 'task')->keyValue('#', 'Value')->hideOnIndex(),
+            Json::make('Deliverables', 'deliverables')->keyValue('#', 'Value')->hideOnIndex(),
+            Text::make('Revit version', 'version')->hideOnIndex(),
             Text::make('LOD (Level of Detail)', 'lod')->hideOnIndex(),
-            Text::make('LOI (Level of Information)', 'loi')->hideOnIndex(),
-            Text::make('Project accuracy', 'project_accuracy')->hideOnIndex(),
-            Text::make('Deliverables', 'deliverables')->hideOnIndex(),
+            Json::make('LOI (Level of Information)', 'loi')->keyValue('#', 'Value')->hideOnIndex(),
+            Text::make('Project accuracy', 'accuracy')->hideOnIndex(),
+            Text::make('Start and Finish', 'start')->hideOnIndex(),
+            Text::make('Address', 'address')->hideOnIndex(),
+            Url::make('Link to a Google map', 'link')->hideOnIndex(),
             Text::make('Comment', 'comment')->hideOnIndex(),
-            Url::make('Project reference', 'reference')->hideOnIndex(),
             File::make('Files', 'files')
                 ->disk('public')
                 ->dir('upload')
@@ -49,7 +51,7 @@ class EstimationResource extends Resource
                 ->removable()
                 ->hideOnIndex()
                 ->keepOriginalFileName(),
-            Url::make('Link to the drive', 'cloud_link')->hideOnIndex(),
+            Url::make('Project reference', 'reference')->hideOnIndex(),
         ];
 	}
 
