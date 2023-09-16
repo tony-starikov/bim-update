@@ -111,13 +111,26 @@ class EstimationController extends Controller
             unset($parameters['version-other']);
         }
 
-        if ( $parameters['lod'] == 'Other' and !$request->filled('lod-other') ) {
-            return back()->withErrors('Please, write your LOD (Level of Detail) variant.')->withInput();
+        if (in_array('Other', $parameters['lod']) and !$request->filled('lod-other') ) {
+            return back()->withErrors('Please, write your lod variant.')->withInput();
         } else {
-            if ($parameters['lod-other']) {
-                $parameters['lod'] = $parameters['lod-other'];
+            if (in_array('Other', $parameters['lod'])) {
+                $index = array_search('Other', $parameters['lod']);
+                unset($parameters['lod'][$index]);
+                $parameters['lod'][$index] = "Other: " . $parameters['lod-other'];
             }
             unset($parameters['lod-other']);
+        }
+
+        if (in_array('Other', $parameters['loi']) and !$request->filled('loi-other') ) {
+            return back()->withErrors('Please, write your loi additional parameters.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['loi'])) {
+                $index = array_search('Other', $parameters['loi']);
+                unset($parameters['loi'][$index]);
+                $parameters['loi'][$index] = "Other: " . $parameters['loi-other'];
+            }
+            unset($parameters['loi-other']);
         }
 
         if ($parameters['accuracy'] == 'Other' and !$request->filled('accuracy-other')) {

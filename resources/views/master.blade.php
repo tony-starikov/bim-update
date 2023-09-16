@@ -74,8 +74,14 @@
             /*padding-bottom: 0 !important;*/
         }
 
-        form.footer-form textarea {
-            font-size: 1.25rem !important;
+        form.footer-form textarea::placeholder {
+            color: white !important;
+            font-size: 1.5rem !important;
+        }
+
+        form.footer-form textarea[placeholder] {
+            color: white !important;
+            font-size: 1.5rem !important;
         }
 
         form.footer-form input[type=file]::file-selector-button {

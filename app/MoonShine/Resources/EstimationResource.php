@@ -37,7 +37,7 @@ class EstimationResource extends Resource
             Json::make('Task for modeling', 'task')->keyValue('#', 'Value')->hideOnIndex(),
             Json::make('Deliverables', 'deliverables')->keyValue('#', 'Value')->hideOnIndex(),
             Text::make('Revit version', 'version')->hideOnIndex(),
-            Text::make('LOD (Level of Detail)', 'lod')->hideOnIndex(),
+            Json::make('LOD (Level of Detail)', 'lod')->keyValue('#', 'Value')->hideOnIndex(),
             Json::make('LOI (Level of Information)', 'loi')->keyValue('#', 'Value')->hideOnIndex(),
             Text::make('Project accuracy', 'accuracy')->hideOnIndex(),
             Text::make('Start and Finish', 'start')->hideOnIndex(),

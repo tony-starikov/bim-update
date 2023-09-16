@@ -24,7 +24,7 @@ return new class extends Migration
             $table->json('task');
             $table->json('deliverables');
             $table->text('version');
-            $table->text('lod');
+            $table->json('lod');
             $table->json('loi');
             $table->text('accuracy');
             $table->text('start')->nullable();

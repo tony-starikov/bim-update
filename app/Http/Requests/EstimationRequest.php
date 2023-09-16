@@ -54,7 +54,7 @@ class EstimationRequest extends FormRequest
             'task' => 'required|array',
             'deliverables' => 'required|array',
             'version' => 'required|string',
-            'lod' => 'required|string',
+            'lod' => 'required|array',
             'loi' => 'required|array',
             'accuracy' => 'required|string',
             'start' => 'nullable|string',
