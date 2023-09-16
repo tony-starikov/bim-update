@@ -15,6 +15,8 @@
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
+    <meta property="og:image" content="/images/bim_prove.png">
+
     @seo
 
     <!-- CSS only -->
