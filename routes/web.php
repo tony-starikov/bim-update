@@ -39,3 +39,6 @@ Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])
 
 Route::get('/estimates-project', [EstimationController::class, 'show'])->name('estimates');
 Route::post('/estimates-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
+
+Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('estimatesMep');
+Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');
