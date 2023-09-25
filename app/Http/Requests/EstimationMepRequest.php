@@ -31,7 +31,7 @@ class EstimationMepRequest extends FormRequest
             'lod' => 'required|string',
             'data' => 'required|array',
             'version' => 'required|string',
-            'coordination_software' => 'nullable|array',
+            'coordinationSoftware' => 'nullable|array',
             'fabrication_software' => 'nullable|string',
             'duration' => 'required|string',
             'draftsmen' => 'nullable|string',
@@ -47,28 +47,28 @@ class EstimationMepRequest extends FormRequest
         ];
     }
 
-//    /**
-//     * Custom message for validation
-//     *
-//     * @return array
-//     */
-//    public function messages()
-//    {
-//        return [
-//            'email.required' => 'Email is required!',
-//            'disciplines.required' => 'Discipline is required!',
-//            'units.required' => 'Units is required!',
-//            'type.required' => 'Type of the building/construction is required!',
-//            'area.required' => 'Building/construction area is required!',
-//            'height.required' => 'Height of a building/construction is required!',
-//            'data.required' => 'Incoming data is required!',
-//            'cloud.required' => 'Incoming Point Cloud is required!',
-//            'task.required' => 'Task for modeling is required!',
-//            'deliverables.required' => 'Deliverables is required!',
-//            'version.required' => 'Revit version is required!',
-//            'lod.required' => 'LOD (Level of Detail) is required!',
-//            'loi.required' => 'LOI (Level of Information) is required!',
-//            'accuracy.required' => 'Project accuracy is required!',
-//        ];
-//    }
+    /**
+     * Custom message for validation
+     *
+     * @return array
+     */
+    public function messages()
+    {
+        return [
+            'email.required' => 'Email is required!',
+            'type.required' => 'Type of the building/construction is required!',
+            'language.required' => 'Project language is required!',
+            'units.required' => 'Project units is required!',
+            'disciplines.required' => 'Discipline is required!',
+            'services.required' => 'Services is required!',
+            'lod.required' => 'LOD (Level of Detail) is required!',
+            'data.required' => 'Incoming data is required!',
+            'version.required' => 'Revit version is required!',
+            'duration.required' => 'Expected project duration is required!',
+            'deliverables.required' => 'Deliverables is required!',
+            'downtime.required' => 'In the absence of initial data or answers from the customer, the contractor has the right to independently indicate the delivery of the project for the number of downtime days is required!',
+            'decisions.required' => 'Possibility of making independent technical decisions by the performer is required!',
+            'files.required' => 'Files is required!',
+        ];
+    }
 }

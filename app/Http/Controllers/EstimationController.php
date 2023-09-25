@@ -256,70 +256,91 @@ class EstimationController extends Controller
             unset($parameters['version-other']);
         }
 
-        if (in_array('Other', $parameters['coordination_software']) and !$request->filled('coordination_software-other') ) {
-            return back()->withErrors('Please, write your coordination software variant.')->withInput();
-        } else {
-            if (in_array('Other', $parameters['coordination_software'])) {
-                $index = array_search('Other', $parameters['coordination_software']);
-                unset($parameters['coordination_software'][$index]);
-                $parameters['coordination_software'][$index] = "Other: " . $parameters['coordination_software-other'];
+        if (isset($parameters['coordinationSoftware'])) {
+            if (in_array('Other', $parameters['coordinationSoftware']) and !$request->filled('coordinationSoftware-other') ) {
+                return back()->withErrors('Please, write your coordination software variant.')->withInput();
+            } else {
+                if (in_array('Other', $parameters['coordinationSoftware'])) {
+                    $index = array_search('Other', $parameters['coordinationSoftware']);
+                    unset($parameters['coordinationSoftware'][$index]);
+                    $parameters['coordinationSoftware'][$index] = "Other: " . $parameters['coordinationSoftware-other'];
+                }
             }
-            unset($parameters['coordination_software-other']);
         }
 
-        if ( $parameters['fabrication_software'] == 'Other' and !$request->filled('fabrication_software-other') ) {
-            return back()->withErrors('Please, write your fabrication software variant.')->withInput();
-        } else {
-            if ($parameters['fabrication_software-other']) {
-                $parameters['fabrication_software'] = $parameters['fabrication_software-other'];
+        unset($parameters['coordinationSoftware-other']);
+
+        if (isset($parameters['fabrication_software'])) {
+            if ( $parameters['fabrication_software'] == 'Other' and !$request->filled('fabrication_software-other') ) {
+                return back()->withErrors('Please, write your fabrication software variant.')->withInput();
+            } else {
+                if ($parameters['fabrication_software-other']) {
+                    $parameters['fabrication_software'] = $parameters['fabrication_software-other'];
+                }
             }
-            unset($parameters['fabrication_software-other']);
         }
 
-        if ( $parameters['duration'] == 'Other' and !$request->filled('duration-other') ) {
-            return back()->withErrors('Please, write your duration variant.')->withInput();
-        } else {
-            if ($parameters['duration-other']) {
-                $parameters['duration'] = $parameters['duration-other'];
+        unset($parameters['fabrication_software-other']);
+
+        if (isset($parameters['duration'])) {
+            if ( $parameters['duration'] == 'Other' and !$request->filled('duration-other') ) {
+                return back()->withErrors('Please, write your duration variant.')->withInput();
+            } else {
+                if ($parameters['duration-other']) {
+                    $parameters['duration'] = $parameters['duration-other'];
+                }
             }
-            unset($parameters['duration-other']);
         }
 
-        if ( $parameters['draftsmen'] == 'Other' and !$request->filled('draftsmen-other') ) {
-            return back()->withErrors('Please, write your draftsmens variant.')->withInput();
-        } else {
-            if ($parameters['draftsmen-other']) {
-                $parameters['draftsmen'] = $parameters['draftsmen-other'];
+        unset($parameters['duration-other']);
+
+        if (isset($parameters['draftsmen'])) {
+            if ( $parameters['draftsmen'] == 'Other' and !$request->filled('draftsmen-other') ) {
+                return back()->withErrors('Please, write your draftsmens variant.')->withInput();
+            } else {
+                if ($parameters['draftsmen-other']) {
+                    $parameters['draftsmen'] = $parameters['draftsmen-other'];
+                }
             }
-            unset($parameters['draftsmen-other']);
         }
 
-        if ( $parameters['modelers'] == 'Other' and !$request->filled('modelers-other') ) {
-            return back()->withErrors('Please, write your modelers variant.')->withInput();
-        } else {
-            if ($parameters['modelers-other']) {
-                $parameters['modelers'] = $parameters['modelers-other'];
+        unset($parameters['draftsmen-other']);
+
+        if (isset($parameters['modelers'])) {
+            if ( $parameters['modelers'] == 'Other' and !$request->filled('modelers-other') ) {
+                return back()->withErrors('Please, write your modelers variant.')->withInput();
+            } else {
+                if ($parameters['modelers-other']) {
+                    $parameters['modelers'] = $parameters['modelers-other'];
+                }
             }
-            unset($parameters['modelers-other']);
         }
 
-        if ( $parameters['coordinators'] == 'Other' and !$request->filled('coordinators-other') ) {
-            return back()->withErrors('Please, write your coordinators variant.')->withInput();
-        } else {
-            if ($parameters['coordinators-other']) {
-                $parameters['coordinators'] = $parameters['coordinators-other'];
+        unset($parameters['modelers-other']);
+
+        if (isset($parameters['coordinators'])) {
+            if ( $parameters['coordinators'] == 'Other' and !$request->filled('coordinators-other') ) {
+                return back()->withErrors('Please, write your coordinators variant.')->withInput();
+            } else {
+                if ($parameters['coordinators-other']) {
+                    $parameters['coordinators'] = $parameters['coordinators-other'];
+                }
             }
-            unset($parameters['coordinators-other']);
         }
 
-        if ( $parameters['managers'] == 'Other' and !$request->filled('managers-other') ) {
-            return back()->withErrors('Please, write your managers variant.')->withInput();
-        } else {
-            if ($parameters['managers-other']) {
-                $parameters['managers'] = $parameters['managers-other'];
+        unset($parameters['coordinators-other']);
+
+        if (isset($parameters['managers'])) {
+            if ( $parameters['managers'] == 'Other' and !$request->filled('managers-other') ) {
+                return back()->withErrors('Please, write your managers variant.')->withInput();
+            } else {
+                if ($parameters['managers-other']) {
+                    $parameters['managers'] = $parameters['managers-other'];
+                }
             }
-            unset($parameters['managers-other']);
         }
+
+        unset($parameters['managers-other']);
 
         if (in_array('Other', $parameters['deliverables']) and !$request->filled('deliverables-other') ) {
             return back()->withErrors('Please, write your deliverables variant.')->withInput();
@@ -332,13 +353,15 @@ class EstimationController extends Controller
             unset($parameters['deliverables-other']);
         }
 
-        if ( $parameters['reports'] == 'Other' and !$request->filled('reports-other') ) {
-            return back()->withErrors('Please, write your reports variant.')->withInput();
-        } else {
-            if ($parameters['reports-other']) {
-                $parameters['reports'] = $parameters['reports-other'];
+        if (isset($parameters['reports'])) {
+            if ( $parameters['reports'] == 'Other' and !$request->filled('reports-other') ) {
+                return back()->withErrors('Please, write your reports variant.')->withInput();
+            } else {
+                if ($parameters['reports-other']) {
+                    $parameters['reports'] = $parameters['reports-other'];
+                }
+                unset($parameters['reports-other']);
             }
-            unset($parameters['reports-other']);
         }
 
         $files = [];
@@ -352,6 +375,8 @@ class EstimationController extends Controller
         }
 
         $parameters['files'] = $files;
+
+//        dd($parameters);
 
         EstimationMep::create($parameters);
 

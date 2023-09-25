@@ -56,7 +56,7 @@ class EstimationMep extends Model
      *
      * @return \Illuminate\Database\Eloquent\Casts\Attribute
      */
-    protected function coordination_software(): Attribute
+    protected function coordinationSoftware(): Attribute
     {
         return Attribute::make(
             get: fn($value) => json_decode($value, true),

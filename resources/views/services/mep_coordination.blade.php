@@ -22,9 +22,9 @@
                 </div>
 
                 <div class="row px-5 pb-4 mt-5 text-center justify-content-center">
-                    <div class="col-4">
-                        <a href="#SERVICES" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 px-0" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">OUR SERVICES</span>
+                    <div class="col-12">
+                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50 px-0" style="background-color: #43aeb6">
+                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -72,9 +72,9 @@
                 </div>
 
                 <div class="row px-5 pb-4 mt-4 text-center justify-content-center">
-                    <div class="col-9">
-                        <a href="#SERVICES" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">OUR SERVICES</span>
+                    <div class="col-12">
+                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -122,9 +122,9 @@
                 </div>
 
                 <div class="row px-5 pb-4 mt-4 text-center">
-                    <div class="col-7 mx-auto">
-                        <a href="#SERVICES" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 px-0" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">OUR SERVICES</span>
+                    <div class="col-12">
+                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75 px-0" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
@@ -173,8 +173,8 @@
 
                 <div class="row px-2 pb-4 mt-4 text-center">
                     <div class="col-12">
-                        <a href="#SERVICES" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">OUR SERVICES</span>
+                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
+                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>

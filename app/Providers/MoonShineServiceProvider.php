@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Models\Estimation;
+use App\Models\EstimationMep;
 use App\Models\Post;
+use App\MoonShine\Resources\EstimationMepResource;
 use App\MoonShine\Resources\EstimationResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\SeoResource;
@@ -38,6 +40,10 @@ class MoonShineServiceProvider extends ServiceProvider
             MenuItem::make('Estimation', new EstimationResource())
                 ->icon('heroicons.outline.book-open')
                 ->badge(fn() => Estimation::query()->count()),
+
+            MenuItem::make('Estimation-Mep', new EstimationMepResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => EstimationMep::query()->count()),
 
             MenuItem::make('SEO', new SeoResource())
                 ->icon('heroicons.outline.book-open'),

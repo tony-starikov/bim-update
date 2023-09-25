@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('lod');
             $table->json('data');
             $table->text('version');
-            $table->json('coordination_software')->nullable();
+            $table->json('coordinationSoftware')->nullable();
             $table->text('fabrication_software')->nullable();
             $table->text('duration');
             $table->text('draftsmen')->nullable();
