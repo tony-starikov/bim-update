@@ -37,8 +37,8 @@ Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])-
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('showService');
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
-Route::get('/estimates-project', [EstimationController::class, 'show'])->name('estimates');
-Route::post('/estimates-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
+Route::get('/estimates-scan-to-bim-project', [EstimationController::class, 'show'])->name('estimates');
+Route::post('/estimates-scan-to-bim-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
 
 Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('estimatesMep');
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');

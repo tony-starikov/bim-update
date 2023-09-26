@@ -57,6 +57,7 @@ class EstimationRequest extends FormRequest
             'lod' => 'required|array',
             'loi' => 'required|array',
             'accuracy' => 'required|string',
+            'currency' => 'required|string',
             'start' => 'nullable|string',
             'address' => 'nullable|string',
             'link' => 'nullable|string',
@@ -88,6 +89,7 @@ class EstimationRequest extends FormRequest
             'lod.required' => 'LOD (Level of Detail) is required!',
             'loi.required' => 'LOI (Level of Information) is required!',
             'accuracy.required' => 'Project accuracy is required!',
+            'currency.required' => 'Project currency is required!',
         ];
     }
 }

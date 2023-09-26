@@ -144,6 +144,15 @@ class EstimationController extends Controller
             unset($parameters['accuracy-other']);
         }
 
+        if ($parameters['currency'] == 'Other' and !$request->filled('currency-other')) {
+            return back()->withErrors('Please, write your project currency variant.')->withInput();
+        } else {
+            if ($parameters['currency-other']) {
+                $parameters['currency'] = $parameters['currency-other'];
+            }
+            unset($parameters['currency-other']);
+        }
+
         $files = [];
 
         if ($request->hasfile('files')) {

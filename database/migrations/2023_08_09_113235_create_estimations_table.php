@@ -27,6 +27,7 @@ return new class extends Migration
             $table->json('lod');
             $table->json('loi');
             $table->text('accuracy');
+            $table->text('currency');
             $table->text('start')->nullable();
             $table->text('address')->nullable();
             $table->text('link')->nullable();

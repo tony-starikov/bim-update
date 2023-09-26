@@ -268,7 +268,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h5>
                                 </div>
                             </div>
@@ -294,7 +294,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h5>
+                                        *
+                                    </h5>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h5 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h5>
                                 </div>
                             </div>
@@ -358,7 +371,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -384,7 +397,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -448,7 +474,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -474,7 +500,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -542,7 +581,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -568,7 +607,20 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>

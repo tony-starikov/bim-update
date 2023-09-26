@@ -40,6 +40,7 @@ class EstimationResource extends Resource
             Json::make('LOD (Level of Detail)', 'lod')->keyValue('#', 'Value')->hideOnIndex(),
             Json::make('LOI (Level of Information)', 'loi')->keyValue('#', 'Value')->hideOnIndex(),
             Text::make('Project accuracy', 'accuracy')->hideOnIndex(),
+            Text::make('Project currency', 'currency')->hideOnIndex(),
             Text::make('Start and Finish', 'start')->hideOnIndex(),
             Text::make('Address', 'address')->hideOnIndex(),
             Url::make('Link to a Google map', 'link')->hideOnIndex(),

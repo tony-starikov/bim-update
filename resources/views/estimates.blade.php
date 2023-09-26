@@ -268,7 +268,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h5>
                                 </div>
                             </div>
@@ -294,7 +294,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h5>
+                                        *
+                                    </h5>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h5 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h5>
                                 </div>
                             </div>
@@ -358,7 +371,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -384,7 +397,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -448,7 +474,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -474,7 +500,20 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11 px-0">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -542,7 +581,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        Our specialists evaluate your project* The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        Our specialists evaluate your project*
                                     </h6>
                                 </div>
                             </div>
@@ -568,7 +607,20 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 class="fw-normal" style="text-align: justify;">
-                                        We schedule an appointment to discuss the details**
+                                        We schedule a meeting to discuss the details**
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-1 ps-0 text-end">
+                                    <h6>
+                                        *
+                                    </h6>
+                                </div>
+                                <div class="col-11">
+                                    <h6 style="text-align: justify;">
+                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -1461,12 +1513,93 @@
                             </div>
                         </div>
 
+
+                        <h4 class="fw-bold my-4">
+                            In which currency to specify the price?*
+                        </h4>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="€ EUR"
+                                {{ (old('currency') == '€ EUR' ) ? 'checked' : '' }}
+                                id="currency1"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency1">
+                                € EUR
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="$ USD"
+                                {{ (old('currency') == '$ USD' ) ? 'checked' : '' }}
+                                id="currency2"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency2">
+                                $ USD
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="₤ GBP"
+                                {{ (old('currency') == '₤ GBP' ) ? 'checked' : '' }}
+                                id="currency3"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency3">
+                                ₤ GBP
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="A$ AUD"
+                                {{ (old('currency') == 'A$ AUD' ) ? 'checked' : '' }}
+                                id="currency4"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency4">
+                                A$ AUD
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
+                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency10">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="mb-3">
+                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                </div>
+                            </div>
+                        </div>
+
                         <input
                             class="form-control form-control-lg fw-semibold border border-0 border-4 border-bottom border-white shadow-none rounded-0 mt-4"
                             type="text"
                             name="start"
                             placeholder="Start and finish of the project"
-                            value="{{old('comment', '')}}"
+                            value="{{old('start', '')}}"
                             aria-label=".form-control-lg example"
                         />
 
@@ -2392,6 +2525,87 @@
                             <div class="col-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            In which currency to specify the price?*
+                        </h4>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="€ EUR"
+                                {{ (old('currency') == '€ EUR' ) ? 'checked' : '' }}
+                                id="currency1"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency1">
+                                € EUR
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="$ USD"
+                                {{ (old('currency') == '$ USD' ) ? 'checked' : '' }}
+                                id="currency2"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency2">
+                                $ USD
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="₤ GBP"
+                                {{ (old('currency') == '₤ GBP' ) ? 'checked' : '' }}
+                                id="currency3"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency3">
+                                ₤ GBP
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="A$ AUD"
+                                {{ (old('currency') == 'A$ AUD' ) ? 'checked' : '' }}
+                                id="currency4"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency4">
+                                A$ AUD
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
+                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency10">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="mb-3">
+                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
@@ -3337,6 +3551,87 @@
                                 </div>
                             </div>
 
+
+                            <h4 class="fw-bold my-4">
+                                In which currency to specify the price?*
+                            </h4>
+
+                            <div class="form-check d-flex align-items-center mb-3">
+                                <input
+                                    class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                    type="radio"
+                                    name="currency"
+                                    value="€ EUR"
+                                    {{ (old('currency') == '€ EUR' ) ? 'checked' : '' }}
+                                    id="currency1"
+                                    style="width: 30px; height: 30px;"
+                                >
+                                <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency1">
+                                    € EUR
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex align-items-center mb-3">
+                                <input
+                                    class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                    type="radio"
+                                    name="currency"
+                                    value="$ USD"
+                                    {{ (old('currency') == '$ USD' ) ? 'checked' : '' }}
+                                    id="currency2"
+                                    style="width: 30px; height: 30px;"
+                                >
+                                <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency2">
+                                    $ USD
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex align-items-center mb-3">
+                                <input
+                                    class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                    type="radio"
+                                    name="currency"
+                                    value="₤ GBP"
+                                    {{ (old('currency') == '₤ GBP' ) ? 'checked' : '' }}
+                                    id="currency3"
+                                    style="width: 30px; height: 30px;"
+                                >
+                                <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency3">
+                                    ₤ GBP
+                                </label>
+                            </div>
+
+                            <div class="form-check d-flex align-items-center mb-3">
+                                <input
+                                    class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                    type="radio"
+                                    name="currency"
+                                    value="A$ AUD"
+                                    {{ (old('currency') == 'A$ AUD' ) ? 'checked' : '' }}
+                                    id="currency4"
+                                    style="width: 30px; height: 30px;"
+                                >
+                                <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency4">
+                                    A$ AUD
+                                </label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-check d-flex align-items-center mb-3">
+                                        <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
+                                        <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency10">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="mb-3">
+                                        <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                    </div>
+                                </div>
+                            </div>
+
                             <input
                                 class="form-control form-control-lg fw-semibold border border-0 border-4 border-bottom border-white shadow-none rounded-0 mt-4"
                                 type="text"
@@ -4278,6 +4573,87 @@
                             <div class="col-8">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="fw-bold my-4">
+                            In which currency to specify the price?*
+                        </h4>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="€ EUR"
+                                {{ (old('currency') == '€ EUR' ) ? 'checked' : '' }}
+                                id="currency1"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency1">
+                                € EUR
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="$ USD"
+                                {{ (old('currency') == '$ USD' ) ? 'checked' : '' }}
+                                id="currency2"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency2">
+                                $ USD
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="₤ GBP"
+                                {{ (old('currency') == '₤ GBP' ) ? 'checked' : '' }}
+                                id="currency3"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency3">
+                                ₤ GBP
+                            </label>
+                        </div>
+
+                        <div class="form-check d-flex align-items-center mb-3">
+                            <input
+                                class="form-check-input fw-bold border border-4 border-white shadow-none"
+                                type="radio"
+                                name="currency"
+                                value="A$ AUD"
+                                {{ (old('currency') == 'A$ AUD' ) ? 'checked' : '' }}
+                                id="currency4"
+                                style="width: 30px; height: 30px;"
+                            >
+                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency4">
+                                A$ AUD
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
+                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="currency10">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="mb-3">
+                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
