@@ -38,7 +38,9 @@ Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('
 Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
 Route::get('/estimates-scan-to-bim-project', [EstimationController::class, 'show'])->name('estimates');
+Route::get('/estimates-project-scan-to-bim', [EstimationController::class, 'showServicesForm'])->name('estimatesServicesForm');
 Route::post('/estimates-scan-to-bim-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
 
 Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('estimatesMep');
+Route::get('/estimates-project-mep', [EstimationController::class, 'showMepServicesForm'])->name('estimatesMepServicesForm');
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');

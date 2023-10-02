@@ -27,6 +27,19 @@ class EstimationController extends Controller
         return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts'));
     }
 
+    public function showServicesForm()
+    {
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('estimatesServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts'));
+    }
+
     public function processing(EstimationRequest $request)
     {
         $parameters = $request->all();
@@ -181,6 +194,19 @@ class EstimationController extends Controller
         $posts = Post::take(5)->get();
 
         return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts'));
+    }
+
+    public function showMepServicesForm()
+    {
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function processingMep(EstimationMepRequest $request)
