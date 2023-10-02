@@ -9,9 +9,9 @@
     <div class="d-none d-xl-block container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
 
         <div class="container p-5">
-            <div class="row px-5 mt-4">
+            <div class="row p-5">
                 <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-4">
+                    <h1 class="text-white display-5 fw-bold mt-5">
                         BIMPROVE BLOG
                     </h1>
                 </div>
@@ -21,31 +21,8 @@
     <div class="d-none d-lg-block d-xl-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
 
         <div class="container p-5">
-            <div class="row px-5 mt-4">
-                <div class="col-12 px-0 mt-4 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-4">
-                        BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-none d-md-block d-lg-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-        <div class="container">
-            <div class="row px-0 mt-3">
-                <div class="col-12 px-0 pt-5 mt-3 order-first">
-                    <h1 class="text-white display-5 fw-bold my-5">
-                        BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none d-sm-block d-md-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-        <div class="container">
-            <div class="row px-0 mt-5">
-                <div class="col-12 px-0 pb-4 order-first">
+            <div class="row p-5">
+                <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
                         BIMPROVE BLOG
                     </h1>
@@ -53,12 +30,35 @@
             </div>
         </div>
     </div>
+    <div class="d-none d-md-block d-lg-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
 
+        <div class="container">
+            <div class="row px-0 py-5">
+                <div class="col-12 px-0 mt-5 order-first">
+                    <h1 class="text-white display-5 fw-bold mt-5">
+                        BIMPROVE BLOG
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-none d-sm-block d-md-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
+
+        <div class="container">
+            <div class="row px-0 py-5">
+                <div class="col-12 px-0 mt-5 order-first">
+                    <h1 class="text-white display-5 fw-bold mt-5">
+                        BIMPROVE BLOG
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="d-block d-sm-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
 
         <div class="container">
-            <div class="row px-0 mt-2">
-                <div class="col-12 px-0 mt-5 pb-4 order-first">
+            <div class="row px-0 py-5">
+                <div class="col-12 px-0 mt-5 order-first">
                     <h1 class="text-white display-5 fw-bold mt-5">
                         BIMPROVE BLOG
                     </h1>
