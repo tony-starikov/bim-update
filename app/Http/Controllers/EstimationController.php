@@ -178,6 +178,8 @@ class EstimationController extends Controller
 
         $parameters['files'] = $files;
 
+        unset($parameters['cf-turnstile-response']);
+
         Estimation::create($parameters);
 
         return redirect()->route('thanks');
@@ -411,7 +413,7 @@ class EstimationController extends Controller
 
         $parameters['files'] = $files;
 
-//        dd($parameters);
+        unset($parameters['cf-turnstile-response']);
 
         EstimationMep::create($parameters);
 

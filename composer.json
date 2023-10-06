@@ -12,6 +12,7 @@
         "laravel/tinker": "^2.8",
         "lee-to/laravel-seo-by-url": "^0.10.2",
         "moonshine/moonshine": "^1.59",
+        "ryangjchandler/laravel-cloudflare-turnstile": "^1.0",
         "spatie/laravel-cookie-consent": "^3.2",
         "unisharp/laravel-filemanager": "^2.6"
     },

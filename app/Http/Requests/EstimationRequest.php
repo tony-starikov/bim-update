@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class EstimationRequest extends FormRequest
 {
@@ -64,6 +65,7 @@ class EstimationRequest extends FormRequest
             'comment' => 'nullable|string',
             'files' => 'nullable',
             'reference' => 'nullable|string',
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
         ];
     }
 

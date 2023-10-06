@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class EstimationMepRequest extends FormRequest
 {
@@ -44,6 +45,7 @@ class EstimationMepRequest extends FormRequest
             'reports' => 'nullable|string',
             'comment' => 'nullable|string',
             'files' => 'required|array',
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
         ];
     }
 
