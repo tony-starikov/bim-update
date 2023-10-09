@@ -240,7 +240,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-5 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h5>
                                 </div>
                             </div>
@@ -343,7 +343,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-6 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -549,7 +549,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>

@@ -240,7 +240,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-5 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h5>
                                 </div>
                             </div>
@@ -343,7 +343,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-6 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -549,7 +549,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -851,95 +851,6 @@
 
                         <div class="my-3">
                             <input class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0" type="text" name="height" value="{{old('height', '')}}" placeholder="Height of a building/construction*" aria-label=".form-control-lg example">
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Incoming data*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Point cloud" @if(is_array(old('data')) && in_array('Point cloud', old('data'))) checked @endif id="data1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data1">
-                                        Point cloud
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="DWG drafts" @if(is_array(old('data')) && in_array('DWG drafts', old('data'))) checked @endif id="data2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data2">
-                                        DWG drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="PDF drafts" @if(is_array(old('data')) && in_array('PDF drafts', old('data'))) checked @endif id="data3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data3">
-                                        PDF drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Photos" @if(is_array(old('data')) && in_array('Photos', old('data'))) checked @endif id="data4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data4">
-                                        Photos
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit families" @if(is_array(old('data')) && in_array('Revit families', old('data'))) checked @endif id="data5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data5">
-                                        Revit families
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit template for project" @if(is_array(old('data')) && in_array('Revit template for project', old('data'))) checked @endif id="data6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data6">
-                                        Revit template for project
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit sheets" @if(is_array(old('data')) && in_array('Revit sheets', old('data'))) checked @endif id="data7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data7">
-                                        Revit sheets
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Examples of similar projects" @if(is_array(old('data')) && in_array('Examples of similar projects', old('data'))) checked @endif id="data8" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data8">
-                                        Examples of similar projects
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Manual for modeling" @if(is_array(old('data')) && in_array('Manual for modeling', old('data'))) checked @endif id="data9" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data9">
-                                        Manual for modeling
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Other" @if(is_array(old('data')) && in_array('Other', old('data'))) checked @endif id="data10" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data10">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
                         </div>
 
 
@@ -1933,95 +1844,6 @@
 
                         <div class="my-3">
                             <input class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0" type="text" name="height" value="{{old('height', '')}}" placeholder="Height of a building/construction*" aria-label=".form-control-lg example">
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Incoming data*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Point cloud" @if(is_array(old('data')) && in_array('Point cloud', old('data'))) checked @endif id="data1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data1">
-                                        Point cloud
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="DWG drafts" @if(is_array(old('data')) && in_array('DWG drafts', old('data'))) checked @endif id="data2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data2">
-                                        DWG drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="PDF drafts" @if(is_array(old('data')) && in_array('PDF drafts', old('data'))) checked @endif id="data3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data3">
-                                        PDF drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Photos" @if(is_array(old('data')) && in_array('Photos', old('data'))) checked @endif id="data4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data4">
-                                        Photos
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit families" @if(is_array(old('data')) && in_array('Revit families', old('data'))) checked @endif id="data5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data5">
-                                        Revit families
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit template for project" @if(is_array(old('data')) && in_array('Revit template for project', old('data'))) checked @endif id="data6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data6">
-                                        Revit template for project
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit sheets" @if(is_array(old('data')) && in_array('Revit sheets', old('data'))) checked @endif id="data7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data7">
-                                        Revit sheets
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Examples of similar projects" @if(is_array(old('data')) && in_array('Examples of similar projects', old('data'))) checked @endif id="data8" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data8">
-                                        Examples of similar projects
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Manual for modeling" @if(is_array(old('data')) && in_array('Manual for modeling', old('data'))) checked @endif id="data9" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data9">
-                                        Manual for modeling
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Other" @if(is_array(old('data')) && in_array('Other', old('data'))) checked @endif id="data10" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="data10">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
                         </div>
 
 
@@ -3025,95 +2847,6 @@
 
 
                             <h4 class="fw-bold my-4">
-                                Incoming data*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Point cloud" @if(is_array(old('data')) && in_array('Point cloud', old('data'))) checked @endif id="data1" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data1">
-                                            Point cloud
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="DWG drafts" @if(is_array(old('data')) && in_array('DWG drafts', old('data'))) checked @endif id="data2" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data2">
-                                            DWG drafts
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="PDF drafts" @if(is_array(old('data')) && in_array('PDF drafts', old('data'))) checked @endif id="data3" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data3">
-                                            PDF drafts
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Photos" @if(is_array(old('data')) && in_array('Photos', old('data'))) checked @endif id="data4" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data4">
-                                            Photos
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit families" @if(is_array(old('data')) && in_array('Revit families', old('data'))) checked @endif id="data5" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data5">
-                                            Revit families
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit template for project" @if(is_array(old('data')) && in_array('Revit template for project', old('data'))) checked @endif id="data6" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data6">
-                                            Revit template for project
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Revit sheets" @if(is_array(old('data')) && in_array('Revit sheets', old('data'))) checked @endif id="data7" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data7">
-                                            Revit sheets
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Examples of similar projects" @if(is_array(old('data')) && in_array('Examples of similar projects', old('data'))) checked @endif id="data8" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data8">
-                                            Examples of similar projects
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Manual for modeling" @if(is_array(old('data')) && in_array('Manual for modeling', old('data'))) checked @endif id="data9" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data9">
-                                            Manual for modeling
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="data[]" value="Other" @if(is_array(old('data')) && in_array('Other', old('data'))) checked @endif id="data10" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="data10">
-                                            Other
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="mb-3">
-                                        <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <h4 class="fw-bold my-4">
                                 Incoming Point Cloud*
                             </h4>
 
@@ -4096,90 +3829,6 @@
 
                         <div class="my-3">
                             <input class="form-control form-control-lg fw-semibold border border-0 border-4 border-bottom border-white shadow-none rounded-0" type="text" name="height" value="{{old('height', '')}}" placeholder="Height of a building/construction*" aria-label=".form-control-lg example">
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Incoming data*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Point cloud" @if(is_array(old('data')) && in_array('Point cloud', old('data'))) checked @endif id="data1" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data1">
-                                Point cloud
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="DWG drafts" @if(is_array(old('data')) && in_array('DWG drafts', old('data'))) checked @endif id="data2" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data2">
-                                DWG drafts
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="PDF drafts" @if(is_array(old('data')) && in_array('PDF drafts', old('data'))) checked @endif id="data3" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data3">
-                                PDF drafts
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Photos" @if(is_array(old('data')) && in_array('Photos', old('data'))) checked @endif id="data4" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data4">
-                                Photos
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Revit families" @if(is_array(old('data')) && in_array('Revit families', old('data'))) checked @endif id="data5" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data5">
-                                Revit families
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Revit template for project" @if(is_array(old('data')) && in_array('Revit template for project', old('data'))) checked @endif id="data6" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data6">
-                                Revit template for project
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Revit sheets" @if(is_array(old('data')) && in_array('Revit sheets', old('data'))) checked @endif id="data7" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data7">
-                                Revit sheets
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Examples of similar projects" @if(is_array(old('data')) && in_array('Examples of similar projects', old('data'))) checked @endif id="data8" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data8">
-                                Examples of similar projects
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Manual for modeling" @if(is_array(old('data')) && in_array('Manual for modeling', old('data'))) checked @endif id="data9" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data9">
-                                Manual for modeling
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Other" @if(is_array(old('data')) && in_array('Other', old('data'))) checked @endif id="data10" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data10">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
                         </div>
 
 

@@ -63,8 +63,8 @@
 
                     <div class="row">
                         <div class="col-4 px-0 mt-5">
-                            <a href="#estimation1" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
-                                <span class="fw-bold h4 d-block my-2">ESTIMATE PROJECT <i class="las la-lg la-arrow-down"></i></span>
+                            <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
+                                <span class="fw-bold h4 d-block my-2">SCAN TO BIM SERVICE</span>
                             </a>
                         </div>
                     </div>
@@ -114,8 +114,8 @@
 
                     <div class="row">
                         <div class="col-4 px-0 mt-5">
-                            <a href="#estimation2" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
-                                <span class="fw-bold h6 d-block my-2">ESTIMATE PROJECT <i class="las la-lg la-arrow-down"></i></span>
+                            <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
+                                <span class="fw-bold h6 d-block my-2">SCAN TO BIM SERVICE</span>
                             </a>
                         </div>
                     </div>
@@ -166,8 +166,8 @@
 
                     <div class="row">
                         <div class="col-4 px-0 mt-5">
-                            <a href="#estimation3" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
-                                <span class="fw-bold h6 d-block my-2">ESTIMATE PROJECT <i class="las la-lg la-arrow-down"></i></span>
+                            <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
+                                <span class="fw-bold h6 d-block my-2">SCAN TO BIM SERVICE</span>
                             </a>
                         </div>
                     </div>
@@ -218,8 +218,8 @@
 
                     <div class="row justify-content-center">
                         <div class="col-9 mt-4">
-                            <a href="#estimation4" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
-                                <span class="fw-bold h6 d-block my-2">ESTIMATE PROJECT <i class="las la-lg la-arrow-down"></i></span>
+                            <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
+                                <span class="fw-bold h6 d-block my-2">SCAN TO BIM SERVICE</span>
                             </a>
                         </div>
                     </div>
@@ -654,7 +654,7 @@
                     <h2 class="display-5 fw-bold mb-5 text-white">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
-                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">
+                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
                         @csrf
 
                         <input
@@ -746,46 +746,6 @@
                         </div>
 
                         <h4 class="fw-bold my-4">
-                            Project Units*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Metric" {{ (old('units') == 'Metric' ) ? 'checked' : '' }} id="units1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units1">
-                                        Metric
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Imperial" {{ (old('units') == 'Imperial' ) ? 'checked' : '' }} id="units2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units2">
-                                        Imperial
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Other" {{ (old('units') == 'Other' ) ? 'checked' : '' }} id="units3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units3">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-bold my-4">
                             Type of the building\construction*
                         </h4>
 
@@ -855,165 +815,6 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Incoming Point Cloud*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                           type="checkbox" name="cloud[]"
-                                           value="Point cloud"
-                                           @if(is_array(old('cloud')) && in_array('Point cloud', old('cloud'))) checked @endif
-                                           id="cloud1"
-                                           style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud1">
-                                        Point cloud
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="DWG drafts"
-                                        @if(is_array(old('cloud')) && in_array('DWG drafts', old('cloud'))) checked @endif
-                                        id="cloud2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud2">
-                                        DWG drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="PDF drafts"
-                                        @if(is_array(old('cloud')) && in_array('PDF drafts', old('cloud'))) checked @endif
-                                        id="cloud3"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        PDF drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Photos"
-                                        @if(is_array(old('cloud')) && in_array('Photos', old('cloud'))) checked @endif
-                                        id="cloud4"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Photos
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit families"
-                                        @if(is_array(old('cloud')) && in_array('Revit families', old('cloud'))) checked @endif
-                                        id="cloud5"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit families
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit template for project"
-                                        @if(is_array(old('cloud')) && in_array('Revit template for project', old('cloud'))) checked @endif
-                                        id="cloud6"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit template for project
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit sheets"
-                                        @if(is_array(old('cloud')) && in_array('Revit sheets', old('cloud'))) checked @endif
-                                        id="cloud7"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit sheets
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Examples of similar projects"
-                                        @if(is_array(old('cloud')) && in_array('Examples of similar projects', old('cloud'))) checked @endif
-                                        id="cloud8"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Examples of similar projects
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Manual for modeling"
-                                        @if(is_array(old('cloud')) && in_array('Manual for modeling', old('cloud'))) checked @endif
-                                        id="cloud9"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Manual for modeling
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input border border-3 border-white shadow-none" type="checkbox" name="cloud[]" value="Other" @if(is_array(old('cloud')) && in_array('Other', old('cloud'))) checked @endif id="cloud4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud4">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
                             Task for modeling*
                         </h4>
 
@@ -1069,148 +870,6 @@
                             <div class="col-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-bold my-4">
-                            Deliverables*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (only 3D model)" @if(is_array(old('deliverables')) && in_array('RVT (only 3D model)', old('deliverables'))) checked @endif id="deliverables1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables1">
-                                        RVT (only 3D model)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings)', old('deliverables'))) checked @endif id="deliverables2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables2">
-                                        RVT (3D model + drawings)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings + schedules)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings + schedules)', old('deliverables'))) checked @endif id="deliverables3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables3">
-                                        RVT (3D model + drawings + schedules)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="IFC" @if(is_array(old('deliverables')) && in_array('IFC', old('deliverables'))) checked @endif id="deliverables4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables4">
-                                        IFC
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="PDF" @if(is_array(old('deliverables')) && in_array('PDF', old('deliverables'))) checked @endif id="deliverables5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables5">
-                                        PDF
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="DWG" @if(is_array(old('deliverables')) && in_array('DWG', old('deliverables'))) checked @endif id="deliverables6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                        DWG
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="STP" @if(is_array(old('deliverables')) && in_array('STP', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                        STP
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="Other" @if(is_array(old('deliverables')) && in_array('Other', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Revit version*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2018" {{ (old('version') == '2018' ) ? 'checked' : '' }} id="version2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version2">
-                                        2018
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2019" {{ (old('version') == '2019' ) ? 'checked' : '' }} id="version3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version3">
-                                        2019
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2020" {{ (old('version') == '2020' ) ? 'checked' : '' }} id="version4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version4">
-                                        2020
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2021" {{ (old('version') == '2021' ) ? 'checked' : '' }} id="version5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version5">
-                                        2021
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2022" {{ (old('version') == '2022' ) ? 'checked' : '' }} id="version6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version6">
-                                        2022
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2023" {{ (old('version') == '2023' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                        2023
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="Other" {{ (old('version') == 'Other' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
@@ -1307,92 +966,6 @@
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            LOI (Level of Information)*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="loi[]" value="No need" @if(is_array(old('loi')) && in_array('No need', old('loi'))) checked @endif id="loi5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi5">
-                                        No need
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="Add elements materials"
-                                        @if(is_array(old('loi')) && in_array('Add elements materials', old('loi'))) checked @endif
-                                        id="loi1"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi1">
-                                        Add elements materials
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="MEPF systems types from drawings"
-                                        @if(is_array(old('loi')) && in_array('MEPF systems types from drawings', old('loi'))) checked @endif
-                                        id="loi2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi2">
-                                        MEPF systems types from drawings
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="Add pipes and ducts insulation from drawings"
-                                        @if(is_array(old('loi')) && in_array('Add pipes and ducts insulation from drawings', old('loi'))) checked @endif
-                                        id="loi3"
-                                        style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi3">
-                                        Add pipes and ducts insulation from drawings
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-3 border-white shadow-none align-self-start"
-                                type="checkbox"
-                                name="loi[]"
-                                value="Other"
-                                @if(is_array(old('loi')) && in_array('Other', old('loi'))) checked @endif
-                                id="loi4"
-                                style="min-width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label ps-1 mt-2 h5" for="loi4">
-                                Add additional parameters from the project documentation (please write below the names of the parameters and for which elements to add them)
-                            </label>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea
-                                class="form-control border-0 border-bottom border-3 border-white rounded-0 shadow-none bg-transparent p-0"
-                                id="loi-other"
-                                name="loi-other"
-                                placeholder="Additional parameters"
-                                rows="1"
-                            >{{old('loi-other', '')}}</textarea>
                         </div>
 
 
@@ -1615,15 +1188,6 @@
                             placeholder="Select files"
                             id="files"
                             multiple
-                        />
-
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="reference"
-                            placeholder="Reference to the object"
-                            value="{{old('reference', '')}}"
-                            aria-label=".form-control-lg example"
                         />
 
                         <div class="mt-5">
@@ -1647,7 +1211,7 @@
                     <h2 class="fw-bold mb-5 text-white">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
-                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">
+                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
                         @csrf
 
                         <input
@@ -1738,45 +1302,6 @@
                             </div>
                         </div>
 
-                        <h4 class="fw-bold my-4">
-                            Project Units*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Metric" {{ (old('units') == 'Metric' ) ? 'checked' : '' }} id="units1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units1">
-                                        Metric
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Imperial" {{ (old('units') == 'Imperial' ) ? 'checked' : '' }} id="units2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units2">
-                                        Imperial
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Other" {{ (old('units') == 'Other' ) ? 'checked' : '' }} id="units3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="units3">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
-                                </div>
-                            </div>
-                        </div>
 
                         <h4 class="fw-bold my-4">
                             Type of the building\construction*
@@ -1848,165 +1373,6 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Incoming Point Cloud*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                           type="checkbox" name="cloud[]"
-                                           value="Point cloud"
-                                           @if(is_array(old('cloud')) && in_array('Point cloud', old('cloud'))) checked @endif
-                                           id="cloud1"
-                                           style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud1">
-                                        Point cloud
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="DWG drafts"
-                                        @if(is_array(old('cloud')) && in_array('DWG drafts', old('cloud'))) checked @endif
-                                        id="cloud2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud2">
-                                        DWG drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="PDF drafts"
-                                        @if(is_array(old('cloud')) && in_array('PDF drafts', old('cloud'))) checked @endif
-                                        id="cloud3"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        PDF drafts
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Photos"
-                                        @if(is_array(old('cloud')) && in_array('Photos', old('cloud'))) checked @endif
-                                        id="cloud4"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Photos
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit families"
-                                        @if(is_array(old('cloud')) && in_array('Revit families', old('cloud'))) checked @endif
-                                        id="cloud5"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit families
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit template for project"
-                                        @if(is_array(old('cloud')) && in_array('Revit template for project', old('cloud'))) checked @endif
-                                        id="cloud6"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit template for project
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Revit sheets"
-                                        @if(is_array(old('cloud')) && in_array('Revit sheets', old('cloud'))) checked @endif
-                                        id="cloud7"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Revit sheets
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Examples of similar projects"
-                                        @if(is_array(old('cloud')) && in_array('Examples of similar projects', old('cloud'))) checked @endif
-                                        id="cloud8"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Examples of similar projects
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="cloud[]"
-                                        value="Manual for modeling"
-                                        @if(is_array(old('cloud')) && in_array('Manual for modeling', old('cloud'))) checked @endif
-                                        id="cloud9"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                        Manual for modeling
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input border border-3 border-white shadow-none" type="checkbox" name="cloud[]" value="Other" @if(is_array(old('cloud')) && in_array('Other', old('cloud'))) checked @endif id="cloud4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="cloud4">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
                             Task for modeling*
                         </h4>
 
@@ -2062,148 +1428,6 @@
                             <div class="col-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-bold my-4">
-                            Deliverables*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (only 3D model)" @if(is_array(old('deliverables')) && in_array('RVT (only 3D model)', old('deliverables'))) checked @endif id="deliverables1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables1">
-                                        RVT (only 3D model)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings)', old('deliverables'))) checked @endif id="deliverables2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables2">
-                                        RVT (3D model + drawings)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings + schedules)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings + schedules)', old('deliverables'))) checked @endif id="deliverables3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables3">
-                                        RVT (3D model + drawings + schedules)
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="IFC" @if(is_array(old('deliverables')) && in_array('IFC', old('deliverables'))) checked @endif id="deliverables4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables4">
-                                        IFC
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="PDF" @if(is_array(old('deliverables')) && in_array('PDF', old('deliverables'))) checked @endif id="deliverables5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables5">
-                                        PDF
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="DWG" @if(is_array(old('deliverables')) && in_array('DWG', old('deliverables'))) checked @endif id="deliverables6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                        DWG
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="STP" @if(is_array(old('deliverables')) && in_array('STP', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                        STP
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="Other" @if(is_array(old('deliverables')) && in_array('Other', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="deliverables7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Revit version*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2018" {{ (old('version') == '2018' ) ? 'checked' : '' }} id="version2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version2">
-                                        2018
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2019" {{ (old('version') == '2019' ) ? 'checked' : '' }} id="version3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version3">
-                                        2019
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2020" {{ (old('version') == '2020' ) ? 'checked' : '' }} id="version4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version4">
-                                        2020
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2021" {{ (old('version') == '2021' ) ? 'checked' : '' }} id="version5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version5">
-                                        2021
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2022" {{ (old('version') == '2022' ) ? 'checked' : '' }} id="version6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version6">
-                                        2022
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2023" {{ (old('version') == '2023' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                        2023
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="Other" {{ (old('version') == 'Other' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
@@ -2300,92 +1524,6 @@
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            LOI (Level of Information)*
-                        </h4>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="loi[]" value="No need" @if(is_array(old('loi')) && in_array('No need', old('loi'))) checked @endif id="loi5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi5">
-                                        No need
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="Add elements materials"
-                                        @if(is_array(old('loi')) && in_array('Add elements materials', old('loi'))) checked @endif
-                                        id="loi1"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi1">
-                                        Add elements materials
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="MEPF systems types from drawings"
-                                        @if(is_array(old('loi')) && in_array('MEPF systems types from drawings', old('loi'))) checked @endif
-                                        id="loi2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi2">
-                                        MEPF systems types from drawings
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="loi[]"
-                                        value="Add pipes and ducts insulation from drawings"
-                                        @if(is_array(old('loi')) && in_array('Add pipes and ducts insulation from drawings', old('loi'))) checked @endif
-                                        id="loi3"
-                                        style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="loi3">
-                                        Add pipes and ducts insulation from drawings
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-3 border-white shadow-none align-self-start"
-                                type="checkbox"
-                                name="loi[]"
-                                value="Other"
-                                @if(is_array(old('loi')) && in_array('Other', old('loi'))) checked @endif
-                                id="loi4"
-                                style="min-width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label ps-1 mt-2 h5" for="loi4">
-                                Add additional parameters from the project documentation (please write below the names of the parameters and for which elements to add them)
-                            </label>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea
-                                class="form-control border-0 border-bottom border-3 border-white rounded-0 shadow-none bg-transparent p-0"
-                                id="loi-other"
-                                name="loi-other"
-                                placeholder="Additional parameters"
-                                rows="1"
-                            >{{old('loi-other', '')}}</textarea>
                         </div>
 
 
@@ -2608,15 +1746,6 @@
                             placeholder="Select files"
                             id="files"
                             multiple
-                        />
-
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="reference"
-                            placeholder="Reference to the object"
-                            value="{{old('reference', '')}}"
-                            aria-label=".form-control-lg example"
                         />
 
                         <div class="mt-5">
@@ -2644,9 +1773,9 @@
             </div>
             <div class="row align-items-center">
 
-                <div class="col-12 col-xl-6 px-0">
-                    <div class="col-12 col-xl-6 ps-0 pe-5 mt-5">
-                        <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">
+                <div class="col-12 px-0">
+                    <div class="col-12 ps-0 pe-5 mt-5">
+                        <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
                             @csrf
 
                             <input
@@ -2737,45 +1866,6 @@
                                 </div>
                             </div>
 
-                            <h4 class="fw-bold my-4">
-                                Project Units*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Metric" {{ (old('units') == 'Metric' ) ? 'checked' : '' }} id="units1" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="units1">
-                                            Metric
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Imperial" {{ (old('units') == 'Imperial' ) ? 'checked' : '' }} id="units2" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="units2">
-                                            Imperial
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="units" value="Other" {{ (old('units') == 'Other' ) ? 'checked' : '' }} id="units3" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="units3">
-                                            Other
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="mb-3">
-                                        <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
-                                    </div>
-                                </div>
-                            </div>
 
                             <h4 class="fw-bold my-4">
                                 Type of the building\construction*
@@ -2847,165 +1937,6 @@
 
 
                             <h4 class="fw-bold my-4">
-                                Incoming Point Cloud*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                               type="checkbox" name="cloud[]"
-                                               value="Point cloud"
-                                               @if(is_array(old('cloud')) && in_array('Point cloud', old('cloud'))) checked @endif
-                                               id="cloud1"
-                                               style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud1">
-                                            Point cloud
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="DWG drafts"
-                                            @if(is_array(old('cloud')) && in_array('DWG drafts', old('cloud'))) checked @endif
-                                            id="cloud2"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud2">
-                                            DWG drafts
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="PDF drafts"
-                                            @if(is_array(old('cloud')) && in_array('PDF drafts', old('cloud'))) checked @endif
-                                            id="cloud3"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            PDF drafts
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Photos"
-                                            @if(is_array(old('cloud')) && in_array('Photos', old('cloud'))) checked @endif
-                                            id="cloud4"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Photos
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Revit families"
-                                            @if(is_array(old('cloud')) && in_array('Revit families', old('cloud'))) checked @endif
-                                            id="cloud5"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Revit families
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Revit template for project"
-                                            @if(is_array(old('cloud')) && in_array('Revit template for project', old('cloud'))) checked @endif
-                                            id="cloud6"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Revit template for project
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Revit sheets"
-                                            @if(is_array(old('cloud')) && in_array('Revit sheets', old('cloud'))) checked @endif
-                                            id="cloud7"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Revit sheets
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Examples of similar projects"
-                                            @if(is_array(old('cloud')) && in_array('Examples of similar projects', old('cloud'))) checked @endif
-                                            id="cloud8"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Examples of similar projects
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="cloud[]"
-                                            value="Manual for modeling"
-                                            @if(is_array(old('cloud')) && in_array('Manual for modeling', old('cloud'))) checked @endif
-                                            id="cloud9"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud3">
-                                            Manual for modeling
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input border border-3 border-white shadow-none" type="checkbox" name="cloud[]" value="Other" @if(is_array(old('cloud')) && in_array('Other', old('cloud'))) checked @endif id="cloud4" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="cloud4">
-                                            Other
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="mb-3">
-                                        <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <h4 class="fw-bold my-4">
                                 Task for modeling*
                             </h4>
 
@@ -3061,148 +1992,6 @@
                                 <div class="col-9">
                                     <div class="mb-3">
                                         <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h4 class="fw-bold my-4">
-                                Deliverables*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (only 3D model)" @if(is_array(old('deliverables')) && in_array('RVT (only 3D model)', old('deliverables'))) checked @endif id="deliverables1" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables1">
-                                            RVT (only 3D model)
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings)', old('deliverables'))) checked @endif id="deliverables2" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables2">
-                                            RVT (3D model + drawings)
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings + schedules)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings + schedules)', old('deliverables'))) checked @endif id="deliverables3" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables3">
-                                            RVT (3D model + drawings + schedules)
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="IFC" @if(is_array(old('deliverables')) && in_array('IFC', old('deliverables'))) checked @endif id="deliverables4" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables4">
-                                            IFC
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="PDF" @if(is_array(old('deliverables')) && in_array('PDF', old('deliverables'))) checked @endif id="deliverables5" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables5">
-                                            PDF
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="DWG" @if(is_array(old('deliverables')) && in_array('DWG', old('deliverables'))) checked @endif id="deliverables6" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                            DWG
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="STP" @if(is_array(old('deliverables')) && in_array('STP', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables6">
-                                            STP
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="deliverables[]" value="Other" @if(is_array(old('deliverables')) && in_array('Other', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="deliverables7">
-                                            Other
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="mb-3">
-                                        <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <h4 class="fw-bold my-4">
-                                Revit version*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2018" {{ (old('version') == '2018' ) ? 'checked' : '' }} id="version2" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version2">
-                                            2018
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2019" {{ (old('version') == '2019' ) ? 'checked' : '' }} id="version3" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version3">
-                                            2019
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2020" {{ (old('version') == '2020' ) ? 'checked' : '' }} id="version4" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version4">
-                                            2020
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2021" {{ (old('version') == '2021' ) ? 'checked' : '' }} id="version5" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version5">
-                                            2021
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2022" {{ (old('version') == '2022' ) ? 'checked' : '' }} id="version6" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version6">
-                                            2022
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="2023" {{ (old('version') == '2023' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                            2023
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="version" value="Other" {{ (old('version') == 'Other' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="version7">
-                                            Other
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-9">
-                                    <div class="mb-3">
-                                        <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                     </div>
                                 </div>
                             </div>
@@ -3299,92 +2088,6 @@
                                         <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                     </div>
                                 </div>
-                            </div>
-
-
-                            <h4 class="fw-bold my-4">
-                                LOI (Level of Information)*
-                            </h4>
-
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="loi[]" value="No need" @if(is_array(old('loi')) && in_array('No need', old('loi'))) checked @endif id="loi5" style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="loi5">
-                                            No need
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="loi[]"
-                                            value="Add elements materials"
-                                            @if(is_array(old('loi')) && in_array('Add elements materials', old('loi'))) checked @endif
-                                            id="loi1"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="loi1">
-                                            Add elements materials
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="loi[]"
-                                            value="MEPF systems types from drawings"
-                                            @if(is_array(old('loi')) && in_array('MEPF systems types from drawings', old('loi'))) checked @endif
-                                            id="loi2"
-                                            style="width: 30px; height: 30px;"
-                                        >
-                                        <label class="form-check-label ms-1 mt-2 h5" for="loi2">
-                                            MEPF systems types from drawings
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check d-flex align-items-center mb-3">
-                                        <input
-                                            class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                            type="checkbox"
-                                            name="loi[]"
-                                            value="Add pipes and ducts insulation from drawings"
-                                            @if(is_array(old('loi')) && in_array('Add pipes and ducts insulation from drawings', old('loi'))) checked @endif
-                                            id="loi3"
-                                            style="width: 30px; height: 30px;">
-                                        <label class="form-check-label ms-1 mt-2 h5" for="loi3">
-                                            Add pipes and ducts insulation from drawings
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-check d-flex align-items-center mb-3">
-                                <input
-                                    class="form-check-input fw-bold border border-3 border-white shadow-none align-self-start"
-                                    type="checkbox"
-                                    name="loi[]"
-                                    value="Other"
-                                    @if(is_array(old('loi')) && in_array('Other', old('loi'))) checked @endif
-                                    id="loi4"
-                                    style="min-width: 30px; height: 30px;"
-                                >
-                                <label class="form-check-label ps-1 mt-2 h5" for="loi4">
-                                    Add additional parameters from the project documentation (please write below the names of the parameters and for which elements to add them)
-                                </label>
-                            </div>
-
-                            <div class="mb-3">
-                            <textarea
-                                class="form-control border-0 border-bottom border-3 border-white rounded-0 shadow-none bg-transparent p-0"
-                                id="loi-other"
-                                name="loi-other"
-                                placeholder="Additional parameters"
-                                rows="1"
-                            >{{old('loi-other', '')}}</textarea>
                             </div>
 
 
@@ -3609,15 +2312,6 @@
                                 multiple
                             />
 
-                            <input
-                                class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                                type="text"
-                                name="reference"
-                                placeholder="Reference to the object"
-                                value="{{old('reference', '')}}"
-                                aria-label=".form-control-lg example"
-                            />
-
                             <div class="mt-5">
                                 <x-turnstile data-theme="light" />
                             </div>
@@ -3628,10 +2322,6 @@
 
                         </form>
                     </div>
-                </div>
-
-                <div class="col-6 px-0 mt-5 d-none d-xl-block">
-                    <img class="img-fluid w-100" src="/images/estimates/illustration.png" alt="">
                 </div>
             </div>
         </div>
@@ -3649,7 +2339,7 @@
             <div class="row align-items-center">
 
                 <div class="col-12 mt-3">
-                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('estimatesProcessing')}}">
+                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
                         @csrf
 
                         <input
@@ -3734,39 +2424,6 @@
                             </div>
                         </div>
 
-                        <h4 class="fw-bold my-4">
-                            Project Units*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="units" value="Metric" {{ (old('units') == 'Metric' ) ? 'checked' : '' }} id="units1" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="units1">
-                                Metric
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="units" value="Imperial" {{ (old('units') == 'Imperial' ) ? 'checked' : '' }} id="units2" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="units2">
-                                Imperial
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="units" value="Other" {{ (old('units') == 'Other' ) ? 'checked' : '' }} id="units3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="units3">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="units-other" value="{{old('units-other', '')}}" placeholder="Write other units">
-                                </div>
-                            </div>
-                        </div>
 
                         <h4 class="fw-bold my-4">
                             Type of the building\construction*
@@ -3833,160 +2490,6 @@
 
 
                         <h4 class="fw-bold my-4">
-                            Incoming Point Cloud*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                   type="checkbox" name="cloud[]"
-                                   value="Point cloud"
-                                   @if(is_array(old('cloud')) && in_array('Point cloud', old('cloud'))) checked @endif
-                                   id="cloud1"
-                                   style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud1">
-                                Point cloud
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="DWG drafts"
-                                @if(is_array(old('cloud')) && in_array('DWG drafts', old('cloud'))) checked @endif
-                                id="cloud2"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud2">
-                                DWG drafts
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="PDF drafts"
-                                @if(is_array(old('cloud')) && in_array('PDF drafts', old('cloud'))) checked @endif
-                                id="cloud3"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                PDF drafts
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Photos"
-                                @if(is_array(old('cloud')) && in_array('Photos', old('cloud'))) checked @endif
-                                id="cloud4"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Photos
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Revit families"
-                                @if(is_array(old('cloud')) && in_array('Revit families', old('cloud'))) checked @endif
-                                id="cloud5"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Revit families
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Revit template for project"
-                                @if(is_array(old('cloud')) && in_array('Revit template for project', old('cloud'))) checked @endif
-                                id="cloud6"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Revit template for project
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Revit sheets"
-                                @if(is_array(old('cloud')) && in_array('Revit sheets', old('cloud'))) checked @endif
-                                id="cloud7"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Revit sheets
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Examples of similar projects"
-                                @if(is_array(old('cloud')) && in_array('Examples of similar projects', old('cloud'))) checked @endif
-                                id="cloud8"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Examples of similar projects
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="cloud[]"
-                                value="Manual for modeling"
-                                @if(is_array(old('cloud')) && in_array('Manual for modeling', old('cloud'))) checked @endif
-                                id="cloud9"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud3">
-                                Manual for modeling
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="cloud[]" value="Other" @if(is_array(old('cloud')) && in_array('Other', old('cloud'))) checked @endif id="cloud4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="cloud4">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="cloud-other" value="{{old('cloud-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
                             Task for modeling*
                         </h4>
 
@@ -4037,138 +2540,6 @@
                             <div class="col-8">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-bold my-4">
-                            Deliverables*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (only 3D model)" @if(is_array(old('deliverables')) && in_array('RVT (only 3D model)', old('deliverables'))) checked @endif id="deliverables1" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables1">
-                                RVT (only 3D model)
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings)', old('deliverables'))) checked @endif id="deliverables2" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables2">
-                                RVT (3D model + drawings)
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="RVT (3D model + drawings + schedules)" @if(is_array(old('deliverables')) && in_array('RVT (3D model + drawings + schedules)', old('deliverables'))) checked @endif id="deliverables3" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables3">
-                                RVT (3D model + drawings + schedules)
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="IFC" @if(is_array(old('deliverables')) && in_array('IFC', old('deliverables'))) checked @endif id="deliverables4" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables4">
-                                IFC
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="PDF" @if(is_array(old('deliverables')) && in_array('PDF', old('deliverables'))) checked @endif id="deliverables5" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables5">
-                                PDF
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="DWG" @if(is_array(old('deliverables')) && in_array('DWG', old('deliverables'))) checked @endif id="deliverables6" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables6">
-                                DWG
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="STP" @if(is_array(old('deliverables')) && in_array('STP', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables6">
-                                STP
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="deliverables[]" value="Other" @if(is_array(old('deliverables')) && in_array('Other', old('deliverables'))) checked @endif id="deliverables7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="deliverables7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="deliverables-other" value="{{old('deliverables-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            Revit version*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2018" {{ (old('version') == '2018' ) ? 'checked' : '' }} id="version2" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version2">
-                                2018
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2019" {{ (old('version') == '2019' ) ? 'checked' : '' }} id="version3" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version3">
-                                2019
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2020" {{ (old('version') == '2020' ) ? 'checked' : '' }} id="version4" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version4">
-                                2020
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2021" {{ (old('version') == '2021' ) ? 'checked' : '' }} id="version5" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version5">
-                                2021
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2022" {{ (old('version') == '2022' ) ? 'checked' : '' }} id="version6" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version6">
-                                2022
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="2023" {{ (old('version') == '2023' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version7">
-                                2023
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="radio" name="version" value="Other" {{ (old('version') == 'Other' ) ? 'checked' : '' }} id="version7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="version7">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="version-other" value="{{old('version-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>
@@ -4260,87 +2631,6 @@
                                     <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
-                        </div>
-
-
-                        <h4 class="fw-bold my-4">
-                            LOI (Level of Information)*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="loi[]" value="No need" @if(is_array(old('loi')) && in_array('No need', old('loi'))) checked @endif id="loi5" style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="loi5">
-                                No need
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="loi[]"
-                                value="Add elements materials"
-                                @if(is_array(old('loi')) && in_array('Add elements materials', old('loi'))) checked @endif
-                                id="loi1"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="loi1">
-                                Add elements materials
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="loi[]"
-                                value="MEPF systems types from drawings"
-                                @if(is_array(old('loi')) && in_array('MEPF systems types from drawings', old('loi'))) checked @endif
-                                id="loi2"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="loi2">
-                                MEPF systems types from drawings
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="loi[]"
-                                value="Add pipes and ducts insulation from drawings"
-                                @if(is_array(old('loi')) && in_array('Add pipes and ducts insulation from drawings', old('loi'))) checked @endif
-                                id="loi3"
-                                style="width: 30px; height: 30px;">
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="loi3">
-                                Add pipes and ducts insulation from drawings
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none align-self-start"
-                                type="checkbox"
-                                name="loi[]"
-                                value="Other"
-                                @if(is_array(old('loi')) && in_array('Other', old('loi'))) checked @endif
-                                id="loi4"
-                                style="min-width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ps-1 mt-2 h5" for="loi4">
-                                Add additional parameters from the project documentation (please write below the names of the parameters and for which elements to add them)
-                            </label>
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea
-                                class="form-control fw-bold border-0 border-bottom border-4 border-white rounded-0 shadow-none bg-transparent p-0"
-                                id="loi-other"
-                                name="loi-other"
-                                placeholder="Additional parameters"
-                                rows="1"
-                            >{{old('loi-other', '')}}</textarea>
                         </div>
 
 
@@ -4553,15 +2843,6 @@
                             placeholder="Select files"
                             id="files"
                             multiple
-                        />
-
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-4 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="reference"
-                            placeholder="Reference to the object"
-                            value="{{old('reference', '')}}"
-                            aria-label=".form-control-lg example"
                         />
 
 

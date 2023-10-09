@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\EstimationMepRequest;
+use App\Http\Requests\EstimationMepShortRequest;
 use App\Http\Requests\EstimationRequest;
+use App\Http\Requests\EstimationScanShortRequest;
 use App\Models\Contact;
 use App\Models\Estimation;
 use App\Models\EstimationMep;
+use App\Models\EstimationMepShort;
+use App\Models\EstimationScanShort;
 use App\Models\MenuItem;
 use App\Models\Post;
 use App\Models\Service;
@@ -25,6 +29,19 @@ class EstimationController extends Controller
         $posts = Post::take(5)->get();
 
         return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts'));
+    }
+
+    public function showScanShort()
+    {
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('estimatesScanShort', compact( 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function showServicesForm()
@@ -71,17 +88,6 @@ class EstimationController extends Controller
                 $parameters['type'] = $parameters['type-other'];
             }
             unset($parameters['type-other']);
-        }
-
-        if (in_array('Other', $parameters['data']) and !$request->filled('data-other') ) {
-            return back()->withErrors('Please, write your incoming data variant.')->withInput();
-        } else {
-            if (in_array('Other', $parameters['data'])) {
-                $index = array_search('Other', $parameters['data']);
-                unset($parameters['data'][$index]);
-                $parameters['data'][$index] = "Other: " . $parameters['data-other'];
-            }
-            unset($parameters['data-other']);
         }
 
         if (in_array('Other', $parameters['cloud']) and !$request->filled('cloud-other') ) {
@@ -185,6 +191,89 @@ class EstimationController extends Controller
         return redirect()->route('thanks');
     }
 
+    public function processingScanShort(EstimationScanShortRequest $request)
+    {
+        $parameters = $request->all();
+
+        if (in_array('Other', $parameters['disciplines']) and !$request->filled('disciplines-other') ) {
+            return back()->withErrors('Please, write your discipline.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['disciplines'])) {
+                $index = array_search('Other', $parameters['disciplines']);
+                unset($parameters['disciplines'][$index]);
+                $parameters['disciplines'][$index] = "Other: " . $parameters['disciplines-other'];
+            }
+            unset($parameters['disciplines-other']);
+        }
+
+        if ( $parameters['type'] == 'Other' and !$request->filled('type-other') ) {
+            return back()->withErrors('Please, write your type of the building\construction.')->withInput();
+        } else {
+            if ($parameters['type-other']) {
+                $parameters['type'] = $parameters['type-other'];
+            }
+            unset($parameters['type-other']);
+        }
+
+        if (in_array('Other', $parameters['task']) and !$request->filled('task-other') ) {
+            return back()->withErrors('Please, write your task for modeling variant.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['task'])) {
+                $index = array_search('Other', $parameters['task']);
+                unset($parameters['task'][$index]);
+                $parameters['task'][$index] = "Other: " . $parameters['task-other'];
+            }
+            unset($parameters['task-other']);
+        }
+
+        if (in_array('Other', $parameters['lod']) and !$request->filled('lod-other') ) {
+            return back()->withErrors('Please, write your lod variant.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['lod'])) {
+                $index = array_search('Other', $parameters['lod']);
+                unset($parameters['lod'][$index]);
+                $parameters['lod'][$index] = "Other: " . $parameters['lod-other'];
+            }
+            unset($parameters['lod-other']);
+        }
+
+        if ($parameters['accuracy'] == 'Other' and !$request->filled('accuracy-other')) {
+            return back()->withErrors('Please, write your project accuracy variant.')->withInput();
+        } else {
+            if ($parameters['accuracy-other']) {
+                $parameters['accuracy'] = $parameters['accuracy-other'];
+            }
+            unset($parameters['accuracy-other']);
+        }
+
+        if ($parameters['currency'] == 'Other' and !$request->filled('currency-other')) {
+            return back()->withErrors('Please, write your project currency variant.')->withInput();
+        } else {
+            if ($parameters['currency-other']) {
+                $parameters['currency'] = $parameters['currency-other'];
+            }
+            unset($parameters['currency-other']);
+        }
+
+        $files = [];
+
+        if ($request->hasfile('files')) {
+            foreach ($request->file('files') as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path() . '/images/upload/', $name);
+                $files[] = $name;
+            }
+        }
+
+        $parameters['files'] = $files;
+
+        unset($parameters['cf-turnstile-response']);
+
+        EstimationScanShort::create($parameters);
+
+        return redirect()->route('thanks');
+    }
+
     public function showMep()
     {
         $menuItems = MenuItem::all();
@@ -196,6 +285,19 @@ class EstimationController extends Controller
         $posts = Post::take(5)->get();
 
         return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts'));
+    }
+
+    public function showMepShort()
+    {
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('estimatesMepShort', compact( 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function showMepServicesForm()
@@ -416,6 +518,94 @@ class EstimationController extends Controller
         unset($parameters['cf-turnstile-response']);
 
         EstimationMep::create($parameters);
+
+        return redirect()->route('thanks');
+    }
+
+    public function processingMepShort(EstimationMepShortRequest $request)
+    {
+        $parameters = $request->all();
+
+        if (in_array('Other', $parameters['disciplines']) and !$request->filled('disciplines-other') ) {
+            return back()->withErrors('Please, write your discipline.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['disciplines'])) {
+                $index = array_search('Other', $parameters['disciplines']);
+                unset($parameters['disciplines'][$index]);
+                $parameters['disciplines'][$index] = "Other: " . $parameters['disciplines-other'];
+            }
+            unset($parameters['disciplines-other']);
+        }
+
+        if (in_array('Other', $parameters['services']) and !$request->filled('services-other') ) {
+            return back()->withErrors('Please, write your services.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['services'])) {
+                $index = array_search('Other', $parameters['services']);
+                unset($parameters['services'][$index]);
+                $parameters['services'][$index] = "Other: " . $parameters['services-other'];
+            }
+            unset($parameters['services-other']);
+        }
+
+        if ( $parameters['lod'] == 'Other' and !$request->filled('lod-other') ) {
+            return back()->withErrors('Please, write your lod.')->withInput();
+        } else {
+            if ($parameters['lod-other']) {
+                $parameters['lod'] = $parameters['lod-other'];
+            }
+            unset($parameters['lod-other']);
+        }
+
+        if (in_array('Other', $parameters['data']) and !$request->filled('data-other') ) {
+            return back()->withErrors('Please, write your incoming data variant.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['data'])) {
+                $index = array_search('Other', $parameters['data']);
+                unset($parameters['data'][$index]);
+                $parameters['data'][$index] = "Other: " . $parameters['data-other'];
+            }
+            unset($parameters['data-other']);
+        }
+
+        if (isset($parameters['duration'])) {
+            if ( $parameters['duration'] == 'Other' and !$request->filled('duration-other') ) {
+                return back()->withErrors('Please, write your duration variant.')->withInput();
+            } else {
+                if ($parameters['duration-other']) {
+                    $parameters['duration'] = $parameters['duration-other'];
+                }
+            }
+        }
+
+        unset($parameters['duration-other']);
+
+        if (in_array('Other', $parameters['deliverables']) and !$request->filled('deliverables-other') ) {
+            return back()->withErrors('Please, write your deliverables variant.')->withInput();
+        } else {
+            if (in_array('Other', $parameters['deliverables'])) {
+                $index = array_search('Other', $parameters['deliverables']);
+                unset($parameters['deliverables'][$index]);
+                $parameters['deliverables'][$index] = "Other: " . $parameters['deliverables-other'];
+            }
+            unset($parameters['deliverables-other']);
+        }
+
+        $files = [];
+
+        if ($request->hasfile('files')) {
+            foreach ($request->file('files') as $file) {
+                $name = $file->getClientOriginalName();
+                $file->move(public_path() . '/images/upload/', $name);
+                $files[] = $name;
+            }
+        }
+
+        $parameters['files'] = $files;
+
+        unset($parameters['cf-turnstile-response']);
+
+        EstimationMepShort::create($parameters);
 
         return redirect()->route('thanks');
     }

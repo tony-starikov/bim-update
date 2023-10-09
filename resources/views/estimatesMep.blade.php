@@ -240,7 +240,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-5 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h5 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h5>
                                 </div>
                             </div>
@@ -343,7 +343,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="display-6 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -446,7 +446,7 @@
                     <div class="row">
                         <div class="col-12 px-0">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -513,7 +513,7 @@
                                 </div>
                                 <div class="col-11 px-0">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -549,7 +549,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h2 class="h2 fw-bold mb-0">
-                                PROJECT ESTIMATE IN 3 HOURS
+                                PROJECT ESTIMATE IN 24 HOURS
                             </h2>
                         </div>
                     </div>
@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6 style="text-align: justify;">
-                                        The estimate is made within 3 hours during working hours from 09:00 to 18:00 (GMT+3).
+                                        The estimate is made within 24 hours during working hours from 09:00 to 18:00 (GMT+3).
                                     </h6>
                                 </div>
                             </div>
@@ -5559,131 +5559,6 @@
                             <div class="col-8">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other lod">
-                                </div>
-                            </div>
-                        </div>
-
-                        <h4 class="fw-bold my-4">
-                            Incoming data*
-                        </h4>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="PDF drawings"
-                                @if(is_array(old('data')) && in_array('PDF drawings', old('data'))) checked @endif
-                                id="data1"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data1">
-                                PDF drawings
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="DWG drawings"
-                                @if(is_array(old('data')) && in_array('DWG drawings', old('data'))) checked @endif
-                                id="data2"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data2">
-                                DWG drawings
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="RVT models"
-                                @if(is_array(old('data')) && in_array('RVT models', old('data'))) checked @endif
-                                id="data3"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data3">
-                                RVT models
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="RVT templates"
-                                @if(is_array(old('data')) && in_array('RVT templates', old('data'))) checked @endif
-                                id="data4"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data4">
-                                RVT templates
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="NWD/NWC models"
-                                @if(is_array(old('data')) && in_array('NWD/NWC models', old('data'))) checked @endif
-                                id="data5"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data5">
-                                NWD/NWC models
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="Submittals"
-                                @if(is_array(old('data')) && in_array('Submittals', old('data'))) checked @endif
-                                id="data6"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data6">
-                                Submittals
-                            </label>
-                        </div>
-
-                        <div class="form-check d-flex align-items-center mb-3">
-                            <input
-                                class="form-check-input fw-bold border border-4 border-white shadow-none"
-                                type="checkbox"
-                                name="data[]"
-                                value="Standards"
-                                @if(is_array(old('data')) && in_array('Standards', old('data'))) checked @endif
-                                id="data7"
-                                style="width: 30px; height: 30px;"
-                            >
-                            <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data7">
-                                Standards
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-4 border-white shadow-none" type="checkbox" name="data[]" value="Other" @if(is_array(old('data')) && in_array('Other', old('data'))) checked @endif id="data10" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label fw-bold ms-1 mt-2 h5" for="data10">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-8">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg fw-bold border-0 border-bottom border-4 border-white rounded-0 px-2 shadow-none" type="text" name="data-other" value="{{old('data-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
                             </div>
                         </div>

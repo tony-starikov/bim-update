@@ -3,41 +3,36 @@
 namespace App\MoonShine\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Estimation;
+use App\Models\EstimationScanShort;
 
+use MoonShine\Fields\Email;
+use MoonShine\Fields\File;
 use MoonShine\Fields\Json;
 use MoonShine\Fields\Text;
+use MoonShine\Fields\Url;
 use MoonShine\Resources\Resource;
 use MoonShine\Fields\ID;
-use MoonShine\Fields\File;
-use MoonShine\Fields\Email;
-use MoonShine\Fields\Url;
 use MoonShine\Actions\FiltersAction;
 
-class EstimationResource extends Resource
+class EstimationScanShortResource extends Resource
 {
-	public static string $model = Estimation::class;
+	public static string $model = EstimationScanShort::class;
 
-	public static string $title = 'Estimations';
+	public static string $title = 'EstimationScanShorts';
 
     public static array $activeActions = ['show', 'delete'];
 
 	public function fields(): array
 	{
-        return [
-            ID::make()->sortable(),
+		return [
+		    ID::make()->sortable(),
             Email::make('E-mail', 'email'),
             Json::make('Disciplines', 'disciplines')->keyValue('#', 'Value')->hideOnIndex(),
-            Text::make('Project Units', 'units')->hideOnIndex(),
             Text::make('Type of the building', 'type')->hideOnIndex(),
             Text::make('Construction area', 'area')->hideOnIndex(),
             Text::make('Construction height', 'height')->hideOnIndex(),
-            Json::make('Incoming Point Cloud', 'cloud')->keyValue('#', 'Value')->hideOnIndex(),
             Json::make('Task for modeling', 'task')->keyValue('#', 'Value')->hideOnIndex(),
-            Json::make('Deliverables', 'deliverables')->keyValue('#', 'Value')->hideOnIndex(),
-            Text::make('Revit version', 'version')->hideOnIndex(),
             Json::make('LOD (Level of Detail)', 'lod')->keyValue('#', 'Value')->hideOnIndex(),
-            Json::make('LOI (Level of Information)', 'loi')->keyValue('#', 'Value')->hideOnIndex(),
             Text::make('Project accuracy', 'accuracy')->hideOnIndex(),
             Text::make('Project currency', 'currency')->hideOnIndex(),
             Text::make('Start and Finish', 'start')->hideOnIndex(),
@@ -51,7 +46,6 @@ class EstimationResource extends Resource
                 ->removable()
                 ->hideOnIndex()
                 ->keepOriginalFileName(),
-            Url::make('Project reference', 'reference')->hideOnIndex(),
         ];
 	}
 

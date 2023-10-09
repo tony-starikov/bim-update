@@ -11,28 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('estimations', function (Blueprint $table) {
+        Schema::create('estimation_scan_shorts', function (Blueprint $table) {
             $table->id();
             $table->string('email');
             $table->json('disciplines');
-            $table->text('units');
             $table->text('type');
             $table->text('area');
             $table->text('height');
-            $table->json('cloud');
             $table->json('task');
-            $table->json('deliverables');
-            $table->text('version');
             $table->json('lod');
-            $table->json('loi');
             $table->text('accuracy');
             $table->text('currency');
             $table->text('start')->nullable();
             $table->text('address')->nullable();
             $table->text('link')->nullable();
             $table->text('comment')->nullable();
-            $table->json('files');
-            $table->text('reference')->nullable();
+            $table->json('files')->nullable();
 
             $table->timestamps();
         });
@@ -43,6 +37,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('estimations');
+        Schema::dropIfExists('estimation_scan_shorts');
     }
 };

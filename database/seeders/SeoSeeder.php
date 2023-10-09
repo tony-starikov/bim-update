@@ -110,6 +110,14 @@ class SeoSeeder extends Seeder
                 'keywords' => 'Keywords',
                 'text' => '',
             ],
+            [
+                'id' => 13,
+                'url' => '/scan-to-bim-estimates-project',
+                'title' => 'Scan to BIM | BIM Estimates for your project',
+                'description' => "Assessment of your BIM project from the specialists of BIMprove LLC. The Individual Five-Star Service. BIM scanning | Digital twins | Built objects",
+                'keywords' => 'Keywords',
+                'text' => '',
+            ],
 //            [
 //                'id' => 4,
 //                'url' => '',
