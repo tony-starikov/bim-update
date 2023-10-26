@@ -519,7 +519,7 @@ class EstimationController extends Controller
 
         EstimationMep::create($parameters);
 
-        return redirect()->route('thanks');
+        return redirect()->route('thanksMepServicesForm');
     }
 
     public function processingMepShort(EstimationMepShortRequest $request)
@@ -607,6 +607,6 @@ class EstimationController extends Controller
 
         EstimationMepShort::create($parameters);
 
-        return redirect()->route('thanks');
+        return redirect()->route('thanksShortMep');
     }
 }

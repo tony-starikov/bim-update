@@ -7,199 +7,48 @@
 @section('main')
 
     <div id="main">
-        <div class="container-fluid d-none d-xl-block" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
-            <div class="container mt-5 p-5">
-                <div class="row px-5 mt-5 text-center">
+        <div class="container-fluid" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
+            <div class="container mt-5 p-lg-5">
+                <div class="row px-lg-5 mt-5 text-center">
                     <div class="col-12 mt-5 order-first">
-                        <h1 class="d-none">Bimprove</h1>
-                        <h2 class="fw-bold mt-4 display-6">
+                        <h2 class="fw-bold mt-4 h1">
                             THE INDIVIDUAL<br>FIVE-STAR
                         </h2>
-                        <h2 class="text-white fw-bold display-6">
+                        <h1 class="text-white fw-bold">
                             MEP FABRICATION SERVICE
-                        </h2>
+                        </h1>
                     </div>
                 </div>
 
-                <div class="row px-5 pb-4 mt-5 text-center justify-content-center">
-                    <div class="col-12">
-                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50 px-0" style="background-color: #43aeb6">
-                            <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
+                <div class="row px-lg-5 pb-4 mt-5 justify-content-center">
+                    <div class="col-lg-6 col-xl-5">
+                        <a id="estimate-first-screen-scantobim" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="row px-5 pb-5 justify-content-center">
-                    <div class="col-3 p-5 text-center">
+                <div class="row px-lg-5 pb-5 justify-content-center">
+                    <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon1.png" alt="icon1" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             MODELING
                         </h6>
                     </div>
-                    <div class="col-3 p-5 text-center">
+                    <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon2.png" alt="icon2" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             COORDINATION
                         </h6>
                     </div>
-                    <div class="col-3 p-5 text-center">
+                    <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon3.png" alt="icon3" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             FABRICATION
                         </h6>
                     </div>
-                    <div class="col-3 p-5 text-center">
+                    <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon4.png" alt="icon3" class="img-fluid w-75">
-                        <h6 class="text-white small fw-semibold mt-4">
-                            SHOP DRAWINGS
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
-            <div class="container mt-5 p-5 pb-0">
-                <div class="row px-5 mt-3 text-center">
-                    <div class="col-12 mt-3 order-first">
-                        <h2 class="fw-bold mt-3 h2">
-                            THE INDIVIDUAL<br>FIVE-STAR
-                        </h2>
-                        <h2 class="fw-bold text-white mt-3 h2">
-                            MEP FABRICATION SERVICE
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="row px-5 pb-4 mt-4 text-center justify-content-center">
-                    <div class="col-12">
-                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                            <span class="fw-bold h5 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row px-5 pb-5 justify-content-center">
-                    <div class="col-3 py-5 px-0 text-center">
-                        <img src="/images/service/mep/header/icons/icon1.png" alt="icon1" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4 px-2">
-                            MODELING
-                        </h6>
-                    </div>
-                    <div class="col-3 py-5 px-0 text-center">
-                        <img src="/images/service/mep/header/icons/icon2.png" alt="icon2" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4 px-2">
-                            COORDINATION
-                        </h6>
-                    </div>
-                    <div class="col-3 py-5 px-0 text-center">
-                        <img src="/images/service/mep/header/icons/icon3.png" alt="icon3" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4 px-2">
-                            FABRICATION
-                        </h6>
-                    </div>
-                    <div class="col-3 py-5 px-0 text-center">
-                        <img src="/images/service/mep/header/icons/icon4.png" alt="icon3" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4 px-2">
-                            SHOP DRAWINGS
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
-            <div class="container mt-5 py-5 pb-0 px-0">
-                <div class="row px-0 mt-3 text-center">
-                    <div class="col-12 mt-3 order-first">
-                        <h2 class="fw-bold mt-3 h2">
-                            THE INDIVIDUAL<br>FIVE-STAR
-                        </h2>
-                        <h2 class="fw-bold text-white mt-3 h2">
-                            MEP FABRICATION SERVICE
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="row px-5 pb-4 mt-4 text-center">
-                    <div class="col-12">
-                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75 px-0" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row px-5 pb-5">
-                    <div class="col-6 p-3 text-center">
-                        <img src="/images/service/mep/header/icons/icon1.png" alt="icon1" class="img-fluid w-50">
-                        <h6 class="text-white fw-semibold mt-4">
-                            MODELING
-                        </h6>
-                    </div>
-                    <div class="col-6 p-3 text-center">
-                        <img src="/images/service/mep/header/icons/icon2.png" alt="icon2" class="img-fluid w-50">
-                        <h6 class="text-white fw-semibold mt-4">
-                            COORDINATION
-                        </h6>
-                    </div>
-                    <div class="col-6 p-3 text-center">
-                        <img src="/images/service/mep/header/icons/icon3.png" alt="icon3" class="img-fluid w-50">
-                        <h6 class="text-white fw-semibold mt-4">
-                            FABRICATION
-                        </h6>
-                    </div>
-                    <div class="col-6 p-3 text-center">
-                        <img src="/images/service/mep/header/icons/icon4.png" alt="icon4" class="img-fluid w-50">
-                        <h6 class="text-white fw-semibold mt-4">
-                            SHOP DRAWINGS
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-md-none" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
-            <div class="container mt-5 py-5 pb-0 px-0">
-                <div class="row px-0 mt-3 text-center">
-                    <div class="col-12 mt-3 order-first">
-                        <h2 class="fw-bold mt-3 h2">
-                            THE INDIVIDUAL<br>FIVE-STAR
-                        </h2>
-                        <h2 class="fw-bold text-white mt-3 h2">
-                            MEP FABRICATION SERVICE
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="row px-2 pb-4 mt-4 text-center">
-                    <div class="col-12">
-                        <a href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #43aeb6">
-                            <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row px-5 pb-5">
-                    <div class="col-6 text-center">
-                        <img src="/images/service/mep/header/icons/icon1.png" alt="icon1" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4">
-                            MODELING
-                        </h6>
-                    </div>
-                    <div class="col-6 text-center">
-                        <img src="/images/service/mep/header/icons/icon2.png" alt="icon2" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4">
-                            COORDINATION
-                        </h6>
-                    </div>
-                    <div class="col-6 text-center">
-                        <img src="/images/service/mep/header/icons/icon3.png" alt="icon3" class="img-fluid w-50">
-                        <h6 class="text-white small fw-semibold mt-4">
-                            FABRICATION
-                        </h6>
-                    </div>
-                    <div class="col-6 text-center">
-                        <img src="/images/service/mep/header/icons/icon4.png" alt="icon4" class="img-fluid w-50">
                         <h6 class="text-white small fw-semibold mt-4">
                             SHOP DRAWINGS
                         </h6>
@@ -210,11 +59,11 @@
     </div>
 
     <div id="WHAT">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5 pb-0">
-                <div class="row p-5 pb-0">
+        <div class="container-fluid">
+            <div class="container p-lg-5 pb-0">
+                <div class="row py-5 p-lg-5 pb-0">
                     <div class="col-12">
-                        <h2 class="fw-bold m-0 display-5">
+                        <h2 class="fw-bold m-0">
                             WHAT IS THE MEP FABRICATION SERVICE?
                         </h2>
                     </div>
@@ -226,9 +75,10 @@
                         <p class="h5 fw-normal mt-4" style="text-align: justify;">
                             During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
                         </p>
-                        <div class="row p-5">
-                            <div class="col-12 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-50" style="background-color: #6bdcdb">
+
+                        <div class="row py-5 p-lg-5 justify-content-center">
+                            <div class="col-lg-9 col-xl-6 text-center">
+                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
                                     <span class="fw-bold h4 d-block my-2">
                                         DOWNLOAD PRESENTATION
                                     </span>
@@ -240,9 +90,9 @@
                         </h2>
                     </div>
 
-                    <div class="col-12 px-4">
+                    <div class="col-12 px-lg-4">
                         <div class="row">
-                            <div class="col ps-0">
+                            <div class="col-md-6 ps-md-0 mt-4">
                                 <div class="card py-5 h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <p class="h5 fw-normal" style="text-align: justify;">
@@ -251,7 +101,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col pe-0">
+                            <div class="col-md-6 pe-md-0 mt-4">
                                 <div class="card py-5 h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <p class="h5 fw-normal" style="text-align: justify;">
@@ -262,8 +112,8 @@
                             </div>
                         </div>
 
-                        <div class="row mt-4">
-                            <div class="col ps-0">
+                        <div class="row">
+                            <div class="col-md-6 ps-md-0 mt-4">
                                 <div class="card py-5 h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <p class="h5 fw-normal" style="text-align: justify;">
@@ -272,318 +122,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col pe-0">
+                            <div class="col-md-6 pe-md-0 mt-4">
                                 <div class="card py-5 h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5 pb-0">
-                <div class="row px-5 pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0 display-5">
-                            WHAT IS THE MEP FABRICATION SERVICE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="h5 fw-normal mt-5" style="text-align: justify;">
-                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
-                        </p>
-                        <p class="h5 fw-normal mt-4" style="text-align: justify;">
-                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
-                        </p>
-                        <div class="row p-5">
-                            <div class="col-12 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h4 d-block my-2">
-                                        DOWNLOAD PRESENTATION
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <h2 class="fw-semibold mb-3">
-                            What disciplines we work with?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-4">
-                        <div class="row">
-                            <div class="col ps-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col pe-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col ps-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col pe-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0 h2">
-                            WHAT IS THE MEP FABRICATION SERVICE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="h6 fw-normal mt-5" style="text-align: justify;">
-                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
-                        </p>
-                        <p class="h6 fw-normal mt-4" style="text-align: justify;">
-                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
-                        </p>
-                        <div class="row py-5">
-                            <div class="col-12 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-75" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h5 d-block my-2">
-                                        DOWNLOAD PRESENTATION
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="fw-semibold mb-3">
-                            What disciplines we work with?
-                        </h4>
-                    </div>
-
-                    <div class="col-12 px-4">
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0 h2">
-                            WHAT IS THE MEP FABRICATION SERVICE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="h6 fw-normal mt-5" style="text-align: justify;">
-                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
-                        </p>
-                        <p class="h6 fw-normal mt-4" style="text-align: justify;">
-                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
-                        </p>
-                        <div class="row py-5">
-                            <div class="col-12 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h5 d-block my-2">
-                                        DOWNLOAD PRESENTATION
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="fw-semibold mb-3">
-                            What disciplines we work with?
-                        </h4>
-                    </div>
-
-                    <div class="col-12 px-4">
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0 h2">
-                            WHAT IS THE MEP FABRICATION SERVICE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="h6 fw-normal mt-5" style="text-align: justify;">
-                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
-                        </p>
-                        <p class="h6 fw-normal mt-4" style="text-align: justify;">
-                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
-                        </p>
-                        <div class="row py-5">
-                            <div class="col-12 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h5 d-block my-2">
-                                        DOWNLOAD PRESENTATION
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <h4 class="fw-semibold mb-3">
-                            What disciplines we work with?
-                        </h4>
-                    </div>
-
-                    <div class="col-12 px-4">
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4 p-0">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h6 fw-normal" style="text-align: justify;">
                                             <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
                                         </p>
                                     </div>
@@ -597,555 +139,145 @@
     </div>
 
     <div id="SOFT">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5 pb-0">
-                <div class="row p-5 pb-0">
+        <div class="container-fluid">
+            <div class="container p-lg-5 pt-lg-0 pb-0">
+                <div class="row py-5 p-lg-5 pt-lg-0 pb-0">
                     <div class="col-12">
-                        <h2 class="fw-bold display-5">
-                            OUR SOFTWARE SKILLS
-                        </h2>
-                    </div>
-                    <div class="col-4">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Revit
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk AutoCAD
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Revizto
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Fabrication CAMduct
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Navisworks
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Graphisoft Arhicad
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    SysQue
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    BIMcollab
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk ReCap
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5 pb-0">
-                <div class="row px-5 pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold display-5">
-                            OUR SOFTWARE SKILLS
-                        </h2>
-                    </div>
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Revit
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk AutoCAD
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Revizto
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Fabrication CAMduct
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Navisworks
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Graphisoft Arhicad
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    SysQue
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    BIMcollab
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk ReCap
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            OUR SOFTWARE SKILLS
-                        </h2>
-                    </div>
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Revit
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk AutoCAD
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Revizto
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Fabrication CAMduct
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Navisworks
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Graphisoft Arhicad
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    SysQue
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    BIMcollab
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk ReCap
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            OUR SOFTWARE SKILLS
-                        </h2>
-                    </div>
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Revit
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk AutoCAD
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Revizto
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Fabrication CAMduct
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Navisworks
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Graphisoft Arhicad
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    SysQue
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    BIMcollab
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk ReCap
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
+                        <h2 class="fw-bold">
                             OUR SOFTWARE SKILLS
                         </h2>
                     </div>
                     <div class="col-12">
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-75">
+                        <div class="row">
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Autodesk Revit
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Revit
-                                </h5>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Autodesk AutoCAD
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-75">
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Revizto
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk AutoCAD
-                                </h5>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Fabrication CAMduct
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-75">
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Autodesk Navisworks
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Revizto
-                                </h5>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Graphisoft Arhicad
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-75">
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            SysQue
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Fabrication CAMduct
-                                </h5>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            BIMcollab
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-75">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk Navisworks
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-75">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Graphisoft Arhicad
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-75">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    SysQue
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-75">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    BIMcollab
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="row mt-4 d-flex align-items-center">
-                            <div class="col-3">
-                                <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-75">
-                            </div>
-                            <div class="col-9 px-0 d-flex align-items-center">
-                                <h5 class="fw-bold m-0">
-                                    Autodesk ReCap
-                                </h5>
+                            <div class="col-sm-6 col-xl-4">
+                                <div class="row mt-4 d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-9 px-0 d-flex align-items-center">
+                                        <h5 class="fw-bold m-0">
+                                            Autodesk ReCap
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <div id="PROPOSE">
-        <div class="container-fluid d-none d-xl-block">
-            <div class="container p-5 pb-0">
-                <div class="row p-5 pb-0">
+        <div class="container-fluid">
+            <div class="container p-lg-5 pt-lg-0 pb-0">
+                <div class="row py-5 p-lg-5 pt-lg-0 pb-0">
                     <div class="col-12">
-                        <h2 class="fw-bold mb-5 display-5">
+                        <h2 class="fw-bold mb-5">
                             WHAT DO WE PROPOSE?
                         </h2>
                     </div>
 
-                    <div class="col-12 px-3">
+                    <div class="col-12 px-lg-3">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1159,7 +291,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1173,7 +305,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1187,10 +319,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1204,7 +333,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1218,7 +347,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
@@ -1236,438 +365,7 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <p class="h5 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5 pb-0">
-                <div class="row p-5 pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold mb-5 display-5">
-                            WHAT DO WE PROPOSE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP families creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/family.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Modeling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/modeling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Fabrication
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/fabrication.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Coordination
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/coordination.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Drawings creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/drawings.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Time scheduling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/scheduling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-12">
-                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            WHAT DO WE PROPOSE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP families creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/family.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Modeling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/modeling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Fabrication
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/fabrication.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Coordination
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/coordination.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Drawings creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/drawings.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Time scheduling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/scheduling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            WHAT DO WE PROPOSE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP families creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/family.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Modeling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/modeling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Fabrication
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/fabrication.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Coordination
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/coordination.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Drawings creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/drawings.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Time scheduling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/scheduling.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
-                                    Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none">
-            <div class="container py-5 pb-0">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            WHAT DO WE PROPOSE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP families creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/family.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Modeling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/modeling.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                MEP Fabrication
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/fabrication.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Coordination
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/coordination.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Drawings creation
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/drawings.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <div class="col-7 d-flex align-items-center">
-                                            <h6 class="fw-bold m-0">
-                                                Time scheduling
-                                            </h6>
-                                        </div>
-                                        <div class="col-5 p-2 text-end">
-                                            <img src="/images/service/mep/propose/scheduling.png" alt="arrow" class="images-fluid w-75">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <p class="h6 fw-bold mt-4 p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
+                                <p class="h5 fw-bold p-5" style="text-align: justify; background-color: #eef5f5; border: 4px solid #6de0de;">
                                     Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.
                                 </p>
                             </div>
@@ -1679,18 +377,18 @@
     </div>
 
     <div id="HOW">
-        <div class="container-fluid d-none d-xxl-block">
-            <div class="container p-5">
-                <div class="row p-5">
+        <div class="container-fluid">
+            <div class="container p-lg-5 pt-lg-0 pb-0">
+                <div class="row py-5 p-lg-5 pt-lg-0 pb-0">
                     <div class="col-12">
-                        <h2 class="fw-bold mb-5 display-5">
+                        <h2 class="fw-bold mb-5">
                             HOW DO WE WORK?
                         </h2>
                     </div>
 
                     <div class="col-12 px-3">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1704,7 +402,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1718,7 +416,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1726,16 +424,13 @@
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
+                                                CAMduct creation or SysQue systems adjustment.
                                             </h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1749,7 +444,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1763,7 +458,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1777,10 +472,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1794,7 +486,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1808,7 +500,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-6 col-xl-4 mb-4">
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
@@ -1823,727 +515,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none">
-            <div class="container p-5">
-                <div class="row p-5 pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold mb-5 display-5">
-                            HOW DO WE WORK?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Analysing incoming contract drawings and submittals.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Project template adjustments.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                MEP Fabrication.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Modeling MEP systems as per design drawings.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Prepearing all necessary families.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Coordination with other trades.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Creating Shop drawings.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h5 class="m-0">
-                                                Creating Spool drawings and worksheets.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5">
-                <div class="row p-5 pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold mb-5 display-5">
-                            HOW DO WE WORK?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Analysing incoming contract drawings and submittals.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Project template adjustments.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                MEP Fabrication.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Modeling MEP systems as per design drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Prepearing all necessary families.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Coordination with other trades.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Shop drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Spool drawings and worksheets.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none">
-            <div class="container py-5">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0">
-                            HOW DO WE WORK?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Analysing incoming contract drawings and submittals.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Project template adjustments.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                MEP Fabrication.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Modeling MEP systems as per design drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Prepearing all necessary families.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Coordination with other trades.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Shop drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Spool drawings and worksheets.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none">
-            <div class="container py-5">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0">
-                            HOW DO WE WORK?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Analysing incoming contract drawings and submittals.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Project template adjustments.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                MEP Fabrication.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Modeling MEP systems as per design drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Prepearing all necessary families.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Coordination with other trades.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Shop drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Spool drawings and worksheets.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none">
-            <div class="container py-5">
-                <div class="row pb-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold m-0">
-                            HOW DO WE WORK?
-                        </h2>
-                    </div>
-
-                    <div class="col-12 px-3">
-                        <div class="row">
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Analysing incoming contract drawings and submittals.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Project template adjustments.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                CAMduct database creation or SysQue systems adjustment.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                MEP Fabrication.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Modeling MEP systems as per design drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Prepearing all necessary families.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Coordination with other trades.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Shop drawings.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="card h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body h-100 p-0 d-flex align-items-center">
-                                        <div class="col-2 h-100 p-0 d-flex align-items-center" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
-                                        </div>
-                                        <div class="col-10 p-2 py-4 d-flex align-items-center">
-                                            <h6 class="m-0">
-                                                Creating Spool drawings and worksheets.
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -2557,12 +529,12 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-bold display-5">
+                            <h2 class="fw-bold">
                                 MORE ABOUT OUR SERVICES
                             </h2>
-                            <h2 class="fw-semibold mt-4 mb-3">
+                            <h3 class="fw-semibold mt-4 mb-3">
                                 Data base creation
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 Every project starts with adjusting its own database. At this first stage we take into account all data provided by customers concerning materials, connections, insulation and services types of ducts and pipes to model HVAC components in the most authentic way.
                             </p>
@@ -2619,9 +591,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Families preparation
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 Using submittals information we download all necessary families from official manufacturer websites or create these families ourselves if they aren’t available on the internet. This approach can guarantee 100% model conformity to clients requirements.
                             </p>
@@ -2678,9 +650,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Modeling process
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 We can offer modeling primary coordination of MEP systems “from scratch” by design drawings for such disciplines: HVAC, Plumbing, Electrical, Fire Protection.
                             </p>
@@ -2743,9 +715,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Fabrication
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 Using CAMduct or SysQue software our team are capable to implement Fabrication of MEP systems according to technical information provided by customer. HVAC and Fire Protection are our main directions in this field.
                             </p>
@@ -2808,9 +780,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Drawings creation
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 During the drawings creation process we always try to represent all required information about MEP components and optimize them to make drawings not only informative but convenient in usage.
                             </p>
@@ -2855,9 +827,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Coordination process
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 At this stage we have two main objectives: find and solve all interdisciplinary clashes which occur, optimize MEP systems routing to achieve a balance between system efficiency and its moderate cost.
                             </p>
@@ -2902,9 +874,9 @@
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
-                            <h2 class="fw-semibold mb-3">
+                            <h3 class="fw-semibold mb-3">
                                 Spools creation
-                            </h2>
+                            </h3>
                             <p class="h5 fw-normal mt-2 p-5" style="text-align: justify; background-color: #eef5f5;">
                                 The final stage of our work is Spools creation. We provide to our clients spool maps and worksheets, that consist of all demanded information for duct and pipe manufacturing and installation.
                             </p>
@@ -3354,37 +1326,17 @@
     </div>
 
     <div id="COUNTRIES">
-        <div class="container-fluid d-none d-lg-block" style="background: url('/images/service/scan_to_bim_images/map/background.png') no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background.png') no-repeat center center local; background-size: cover;">
+            <div class="container py-5 p-lg-5">
+                <div class="row p-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold display-5">
+                        <h2 class="fw-bold">
                             COUNTRIES WE WORKED WITH
                         </h2>
                     </div>
 
-                    <div class="row p-0 mt-4">
-                        <div class="col-12 text-center">
-                            <img src="/images/service/scan_to_bim_images/map/map.png" class="img-fluid w-100" alt="map">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-lg-none" style="background: url('/images/service/scan_to_bim_images/map/background.png') no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            COUNTRIES WE WORKED WITH
-                        </h2>
-                    </div>
-
-                    <div class="row p-0 mt-4">
-                        <div class="col-12 text-center">
-                            <img src="/images/service/scan_to_bim_images/map/map.png" class="img-fluid w-100" alt="map">
-                        </div>
+                    <div class="col-12 text-center mt-4">
+                        <img src="/images/service/scan_to_bim_images/map/map.png" class="img-fluid mx-auto w-100" alt="map">
                     </div>
                 </div>
             </div>
@@ -3392,257 +1344,100 @@
     </div>
 
     <div id="BENEFITS">
-        <div class="container-fluid d-none d-lg-block" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
+            <div class="container py-5 p-lg-5">
+                <div class="row p-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold display-5">
-                            OUR BENEFITS
-                        </h2>
-                    </div>
-
-                    <div class="card-group">
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-25 mb-5 mx-auto" alt="reviewing">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    REVIEWING
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Verification using BIMprove Add-In or check-list
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Checking the 3D model against engineering logic
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Reviewing drawings by customer requirements
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-25 mb-5 mx-auto" alt="development">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    DEVELOPMENT
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Continuous development of Add-In and Dynamo Scripts
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Development and constant updating of the template
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Developing parametric families
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Creating our own database
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-25 mb-5 mx-auto" alt="organization">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    ORGANIZATION
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Unique project management technologies
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Individual approach in communication with the client
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Continuous analysis of the finished work
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            OUR BENEFITS
-                        </h2>
-                    </div>
-
-                    <div class="card-group">
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-50 mb-5 mx-auto" alt="reviewing">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    REVIEWING
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Verification using BIMprove Add-In or check-list
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Checking the 3D model against engineering logic
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Reviewing drawings by customer requirements
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-50 mb-5 mx-auto" alt="development">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    DEVELOPMENT
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Continuous development of Add-In and Dynamo Scripts
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Development and constant updating of the template
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Developing parametric families
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Creating our own database
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-50 mb-5 mx-auto" alt="organization">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    ORGANIZATION
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Unique project management technologies
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Individual approach in communication with the client
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Continuous analysis of the finished work
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-md-none" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
+                        <h2 class="fw-bold">
                             OUR BENEFITS
                         </h2>
                     </div>
 
                     <div class="col-12">
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-25 mb-5 mx-auto" alt="reviewing">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    REVIEWING
-                                </h5>
+                        <div class="row row-cols-1 row-cols-md-3 g-1">
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h5 class="fw-bold text-uppercase">
+                                            REVIEWING
+                                        </h5>
 
-                                <h6 class="text-secondary p-2">
-                                    - Verification using BIMprove Add-In or check-list
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Checking the 3D model against engineering logic
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Reviewing drawings by customer requirements
-                                </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Verification using BIMprove Add-In or check-list
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Checking the 3D model against engineering logic
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Reviewing drawings by customer requirements
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                    </div>
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-100 mb-5 mx-auto" alt="development">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h5 class="fw-bold text-uppercase">
+                                            DEVELOPMENT
+                                        </h5>
 
-                    <div class="col-12">
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-25 mb-5 mx-auto" alt="development">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    DEVELOPMENT
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Continuous development of Add-In and Dynamo Scripts
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Development and constant updating of the template
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Developing parametric families
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Creating our own database
-                                </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Continuous development of Add-In and Dynamo Scripts
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Development and constant updating of the template
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Developing parametric families
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Creating our own database
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
-                            </div>
-                        </div>
-                    </div>
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h5 class="fw-bold text-uppercase">
+                                            ORGANIZATION
+                                        </h5>
 
-                    <div class="col-12">
-                        <div class="card p-3 border-0 bg-transparent">
-                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-25 mb-5 mx-auto" alt="organization">
-                            {{--                        <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="card-img-top w-25 mx-auto" alt="...">--}}
-                            <div class="card-body" style="background-color: #edf4f4">
-                                <h5 class="fw-bold text-uppercase">
-                                    ORGANIZATION
-                                </h5>
-
-                                <h6 class="text-secondary p-2">
-                                    - Unique project management technologies
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Individual approach in communication with the client
-                                </h6>
-                                <h6 class="text-secondary p-2">
-                                    - Continuous analysis of the finished work
-                                </h6>
-                            </div>
-                            <div class="card-footer border-0 bg-transparent">
-                                {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                        <h6 class="text-secondary p-2">
+                                            - Unique project management technologies
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Individual approach in communication with the client
+                                        </h6>
+                                        <h6 class="text-secondary p-2">
+                                            - Continuous analysis of the finished work
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

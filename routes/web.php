@@ -49,6 +49,10 @@ Route::post('/estimates-scan-to-bim-short-processing', [EstimationController::cl
 
 //Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('showMepShort');
 Route::get('/mep-estimates-project', [EstimationController::class, 'showMepShort'])->name('estimatesMep');
+Route::get('/thks-mep-estimates', [PageController::class, 'thanks'])->name('thanksShortMep');
+
 Route::get('/estimates-project-mep', [EstimationController::class, 'showMepServicesForm'])->name('estimatesMepServicesForm');
+Route::get('/thks-estimates-mep', [PageController::class, 'thanks'])->name('thanksMepServicesForm');
+
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');
 Route::post('/estimates-mep-short-processing', [EstimationController::class, 'processingMepShort'])->name('processingMepShort');
