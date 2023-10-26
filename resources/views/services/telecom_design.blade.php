@@ -1141,7 +1141,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="p-5 text-center" style="border: 4px solid #6de0de">
-                                        <a href="https://autode.sk/3X6EaNy" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
+                                        <a id="check-model-first-xl" href="https://autode.sk/3X6EaNy" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block m-2">
                                                 CHECK THE MODEL
                                             </span>
@@ -1183,7 +1183,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="p-5 text-center" style="border: 4px solid #6de0de">
-                                        <a href="https://autode.sk/443fpUS" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
+                                        <a id="check-model-second-xl" href="https://autode.sk/443fpUS" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block m-2">
                                                 CHECK THE MODEL
                                             </span>
@@ -1231,7 +1231,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="p-5 text-center" style="border: 4px solid #6de0de">
-                                        <a href="https://autode.sk/3X6EaNy" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
+                                        <a id="check-model-first" href="https://autode.sk/3X6EaNy" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block m-2">
                                                 CHECK THE MODEL
                                             </span>
@@ -1273,7 +1273,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="p-5 text-center" style="border: 4px solid #6de0de">
-                                        <a href="https://autode.sk/443fpUS" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
+                                        <a id="check-model-second" href="https://autode.sk/443fpUS" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 mx-auto" style="background-color: #43aeb6">
                                             <span class="fw-bold h4 d-block m-2">
                                                 CHECK THE MODEL
                                             </span>
