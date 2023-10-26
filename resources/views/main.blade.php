@@ -2610,7 +2610,7 @@
                                 {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                             </small>
                         </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
@@ -2633,7 +2633,7 @@
                                 {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                             </small>
                         </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home-xl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
@@ -2656,7 +2656,7 @@
                                 {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                             </small>
                         </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home-lg" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
@@ -2677,7 +2677,7 @@
                         <h2 class="text-white h4 fw-semibold mt-4">
                             {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                         </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home-md" class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
@@ -2698,7 +2698,7 @@
                         <h2 class="text-white h4 fw-semibold mt-4">
                             {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                         </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home-sm" class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
@@ -2719,7 +2719,7 @@
                         <h2 class="text-white h4 fw-semibold mt-4">
                             {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
                         </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <button id="go-to-calendar-home" class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                             <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
                         </button>
                     </div>
