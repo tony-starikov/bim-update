@@ -22,7 +22,7 @@
 
                 <div class="row px-lg-5 pb-4 mt-5 justify-content-center">
                     <div class="col-lg-6 col-xl-5">
-                        <a id="estimate-first-screen-scantobim" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                        <a id="estimate-first-screen-mep" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
                             <span class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>

@@ -42,7 +42,7 @@ Route::get('/scan-to-bim-estimates-project', [EstimationController::class, 'show
 Route::get('/thks-scantobim-estimates', [PageController::class, 'thanks'])->name('thanksShortScanToBim');
 
 Route::get('/estimates-project-scan-to-bim', [EstimationController::class, 'showServicesForm'])->name('estimatesServicesForm');
-Route::get('/thks-estimates-scantobim ', [PageController::class, 'thanks'])->name('thanksScanToBim');
+Route::get('/thks-estimates-scantobim', [PageController::class, 'thanks'])->name('thanksScanToBim');
 
 Route::post('/estimates-scan-to-bim-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
 Route::post('/estimates-scan-to-bim-short-processing', [EstimationController::class, 'processingScanShort'])->name('processingScanShort');
