@@ -7,7 +7,7 @@
 @section('main')
 
     <div id="main">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/background2.png') no-repeat center center local; background-size: cover; min-height: 100vh;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/background3.png') no-repeat center center local; background-size: cover; min-height: 100vh;">
             <div class="container mt-5 pb-0 px-0 p-lg-5">
                 <div class="row px-5 mt-5 text-center">
                     <div class="col-12 mt-5">
@@ -30,25 +30,25 @@
 
                 <div class="row px-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon1.png" alt="icon1" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon1-min.png" loading="lazy" alt="icon1" class="img-fluid">
                         <h6 class="text-white fw-semibold mt-4 text-center">
                             DIGITAL TWINS
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon2.png" alt="icon2" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon2-min.png" loading="lazy" alt="icon2" class="img-fluid">
                         <h6 class="text-white fw-semibold mt-4 text-center">
                             REALITY CAPTURE
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon3.png" alt="icon3" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon3-min.png" loading="lazy" alt="icon3" class="img-fluid">
                         <h6 class="text-white fw-semibold mt-4 text-center">
                             FACILITY MANAGEMENT
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon4.png" alt="icon4" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon4-min.png" loading="lazy" alt="icon4" class="img-fluid">
                         <h6 class="text-white fw-semibold mt-4 text-center">
                             AS-BUILT
                         </h6>
@@ -77,7 +77,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service1.png" alt="service1" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service1-min.png" loading="lazy" alt="service1" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -96,7 +96,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service2.png" alt="service2" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service2-min.png" loading="lazy" alt="service2" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -115,7 +115,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service3.png" alt="service3" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service3-min.png" loading="lazy" alt="service3" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -134,7 +134,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service4.png" alt="service4" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service4-min.png" loading="lazy" alt="service4" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -153,7 +153,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service5.png" alt="service5" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service5-min.png" loading="lazy" alt="service5" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -172,7 +172,7 @@
                                         </h5>
                                     </div>
                                     <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service6.png" alt="service6" class="img-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service6-min.png" loading="lazy" alt="service6" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
                                         <h5 class="text-secondary">
@@ -293,7 +293,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -305,7 +305,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -317,7 +317,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -329,7 +329,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -341,7 +341,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -353,7 +353,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -365,7 +365,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -377,7 +377,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -389,7 +389,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -401,7 +401,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -413,7 +413,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -425,7 +425,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -437,7 +437,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -449,7 +449,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -461,7 +461,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3 d-flex align-items-center">
                                     <div class="col-2">
-                                        <img src="/images/service/scan_to_bim_images/cloud/arrow.png" alt="arrow" class="images-fluid w-50">
+                                        <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h4 class="fw-bold">
@@ -491,7 +491,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Adherence to deadlines.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Adherence to deadlines-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -503,7 +503,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Certified team.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Certified team-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -515,7 +515,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Communication.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Communication-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -527,7 +527,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/HIGH QUALITY.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/HIGH QUALITY-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -539,7 +539,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Model development.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Model development-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -551,7 +551,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Project adjustmnent.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Project adjustmnent-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -563,7 +563,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Tasks soving.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Tasks soving-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -575,7 +575,7 @@
                             <div class="col-md-6 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Work process organization.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/Work process organization-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
                                         <h4 class="fw-semibold text-uppercase">
@@ -603,7 +603,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/1.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -617,7 +617,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/2.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -631,7 +631,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/3.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -645,7 +645,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/4.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -677,7 +677,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/5.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -706,7 +706,7 @@
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
                         <div class="col-1 p-0 h-100 d-flex align-items-center" style="background-color: #46d9d6;">
-                            <img src="/images/service/digits/6.png" alt="arrow" class="images-fluid w-100">
+                            <img src="/images/service/digits/6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
                             <h5 class="fw-bold text-uppercase">
@@ -744,7 +744,7 @@
     </div>
 
     <div id="BENEFITS">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background-min.png') no-repeat center center local; background-size: cover;">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -759,7 +759,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
+                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -786,7 +786,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-100 mb-5 mx-auto" alt="development">
+                                            <img src="/images/service/scan_to_bim_images/benefits/development1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="development">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -816,7 +816,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
+                                            <img src="/images/service/scan_to_bim_images/benefits/organization1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -847,7 +847,7 @@
     </div>
 
     <div id="COUNTRIES">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background-min.png') no-repeat center center local; background-size: cover;">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -857,7 +857,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-4">
-                        <img src="/images/service/scan_to_bim_images/map/map.png" class="img-fluid mx-auto w-100" alt="map">
+                        <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                     </div>
                 </div>
             </div>
@@ -880,7 +880,7 @@
                                 <div class="col-6 mt-4">
                                     <div class="portfolio-container">
                                         <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
                                         </div>
                                         <div class="overlay">
                                             <div class="row m-0 text-white">
@@ -908,7 +908,7 @@
 
                                                     <div class="row d-flex align-items-center">
                                                         <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 7vw;" class="img-fluid mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 px-0 d-flex justify-content-center">
                                                             <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
@@ -952,7 +952,7 @@
                                 <div class="col-6 mt-4">
                                     <div class="portfolio-container">
                                         <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
                                         </div>
                                         <div class="overlay">
                                             <div class="row m-0 text-white">
@@ -980,7 +980,7 @@
 
                                                     <div class="row d-flex align-items-center">
                                                         <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
+                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 px-0">
                                                             <h6 style="font-size: 1.1vw" class="mt-2 text-secondary">
@@ -1024,7 +1024,7 @@
                                 <div class="col-6 mt-4">
                                     <div class="portfolio-container">
                                         <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
                                         </div>
                                         <div class="overlay">
                                             <div class="row m-0 text-white">
@@ -1052,7 +1052,7 @@
 
                                                     <div class="row d-flex align-items-center">
                                                         <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" style="width: 8vw;" class="img-fluid mt-2" alt="...">
+                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 8vw;" class="img-fluid mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 ps-0">
                                                             <h6 style="font-size: 1vw" class="mt-2 text-secondary">
@@ -1095,7 +1095,7 @@
                                 <div class="col-6 mt-4">
                                     <div class="portfolio-container">
                                         <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
                                         </div>
                                         <div class="overlay">
                                             <div class="row m-0 text-white">
@@ -1123,7 +1123,7 @@
 
                                                     <div class="row d-flex align-items-center">
                                                         <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" style="width: 7vw;" class="img-fluid mt-2" alt="...">
+                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 7vw;" class="img-fluid mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 px-0 d-flex justify-content-center">
                                                             <h6 style="font-size: 1.1vw" class="mt-2 text-secondary">
@@ -1166,7 +1166,7 @@
                                 <div class="col-12 mt-4">
                                     <div class="portfolio-container">
                                         <div class="card border-0 w-100 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" class="img-fluid w-100" alt="...">
+                                            <img src="/images/{{ $work->image }}" loading="lazy" class="img-fluid w-100" alt="...">
                                         </div>
                                         <div class="overlay">
                                             <div class="row text-white">
@@ -1194,7 +1194,7 @@
 
                                                     <div class="row d-flex align-items-center">
                                                         <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" class="img-fluid w-100 mt-2" alt="...">
+                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" class="img-fluid w-100 mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 px-0 d-flex justify-content-center">
                                                             <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
@@ -1237,7 +1237,7 @@
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
@@ -1257,7 +1257,7 @@
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
@@ -1277,7 +1277,7 @@
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
@@ -1297,7 +1297,7 @@
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
@@ -1317,7 +1317,7 @@
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" alt="arrow">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
@@ -1358,7 +1358,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1381,7 +1381,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1402,7 +1402,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1423,7 +1423,7 @@
                         </button>
                     </div>
                     <div class="col-5 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>

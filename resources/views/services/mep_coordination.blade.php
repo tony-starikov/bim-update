@@ -7,7 +7,7 @@
 @section('main')
 
     <div id="main">
-        <div class="container-fluid" style="background: url('/images/service/mep/header/header.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/mep/header/header-min.png') no-repeat center center local; background-size: cover;">
             <div class="container mt-5 p-lg-5">
                 <div class="row px-lg-5 mt-5 text-center">
                     <div class="col-12 mt-5 order-first">
@@ -30,25 +30,25 @@
 
                 <div class="row px-lg-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-5 text-center">
-                        <img src="/images/service/mep/header/icons/icon1.png" alt="icon1" class="img-fluid w-75">
+                        <img src="/images/service/mep/header/icons/icon1-min.png" loading="lazy" alt="icon1" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             MODELING
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
-                        <img src="/images/service/mep/header/icons/icon2.png" alt="icon2" class="img-fluid w-75">
+                        <img src="/images/service/mep/header/icons/icon2-min.png" loading="lazy" alt="icon2" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             COORDINATION
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
-                        <img src="/images/service/mep/header/icons/icon3.png" alt="icon3" class="img-fluid w-75">
+                        <img src="/images/service/mep/header/icons/icon3-min.png" loading="lazy" alt="icon3" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             FABRICATION
                         </h6>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
-                        <img src="/images/service/mep/header/icons/icon4.png" alt="icon3" class="img-fluid w-75">
+                        <img src="/images/service/mep/header/icons/icon4-min.png" loading="lazy" alt="icon4" class="img-fluid w-75">
                         <h6 class="text-white small fw-semibold mt-4">
                             SHOP DRAWINGS
                         </h6>
@@ -152,7 +152,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/revit_autodesk.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/revit_autodesk.png" loading="lazy" alt="revit_autodesk" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -164,7 +164,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/autocad.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/autocad.png" loading="lazy" alt="autocad" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -176,7 +176,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/revizto.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/revizto.png" loading="lazy" alt="revizto" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -188,7 +188,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/camduct.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/camduct.png" loading="lazy" alt="camduct" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -200,7 +200,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/navisworks.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/navisworks.png" loading="lazy" alt="graphisoft" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -212,7 +212,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/graphisoft.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/graphisoft.png" loading="lazy" alt="graphisoft" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -224,7 +224,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/sysque.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/sysque.png" loading="lazy" alt="sysque" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -236,7 +236,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/bimcollab.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/bimcollab.png" loading="lazy" alt="bimcollab" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -248,7 +248,7 @@
                             <div class="col-sm-6 col-xl-4">
                                 <div class="row mt-4 d-flex align-items-center">
                                     <div class="col-3">
-                                        <img src="/images/service/mep/software/revit_recap.png" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/mep/software/revit_recap.png" loading="lazy" alt="revit_recap" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
                                         <h5 class="fw-bold m-0">
@@ -286,7 +286,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/family.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/family-min.png" loading="lazy" alt="family" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -300,7 +300,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/modeling.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/modeling-min.png" loading="lazy" alt="modeling" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -314,7 +314,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/fabrication.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/fabrication-min.png" loading="lazy" alt="fabrication" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -328,7 +328,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/coordination.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/coordination-min.png" loading="lazy" alt="coordination" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +342,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/drawings.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/drawings-min.png" loading="lazy" alt="drawings" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +356,7 @@
                                             </h5>
                                         </div>
                                         <div class="col-5 p-2">
-                                            <img src="/images/service/mep/propose/scheduling.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/propose/scheduling-min.png" loading="lazy" alt="scheduling" class="images-fluid w-100">
                                         </div>
                                     </div>
                                 </div>
@@ -392,7 +392,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/1.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -406,7 +406,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/2.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -420,7 +420,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/3.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -434,7 +434,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/4.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -448,7 +448,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/5.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -462,7 +462,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/6.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -476,7 +476,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/7.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/7.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -490,7 +490,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/8.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/8.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -504,7 +504,7 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body p-0 d-flex align-items-center">
                                         <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                            <img src="/images/service/mep/how/9.png" alt="arrow" class="images-fluid w-100">
+                                            <img src="/images/service/mep/how/9.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
                                             <h5 class="m-0">
@@ -549,31 +549,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -608,31 +608,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -667,37 +667,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -732,37 +732,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -797,19 +797,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -844,19 +844,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -891,25 +891,25 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -949,31 +949,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1008,31 +1008,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img1.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img2.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img3.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img4.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img5.jpg" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1067,37 +1067,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1132,37 +1132,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img5.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img6.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1197,19 +1197,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1244,19 +1244,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1291,25 +1291,25 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img1.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img2.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img3.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img4.png" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1336,7 +1336,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-4">
-                        <img src="/images/service/scan_to_bim_images/map/map.png" class="img-fluid mx-auto w-100" alt="map">
+                        <img src="/images/service/scan_to_bim_images/map/map.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                     </div>
                 </div>
             </div>
@@ -1359,7 +1359,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
+                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -1386,7 +1386,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" class="img-fluid w-100 mb-5 mx-auto" alt="development">
+                                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="development">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -1416,7 +1416,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
+                                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -1464,7 +1464,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1487,7 +1487,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1508,7 +1508,7 @@
                         </button>
                     </div>
                     <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
@@ -1529,7 +1529,7 @@
                         </button>
                     </div>
                     <div class="col-5 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
                     </div>
                 </div>
             </div>
