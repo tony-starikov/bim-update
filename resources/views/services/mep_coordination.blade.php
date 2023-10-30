@@ -1326,7 +1326,7 @@
     </div>
 
     <div id="COUNTRIES">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background-min.png') no-repeat center center local; background-size: cover;">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -1336,7 +1336,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-4">
-                        <img src="/images/service/scan_to_bim_images/map/map.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
+                        <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                     </div>
                 </div>
             </div>
@@ -1344,7 +1344,7 @@
     </div>
 
     <div id="BENEFITS">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background-min.png') no-repeat center center local; background-size: cover;">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -1359,7 +1359,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
+                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -1386,7 +1386,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/development1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="development">
+                                            <img src="/images/service/scan_to_bim_images/benefits/development1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="development">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
@@ -1416,7 +1416,7 @@
                                 <div class="card h-100 p-3 border-0 bg-transparent">
                                     <div class="row justify-content-center">
                                         <div class="col-4">
-                                            <img src="/images/service/scan_to_bim_images/benefits/organization1.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
+                                            <img src="/images/service/scan_to_bim_images/benefits/organization1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
