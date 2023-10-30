@@ -257,7 +257,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Other" @if(is_array(old('disciplines')) && in_array('Other', old('disciplines'))) checked @endif id="disciplines8" style="width: 30px; height: 30px;">
                                     <label class="form-check-label ms-1 mt-2 h5" for="disciplines8">
@@ -265,7 +265,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="disciplines-other" value="{{old('disciplines-other', '')}}" placeholder="Write your discipline">
                                 </div>
@@ -317,7 +317,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Other" {{ (old('type') == 'Other' ) ? 'checked' : '' }} id="type6" style="width: 30px; height: 30px;">
                                     <label class="form-check-label ms-1 mt-2 h5" for="type6">
@@ -325,7 +325,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="type-other" value="{{old('type-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
@@ -386,7 +386,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Other" @if(is_array(old('task')) && in_array('Other', old('task'))) checked @endif id="task6" style="width: 30px; height: 30px;">
                                     <label class="form-check-label ms-1 mt-2 h5" for="task6">
@@ -394,7 +394,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
                                 </div>
@@ -472,7 +472,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input
                                         class="form-check-input fw-bold border border-3 border-white shadow-none"
@@ -488,7 +488,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
@@ -566,7 +566,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="accuracy" value="Other" {{ (old('accuracy') == 'Other' ) ? 'checked' : '' }} id="accuracy5" style="width: 30px; height: 30px;">
                                     <label class="form-check-label ms-1 mt-2 h5" for="accuracy5">
@@ -574,7 +574,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
@@ -652,7 +652,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-3">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
                                     <label class="form-check-label ms-1 mt-2 h5" for="currency10">
@@ -660,7 +660,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-sm-9">
                                 <div class="mb-3">
                                     <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
                                 </div>
