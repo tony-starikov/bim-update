@@ -22,10 +22,11 @@
     @turnstileScripts()
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    {{--    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">--}}
 
     {{--  splide  --}}
     <link rel="stylesheet" href="/images/css/splide.min.css">
@@ -35,27 +36,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet"/>
 
     <style>
         body {
             font-family: 'Montserrat', sans-serif !important;
         }
+
         .cards-wrapper {
             display: flex;
         }
+
         .small-text {
             font-size: 0.72em;
         }
+
         .page-link:hover {
             background-color: #ffffff;
         }
+
         form.footer-form input {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
             background-color: transparent !important;
         }
+
         /*form.footer-form input[type='checkbox']:checked:after {*/
         /*    !*content: '✔';*!*/
         /*    color: red;*/
@@ -70,6 +76,7 @@
             font-size: 1.5rem !important;
             padding-left: 0 !important;
         }
+
         form.footer-form input[placeholder] {
             /*opacity: 1 !important; !* Firefox *!*/
             color: white !important;
@@ -174,7 +181,7 @@
             background-color: #6bdddb;
             overflow: hidden;
             width: 100%;
-            height:0;
+            height: 0;
             transition: .5s ease;
         }
 
@@ -233,859 +240,408 @@
             left: 0;
             z-index: -100;
         }
+
+        html {
+            font-size: 1rem !important;
+        }
+
+        @media (max-width: 991px) {
+            .offcanvas {
+                background-color: rgba(255, 255, 255, 0.87);
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        @media (min-width: 1920px) {
+            .main-width {
+                padding-left: 20vw;
+                padding-right: 20vw;
+            }
+            .main-container {
+                min-width: 100%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .logo {
+                width: 65px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .service-card-footer {
+                min-height: 90px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .service-card {
+                height: 50%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .service-card-footer {
+                height: 50%;
+            }
+        }
+
+        .horizontal-gradient {
+            background: linear-gradient(to right, #b2f3ee, #eaefee);
+        }
+
+        .horizontal-gradient-calendar {
+            background: linear-gradient(to right, #aabcbf, #c4d8db);
+        }
     </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T276DWG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T276DWG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="container-fluid d-none d-xxl-block px-5">
-    <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
-        <div class="container px-5">
-            <div class="row py-2 px-5">
-                <div class="col-1 px-0 d-flex justify-content-start align-items-center">
-                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
+<nav class="navbar navbar-expand-lg shadow-lg bg-white fixed-top py-1 main-width">
+    <div class="container main-container py-lg-2 py-xl-0 px-lg-0">
+        <a class="navbar-brand p-0 m-0" href="{{ route('main') }}">
+            <img src="/images/bim_prove.png" class="img-fluid logo" alt="">
+        </a>
+        <div class="d-flex justify-content-end align-items-center">
+            <a href="{{ route('contact') }}" role="button"
+               class="btn btn-primary btn-lg shadow-none border-0 rounded-4 d-lg-none"
+               style="background-color: #43aeb6">
+                <span class="fw-bold h6 d-block m-0">CONTACT&nbsp;US</span>
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column flex-lg-row">
+                <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
+                    @foreach($menuItems as $menuItem)
+                        @if($menuItem->show_status === '1')
+                            @switch($menuItem->item_name)
+                                @case('Home')
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="{{ route('main') }}">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            HOME
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Services')
+                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link" href="{{ route('main') }}#services">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            SERVICES
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Portfolio')
+                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link"
+                                       @if(request()->route()->getName() == 'main') href="#portfolio"
+                                       @else href="{{ route('main') }}#portfolio" @endif >
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            PORTFOLIO
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('About')
+                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link"
+                                       @if(request()->route()->getName() == 'main') href="#about"
+                                       @else href="{{ route('main') }}#about" @endif >
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            ABOUT
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Blog')
+                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link" href="{{ route('blog') }}">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            BLOG
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Products')
+                                <li class="nav-item mx-2 dropdown d-none d-lg-block">
+                                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p class="h6 d-inline m-0 fw-bold text-dark">
+                                            PRODUCTS
+                                        </p>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item fw-semibold"
+                                               href="{{ route('products') }}">
+                                                PLUGINS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold"
+                                               href="{{ route('families') }}">
+                                                FAMILIES
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
+                                    <a href="{{ route('products') }}" class="nav-link">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            PLUGINS
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
+                                    <a href="{{ route('families') }}" class="nav-link">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            FAMILIES
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Team')
+                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link"
+                                       @if(request()->route()->getName() == 'main') href="#team"
+                                       @else href="{{ route('main') }}#team" @endif >
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            TEAM
+                                        </p>
+                                    </a>
+                                </li>
+                                @break
+
+                                @case('Career')
+                                <li class="nav-item" data-bs-dismiss="offcanvas">
+                                    <a class="nav-link text-dark" href="#">
+                                        <p class="h6 m-0 fw-bold text-dark">CAREER</p>
+                                    </a>
+                                </li>
+                                @break
+                            @endswitch
+
+                        @endif
+                    @endforeach
+                </ul>
+                <div
+                    class="d-none d-lg-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-center">
+                    <a href="{{ route('contact') }}" role="button"
+                       class="btn btn-primary btn-lg shadow-none border-0 rounded-4"
+                       style="background-color: #43aeb6">
+                        <p class="fw-bold h6 m-0">CONTACT&nbsp;US</p>
                     </a>
-                </div>
-                <div class="col-10 px-0 d-flex justify-content-center align-items-center">
-                    <ul class="nav mx-auto">
-                        @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === '1')
-
-                                @switch($menuItem->item_name)
-                                    @case('Home')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="{{ route('main') }}">
-                                            <span class="h6 fw-bold">HOME</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Services')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                                            <span class="h6 fw-bold">SERVICES</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Portfolio')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                                            <span class="h6 fw-bold">PORTFOLIO</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('About')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                                            <span class="h6 fw-bold">ABOUT</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Blog')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="{{ route('blog') }}">
-                                            <span class="h6 fw-bold">BLOG</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Products')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="h6 fw-bold">PRODUCTS</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item fw-semibold" href="{{ route('products') }}">PLUGINS</a></li>
-                                            <li><a class="dropdown-item fw-semibold" href="{{ route('families') }}">FAMILIES</a></li>
-                                        </ul>
-                                    </li>
-                                    @break
-
-                                    @case('Team')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                                            <span class="h6 fw-bold">TEAM</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Career')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" aria-current="page" href="#">
-                                            <span class="h6 fw-bold">CAREER</span>
-                                        </a>
-                                    </li>
-                                    @break
-                                @endswitch
-
-                            @endif
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 menu-button-xxl" style="background-color: #43aeb6">
-                        <span class="fw-bold h6 d-block m-0">CONTACT&nbsp;US</span>
-                    </a>
-                    <div class="d-flex d-lg-none justify-content-end align-items-center">
-                        <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</div>
+    </div>
+</nav>
 
-<div class="container-fluid d-none d-xl-block d-xxl-none px-5">
-    <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
-        <div class="container px-5">
-            <div class="row py-2 px-5">
-                <div class="col-1 px-0 d-flex justify-content-start align-items-center">
-                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
-                    </a>
-                </div>
-                <div class="col-10 px-0 d-flex justify-content-center align-items-center">
-                    <ul class="nav mx-auto">
-                        @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status === '1')
+{{--<div class="container-fluid bg-dark">--}}
+{{--    <div class="container main-container bg-light" style="min-height: 50vh;">--}}
 
-                                @switch($menuItem->item_name)
-                                    @case('Home')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('main') }}">
-                                            <span class="h6 small fw-bold">HOME</span>
-                                        </a>
-                                    </li>
-                                    @break
+{{--    </div>--}}
+{{--</div>--}}
 
-                                    @case('Services')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                                            <span class="h6 small fw-bold">SERVICES</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Portfolio')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                                            <span class="h6 small fw-bold">PORTFOLIO</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('About')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                                            <span class="h6 small fw-bold">ABOUT</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Blog')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="{{ route('blog') }}">
-                                            <span class="h6 small fw-bold">BLOG</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Products')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="h6 small fw-bold">PRODUCTS</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item fw-bold text-center px-0 small" href="{{ route('products') }}">PLUGINS</a></li>
-                                            <li><a class="dropdown-item fw-bold text-center px-0 small" href="{{ route('families') }}">FAMILIES</a></li>
-                                        </ul>
-                                    </li>
-                                    @break
-
-                                    @case('Team')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                                            <span class="h6 small fw-bold">TEAM</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Career')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-2" aria-current="page" href="#">
-                                            <span class="h6 small fw-bold">CAREER</span>
-                                        </a>
-                                    </li>
-                                    @break
-                                @endswitch
-
-                            @endif
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4 menu-button-xl" style="background-color: #43aeb6">
-                        <span class="fw-bold h6 small text-white d-block m-2">CONTACT&nbsp;US</span>
-                    </a>
-                    <div class="d-flex d-lg-none justify-content-end align-items-center">
-                        <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<div class="container-fluid d-none d-lg-block d-xl-none px-5">
-    <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
-        <div class="container px-5">
-            <div class="row py-2 px-5">
-                <div class="col-1 px-0 d-flex justify-content-start align-items-center">
-                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/bim_prove.png" class="img-fluid"  alt="">
-                    </a>
-                </div>
-                <div class="col-10 px-0 d-flex justify-content-center align-items-center">
-                    <ul class="nav mx-auto">
-                        @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status == 1)
-
-                                @switch($menuItem->item_name)
-                                    @case('Home')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('main') }}">
-                                            <span class="h6 fw-bold small">HOME</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Services')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                                            <span class="h6 fw-bold small">SERVICES</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Portfolio')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                                            <span class="h6 fw-bold small">PORTFOLIO</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('About')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                                            <span class="h6 fw-bold small">ABOUT</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Blog')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="{{ route('blog') }}">
-                                            <span class="h6 fw-bold small">BLOG</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Products')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span class="h6 fw-bold small">PRODUCTS</span>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('products') }}">PLUGINS</a></li>
-                                            <li><a class="dropdown-item text-uppercase h6 fw-semibold small" href="{{ route('families') }}">FAMILIES</a></li>
-                                        </ul>
-                                    </li>
-                                    @break
-
-                                    @case('Team')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                                            <span class="h6 fw-bold small">TEAM</span>
-                                        </a>
-                                    </li>
-                                    @break
-
-                                    @case('Career')
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark px-1" aria-current="page" href="#">
-                                            <span class="h6 fw-bold small">CAREER</span>
-                                        </a>
-                                    </li>
-                                    @break
-                                @endswitch
-
-                            @endif
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="col-1 px-0 d-flex justify-content-end align-items-center">
-                    <a href="{{ route('contact') }}" role="button" class="btn btn-primary nav-link btn-lg shadow-none border-0 rounded-4 menu-button-lg" style="background-color: #43aeb6">
-                        <span class="fw-bold small text-white d-block m-1 mx-2">CONTACT&nbsp;US</span>
-                    </a>
-                    <div class="d-flex d-lg-none justify-content-end align-items-center">
-                        <a class="nav-link text-dark p-0 m-0" aria-current="page" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img src="/images/menu-open.png" class="img pt-2" width="60" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<div class="container-fluid d-lg-none">
-    <nav class="shadow-lg fixed-top" style="background-color: #ffffff;">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col-2 px-0 d-flex justify-content-start align-items-center">
-                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
-                    </a>
-                </div>
-                <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                    <img src="/images/menu-open.png" class="img align-self-center" width="60px" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
 
 <main role="main">
     @yield('main')
 
-    <div class="container-fluid d-none d-xxl-block px-5" style="background-color: #9a9a9a">
-        <div class="container px-xxl-5">
-            <div class="row px-5 pb-5">
-                <div class="col-12 col-lg-6">
-                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">SOCIAL MEDIA</h2>
-                    <h2 class="text-white display-6 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block">SOCIAL MEDIA</h2>
+    <div class="container-fluid main-width" style="background-color: #9a9a9a">
+        <div class="container main-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="text-white h2 fw-bold mt-5">SOCIAL MEDIA</h2>
 
-                    <div class="row mt-5 w-75">
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
-                            </a>
+                    <div class="row mt-4">
+                        <div class="col-6 col-lg-12 px-0">
+                            <div class="row">
+                                <div class="col-6 col-lg-2">
+                                    <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/main_page/social/link.png"
+                                             alt="linkedin">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/main_page/social/insta.png"
+                                             alt="instagram">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/main_page/social/face.png"
+                                             alt="facebook">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/main_page/social/you.png"
+                                             alt="youtube">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="col-12 col-md-6 d-none d-lg-block">
+                <div class="col-sm-6">
 
-                    <h2 class="text-white display-6 fw-bold mt-5 d-lg-none">CONTACTS</h2>
-                    <h2 class="text-white display-6 fw-bold pb-2 pt-5 mt-5 d-none d-lg-block w-50">CONTACTS</h2>
-                    <div class="row mt-5">
-                        <div class="col-12">
+                    <h2 class="text-white h2 fw-bold mt-5">CONTACTS</h2>
+
+                    <div class="row mt-4 pt-2">
+                        <div class="col-12 d-none d-lg-block">
                             <div class="d-inline-block pe-3 border-end border-2 border-white">
-                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'phone')->first()->info }}</span>
-                                </a>
-                            </div>
-                            <div class="d-inline-block ps-3">
-                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'email')->first()->info }}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h5 class="fw-semibold text-white text-center mb-4">Services</h5>
-                    </a>
-                    @foreach($services as $service)
-                        <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
-                        </a>
-                    @endforeach
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h5 class="fw-semibold text-white text-center mb-4">About</h5>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">Team</h6>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="ps-5 ms-3 fw-semibold text-white mb-4">Blog</h5>
-                    </a>
-                    @foreach($posts as $post)
-                        <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
-                            <h6 class="px-0 ps-5 ms-3 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
-                        </a>
-                    @endforeach
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h5 class="fw-semibold text-white text-center me-2 pe-1 mb-4">Products</h5>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
-                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
-                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row px-5">
-                <div class="col-12 px-4">
-                    <div class="row pb-3 border-bottom border-white border-2">
-
-                    </div>
-                </div>
-            </div>
-            <div class="row p-5">
-                <div class="col-12 text-center">
-                    <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-xl-block d-xxl-none px-5" style="background-color: #9a9a9a">
-        <div class="container px-xxl-5">
-            <div class="row px-5 pb-5">
-                <div class="col-6">
-                    <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">SOCIAL MEDIA</h2>
-
-                    <div class="row mt-5 w-75">
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">CONTACTS</h2>
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="d-inline-block pe-2 border-end border-2 border-white">
-                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'phone')->first()->info }}</span>
-                                </a>
-                            </div>
-                            <div class="d-inline-block ps-2">
-                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h4">{{ $contacts->where('name', 'email')->first()->info }}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-4 pb-2 px-0 d-flex justify-content-between">
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h5 class="ps-2 ms-1 fw-semibold text-white text-center mb-4">Services</h5>
-                    </a>
-                    @foreach($services as $service)
-                        <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $service->title_en }}</h6>
-                        </a>
-                    @endforeach
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h5 class="fw-semibold text-white text-center mb-4">Portfolio</h5>
-                    </a>
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h5 class="fw-semibold text-white text-center mb-4">About</h5>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="px-0 ps-5 ms-1 text-white border-bottom-2 border-white small">Team</h6>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h5 class="ps-5 fw-semibold text-white mb-4">Blog</h5>
-                    </a>
-                    @foreach($posts as $post)
-                        <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
-                            <h6 class="px-0 ps-5 text-white border-bottom-2 border-white small">{{ $post->title_en }}</h6>
-                        </a>
-                    @endforeach
-                </div>
-                <div class="col-2">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h5 class="fw-semibold text-white text-center ps-1 mb-4">Products</h5>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
-                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Plugins</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
-                        <h6 class="ps-3 ms-4 text-white border-bottom-2 border-white small">Families</h6>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row px-5">
-                <div class="col-12 px-4">
-                    <div class="row pb-3 border-bottom border-white border-2">
-                    </div>
-                </div>
-            </div>
-            <div class="row p-5">
-                <div class="col-12 text-center">
-                    <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-lg-block d-xl-none px-5" style="background-color: #9a9a9a">
-        <div class="container px-5">
-            <div class="row px-5 pb-5">
-                <div class="col-6">
-                    <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">SOCIAL MEDIA</h2>
-
-                    <div class="row mt-5 w-75">
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <h2 class="text-white h1 fw-bold pb-2 pt-5 mt-5">CONTACTS</h2>
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="row">
-                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h5">{{ $contacts->where('name', 'phone')->first()->info }}</span>
-                                </a>
-                            </div>
-                            <div class="row mt-3">
-                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}" class="text-white text-decoration-none">
-                                    <span class="fw-semibold h5">{{ $contacts->where('name', 'email')->first()->info }}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row mt-4 pb-3 px-5">
-                <div class="col-12 d-flex justify-content-between">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h6 class="fw-semibold d-inline-block text-white">Services</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h6 class="fw-semibold d-inline-block text-white">Portfolio</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h6 class="fw-semibold d-inline-block text-white">About</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h6 class="fw-semibold d-inline-block text-white">Blog</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h6 class="fw-semibold d-inline-block text-white">Products</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="fw-semibold d-inline-block text-white">Team</h6>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row px-5">
-                <div class="col-12 px-4">
-                    <div class="row pb-3 border-bottom border-white border-2">
-
-                    </div>
-                </div>
-            </div>
-            <div class="row p-5">
-                <div class="col-12 text-center">
-                    <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-none d-md-block d-lg-none" style="background-color: #9a9a9a">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-6">
-                    <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
-
-                    <div class="row w-100">
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-6">
-                    <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="row">
-                                <a style="font-size: 1.8vw;" class="text-decoration-none fw-semibold text-white" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">{{ $contacts->where('name', 'phone')->first()->info }}</a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row mt-2">
-                                <a style="font-size: 1.8vw;" class="text-decoration-none fw-semibold text-white" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">{{ $contacts->where('name', 'email')->first()->info }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row border-bottom border-white border-2 py-3">
-                <div class="col-6">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h6 class="fw-semibold text-white">SERVICES</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h6 class="fw-semibold text-white">PORTFOLIO</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h6 class="fw-semibold text-white">ABOUT</h6>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h6 class="fw-semibold text-white">BLOG</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h6 class="fw-semibold text-white">PRODUCTS</h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="fw-semibold text-white">TEAM</h6>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row py-3">
-                <div class="col-12 text-center">
-                    <p class="card-text text-white fw-bold h6">
-                        <small>
-                            &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
-                        </small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid d-md-none" style="background-color: #9a9a9a">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-6">
-                    <h2 class="text-white h4 fw-bold pb-2">SOCIAL MEDIA</h2>
-
-                    <div class="row w-100">
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_1')->first()->image }}" alt="linkedin">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_2')->first()->image }}" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_3')->first()->image }}" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 d-flex align-items-center">
-                            <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank" class="text-white h4 text-decoration-none">
-                                <img class="img-fluid w-75" src="/images/{{ $contacts->where('name', 'social_4')->first()->image }}" alt="youtube">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-6">
-                    <h2 class="text-white h4 fw-bold pb-2">CONTACTS</h2>
-                    <div class="row">
-                        <div class="col-12">
-                            <a class="text-decoration-none" href="tel:{{ $contacts->where('name', 'phone')->first()->info }}">
-                                <h6 class="fw-semibold text-white">
-                                    <small>
+                                <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
+                                   class="text-white text-decoration-none">
+                                    <p class="h5">
                                         {{ $contacts->where('name', 'phone')->first()->info }}
-                                    </small>
-                                </h6>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <a class="text-decoration-none" href="mailto:{{ $contacts->where('name', 'email')->first()->info }}">
-                                <h6 class="fw-semibold text-white">
-                                    <small>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="d-inline-block ps-3 pe-0">
+                                <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
+                                   class="text-white text-decoration-none">
+                                    <p class="h5">
                                         {{ $contacts->where('name', 'email')->first()->info }}
-                                    </small>
-                                </h6>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <div class="row">
+                                <div class="col-12">
+                                    <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
+                                       class="text-white text-decoration-none">
+                                        <p class="h5">
+                                            {{ $contacts->where('name', 'phone')->first()->info }}
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
+                                       class="text-white text-decoration-none">
+                                        <p class="h5">
+                                            {{ $contacts->where('name', 'email')->first()->info }}
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-6 col-md-2">
+                    <a class="text-decoration-none p-0 m-0"
+                       @if(request()->route()->getName() == 'main') href="#services"
+                       @else href="{{ route('main') }}#services" @endif >
+                        <p class="h5 fw-semibold text-white mb-4">Services</p>
+                    </a>
+                    <div class="d-none d-md-block">
+                        @foreach($services as $service)
+                            <a class="text-decoration-none p-0 m-0"
+                               @if(request()->route()->getName() == 'main') href="#services"
+                               @else href="{{ route('main') }}#services" @endif >
+                                <p class="h6 text-white border-bottom-2 border-white small">{{ $service->title_en }}</p>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <a class="text-decoration-none p-0 m-0"
+                       @if(request()->route()->getName() == 'main') href="#portfolio"
+                       @else href="{{ route('main') }}#portfolio" @endif >
+                        <p class="h5 fw-semibold text-white mb-4">Portfolio</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about"
+                       @else href="{{ route('main') }}#about" @endif >
+                        <p class="h5 fw-semibold text-white mb-4">About</p>
+                    </a>
+                    <div class="d-none d-md-block">
+                        <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team"
+                           @else href="{{ route('main') }}#team" @endif >
+                            <p class="h6 text-white border-bottom-2 border-white small">Team</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}">
+                        <p class="h5 fw-semibold text-white mb-4">Blog</p>
+                    </a>
+                    <div class="d-none d-md-block">
+                        @foreach($posts as $post)
+                            <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
+                                <p class="h6 text-white border-bottom-2 border-white small">{{ $post->title_en }}</p>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 d-flex justify-content-md-end">
+                    <div>
+                        <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
+                            <p class="h5 fw-semibold text-white mb-4">Products</p>
+                        </a>
+                        <div class="d-none d-md-block">
+                            <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}">
+                                <p class="h6 text-white border-bottom-2 border-white small">Plugins</p>
+                            </a>
+                            <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
+                                <p class="h6 text-white border-bottom-2 border-white small">Families</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row border-bottom border-white border-2 py-3">
-                <div class="col-6">
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                SERVICES
-                            </small>
-                        </h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                PORTFOLIO
-                            </small>
-                        </h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                ABOUT
-                            </small>
-                        </h6>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('blog') }}" >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                BLOG
-                            </small>
-                        </h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" href="{{ route('products') }}" >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                PRODUCTS
-                            </small>
-                        </h6>
-                    </a>
-                    <a class="text-decoration-none p-0 m-0" @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif >
-                        <h6 class="fw-semibold text-white">
-                            <small>
-                                TEAM
-                            </small>
-                        </h6>
-                    </a>
+            <div class="row">
+                <div class="col-12 px-4">
+                    <div class="row pb-3 border-bottom border-white border-2">
+
+                    </div>
                 </div>
             </div>
-
-            <div class="row py-3">
+            <div class="row p-5">
                 <div class="col-12 text-center">
-                    <p class="text-white fw-semibold small">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date('Y') }}. <a class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
+                    <p class="card-text text-white fw-bold h6">
+                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a
+                            class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
             </div>
@@ -1093,261 +649,12 @@
     </div>
 </main>
 
-
-
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 @yield('modals')
-
-<!-- Modal START -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container-fluid h-100">
-                    <nav style="background-color: #ffffff;">
-                        <div class="container">
-                            <div class="row py-2">
-                                <div class="col-2 px-0 d-flex justify-content-start align-items-center">
-                                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
-                                    </a>
-                                </div>
-                                <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                                    <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                        <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <div class="row" style="background-color: #68d1d3">
-                        <div class="col-12">
-                            <h6 class="text-white text-center display-2 fw-bold my-5 d-md-none">
-                                GENERAL MENU
-                            </h6>
-                            <h6 class="text-white text-center display-4 fw-bold my-5 d-none d-md-block">
-                                GENERAL MENU
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-
-                        @foreach($menuItems as $menuItem)
-                            @if($menuItem->show_status == 1)
-
-                                @switch($menuItem->item_name)
-                                    @case('Home')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('main') }}" data-bs-dismiss="exampleModal" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            HOME
-                                        </a>
-                                        <a href="{{ route('main') }}" data-bs-dismiss="exampleModal" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                HOME
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Services')
-                                    <div class="col-12 text-center my-2">
-                                        <a data-bs-dismiss="exampleModal" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            SERVICES
-                                        </a>
-                                        <a data-bs-dismiss="exampleModal" @if(request()->route()->getName() == 'main') href="#services" @else href="{{ route('main') }}#services" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                SERVICES
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Portfolio')
-                                    <div class="col-12 text-center my-2">
-                                        <a @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            PORTFOLIO
-                                        </a>
-                                        <a @if(request()->route()->getName() == 'main') href="#portfolio" @else href="{{ route('main') }}#portfolio" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                PORTFOLIO
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('About')
-                                    <div class="col-12 text-center my-2">
-                                        <a @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            ABOUT
-                                        </a>
-                                        <a @if(request()->route()->getName() == 'main') href="#about" @else href="{{ route('main') }}#about" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                ABOUT
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Blog')
-                                    <div class="col-12 text-center my-2">
-                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            BLOG
-                                        </a>
-                                        <a href="{{ route('blog') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                BLOG
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Products')
-                                    <div class="col-12 text-center my-2">
-                                        <button data-bs-target="#productsMenu" data-bs-toggle="modal" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
-                                            PRODUCTS
-                                        </button>
-                                        <button data-bs-target="#productsMenu" data-bs-toggle="modal" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                PRODUCTS
-                                            </span>
-                                        </button>
-                                    </div>
-                                    @break
-
-                                    @case('Team')
-                                    <div class="col-12 text-center my-2">
-                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            TEAM
-                                        </a>
-                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                TEAM
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-
-                                    @case('Career')
-                                    <div class="col-12 text-center my-2">
-                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                            CAREER
-                                        </a>
-                                        <a @if(request()->route()->getName() == 'main') href="#team" @else href="{{ route('main') }}#team" @endif role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                            <span class="my-1 mx-0 h5 fw-bold d-block">
-                                                CAREER
-                                            </span>
-                                        </a>
-                                    </div>
-                                    @break
-                                @endswitch
-
-                            @endif
-                        @endforeach
-
-                            <div class="col-12 text-center my-2">
-                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none" style="background-color: #6bdcdb">
-                                    CONTACT US
-                                </a>
-                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block" style="background-color: #6bdcdb">
-                                    <span class="my-1 mx-0 h5 fw-bold d-block">
-                                        CONTACT US
-                                    </span>
-                                </a>
-                            </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal END -->
-
-
-{{--PRODUCTS MENU--}}
-
-<div class="modal fade" id="productsMenu" tabindex="-1" aria-labelledby="productsMenu" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <div class="modal-body p-0">
-                <div class="container-fluid h-100">
-                    <nav style="background-color: #ffffff;">
-                        <div class="container">
-                            <div class="row py-2">
-                                <div class="col-2 px-0 d-flex justify-content-start align-items-center">
-                                    <a class="p-0 m-0 ms-1" href="{{ route('main') }}">
-                                        <img src="/images/bim_prove.png" class="img-fluid" style="max-height: 50px"  alt="">
-                                    </a>
-                                </div>
-                                <div class="col-10 px-0 d-flex justify-content-end align-items-center">
-                                    <button class="btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                        <span class="fw-bold d-block m-0 small">CONTACT&nbsp;US</span>
-                                    </button>
-
-                                    <a class="nav-link text-dark px-0" type="button" data-bs-dismiss="modal" aria-label="Close">
-                                        <img src="/images/menu-close.png" class="img align-self-center" width="60" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <div class="row" style="background-color: #68d1d3">
-                        <div class="col-12">
-                            <h6 class="text-white text-center display-2 fw-bold my-5 d-md-none">
-                                PRODUCTS
-                            </h6>
-                            <h6 class="text-white text-center display-4 fw-bold my-5 d-none d-md-block">
-                                PRODUCTS
-                            </h6>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-12 text-center my-2">
-                            <a href="{{ route('products') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
-                                PLUGINS
-                            </a>
-                            <a href="{{ route('products') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    PLUGINS
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="col-12 text-center my-2">
-                            <a href="{{ route('families') }}" role="button" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
-                                FAMILIES
-                            </a>
-                            <a href="{{ route('families') }}" role="button" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    FAMILIES
-                                </span>
-                            </a>
-                        </div>
-
-                        <div class="col-12 text-center my-2">
-                            <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-primary border-0 w-50 mx-auto fw-bold d-md-none shadow-none" style="background-color: #6bdcdb">
-                                BACK
-                            </button>
-                            <button data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-primary border-0 w-25 mx-auto my-2 fw-bold d-none d-md-block shadow-none" style="background-color: #6bdcdb">
-                                <span class="my-1 mx-0 h5 fw-bold d-block">
-                                    BACK
-                                </span>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{{--PRODUCTS MENU--}}
 
 @include('cookie-consent::index')
 </body>

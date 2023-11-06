@@ -17,32 +17,32 @@ class AchievementSeeder extends Seeder
             [
                 'title_en' => '60+',
                 'subtitle_en' => 'CONTENTED CUSTOMERS',
-                'image' => 'achievements/achievement_1.png',
+                'image' => 'achievements/achievement_1-min.png',
             ],
             [
                 'title_en' => '80%',
                 'subtitle_en' => 'CLIENTS STAY WITH US',
-                'image' => 'achievements/achievement_2.png',
+                'image' => 'achievements/achievement_2-min.png',
             ],
             [
                 'title_en' => '7',
                 'subtitle_en' => 'YEARS EXPERIENCE',
-                'image' => 'achievements/achievement_3.png',
+                'image' => 'achievements/achievement_3-min.png',
             ],
             [
                 'title_en' => '1100+',
                 'subtitle_en' => 'COMPLETED PROJECTS',
-                'image' => 'achievements/achievement_4.png',
+                'image' => 'achievements/achievement_4-min.png',
             ],
             [
                 'title_en' => '35+',
                 'subtitle_en' => 'SKILLED EMPLOYEES',
-                'image' => 'achievements/achievement_5.png',
+                'image' => 'achievements/achievement_5-min.png',
             ],
             [
                 'title_en' => '500+',
                 'subtitle_en' => 'DESIGNED FAMILIES',
-                'image' => 'achievements/achievement_6.png',
+                'image' => 'achievements/achievement_6-min.png',
             ],
         ]);
     }
