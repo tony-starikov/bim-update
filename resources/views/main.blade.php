@@ -3,12 +3,12 @@
 @section('main')
 
     <div id="bg-video">
-        <video id="video" poster="/images/poster.png" autoplay playsinline muted loop>
+        <video class="d-none d-md-block" id="video" poster="/images/poster.png" autoplay playsinline muted loop>
             <source src="/images/video/bg_video_new_1.webm" type="video/webm">
             <source src="images/video/bg_video_new_1.mp4" type="video/mp4">
         </video>
 
-        <div class="container-fluid" style="min-height: 100vh;">
+        <div class="container-fluid video-container" style="min-height: 100vh;">
             <div class="container" style="min-height: 100vh;">
                 <div class="row pb-0 px-0 p-lg-5 align-items-center align-items-center" style="min-height: 100vh;">
                     <div class="col-12 mt-5 text-center">

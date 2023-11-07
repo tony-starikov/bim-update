@@ -286,12 +286,100 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .video-container {
+                background: url('/images/main_page/background2.webp') no-repeat center center local; background-size: cover;
+            }
+        }
+
         .horizontal-gradient {
             background: linear-gradient(to right, #b2f3ee, #eaefee);
         }
 
         .horizontal-gradient-calendar {
             background: linear-gradient(to right, #aabcbf, #c4d8db);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown .dropdown-menu .dropdown-item:active {
+            background-color: #6bdcdb;
+        }
+
+        a.back-to-top{
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #fff;
+            height: 0px;
+            width: 0px;
+            overflow: hidden;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            color: transparent;
+            clear: both;
+            visibility: hidden;
+            position: fixed;
+            cursor: pointer;
+            display: block;
+            border: none;
+            right: 50px;
+            bottom: 75px;
+            font-size: 0px;
+            outline: 0 !important;
+            z-index: 99;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+        a.back-to-top:hover,
+        a.back-to-top:active,
+        a.back-to-top:focus {
+            outline: 0 !important;
+        }
+        a.back-to-top::before,
+        a.back-to-top::after {
+            content: "";
+            display: block;
+            vertical-align: middle;
+            border-bottom: solid 10px #6bdcdb;
+            border-left: solid 10px transparent;
+            line-height: 0;
+            border-right: solid 10px transparent;
+            height: 0;
+            margin: 18px auto 0;
+            width: 0;
+            border-radius:20px;
+            visibility: hidden;
+        }
+        a.back-to-top.show::after,
+        a.back-to-top.show::before{
+            visibility: visible;
+        }
+        a.back-to-top::after {
+            border-bottom-color: #fff;
+            position: relative;
+            top:-24px;
+        }
+        a.back-to-top.show {
+            display: block;
+            background: #fff;
+            color: #fff;
+            font-size: 25px;
+            right: 25px;
+            bottom: 50px;
+            height: 50px;
+            width: 50px;
+            visibility: visible;
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+        }
+        a.back-to-top.show:active {
+            box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
         }
     </style>
 </head>
@@ -303,7 +391,7 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<nav class="navbar navbar-expand-lg shadow-lg bg-white fixed-top py-1 main-width">
+<nav id="nav" class="navbar navbar-expand-lg shadow-lg bg-white fixed-top py-1 main-width">
     <div class="container main-container py-lg-2 py-xl-0 px-lg-0">
         <a class="navbar-brand p-0 m-0" href="{{ route('main') }}">
             <img src="/images/bim_prove.png" class="img-fluid logo" alt="">
@@ -342,13 +430,32 @@
                                 @break
 
                                 @case('Services')
-                                <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
-                                    <a class="nav-link" href="{{ route('main') }}#services">
-                                        <p class="h6 m-0 fw-bold text-dark">
+                                <li class="nav-item mx-2 dropdown d-none d-lg-block">
+                                    <a class="nav-link text-dark dropdown-toggle" href="{{ route('main') }}#services" role="button">
+                                        <p class="h6 d-inline m-0 fw-bold text-dark">
                                             SERVICES
                                         </p>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        @foreach($services as $service)
+                                            <li>
+                                                <a class="dropdown-item fw-semibold text-uppercase"
+                                                   @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
+                                                    {{ $service->title_en }}
+                                                </a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
                                 </li>
+                                @foreach($services as $service)
+                                    <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
+                                        <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif class="nav-link">
+                                            <p class="h6 m-0 fw-bold text-dark text-uppercase text-center">
+                                                {{ $service->title_en }}
+                                            </p>
+                                        </a>
+                                    </li>
+                                @endforeach
                                 @break
 
                                 @case('Portfolio')
@@ -387,8 +494,7 @@
 
                                 @case('Products')
                                 <li class="nav-item mx-2 dropdown d-none d-lg-block">
-                                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
-                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link text-dark dropdown-toggle" href="{{ route('products') }}" role="button">
                                         <p class="h6 d-inline m-0 fw-bold text-dark">
                                             PRODUCTS
                                         </p>
@@ -468,7 +574,7 @@
 {{--</div>--}}
 
 
-<main role="main">
+<main id="content" role="main">
     @yield('main')
 
     <div class="container-fluid main-width py-3" style="background-color: #9a9a9a">
@@ -654,8 +760,27 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+    // Back to top
+    var amountScrolled = 200;
+    var amountScrolledNav = 25;
+
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').addClass('show');
+        } else {
+            $('a.back-to-top').removeClass('show');
+        }
+    });
+</script>
+
 @yield('modals')
 
 @include('cookie-consent::index')
+
+<a href="#content" class="back-to-top" type="button"></a>
+
 </body>
 </html>
