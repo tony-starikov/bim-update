@@ -15,16 +15,6 @@ class AchievementSeeder extends Seeder
     {
         DB::table('achievements')->insert([
             [
-                'title_en' => '60+',
-                'subtitle_en' => 'CONTENTED CUSTOMERS',
-                'image' => 'achievements/achievement_1-min.png',
-            ],
-            [
-                'title_en' => '80%',
-                'subtitle_en' => 'CLIENTS STAY WITH US',
-                'image' => 'achievements/achievement_2-min.png',
-            ],
-            [
                 'title_en' => '7',
                 'subtitle_en' => 'YEARS EXPERIENCE',
                 'image' => 'achievements/achievement_3-min.png',
@@ -35,9 +25,9 @@ class AchievementSeeder extends Seeder
                 'image' => 'achievements/achievement_4-min.png',
             ],
             [
-                'title_en' => '35+',
-                'subtitle_en' => 'SKILLED EMPLOYEES',
-                'image' => 'achievements/achievement_5-min.png',
+                'title_en' => '80%',
+                'subtitle_en' => 'CLIENTS STAY WITH US',
+                'image' => 'achievements/achievement_2-min.png',
             ],
             [
                 'title_en' => '500+',

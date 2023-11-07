@@ -57,12 +57,12 @@ class PageItemSeeder extends Seeder
             [
                 'page_id' => 1,
                 'name' => 'about_image',
-                'value' => "main_page/team_photo.png"
+                'value' => "main_page/team_photo.webp"
             ],
             [
                 'page_id' => 1,
                 'name' => 'about_image_small',
-                'value' => "main_page/team_small.png"
+                'value' => "main_page/team_small.webp"
             ],
             [
                 'page_id' => 1,
@@ -102,12 +102,12 @@ class PageItemSeeder extends Seeder
             [
                 'page_id' => 1,
                 'name' => 'calendar_subheader',
-                'value' => "Sign up for a meeting now a convenient time for you!"
+                'value' => "Book a consultation at your convenience!"
             ],
             [
                 'page_id' => 1,
                 'name' => 'calendar_image',
-                'value' => "main_page/calendar_image.png"
+                'value' => "main_page/calendar_image.webp"
             ],
         ]);
     }

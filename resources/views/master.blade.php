@@ -471,7 +471,7 @@
 <main role="main">
     @yield('main')
 
-    <div class="container-fluid main-width" style="background-color: #9a9a9a">
+    <div class="container-fluid main-width py-3" style="background-color: #9a9a9a">
         <div class="container main-container">
             <div class="row">
                 <div class="col-sm-6">

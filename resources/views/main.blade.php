@@ -54,16 +54,16 @@
     </div>
 
 {{--    STARS--}}
-    <div id="stars" class="container-fluid bg-white">
+    <div id="stars" class="container-fluid bg-white py-3">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold pb-4">
+                    <h2 class="h1 fw-bold pb-4">
                         {{ $page_info->pageItems->where('name', 'stars_header')->first()->value }}
                     </h2>
                 </div>
             </div>
-            <div class="row px-lg-5 d-none d-sm-flex">
+            <div class="row px-lg-5 d-none d-md-flex">
 
                 @foreach($stars as $star)
                     @if($star->title_en == 'Contact')
@@ -83,9 +83,7 @@
                                     <div class="row">
                                         <div class="col-7 px-0 d-flex align-items-center">
                                             <h3 class="h5 fw-bold ps-3">
-                                                <small>
-                                                    {{ $star->title_en }}
-                                                </small>
+                                                {{ $star->title_en }}
                                             </h3>
                                         </div>
                                         <div class="col-5">
@@ -94,7 +92,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer p-0 border-0 d-flex align-items-center" style="background-color: #ffffff">
-                                    <p class="h6 text-secondary p-3 py-xl-5">
+                                    <p class="h5 text-secondary p-3 py-xl-5">
                                         {{ $star->description_en }}
                                     </p>
                                 </div>
@@ -104,7 +102,7 @@
                 @endforeach
             </div>
 
-            <div class="row d-sm-none">
+            <div class="row d-md-none">
                 <div class="col-12 mx-0 px-0">
                     <section class="splide" aria-label="Slide Container Example">
                         <div class="splide__track">
@@ -147,18 +145,18 @@
     </div>
 
 {{--    ACHIEVEMENTS--}}
-    <div id="achivements" class="container-fluid horizontal-gradient">
+    <div id="achievements" class="container-fluid horizontal-gradient py-3">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold m-0 pb-4">
+                    <h2 class="h1 fw-bold m-0 pb-4">
                         {{ $page_info->pageItems->where('name', 'achievements_header')->first()->value }}
                     </h2>
                 </div>
             </div>
-            <div class="row px-lg-5 pb-0">
+            <div class="row justify-content-between px-lg-5 pb-0">
                 @foreach($achievements as $achievement)
-                    <div class="col-6 col-sm-4 col-xl-2 px-4 px-lg-5 px-xl-3 mt-4 text-center">
+                    <div class="col-6 col-md-3 col-xl-2 px-5 px-sm-5 px-md-4 px-lg-4 px-xl-3 mt-4 text-center">
                         <img src="images/{{ $achievement->image }}" class="img-fluid w-100">
                         <p class="fw-bold mt-1 h2">{{ $achievement->title_en }}</p>
                         <p class="card-title text-dark fw-bold">
@@ -171,11 +169,11 @@
     </div>
 
 {{--    SERVICES--}}
-    <div id="services" class="container-fluid">
+    <div id="services" class="container-fluid py-3">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold m-0 pb-4">
+                    <h2 class="h1 fw-bold m-0 pb-4">
                         {{ $page_info->pageItems->where('name', 'services_header')->first()->value }}
                     </h2>
                 </div>
@@ -207,14 +205,14 @@
                                     </div>
                                     <div class="row d-lg-none">
                                         <div class="col-12">
-                                            <p class="h6 text-secondary" style="min-height: 77px;">
+                                            <p class="h5 text-secondary" style="min-height: 77px;">
                                                 {{ $service->description_en }}
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent service-card-footer">
-                                    <p class="h6 text-secondary d-none d-lg-block">
+                                    <p class="h5 text-secondary d-none d-lg-block">
                                         {{ $service->description_en }}
                                     </p>
                                     <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none d-lg-none" style="background-color: #43aeb6">
@@ -240,11 +238,11 @@
     </div>
 
 {{--    TESTIMONIALS--}}
-    <div id="testimonials" class="container-fluid horizontal-gradient pb-5 px-0">
+    <div id="testimonials" class="container-fluid horizontal-gradient py-3 pb-5 px-0">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold">
+                    <h2 class="h1 fw-bold">
                         {{ $page_info->pageItems->where('name', 'testimonials_header')->first()->value }}
                     </h2>
                 </div>
@@ -292,12 +290,12 @@
     </div>
 
 {{--    PORTFOLIO--}}
-    <div id="portfolio">
+    <div id="portfolio" class="py-3">
         <div class="container-fluid d-none d-lg-block pb-5 px-0">
             <div class="container py-5 p-lg-5">
                 <div class="row px-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold">
+                        <h2 class="h1 fw-bold">
                             {{ $page_info->pageItems->where('name', 'portfolio_header')->first()->value }}
                         </h2>
                     </div>
@@ -453,7 +451,7 @@
             <div class="container py-5 p-lg-5">
                 <div class="row px-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold">
+                        <h2 class="h1 fw-bold">
                             {{ $page_info->pageItems->where('name', 'portfolio_header')->first()->value }}
                         </h2>
                     </div>
@@ -530,11 +528,11 @@
     </div>
 
 {{--    ABOUT--}}
-    <div id="about" class="container-fluid horizontal-gradient px-0">
+    <div id="about" class="container-fluid horizontal-gradient px-0 py-3">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold">
+                    <h2 class="h1 fw-bold">
                         {{ $page_info->pageItems->where('name', 'about_header')->first()->value }}
                     </h2>
                 </div>
@@ -558,11 +556,11 @@
     </div>
 
 {{--    TEAM--}}
-    <div id="team" class="container-fluid pb-5 px-0">
+    <div id="team" class="container-fluid py-3 pb-5 px-0">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold">
+                    <h2 class="h1 fw-bold">
                         {{ $page_info->pageItems->where('name', 'team_header')->first()->value }}
                     </h2>
                 </div>
@@ -602,7 +600,7 @@
     </div>
 
 {{--    CALENDAR--}}
-    <div id="calendar" class="container-fluid horizontal-gradient-calendar">
+    <div id="calendar" class="container-fluid horizontal-gradient-calendar py-3">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-md-6">
