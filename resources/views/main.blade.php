@@ -216,14 +216,14 @@
                                         {{ $service->description_en }}
                                     </p>
                                     <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none d-lg-none" style="background-color: #43aeb6">
-                                        <span class="fw-bold h5 d-block my-2">MORE INFO</span>
+                                        <span class="fw-bold h5 d-block my-2">EXPLORE</span>
                                     </a>
                                 </div>
                                 <div class="service-overlay d-none d-lg-block">
                                     <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
                                         <a class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                             <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                <span class="fw-bold h4 d-block my-2">MORE INFO</span>
+                                                <span class="fw-bold h4 d-block my-2">EXPLORE</span>
                                             </button>
                                         </a>
                                     </div>
