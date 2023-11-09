@@ -7,13 +7,13 @@
 @section('main')
 
     <div id="main">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/background3.png') no-repeat center center local; background-size: cover; min-height: 100vh;">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/scan-to-bim-background.webp') no-repeat center center local; background-size: cover; min-height: 100vh;">
             <div class="container mt-5 pb-0 px-0 p-lg-5">
                 <div class="row px-5 mt-5 text-center">
                     <div class="col-12 mt-5">
-                        <h2 class="fw-bold mt-4 h1">
+                        <p class="fw-bold mt-4 h1">
                             THE INDIVIDUAL<br>FIVE-STAR
-                        </h2>
+                        </p>
                         <h1 class="text-white fw-bold">
                             SCAN TO BIM SERVICE
                         </h1>
@@ -22,7 +22,7 @@
 
                 <div class="row px-5 pb-4 mt-5 justify-content-center">
                     <div class="col-lg-6 col-xl-5">
-                        <a id="estimate-first-screen-scantobim" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                        <a id="estimate-first-screen-scantobim" href="{{ route('estimates') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-2 border-white rounded-4 w-100 p-3" style="background-color: #68c8c9">
                             <span class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -31,27 +31,27 @@
                 <div class="row px-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon1-min.png" loading="lazy" alt="icon1" class="img-fluid">
-                        <h6 class="text-white fw-semibold mt-4 text-center">
+                        <h3 class="h6 text-white fw-semibold mt-4 text-center">
                             DIGITAL TWINS
-                        </h6>
+                        </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon2-min.png" loading="lazy" alt="icon2" class="img-fluid">
-                        <h6 class="text-white fw-semibold mt-4 text-center">
+                        <h3 class="h6 text-white fw-semibold mt-4 text-center">
                             REALITY CAPTURE
-                        </h6>
+                        </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon3-min.png" loading="lazy" alt="icon3" class="img-fluid">
-                        <h6 class="text-white fw-semibold mt-4 text-center">
+                        <h3 class="h6 text-white fw-semibold mt-4 text-center">
                             FACILITY MANAGEMENT
-                        </h6>
+                        </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon4-min.png" loading="lazy" alt="icon4" class="img-fluid">
-                        <h6 class="text-white fw-semibold mt-4 text-center">
+                        <h3 class="h6 text-white fw-semibold mt-4 text-center">
                             AS-BUILT
-                        </h6>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -60,10 +60,10 @@
 
     <div id="PROPOSE">
         <div class="container-fluid">
-            <div class="container py-5 p-lg-5">
+            <div class="container py-5 p-lg-5 py-lg-3">
                 <div class="row p-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold h1">
+                        <h2 class="fw-bold">
                             WHAT DO WE PROPOSE?
                         </h2>
                     </div>
@@ -72,114 +72,114 @@
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             As-built model
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service1-min.png" loading="lazy" alt="service1" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Creation of the executive 3D model «As-built» by the Point Cloud. Adding Management Information to BIM Elements.
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             As-built drawings
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service2-min.png" loading="lazy" alt="service2" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Design of As-built drawings based on 3D models “As-built”.
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             Engineering portals
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service3-min.png" loading="lazy" alt="service3" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Creation of engineering portals (linked 3D-model, attribute model, documentation, packages).
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             Anomalies
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service4-min.png" loading="lazy" alt="service4" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Detection of anomalies of actual placements and sizes of constructions in real life and project documentation.
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             Exception reports
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service5-min.png" loading="lazy" alt="service5" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Creation of a report on problems in the project.
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-4 p-4 pb-0">
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
-                                        <h5 class="fw-bold mt-4">
+                                        <h3 class="h5 fw-bold mt-4">
                                             QA\QC
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-5">
                                         <img src="/images/service/scan_to_bim_images/proposes/service6-min.png" loading="lazy" alt="service6" class="img-fluid w-100">
                                     </div>
                                     <div class="col-12 pt-3">
-                                        <h5 class="text-secondary">
+                                        <p class="h5 text-secondary">
                                             <small>
                                                 Checking of model accuracy, building and engineering logic, elements clashing.
                                             </small>
-                                        </h5>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +195,7 @@
             <div class="container pb-5 p-lg-5 pt-lg-0">
                 <div class="row p-lg-5 pt-lg-0">
                     <div class="col-12">
-                        <h2 class="fw-bold h1">
+                        <h2 class="fw-bold">
                             WHAT IS THE SCAN TO BIM SERVICE?
                         </h2>
                     </div>
@@ -203,58 +203,58 @@
                         <div class="row mt-lg-4 pt-2 pt-lg-3">
 
                             <div class="col-lg-6">
-                                <h5 class="text-secondary" style="text-align: justify;">
+                                <p class="h5 text-secondary" style="text-align: justify;">
                                     Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps in creating a comprehensive and detailed model of the building, which can be used for renovation, restoration, or retrofitting purposes. The Scan to BIM service is essential in creating a collaborative environment for developing and executing efficiently the construction projects.
-                                </h5>
+                                </p>
                             </div>
                             <div class="col-lg-6">
                                 <div class="row">
                                     <div class="col-12 mt-2 mt-lg-0">
-                                        <h4 class="fw-semibold pb-2">
+                                        <p class="h4 fw-semibold pb-2">
                                             What disciplines we work with?
-                                        </h4>
+                                        </p>
                                     </div>
 
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Mechanical
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Electrical
-                                        </h5>
+                                        </h3>
                                     </div>
 
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Plumbing
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Fire Protection
-                                        </h5>
+                                        </h3>
                                     </div>
 
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Structural
-                                        </h5>
+                                        </h3>
                                     </div>
                                     <div class="col-6 p-2 pt-0">
-                                        <h5 class="fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
+                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
                                             Architectural
-                                        </h5>
+                                        </h3>
                                     </div>
 
                                 </div>
                             </div>
 
                             <div class="col-12 pt-lg-5 mt-2 mt-lg-0">
-                                <h5 class="text-secondary">
+                                <p class="h5 text-secondary">
                                     The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings, greater accuracy, and reduced risk of errors. It helps in minimizing on-site work and disruptions, reduces the chances of rework, and allows for better visualization and analysis of the building's structure. Additionally, the Scan to BIM service enables stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.
-                                </h5>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -281,10 +281,10 @@
 
     <div id="POINT">
         <div class="container-fluid">
-            <div class="container pb-5 p-lg-5 pt-lg-0">
-                <div class="row p-lg-5 pt-lg-0">
+            <div class="container pb-5 p-lg-5 py-lg-0">
+                <div class="row p-lg-5 py-lg-0">
                     <div class="col-12">
-                        <h2 class="fw-bold">
+                        <h2 class="fw-bold pb-3">
                             WHAT WE MAKE BY THE POINT CLOUD?
                         </h2>
                     </div>
@@ -296,9 +296,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Residential Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -308,9 +308,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Educational Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -320,9 +320,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Institutional Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -332,9 +332,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Historical Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -344,9 +344,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Business Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -356,9 +356,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Mercantile Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -368,9 +368,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Industrial Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -380,9 +380,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Storages
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -392,9 +392,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Parkings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -404,9 +404,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Special Buildings
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -416,9 +416,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Bridges
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -428,9 +428,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Roads
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -440,9 +440,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Transmission towers
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -452,9 +452,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Monuments
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -464,9 +464,9 @@
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
-                                        <h4 class="fw-bold">
+                                        <h3 class="h4 fw-bold">
                                             Radio masts and towers
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -479,7 +479,7 @@
 
     <div id="GET">
         <div class="container-fluid">
-            <div class="container p-lg-5 pt-0 pb-5">
+            <div class="container pt-0 pb-5 p-lg-5 pb-lg-0">
                 <div class="row p-lg-5 pt-0">
                     <div class="col-12">
                         <h2 class="fw-bold">
@@ -494,9 +494,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Adherence to deadlines-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Adherence to deadlines
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -506,9 +506,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Certified team-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Certified team
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -518,9 +518,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Communication-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Communication
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -530,9 +530,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/HIGH QUALITY-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             HIGH QUALITY
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -542,9 +542,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Model development-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Model development
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -554,9 +554,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Project adjustmnent-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Project adjustmnent
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -566,9 +566,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Tasks soving-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Tasks solving
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -578,9 +578,9 @@
                                         <img src="/images/service/scan_to_bim_images/get/Work process organization-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h4 class="fw-semibold text-uppercase">
+                                        <h3 class="h4 fw-semibold text-uppercase">
                                             Work process organization
-                                        </h4>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -606,12 +606,12 @@
                             <img src="/images/service/digits/1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 CONSULTATION
-                            </h5>
-                            <h6 class="text-secondary">
+                            </h3>
+                            <p class="h6 text-secondary">
                                 Receiving the task by email, google-form, or during the meeting.
-                            </h6>
+                            </p>
                         </div>
                     </div>
 
@@ -620,12 +620,12 @@
                             <img src="/images/service/digits/2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 PROJECT ESTIMATION
-                            </h5>
-                            <h6 class="text-secondary">
+                            </h3>
+                            <p class="h6 text-secondary">
                                 Estimation of the project and creation of an offer.
-                            </h6>
+                            </p>
                         </div>
                     </div>
 
@@ -634,12 +634,12 @@
                             <img src="/images/service/digits/3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 ESTIMATION APPROVAL
-                            </h5>
-                            <h6 class="text-secondary">
+                            </h3>
+                            <p class="h6 text-secondary">
                                 Discussion of estimation with the client & commercial offer approval.
-                            </h6>
+                            </p>
                         </div>
                     </div>
 
@@ -648,28 +648,28 @@
                             <img src="/images/service/digits/4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 PROJECT SETUP
-                            </h5>
+                            </h3>
                             <div class="row">
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - The creation of chats and dashboard
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - Deadline setting
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - Team meeting
-                                    </h6>
+                                    </p>
                                 </div>
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - Sorting and processing incoming information
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - Setting up the template for work
-                                    </h6>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -680,25 +680,25 @@
                             <img src="/images/service/digits/5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 WORKFLOW
-                            </h5>
+                            </h3>
                             <div class="row">
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - modeling
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - preparation of drawings and schedules
-                                    </h6>
+                                    </p>
                                 </div>
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - step-by-step project review
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - daily/weekly reports or meetings with the client
-                                    </h6>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -709,31 +709,31 @@
                             <img src="/images/service/digits/6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                         </div>
                         <div class="col-11 py-2">
-                            <h5 class="fw-bold text-uppercase">
+                            <h3 class="h5 fw-bold text-uppercase">
                                 MODEL PUBLISHING
-                            </h5>
+                            </h3>
                             <div class="row">
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - QA\QC in Revit or Navisworks
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - Adding missing elements and corrections after QA\QC
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - Purging unused elements, deleting working views
-                                    </h6>
+                                    </p>
                                 </div>
                                 <div class="col-6">
-                                    <h6 class="text-secondary">
+                                    <p class="h6 text-secondary">
                                         - delivering model to the client
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - getting feedback and approval from the client
-                                    </h6>
-                                    <h6 class="text-secondary">
+                                    </p>
+                                    <p class="h6 text-secondary">
                                         - receiving payment
-                                    </h6>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -744,7 +744,7 @@
     </div>
 
     <div id="BENEFITS">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background-min.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid horizontal-gradient">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -763,19 +763,19 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             REVIEWING
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Verification using BIMprove Add-In or check-list
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Checking the 3D model against engineering logic
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Reviewing drawings by customer requirements
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -790,22 +790,22 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             DEVELOPMENT
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Continuous development of Add-In and Dynamo Scripts
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Development and constant updating of the template
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Developing parametric families
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Creating our own database
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -820,19 +820,19 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             ORGANIZATION
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Unique project management technologies
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Individual approach in communication with the client
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Continuous analysis of the finished work
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -847,7 +847,7 @@
     </div>
 
     <div id="COUNTRIES">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background-min.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background-color: #f1faf9;">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">

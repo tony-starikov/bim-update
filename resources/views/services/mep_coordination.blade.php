@@ -11,9 +11,9 @@
             <div class="container mt-5 p-lg-5">
                 <div class="row px-lg-5 mt-5 text-center">
                     <div class="col-12 mt-5 order-first">
-                        <h2 class="fw-bold mt-4 h1">
+                        <p class="fw-bold mt-4 h1">
                             THE INDIVIDUAL<br>FIVE-STAR
-                        </h2>
+                        </p>
                         <h1 class="text-white fw-bold">
                             MEP FABRICATION SERVICE
                         </h1>
@@ -22,7 +22,7 @@
 
                 <div class="row px-lg-5 pb-4 mt-5 justify-content-center">
                     <div class="col-lg-6 col-xl-5">
-                        <a id="estimate-first-screen-mep" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                        <a id="estimate-first-screen-mep" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-2 border-white rounded-4 w-100 p-3" style="background-color: #43aeb6">
                             <span class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -31,27 +31,27 @@
                 <div class="row px-lg-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon1-min.png" loading="lazy" alt="icon1" class="img-fluid w-75">
-                        <h6 class="text-white small fw-semibold mt-4">
+                        <p class="h6 text-white small fw-semibold mt-4">
                             MODELING
-                        </h6>
+                        </p>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon2-min.png" loading="lazy" alt="icon2" class="img-fluid w-75">
-                        <h6 class="text-white small fw-semibold mt-4">
+                        <p class="h6 text-white small fw-semibold mt-4">
                             COORDINATION
-                        </h6>
+                        </p>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon3-min.png" loading="lazy" alt="icon3" class="img-fluid w-75">
-                        <h6 class="text-white small fw-semibold mt-4">
+                        <p class="h6 text-white small fw-semibold mt-4">
                             FABRICATION
-                        </h6>
+                        </p>
                     </div>
                     <div class="col-6 col-lg-3 p-5 text-center">
                         <img src="/images/service/mep/header/icons/icon4-min.png" loading="lazy" alt="icon4" class="img-fluid w-75">
-                        <h6 class="text-white small fw-semibold mt-4">
+                        <p class="h6 text-white small fw-semibold mt-4">
                             SHOP DRAWINGS
-                        </h6>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
     <div id="WHAT">
         <div class="container-fluid">
-            <div class="container p-lg-5 pb-0">
+            <div class="container pb-0 p-lg-5 pt-lg-2">
                 <div class="row py-5 p-lg-5 pb-0">
                     <div class="col-12">
                         <h2 class="fw-bold m-0">
@@ -85,7 +85,7 @@
                                 </a>
                             </div>
                         </div>
-                        <h2 class="fw-semibold mb-3">
+                        <h2 class="fw-semibold text-uppercase mb-3">
                             What disciplines we work with?
                         </h2>
                     </div>
@@ -155,9 +155,9 @@
                                         <img src="/images/service/mep/software/revit_autodesk.png" loading="lazy" alt="revit_autodesk" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Autodesk Revit
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -167,9 +167,9 @@
                                         <img src="/images/service/mep/software/autocad.png" loading="lazy" alt="autocad" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Autodesk AutoCAD
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -179,9 +179,9 @@
                                         <img src="/images/service/mep/software/revizto.png" loading="lazy" alt="revizto" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Revizto
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -191,9 +191,9 @@
                                         <img src="/images/service/mep/software/camduct.png" loading="lazy" alt="camduct" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Fabrication CAMduct
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -203,9 +203,9 @@
                                         <img src="/images/service/mep/software/navisworks.png" loading="lazy" alt="graphisoft" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Autodesk Navisworks
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -215,9 +215,9 @@
                                         <img src="/images/service/mep/software/graphisoft.png" loading="lazy" alt="graphisoft" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Graphisoft Arhicad
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -227,9 +227,9 @@
                                         <img src="/images/service/mep/software/sysque.png" loading="lazy" alt="sysque" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             SysQue
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -239,9 +239,9 @@
                                         <img src="/images/service/mep/software/bimcollab.png" loading="lazy" alt="bimcollab" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             BIMcollab
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -251,9 +251,9 @@
                                         <img src="/images/service/mep/software/revit_recap.png" loading="lazy" alt="revit_recap" class="images-fluid w-100">
                                     </div>
                                     <div class="col-9 px-0 d-flex align-items-center">
-                                        <h5 class="fw-bold m-0">
+                                        <h3 class="h5 fw-bold m-0">
                                             Autodesk ReCap
-                                        </h5>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
@@ -281,9 +281,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 MEP families creation
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/family-min.png" loading="lazy" alt="family" class="images-fluid w-100">
@@ -295,9 +295,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 MEP Modeling
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/modeling-min.png" loading="lazy" alt="modeling" class="images-fluid w-100">
@@ -309,9 +309,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 MEP Fabrication
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/fabrication-min.png" loading="lazy" alt="fabrication" class="images-fluid w-100">
@@ -323,9 +323,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 Coordination
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/coordination-min.png" loading="lazy" alt="coordination" class="images-fluid w-100">
@@ -337,9 +337,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 Drawings creation
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/drawings-min.png" loading="lazy" alt="drawings" class="images-fluid w-100">
@@ -351,9 +351,9 @@
                                 <div class="card h-100" style="border: 4px solid #6de0de">
                                     <div class="card-body d-flex align-items-center">
                                         <div class="col-7 d-flex align-items-center">
-                                            <h5 class="fw-bold m-0">
+                                            <h3 class="h5 fw-bold m-0">
                                                 Time scheduling
-                                            </h5>
+                                            </h3>
                                         </div>
                                         <div class="col-5 p-2">
                                             <img src="/images/service/mep/propose/scheduling-min.png" loading="lazy" alt="scheduling" class="images-fluid w-100">
@@ -395,9 +395,9 @@
                                             <img src="/images/service/mep/how/1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Analysing incoming contract drawings and submittals.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -409,9 +409,9 @@
                                             <img src="/images/service/mep/how/2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Project template adjustments.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -423,9 +423,9 @@
                                             <img src="/images/service/mep/how/3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 CAMduct creation or SysQue systems adjustment.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -437,9 +437,9 @@
                                             <img src="/images/service/mep/how/4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 MEP Fabrication.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -451,9 +451,9 @@
                                             <img src="/images/service/mep/how/5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Modeling MEP systems as per design drawings.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -465,9 +465,9 @@
                                             <img src="/images/service/mep/how/6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Prepearing all necessary families.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -479,9 +479,9 @@
                                             <img src="/images/service/mep/how/7.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Coordination with other trades.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -493,9 +493,9 @@
                                             <img src="/images/service/mep/how/8.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Creating Shop drawings.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -507,9 +507,9 @@
                                             <img src="/images/service/mep/how/9.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                         </div>
                                         <div class="col-10 p-3 d-flex align-items-center">
-                                            <h5 class="m-0">
+                                            <h3 class="h5 m-0">
                                                 Creating Spool drawings and worksheets.
-                                            </h5>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1344,7 +1344,7 @@
     </div>
 
     <div id="BENEFITS">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/benefits/background-min.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid horizontal-gradient">
             <div class="container py-5 p-lg-5">
                 <div class="row p-lg-5">
                     <div class="col-12">
@@ -1363,19 +1363,19 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             REVIEWING
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Verification using BIMprove Add-In or check-list
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Checking the 3D model against engineering logic
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Reviewing drawings by customer requirements
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -1390,22 +1390,22 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             DEVELOPMENT
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Continuous development of Add-In and Dynamo Scripts
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Development and constant updating of the template
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Developing parametric families
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Creating our own database
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -1420,19 +1420,19 @@
                                         </div>
                                     </div>
                                     <div class="card-body" style="background-color: #edf4f4">
-                                        <h5 class="fw-bold text-uppercase">
+                                        <h3 class="h5 fw-bold text-uppercase">
                                             ORGANIZATION
-                                        </h5>
+                                        </h3>
 
-                                        <h6 class="text-secondary p-2">
+                                        <p class="h6 text-secondary p-2">
                                             - Unique project management technologies
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Individual approach in communication with the client
-                                        </h6>
-                                        <h6 class="text-secondary p-2">
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
                                             - Continuous analysis of the finished work
-                                        </h6>
+                                        </p>
                                     </div>
                                     <div class="card-footer border-0 bg-transparent">
                                         {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
@@ -1446,127 +1446,28 @@
         </div>
     </div>
 
-    <div id="calendar">
-        <div class="container-fluid d-none d-xxl-block" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold display-5 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h1 fw-semibold mt-4">
-                            <small>
-                                Book a consultation at your convenience!
-                            </small>
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold display-5 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h1 fw-semibold mt-4">
-                            <small>
-                                Book a consultation at your convenience!
-                            </small>
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
+    <div id="calendar" class="container-fluid horizontal-gradient-calendar py-3">
+        <div class="container py-5 p-lg-5">
+            <div class="row px-lg-5">
+                <div class="col-md-6">
+                    <h2 class="text-white h1 fw-bold w-100">
+                        {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                    </h2>
+                    <h3 class="h2 text-white fw-semibold mt-4">
+                        <small>
+                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                        </small>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-12 col-xxl-9">
+                            <button id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-7">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-5 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="text-white fw-bold h2 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
+                <div class="col-6 d-none d-md-flex align-items-center">
+                    <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
                 </div>
             </div>
         </div>

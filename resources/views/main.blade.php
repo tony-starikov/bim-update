@@ -3,7 +3,8 @@
 @section('main')
 
     <div id="bg-video">
-        <video class="d-none d-md-block" id="video" poster="/images/poster.png" autoplay playsinline muted loop>
+        <video title="Presentation video of outsourcing company BIMprove llc." class="d-none d-md-block" id="video" poster="/images/poster.png" autoplay playsinline muted loop>
+            <meta itemprop="description" content="Presentation video of outsourcing company BIMprove llc.">
             <source src="/images/video/bg_video_new_1.webm" type="video/webm">
             <source src="images/video/bg_video_new_1.mp4" type="video/mp4">
         </video>
