@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('families', function (Blueprint $table) {
             $table->id();
             $table->text('title_en')->nullable();
+            $table->text('slug')->nullable();
             $table->text('description_en')->nullable();
             $table->text('image')->nullable();
             $table->text('file')->nullable();

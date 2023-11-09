@@ -29,8 +29,10 @@ class FamilyController extends Controller
         return view('families', compact('page_info', 'families', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
-    public function downloadFamily(Family $family)
+    public function downloadFamily($slug)
     {
+        $family = Family::where('slug', $slug)->first();
+
         return response()->download('images/' . $family->file);
     }
 }

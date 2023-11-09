@@ -265,7 +265,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -310,7 +310,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h5 d-block my-1 mx-1">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -354,7 +354,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h6 d-block m-0">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -392,7 +392,7 @@
                                 </p>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h5 d-block m-1">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -430,7 +430,7 @@
                                 </p>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -468,7 +468,7 @@
                                 </p>
                             </div>
                             <div class="card-footer border border-0 bg-transparent p-0">
-                                <a href="{{ route('downloadFamily', $family) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
+                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>

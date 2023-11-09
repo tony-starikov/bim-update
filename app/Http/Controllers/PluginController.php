@@ -29,8 +29,10 @@ class PluginController extends Controller
         return view('products', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
-    public function downloadPlugin(Plugin $plugin)
+    public function downloadPlugin($slug)
     {
+        $plugin = Plugin::where('slug', $slug)->first();
+
         return response()->download('images/' . $plugin->file);
     }
 }

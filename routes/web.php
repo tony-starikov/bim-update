@@ -6,7 +6,13 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PluginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
+use App\Models\Family;
+use App\Models\Plugin;
+use App\Models\Post;
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,14 +34,14 @@ Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');
 
-Route::get('/products', [PluginController::class, 'index'])->name('products');
-Route::get('/get-plugin/{plugin}', [PluginController::class, 'downloadPlugin'])->name('downloadPlugin');
+Route::get('/products/plugins', [PluginController::class, 'index'])->name('products');
+Route::get('/download-plugin/{slug}', [PluginController::class, 'downloadPlugin'])->name('downloadPlugin');
 
-Route::get('/families', [FamilyController::class, 'index'])->name('families');
-Route::get('/get-family/{family}', [FamilyController::class, 'downloadFamily'])->name('downloadFamily');
+Route::get('/products/families', [FamilyController::class, 'index'])->name('families');
+Route::get('/download-family/{slug}', [FamilyController::class, 'downloadFamily'])->name('downloadFamily');
 
 Route::get('/service/{slug}', [ServiceController::class, 'showService'])->name('showService');
-Route::get('/get-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
+Route::get('/download-service/{slug}', [ServiceController::class, 'downloadService'])->name('downloadService');
 
 //Route::get('/estimates-scan-to-bim-project', [EstimationController::class, 'show'])->name('showScanShort');
 Route::get('/scan-to-bim-estimates-project', [EstimationController::class, 'showScanShort'])->name('estimates');
@@ -56,3 +62,50 @@ Route::get('/thks-estimates-mep', [PageController::class, 'thanks'])->name('than
 
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');
 Route::post('/estimates-mep-short-processing', [EstimationController::class, 'processingMepShort'])->name('processingMepShort');
+
+Route::get('/sitemap', function() {
+   $sitemap = Sitemap::create()
+       ->add(Url::create('/'))
+       ->add(Url::create('/contact'))
+       ->add(Url::create('/success'))
+       ->add(Url::create('/thank-you-page'))
+       ->add(Url::create('/policy'))
+       ->add(Url::create('/blog'));
+
+   Post::all()->each(function(Post $post) use ($sitemap) {
+       $sitemap->add(Url::create("/post/{$post->slug}"));
+   });
+
+   $sitemap->add(Url::create("/products/plugins"));
+
+   Plugin::all()->each(function(Plugin $plugin) use ($sitemap) {
+       $sitemap->add(Url::create("/download-plugin/{$plugin->slug}"));
+   });
+
+   $sitemap->add(Url::create("/products/families"));
+
+   Family::all()->each(function(Family $family) use ($sitemap) {
+       $sitemap->add(Url::create("/download-family/{$family->slug}"));
+   });
+
+   Service::where('show_page', 1)->each(function(Service $service) use ($sitemap) {
+       $sitemap->add(Url::create("/service/{$service->slug}"));
+   });
+
+   Service::where('show_page', 0)->each(function(Service $service) use ($sitemap) {
+       $sitemap->add(Url::create("/download-service/{$service->slug}"));
+   });
+
+    $sitemap->add(Url::create("/scan-to-bim-estimates-project"));
+    $sitemap->add(Url::create("/thks-scantobim-estimates"));
+    $sitemap->add(Url::create("/estimates-project-scan-to-bim"));
+    $sitemap->add(Url::create("/thks-estimates-scantobim"));
+
+    $sitemap->add(Url::create("/mep-estimates-project"));
+    $sitemap->add(Url::create("/thks-mep-estimates"));
+    $sitemap->add(Url::create("/estimates-project-mep"));
+    $sitemap->add(Url::create("/thks-estimates-mep"));
+    $sitemap->add(Url::create("/products/families"));
+
+   $sitemap->writeToFile(public_path('sitemap.xml'));
+});

@@ -269,7 +269,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -334,7 +334,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -399,7 +399,7 @@
 
                         <div class="row position-absolute bottom-0">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100 p-0" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 w-100 p-0" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-4">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -478,7 +478,7 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-50" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-50" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-auto">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -544,7 +544,7 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-50" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-50" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-auto">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -610,7 +610,7 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <a href="{{ route('downloadPlugin', $plugin) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
+                                <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="btn btn-primary btn-lg shadow-none border-0 rounded-4 p-0 w-100" style="background-color: #6bdcdb; display: flex; align-items: flex-end;" role="button">
                                     <span class="fw-bold h5 d-block my-2 mx-auto">DOWNLOAD NOW</span>
                                 </a>
                             </div>
@@ -632,74 +632,6 @@
         </div>
 
     </div>
-
-{{--    <div class="container-fluid" style="background-color: #dafffc">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row pb-3">--}}
-{{--                <div class="col-12">--}}
-{{--                    <div class="d-md-none">--}}
-{{--                        <h1 class="display-6 fw-bold mt-5">--}}
-{{--                            SUPPORT THE DEVELOPMENT OF BIMPROVE--}}
-{{--                        </h1>--}}
-{{--                    </div>--}}
-{{--                    <div class="d-none d-md-block">--}}
-{{--                        <h1 class="display-2 fw-bold mt-5 pt-md-0 pt-lg-5">--}}
-{{--                            SUPPORT THE DEVELOPMENT OF BIMPROVE--}}
-{{--                        </h1>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <div class="row pb-5">--}}
-{{--                <div class="col-6">--}}
-{{--                    <img class="img-fluid w-100" src="/images/donate_image.png" alt="">--}}
-{{--                </div>--}}
-{{--                <div class="col-6">--}}
-{{--                    <form class="donate-form w-75 mt-5" method="post" action="{{ route('donate') }}">--}}
-{{--                        @csrf--}}
-{{--                        <div class="mb-5">--}}
-{{--                            <input type="text" name="donate" class="form-control fw-bold shadow-none border-3" id="exampleFormControlInput2" placeholder="Select or insert an amount">--}}
-{{--                        </div>--}}
-
-{{--                        <div class="row pb-5">--}}
-{{--                            <div class="col-3">--}}
-{{--                                <input name="donate10" value="0" type="hidden">--}}
-{{--                                <input name="donate10" value="1" type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">--}}
-{{--                                <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check1">$10</label>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-3">--}}
-{{--                                <input name="donate20" value="0" type="hidden">--}}
-{{--                                <input name="donate20" value="1" type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">--}}
-{{--                                <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check2">$20</label>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-3">--}}
-{{--                                <input name="donate50" value="0" type="hidden">--}}
-{{--                                <input name="donate50" value="1" type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">--}}
-{{--                                <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check3">$50</label>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-3">--}}
-{{--                                <input name="donate100" value="0" type="hidden">--}}
-{{--                                <input name="donate100" value="1" type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">--}}
-{{--                                <label class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold p-2 fs-3" style="background-color: #6bdcdb" for="btn-check4">$100</label>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="row">--}}
-{{--                            <div class="col-12">--}}
-{{--                                <button type="submit" class="btn btn-primary btn-lg border-0 w-100 mx-auto fw-bold d-lg-none" style="background-color: #43aeb6">--}}
-{{--                                    <span class="fw-bold h6 d-block my-1">DONATE</span>--}}
-{{--                                </button>--}}
-
-{{--                                <button type="submit" class="btn btn-primary btn-lg border-0 w-50 mx-auto fw-bold d-none d-lg-block" style="background-color: #43aeb6">--}}
-{{--                                    <span class="fw-bold h4 d-block my-1">DONATE</span>--}}
-{{--                                </button>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                    </form>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
 
 @endsection
 

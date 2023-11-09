@@ -23,7 +23,7 @@ class PluginSeeder extends Seeder
                 'image' => 'plugins/AutoJoinInView.jpg',
                 'logo' => 'plugins/AutoJoinInView.png',
                 'file' => 'plugins/AutoJoinInView_D2.6.1_R21.zip',
-                'slug' => 'AutoJoinInView'
+                'slug' => 'auto-join-in-view'
             ],
             [
                 'title_en' => 'Columns To Grids Intersection',
@@ -34,7 +34,7 @@ class PluginSeeder extends Seeder
                 'image' => 'plugins/ColumnsToGridsIntersection.jpg',
                 'logo' => 'plugins/ColumnsToGridsIntersection.png',
                 'file' => 'plugins/ColumnsToGridsIntersection_D2.6.1_R21.zip',
-                'slug' => 'ColumnsToGridsIntersection'
+                'slug' => 'columns-to-grids-intersection'
             ],
             [
                 'title_en' => 'Align MEP',
@@ -45,7 +45,7 @@ class PluginSeeder extends Seeder
                 'image' => 'plugins/AlignMEP.jpg',
                 'logo' => 'plugins/AlignMEP.png',
                 'file' => 'plugins/AlignMEP_D2.6.1_R21.zip',
-                'slug' => 'AlignMEP'
+                'slug' => 'align-mep'
             ],
         ]);
     }
