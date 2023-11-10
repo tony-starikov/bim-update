@@ -1,8 +1,8 @@
 @extends('master')
 
-{{--@section('title', $page_info->__('title'))--}}
-
-{{--@section('description', $page_info->description)--}}
+@section('meta')
+    <meta name="robots" content="noindex" />
+@endsection
 
 @section('main')
     <div class="container-fluid" style="background-color: #bacacd">

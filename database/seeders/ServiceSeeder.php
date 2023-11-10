@@ -23,19 +23,19 @@ class ServiceSeeder extends Seeder
                 'show_page' => 1,
             ],
             [
-                'title_en' => 'Telecom Design',
-                'description_en' => 'Creation of 3D projects, drawings design, detail development.',
-                'image' => 'service/Telecom_3.png',
-                'slug' => 'telecom-design',
-                'presentation' => 'presentations/bim-prove-telecom-design-min.pdf',
-                'show_page' => 1,
-            ],
-            [
                 'title_en' => 'Scan to BIM',
                 'description_en' => 'Creation of a quality BIM model by the point clouds according to customers requirements with excellent accuracy.',
                 'image' => 'service/Scan_to_BIM_3.png',
                 'slug' => 'scan-to-bim',
                 'presentation' => 'presentations/bim-prove-scan-to-bim-min.pdf',
+                'show_page' => 1,
+            ],
+            [
+                'title_en' => 'Telecom Design',
+                'description_en' => 'Creation of 3D projects, drawings design, detail development.',
+                'image' => 'service/Telecom_3.png',
+                'slug' => 'telecom-design',
+                'presentation' => 'presentations/bim-prove-telecom-design-min.pdf',
                 'show_page' => 1,
             ],
             [

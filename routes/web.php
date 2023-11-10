@@ -27,7 +27,7 @@ use Spatie\Sitemap\Tags\Url;
 
 Route::get('/', [PageController::class, 'main'])->name('main');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::get('/success', [PageController::class, 'success'])->name('success');
+//Route::get('/success', [PageController::class, 'success'])->name('success');
 Route::get('/thank-you-page', [PageController::class, 'thanks'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 
@@ -65,47 +65,41 @@ Route::post('/estimates-mep-short-processing', [EstimationController::class, 'pr
 
 Route::get('/sitemap', function() {
    $sitemap = Sitemap::create()
-       ->add(Url::create('/'))
-       ->add(Url::create('/contact'))
-       ->add(Url::create('/success'))
-       ->add(Url::create('/thank-you-page'))
-       ->add(Url::create('/policy'))
-       ->add(Url::create('/blog'));
+       ->add(Url::create('/'));
 
-   Post::all()->each(function(Post $post) use ($sitemap) {
-       $sitemap->add(Url::create("/post/{$post->slug}"));
-   });
-
-   $sitemap->add(Url::create("/products/plugins"));
-
-   Plugin::all()->each(function(Plugin $plugin) use ($sitemap) {
-       $sitemap->add(Url::create("/download-plugin/{$plugin->slug}"));
-   });
-
-   $sitemap->add(Url::create("/products/families"));
-
-   Family::all()->each(function(Family $family) use ($sitemap) {
-       $sitemap->add(Url::create("/download-family/{$family->slug}"));
-   });
-
-   Service::where('show_page', 1)->each(function(Service $service) use ($sitemap) {
-       $sitemap->add(Url::create("/service/{$service->slug}"));
-   });
-
-   Service::where('show_page', 0)->each(function(Service $service) use ($sitemap) {
-       $sitemap->add(Url::create("/download-service/{$service->slug}"));
-   });
+    Service::where('show_page', 1)->each(function(Service $service) use ($sitemap) {
+        $sitemap->add(Url::create("/service/{$service->slug}"));
+    });
 
     $sitemap->add(Url::create("/scan-to-bim-estimates-project"));
-    $sitemap->add(Url::create("/thks-scantobim-estimates"));
     $sitemap->add(Url::create("/estimates-project-scan-to-bim"));
-    $sitemap->add(Url::create("/thks-estimates-scantobim"));
-
     $sitemap->add(Url::create("/mep-estimates-project"));
-    $sitemap->add(Url::create("/thks-mep-estimates"));
     $sitemap->add(Url::create("/estimates-project-mep"));
-    $sitemap->add(Url::create("/thks-estimates-mep"));
+
+    $sitemap->add(Url::create('/blog'));
+
+    Post::all()->each(function(Post $post) use ($sitemap) {
+        $sitemap->add(Url::create("/post/{$post->slug}"));
+    });
+
+    $sitemap->add(Url::create("/products/plugins"));
     $sitemap->add(Url::create("/products/families"));
+
+    $sitemap
+        ->add(Url::create('/contact'))
+        ->add(Url::create('/policy'));
+
+//   Plugin::all()->each(function(Plugin $plugin) use ($sitemap) {
+//       $sitemap->add(Url::create("/download-plugin/{$plugin->slug}"));
+//   });
+
+//   Family::all()->each(function(Family $family) use ($sitemap) {
+//       $sitemap->add(Url::create("/download-family/{$family->slug}"));
+//   });
+
+//   Service::where('show_page', 0)->each(function(Service $service) use ($sitemap) {
+//       $sitemap->add(Url::create("/download-service/{$service->slug}"));
+//   });
 
    $sitemap->writeToFile(public_path('sitemap.xml'));
 });
