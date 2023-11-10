@@ -1,2 +1,8 @@
 User-agent: *
-Disallow:
+Disallow: /moonshine/*
+
+Sitemap: https://bim-prove.com/sitemap.xml
+
+
+User-agent: *
+Allow: /
