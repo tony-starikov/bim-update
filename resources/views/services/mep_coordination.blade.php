@@ -7,22 +7,26 @@
 @section('main')
 
     <div id="main">
-        <div class="container-fluid" style="background: url('/images/service/mep/header/header-min.png') no-repeat center center local; background-size: cover;">
+        <div class="container-fluid" style="background: url('/images/service/mep/header/header.webp') no-repeat center center local; background-size: cover;">
             <div class="container mt-5 p-lg-5">
                 <div class="row px-lg-5 mt-5 text-center">
                     <div class="col-12 mt-5 order-first">
-                        <p class="fw-bold mt-4 h1">
-                            THE INDIVIDUAL<br>FIVE-STAR
-                        </p>
-                        <h1 class="text-white fw-bold">
+                        <h1 class="text-white mt-4 fw-bold">
                             MEP FABRICATION SERVICE
                         </h1>
+                        <div class="mt-4 row justify-content-center">
+                            <div class="col-md-10 col-xl-7">
+                                <p class="text-white h4 fw-semibold">
+                                    Subject matter experts for your project with over four years of experience. Over 600+ projects realized. Daily reports.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row px-lg-5 pb-4 mt-5 justify-content-center">
                     <div class="col-lg-6 col-xl-5">
-                        <a id="estimate-first-screen-mep" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-2 border-white rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                        <a id="estimate-first-screen-mep" href="{{ route('estimatesMep') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
                             <span class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</span>
                         </a>
                     </div>
@@ -58,76 +62,58 @@
         </div>
     </div>
 
-    <div id="WHAT">
+    <div id="What_disciplines">
         <div class="container-fluid">
-            <div class="container pb-0 p-lg-5 pt-lg-2">
+            <div class="container pb-0 p-lg-5">
                 <div class="row py-5 p-lg-5 pb-0">
                     <div class="col-12">
-                        <h2 class="fw-bold m-0">
-                            WHAT IS THE MEP FABRICATION SERVICE?
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <p class="h5 fw-normal mt-5" style="text-align: justify;">
-                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
-                        </p>
-                        <p class="h5 fw-normal mt-4" style="text-align: justify;">
-                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
-                        </p>
-
-                        <div class="row py-5 p-lg-5 justify-content-center">
-                            <div class="col-lg-9 col-xl-6 text-center">
-                                <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                                    <span class="fw-bold h4 d-block my-2">
-                                        DOWNLOAD PRESENTATION
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <h2 class="fw-semibold text-uppercase mb-3">
+                        <h2 class="fw-bold m-0 text-uppercase">
                             What disciplines we work with?
                         </h2>
                     </div>
 
-                    <div class="col-12 px-lg-4">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-md-6 ps-md-0 mt-4">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
-                                        </p>
+                            <div class="col-12 px-lg-4">
+                                <div class="row">
+                                    <div class="col-md-6 ps-md-0 mt-4">
+                                        <div class="card py-5 h-100" style="border: 4px solid #6de0de">
+                                            <div class="card-body d-flex align-items-center">
+                                                <p class="h5 fw-normal" style="text-align: justify;">
+                                                    <span class="fw-semibold">Coordination Drawings:</span> Detailed drawings that show the precise locations and dimensions of MEP components, ensuring they fit seamlessly within the building structure.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pe-md-0 mt-4">
+                                        <div class="card py-5 h-100" style="border: 4px solid #6de0de">
+                                            <div class="card-body d-flex align-items-center">
+                                                <p class="h5 fw-normal" style="text-align: justify;">
+                                                    <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 pe-md-0 mt-4">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Spool Drawings:</span> These drawings provide exact details of the individual pipes or ducts and their fittings, as well as information on their fabrication and installation.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-6 ps-md-0 mt-4">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
-                                        </p>
+                                <div class="row">
+                                    <div class="col-md-6 ps-md-0 mt-4">
+                                        <div class="card py-5 h-100" style="border: 4px solid #6de0de">
+                                            <div class="card-body d-flex align-items-center">
+                                                <p class="h5 fw-normal" style="text-align: justify;">
+                                                    <span class="fw-semibold">Fabrication Models:</span> 3D models used to visualize and coordinate the MEP systems in the context of the entire building. These models aid in detecting clashes and optimizing the layout.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 pe-md-0 mt-4">
-                                <div class="card py-5 h-100" style="border: 4px solid #6de0de">
-                                    <div class="card-body d-flex align-items-center">
-                                        <p class="h5 fw-normal" style="text-align: justify;">
-                                            <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
-                                        </p>
+                                    <div class="col-md-6 pe-md-0 mt-4">
+                                        <div class="card py-5 h-100" style="border: 4px solid #6de0de">
+                                            <div class="card-body d-flex align-items-center">
+                                                <p class="h5 fw-normal" style="text-align: justify;">
+                                                    <span class="fw-semibold">Material Lists:</span> Comprehensive lists of materials required for the fabrication and installation of MEP components.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -525,7 +511,7 @@
     <div id="SERVICES">
 
         <div class="d-none d-lg-block">
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -549,31 +535,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -587,7 +573,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -608,31 +594,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -646,7 +632,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -667,37 +653,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -711,7 +697,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -732,37 +718,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -776,7 +762,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -797,19 +783,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -823,7 +809,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -844,19 +830,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -870,7 +856,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container p-5">
                     <div class="row p-5 pb-0">
                         <div class="col-12">
@@ -891,25 +877,25 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -925,7 +911,7 @@
         </div>
 
         <div class="d-lg-none">
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -949,31 +935,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/database/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/database/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -987,7 +973,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1008,31 +994,31 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img1.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img2.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img3.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img4.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/prep/img5.jpg" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/prep/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1046,7 +1032,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1067,37 +1053,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/modeling/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/modeling/img6.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1111,7 +1097,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1132,37 +1118,37 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img5.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img5.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/fabrication/img6.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/fabrication/img6.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1176,7 +1162,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1197,19 +1183,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/drawing/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/drawing/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1223,7 +1209,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background2.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to left, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background2.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1244,19 +1230,19 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/coordination/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/coordination/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1270,7 +1256,7 @@
                 </div>
             </div>
 
-            <div class="container-fluid" style="background: url('/images/service/mep/services/background1.png') no-repeat center center local; background-size: cover;">
+            <div class="container-fluid" style="background-image: linear-gradient(to right, rgba(152,236,230, 0.6), rgba(226,232,232, 0.6)), url('/images/service/mep/services/background1.webp'); background-size: cover;">
                 <div class="container py-5">
                     <div class="row pb-0">
                         <div class="col-12">
@@ -1291,25 +1277,25 @@
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img1.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img1.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img2.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img2.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img3.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img3.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
                                                 <li class="splide__slide">
                                                     <div class="splide__slide__container px-3">
-                                                        <img src="/images/service/mep/services/spools/img4.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                                        <img src="/images/service/mep/services/spools/img4.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
                                                     </div>
                                                 </li>
 
@@ -1319,24 +1305,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="COUNTRIES">
-        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background-min.png') no-repeat center center local; background-size: cover;">
-            <div class="container py-5 p-lg-5">
-                <div class="row p-lg-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold">
-                            COUNTRIES WE WORKED WITH
-                        </h2>
-                    </div>
-
-                    <div class="col-12 text-center mt-4">
-                        <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                     </div>
                 </div>
             </div>
@@ -1440,6 +1408,63 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="WHAT">
+        <div class="container-fluid">
+            <div class="container p-lg-5">
+                <div class="row py-5 p-lg-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold m-0">
+                            WHAT IS THE MEP FABRICATION SERVICE?
+                        </h2>
+                    </div>
+
+                    <div class="col-12">
+                        <p class="h5 fw-normal mt-5" style="text-align: justify;">
+                            MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.
+                        </p>
+                        <p class="h5 fw-normal mt-4" style="text-align: justify;">
+                            During MEP fabrication, the design and engineering data from the building's MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="COUNTRIES">
+        <div class="container-fluid" style="background: url('/images/service/scan_to_bim_images/map/background-min.png') no-repeat center center local; background-size: cover;">
+            <div class="container py-5 p-lg-5">
+                <div class="row p-lg-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold text-uppercase">
+                            WHAT COUNTRIES HAVE WE WORKED WITH?
+                        </h2>
+                    </div>
+
+                    <div class="col-12 text-center mt-4">
+                        <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="DOWNLOAD">
+        <div class="container-fluid">
+            <div class="container pb-0 p-lg-5">
+                <div class="row py-5 p-lg-5 justify-content-center">
+                    <div class="col-lg-9 col-xl-6 text-center">
+                        <a href="{{ route('downloadService', 'mep-coordination') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                            <p class="fw-bold h4 d-block my-2">
+                                DOWNLOAD PRESENTATION
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
