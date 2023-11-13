@@ -16,9 +16,10 @@
                         </h1>
                         <div class="mt-4 row justify-content-center">
                             <div class="col-md-10 col-xl-7">
-                                <p class="text-white h4 fw-semibold">
-                                    Quality modeling guarantee. Daily reports. 3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.
-                                </p>
+                                <h2 class="text-white h4 fw-semibold">
+                                    Quality modeling guarantee. Daily reports.<br>
+                                    3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -200,7 +201,7 @@
                                     <div class="col-12 pt-3">
                                         <p class="h5 text-secondary">
                                             <small>
-                                                Creation of the executive 3D model «As-built» by the Point Cloud. Adding Management Information to BIM Elements.
+                                                Creation of 3D Revit BIM-model by tracing the data from the Point Cloud. Parameterization of BIM elements.
                                             </small>
                                         </p>
                                     </div>
@@ -219,64 +220,7 @@
                                     <div class="col-12 pt-3">
                                         <p class="h5 text-secondary">
                                             <small>
-                                                Design of As-built drawings based on 3D models “As-built”.
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 p-4 pb-0">
-                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
-                                    <div class="col-7">
-                                        <h3 class="h5 fw-bold mt-4">
-                                            Engineering portals
-                                        </h3>
-                                    </div>
-                                    <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service3-min.png" loading="lazy" alt="service3" class="img-fluid w-100">
-                                    </div>
-                                    <div class="col-12 pt-3">
-                                        <p class="h5 text-secondary">
-                                            <small>
-                                                Creation of engineering portals (linked 3D-model, attribute model, documentation, packages).
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 p-4 pb-0">
-                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
-                                    <div class="col-7">
-                                        <h3 class="h5 fw-bold mt-4">
-                                            Anomalies
-                                        </h3>
-                                    </div>
-                                    <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service4-min.png" loading="lazy" alt="service4" class="img-fluid w-100">
-                                    </div>
-                                    <div class="col-12 pt-3">
-                                        <p class="h5 text-secondary">
-                                            <small>
-                                                Detection of anomalies of actual placements and sizes of constructions in real life and project documentation.
-                                            </small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4 p-4 pb-0">
-                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
-                                    <div class="col-7">
-                                        <h3 class="h5 fw-bold mt-4">
-                                            Exception reports
-                                        </h3>
-                                    </div>
-                                    <div class="col-5">
-                                        <img src="/images/service/scan_to_bim_images/proposes/service5-min.png" loading="lazy" alt="service5" class="img-fluid w-100">
-                                    </div>
-                                    <div class="col-12 pt-3">
-                                        <p class="h5 text-secondary">
-                                            <small>
-                                                Creation of a report on problems in the project.
+                                                Design of As-built drawings based on 3D BIM models from Revit created by the scanning.
                                             </small>
                                         </p>
                                     </div>
@@ -295,7 +239,64 @@
                                     <div class="col-12 pt-3">
                                         <p class="h5 text-secondary">
                                             <small>
-                                                Checking of model accuracy, building and engineering logic, elements clashing.
+                                                Checking of 3D BIM model accuracy, building and engineering logic, elements clashing.
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 p-4 pb-0">
+                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
+                                    <div class="col-7">
+                                        <h3 class="h5 fw-bold mt-4">
+                                            Progress Reports
+                                        </h3>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service5-min.png" loading="lazy" alt="service5" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <p class="h5 text-secondary">
+                                            <small>
+                                                Creation of every day project reports. Own reporting system to inform about the progress of the modeling process.
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 p-4 pb-0">
+                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
+                                    <div class="col-7">
+                                        <h3 class="h5 fw-bold mt-4">
+                                            Export to other formats
+                                        </h3>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service4-min.png" loading="lazy" alt="service4" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <p class="h5 text-secondary">
+                                            <small>
+                                                Export the Revit model in the format you need: IFC, NWC, NWF, DWG, PDF, DGN, FBX, STEP, SKP
+                                            </small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 p-4 pb-0">
+                                <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
+                                    <div class="col-7">
+                                        <h3 class="h5 fw-bold mt-4">
+                                            Our Software skills
+                                        </h3>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="/images/service/scan_to_bim_images/proposes/service3-min.png" loading="lazy" alt="service3" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <p class="h5 text-secondary">
+                                            <small>
+                                                The main program for creating 3D BIM models is Revit. But our team is also proficient in other programs: AutoCAD, ArchiCAD, SketchUp, Navisworks.
                                             </small>
                                         </p>
                                     </div>
@@ -1157,7 +1158,7 @@
                                 <div class="row">
                                     <div class="col-12 mt-2 mt-lg-0">
                                         <p class="h4 fw-semibold pb-2">
-                                            What disciplines we work with?
+                                            We work with all disciplines:
                                         </p>
                                     </div>
 
