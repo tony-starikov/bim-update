@@ -1525,12 +1525,20 @@
                                         Book a date and time that is convenient for you to discuss how we can help you.
                                     </small>
                                 </h4>
-                                <img src="/images/main_page/calendar_image.png" class="img-fluid w-100 p-5 my-5 d-none d-xl-block" alt="mail_photo">
+                                <img src="/images/main_page/calendar_image.webp" class="img-fluid w-100 p-5 my-5 d-none d-xl-block" alt="mail_photo">
                             </div>
                             <div class="col-12 col-xl-6">
                                 <!-- Calendly inline widget begin -->
                                 <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="height:700px;"></div>
-                                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                                <script type="text/javascript">
+                                    window.addEventListener('DOMContentLoaded', (event) => {
+                                        let script = document.createElement('script');
+                                        script.src = "https://assets.calendly.com/assets/external/widget.js";
+                                        script.innerHTML = ''
+                                        document.body.appendChild(script);
+                                    });
+                                </script>
+{{--                                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>--}}
                                 <!-- Calendly inline widget end -->
                             </div>
                         </div>
