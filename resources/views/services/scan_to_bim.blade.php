@@ -35,25 +35,25 @@
 
                 <div class="row px-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon1-min.png" loading="lazy" alt="icon1" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon1-min.webp" loading="lazy" alt="icon1" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
                             Point cloud registration
                         </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon2-min.png" loading="lazy" alt="icon2" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon2-min.webp" loading="lazy" alt="icon2" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
                             REALITY CAPTURE
                         </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon3-min.png" loading="lazy" alt="icon3" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon3-min.webp" loading="lazy" alt="icon3" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
                             FACILITY MANAGEMENT
                         </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon4-min.png" loading="lazy" alt="icon4" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon4-min.webp" loading="lazy" alt="icon4" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
                             AS-BUILT
                         </h3>
