@@ -17,7 +17,7 @@
                         <div class="mt-4 row justify-content-center">
                             <div class="col-md-10 col-xl-7">
                                 <h2 class="text-white h4 fw-semibold">
-                                    Quality modeling guarantee. Daily reports.<br>
+                                    Guarantee of models quality. Daily reports.<br>
                                     3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.
                                 </h2>
                             </div>
