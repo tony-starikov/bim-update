@@ -1345,127 +1345,28 @@
         </div>
     </div>
 
-    <div id="calendar">
-        <div class="container-fluid d-none d-xxl-block" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold display-5 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h1 fw-semibold mt-4">
-                            <small>
-                                Book a consultation at your convenience!
-                            </small>
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-50 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-xl-block d-xxl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold display-5 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h1 fw-semibold mt-4">
-                            <small>
-                                Book a consultation at your convenience!
-                            </small>
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
+    <div id="calendar" class="container-fluid horizontal-gradient-calendar py-3">
+        <div class="container py-5 p-lg-5">
+            <div class="row px-lg-5">
+                <div class="col-md-6">
+                    <h2 class="text-white h1 fw-bold w-100">
+                        {{ $page_info->pageItems->where('name', 'calendar_header')->first()->value }}
+                    </h2>
+                    <h3 class="h2 text-white fw-semibold mt-4">
+                        <small>
+                            {{ $page_info->pageItems->where('name', 'calendar_subheader')->first()->value }}
+                        </small>
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-12 col-xxl-9">
+                            <button id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container p-5">
-                <div class="row p-5">
-                    <div class="col-6">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-7">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-75 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                    <div class="col-5 d-flex align-items-center">
-                        <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" loading="lazy" class="img-fluid w-100" alt="mail_photo">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-sm-block d-md-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="text-white fw-bold h2 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-sm-none" style="background: url(/images/main_page/calendar_bg.png) no-repeat center center local; background-size: cover;">
-            <div class="container">
-                <div class="row py-5">
-                    <div class="col-12">
-                        <h2 class="text-white fw-bold h1 w-100">
-                            UNLOCK THE FULL POTENTIAL OF SCAN TO BIM.
-                        </h2>
-                        <h2 class="text-white h4 fw-semibold mt-4">
-                            Book a consultation at your convenience!
-                        </h2>
-                        <button class="btn btn-primary border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <span class="fw-bold h5 d-block my-2">GO TO CALENDAR</span>
-                        </button>
-                    </div>
+                <div class="col-6 d-none d-md-flex align-items-center">
+                    <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
                 </div>
             </div>
         </div>
