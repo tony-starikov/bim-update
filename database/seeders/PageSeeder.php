@@ -15,29 +15,50 @@ class PageSeeder extends Seeder
     {
         DB::table('pages')->insert([
             [
-                'id' => 1,
                 'name' => 'main',
+                'canonical' => 'https://bim-prove.com',
             ],
             [
-                'id' => 2,
+                'name' => 'contact',
+                'canonical' => 'https://bim-prove.com/contact',
+            ],
+            [
+                'name' => 'thank-you-page',
+                'canonical' => 'https://bim-prove.com/thank-you-page',
+            ],
+            [
                 'name' => 'blog',
+                'canonical' => 'https://bim-prove.com/blog',
             ],
             [
-                'id' => 3,
-                'name' => 'contacts',
+                'name' => 'plugins',
+                'canonical' => 'https://bim-prove.com/products/plugins',
             ],
             [
-                'id' => 4,
-                'name' => 'products',
-            ],
-            [
-                'id' => 5,
                 'name' => 'families',
+                'canonical' => 'https://bim-prove.com/products/families',
             ],
             [
-                'id' => 6,
-                'name' => 'policy',
+                'name' => 'scan-to-bim-estimates-project',
+                'canonical' => 'https://bim-prove.com/scan-to-bim-estimates-project',
             ],
+            [
+                'name' => 'estimates-project-scan-to-bim',
+                'canonical' => 'https://bim-prove.com/estimates-project-scan-to-bim',
+            ],
+            [
+                'name' => 'mep-estimates-project',
+                'canonical' => 'https://bim-prove.com/mep-estimates-project',
+            ],
+            [
+                'name' => 'estimates-project-mep',
+                'canonical' => 'https://bim-prove.com/estimates-project-mep',
+            ],
+
+//            [
+//                'name' => 'policy',
+//                'canonical' => '',
+//            ],
         ]);
     }
 }

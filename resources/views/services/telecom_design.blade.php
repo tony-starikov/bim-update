@@ -660,3 +660,9 @@
     </div>
     <!-- Modal END -->
 @endsection
+
+@section('canonical')
+    @if($service->canonical)
+        <link rel="canonical" href="{{ $service->canonical }}">
+    @endif
+@endsection

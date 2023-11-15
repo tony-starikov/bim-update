@@ -11,6 +11,7 @@
 
     <!-- Required meta tags -->
     @yield('meta')
+    @yield('canonical')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

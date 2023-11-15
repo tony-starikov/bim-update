@@ -14,7 +14,7 @@ class PluginController extends Controller
 {
     public function index()
     {
-        $page_info = Page::where('name', 'products')->first();
+        $page_info = Page::where('name', 'plugins')->first();
 
         $plugins = Plugin::orderBy('id', 'desc')->paginate(6);
 
@@ -26,7 +26,7 @@ class PluginController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('products', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts'));
+        return view('plugins', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
     public function downloadPlugin($slug)

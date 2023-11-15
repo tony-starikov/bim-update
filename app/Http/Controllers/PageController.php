@@ -43,7 +43,7 @@ class PageController extends Controller
 
     public function contact()
     {
-        $page_info = Page::where('name', 'contacts')->first();
+        $page_info = Page::where('name', 'contact')->first();
 
         $menuItems = MenuItem::all();
 
@@ -56,9 +56,9 @@ class PageController extends Controller
         return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
     }
 
-    public function success()
+    public function thank_you()
     {
-        $page_info = Page::where('name', 'contacts')->first();
+        $page_info = Page::where('name', 'thank-you-page')->first();
 
         $menuItems = MenuItem::all();
 
@@ -68,20 +68,7 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('success', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
-    }
-
-    public function thanks()
-    {
-        $menuItems = MenuItem::all();
-
-        $services = Service::all();
-
-        $contacts = Contact::all();
-
-        $posts = Post::take(5)->get();
-
-        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts'));
+        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
     }
 
     public function policy()

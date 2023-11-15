@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('image_big')->nullable();
             $table->text('content')->nullable();
             $table->text('presentation_url')->nullable();
+            $table->text('canonical')->nullable();
             $table->integer('status')->default(1);
             $table->integer('show_page')->default(0);
             $table->timestamps();

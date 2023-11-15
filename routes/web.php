@@ -28,7 +28,7 @@ use Spatie\Sitemap\Tags\Url;
 Route::get('/', [PageController::class, 'main'])->name('main');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 //Route::get('/success', [PageController::class, 'success'])->name('success');
-Route::get('/thank-you-page', [PageController::class, 'thanks'])->name('thanks');
+Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');

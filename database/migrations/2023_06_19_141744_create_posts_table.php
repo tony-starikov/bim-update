@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('show_status')->default(1);
             $table->integer('recommend')->default(0);
             $table->text('content')->nullable();
+            $table->text('canonical')->nullable();
             $table->timestamps();
         });
     }

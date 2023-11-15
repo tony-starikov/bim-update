@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
             WorkSeeder::class,
             ContactSeeder::class,
             MoonshineUserSeeder::class,
-            SeoSeeder::class,
+//            SeoSeeder::class,
         ]);
     }
 }

@@ -17,9 +17,9 @@ class MoonshineUserSeeder extends Seeder
             [
                 'id' => 1,
                 'moonshine_user_role_id' => 1,
-                'email' => 'admin@mail.com',
-                'password' => '$2y$10$81cnEluwP.qr9WN33WMMMe70f0xjMvC.5iZ6Dm8KEqEhnRRa4I8eW',
-                'name' => 'Admin',
+                'email' => 'bi.denis.work@gmail.com',
+                'password' => '$2y$10$pntwxXHHol48aw.vQjhlcO1JK5cpHb8DbH.J7anKxyGHwhVQbgaF6',
+                'name' => 'Admin_1',
             ],
         ]);
     }

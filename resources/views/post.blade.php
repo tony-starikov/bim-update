@@ -78,3 +78,9 @@
     </div>
 
 @endsection
+
+@section('canonical')
+    @if($post->canonical)
+        <link rel="canonical" href="{{ $post->canonical }}">
+    @endif
+@endsection

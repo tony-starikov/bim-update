@@ -230,3 +230,9 @@
     </div>
 
 @endsection
+
+@section('canonical')
+    @if($page_info->canonical)
+        <link rel="canonical" href="{{ $page_info->canonical }}">
+    @endif
+@endsection

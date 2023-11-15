@@ -29,6 +29,8 @@ class ServiceController extends Controller
 
     public function showService($slug)
     {
+        $service = Service::where('slug', $slug)->first();
+
         $page_info = Page::where('name', 'main')->first();
 
         $menuItems = MenuItem::all();
@@ -43,6 +45,6 @@ class ServiceController extends Controller
 
         $viewName = 'services.' . str_replace("-", "_", $slug);
 
-        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts'));
+        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts', 'service'));
     }
 }

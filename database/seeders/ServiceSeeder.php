@@ -21,6 +21,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'mep-coordination',
                 'presentation' => 'presentations/bim-prove-mep-coordination-min.pdf',
                 'show_page' => 1,
+                'canonical' => 'https://bim-prove.com/service/mep-coordination',
             ],
             [
                 'title_en' => 'Scan to BIM',
@@ -29,6 +30,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'scan-to-bim',
                 'presentation' => 'presentations/bim-prove-scan-to-bim-min.pdf',
                 'show_page' => 1,
+                'canonical' => 'https://bim-prove.com/service/scan-to-bim',
             ],
             [
                 'title_en' => 'Telecom Design',
@@ -37,6 +39,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'telecom-design',
                 'presentation' => 'presentations/bim-prove-telecom-design-min.pdf',
                 'show_page' => 1,
+                'canonical' => 'https://bim-prove.com/service/telecom-design',
             ],
             [
                 'title_en' => 'BIM modeling',
@@ -45,6 +48,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'bim-modeling',
                 'presentation' => 'presentations/bim-prove-bim-modeling.pdf',
                 'show_page' => 0,
+                'canonical' => '',
             ],
             [
                 'title_en' => 'BIM content creation',
@@ -53,6 +57,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'bim-content-creation',
                 'presentation' => 'presentations/bim-prove-bim-content-creation.pdf',
                 'show_page' => 0,
+                'canonical' => '',
             ],
             [
                 'title_en' => 'Software development',
@@ -61,6 +66,7 @@ class ServiceSeeder extends Seeder
                 'slug' => 'software-development',
                 'presentation' => 'presentations/bim-prove-software-development.pdf',
                 'show_page' => 0,
+                'canonical' => '',
             ],
         ]);
     }
