@@ -42,10 +42,10 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/telecom-design',
             ],
             [
-                'title_en' => 'BIM modeling',
+                'title_en' => 'Architectural BIM Service',
                 'description_en' => 'Development of BIM models and visualizations, providing project documentation.',
                 'image' => 'service/Modeling_3.png',
-                'slug' => 'bim-modeling',
+                'slug' => 'architectural-bim-service',
                 'presentation' => 'presentations/bim-prove-bim-modeling.pdf',
                 'show_page' => 0,
                 'canonical' => '',
