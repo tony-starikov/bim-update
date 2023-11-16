@@ -5,241 +5,41 @@
 {{--@section('description', $page_info->description)--}}
 
 @section('main')
-    <div class="d-none d-xxl-block container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
+    <div class="container-fluid" style="background: url(/images/families/background.webp) no-repeat center center local; background-size: cover;">
 
-        <div class="container p-5">
-            <div class="row px-5 mt-2">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
+        <div class="container py-5 p-lg-5 mt-5" style="min-height: 50vh;">
+            <div class="row py-5 p-lg-5 my-xxl-3">
+
+                <div class="col-md-8 col-lg-8 col-xl-6 px-0 pt-xl-5">
+                    <h1 class="fw-bold text-uppercase">
+                        Families for Revit
                     </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
+                    <p class="h6 fw-semibold mt-4">
+                        Families in Autodesk Revit are the foundation of all digital modeling. Without them, there would be no 3D models, which are now so prevalent in AEC. Moreover, the creation of families in Revit has already gone beyond the realm of AEC and covers much bigger horizons.
+                    </p>
+                    <p class="h6 fw-semibold mt-4">
+                        On this page, you will find scripts and plugins from our development team free of charge.
+                    </p>
                 </div>
 
-                <div class="col-12 col-md-9">
-
-                    <div class="row pb-5">
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">CONTACT US</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT FAMILIES</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none d-xl-block d-xxl-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container p-5">
-            <div class="row px-5 mt-2">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
-                    </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
-                </div>
-
-                <div class="col-12">
-
-                    <div class="row pb-5">
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">CONTACT US</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT FAMILIES</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none d-lg-block d-xl-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container p-5">
-            <div class="row px-5 mt-2">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
-                    </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
-                </div>
-
-                <div class="col-12">
-
-                    <div class="row pb-5">
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">CONTACT US</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4 mt-4 px-md-3 ps-lg-0">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h4 d-block my-1">REVIT FAMILIES</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none d-md-block d-lg-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container">
-            <div class="row mt-2">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
-                    </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
-                </div>
-
-                <div class="col-12 px-0">
-
-                    <div class="row pb-5">
-                        <div class="col-6 col-md-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h5 d-block my-1">CONTACT US</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h5 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h5 d-block my-1">REVIT FAMILIES</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="d-none d-sm-block d-md-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 px-0 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
-                    </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
-                </div>
-
-                <div class="col-12 px-0">
-
+                <div class="col-lg-11 col-xl-9">
                     <div class="row">
-                        <div class="col-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">CONTACT US</span>
+                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 ps-sm-0">
+                            <a href="{{ route('products') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                                <span class="fw-bold h5 my-2">REVIT PLUGINS</span>
                             </a>
                         </div>
-                        <div class="col-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">REVIT FAMILIES</span>
+                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 pe-sm-0">
+                            <a href="{{ route('families') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                                <span class="fw-bold h5 my-2">REVIT FAMILIES</span>
                             </a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     </div>
-
-    <div class="d-sm-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 px-0 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE FAMILIES GALLERY
-                    </h1>
-                    <h4 class="text-white fw-bold pb-2">
-                        Make your work in Revit easier with us! Download BIMprove plugin and Revit families. Leave your comments and share ideas and make donate if you want to support us!
-                    </h4>
-                </div>
-
-                <div class="col-12 px-0">
-
-                    <div class="row">
-                        <div class="col-12">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #43aeb6" href="{{ route('contact') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">CONTACT US</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #43aeb6" href="{{ route('products') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none px-0" style="background-color: #34888e" href="{{ route('families') }}" role="button">
-                                <span class="fw-bold h6 d-block my-1">REVIT FAMILIES</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
     <div class="container-fluid d-none d-xxl-block">
