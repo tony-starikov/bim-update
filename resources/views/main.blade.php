@@ -321,7 +321,7 @@
                                                         <div class="col-12 p-2 px-4">
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-                                                                    <p class="h5 fw-bold m-0">{{ $works[$i]->title_first }}</p>
+                                                                    <h3 class="h5 fw-bold m-0">{{ $works[$i]->title_first }}</h3>
                                                                 </div>
                                                                 <div class="col-5 ps-0">
                                                                     <p class="h6 fw-bold">{{ $works[$i]->parameter_1 }}</p>
@@ -329,7 +329,7 @@
                                                             </div>
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-                                                                    <p class="h5 fw-bold m-0">{{ $works[$i]->title_second }}</p>
+                                                                    <h3 class="h5 fw-bold m-0">{{ $works[$i]->title_second }}</h3>
                                                                 </div>
                                                                 <div class="col-5 ps-0">
                                                                     <p class="h6 fw-bold">{{ $works[$i]->parameter_2 }}</p>
@@ -337,7 +337,7 @@
                                                             </div>
                                                             <div class="row justify-content-between">
                                                                 <div class="col-7">
-                                                                    <p class="h6 text-secondary fw-bold m-0">{{ $works[$i]->subtitle }}</p>
+                                                                    <h4 class="h6 text-secondary fw-bold m-0">{{ $works[$i]->subtitle }}</h4>
                                                                 </div>
                                                                 <div class="col-5 ps-0">
                                                                     <p class="h6 fw-bold">{{ $works[$i]->parameter_3 }}</p>
@@ -345,7 +345,7 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-12">
-                                                                    <p class="h6 fw-bold">{{ $works[$i]->disciplines }}</p>
+                                                                    <h4 class="h6 fw-bold">{{ $works[$i]->disciplines }}</h4>
                                                                 </div>
                                                             </div>
 

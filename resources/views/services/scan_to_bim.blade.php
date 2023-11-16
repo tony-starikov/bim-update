@@ -698,19 +698,19 @@
                                                 <div class="col-12 p-2 px-4">
                                                     <div class="row justify-content-between">
                                                         <div class="col-7">
-                                                            <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $work->title_first }}</h4>
-                                                            <h4 style="font-size: 1.2vw; min-height: 1.2vw;" class="fw-bold">{{ $work->title_second }}</h4>
-                                                            <h5 style="font-size: 1vw; min-height: 1vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
+                                                            <h3 style="font-size: 1.2vw; min-height: 1.2vw;" class="h4 fw-bold">{{ $work->title_first }}</h3>
+                                                            <h3 style="font-size: 1.2vw; min-height: 1.2vw;" class="h4 fw-bold">{{ $work->title_second }}</h3>
+                                                            <h4 style="font-size: 1vw; min-height: 1vw;" class="h5 text-secondary fw-bold">{{ $work->subtitle }}</h4>
                                                         </div>
                                                         <div class="col-5 ps-0 mt-2">
-                                                            <h5 style="font-size: 0.9vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
-                                                            <h5 style="font-size: 0.9vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
-                                                            <h5 style="font-size: 0.9vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
+                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_1 }}</p>
+                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_2 }}</p>
+                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_3 }}</p>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <h5 style="font-size: 1vw; min-height: 1vw" class="fw-bold">{{ $work->disciplines }}</h5>
+                                                            <h4 style="font-size: 1vw; min-height: 1vw" class="h5 fw-bold">{{ $work->disciplines }}</h4>
                                                         </div>
                                                     </div>
 
@@ -722,9 +722,9 @@
                                                             <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 7vw;" class="img-fluid mt-2" alt="...">
                                                         </div>
                                                         <div class="col-8 px-0 d-flex justify-content-center">
-                                                            <h6 style="font-size: 0.9vw" class="mt-2 text-secondary">
+                                                            <p style="font-size: 0.9vw" class="h6 mt-2 text-secondary">
                                                                 {{ $work->description }}
-                                                            </h6>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
