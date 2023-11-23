@@ -88,10 +88,6 @@ class PageController extends Controller
 
     public function test()
     {
-        $collection = collect([1, 2, 3, 4]);
-
-        return dd($collection->contains(1));
-
         $page_info = Page::where('name', 'main')->first();
 
         $menuItems = MenuItem::all();
