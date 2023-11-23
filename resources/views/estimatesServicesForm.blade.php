@@ -1,8 +1,8 @@
 @extends('master')
 
-{{--@section('title', $page_info->__('title'))--}}
-
-{{--@section('description', $page_info->description)--}}
+@section('turnstile')
+    @turnstileScripts()
+@endsection
 
 @section('main')
 

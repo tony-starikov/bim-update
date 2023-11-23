@@ -1,8 +1,8 @@
 @extends('master')
 
-{{--@section('title', $page_info->__('title'))--}}
-
-{{--@section('description', $page_info->description)--}}
+@section('turnstile')
+    @turnstileScripts()
+@endsection
 
 @section('main')
     <div class="container-fluid" style="background-image: url(/images/estimates/header_main_mep.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;  min-height: 100vh;">

@@ -30,6 +30,7 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 //Route::get('/success', [PageController::class, 'success'])->name('success');
 Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
+Route::get('/test', [PageController::class, 'test'])->name('test');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');

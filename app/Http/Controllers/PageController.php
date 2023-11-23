@@ -85,4 +85,23 @@ class PageController extends Controller
 
         return view('policy', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
     }
+
+    public function test()
+    {
+        $collection = collect([1, 2, 3, 4]);
+
+        return dd($collection->contains(1));
+
+        $page_info = Page::where('name', 'main')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('test', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
+    }
 }

@@ -12,13 +12,14 @@
                 <div class="row px-5 mt-5 text-center">
                     <div class="col-12 mt-5">
                         <h1 class="text-white mt-4 fw-bold">
-                            SCAN TO BIM SERVICES
+                            SCAN TO BIM<br>
+                            BIM MODELING SERVICES
                         </h1>
                         <div class="mt-4 row justify-content-center">
                             <div class="col-md-10 col-xl-7">
                                 <h2 class="text-white h4 fw-semibold">
                                     Guarantee of models quality. Daily reports.<br>
-                                    3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.
+                                    BIM modeling by Point Cloud experts with over 7 years of experience in all disciplines.
                                 </h2>
                             </div>
                         </div>
@@ -55,7 +56,7 @@
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon4-min.webp" loading="lazy" alt="icon4" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
-                            AS-BUILT
+                            AS-BUILT SERVICES
                         </h3>
                     </div>
                 </div>
@@ -69,108 +70,130 @@
                 <div class="row p-lg-5 pt-0">
                     <div class="col-12">
                         <h2 class="fw-bold text-uppercase">
-                            What advantages you will get working with us:
+                            What advantages you will get
                         </h2>
+                        <p class="h5 fw-normal mt-5">
+                            Our <span class="fw-bold">Scan to BIM Services</span> offer precise parametric <span class="fw-bold">As-built BIM Models</span> and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.
+                        </p>
+                        <p class="h5 fw-normal mt-5">
+                            Our <span class="fw-bold">Point Cloud</span> to <span class="fw-bold">BIM Modeling Services</span> deliver models ranging from LOD 100 to 350, encompassing Architectural, Structural, Site, MEPFP Elements. We also include Clash Detection for projects involving Renovation, Refurbishment, Retrofit, or Reconstruction.
+                        </p>
                     </div>
                     <div class="col-12">
                         <div class="row mt-4 pt-3">
-                            <div class="col-md-6 mt-3">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Adherence to deadlines-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            Adherence to deadlines
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mt-3">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Certified team-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            Certified team
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mt-3">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Communication-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            Communication
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mt-3">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/HIGH QUALITY-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            HIGH QUALITY
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mt-3">
+                            <div class="col-md-6 col-xl-4 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
                                         <img src="/images/service/scan_to_bim_images/get/Model development-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            Model development
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            3D Content Creation
                                         </h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mt-3">
+                            <div class="col-md-6 col-xl-4 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
-                                        <img src="/images/service/scan_to_bim_images/get/Project adjustmnent-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                        <img src="/images/service/scan_to_bim_images/get/HIGH QUALITY-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
-                                            Project adjustmnent
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            HIGH QUALITY
                                         </h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mt-3">
+                            <div class="col-md-6 col-xl-4 mt-3">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <img src="/images/service/scan_to_bim_images/get/Adherence to deadlines-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-8">
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            ADHERENCE TO DEADLINES
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
                                         <img src="/images/service/scan_to_bim_images/get/Tasks soving-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
+                                        <h3 class="h5 fw-semibold text-uppercase">
                                             Tasks solving
                                         </h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 mt-3">
+                            <div class="col-md-6 col-xl-4 mt-3">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <img src="/images/service/scan_to_bim_images/get/Project adjustmnent-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-8">
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            Project adjustmnent
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mt-3">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <img src="/images/service/scan_to_bim_images/get/Communication-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-8">
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            Communication
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mt-3">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <img src="/images/service/scan_to_bim_images/get/Certified team-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
+                                    </div>
+                                    <div class="col-8">
+                                        <h3 class="h5 fw-semibold text-uppercase">
+                                            Certified team
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4 mt-3">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-4">
                                         <img src="/images/service/scan_to_bim_images/get/Work process organization-min.png" loading="lazy" alt="arrow" class="images-fluid w-100">
                                     </div>
                                     <div class="col-8">
-                                        <h3 class="h4 fw-semibold text-uppercase">
+                                        <h3 class="h5 fw-semibold text-uppercase">
                                             Work process organization
                                         </h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="DOWNLOAD">
+        <div class="container-fluid">
+            <div class="container py-5 p-lg-5 pb-0 pb-lg-0">
+                <div class="row p-lg-5 pt-0 pt-lg-0 justify-content-center">
+                    <div class="col-lg-9 col-xl-6 text-center">
+                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                            <span class="fw-bold h4 d-block my-2">
+                                DOWNLOAD PRESENTATION
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -185,6 +208,9 @@
                         <h2 class="fw-bold text-uppercase">
                             More about our Scan to BIM Services
                         </h2>
+                        <p class="h5 fw-normal mt-5">
+                            Our <span class="fw-bold">Scan to BIM Services</span> (also known as Point Cloud <span class="fw-bold">BIM Modeling services</span>) are suitable for Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies.
+                        </p>
                     </div>
                     <div class="col-12">
                         <div class="row mt-lg-4">
@@ -192,7 +218,7 @@
                                 <div class="row p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
                                     <div class="col-7">
                                         <h3 class="h5 fw-bold mt-4">
-                                            As-built model
+                                            BIM modeling
                                         </h3>
                                     </div>
                                     <div class="col-5">
@@ -314,9 +340,12 @@
             <div class="container pb-5 p-lg-5 py-lg-0">
                 <div class="row p-lg-5">
                     <div class="col-12">
-                        <h2 class="fw-bold pb-3 text-uppercase">
+                        <h2 class="fw-bold text-uppercase">
                             WE HAVE EXPERIENCE AND EXPERTISE IN THE FIELDS:
                         </h2>
+                        <p class="h5 fw-normal pb-3 mt-5">
+                            Our top priorities: <span class="fw-bold">quality, accuracy and logic</span>. Our experience includes developing parametric 3D BIM and 2D CAD models. We work with all disciplines: Architectural, Structural, Mechanical, Electrical, Plumbing, Fire Protection, Site.
+                        </p>
                     </div>
                     <div class="col-12">
                         <div class="row">
@@ -515,6 +544,9 @@
                         <h2 class="fw-bold">
                             HOW DO WE WORK?
                         </h2>
+                        <p class="h5 fw-normal pb-3 mt-5">
+                            Our <span class="fw-bold">Scan to BIM Modeling</span> team is skilled in producing accurate 3D BIM models or 2D drawings for purposes such as design validation, planning, comparison, interference checks, MEP or construction elements demolition or addition, documentation of existing building conditions.
+                        </p>
                     </div>
 
                     <div class="row p-0 mx-auto mt-4 d-flex align-items-center" style="border: 4px solid; border-color: #6ad9d8;">
@@ -526,7 +558,7 @@
                                 CONSULTATION
                             </h3>
                             <p class="h6 text-secondary">
-                                Receiving the task by email, google-form, or during the meeting.
+                                Receiving the task by email, project our <a href="{{ route('estimates') }}" class="text-secondary">estimation form</a>, or during the meeting.
                             </p>
                         </div>
                     </div>
@@ -540,7 +572,7 @@
                                 PROJECT ESTIMATION
                             </h3>
                             <p class="h6 text-secondary">
-                                Estimation of the project and creation of an offer.
+                                Estimation of the project and creation of an offer within 24 hours. We can create 3D model only by the Point Cloud or add information from the drawings. We use your company template or ours. If you need, we can create Revit template according to your needs and requirements.
                             </p>
                         </div>
                     </div>
@@ -555,6 +587,9 @@
                             </h3>
                             <p class="h6 text-secondary">
                                 Discussion of estimation with the client & commercial offer approval.
+                            </p>
+                            <p class="h6 text-secondary">
+                                We create 3D models in LOD 100 - 350 and using Autodesk Revit versions 2019/2020/2021/2022/2023/2024.
                             </p>
                         </div>
                     </div>
@@ -602,7 +637,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <p class="h6 text-secondary">
-                                        - modeling
+                                        - BIM and 3D modeling
                                     </p>
                                     <p class="h6 text-secondary">
                                         - preparation of drawings and schedules
@@ -653,22 +688,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="DOWNLOAD">
-        <div class="container-fluid">
-            <div class="container py-5 p-lg-5 pt-0 pt-lg-0">
-                <div class="row p-lg-5 pt-0 pt-lg-0 justify-content-center">
-                    <div class="col-lg-9 col-xl-6 text-center">
-                        <a href="{{ route('downloadService', 'scan-to-bim') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                            <span class="fw-bold h4 d-block my-2">
-                                DOWNLOAD PRESENTATION
-                            </span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -1149,58 +1168,12 @@
                     <div class="col-12">
                         <div class="row mt-lg-4 pt-2 pt-lg-3">
 
-                            <div class="col-lg-6">
-                                <p class="h5 text-secondary" style="text-align: justify;">
+                            <div class="col-12" style="text-align: justify;">
+                                <p class="h5 text-secondary">
                                     Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps in creating a comprehensive and detailed model of the building, which can be used for renovation, restoration, or retrofitting purposes. The Scan to BIM service is essential in creating a collaborative environment for developing and executing efficiently the construction projects.
                                 </p>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-12 mt-2 mt-lg-0">
-                                        <p class="h4 fw-semibold pb-2">
-                                            We work with all disciplines:
-                                        </p>
-                                    </div>
-
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Mechanical
-                                        </h3>
-                                    </div>
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Electrical
-                                        </h3>
-                                    </div>
-
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Plumbing
-                                        </h3>
-                                    </div>
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Fire Protection
-                                        </h3>
-                                    </div>
-
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Structural
-                                        </h3>
-                                    </div>
-                                    <div class="col-6 p-2 pt-0">
-                                        <h3 class="h5 fw-semibold border border-3 border-dark rounded-4 p-2 py-3 text-center">
-                                            Architectural
-                                        </h3>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-12 pt-lg-5 mt-2 mt-lg-0">
-                                <p class="h5 text-secondary">
-                                    The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings, greater accuracy, and reduced risk of errors. It helps in minimizing on-site work and disruptions, reduces the chances of rework, and allows for better visualization and analysis of the building's structure. Additionally, the Scan to BIM service enables stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.
+                                <p class="h5 text-secondary mt-5">
+                                    The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings on 28%, greater accuracy, and reduced risk of errors on 40%. It helps in minimizing on-site work and disruptions, reduces the chances of rework, and allows for better visualization and analysis of the building's structure. Additionally, the Scan to BIM service enables stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.
                                 </p>
                             </div>
                         </div>
@@ -1248,12 +1221,12 @@
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                                     <span class="h3 fw-semibold">
-                                        What is Level of detail?
+                                        What are the benefits of scan to BIM service?
                                     </span>
                                 </a>
                                 <div class="collapse" id="collapseExample">
                                     <div class="card card-body h5 fw-normal border-0">
-                                        Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document.
+                                        Scan to BIM service offers several benefits, such as accurate and detailed documentation of existing conditions, improved project planning and coordination, reduced construction time and costs, and enhanced facility management. Scan to BIM service can also help to identify potential clashes or design issues early on, minimizing rework and changes during the construction phase. Overall, scan to BIM service can lead to more efficient and cost-effective project delivery.
                                     </div>
                                 </div>
                             </div>
@@ -1268,17 +1241,16 @@
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                                     <span class="h3 fw-semibold">
-                                        How long does it take to complete a scan to BIM project?
+                                        What is Level of detail (LOD)?
                                     </span>
                                 </a>
                                 <div class="collapse" id="collapseExample1">
                                     <div class="card card-body h5 fw-normal border-0">
-                                        The duration of a scan to BIM project depends on several factors such as the complexity of the project, the scope of work, the size of the area to be scanned, and the accuracy required. Typically, a scan to BIM project can take anywhere from a few weeks to several months to complete.
+                                        Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document. We create BIM models by the Point Cloud in LODs: 100, 200, 300, 350.
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
@@ -1288,12 +1260,12 @@
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                             <span class="h3 fw-semibold">
-                                What are the deliverables of scan to BIM service?
+                                How long does it take to complete a Scan to BIM project?
                             </span>
                                 </a>
                                 <div class="collapse" id="collapseExample2">
                                     <div class="card card-body h5 fw-normal border-0">
-                                        The deliverables of a scan to BIM service can vary depending on the requirements of the project. However, some common deliverables include 3D models, 2D drawings, point clouds, clash detection reports, and as-built documentation. These deliverables can be used for various purposes such as construction planning, facility management, and renovation projects.
+                                        The duration of a Scan to BIM modeling depends on several factors such as the complexity of the project, the scope of work, the size of the area to be scanned, and the accuracy required. Typically, a scan to BIM project can take anywhere from a from few days to 1-2 months.
                                     </div>
                                 </div>
                             </div>
@@ -1307,11 +1279,31 @@
                             </div>
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-                            <span class="h3 fw-semibold">
-                                What types of projects can benefit from scan to BIM service?
-                            </span>
+                                    <p class="h3 fw-semibold">
+                                        What are the deliverables of Scan to BIM services?
+                                    </p>
                                 </a>
                                 <div class="collapse" id="collapseExample3">
+                                    <div class="card card-body h5 fw-normal border-0">
+                                        The deliverables of a Scan to BIM service can vary depending on the requirements of the project. However, some common deliverables include 3D BIM models, 2D drawings, point clouds, clash detection reports, and as-built documentation. These deliverables can be used for various purposes such as construction planning, facility management, and renovation projects.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2 col-md-1 align-self-stretch">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
+                                </a>
+                            </div>
+                            <div class="col-10 col-md-11 pt-2">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <span class="h3 fw-semibold">
+                                        What types of projects can benefit from Scan to BIM service?
+                                    </span>
+                                </a>
+                                <div class="collapse" id="collapseExample4">
                                     <div class="card card-body h5 fw-normal border-0">
                                         Scan to BIM service can benefit a wide range of projects, including those in the architecture, engineering, and construction industries. Some examples include renovation and retrofit projects, heritage preservation, building information modeling, and plant design and construction.
                                     </div>
@@ -1321,25 +1313,65 @@
 
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
-                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample4">
                                     <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
                                 </a>
                             </div>
                             <div class="col-10 col-md-11 pt-2">
-                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                                    <span class="h3 fw-semibold">
-                                        What are the benefits of scan to BIM service?
-                                    </span>
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <p class="h3 fw-semibold">
+                                        Who will benefit from our Point Cloud BIM modeling services?
+                                    </p>
                                 </a>
-                                <div class="collapse" id="collapseExample4">
+                                <div class="collapse" id="collapseExample5">
                                     <div class="card card-body h5 fw-normal border-0">
-                                        Scan to BIM service offers several benefits, such as accurate and detailed documentation of existing conditions, improved project planning and coordination, reduced construction time and costs, and enhanced facility management. Scan to BIM service can also help to identify potential clashes or design issues early on, minimizing rework and changes during the construction phase. Overall, scan to BIM service can lead to more efficient and cost-effective project delivery.
+                                        With 7 years of BIM modeling experience, our team has extensive knowledge with a variety of clients. BIM modeling services (also known as Scan to BIM) are suitable for company types such as Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div class="row mt-4">
+                            <div class="col-2 col-md-1 align-self-stretch">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
+                                </a>
+                            </div>
+                            <div class="col-10 col-md-11 pt-2">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <p class="h3 fw-semibold">
+                                        Why Choose Our Scan to BIM Services?
+                                    </p>
+                                </a>
+                                <div class="collapse" id="collapseExample6">
+                                    <div class="card card-body h5 fw-normal border-0">
+                                        BIMprove employs Point Cloud specialists, BIM modelers and CAD drafters who can accurately process Point Cloud data, then create a 3D BIM models with the required LOD, and create 2D drawings with dimensions, annotations and overlay layers if required. We guarantee on-time delivery: Accurate point cloud reproduction / 3D BIM models with the required LOD level from 100 to 350 / 2D drawings with required data.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2 col-md-1 align-self-stretch">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <img src="/images/service/scan_to_bim_images/faq/arrow.png" loading="lazy" alt="arrow">
+                                </a>
+                            </div>
+                            <div class="col-10 col-md-11 pt-2">
+                                <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                                    <p class="h3 fw-semibold">
+                                        What is As-built?
+                                    </p>
+                                </a>
+                                <div class="collapse" id="collapseExample7">
+                                    <div class="card card-body h5 fw-normal border-0">
+                                        An As-built drawing is a drawing that we, as a digital construction contractor, create after the successful completion of a project based on BIM models. Construction workers typically compare the construction drawing to the original drawings and specifications created at the beginning of the project. These are required documents on every construction project.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

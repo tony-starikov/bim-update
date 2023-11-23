@@ -12,6 +12,7 @@
     <!-- Required meta tags -->
     @yield('meta')
     @yield('canonical')
+    @yield('turnstile')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,21 +22,16 @@
 
     @seo
 
-    @turnstileScripts()
-
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">--}}
     {{--  splide  --}}
     <link rel="stylesheet" href="/images/css/splide.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet"/>
 
     <style>
         body {
@@ -105,61 +101,6 @@
             padding-left: 1.5rem;
             /*background-color: transparent;*/
         }
-
-        /*form.subscribe-form input {*/
-        /*    -webkit-appearance: none;*/
-        /*    -moz-appearance: none;*/
-        /*    appearance: none;*/
-        /*    background-color: transparent !important;*/
-        /*}*/
-        /*form.subscribe-form input::placeholder {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: #9a9a9a !important;*/
-        /*    border-color: #9a9a9a !important;*/
-        /*    font-size: 1.25rem !important;*/
-        /*    padding-left: 0 !important;*/
-        /*}*/
-        /*form.subscribe-form input[placeholder] {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: #9a9a9a !important;*/
-        /*    border-color: #9a9a9a !important;*/
-        /*    font-size: 1.25rem !important;*/
-        /*    padding-left: 0 !important;*/
-        /*}*/
-
-        /*form.donate-form input {*/
-        /*    -webkit-appearance: none;*/
-        /*    -moz-appearance: none;*/
-        /*    appearance: none;*/
-        /*    background-color: #fff !important;*/
-        /*}*/
-        /*form.donate-form select {*/
-        /*    -webkit-appearance: none;*/
-        /*    -moz-appearance: none;*/
-        /*    appearance: none;*/
-        /*    background-color: #fff !important;*/
-        /*}*/
-        /*form.donate-form input::placeholder {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: #9a9a9a !important;*/
-        /*    border-color: #fff !important;*/
-        /*    font-size: 1.4rem !important;*/
-        /*    padding: 10px !important;*/
-        /*}*/
-        /*form.donate-form select {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: #9a9a9a !important;*/
-        /*    border-color: #fff !important;*/
-        /*    font-size: 1.4rem !important;*/
-        /*    padding: 10px !important;*/
-        /*}*/
-        /*form.donate-form input[placeholder] {*/
-        /*    opacity: 1 !important; !* Firefox *!*/
-        /*    color: #9a9a9a !important;*/
-        /*    border-color: #fff !important;*/
-        /*    font-size: 1.4rem !important;*/
-        /*    padding: 10px !important;*/
-        /*}*/
 
         .portfolio-container {
             position: relative;
