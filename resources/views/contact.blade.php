@@ -18,24 +18,27 @@
                 <div class="col-lg-6 mt-5 p-5 p-lg-0 d-flex align-items-center">
                     <div class="row px-0 p-lg-5">
                         <div class="col-12">
-                            <p class="text-white h2 fw-semibold">
-                                <small>
-                                    Unlock your AEC company's full potential with our customized BIM support, delivering a five-star service experience tailored specifically for you.
-                                </small>
+                            <h2 class="text-white h2 fw-bold">
+                                HOW CAN WE HELP YOU?
+                            </h2>
+                            <p class="text-white h4 fw-semibold mt-3">
+                                FILL OUT THE FORM AND WE'LL BE IN TOUCH SOON!
                             </p>
                         </div>
 
                         <div class="d-none d-lg-block col-12">
-                            <h2 class="text-white h2 fw-bold mt-5">SOCIAL MEDIA</h2>
+                            <h2 class="text-white h2 fw-bold mt-5">
+                                LET'S CONNECT
+                            </h2>
 
-                            <div class="row mt-4">
+                            <div class="row mt-5">
                                 <div class="col-12 px-0">
                                     <div class="row">
                                         <div class="col-6 col-sm-3 p-4 pt-0">
                                             <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank"
                                                class="text-white h4 text-decoration-none">
                                                 <img class="img-fluid w-100"
-                                                     src="/images/main_page/social/linkedin.webp"
+                                                     src="/images/main_page/social/LinkedIn.png"
                                                      alt="linkedin">
                                             </a>
                                         </div>
@@ -43,7 +46,7 @@
                                             <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank"
                                                class="text-white h4 text-decoration-none">
                                                 <img class="img-fluid w-100"
-                                                     src="/images/main_page/social/instagram.webp"
+                                                     src="/images/main_page/social/Instagram.png"
                                                      alt="instagram">
                                             </a>
                                         </div>
@@ -51,7 +54,7 @@
                                             <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank"
                                                class="text-white h4 text-decoration-none">
                                                 <img class="img-fluid w-100"
-                                                     src="/images/main_page/social/face.webp"
+                                                     src="/images/main_page/social/Facebook.png"
                                                      alt="facebook">
                                             </a>
                                         </div>
@@ -59,11 +62,28 @@
                                             <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank"
                                                class="text-white h4 text-decoration-none">
                                                 <img class="img-fluid w-100"
-                                                     src="/images/main_page/social/youtube.webp"
+                                                     src="/images/main_page/social/YouTube.png"
                                                      alt="youtube">
                                             </a>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
+                                       class="text-white text-decoration-none">
+                                        <p class="h4 fw-semibold">
+                                            Email us: {{ $contacts->where('name', 'email')->first()->info }}
+                                        </p>
+                                    </a>
+                                    <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
+                                       class="text-white text-decoration-none">
+                                        <p class="h4 fw-semibold">
+                                            Let's Talk: {{ $contacts->where('name', 'phone')->first()->info }}
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
 
