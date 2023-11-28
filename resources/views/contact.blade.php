@@ -10,7 +10,7 @@
         <div class="container p-0 p-lg-5">
             <div class="row py-5 px-0 px-lg-5">
                 <div class="col-lg-6 mt-5">
-                    <h2 class="text-white display-4 fw-bold pb-2 mt-2">CONTACT US</h2>
+                    <h1 class="text-white fw-bold my-2">CONTACT US</h1>
 
                     <script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="a9502e08c5db13bf4b8dc917463d33adc65e4914cbc0158eb7e7866b8c7edf7a"></script>
 

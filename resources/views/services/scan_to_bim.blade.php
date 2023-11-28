@@ -350,7 +350,7 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -362,7 +362,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -374,7 +374,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -386,7 +386,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -398,7 +398,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -410,7 +410,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -422,7 +422,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -434,7 +434,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -446,7 +446,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -458,7 +458,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -470,7 +470,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -482,7 +482,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -494,7 +494,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -506,7 +506,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
@@ -518,13 +518,13 @@
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-4">
-                                <div class="row mt-4 pt-3 d-flex align-items-center">
+                                <div class="row mt-4 pt-3">
                                     <div class="col-2">
                                         <img src="/images/service/scan_to_bim_images/cloud/arrow-min.png" loading="lazy" alt="arrow" class="images-fluid w-50">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
-                                            Radio masts and towers
+                                            Site
                                         </h3>
                                     </div>
                                 </div>
