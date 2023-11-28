@@ -73,10 +73,10 @@
                             What advantages you will get
                         </h2>
                         <p class="h5 fw-normal mt-5">
-                            Our <span class="fw-bold">Scan to BIM Services</span> offer precise parametric <span class="fw-bold">As-built BIM Models</span> and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.
+                            Our <b class="fw-bold">Scan to BIM Services</b> offer precise parametric <b class="fw-bold">As-built BIM Models</b> and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.
                         </p>
                         <p class="h5 fw-normal mt-5">
-                            Our <span class="fw-bold">Point Cloud</span> to <span class="fw-bold">BIM Modeling Services</span> deliver models ranging from LOD 100 to 350, encompassing Architectural, Structural, Site, MEPFP Elements. We also include Clash Detection for projects involving Renovation, Refurbishment, Retrofit, or Reconstruction.
+                            Our <b class="fw-bold">Point Cloud</b> to <b class="fw-bold">BIM Modeling Services</b> deliver models ranging from LOD 100 to 350, encompassing Architectural, Structural, Site, MEPFP Elements. We also include Clash Detection for projects involving Renovation, Refurbishment, Retrofit, or Reconstruction.
                         </p>
                     </div>
                     <div class="col-12">
@@ -209,7 +209,7 @@
                             More about our Scan to BIM Services
                         </h2>
                         <p class="h5 fw-normal mt-5">
-                            Our <span class="fw-bold">Scan to BIM Services</span> (also known as Point Cloud <span class="fw-bold">BIM Modeling services</span>) are suitable for Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies.
+                            Our <b class="fw-bold">Scan to BIM Services</b> (also known as Point Cloud <b class="fw-bold">BIM Modeling services</b>) are suitable for Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies.
                         </p>
                     </div>
                     <div class="col-12">
@@ -344,7 +344,7 @@
                             WE HAVE EXPERIENCE AND EXPERTISE IN THE FIELDS:
                         </h2>
                         <p class="h5 fw-normal pb-3 mt-5">
-                            Our top priorities: <span class="fw-bold">quality, accuracy and logic</span>. Our experience includes developing parametric 3D BIM and 2D CAD models. We work with all disciplines: Architectural, Structural, Mechanical, Electrical, Plumbing, Fire Protection, Site.
+                            Our top priorities: <b class="fw-bold">quality, accuracy and logic</b>. Our experience includes developing parametric 3D BIM and 2D CAD models. We work with all disciplines: Architectural, Structural, Mechanical, Electrical, Plumbing, Fire Protection, Site.
                         </p>
                     </div>
                     <div class="col-12">
@@ -545,7 +545,7 @@
                             HOW DO WE WORK?
                         </h2>
                         <p class="h5 fw-normal pb-3 mt-5">
-                            Our <span class="fw-bold">Scan to BIM Modeling</span> team is skilled in producing accurate 3D BIM models or 2D drawings for purposes such as design validation, planning, comparison, interference checks, MEP or construction elements demolition or addition, documentation of existing building conditions.
+                            Our <b class="fw-bold">Scan to BIM Modeling</b> team is skilled in producing accurate 3D BIM models or 2D drawings for purposes such as design validation, planning, comparison, interference checks, MEP or construction elements demolition or addition, documentation of existing building conditions.
                         </p>
                     </div>
 
@@ -694,361 +694,46 @@
         </div>
     </div>
 
-    <div id="PROJECTS">
-        <div class="container-fluid d-none d-xxl-block">
-            <div class="container p-5 pt-0 pt-lg-0">
-                <div class="row p-5 pt-lg-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold">
-                            OUR SCAN TO BIM PROJECTS
-                        </h2>
-                    </div>
+    <div id="PROJECTS" class="container-fluid">
+        <div class="container py-5 p-lg-5 pt-lg-0">
+            <div class="row p-lg-5 pt-lg-0">
+                <div class="col-12">
+                    <h2 class="fw-bold">
+                        OUR SCAN TO BIM PROJECTS
+                    </h2>
+                </div>
 
-                    <div class="col-12">
-                        <div class="row mt-4">
-                            @foreach($works as $work)
-                                <div class="col-6 mt-4">
-                                    <div class="portfolio-container">
-                                        <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="row m-0 text-white">
-                                                <div class="col-12 p-2 px-4">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-7">
-                                                            <h3 style="font-size: 1.2vw; min-height: 1.2vw;" class="h4 fw-bold">{{ $work->title_first }}</h3>
-                                                            <h3 style="font-size: 1.2vw; min-height: 1.2vw;" class="h4 fw-bold">{{ $work->title_second }}</h3>
-                                                            <h4 style="font-size: 1vw; min-height: 1vw;" class="h5 text-secondary fw-bold">{{ $work->subtitle }}</h4>
-                                                        </div>
-                                                        <div class="col-5 ps-0 mt-2">
-                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_1 }}</p>
-                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_2 }}</p>
-                                                            <p style="font-size: 0.9vw" class="h5 fw-bold">{{ $work->parameter_3 }}</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h4 style="font-size: 1vw; min-height: 1vw" class="h5 fw-bold">{{ $work->disciplines }}</h4>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row m-0 border-bottom border-3 border-white">
-                                                    </div>
-
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 7vw;" class="img-fluid mt-2" alt="...">
-                                                        </div>
-                                                        <div class="col-8 px-0 d-flex justify-content-center">
-                                                            <p style="font-size: 0.9vw" class="h6 mt-2 text-secondary">
-                                                                {{ $work->description }}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                <div class="col-12">
+                    <div class="row mt-4">
+                        @foreach($works as $work)
+                            <div class="col-md-6 mt-4">
+                                <div class="portfolio-container">
+                                    <div class="card border-0 text-bg-dark">
+                                        <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
+                                    </div>
+                                    <div class="overlay">
+                                        <div class="row m-0 text-white">
+                                            <div class="col-12 p-0 text-center">
+                                                <img src="/images/{{ $work->image_overlay }}" loading="lazy" class="card-img w-100" alt="...">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            @endforeach
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
-                                <a id="estimate-project-screen-scantobim-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                    <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                </a>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
-
                 </div>
-            </div>
-        </div>
 
-        <div class="container-fluid d-none d-xl-block d-xxl-none">
-            <div class="container p-5 pt-0">
-                <div class="row p-5 pt-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold">
-                            OUR SCAN TO BIM PROJECTS
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row mt-4">
-                            @foreach($works as $work)
-                                <div class="col-6 mt-4">
-                                    <div class="portfolio-container">
-                                        <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="row m-0 text-white">
-                                                <div class="col-12 p-2 px-4">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-7">
-                                                            <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $work->title_first }}</h4>
-                                                            <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold">{{ $work->title_second }}</h4>
-                                                            <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
-                                                        </div>
-                                                        <div class="col-5 ps-0 mt-2">
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold">{{ $work->disciplines }}</h5>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row m-0 border-bottom border-3 border-white">
-                                                    </div>
-
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 9.5vw;" class="img-fluid mt-2" alt="...">
-                                                        </div>
-                                                        <div class="col-8 px-0">
-                                                            <h6 style="font-size: 1.1vw" class="mt-2 text-secondary">
-                                                                {{ $work->description }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
-                                <a id="estimate-project-screen-scantobim-xl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                    <span class="fw-bold h4 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                </a>
-                            </div>
+                <div class="col-12 px-4">
+                    <div class="row mt-4 px-4 py-5 p-lg-5 justify-content-center" style="border: 4px solid; border-color: #6ad9d8;">
+                        <div class="col-lg-6 text-center">
+                            <a id="estimate-project-screen-scantobim-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
+                                <p class="fw-bold h5 my-2">ESTIMATE YOUR PROJECT</p>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-lg-block d-xl-none">
-            <div class="container p-5 pt-0">
-                <div class="row p-5 pt-0">
-                    <div class="col-12">
-                        <h2 class="fw-bold">
-                            OUR SCAN TO BIM PROJECTS
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row mt-4">
-                            @foreach($works as $work)
-                                <div class="col-6 mt-4">
-                                    <div class="portfolio-container">
-                                        <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="row m-0 text-white">
-                                                <div class="col-12 p-2 px-4">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-7">
-                                                            <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $work->title_first }}</h4>
-                                                            <h4 style="font-size: 1.4vw; min-height: 1.4vw;" class="fw-bold mb-1">{{ $work->title_second }}</h4>
-                                                            <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="text-secondary fw-bold mb-1">{{ $work->subtitle }}</h5>
-                                                        </div>
-                                                        <div class="col-5 ps-0 mt-2">
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $work->parameter_1 }}</h5>
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $work->parameter_2 }}</h5>
-                                                            <h5 style="font-size: 1.2vw" class="fw-bold mb-1">{{ $work->parameter_3 }}</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h5 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold mb-1">{{ $work->disciplines }}</h5>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row m-0 border-bottom border-3 border-white">
-                                                    </div>
-
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 8vw;" class="img-fluid mt-2" alt="...">
-                                                        </div>
-                                                        <div class="col-8 ps-0">
-                                                            <h6 style="font-size: 1vw" class="mt-2 text-secondary">
-                                                                {{ $work->description }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <div class="row mt-4">
-                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
-                                <a id="estimate-project-screen-scantobim-lg" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                    <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-none d-md-block d-lg-none">
-            <div class="container">
-                <div class="row pb-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            OUR SCAN TO BIM PROJECTS
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row p-0 mt-4">
-                            @foreach($works as $work)
-                                <div class="col-6 mt-4">
-                                    <div class="portfolio-container">
-                                        <div class="card border-0 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="row m-0 text-white">
-                                                <div class="col-12 p-2 px-4">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-7">
-                                                            <h4 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold">{{ $work->title_first }}</h4>
-                                                            <h4 style="font-size: 1.3vw; min-height: 1.3vw;" class="fw-bold">{{ $work->title_second }}</h4>
-                                                            <h5 style="font-size: 1.1vw; min-height: 1.1vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
-                                                        </div>
-                                                        <div class="col-5 ps-0 mt-2">
-                                                            <h5 style="font-size: 1vw; min-height: 1vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
-                                                            <h5 style="font-size: 1vw; min-height: 1vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
-                                                            <h5 style="font-size: 1vw; min-height: 1vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h5 style="font-size: 1.1vw; min-height: 1.1vw" class="fw-bold">{{ $work->disciplines }}</h5>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row m-0 border-bottom border-3 border-white">
-                                                    </div>
-
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" style="width: 7vw;" class="img-fluid mt-2" alt="...">
-                                                        </div>
-                                                        <div class="col-8 px-0 d-flex justify-content-center">
-                                                            <h6 style="font-size: 1.1vw" class="mt-2 text-secondary">
-                                                                {{ $work->description }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <div class="row px-2 mt-4">
-                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
-                                <a id="estimate-project-screen-scantobim-md" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-50" style="background-color: #43aeb6">
-                                    <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-md-none">
-            <div class="container">
-                <div class="row pb-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold h2">
-                            OUR SCAN TO BIM PROJECTS
-                        </h2>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="row">
-                            @foreach($works as $work)
-                                <div class="col-12 mt-4">
-                                    <div class="portfolio-container">
-                                        <div class="card border-0 w-100 text-bg-dark">
-                                            <img src="/images/{{ $work->image }}" loading="lazy" class="img-fluid w-100" alt="...">
-                                        </div>
-                                        <div class="overlay">
-                                            <div class="row text-white">
-                                                <div class="col-12 p-2 px-4">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-7">
-                                                            <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_first }}</h4>
-                                                            <h4 style="font-size: 3vw; min-height: 3vw;" class="fw-bold">{{ $work->title_second }}</h4>
-                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw;" class="text-secondary fw-bold">{{ $work->subtitle }}</h5>
-                                                        </div>
-                                                        <div class="col-5 ps-0 mt-2">
-                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_1 }}</h5>
-                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_2 }}</h5>
-                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->parameter_3 }}</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h5 style="font-size: 2.8vw; min-height: 2.8vw" class="fw-bold">{{ $work->disciplines }}</h5>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row m-0 border-bottom border-3 border-white">
-                                                    </div>
-
-                                                    <div class="row d-flex align-items-center">
-                                                        <div class="col-4 d-flex justify-content-center">
-                                                            <img src="/images/{{ $work->image_small }}" loading="lazy" class="img-fluid w-100 mt-2" alt="...">
-                                                        </div>
-                                                        <div class="col-8 px-0 d-flex justify-content-center">
-                                                            <h6 style="font-size: 2.5vw" class="mt-2 text-secondary">
-                                                                {{ $work->description }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-
-                        <div class="row px-2 mt-4">
-                            <div class="col-12 text-center p-5" style="border: 4px solid; border-color: #6ad9d8;">
-                                <a id="estimate-project-screen-scantobim" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                                    <span class="fw-bold h6 d-block my-2">ESTIMATE YOUR PROJECT</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -1170,10 +855,10 @@
 
                             <div class="col-12" style="text-align: justify;">
                                 <p class="h5 text-secondary">
-                                    Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps in creating a comprehensive and detailed model of the building, which can be used for renovation, restoration, or retrofitting purposes. The Scan to BIM service is essential in creating a collaborative environment for developing and executing efficiently the construction projects.
+                                    Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps create a comprehensive and detailed building model, which can be used for renovation, restoration, or retrofitting purposes. The BIM modeling service is essential in creating a collaborative environment for developing and executing efficient construction projects.
                                 </p>
                                 <p class="h5 text-secondary mt-5">
-                                    The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings on 28%, greater accuracy, and reduced risk of errors on 40%. It helps in minimizing on-site work and disruptions, reduces the chances of rework, and allows for better visualization and analysis of the building's structure. Additionally, the Scan to BIM service enables stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.
+                                    The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings of 28%, greater accuracy, and reduced risk of errors by 40%. It helps minimize on-site work and disruptions reduces the chances of rework, and allows for better visualization and analysis of the building's structure. Additionally, the 3D BIM models enable stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.
                                 </p>
                             </div>
                         </div>
@@ -1183,19 +868,17 @@
         </div>
     </div>
 
-    <div id="COUNTRIES">
-        <div class="container-fluid" style="background-color: #f1faf9;">
-            <div class="container py-5 p-lg-5">
-                <div class="row p-lg-5">
-                    <div class="col-12">
-                        <h2 class="fw-bold">
-                            COUNTRIES WE WORKED WITH
-                        </h2>
-                    </div>
+    <div id="COUNTRIES" class="container-fluid" style="background-color: #f1faf9;">
+        <div class="container py-5 p-lg-5">
+            <div class="row p-lg-5">
+                <div class="col-12">
+                    <h2 class="fw-bold">
+                        COUNTRIES WE WORKED WITH
+                    </h2>
+                </div>
 
-                    <div class="col-12 text-center mt-4">
-                        <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
-                    </div>
+                <div class="col-12 text-center mt-4">
+                    <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                 </div>
             </div>
         </div>
@@ -1251,6 +934,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="row mt-4">
                             <div class="col-2 col-md-1 align-self-stretch">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
@@ -1259,9 +943,9 @@
                             </div>
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                            <span class="h3 fw-semibold">
-                                How long does it take to complete a Scan to BIM project?
-                            </span>
+                                    <p class="h3 fw-semibold">
+                                        How long does it take to complete a project?
+                                    </p>
                                 </a>
                                 <div class="collapse" id="collapseExample2">
                                     <div class="card card-body h5 fw-normal border-0">
@@ -1280,7 +964,7 @@
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
                                     <p class="h3 fw-semibold">
-                                        What are the deliverables of Scan to BIM services?
+                                        What results will you get by using our service?
                                     </p>
                                 </a>
                                 <div class="collapse" id="collapseExample3">
@@ -1299,9 +983,9 @@
                             </div>
                             <div class="col-10 col-md-11 pt-2">
                                 <a class="border-0 text-decoration-none text-dark shadow-none" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
-                                    <span class="h3 fw-semibold">
-                                        What types of projects can benefit from Scan to BIM service?
-                                    </span>
+                                    <p class="h3 fw-semibold">
+                                        What types of projects can 3D modeling be helpful for?
+                                    </p>
                                 </a>
                                 <div class="collapse" id="collapseExample4">
                                     <div class="card card-body h5 fw-normal border-0">

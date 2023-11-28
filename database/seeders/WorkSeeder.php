@@ -28,6 +28,7 @@ class WorkSeeder extends Seeder
                 'department' => 'scan-to-bim',
                 'image' => 'works/Azovstal_1x.webp',
                 'image_small' => 'works/Azovstal_small.webp',
+                'image_overlay' => 'works/overlay/Azovstal_overlay.webp',
             ],
             [
                 'id' => 2,
@@ -43,6 +44,7 @@ class WorkSeeder extends Seeder
                 'department' => 'scan-to-bim',
                 'image' => 'works/Northen_CZK_1x.webp',
                 'image_small' => 'works/Northen_CZK_small.webp',
+                'image_overlay' => 'works/overlay/Northen_CZK_overlay.webp',
             ],
             [
                 'id' => 3,
@@ -58,6 +60,7 @@ class WorkSeeder extends Seeder
                 'department' => 'scan-to-bim',
                 'image' => 'works/Landscape_1x.webp',
                 'image_small' => 'works/Landscape_small.webp',
+                'image_overlay' => 'works/overlay/Landscape_overlay.webp',
             ],
             [
                 'id' => 4,
@@ -73,6 +76,7 @@ class WorkSeeder extends Seeder
                 'department' => 'scan-to-bim',
                 'image' => 'works/Hypermarket_1x.webp',
                 'image_small' => 'works/Hypermarket_small.webp',
+                'image_overlay' => 'works/overlay/Hypermarket_overlay.webp',
             ],
             [
                 'id' => 5,
@@ -88,6 +92,7 @@ class WorkSeeder extends Seeder
                 'department' => '',
                 'image' => 'works/Kontorska_1x.webp',
                 'image_small' => 'works/Kontorska_small.webp',
+                'image_overlay' => '',
             ],
             [
                 'id' => 6,
@@ -103,6 +108,7 @@ class WorkSeeder extends Seeder
                 'department' => '',
                 'image' => 'works/Office_1x.webp',
                 'image_small' => 'works/Office_small.webp',
+                'image_overlay' => '',
             ],
             [
                 'id' => 7,
@@ -118,6 +124,7 @@ class WorkSeeder extends Seeder
                 'department' => '',
                 'image' => 'works/Villa_1x.webp',
                 'image_small' => 'works/Villa_small.webp',
+                'image_overlay' => '',
             ],
             [
                 'id' => 8,
@@ -133,6 +140,7 @@ class WorkSeeder extends Seeder
                 'department' => 'telecom-design',
                 'image' => 'works/Rooftop_1x.webp',
                 'image_small' => 'works/Rooftop_small.webp',
+                'image_overlay' => '',
             ],
             [
                 'id' => 9,
@@ -148,6 +156,7 @@ class WorkSeeder extends Seeder
                 'department' => 'telecom-design',
                 'image' => 'works/Towe_1x.webp',
                 'image_small' => 'works/Tower_small.webp',
+                'image_overlay' => '',
             ],
         ]);
     }

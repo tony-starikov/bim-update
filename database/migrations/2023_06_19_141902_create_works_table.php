@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('department')->nullable();
             $table->text('image')->nullable();
             $table->text('image_small')->nullable();
+            $table->text('image_overlay')->nullable();
             $table->timestamps();
         });
     }
