@@ -714,7 +714,7 @@
                                     <div class="overlay">
                                         <div class="row m-0 text-white">
                                             <div class="col-12 p-0 text-center">
-                                                <img src="/images/{{ $work->image_overlay }}" loading="lazy" class="card-img w-100" alt="...">
+                                                <img src="/images/{{ $work->image_overlay }}" class="img-fluid w-100" alt="...">
                                             </div>
                                         </div>
                                     </div>
