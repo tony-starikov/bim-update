@@ -19,7 +19,7 @@
                             <div class="col-md-10 col-xl-7">
                                 <h2 class="text-white h4 fw-semibold">
                                     Guarantee of models quality. Daily reports.<br>
-                                    BIM modeling by Point Cloud experts with over 7 years of experience in all disciplines.
+                                    3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.
                                 </h2>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
 
                 <div class="row px-5 pb-5 justify-content-center">
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
-                        <img src="/images/service/scan_to_bim_images/icons/icon1-min.webp" loading="lazy" alt="icon1" class="img-fluid">
+                        <img src="/images/service/scan_to_bim_images/icons/icon1-new.webp" loading="lazy" alt="icon1" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
                             Point cloud registration
                         </h3>
