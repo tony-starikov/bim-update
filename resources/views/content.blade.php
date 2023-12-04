@@ -1,22 +1,17 @@
 @extends('master')
 
 @section('main')
-    <div class="container-fluid" style="background: url('/images/service/software_development/header-new.webp') no-repeat center center local; background-size: cover;">
+    <div class="container-fluid" style="background: url('/images/service/content/header.webp') no-repeat center center local; background-size: cover;">
         <div class="container">
             <div class="row align-items-center" style="min-height: 100vh;">
                 <div class="col-12 text-center py-5">
-                    <h1 class="mt-5 text-white text-uppercase fw-bold">
-                        SOFTWARE DEVELOPMENT SERVICE
+                    <h2 class="h1 mt-5 text-uppercase fw-bold">
+                        THE INDIVIDUAL<br>
+                        FIVE-STAR
+                    </h2>
+                    <h1 class="text-white text-uppercase fw-bold">
+                        BIM CONTENT CREATION SERVICE
                     </h1>
-
-                    <div class="mt-5 row justify-content-center">
-                        <div class="col-md-10 col-xl-12">
-                            <p class="text-white h4 fw-semibold">
-                                Specialists in the development of Revit API, Dynamo, Python/C# Add-In.<br>
-                                Optimize the design process for business. Cost savings of up to 60%
-                            </p>
-                        </div>
-                    </div>
 
                     <div class="row mt-5 justify-content-center">
                         <div class="col-lg-6 col-xl-5">
@@ -28,27 +23,27 @@
 
                     <div class="row mt-5 justify-content-center">
                         <div class="col-6 col-sm-5 col-md-3 col-xl-2 text-center">
-                            <img src="/images/service/software_development/icons-head/icon1.webp" loading="lazy" alt="icon1" class="img-fluid w-100 px-4">
+                            <img src="/images/service/content/icons-head/icon1.webp" loading="lazy" alt="icon1" class="img-fluid w-100 px-4">
                             <p class="h6 text-white small fw-semibold mt-4 text-uppercase px-3">
-                                PYTHON/C#/DYNAMO/SCRIPTING
+                                DETAILED REVIT FAMILY PRODUCTION
                             </p>
                         </div>
                         <div class="col-6 col-sm-5 col-md-3 col-xl-2 text-center">
-                            <img src="/images/service/software_development/icons-head/icon2.webp" loading="lazy" alt="icon2" class="img-fluid w-100 px-4">
+                            <img src="/images/service/content/icons-head/icon2.webp" loading="lazy" alt="icon2" class="img-fluid w-100 px-4">
                             <p class="h6 text-white small fw-semibold mt-4 text-uppercase px-3">
-                                DESIGN
+                                CORRECT SCHEDULES
                             </p>
                         </div>
                         <div class="col-6 col-sm-5 col-md-3 col-xl-2 text-center">
-                            <img src="/images/service/software_development/icons-head/icon3.webp" loading="lazy" alt="icon3" class="img-fluid w-100 px-4">
+                            <img src="/images/service/content/icons-head/icon3.webp" loading="lazy" alt="icon3" class="img-fluid w-100 px-4">
                             <p class="h6 text-white small fw-semibold mt-4 text-uppercase px-3">
-                                wide API CONNECTIONS
+                                DIGITAL TWINS
                             </p>
                         </div>
                         <div class="col-6 col-sm-5 col-md-3 col-xl-2 text-center">
-                            <img src="/images/service/software_development/icons-head/icon4.webp" loading="lazy" alt="icon4" class="img-fluid w-100 px-4">
+                            <img src="/images/service/content/icons-head/icon4.webp" loading="lazy" alt="icon4" class="img-fluid w-100 px-4">
                             <p class="h6 text-white small fw-semibold mt-4 text-uppercase px-3">
-                                BUISINESS AUTOMATIONS
+                                Realistic VISUALISATIONS
                             </p>
                         </div>
                     </div>

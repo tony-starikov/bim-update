@@ -59,9 +59,14 @@
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="h1 fw-bold pb-4">
-                        {{ $page_info->pageItems->where('name', 'stars_header')->first()->value }}
+                    <h2 class="h1 fw-bold text-uppercase">
+{{--                        {{ $page_info->pageItems->where('name', 'stars_header')->first()->value }}--}}
+                        Your business deserves<br>
+                        our five-stars in BIM modeling:
                     </h2>
+                    <p class="h5 fw-normal mb-4 mt-5">
+                        BIMprove outsourced BIM company providing 3D BIM modeling services in Revit in different lines. We provide services to architects, designers, civil engineers, MEP engineers, general contractors and construction managers, subcontractors, equipment manufacturers, Telecom companies.
+                    </p>
                 </div>
             </div>
             <div class="row px-lg-5 d-none d-md-flex">
@@ -174,9 +179,12 @@
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="h1 fw-bold m-0 pb-4">
+                    <h2 class="h1 fw-bold">
                         {{ $page_info->pageItems->where('name', 'services_header')->first()->value }}
                     </h2>
+                    <p class="h5 fw-normal my-5">
+                        With over 7 years of experience in the AEC industry as an outsourcing company, we have successfully completed over 1,400+ BIM projects in the United States, Canada, Germany, Belgium, UK, Australia, New Zealand, etc. BIMprove is a confident player in the digital construction market. We offer 3D BIM Modeling Services in industries such as manufacturing and warehousing, airports, residential, education, commercial, medical centers, etc.
+                    </p>
                 </div>
             </div>
             <div class="row px-lg-5">
@@ -239,7 +247,7 @@
     </div>
 
 {{--    TESTIMONIALS--}}
-    <div id="testimonials" class="container-fluid horizontal-gradient py-3 pb-5 px-0">
+    <div id="testimonials" class="container-fluid horizontal-gradient py-lg-3 pb-lg-5 px-0">
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
@@ -248,45 +256,42 @@
                     </h2>
                 </div>
             </div>
-        </div>
-        <div class="row w-100 m-0 pb-5">
-            <div class="col-12 px-sm-5 px-md-0">
-                <section id="splide1" class="splide" aria-label="Slide Container Example">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            @foreach($testimonials as $testimonial)
-                                <li class="splide__slide">
-                                    <div class="card h-100 p-2 mx-4 rounded-5 border-0" @if(($testimonial->id % 2) == 0) style="background-color: #c4c4c4" @else style="background-color: #6bdcdb" @endif >
-                                        <div class="card-header bg-transparent border-0">
-                                            <div class="row" style="min-height: 50%">
-                                                <div class="col-4">
-                                                    <img class="img w-100" src="/images/{{ $testimonial->image }}" alt="">
-                                                </div>
 
-                                                <div class="col-8">
-                                                    <p class="text-white fw-bold h6 w-100 mt-3 mb-0">{{ $testimonial->name }} {{ $testimonial->surname }}</p>
-                                                    <p class="text-white fw-semibold h6 w-100">{{ $testimonial->profession }}</p>
+            <div class="row">
+                <div class="col-12 px-0">
+                    <section id="splide1" class="splide" aria-label="Slide Container Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                @foreach($testimonials as $testimonial)
+                                    <li class="splide__slide py-5 px-lg-5">
+                                        <div class="card h-100 shadow mx-3 py-4 rounded-5 border-0">
+                                            <div class="card-body bg-transparent border-0">
+                                                <div class="row">
+                                                    <div class="col-3 col-md-2 col-xl-1">
+                                                        <img class="img-fluid w-100" src="/images/{{ $testimonial->image }}" alt="">
+                                                    </div>
+
+                                                    <div class="col-9 col-md-10 col-xl-11">
+                                                        <p class="fw-bold h6">{{ $testimonial->name }} {{ $testimonial->surname }}</p>
+                                                        <p class="fw-semibold h6">{{ $testimonial->profession }}</p>
+{{--                                                        <p class="fw-semibold text-secondary h6">--}}
+{{--                                                            April 19, 2022--}}
+{{--                                                        </p>--}}
+                                                        <p class="h6 mt-3">
+                                                            {{ $testimonial->text }}
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </section>
+                </div>
 
-                                        <div class="card-body pt-0 d-flex align-items-center" style="min-height: 50%">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <p class="text-white fw-semibold h6">
-                                                        {{ $testimonial->text }}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </section>
             </div>
-
         </div>
     </div>
 
@@ -533,18 +538,28 @@
         <div class="container py-5 p-lg-5">
             <div class="row px-lg-5">
                 <div class="col-12">
-                    <h2 class="h1 fw-bold">
-                        {{ $page_info->pageItems->where('name', 'about_header')->first()->value }}
+                    <h2 class="h1 fw-bold text-uppercase">
+{{--                        {{ $page_info->pageItems->where('name', 'about_header')->first()->value }}--}}
+                        Discover the Comprehensive<br>
+                        BIM Services of BIMprove
                     </h2>
                 </div>
                 <div class="col-12">
                     <div class="row pe-0">
                         <div class="col-xl-5 mt-4">
-                            <h3 class="h4 lh-1 fw-semibold">
-                                {{ $page_info->pageItems->where('name', 'about_subheader')->first()->value }}
+                            <h3 class="h5 mb-3 fw-semibold">
+{{--                                {{ $page_info->pageItems->where('name', 'about_subheader')->first()->value }}--}}
+                                The BIMprove team will let you forget about worrying for the project.
                             </h3>
-                            <p class="h5 mt-2 fw-normal" style="text-align: justify">
-                                {{ $page_info->pageItems->where('name', 'about_text')->first()->value }}
+                            <p class="h6 mb-3 fw-normal">
+{{--                                {{ $page_info->pageItems->where('name', 'about_text')->first()->value }}--}}
+                                BIMprove is, first and foremost, about people. A team of specialists passionate about BIM technology and 3D modeling. Our vision for the team is to continuously grow, develop, and bring digital construction and digital twins to life.
+                            </p>
+                            <p class="h6 mb-3 fw-normal">
+                                As a business, we aim to provide BIM services at a five-star level with personalized support. Our priorities are quality, speed, accountability, process optimization, and customer savings.
+                            </p>
+                            <p class="h6 fw-normal">
+                                When you work with us, you'll forget about project anxiety. We guarantee project realization without breaking deadlines and no rework.
                             </p>
                         </div>
                         <div class="col-xl-7 mt-4 px-3 ps-xl-4 pe-xl-0">
@@ -641,29 +656,35 @@
             },
 
             // testimonials
+            // {
+            //     type   : 'loop',
+            //     arrows: boolean = true,
+            //     perPage: 3,
+            //     padding: { left: '10%', right: '10%' },
+            //     breakpoints: {
+            //         768: {
+            //             perPage: 1,
+            //             padding: { left: '0%', right: '0%' },
+            //         },
+            //         992: {
+            //             perPage: 1,
+            //             padding: { left: '20%', right: '20%' },
+            //         },
+            //         1200: {
+            //             perPage: 2,
+            //             padding: { left: '10%', right: '10%' },
+            //         },
+            //         1400: {
+            //             perPage: 2,
+            //             padding: { left: '20%', right: '20%' },
+            //         },
+            //     },
+            // },
+
             {
                 type   : 'loop',
                 arrows: boolean = true,
-                perPage: 3,
-                padding: { left: '10%', right: '10%' },
-                breakpoints: {
-                    768: {
-                        perPage: 1,
-                        padding: { left: '0%', right: '0%' },
-                    },
-                    992: {
-                        perPage: 1,
-                        padding: { left: '20%', right: '20%' },
-                    },
-                    1200: {
-                        perPage: 2,
-                        padding: { left: '10%', right: '10%' },
-                    },
-                    1400: {
-                        perPage: 2,
-                        padding: { left: '20%', right: '20%' },
-                    },
-                },
+                perPage: 1,
             },
 
             // portfolio
