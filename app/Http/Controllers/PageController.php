@@ -115,4 +115,19 @@ class PageController extends Controller
 
         return view('content', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
     }
+
+    public function architectural()
+    {
+        $page_info = Page::where('name', 'main')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('architectural', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
+    }
 }

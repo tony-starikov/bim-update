@@ -31,8 +31,9 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 
-Route::get('/test', [PageController::class, 'test'])->name('test');
+Route::get('/soft', [PageController::class, 'test'])->name('test');
 Route::get('/content', [PageController::class, 'content'])->name('content');
+Route::get('/architectural', [PageController::class, 'architectural'])->name('architectural');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');

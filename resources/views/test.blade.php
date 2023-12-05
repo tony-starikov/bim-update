@@ -279,7 +279,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background: url('/images/service/software_development/services-back.webp') no-repeat center center local; background-size: cover;">
+    <div class="container-fluid" style="background: url('/images/service/software_development/services-back1.webp') no-repeat center center local; background-size: cover;">
         <div class="container py-5 p-lg-5">
             <div class="row p-lg-5 d-flex align-items-center">
                 <div class="col-12">

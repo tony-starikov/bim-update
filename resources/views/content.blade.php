@@ -52,6 +52,46 @@
         </div>
     </div>
 
+    <div class="container-fluid" style="background: url('/images/service/content/what.webp') no-repeat center center local; background-size: cover;">
+        <div class="container p-lg-5 pb-0">
+            <div class="row py-5 px-lg-5">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-5">
+                        WHAT IS BIM CONTENT CREATION SERVICE?
+                    </h2>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pb-4 pb-lg-0">
+                            <img src="/images/service/content/field.webp" loading="lazy" alt="service1" class="img-fluid w-100">
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="h5 text-secondary">
+                                <small>
+                                    BIM Content Creation department, where we specialize
+                                    in developing top-quality Revit families. Our team is dedicated
+                                    to creating families that are not only visually stunning
+                                    but also highly functional and optimized for maximum
+                                    efficiency. We take pride in our commitment to
+                                    delivering products of the highest quality, with beautiful
+                                    geometry and unique functionality that truly stands out.
+                                </small>
+                            </p>
+                            <p class="h5 text-secondary">
+                                <small>
+                                    Our families are designed to be both easy to use and optimized
+                                    for fast and reliable operation, allowing you to
+                                    focus on your project and not worry about technical issues.
+                                    We also understand that every project is unique,
+                                    which is why we offer a high degree of flexibility in our
+                                    services.
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="container pb-5 p-lg-5 py-lg-0">
             <div class="row pt-5 p-lg-5 pb-lg-0">
@@ -68,8 +108,10 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Provide support to quickly solve urgent problems.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Exceptional quality:</b> Our BIM Content Creation
+                                        department is committed to creating
+                                        the highest-quality Revit families for our clients.
                                     </h3>
                                 </div>
                             </div>
@@ -80,8 +122,12 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Help to optimize business processes.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Tailored solutions:</b> We understand that every
+                                        project is unique, which is why we offer
+                                        a high degree of flexibility in our services to
+                                        provide customized solutions that meet your
+                                        specific needs.
                                     </h3>
                                 </div>
                             </div>
@@ -92,8 +138,10 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Capable of organizing any API connections.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Expert team:</b> Our team of highly qualified
+                                        BIM specialists is dedicated to delivering outstanding
+                                        results for our clients.
                                     </h3>
                                 </div>
                             </div>
@@ -104,8 +152,11 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Team of engineers with deep understanding of the design process.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Streamlined processes:</b> Our families are designed
+                                        to be easy to use, with optimized operation
+                                        that allows you to focus on your project
+                                        without technical roadblocks.
                                     </h3>
                                 </div>
                             </div>
@@ -116,8 +167,10 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Strong ability to communicate and work closely with clients to ensure final result meets their needs.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Transparent cost estimates:</b> We provide
+                                        detailed cost estimates for each project
+                                        based on your specific requirements.
                                     </h3>
                                 </div>
                             </div>
@@ -128,8 +181,11 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Provide detailed planning and drawing schemas to control each step of collaboration.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Detailed project plan:</b> We provide a detailed
+                                        work plan and projected deadlines for each
+                                        project, ensuring that you’re always up-to date
+                                        on our progress.
                                     </h3>
                                 </div>
                             </div>
@@ -140,8 +196,11 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Flexible and adaptable approach to meet the unique needs of each project and client.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">BIM expertise:</b> Our team has a strong
+                                        understanding of BIM standards and how
+                                        to apply them to projects, ensuring that our
+                                        families meet industry standards.
                                     </h3>
                                 </div>
                             </div>
@@ -152,20 +211,11 @@
                                     <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
                                 </div>
                                 <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Strong understanding of BIM standards and how to apply them to projects.
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row mt-4 pt-3">
-                                <div class="col-1 col-lg-2 col-xl-1">
-                                    <img src="/images/service/software_development/arrow-min.webp" loading="lazy" alt="arrow" class="images-fluid w-100 ps-md-3 p-xl-0">
-                                </div>
-                                <div class="col-11 col-lg-10 col-xl-11">
-                                    <h3 class="h5 fw-bold">
-                                        Strong attention to detail and focus on quality control to ensure the final product meets or exceeds client expectations.
+                                    <h3 class="h5 fw-normal">
+                                        <b class="fw-bold">Quality assurance:</b> We have a strong
+                                        attention to detail and focus on quality
+                                        control to ensure that the final product meets
+                                        or exceeds your expectations.
                                     </h3>
                                 </div>
                             </div>
@@ -176,19 +226,19 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="container px-lg-5 py-lg-0">
-            <div class="row p-lg-5 pb-lg-0 justify-content-center">
-                <div class="col-lg-9 col-xl-6 text-center">
-                    <a href="{{ route('downloadService', 'software-development') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
-                        <p class="fw-bold h4 d-block my-2">
-                            DOWNLOAD PRESENTATION
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="container-fluid">--}}
+{{--        <div class="container px-lg-5 py-lg-0">--}}
+{{--            <div class="row p-lg-5 pb-lg-0 justify-content-center">--}}
+{{--                <div class="col-lg-9 col-xl-6 text-center">--}}
+{{--                    <a href="{{ route('downloadService', 'software-development') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">--}}
+{{--                        <p class="fw-bold h4 d-block my-2">--}}
+{{--                            DOWNLOAD PRESENTATION--}}
+{{--                        </p>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="container-fluid">
         <div class="container py-5 p-lg-5">
@@ -203,68 +253,50 @@
                         <div class="col-md-6 p-4 pb-0">
                             <div class="row align-items-center p-3 py-4 h-100"  style="border: 4px solid; border-color: #6ad9d8;">
                                 <div class="col-9">
-                                    <h3 class="h5 fw-bold">
-                                        C#/PYTHON ADD-IN DEVELOPMENT
+                                    <h3 class="h5 fw-bold text-uppercase">
+                                        ARCHITECTURAL
+                                        FAMILIES
                                     </h3>
-                                    <p class="h5 text-secondary">
-                                        <small>
-                                            Developing custom Add-Ins for Revit to improve efficiency and add new functionality.
-                                        </small>
-                                    </p>
                                 </div>
                                 <div class="col-3 p-0">
-                                    <img src="/images/service/software_development/propose-icons/icon1.webp" loading="lazy" alt="service1" class="img-fluid w-100">
+                                    <img src="/images/service/content/icons-what/icon1.webp" loading="lazy" alt="service1" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 p-4 pb-0">
                             <div class="row align-items-center p-3 py-4 h-100"  style="border: 4px solid; border-color: #6ad9d8;">
                                 <div class="col-9">
-                                    <h3 class="h5 fw-bold">
-                                        DYNAMO SCRIPTING
+                                    <h3 class="h5 fw-bold text-uppercase">
+                                        Structural families
                                     </h3>
-                                    <p class="h5 text-secondary">
-                                        <small>
-                                            Creating interactive visual programming interface to automate tasks, access and modify data, and create graphical representations of the model.
-                                        </small>
-                                    </p>
                                 </div>
                                 <div class="col-3 p-0">
-                                    <img src="/images/service/software_development/propose-icons/icon2.webp" loading="lazy" alt="service2" class="img-fluid w-100">
+                                    <img src="/images/service/content/icons-what/icon2.webp" loading="lazy" alt="service2" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 p-4 pb-0">
                             <div class="row align-items-center p-3 py-4 h-100"  style="border: 4px solid; border-color: #6ad9d8;">
                                 <div class="col-9">
-                                    <h3 class="h5 fw-bold">
-                                        WIDE API CONNECTIONS
+                                    <h3 class="h5 fw-bold text-uppercase">
+                                        ANY
+                                        SPECIAL FAMILY
                                     </h3>
-                                    <p class="h5 text-secondary">
-                                        <small>
-                                            Integrating Revit with other software and systems.
-                                        </small>
-                                    </p>
                                 </div>
                                 <div class="col-3 p-0">
-                                    <img src="/images/service/software_development/propose-icons/icon3.webp" loading="lazy" alt="service3" class="img-fluid w-100">
+                                    <img src="/images/service/content/icons-what/icon3.webp" loading="lazy" alt="service3" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 p-4 pb-0">
                             <div class="row align-items-center p-3 py-4 h-100"  style="border: 4px solid; border-color: #6ad9d8;">
                                 <div class="col-9">
-                                    <h3 class="h5 fw-bold">
-                                        SUPPORT AND MAINTENANCE
+                                    <h3 class="h5 fw-bold text-uppercase">
+                                        MEP families
                                     </h3>
-                                    <p class="h5 text-secondary">
-                                        <small>
-                                            Providing ongoing support and maintenance for developed tools and scripts.
-                                        </small>
-                                    </p>
                                 </div>
                                 <div class="col-3 p-0">
-                                    <img src="/images/service/software_development/propose-icons/icon4.webp" loading="lazy" alt="service4" class="img-fluid w-100">
+                                    <img src="/images/service/content/icons-what/icon4.webp" loading="lazy" alt="service4" class="img-fluid w-100">
                                 </div>
                             </div>
                         </div>
@@ -274,58 +306,44 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background: url('/images/service/software_development/services-back.webp') no-repeat center center local; background-size: cover;">
+    <div class="container-fluid">
         <div class="container py-5 p-lg-5">
-            <div class="row p-lg-5 d-flex align-items-center">
+            <div class="row p-lg-5">
                 <div class="col-12">
-                    <h2 class="fw-bold text-uppercase">
-                        CLIENT SERVICE
+                    <h2 class="fw-bold text-uppercase pb-4">
+                        OUR BIM CONTENT PROJECTS
                     </h2>
                 </div>
-                <div class="col-md-6 order-2 order-md-1">
-                    <h3 class="h4 fw-bold mt-5">
-                        Support
-                    </h3>
-                    <p class="h5 text-secondary mt-4">
-                        <small>
-                            Always by your side, our 24/7 support ensures your journey is smooth and hassle-free, offering expert assistance whenever you need it.
-                        </small>
-                    </p>
-                    <h3 class="h4 fw-bold mt-4">
-                        Communication
-                    </h3>
-                    <p class="h5 text-secondary mt-4">
-                        <small>
-                            Transparent and timely, our communication keeps you in the loop, fostering a strong partnership and deep understanding.
-                        </small>
-                    </p>
-                    <h3 class="h4 fw-bold mt-4">
-                        Reporting
-                    </h3>
-                    <p class="h5 text-secondary mt-4">
-                        <small>
-                            Uncover insights effortlessly with our tailored reports, empowering you to make informed decisions and track your progress.
-                        </small>
-                    </p>
-                    <h3 class="h4 fw-bold mt-4">
-                        Flexibility
-                    </h3>
-                    <p class="h5 text-secondary mt-4">
-                        <small>
-                            Adapting to your evolving needs, we offer customizable solutions that align with your unique requirements.
-                        </small>
-                    </p>
-                    <h3 class="h4 fw-bold mt-4">
-                        Visualization
-                    </h3>
-                    <p class="h5 text-secondary mt-4">
-                        <small>
-                            See the big picture with our intuitive visualizations, turning complex data into actionable insights for confident decision-making.
-                        </small>
-                    </p>
-                </div>
-                <div class="col-md-6 order-1 order-md-2">
-                    <img src="/images/service/software_development/services-transformed.webp" loading="lazy" alt="service1" class="img-fluid w-100 pt-5 pt-md-0">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <img src="/images/service/content/proj/proj1.webp" loading="lazy" alt="service1" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <img src="/images/service/content/proj/proj2.webp" loading="lazy" alt="service2" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <img src="/images/service/content/proj/proj3.webp" loading="lazy" alt="service3" class="img-fluid w-100">
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            <img src="/images/service/content/proj/proj4.webp" loading="lazy" alt="service4" class="img-fluid w-100">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="card h-100" style="border: 4px solid; border-color: #6ad9d8;">
+                                <div class="card-body py-5 p-md-5 text-center">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-6">
+                                            <a id="estimate-project-screen-scantobim-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
+                                                <p class="fw-bold h4 d-block my-2">
+                                                    BOOK A MEETING
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -350,7 +368,7 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            Communication
+                                            Consultation
                                         </h3>
                                     </div>
                                 </div>
@@ -364,7 +382,8 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            Researching task
+                                            Estimation of the
+                                            project
                                         </h3>
                                     </div>
                                 </div>
@@ -378,7 +397,7 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            Documentation development
+                                            Project setup
                                         </h3>
                                     </div>
                                 </div>
@@ -392,7 +411,7 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            Estimation
+                                            Estimation approval
                                         </h3>
                                     </div>
                                 </div>
@@ -406,7 +425,7 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            Client User Interface approval
+                                            Workflow
                                         </h3>
                                     </div>
                                 </div>
@@ -420,65 +439,9 @@
                                     </div>
                                     <div class="col-10 p-3 d-flex align-items-center">
                                         <h3 class="h5 m-0">
-                                            UI development
+                                            Presentation to the
+                                            customer
                                         </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 mb-4">
-                            <div class="card h-100" style="border: 4px solid #6de0de">
-                                <div class="card-body p-0 d-flex align-items-center">
-                                    <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                        <img src="/images/service/software_development/how/7.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-10 p-3 d-flex align-items-center">
-                                        <h3 class="h5 m-0">
-                                            BackEnd development
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 mb-4">
-                            <div class="card h-100" style="border: 4px solid #6de0de">
-                                <div class="card-body p-0 d-flex align-items-center">
-                                    <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                        <img src="/images/service/software_development/how/8.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-10 p-3 d-flex align-items-center">
-                                        <h3 class="h5 m-0">
-                                            QA/QC
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-4 mb-4">
-                            <div class="card h-100" style="border: 4px solid #6de0de">
-                                <div class="card-body p-0 d-flex align-items-center">
-                                    <div class="col-2 p-0" style="background-color: #6ad9d8;">
-                                        <img src="/images/service/software_development/how/9.webp" loading="lazy" alt="arrow" class="images-fluid w-100">
-                                    </div>
-                                    <div class="col-10 p-3 d-flex align-items-center">
-                                        <h3 class="h5 m-0">
-                                            Release & Technical Support
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card h-100" style="border: 4px solid; border-color: #6ad9d8;">
-                                <div class="card-body py-5 p-md-5 text-center">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-6">
-                                            <a id="estimate-project-screen-scantobim-xxl" href="{{ route('estimates') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
-                                                <p class="fw-bold h4 d-block my-2">
-                                                    BOOK A MEETING
-                                                </p>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -489,28 +452,102 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background: url('/images/service/software_development/what-back.webp') no-repeat center center local; background-size: cover;">
-        <div class="container p-lg-5 pb-0">
-            <div class="row py-5 px-lg-5">
-                <div class="col-12">
-                    <h2 class="fw-bold mb-5">
-                        WHAT IS SOFTWARE DEVELOPMENT SERVICE?
-                    </h2>
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <img src="/images/service/software_development/what.webp" loading="lazy" alt="service1" class="img-fluid w-100 pb-4">
-                        </div>
-                        <div class="col-lg-6">
-                            <p class="h5 text-secondary">
-                                <small>
-                                    The development department of BIMprove is a team of experts who have mastered the art of working with Revit API, Dynamo, and Python/C# Add-In development. Our team is dedicated to assisting our clients in streamlining their design processes and business.
-                                </small>
-                            </p>
-                            <p class="h5 text-secondary">
-                                <small>
-                                    We aimed to provide complete support and guidance, maintaining transparent communication and regular reporting throughout the process. Our techniques ensure that everyone can comprehend the design with clarity, and our flexibility ensures that we can cater unique needs and requirements.
-                                </small>
-                            </p>
+    <div id="BENEFITS">
+        <div class="container-fluid horizontal-gradient">
+            <div class="container py-5 p-lg-5">
+                <div class="row p-lg-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold">
+                            OUR BENEFITS
+                        </h2>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row row-cols-1 row-cols-md-3 g-1">
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/reviewing1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="reviewing">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h3 class="h5 fw-bold text-uppercase">
+                                            REVIEWING
+                                        </h3>
+
+                                        <p class="h6 text-secondary p-2">
+                                            - Verification using BIMprove Add-In or check-list
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Checking the 3D model against engineering logic
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Reviewing drawings by customer requirements
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/development1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="development">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h3 class="h5 fw-bold text-uppercase">
+                                            DEVELOPMENT
+                                        </h3>
+
+                                        <p class="h6 text-secondary p-2">
+                                            - Continuous development of Add-In and Dynamo Scripts
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Development and constant updating of the template
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Developing parametric families
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Creating our own database
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 p-3 border-0 bg-transparent">
+                                    <div class="row justify-content-center">
+                                        <div class="col-4">
+                                            <img src="/images/service/scan_to_bim_images/benefits/organization1-min.png" loading="lazy" class="img-fluid w-100 mb-5 mx-auto" alt="organization">
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background-color: #edf4f4">
+                                        <h3 class="h5 fw-bold text-uppercase">
+                                            ORGANIZATION
+                                        </h3>
+
+                                        <p class="h6 text-secondary p-2">
+                                            - Unique project management technologies
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Individual approach in communication with the client
+                                        </p>
+                                        <p class="h6 text-secondary p-2">
+                                            - Continuous analysis of the finished work
+                                        </p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-transparent">
+                                        {{--                            <small class="text-muted">Last updated 3 mins ago</small>--}}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -531,6 +568,20 @@
                     <div class="col-12 text-center mt-4">
                         <img src="/images/service/scan_to_bim_images/map/map-min.png" loading="lazy" class="img-fluid mx-auto w-100" alt="map">
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container px-lg-5 py-lg-0">
+            <div class="row py-5 p-lg-5 justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center">
+                    <a href="{{ route('downloadService', 'software-development') }}" target="_blank" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb">
+                        <p class="fw-bold h4 d-block my-2">
+                            DOWNLOAD PRESENTATION
+                        </p>
+                    </a>
                 </div>
             </div>
         </div>
