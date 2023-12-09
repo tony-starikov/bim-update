@@ -1,8 +1,13 @@
 @extends('master')
 
-{{--@section('title', $page_info->__('title'))--}}
-
-{{--@section('description', $page_info->description)--}}
+@section('og')
+    @if($og)
+        <meta property="og:title" content="{{ $og->title }}"/>
+        <meta property="og:description" content="{{ $og->description }}"/>
+        <meta property="og:image" content="/images/bim_prove.png">
+        <meta property="og:url" content="https://bim-prove.com{{ $og->url }}" />
+    @endif
+@endsection
 
 @section('main')
 

@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->text('name')->nullable();
             $table->text('surname')->nullable();
+            $table->text('level')->nullable();
             $table->text('profession')->nullable();
+            $table->text('date')->nullable();
             $table->text('text')->nullable();
             $table->text('image')->nullable();
             $table->timestamps();

@@ -13,6 +13,7 @@ use App\Models\Teammate;
 use App\Models\Testimonial;
 use App\Models\Work;
 use Illuminate\Http\Request;
+use Leeto\Seo\Models\Seo;
 
 class ServiceController extends Controller
 {
@@ -27,8 +28,17 @@ class ServiceController extends Controller
         return response()->file($myFile, $headers);
     }
 
-    public function showService($slug)
+    public function showService($slug, Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $service = Service::where('slug', $slug)->first();
 
         $page_info = Page::where('name', 'main')->first();
@@ -45,6 +55,6 @@ class ServiceController extends Controller
 
         $viewName = 'services.' . str_replace("-", "_", $slug);
 
-        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts', 'service'));
+        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts', 'service', 'og'));
     }
 }

@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('og')
+    @if($og)
+        <meta property="og:title" content="{{ $og->title }}"/>
+        <meta property="og:description" content="{{ $og->description }}"/>
+        <meta property="og:image" content="/images/bim_prove.png">
+        <meta property="og:url" content="https://bim-prove.com{{ $og->url }}" />
+    @endif
+@endsection
+
 @section('main')
 
     <div id="bg-video">
@@ -15,11 +24,13 @@
                     <div class="col-12 mt-5 text-center">
                         <div class="row">
                             <h1 class="text-white fw-bold mt-xl-5">
-                                {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}
+                                THE INDIVIDUAL FIVE-STAR BIM SERVICE:
+                                {{--                                {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}--}}
                             </h1>
                             <h2 class="text-white h2 fw-semibold">
                                 <small>
-                                    {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}
+                                    Unlock your AEC company's full potential with our customized BIM support, delivering a five-star BIM service experience tailored specifically for you.
+                                    {{--                                    {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}--}}
                                 </small>
                             </h2>
                         </div>
@@ -267,13 +278,15 @@
                                         <div class="card h-100 shadow mx-3 py-4 rounded-5 border-0">
                                             <div class="card-body bg-transparent border-0">
                                                 <div class="row">
-                                                    <div class="col-3 col-md-2 col-xl-1">
-                                                        <img class="img-fluid w-100" src="/images/{{ $testimonial->image }}" alt="">
+                                                    <div class="col-3 col-md-2 col-xl-1 text-center">
+                                                        <img class="img-fluid w-100" src="/images/{{ $testimonial->image }}" alt="{{ $testimonial->name }} {{ $testimonial->surname }}">
+                                                        <img class="img-fluid w-50 mt-3" src="/images/testimonials/link.png" alt="">
                                                     </div>
 
                                                     <div class="col-9 col-md-10 col-xl-11">
-                                                        <p class="fw-bold h6">{{ $testimonial->name }} {{ $testimonial->surname }}</p>
+                                                        <p class="fw-bold h6">{{ $testimonial->name }} {{ $testimonial->surname }} <span class="fw-semibold" style="color: #86919e">{{ $testimonial->level }}</span></p>
                                                         <p class="fw-semibold h6">{{ $testimonial->profession }}</p>
+                                                        <p class="fw-semibold h6" style="color: #86919e">{{ $testimonial->date }}</p>
 {{--                                                        <p class="fw-semibold text-secondary h6">--}}
 {{--                                                            April 19, 2022--}}
 {{--                                                        </p>--}}

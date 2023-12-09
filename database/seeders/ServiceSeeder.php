@@ -16,7 +16,7 @@ class ServiceSeeder extends Seeder
         DB::table('services')->insert([
             [
                 'title_en' => 'MEP Coordination & Digital Fabrication',
-                'description_en' => 'Projects development from scratch using BIM technologies on all stages of production.',
+                'description_en' => 'We make drawings not only informative but also convenient for the user. Shop drawings, Coordination, Fabrication, 3D modeling in Revit.',
                 'image' => 'service/MEP_coordination_3.png',
                 'slug' => 'mep-coordination',
                 'presentation' => 'presentations/bim-prove-mep-coordination-min.pdf',
@@ -24,17 +24,8 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/mep-coordination',
             ],
             [
-                'title_en' => 'Scan to BIM',
-                'description_en' => 'Creation of a quality BIM model by the point clouds according to customers requirements with excellent accuracy.',
-                'image' => 'service/Scan_to_BIM_3.png',
-                'slug' => 'scan-to-bim',
-                'presentation' => 'presentations/bim-prove-scan-to-bim-min.pdf',
-                'show_page' => 1,
-                'canonical' => 'https://bim-prove.com/service/scan-to-bim',
-            ],
-            [
                 'title_en' => 'Telecom Design',
-                'description_en' => 'Creation of 3D projects, drawings design, detail development.',
+                'description_en' => 'Creation of design drawings for the Telecom sector. Preparation of documentation, sites, metalwork. Creation of informational 3D models (Digital twins).',
                 'image' => 'service/Telecom_3.png',
                 'slug' => 'telecom-design',
                 'presentation' => 'presentations/bim-prove-telecom-design-min.pdf',
@@ -42,8 +33,17 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/telecom-design',
             ],
             [
-                'title_en' => 'Architectural BIM Service',
-                'description_en' => 'Development of BIM models and visualizations, providing project documentation.',
+                'title_en' => 'Scan to BIM',
+                'description_en' => 'Creation of quality BIM models by the Point Clouds according to customers requirements with excellent accuracy. Also As-built services.',
+                'image' => 'service/Scan_to_BIM_3.png',
+                'slug' => 'scan-to-bim',
+                'presentation' => 'presentations/bim-prove-scan-to-bim-min.pdf',
+                'show_page' => 1,
+                'canonical' => 'https://bim-prove.com/service/scan-to-bim',
+            ],
+            [
+                'title_en' => 'BIM modeling ',
+                'description_en' => 'Developing 3D Revit Architectural BIM models for each building design phase. Creating visualizations. Interior designs. Coordination with other disciplines.',
                 'image' => 'service/Modeling_3.png',
                 'slug' => 'architectural-bim-service',
                 'presentation' => 'presentations/bim-prove-bim-modeling.pdf',
@@ -52,7 +52,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'title_en' => 'BIM content creation',
-                'description_en' => 'Development of unique parametric Revit families.',
+                'description_en' => 'Developmenting unique parametric and non-parametric Revit families for all types of architectural, structural, MEP, HVAC and other elements for clients in various industries.',
                 'image' => 'service/BIM_content_creation_3.png',
                 'slug' => 'bim-content-creation',
                 'presentation' => 'presentations/bim-prove-bim-content-creation.pdf',
@@ -61,7 +61,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'title_en' => 'Software development',
-                'description_en' => 'Development of Dynamo Scripts and Add-Ins for Revit.',
+                'description_en' => 'Buisiness automations. Projects development from scratch using BIM-technologies on all stages of production. Revit API, Python, C#, Dynamo, Scripting.',
                 'image' => 'service/Software_development_3.png',
                 'slug' => 'software-development',
                 'presentation' => 'presentations/bim-prove-software-development.pdf',

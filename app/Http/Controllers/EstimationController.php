@@ -15,12 +15,23 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Leeto\Seo\Models\Seo;
 
 class EstimationController extends Controller
 {
-    public function show()
+    public function show(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $menuItems = MenuItem::all();
 
         $services = Service::all();
@@ -29,11 +40,20 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts'));
+        return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
-    public function showScanShort()
+    public function showScanShort(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'scan-to-bim-estimates-project')->first();
 
         $menuItems = MenuItem::all();
@@ -44,11 +64,20 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesScanShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        return view('estimatesScanShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
-    public function showServicesForm()
+    public function showServicesForm(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'estimates-project-scan-to-bim')->first();
 
         $menuItems = MenuItem::all();
@@ -59,7 +88,7 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        return view('estimatesServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
     public function processing(EstimationRequest $request)
@@ -279,8 +308,17 @@ class EstimationController extends Controller
         return redirect()->route('thanksScanToBim');
     }
 
-    public function showMep()
+    public function showMep(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $menuItems = MenuItem::all();
 
         $services = Service::all();
@@ -289,11 +327,20 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts'));
+        return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
-    public function showMepShort()
+    public function showMepShort(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'mep-estimates-project')->first();
 
         $menuItems = MenuItem::all();
@@ -304,11 +351,20 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMepShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        return view('estimatesMepShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
-    public function showMepServicesForm()
+    public function showMepServicesForm(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'estimates-project-mep')->first();
 
         $menuItems = MenuItem::all();
@@ -319,7 +375,7 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
     public function processingMep(EstimationMepRequest $request)

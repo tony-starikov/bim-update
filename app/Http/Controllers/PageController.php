@@ -13,11 +13,21 @@ use App\Models\Teammate;
 use App\Models\Testimonial;
 use App\Models\Work;
 use Illuminate\Http\Request;
+use Leeto\Seo\Models\Seo;
 
 class PageController extends Controller
 {
-    public function main()
+    public function main(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'main')->first();
 
         $menuItems = MenuItem::all();
@@ -38,11 +48,20 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts', 'posts'));
+        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts', 'posts', 'og'));
     }
 
-    public function contact()
+    public function contact(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'contact')->first();
 
         $menuItems = MenuItem::all();
@@ -53,11 +72,20 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
+        return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
-    public function thank_you()
+    public function thank_you(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'thank-you-page')->first();
 
         $menuItems = MenuItem::all();
@@ -68,11 +96,20 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
-    public function policy()
+    public function policy(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'policy')->first();
 
         $menuItems = MenuItem::all();
@@ -83,7 +120,7 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('policy', compact('page_info', 'services', 'menuItems', 'contacts', 'posts'));
+        return view('policy', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
     public function test()
@@ -116,7 +153,7 @@ class PageController extends Controller
         return view('content', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
     }
 
-    public function architectural()
+    public function architectural(Request $request)
     {
         $page_info = Page::where('name', 'main')->first();
 

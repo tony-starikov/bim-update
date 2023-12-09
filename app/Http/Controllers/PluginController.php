@@ -9,11 +9,21 @@ use App\Models\Plugin;
 use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
+use Leeto\Seo\Models\Seo;
 
 class PluginController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
         $page_info = Page::where('name', 'plugins')->first();
 
         $plugins = Plugin::orderBy('id', 'desc')->paginate(6);
@@ -26,7 +36,7 @@ class PluginController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('plugins', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts'));
+        return view('plugins', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
     public function downloadPlugin($slug)

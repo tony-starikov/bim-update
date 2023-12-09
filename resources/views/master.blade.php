@@ -13,12 +13,11 @@
     @yield('meta')
     @yield('canonical')
     @yield('turnstile')
+    @yield('og')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-    <meta property="og:image" content="/images/bim_prove.png">
 
     @seo
 

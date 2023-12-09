@@ -49,20 +49,20 @@ Route::get('/download-service/{slug}', [ServiceController::class, 'downloadServi
 
 //Route::get('/estimates-scan-to-bim-project', [EstimationController::class, 'show'])->name('showScanShort');
 Route::get('/scan-to-bim-estimates-project', [EstimationController::class, 'showScanShort'])->name('estimates');
-Route::get('/thks-scantobim-estimates', [PageController::class, 'thanks'])->name('thanksShortScanToBim');
+Route::get('/thks-scantobim-estimates', [PageController::class, 'thank_you'])->name('thanksShortScanToBim');
 
 Route::get('/estimates-project-scan-to-bim', [EstimationController::class, 'showServicesForm'])->name('estimatesServicesForm');
-Route::get('/thks-estimates-scantobim', [PageController::class, 'thanks'])->name('thanksScanToBim');
+Route::get('/thks-estimates-scantobim', [PageController::class, 'thank_you'])->name('thanksScanToBim');
 
 Route::post('/estimates-scan-to-bim-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
 Route::post('/estimates-scan-to-bim-short-processing', [EstimationController::class, 'processingScanShort'])->name('processingScanShort');
 
 //Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('showMepShort');
 Route::get('/mep-estimates-project', [EstimationController::class, 'showMepShort'])->name('estimatesMep');
-Route::get('/thks-mep-estimates', [PageController::class, 'thanks'])->name('thanksShortMep');
+Route::get('/thks-mep-estimates', [PageController::class, 'thank_you'])->name('thanksShortMep');
 
 Route::get('/estimates-project-mep', [EstimationController::class, 'showMepServicesForm'])->name('estimatesMepServicesForm');
-Route::get('/thks-estimates-mep', [PageController::class, 'thanks'])->name('thanksMepServicesForm');
+Route::get('/thks-estimates-mep', [PageController::class, 'thank_you'])->name('thanksMepServicesForm');
 
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');
 Route::post('/estimates-mep-short-processing', [EstimationController::class, 'processingMepShort'])->name('processingMepShort');
