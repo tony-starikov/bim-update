@@ -328,7 +328,9 @@
                         <div class="col-md-6 col-xl-4 mt-4">
                             <div class="portfolio-container">
                                 <div class="card border-0">
-                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                    <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                        <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
+                                    </a>
                                     <div class="d-lg-none">
                                         <div class="row align-items-center">
                                             <div class="col-7 mt-2">
