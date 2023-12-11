@@ -42,7 +42,7 @@ class PageController extends Controller
 
         $testimonials = Testimonial::all();
 
-        $works = Work::all();
+        $works = Work::take(3)->get();
 
         $contacts = Contact::all();
 

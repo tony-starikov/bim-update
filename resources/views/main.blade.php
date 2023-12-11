@@ -4,7 +4,10 @@
     @if($og)
         <meta property="og:title" content="{{ $og->title }}"/>
         <meta property="og:description" content="{{ $og->description }}"/>
-        <meta property="og:image" content="/images/bim_prove.png">
+        <meta property="og:image" content="https://bim-prove.com/images/bim_prove.png">
+        <meta property="og:image:width" content="122"/>
+        <meta property="og:image:height" content="100"/>
+        <meta property='og:type' content="website"/>
         <meta property="og:url" content="https://bim-prove.com{{ $og->url }}" />
     @endif
 @endsection
@@ -104,12 +107,12 @@
                                             </h3>
                                         </div>
                                         <div class="col-5">
-                                            <img src="/images/{{ $star->image }}" class="img-fluid p-1 w-100 bg-transparent">
+                                            <img src="/images/{{ $star->image }}" alt="{{ $star->title_en }}" class="img-fluid p-1 w-100 bg-transparent">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer p-0 border-0 d-flex align-items-center" style="background-color: #ffffff">
-                                    <p class="h5 text-secondary p-3 py-xl-5">
+                                    <p class="h6 text-secondary p-3 py-xl-5">
                                         {{ $star->description_en }}
                                     </p>
                                 </div>
@@ -139,7 +142,7 @@
                                                             </h3>
                                                         </div>
                                                         <div class="col-4">
-                                                            <img src="/images/{{ $star->image }}" class="img-fluid w-100 bg-transparent">
+                                                            <img src="/images/{{ $star->image }}" alt="{{ $star->title_en }}" class="img-fluid w-100 bg-transparent">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -174,7 +177,7 @@
             <div class="row justify-content-between px-lg-5 pb-0">
                 @foreach($achievements as $achievement)
                     <div class="col-6 col-md-3 col-xl-2 px-5 px-sm-5 px-md-4 px-lg-4 px-xl-3 mt-4 text-center">
-                        <img src="images/{{ $achievement->image }}" class="img-fluid w-100">
+                        <img src="images/{{ $achievement->image }}" alt="{{ $achievement->title_en }}" class="img-fluid w-100">
                         <p class="fw-bold mt-1 h2">{{ $achievement->title_en }}</p>
                         <p class="card-title text-dark fw-bold">
                             {{ $achievement->subtitle_en }}
@@ -225,14 +228,14 @@
                                     </div>
                                     <div class="row d-lg-none">
                                         <div class="col-12">
-                                            <p class="h5 text-secondary" style="min-height: 77px;">
+                                            <p class="h6 text-secondary" style="min-height: 77px;">
                                                 {{ $service->description_en }}
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent service-card-footer">
-                                    <p class="h5 text-secondary d-none d-lg-block">
+                                    <p class="h6 text-secondary d-none d-lg-block">
                                         {{ $service->description_en }}
                                     </p>
                                     <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none d-lg-none" style="background-color: #43aeb6">
@@ -243,7 +246,7 @@
                                     <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
                                         <a class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
                                             <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                <span class="fw-bold h4 d-block my-2">EXPLORE</span>
+                                                <span class="fw-bold h5 d-block my-2">EXPLORE</span>
                                             </button>
                                         </a>
                                     </div>
@@ -310,7 +313,7 @@
 
 {{--    PORTFOLIO--}}
     <div id="portfolio" class="py-3">
-        <div class="container-fluid d-none d-lg-block pb-5 px-0">
+        <div class="container-fluid pb-lg-5 px-0">
             <div class="container py-5 p-lg-5">
                 <div class="row px-lg-5">
                     <div class="col-12">
@@ -319,228 +322,57 @@
                         </h2>
                     </div>
                 </div>
-            </div>
 
-            <div class="row w-100 px-0 m-0">
-                <div class="col-12 w-100 p-0">
-                    <section id="splide7" class="splide" aria-label="Slide Container Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                @for($i = 0; $i < $works->count() ; $i ++)
-                                    @if($i >= ($works->count() / 2)) @continue @endif
-                                    <li class="splide__slide px-3">
-                                        <div class="splide__slide__container">
-                                            <div class="portfolio-container">
-                                                <div class="card border-0 text-bg-dark">
-                                                    <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
-                                                </div>
-                                                <div class="overlay">
-                                                    <div class="row m-0 text-white">
-                                                        <div class="col-12 p-2 px-4">
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h3 class="h5 fw-bold m-0">{{ $works[$i]->title_first }}</h3>
-                                                                </div>
-                                                                <div class="col-5 ps-0">
-                                                                    <p class="h6 fw-bold">{{ $works[$i]->parameter_1 }}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h3 class="h5 fw-bold m-0">{{ $works[$i]->title_second }}</h3>
-                                                                </div>
-                                                                <div class="col-5 ps-0">
-                                                                    <p class="h6 fw-bold">{{ $works[$i]->parameter_2 }}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row justify-content-between">
-                                                                <div class="col-7">
-                                                                    <h4 class="h6 text-secondary fw-bold m-0">{{ $works[$i]->subtitle }}</h4>
-                                                                </div>
-                                                                <div class="col-5 ps-0">
-                                                                    <p class="h6 fw-bold">{{ $works[$i]->parameter_3 }}</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div class="col-12">
-                                                                    <h4 class="h6 fw-bold">{{ $works[$i]->disciplines }}</h4>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="row m-0 border-bottom border-3 border-white">
-                                                            </div>
-
-                                                            <div class="row d-flex align-items-center">
-                                                                <div class="col-4 d-flex justify-content-center">
-                                                                    <img src="/images/{{ $works[$i]->image_small }}" class="img-fluid w-100 mt-2" alt="...">
-                                                                </div>
-                                                                <div class="col-8 px-0 d-flex justify-content-center">
-                                                                    <p class="h6 mt-2 text-secondary small">
-                                                                        {{ $works[$i]->description }}
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                <div class="row justify-content-evenly px-lg-5">
+                    @foreach($works as $work)
+                        <div class="col-md-6 col-xl-4 mt-4">
+                            <div class="portfolio-container">
+                                <div class="card border-0">
+                                    <img src="/images/{{ $work->image }}" class="card-img" alt="...">
+                                    <div class="d-lg-none">
+                                        <div class="row align-items-center">
+                                            <div class="col-7 mt-2">
+                                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                                    <h3 class="text-dark h5 fw-bold m-0">{{ $work->title }}</h3>
+                                                </a>
+                                            </div>
+                                            <div class="col-5 mt-2">
+                                                <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                        <span class="fw-bold h6 d-block my-1">EXPLORE</span>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
-                                    </li>
-                                @endfor
-                            </ul>
+                                    </div>
+                                </div>
+                                <div class="overlay d-none d-lg-block">
+                                    <div class="row justify-content-center align-items-center text-center text-white">
+                                        <div class="col-12 mt-2 p-4">
+                                            <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                                <h3 class="text-white h5 fw-bold m-0">{{ $work->title }}</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-8">
+                                            <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                    <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </section>
+                    @endforeach
                 </div>
-            </div>
 
-            <div class="row w-100 mt-4 mx-0 px-0 pb-5">
-                <div class="col-12 w-100 p-0">
-                    <section id="splide8" class="splide" aria-label="Slide Container Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                @for($i = 0; $i < $works->count() ; $i ++)
-                                    @if($i < ($works->count() / 2)) @continue @endif
-                                    <li class="splide__slide px-3">
-                                            <div class="splide__slide__container">
-                                                <div class="portfolio-container">
-                                                    <div class="card border-0 text-bg-dark">
-                                                        <img src="/images/{{ $works[$i]->image }}" class="card-img" alt="...">
-                                                    </div>
-                                                    <div class="overlay">
-                                                        <div class="row m-0 text-white">
-                                                            <div class="col-12 p-2 px-4">
-                                                                <div class="row justify-content-between">
-                                                                    <div class="col-7">
-                                                                        <p class="h5 fw-bold m-0">{{ $works[$i]->title_first }}</p>
-                                                                    </div>
-                                                                    <div class="col-5 ps-0">
-                                                                        <p class="h6 fw-bold">{{ $works[$i]->parameter_1 }}</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row justify-content-between">
-                                                                    <div class="col-7">
-                                                                        <p class="h5 fw-bold m-0">{{ $works[$i]->title_second }}</p>
-                                                                    </div>
-                                                                    <div class="col-5 ps-0">
-                                                                        <p class="h6 fw-bold">{{ $works[$i]->parameter_2 }}</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row justify-content-between">
-                                                                    <div class="col-7">
-                                                                        <p class="h6 text-secondary fw-bold m-0">{{ $works[$i]->subtitle }}</p>
-                                                                    </div>
-                                                                    <div class="col-5 ps-0">
-                                                                        <p class="h6 fw-bold">{{ $works[$i]->parameter_3 }}</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <p class="h6 fw-bold">{{ $works[$i]->disciplines }}</p>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="row m-0 border-bottom border-3 border-white">
-                                                                </div>
-
-                                                                <div class="row d-flex align-items-center">
-                                                                    <div class="col-4 d-flex justify-content-center">
-                                                                        <img src="/images/{{ $works[$i]->image_small }}" class="img-fluid w-100 mt-2" alt="...">
-                                                                    </div>
-                                                                    <div class="col-8 px-0 d-flex justify-content-center">
-                                                                        <p class="h6 mt-2 text-secondary small">
-                                                                            {{ $works[$i]->description }}
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </li>
-                                @endfor
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid d-lg-none pb-5 px-0">
-            <div class="container py-5 p-lg-5">
-                <div class="row px-lg-5">
-                    <div class="col-12">
-                        <h2 class="h1 fw-bold">
-                            {{ $page_info->pageItems->where('name', 'portfolio_header')->first()->value }}
-                        </h2>
+                <div class="row px-4 px-xl-5 mt-5 d-flex justify-content-center">
+                    <div class="col-12 col-md-7 col-lg-5">
+                        <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                            <span class="fw-bold h5 d-block my-2">ALL PROJECTS</span>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="row mx-0 px-0">
-                <div class="col-12 w-100 p-0">
-                    <section id="splide13" class="splide" aria-label="Slide Container Example">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                @foreach($works as $work)
-                                    <li class="splide__slide px-sm-3">
-                                        <div class="splide__slide__container">
-                                            <div class="card h-100 border-0" style="background-color: #6bdddb;">
-                                                <img src="/images/{{ $work->image }}" class="card-img" alt="...">
-
-                                                <div class="row m-0 py-3 text-white">
-                                                    <div class="col-12 p-2 px-4">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-7">
-                                                                <p class="h5 fw-bold m-0">{{ $work->title_first }}</p>
-                                                            </div>
-                                                            <div class="col-5 ps-0">
-                                                                <p class="h6 fw-bold">{{ $work->parameter_1 }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-7">
-                                                                <p class="h5 fw-bold m-0">{{ $work->title_second }}</p>
-                                                            </div>
-                                                            <div class="col-5 ps-0">
-                                                                <p class="h6 fw-bold">{{ $work->parameter_2 }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-7">
-                                                                <p class="h6 text-secondary fw-bold m-0">{{ $work->subtitle }}</p>
-                                                            </div>
-                                                            <div class="col-5 ps-0">
-                                                                <p class="h6 fw-bold">{{ $work->parameter_3 }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <p class="h6 fw-bold">{{ $work->disciplines }}</p>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row m-0 border-bottom border-3 border-white">
-                                                        </div>
-
-                                                        <div class="row d-flex align-items-center">
-                                                            <div class="col-4 d-flex justify-content-center">
-                                                                <img src="/images/{{ $work->image_small }}" class="img-fluid w-100 mt-2" alt="...">
-                                                            </div>
-                                                            <div class="col-8 px-0 d-flex justify-content-center">
-                                                                <p class="h6 mt-2 text-secondary small">
-                                                                    {{ $work->description }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>
@@ -701,95 +533,95 @@
             },
 
             // portfolio
-            {
-                type   : 'loop',
-                arrows: boolean = true,
-                perPage: 2,
-                padding: { left: '25%', right: '25%' },
-                breakpoints: {
-                    768: {
-                        perPage: 1,
-                        padding: { left: '0%', right: '0%' },
-                    },
-                    992: {
-                        perPage: 1,
-                        padding: { left: '20%', right: '20%' },
-                    },
-                    1145: {
-                        perPage: 1,
-                        padding: { left: '25%', right: '25%' },
-                    },
-                    1200: {
-                        perPage: 1,
-                        padding: { left: '30%', right: '30%' },
-                    },
-                    1300: {
-                        perPage: 2,
-                        padding: { left: '10%', right: '10%' },
-                    },
-                    1535: {
-                        perPage: 2,
-                        padding: { left: '15%', right: '15%' },
-                    },
-                    1850: {
-                        perPage: 2,
-                        padding: { left: '20%', right: '20%' },
-                    },
-                },
-            },
-            {
-                type   : 'loop',
-                arrows: boolean = true,
-                perPage: 2,
-                padding: { left: '20%', right: '30%' },
-                breakpoints: {
-                    768: {
-                        perPage: 1,
-                        padding: { left: '0%', right: '0%' },
-                    },
-                    992: {
-                        perPage: 1,
-                        padding: { left: '20%', right: '20%' },
-                    },
-                    1145: {
-                        perPage: 1,
-                        padding: { left: '20%', right: '30%' },
-                    },
-                    1200: {
-                        perPage: 1,
-                        padding: { left: '20%', right: '40%' },
-                    },
-                    1300: {
-                        perPage: 2,
-                        padding: { left: '5%', right: '15%' },
-                    },
-                    1535: {
-                        perPage: 2,
-                        padding: { left: '10%', right: '20%' },
-                    },
-                    1850: {
-                        perPage: 2,
-                        padding: { left: '15%', right: '25%' },
-                    },
-                },
-            },
-
-            {
-                type   : 'loop',
-                perPage: 1,
-                padding: { left: '20%', right: '20%' },
-                arrows: boolean = true,
-                breakpoints: {
-                    576: {
-                        perPage: 1,
-                        padding: { left: '0%', right: '0%' },
-                    },
-                    768: {
-                        perPage: 1,
-                        padding: { left: '5%', right: '5%' },
-                    },
-                },
-            },
+            // {
+            //     type   : 'loop',
+            //     arrows: boolean = true,
+            //     perPage: 2,
+            //     padding: { left: '25%', right: '25%' },
+            //     breakpoints: {
+            //         768: {
+            //             perPage: 1,
+            //             padding: { left: '0%', right: '0%' },
+            //         },
+            //         992: {
+            //             perPage: 1,
+            //             padding: { left: '20%', right: '20%' },
+            //         },
+            //         1145: {
+            //             perPage: 1,
+            //             padding: { left: '25%', right: '25%' },
+            //         },
+            //         1200: {
+            //             perPage: 1,
+            //             padding: { left: '30%', right: '30%' },
+            //         },
+            //         1300: {
+            //             perPage: 2,
+            //             padding: { left: '10%', right: '10%' },
+            //         },
+            //         1535: {
+            //             perPage: 2,
+            //             padding: { left: '15%', right: '15%' },
+            //         },
+            //         1850: {
+            //             perPage: 2,
+            //             padding: { left: '20%', right: '20%' },
+            //         },
+            //     },
+            // },
+            // {
+            //     type   : 'loop',
+            //     arrows: boolean = true,
+            //     perPage: 2,
+            //     padding: { left: '20%', right: '30%' },
+            //     breakpoints: {
+            //         768: {
+            //             perPage: 1,
+            //             padding: { left: '0%', right: '0%' },
+            //         },
+            //         992: {
+            //             perPage: 1,
+            //             padding: { left: '20%', right: '20%' },
+            //         },
+            //         1145: {
+            //             perPage: 1,
+            //             padding: { left: '20%', right: '30%' },
+            //         },
+            //         1200: {
+            //             perPage: 1,
+            //             padding: { left: '20%', right: '40%' },
+            //         },
+            //         1300: {
+            //             perPage: 2,
+            //             padding: { left: '5%', right: '15%' },
+            //         },
+            //         1535: {
+            //             perPage: 2,
+            //             padding: { left: '10%', right: '20%' },
+            //         },
+            //         1850: {
+            //             perPage: 2,
+            //             padding: { left: '15%', right: '25%' },
+            //         },
+            //     },
+            // },
+            //
+            // {
+            //     type   : 'loop',
+            //     perPage: 1,
+            //     padding: { left: '20%', right: '20%' },
+            //     arrows: boolean = true,
+            //     breakpoints: {
+            //         576: {
+            //             perPage: 1,
+            //             padding: { left: '0%', right: '0%' },
+            //         },
+            //         768: {
+            //             perPage: 1,
+            //             padding: { left: '5%', right: '5%' },
+            //         },
+            //     },
+            // },
 
             // team
             {

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="w-100" lang="en">
+<html prefix="og: http://ogp.me/ns#" class="w-100" lang="en">
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T276DWG');</script>
@@ -399,9 +399,7 @@
 
                                 @case('Portfolio')
                                 <li class="nav-item mx-2" data-bs-dismiss="offcanvas">
-                                    <a class="nav-link"
-                                       @if(request()->route()->getName() == 'main') href="#portfolio"
-                                       @else href="{{ route('main') }}#portfolio" @endif >
+                                    <a class="nav-link" href="{{ route('portfolio.index') }}">
                                         <p class="h6 m-0 fw-bold text-dark">
                                             PORTFOLIO
                                         </p>
@@ -626,9 +624,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-2">
-                    <a class="text-decoration-none p-0 m-0"
-                       @if(request()->route()->getName() == 'main') href="#portfolio"
-                       @else href="{{ route('main') }}#portfolio" @endif >
+                    <a class="text-decoration-none p-0 m-0" href="{{ route('portfolio.index') }}">
                         <p class="h5 fw-semibold text-white mb-4">Portfolio</p>
                     </a>
                 </div>

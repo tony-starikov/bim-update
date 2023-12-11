@@ -4,6 +4,7 @@ use App\Http\Controllers\EstimationController;
 use App\Http\Controllers\FamilyController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PluginController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ServiceController;
 use App\Models\Family;
@@ -30,6 +31,9 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 //Route::get('/success', [PageController::class, 'success'])->name('success');
 Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
+
+Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
+Route::get('/portfolio/{slug}', [PortfolioController::class, 'project'])->name('portfolio.project');
 
 Route::get('/soft', [PageController::class, 'test'])->name('test');
 Route::get('/content', [PageController::class, 'content'])->name('content');
