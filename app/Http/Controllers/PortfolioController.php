@@ -43,6 +43,8 @@ class PortfolioController extends Controller
     {
         $project = Work::where('slug', $slug)->first();
 
+        $other_projects = Work::inRandomOrder()->limit(3)->get();
+
         $og = null;
 
         if ($request->path() == '/') {
@@ -60,6 +62,6 @@ class PortfolioController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('portfolio.project', compact('services', 'menuItems', 'contacts', 'posts', 'og', 'project'));
+        return view('portfolio.project', compact('services', 'menuItems', 'contacts', 'posts', 'og', 'project', 'other_projects'));
     }
 }
