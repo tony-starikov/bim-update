@@ -15,7 +15,7 @@ class ServiceSeeder extends Seeder
     {
         DB::table('services')->insert([
             [
-                'title_en' => 'MEP Coordination & Digital Fabrication',
+                'title_en' => 'MEP BIM Modeling',
                 'description_en' => 'We make drawings not only informative but also convenient for the user. Shop drawings, Coordination, Fabrication, 3D modeling in Revit.',
                 'image' => 'service/MEP_coordination_3.png',
                 'slug' => 'mep-coordination',

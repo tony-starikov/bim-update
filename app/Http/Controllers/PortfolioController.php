@@ -24,7 +24,7 @@ class PortfolioController extends Controller
             $og = Seo::where('url', $url)->first();
         }
 
-        $page_info = Page::where('name', 'blog')->first();
+        $page_info = Page::where('name', 'portfolio')->first();
 
         $posts = Post::orderBy('id', 'desc')->paginate(6);
 
@@ -34,7 +34,7 @@ class PortfolioController extends Controller
 
         $contacts = Contact::all();
 
-        $projects = Work::paginate(6);
+        $projects = Work::all();
 
         return view('portfolio.index', compact('page_info', 'posts', 'services', 'menuItems', 'contacts', 'og', 'projects'));
     }

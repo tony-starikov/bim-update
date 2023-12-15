@@ -23,24 +23,15 @@
                         Portfolio
                     </h1>
                     <p class="h6 fw-semibold mt-4">
-                        For over 7 years, BIMprove has been leading the way in Building Information Modeling (BIM) services. We have successfully completed more than 1,100 projects using BIM to improve design, construction and operations for some of the largest organizations in the world.
+                        Having successfully completed 1200+ BIM projects, BIMprove is a reliable outsourcing company, trusted by major companies in the United States, United Kingdom, Germany, Australia, Belgium and other countries.
+                    </p>
+                    <p class="h6 fw-semibold mt-4">
+                        We have experience in 3D BIM modeling in industries such as manufacturing and warehouses, airports, residential buildings, educational, commercial, medical centers etc.
+                    </p>
+                    <p class="h6 fw-semibold mt-4">
+                        We pride ourselves on the quality of our work and the level of service we provide.
                     </p>
                 </div>
-
-{{--                <div class="col-lg-11 col-xl-9">--}}
-{{--                    <div class="row">--}}
-{{--                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 ps-sm-0">--}}
-{{--                            <a href="{{ route('products') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">--}}
-{{--                                <span class="fw-bold h5 my-2">REVIT PLUGINS</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 pe-sm-0">--}}
-{{--                            <a href="{{ route('families') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">--}}
-{{--                                <span class="fw-bold h5 my-2">REVIT FAMILIES</span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
 
             </div>
         </div>
@@ -58,12 +49,12 @@
                     </nav>
                 </div>
                 @foreach($projects as $project)
-                    <div class="col-lg-6 mt-4">
+                    <div class="col-lg-6 px-lg-4 mt-5">
                         <div class="card border-0">
                             <a href="{{ route('portfolio.project', $project->slug) }}" class="text-decoration-none">
                                 <img src="/images/{{ $project->image }}" class="card-img" alt="{{ $project->title }}">
                             </a>
-                            <div class="row align-items-center">
+                            <div class="row mt-2 align-items-center">
                                 <div class="col-7 mt-2">
                                     <a href="{{ route('portfolio.project', $project->slug) }}" class="text-decoration-none">
                                         <h3 class="text-dark h5 fw-bold m-0">{{ $project->title }}</h3>
@@ -83,28 +74,15 @@
             </div>
         </div>
 
-
-        {{--                    <div class="col-7 px-0 ps-4 align-self-stretch position-relative">--}}
-        {{--                        --}}
-
-        {{--                        <div class="row position-absolute bottom-0">--}}
-        {{--                            <div class="col-12">--}}
-        {{--                                <a href="{{ route('downloadFamily', $family->slug) }}" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100" style="background-color: #6bdcdb;" role="button">--}}
-        {{--                                    <span class="fw-bold h4 d-block my-2 mx-4">DOWNLOAD NOW</span>--}}
-        {{--                                </a>--}}
-        {{--                            </div>--}}
-        {{--                        </div>--}}
-        {{--                    </div>--}}
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex justify-content-center pb-5">
-                        {{ $projects->links('vendor.pagination.custom') }}
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-12">--}}
+{{--                    <div class="d-flex justify-content-center pb-5">--}}
+{{--                        {{ $projects->links('vendor.pagination.custom') }}--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
     </div>
 

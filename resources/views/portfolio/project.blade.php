@@ -26,29 +26,15 @@
                         </ol>
                     </nav>
                 </div>
+                <div class="col-12">
+                    <h1 class="text-dark h4 fw-bold m-0">{{ $project->h1 }}</h1>
+                    <p class="text-secondary h6 fw-bold">{{ $project->service }}</p>
+                </div>
                 <div class="col-lg-7">
                     <img class="img-fluid w-100" src="/images/{{ $project->image }}" alt="{{ $project->title }}">
                 </div>
-                <div class="col-lg-5 mt-4 mt-lg-0">
-                    <h1 class="text-dark h4 fw-bold m-0">{{ $project->title }}</h1>
-                    <p class="text-secondary h6 fw-bold">{{ $project->subtitle }}</p>
-                    <p class="text-dark h5 fw-bold">
-                        Discipline: <span class="text-secondary">{{ $project->disciplines }}</span>
-                    </p>
-                    <p class="text-dark h5 fw-bold">
-                        @if($project->parameter_1)
-                            {{ $project->parameter_1 }}<br>
-                        @endif
-                        @if($project->parameter_2)
-                            {{ $project->parameter_2 }}<br>
-                        @endif
-                        @if($project->parameter_3)
-                            {{ $project->parameter_3 }}<br>
-                        @endif
-                    </p>
-                    <p class="text-dark h6 fw-bold">
-                        {{ $project->description }}
-                    </p>
+                <div class="col-lg-5 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
+                    {!! $project->content !!}
                 </div>
             </div>
         </div>

@@ -54,6 +54,10 @@ class PageSeeder extends Seeder
                 'name' => 'estimates-project-mep',
                 'canonical' => 'https://bim-prove.com/estimates-project-mep',
             ],
+            [
+                'name' => 'portfolio',
+                'canonical' => 'https://bim-prove.com/portfolio',
+            ],
 
 //            [
 //                'name' => 'policy',
