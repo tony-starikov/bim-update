@@ -16,8 +16,6 @@ return new class extends Migration
             $table->text('title_en')->nullable();
             $table->text('description_en')->nullable();
             $table->text('slug')->nullable();
-            $table->text('video_url')->nullable();
-            $table->text('image')->nullable();
             $table->text('file')->nullable();
             $table->text('logo')->nullable();
             $table->integer('show_status')->default(1);

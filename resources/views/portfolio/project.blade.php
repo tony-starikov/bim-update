@@ -27,7 +27,7 @@
                     </nav>
                 </div>
                 <div class="col-12">
-                    <h1 class="text-dark h4 fw-bold m-0">{{ $project->h1 }}</h1>
+                    <h1 class="text-dark h4 fw-bold m-0">{{ $project->title }}</h1>
                     <p class="text-secondary h6 fw-bold">{{ $project->service }}</p>
                 </div>
                 <div class="col-lg-7">
@@ -35,7 +35,30 @@
                 </div>
                 <div class="col-lg-5 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
                     {!! $project->content !!}
+
+                    <div class="row mt-5 d-flex justify-content-center">
+                        <div class="col-12">
+                            @if($project->service === 'Scan to BIM')
+                                <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2 text-uppercase">Scan to BIM service</span>
+                                </a>
+                            @elseif($project->service === 'BIM modeling')
+                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2 text-uppercase">MEP BIM Modeling service</span>
+                                </a>
+                            @elseif($project->service === 'Telecom')
+                                <a href="{{ route('showService', 'telecom-design') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2 text-uppercase">Telecom Design service</span>
+                                </a>
+                            @else
+                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2 text-uppercase">MEP BIM Modeling service</span>
+                                </a>
+                            @endif
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-12 mt-5">
                     <p class="text-dark text-center h4 fw-bold mt-5">OTHER PROJECTS</p>
                     <div class="row justify-content-evenly">
@@ -82,6 +105,17 @@
                                 </div>
                             </div>
                         @endforeach
+                            <div class="d-none d-md-block d-xl-none col-6 mt-4">
+                                <div class="card h-100 border-0" style="background-color: #6de1df">
+                                    <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="col-12">
+                                            <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                                <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>

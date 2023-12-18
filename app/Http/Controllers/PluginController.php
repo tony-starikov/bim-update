@@ -26,7 +26,7 @@ class PluginController extends Controller
 
         $page_info = Page::where('name', 'plugins')->first();
 
-        $plugins = Plugin::orderBy('id', 'desc')->paginate(6);
+        $plugins = Plugin::all();
 
         $services = Service::all();
 

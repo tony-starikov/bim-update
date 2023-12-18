@@ -117,7 +117,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: #6bdddb;
+            background-color: rgba(107, 221, 219, 0.4);
             overflow: hidden;
             width: 100%;
             height: 0;

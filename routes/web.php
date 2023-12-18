@@ -11,6 +11,7 @@ use App\Models\Family;
 use App\Models\Plugin;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\Work;
 use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
@@ -85,6 +86,11 @@ Route::get('/sitemap', function() {
     $sitemap->add(Url::create("/estimates-project-mep"));
 
     $sitemap->add(Url::create('/blog'));
+    $sitemap->add(Url::create('/portfolio'));
+
+    Work::all()->each(function(Work $work) use ($sitemap) {
+        $sitemap->add(Url::create("/portfolio/{$work->slug}"));
+    });
 
     Post::all()->each(function(Post $post) use ($sitemap) {
         $sitemap->add(Url::create("/post/{$post->slug}"));

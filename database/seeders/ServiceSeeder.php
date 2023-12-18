@@ -42,7 +42,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/scan-to-bim',
             ],
             [
-                'title_en' => 'BIM modeling ',
+                'title_en' => 'BIM modeling',
                 'description_en' => 'Developing 3D Revit Architectural BIM models for each building design phase. Creating visualizations. Interior designs. Coordination with other disciplines.',
                 'image' => 'service/Modeling_3.png',
                 'slug' => 'architectural-bim-service',

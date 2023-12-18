@@ -367,9 +367,20 @@
                             </div>
                         </div>
                     @endforeach
+                        <div class="d-none d-md-block d-xl-none col-6 mt-4">
+                            <div class="card h-100 border-0" style="background-color: #6de1df">
+                                <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
+                                    <div class="col-12">
+                                        <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                            <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
-                <div class="row px-4 px-xl-5 mt-5 d-flex justify-content-center">
+                <div class="row px-4 px-xl-5 mt-5 d-flex d-md-none d-xl-flex justify-content-center">
                     <div class="col-12 col-md-7 col-lg-5">
                         <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                             <span class="fw-bold h5 d-block my-2">ALL PROJECTS</span>
