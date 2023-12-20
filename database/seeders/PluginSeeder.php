@@ -19,7 +19,7 @@ class PluginSeeder extends Seeder
                 'description_en' => "
                     Automatic join all elements of selected categories within the active view. This process eliminates overlapping or intersecting elements.
                 ",
-                'logo' => 'plugins/AutoJoinInView.png',
+                'logo' => 'plugins/auto-join-in-view.webp',
                 'file' => 'plugins/AutoJoinInView_D2.6.1_R21.zip',
                 'slug' => 'auto-join-in-view'
             ],
@@ -28,7 +28,7 @@ class PluginSeeder extends Seeder
                 'description_en' => "
                     Isolating columns in the active view that are not placed on the grids' intersection. This script can help architects, engineers, and other professionals.
                 ",
-                'logo' => 'plugins/ColumnsToGridsIntersection.png',
+                'logo' => 'plugins/columns-to-grids-intersection.webp',
                 'file' => 'plugins/ColumnsToGridsIntersection_D2.6.1_R21.zip',
                 'slug' => 'columns-to-grids-intersection'
             ],
@@ -37,7 +37,7 @@ class PluginSeeder extends Seeder
                 'description_en' => "
                     Automate the process of relocating MEP elements with a selected distance. This script can help architects, engineers, and other professionals.
                 ",
-                'logo' => 'plugins/AlignMEP.png',
+                'logo' => 'plugins/align-mep.webp',
                 'file' => 'plugins/AlignMEP_D2.6.1_R21.zip',
                 'slug' => 'align-mep'
             ],

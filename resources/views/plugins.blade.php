@@ -62,10 +62,10 @@
                     </nav>
                 </div>
                 @foreach($plugins as $plugin)
-                    <div class="col-sm-6 col-md-4 mt-4">
-                        <div class="card rounded-4 h-100 px-2 border-0" style="background-color: rgba(107, 221, 219, 0.2);">
+                    <div class="col-sm-6 col-lg-4 mt-4">
+                        <div class="card rounded-4 h-100 px-2 border-0" style="background-color: rgba(168,175,175,0.2);">
                             <div class="card-body">
-                                <div class="row">
+                                <div class="row" style="min-height: 15%;">
                                     <div class="col-12">
                                         <h6 class="h5 fw-bold">
                                             {{ $plugin->title_en }}
@@ -79,13 +79,20 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
+                                        <h6 class="h5 fw-bold">
+                                            <span class="badge bg-success">Free</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-12">
                                         <p class="text-secondary m-0">
                                             {{ $plugin->description_en }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer border-0 bg-transparent">
+                            <div class="card-footer border-0 bg-transparent mt-2">
                                 <div class="row pb-3">
                                     <div class="col-12">
                                         <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="text-decoration-none">
