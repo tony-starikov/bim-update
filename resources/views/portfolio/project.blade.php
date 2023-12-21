@@ -36,22 +36,22 @@
                 <div class="col-lg-5 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
                     {!! $project->content !!}
 
-                    <div class="row mt-5 d-flex justify-content-center">
-                        <div class="col-12">
+                    <div class="row mt-5 justify-content-center justify-content-lg-start">
+                        <div class="col-sm-8 col-md-6 col-lg-12 col-xl-10 col-xxl-8">
                             @if($project->service === 'Scan to BIM')
-                                <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">Scan to BIM service</span>
                                 </a>
                             @elseif($project->service === 'BIM modeling')
-                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">MEP BIM Modeling service</span>
                                 </a>
                             @elseif($project->service === 'Telecom')
-                                <a href="{{ route('showService', 'telecom-design') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                <a href="{{ route('showService', 'telecom-design') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">Telecom Design service</span>
                                 </a>
                             @else
-                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">MEP BIM Modeling service</span>
                                 </a>
                             @endif

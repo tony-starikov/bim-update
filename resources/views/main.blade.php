@@ -12,6 +12,49 @@
     @endif
 @endsection
 
+@section('schema')
+    @if($og)
+        <script type="application/ld+json" class="yoast-schema-graph">
+          {
+            "@context": "https://bim-prove.com/",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://bim-prove.com/",
+                "url": "https://bim-prove.com/",
+                "name": "{{ $og->title }}",
+                "isPartOf": { "@id": "https://bim-prove.com/#website" },
+                "primaryImageOfPage": { "@id": "https://bim-prove.com/images/bim_prove.png" },
+                "image": { "@id": "https://bim-prove.com/images/bim_prove.png" },
+                "thumbnailUrl": "https://bim-prove.com/images/bim_prove.png",
+                "description": "{{ $og->description }}",
+                "inLanguage": "en-US"
+              },
+              {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://bim-prove.com/#primaryimage",
+                "url": "https://bim-prove.com/images/bim_prove.png",
+                "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+                "width": 122,
+                "height": 100,
+                "caption": "logo"
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://bim-prove.com/",
+                "url": "https://bim-prove.com/",
+                "name": "{{ $og->title }}",
+                "description": "{{ $og->description }}",
+                "publisher": { "@id": "https://bim-prove.com/" },
+                "inLanguage": "en-US"
+              },
+            ]
+          }
+        </script>
+    @endif
+@endsection
+
 @section('main')
 
     <div id="bg-video">

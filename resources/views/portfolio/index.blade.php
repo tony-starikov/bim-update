@@ -16,19 +16,19 @@
     <div class="container-fluid" style="background: url(/images/families/background.webp) no-repeat center center local; background-size: cover;">
 
         <div class="container py-5 p-lg-5 mt-5">
-            <div class="row align-items-center py-5 p-lg-5 my-xxl-3">
+            <div class="row align-items-center py-5 p-lg-5">
 
                 <div class="col-md-8 col-lg-8 col-xl-6 px-0 py-xl-5">
                     <h1 class="fw-bold text-uppercase">
                         Portfolio
                     </h1>
-                    <p class="h6 fw-semibold mt-4">
+                    <p class="h5 mt-4">
                         Having successfully completed 1200+ BIM projects, BIMprove is a reliable outsourcing company, trusted by major companies in the United States, United Kingdom, Germany, Australia, Belgium and other countries.
                     </p>
-                    <p class="h6 fw-semibold mt-4">
+                    <p class="h5 mt-4">
                         We have experience in 3D BIM modeling in industries such as manufacturing and warehouses, airports, residential buildings, educational, commercial, medical centers etc.
                     </p>
-                    <p class="h6 fw-semibold mt-4">
+                    <p class="h5 mt-4">
                         We pride ourselves on the quality of our work and the level of service we provide.
                     </p>
                 </div>
