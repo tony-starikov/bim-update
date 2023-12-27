@@ -12,48 +12,48 @@
     @endif
 @endsection
 
-@section('schema')
-    @if($og)
-        <script type="application/ld+json" class="yoast-schema-graph">
-          {
-            "@context": "https://bim-prove.com/",
-            "@graph": [
-              {
-                "@type": "WebPage",
-                "@id": "https://bim-prove.com/",
-                "url": "https://bim-prove.com/",
-                "name": "{{ $og->title }}",
-                "isPartOf": { "@id": "https://bim-prove.com/#website" },
-                "primaryImageOfPage": { "@id": "https://bim-prove.com/images/bim_prove.png" },
-                "image": { "@id": "https://bim-prove.com/images/bim_prove.png" },
-                "thumbnailUrl": "https://bim-prove.com/images/bim_prove.png",
-                "description": "{{ $og->description }}",
-                "inLanguage": "en-US"
-              },
-              {
-                "@type": "ImageObject",
-                "inLanguage": "en-US",
-                "@id": "https://bim-prove.com/#primaryimage",
-                "url": "https://bim-prove.com/images/bim_prove.png",
-                "contentUrl": "https://bim-prove.com/images/bim_prove.png",
-                "width": 122,
-                "height": 100,
-                "caption": "logo"
-              },
-              {
-                "@type": "WebSite",
-                "@id": "https://bim-prove.com/",
-                "url": "https://bim-prove.com/",
-                "name": "{{ $og->title }}",
-                "description": "{{ $og->description }}",
-                "publisher": { "@id": "https://bim-prove.com/" },
-                "inLanguage": "en-US"
-              },
-            ]
-          }
-        </script>
-    @endif
-@endsection
+{{--@section('schema')--}}
+{{--    @if($og)--}}
+{{--        <script type="application/ld+json" class="yoast-schema-graph">--}}
+{{--          {--}}
+{{--            "@context": "https://bim-prove.com/",--}}
+{{--            "@graph": [--}}
+{{--              {--}}
+{{--                "@type": "WebPage",--}}
+{{--                "@id": "https://bim-prove.com/",--}}
+{{--                "url": "https://bim-prove.com/",--}}
+{{--                "name": "{{ $og->title }}",--}}
+{{--                "isPartOf": { "@id": "https://bim-prove.com/#website" },--}}
+{{--                "primaryImageOfPage": { "@id": "https://bim-prove.com/images/bim_prove.png" },--}}
+{{--                "image": { "@id": "https://bim-prove.com/images/bim_prove.png" },--}}
+{{--                "thumbnailUrl": "https://bim-prove.com/images/bim_prove.png",--}}
+{{--                "description": "{{ $og->description }}",--}}
+{{--                "inLanguage": "en-US"--}}
+{{--              },--}}
+{{--              {--}}
+{{--                "@type": "ImageObject",--}}
+{{--                "inLanguage": "en-US",--}}
+{{--                "@id": "https://bim-prove.com/#primaryimage",--}}
+{{--                "url": "https://bim-prove.com/images/bim_prove.png",--}}
+{{--                "contentUrl": "https://bim-prove.com/images/bim_prove.png",--}}
+{{--                "width": 122,--}}
+{{--                "height": 100,--}}
+{{--                "caption": "logo"--}}
+{{--              },--}}
+{{--              {--}}
+{{--                "@type": "WebSite",--}}
+{{--                "@id": "https://bim-prove.com/",--}}
+{{--                "url": "https://bim-prove.com/",--}}
+{{--                "name": "{{ $og->title }}",--}}
+{{--                "description": "{{ $og->description }}",--}}
+{{--                "publisher": { "@id": "https://bim-prove.com/" },--}}
+{{--                "inLanguage": "en-US"--}}
+{{--              },--}}
+{{--            ]--}}
+{{--          }--}}
+{{--        </script>--}}
+{{--    @endif--}}
+{{--@endsection--}}
 
 @section('main')
 
@@ -356,8 +356,8 @@
 
 {{--    PORTFOLIO--}}
     <div id="portfolio" class="py-3">
-        <div class="container-fluid pb-lg-5 px-0">
-            <div class="container py-5 p-lg-5">
+        <div class="container-fluid pb-5 px-0">
+            <div class="container pt-5 p-lg-5 pb-lg-2">
                 <div class="row px-lg-5">
                     <div class="col-12">
                         <h2 class="h1 fw-bold">
@@ -365,64 +365,68 @@
                         </h2>
                     </div>
                 </div>
+            </div>
 
-                <div class="row justify-content-evenly px-lg-5">
-                    @foreach($works as $work)
-                        <div class="col-md-6 col-xl-4 mt-4">
-                            <div class="portfolio-container">
-                                <div class="card border-0">
-                                    <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                        <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
-                                    </a>
-                                    <div class="d-lg-none">
-                                        <div class="row align-items-center">
-                                            <div class="col-7 mt-2">
-                                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                                    <h3 class="text-dark h5 fw-bold m-0">{{ $work->title }}</h3>
-                                                </a>
-                                            </div>
-                                            <div class="col-5 mt-2">
-                                                <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
-                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                        <span class="fw-bold h6 d-block my-1">EXPLORE</span>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="overlay d-none d-lg-block">
-                                    <div class="row justify-content-center align-items-center text-center text-white">
-                                        <div class="col-12 mt-2 p-4">
+            <div class="row justify-content-evenly p-2 px-sm-5 px-lg-5">
+                @foreach($works as $work)
+                    <div class="col-md-6 col-xl-4 mt-4">
+                        <div class="portfolio-container">
+                            <div class="card border-0">
+                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                    <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
+                                </a>
+                                <div class="d-lg-none">
+                                    <div class="row align-items-center">
+                                        <div class="col-7 mt-2">
                                             <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                                <h3 class="text-white h5 fw-bold m-0">{{ $work->title }}</h3>
+                                                <h3 class="text-dark h5 fw-bold m-0">{{ $work->title }}</h3>
                                             </a>
                                         </div>
-                                        <div class="col-8">
+                                        <div class="col-5 mt-2">
                                             <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
                                                 <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                    <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                                    <span class="fw-bold h6 d-block my-1">EXPLORE</span>
                                                 </button>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach
-                        <div class="d-none d-md-block d-xl-none col-6 mt-4">
-                            <div class="card h-100 border-0" style="background-color: #6de1df">
-                                <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
-                                    <div class="col-12">
-                                        <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                                            <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
+                            <div class="overlay d-none d-lg-block">
+                                <div class="row h-100 justify-content-center align-items-center text-center text-white">
+                                    <div class="col-12 mt-2 p-4">
+                                        <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                            <h3 class="text-white h5 fw-bold m-0">{{ $work->title }}</h3>
                                         </a>
+                                        <div class="row justify-content-center p-4">
+                                            <div class="col-8">
+                                                <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                        <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                @endforeach
+                <div class="d-none d-md-block d-xl-none col-6 mt-4">
+                    <div class="card h-100 border-0" style="background-color: #6de1df">
+                        <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
+                            <div class="col-12">
+                                <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                    <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
+            <div class="container px-lg-5">
                 <div class="row px-4 px-xl-5 mt-5 d-flex d-md-none d-xl-flex justify-content-center">
                     <div class="col-12 col-md-7 col-lg-5">
                         <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">

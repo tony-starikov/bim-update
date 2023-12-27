@@ -46,7 +46,7 @@
                                 <a href="{{ route('showService', 'mep-coordination') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">MEP BIM Modeling service</span>
                                 </a>
-                            @elseif($project->service === 'Telecom')
+                            @elseif($project->service === 'Telecom design')
                                 <a href="{{ route('showService', 'telecom-design') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h6 d-block my-2 text-uppercase">Telecom Design service</span>
                                 </a>
