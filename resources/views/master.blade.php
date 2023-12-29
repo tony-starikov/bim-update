@@ -228,7 +228,7 @@
 
         @media (max-width: 768px) {
             .video-container {
-                background: url('/images/main_page/background2.webp') no-repeat center center local; background-size: cover;
+                background: url('/images/main_page/home_page_first_screen.webp') no-repeat center center local; background-size: cover;
             }
         }
 
@@ -522,9 +522,9 @@
                     <h2 class="text-white h2 fw-bold mt-5">SOCIAL MEDIA</h2>
 
                     <div class="row mt-4">
-                        <div class="col-6 col-lg-12 px-0">
+                        <div class="col-9 col-sm-6 col-lg-12 px-0">
                             <div class="row">
-                                <div class="col-6 col-lg-2 p-4 pt-0">
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
                                     <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
@@ -532,7 +532,7 @@
                                              alt="linkedin">
                                     </a>
                                 </div>
-                                <div class="col-6 col-lg-2 p-4 pt-0">
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
                                     <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
@@ -540,7 +540,7 @@
                                              alt="instagram">
                                     </a>
                                 </div>
-                                <div class="col-6 col-lg-2 p-4 pt-0">
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
                                     <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
@@ -548,7 +548,7 @@
                                              alt="facebook">
                                     </a>
                                 </div>
-                                <div class="col-6 col-lg-2 p-4 pt-0">
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
                                     <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"

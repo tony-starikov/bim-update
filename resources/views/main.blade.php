@@ -240,7 +240,7 @@
                         {{ $page_info->pageItems->where('name', 'services_header')->first()->value }}
                     </h2>
                     <p class="h5 fw-normal my-5">
-                        With over 7 years of experience in the AEC industry as an outsourcing company, we have successfully completed over 1,400+ BIM projects in the United States, Canada, Germany, Belgium, UK, Australia, New Zealand, etc. BIMprove is a confident player in the digital construction market. We offer 3D BIM Modeling Services in industries such as manufacturing and warehousing, airports, residential, education, commercial, medical centers, etc.
+                        With over 7 years of experience in the AEC industry as an outsourcing company, we have successfully completed over <a href="{{ route('portfolio.index') }}" class="text-dark">1,400+ BIM projects</a> in the United States, Canada, Germany, Belgium, UK, Australia, New Zealand, etc. BIMprove is a confident player in the digital construction market. We offer 3D BIM Modeling Services in industries such as manufacturing and warehousing, airports, residential, education, commercial, medical centers, etc.
                     </p>
                 </div>
             </div>
@@ -249,15 +249,17 @@
                 @foreach($services as $service)
                     <div class="col-12 col-md-6 col-xxl-4 my-3">
                         <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
-                            <div class="service-container h-100">
-                                <div class="container-fluid service-card">
+                            <div class="card-body px-0 pt-0">
+                                <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-8 col-md-8 col-lg-8 col-xl-9 col-xxl-7 px-0 d-flex align-items-center">
-                                            <h3 class="h5 fw-bold ps-3" style="position: relative; bottom: 25px;">
-                                                <small>
-                                                    {{ $service->title_en }}
-                                                </small>
-                                            </h3>
+                                            <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif class="text-decoration-none text-dark" style="position: relative; bottom: 25px;">
+                                                <h3 class="h5 fw-bold ps-3">
+                                                    <small>
+                                                        {{ $service->title_en }}
+                                                    </small>
+                                                </h3>
+                                            </a>
                                         </div>
                                         <div class="col-4 col-md-4 col-lg-4 col-xl-3 col-xxl-5 p-0 ps-2">
                                             @if($service->video_url)
@@ -269,31 +271,19 @@
                                             @endif
                                         </div>
                                     </div>
-                                    <div class="row d-lg-none">
+                                    <div class="row">
                                         <div class="col-12">
-                                            <p class="h6 text-secondary" style="min-height: 77px;">
+                                            <p class="h6 text-secondary">
                                                 {{ $service->description_en }}
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent service-card-footer">
-                                    <p class="h6 text-secondary d-none d-lg-block">
-                                        {{ $service->description_en }}
-                                    </p>
-                                    <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none d-lg-none" style="background-color: #43aeb6">
-                                        <span class="fw-bold h5 d-block my-2">EXPLORE</span>
-                                    </a>
-                                </div>
-                                <div class="service-overlay d-none d-lg-block">
-                                    <div class="d-flex align-self-center h-100 px-5" style="background-color: #6de1df">
-                                        <a class="text-decoration-none w-100 align-self-center" @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
-                                            <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                <span class="fw-bold h5 d-block my-2">EXPLORE</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent">
+                                <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6">
+                                    <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -367,61 +357,65 @@
                 </div>
             </div>
 
-            <div class="row justify-content-evenly p-2 px-sm-5 px-lg-5">
-                @foreach($works as $work)
-                    <div class="col-md-6 col-xl-4 mt-4">
-                        <div class="portfolio-container">
-                            <div class="card border-0">
-                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                    <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
-                                </a>
-                                <div class="d-lg-none">
-                                    <div class="row align-items-center">
-                                        <div class="col-7 mt-2">
-                                            <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                                <h3 class="text-dark h5 fw-bold m-0">{{ $work->title }}</h3>
-                                            </a>
-                                        </div>
-                                        <div class="col-5 mt-2">
-                                            <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
-                                                <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                    <span class="fw-bold h6 d-block my-1">EXPLORE</span>
-                                                </button>
-                                            </a>
+            <div class="row justify-content-evenly p-2 px-sm-5">
+                <div class="col-12 px-lg-5">
+                    <div class="row px-lg-5">
+                        @foreach($works as $work)
+                            <div class="col-md-6 col-xl-4 mt-4">
+                                <div class="portfolio-container">
+                                    <div class="card border-0">
+                                        <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                            <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
+                                        </a>
+                                        <div class="d-lg-none">
+                                            <div class="row align-items-center">
+                                                <div class="col-7 mt-2">
+                                                    <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                                        <h3 class="text-dark h5 fw-bold m-0">{{ $work->title }}</h3>
+                                                    </a>
+                                                </div>
+                                                <div class="col-5 mt-2">
+                                                    <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                        <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                            <span class="fw-bold h6 d-block my-1">EXPLORE</span>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="overlay d-none d-lg-block">
-                                <div class="row h-100 justify-content-center align-items-center text-center text-white">
-                                    <div class="col-12 mt-2 p-4">
-                                        <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
-                                            <h3 class="text-white h5 fw-bold m-0">{{ $work->title }}</h3>
-                                        </a>
-                                        <div class="row justify-content-center p-4">
-                                            <div class="col-8">
-                                                <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
-                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                        <span class="fw-bold h5 d-block my-2">EXPLORE</span>
-                                                    </button>
+                                    <div class="overlay d-none d-lg-block">
+                                        <div class="row h-100 justify-content-center align-items-center text-center text-white">
+                                            <div class="col-12 mt-2 p-4">
+                                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                                    <h3 class="text-white h5 fw-bold m-0">{{ $work->title }}</h3>
                                                 </a>
+                                                <div class="row justify-content-center p-4">
+                                                    <div class="col-8">
+                                                        <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                            <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                                <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                @endforeach
-                <div class="d-none d-md-block d-xl-none col-6 mt-4">
-                    <div class="card h-100 border-0" style="background-color: #6de1df">
-                        <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
-                            <div class="col-12">
-                                <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                                    <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
-                                </a>
+                        @endforeach
+                            <div class="d-none d-md-block d-xl-none col-6 mt-4">
+                                <div class="card h-100 border-0" style="background-color: #6de1df">
+                                    <div class="row px-5 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="col-12">
+                                            <a href="{{ route('portfolio.index') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                                <span class="fw-bold h6 d-block my-2">ALL PROJECTS</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -499,9 +493,9 @@
                                         <a class="p-0 m-0 text-decoration-none" target="_blank" href="{{ $teammate->linkedin_url }}">
                                             <div class="card border-0 px-xxl-5 h-100 bg-transparent">
                                                 <div class="text-center p-4 pt-0">
-                                                    <img src="/images/{{ $teammate->image }}" class="img-fluid w-100">
+                                                    <img src="/images/{{ $teammate->image }}" class="px-5 px-sm-0 img-fluid w-100">
                                                 </div>
-                                                <div class="card-body pb-0 px-4">
+                                                <div class="card-body pb-0 px-5 px-sm-4">
                                                     <p class="h3 fw-bold text-dark">{{ $teammate->name_en }}</p>
                                                     <p class="h3 fw-bold text-dark">{{ $teammate->surname_en }}</p>
                                                     <p class="h5 card-title text-dark">
