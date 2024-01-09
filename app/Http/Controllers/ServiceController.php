@@ -19,7 +19,7 @@ class ServiceController extends Controller
 {
     public function downloadService($slug)
     {
-        $service = Service::where('slug', $slug)->first();
+        $service = Service::where('slug', $slug)->firstOrFail();
 
         $myFile = 'images/' . $service->presentation;
 
@@ -39,7 +39,7 @@ class ServiceController extends Controller
             $og = Seo::where('url', $url)->first();
         }
 
-        $service = Service::where('slug', $slug)->first();
+        $service = Service::where('slug', $slug)->firstOrFail();
 
         $page_info = Page::where('name', 'main')->first();
 
