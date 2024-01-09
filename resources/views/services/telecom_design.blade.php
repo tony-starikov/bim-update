@@ -60,6 +60,16 @@
 
     <div id="soft" class="container-fluid">
         <div class="container py-5 p-lg-5">
+            <div class="row px-lg-5">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-dark" href="{{ route('main') }}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Telecommunication Design Service</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
             <div class="row p-lg-5">
                 <div class="col-12">
                     <h2 class="fw-bold h1">
