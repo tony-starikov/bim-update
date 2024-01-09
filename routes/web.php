@@ -74,34 +74,34 @@ Route::post('/estimates-mep-short-processing', [EstimationController::class, 'pr
 
 Route::get('/sitemap', function() {
    $sitemap = Sitemap::create()
-       ->add(Url::create('/'));
+       ->add(Url::create('https://bim-prove.com/'));
 
     Service::where('show_page', 1)->each(function(Service $service) use ($sitemap) {
-        $sitemap->add(Url::create("/service/{$service->slug}"));
+        $sitemap->add(Url::create('https://bim-prove.com/service/' . $service->slug . '/'));
     });
 
-    $sitemap->add(Url::create("/scan-to-bim-estimates-project"));
-    $sitemap->add(Url::create("/estimates-project-scan-to-bim"));
-    $sitemap->add(Url::create("/mep-estimates-project"));
-    $sitemap->add(Url::create("/estimates-project-mep"));
+    $sitemap->add(Url::create("https://bim-prove.com/scan-to-bim-estimates-project/"));
+    $sitemap->add(Url::create("https://bim-prove.com/estimates-project-scan-to-bim/"));
+    $sitemap->add(Url::create("https://bim-prove.com/mep-estimates-project/"));
+    $sitemap->add(Url::create("https://bim-prove.com/estimates-project-mep/"));
 
-    $sitemap->add(Url::create('/blog'));
-    $sitemap->add(Url::create('/portfolio'));
+    $sitemap->add(Url::create('https://bim-prove.com/blog/'));
+    $sitemap->add(Url::create('https://bim-prove.com/portfolio/'));
 
     Work::all()->each(function(Work $work) use ($sitemap) {
-        $sitemap->add(Url::create("/portfolio/{$work->slug}"));
+        $sitemap->add(Url::create('https://bim-prove.com/portfolio/' . $work->slug . '/'));
     });
 
     Post::all()->each(function(Post $post) use ($sitemap) {
-        $sitemap->add(Url::create("/post/{$post->slug}"));
+        $sitemap->add(Url::create('https://bim-prove.com/post/' . $post->slug . '/'));
     });
 
-    $sitemap->add(Url::create("/products/plugins"));
-    $sitemap->add(Url::create("/products/families"));
+    $sitemap->add(Url::create("https://bim-prove.com/products/plugins/"));
+    $sitemap->add(Url::create("https://bim-prove.com/products/families/"));
 
     $sitemap
-        ->add(Url::create('/contact'))
-        ->add(Url::create('/policy'));
+        ->add(Url::create('https://bim-prove.com/contact/'))
+        ->add(Url::create('https://bim-prove.com/policy/'));
 
 //   Plugin::all()->each(function(Plugin $plugin) use ($sitemap) {
 //       $sitemap->add(Url::create("/download-plugin/{$plugin->slug}"));
