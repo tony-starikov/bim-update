@@ -3,11 +3,13 @@
 namespace App\Providers;
 
 use App\Models\Estimation;
+use App\Models\EstimationLog;
 use App\Models\EstimationMep;
 use App\Models\EstimationMepShort;
 use App\Models\EstimationScanShort;
 use App\Models\Post;
 use App\Models\Work;
+use App\MoonShine\Resources\EstimationLogResource;
 use App\MoonShine\Resources\EstimationMepResource;
 use App\MoonShine\Resources\EstimationMepShortResource;
 use App\MoonShine\Resources\EstimationResource;
@@ -62,6 +64,10 @@ class MoonShineServiceProvider extends ServiceProvider
             MenuItem::make('Portfolio', new WorkResource())
                 ->icon('heroicons.outline.book-open')
                 ->badge(fn() => Work::query()->count()),
+
+            MenuItem::make('Estimation-Log', new EstimationLogResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => EstimationLog::query()->count()),
 
             MenuItem::make('SEO', new SeoResource())
                 ->icon('heroicons.outline.book-open'),

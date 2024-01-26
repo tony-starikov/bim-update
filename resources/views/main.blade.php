@@ -507,9 +507,9 @@
                     </h3>
                     <div class="row">
                         <div class="col-md-12 col-xxl-9">
-                            <button id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                            </button>
+                            <a href="{{ route('contact') }}" id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button">
+                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -683,68 +683,68 @@
 
 @endsection
 
-@section('modals')
-    <!-- Modal START -->
-    <div class="modal fade w-100 h-100" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content h-100" style="background-color: #b5c5c8;">
-                <div class="modal-body h-100 p-0">
-                    <div class="container-fluid min-vh-100">
-                        <div class="row">
-                            <div class="col-10 col-lg-10 col-xl-11"></div>
-                            <div class="col-2 col-lg-2 col-xl-1 d-flex justify-content-end">
-                                <button type="button" class="btn border-0 pe-0" data-bs-dismiss="modal">
-                                    <i class="las la-3x la-times text-white"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row p-0 py-0 p-xl-5">
-                            <div class="col-12 col-xl-6 align-self-stretch">
-                                <h4 class="fw-bold text-white display-6 w-100 lh-1">
-                                    Meet at a time that is convenient for you.
-                                </h4>
-                                <h4 class="h2 lh-1 mt-3 mb-3 text-white fw-semibold">
-                                    <small>
-                                        Book a date and time that is convenient for you to discuss how we can help you.
-                                    </small>
-                                </h4>
-                                <img src="/images/main_page/calendar_image.webp" class="img-fluid w-100 p-5 my-5 d-none d-xl-block" alt="mail_photo">
-                            </div>
-                            <div class="col-12 col-xl-6">
-                                <!-- Calendly inline widget begin -->
-                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="height:700px;"></div>
-                                <script type="text/javascript">
-                                    window.addEventListener('DOMContentLoaded', (event) => {
-                                        let script = document.createElement('script');
-                                        script.src = "https://assets.calendly.com/assets/external/widget.js";
-                                        script.innerHTML = ''
-                                        document.body.appendChild(script);
-                                    });
-                                </script>
-                                <!-- Calendly inline widget end -->
-                            </div>
-                        </div>
-                        <div class="row p-3 pt-2 text-center d-flex align-items-center">
-                            <h4 class="h4 lh-1 text-white fw-semibold">
-                                <small>
-                                    If you have a proposal, fill out the form with your information and we'll get back to you.
-                                </small>
-                            </h4>
-                        </div>
-                        <div class="row pb-3 d-flex justify-content-center">
-                            <div class="col-6 col-lg-3 col-xl-2 mb-2">
-                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100 mx-auto" style="background-color: #43aeb6">
-                                    <span class="fw-bold h6 d-block m-0">CONTACT US</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal END -->
-@endsection
+{{--@section('modals')--}}
+{{--    <!-- Modal START -->--}}
+{{--    <div class="modal fade w-100 h-100" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">--}}
+{{--        <div class="modal-dialog modal-xl">--}}
+{{--            <div class="modal-content h-100" style="background-color: #b5c5c8;">--}}
+{{--                <div class="modal-body h-100 p-0">--}}
+{{--                    <div class="container-fluid min-vh-100">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-10 col-lg-10 col-xl-11"></div>--}}
+{{--                            <div class="col-2 col-lg-2 col-xl-1 d-flex justify-content-end">--}}
+{{--                                <button type="button" class="btn border-0 pe-0" data-bs-dismiss="modal">--}}
+{{--                                    <i class="las la-3x la-times text-white"></i>--}}
+{{--                                </button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="row p-0 py-0 p-xl-5">--}}
+{{--                            <div class="col-12 col-xl-6 align-self-stretch">--}}
+{{--                                <h4 class="fw-bold text-white display-6 w-100 lh-1">--}}
+{{--                                    Meet at a time that is convenient for you.--}}
+{{--                                </h4>--}}
+{{--                                <h4 class="h2 lh-1 mt-3 mb-3 text-white fw-semibold">--}}
+{{--                                    <small>--}}
+{{--                                        Book a date and time that is convenient for you to discuss how we can help you.--}}
+{{--                                    </small>--}}
+{{--                                </h4>--}}
+{{--                                <img src="/images/main_page/calendar_image.webp" class="img-fluid w-100 p-5 my-5 d-none d-xl-block" alt="mail_photo">--}}
+{{--                            </div>--}}
+{{--                            <div class="col-12 col-xl-6">--}}
+{{--                                <!-- Calendly inline widget begin -->--}}
+{{--                                <div class="calendly-inline-widget w-100" data-url="https://calendly.com/bimprove/30min" style="height:700px;"></div>--}}
+{{--                                <script type="text/javascript">--}}
+{{--                                    window.addEventListener('DOMContentLoaded', (event) => {--}}
+{{--                                        let script = document.createElement('script');--}}
+{{--                                        script.src = "https://assets.calendly.com/assets/external/widget.js";--}}
+{{--                                        script.innerHTML = ''--}}
+{{--                                        document.body.appendChild(script);--}}
+{{--                                    });--}}
+{{--                                </script>--}}
+{{--                                <!-- Calendly inline widget end -->--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="row p-3 pt-2 text-center d-flex align-items-center">--}}
+{{--                            <h4 class="h4 lh-1 text-white fw-semibold">--}}
+{{--                                <small>--}}
+{{--                                    If you have a proposal, fill out the form with your information and we'll get back to you.--}}
+{{--                                </small>--}}
+{{--                            </h4>--}}
+{{--                        </div>--}}
+{{--                        <div class="row pb-3 d-flex justify-content-center">--}}
+{{--                            <div class="col-6 col-lg-3 col-xl-2 mb-2">--}}
+{{--                                <a href="{{ route('contact') }}" role="button" class="btn btn-primary shadow-none btn-lg border-0 rounded-4 w-100 mx-auto" style="background-color: #43aeb6">--}}
+{{--                                    <span class="fw-bold h6 d-block m-0">CONTACT US</span>--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <!-- Modal END -->--}}
+{{--@endsection--}}
 
 @section('canonical')
     @if($page_info->canonical)

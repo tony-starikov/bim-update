@@ -12,6 +12,24 @@
     @endif
 @endsection
 
+@section('schema')
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "description": "Our Scan to BIM Services offer precise parametric As-built BIM Models and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.",
+    "name": "BIMprove | Scan to BIM Service",
+    "image": "https://bim-prove.com/images/bim_prove.png",
+    "url": "https://bim-prove.com/",
+    "@id": "https://bim-prove.com/",
+    "telephone": "+380668901648",
+    "email": "info@bim-prove.com",
+    "sameAs" : [ "https://www.scantobimservices.com/",
+    "https://origin-team.com/services/building-information-modeling-bim/"]
+    }
+</script>
+@endsection
+
 @section('main')
 
     <div id="main">

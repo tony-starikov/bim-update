@@ -8,6 +8,7 @@ use App\Http\Requests\EstimationRequest;
 use App\Http\Requests\EstimationScanShortRequest;
 use App\Models\Contact;
 use App\Models\Estimation;
+use App\Models\EstimationLog;
 use App\Models\EstimationMep;
 use App\Models\EstimationMepShort;
 use App\Models\EstimationScanShort;
@@ -16,7 +17,7 @@ use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rule;
 use Leeto\Seo\Models\Seo;
 
 class EstimationController extends Controller
@@ -225,68 +226,89 @@ class EstimationController extends Controller
         return redirect()->route('thanksShortScanToBim');
     }
 
-    public function processingScanShort(EstimationScanShortRequest $request)
+    public function processingScanShort(Request $request)
     {
+        $log = EstimationLog::create(['email' => $request->email, 'name' => $request->name]);
+
+        $validated = $request->validate([
+            'email' => 'required|email|max:255',
+            'name' => 'required|string|max:255',
+            'disciplines' => 'required|array',
+            'type' => 'required|string',
+            'area' => 'required',
+            'height' => 'required',
+            'task' => 'required|array',
+            'lod' => 'required|array',
+            'accuracy' => 'required|string',
+            'currency' => 'required|string',
+            'start' => 'nullable|string',
+            'address' => 'nullable|string',
+            'link' => 'nullable|string',
+            'comment' => 'nullable|string',
+            'files' => 'nullable',
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
+        ]);
+
         $parameters = $request->all();
 
-        if (in_array('Other', $parameters['disciplines']) and !$request->filled('disciplines-other') ) {
+        if (in_array('Other', $parameters['disciplines']) and !$request->filled('other-discipline') ) {
             return back()->withErrors('Please, write your discipline.')->withInput();
         } else {
             if (in_array('Other', $parameters['disciplines'])) {
                 $index = array_search('Other', $parameters['disciplines']);
                 unset($parameters['disciplines'][$index]);
-                $parameters['disciplines'][$index] = "Other: " . $parameters['disciplines-other'];
+                $parameters['disciplines'][$index] = "Other: " . $parameters['other-discipline'];
             }
-            unset($parameters['disciplines-other']);
+            unset($parameters['other-discipline']);
         }
 
-        if ( $parameters['type'] == 'Other' and !$request->filled('type-other') ) {
+        if ( $parameters['type'] == 'Other' and !$request->filled('other-type') ) {
             return back()->withErrors('Please, write your type of the building\construction.')->withInput();
         } else {
-            if ($parameters['type-other']) {
-                $parameters['type'] = $parameters['type-other'];
+            if ($parameters['other-type']) {
+                $parameters['type'] = $parameters['other-type'];
             }
-            unset($parameters['type-other']);
+            unset($parameters['other-type']);
         }
 
-        if (in_array('Other', $parameters['task']) and !$request->filled('task-other') ) {
+        if (in_array('Other', $parameters['task']) and !$request->filled('other-task') ) {
             return back()->withErrors('Please, write your task for modeling variant.')->withInput();
         } else {
             if (in_array('Other', $parameters['task'])) {
                 $index = array_search('Other', $parameters['task']);
                 unset($parameters['task'][$index]);
-                $parameters['task'][$index] = "Other: " . $parameters['task-other'];
+                $parameters['task'][$index] = "Other: " . $parameters['other-task'];
             }
-            unset($parameters['task-other']);
+            unset($parameters['other-task']);
         }
 
-        if (in_array('Other', $parameters['lod']) and !$request->filled('lod-other') ) {
+        if (in_array('Other', $parameters['lod']) and !$request->filled('other-lod') ) {
             return back()->withErrors('Please, write your lod variant.')->withInput();
         } else {
             if (in_array('Other', $parameters['lod'])) {
                 $index = array_search('Other', $parameters['lod']);
                 unset($parameters['lod'][$index]);
-                $parameters['lod'][$index] = "Other: " . $parameters['lod-other'];
+                $parameters['lod'][$index] = "Other: " . $parameters['other-lod'];
             }
-            unset($parameters['lod-other']);
+            unset($parameters['other-lod']);
         }
 
-        if ($parameters['accuracy'] == 'Other' and !$request->filled('accuracy-other')) {
+        if ($parameters['accuracy'] == 'Other' and !$request->filled('other-accuracy')) {
             return back()->withErrors('Please, write your project accuracy variant.')->withInput();
         } else {
-            if ($parameters['accuracy-other']) {
-                $parameters['accuracy'] = $parameters['accuracy-other'];
+            if ($parameters['other-accuracy']) {
+                $parameters['accuracy'] = $parameters['other-accuracy'];
             }
-            unset($parameters['accuracy-other']);
+            unset($parameters['other-accuracy']);
         }
 
-        if ($parameters['currency'] == 'Other' and !$request->filled('currency-other')) {
+        if ($parameters['currency'] == 'Other' and !$request->filled('other-currency')) {
             return back()->withErrors('Please, write your project currency variant.')->withInput();
         } else {
-            if ($parameters['currency-other']) {
-                $parameters['currency'] = $parameters['currency-other'];
+            if ($parameters['other-currency']) {
+                $parameters['currency'] = $parameters['other-currency'];
             }
-            unset($parameters['currency-other']);
+            unset($parameters['other-currency']);
         }
 
         $files = [];

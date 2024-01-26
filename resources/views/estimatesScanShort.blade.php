@@ -85,7 +85,7 @@
 
     <div class="container-fluid" style="background-image: url(/images/estimates/about.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
-            <div class="row py-5 px-lg-5 my-0 my-lg-5">
+            <div class="row py-5 px-lg-5">
 
                 <div class="col-12">
                     <div class="row">
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="row align-items-center">
-                        <div class="col-lg-5 p-5 p-lg-0 pe-lg-5 mt-lg-5 order-2 order-lg-1">
+                        <div class="col-lg-7 p-5 p-lg-0 pe-lg-5 mt-lg-5 order-2 order-lg-1">
                             <div class="row">
                                 <div class="col-1 ps-0 text-end">
                                     <h5 class="fw-normal">
@@ -111,7 +111,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mt-2">
                                 <div class="col-1 ps-0 text-end">
                                     <h5 class="fw-normal">
                                         2.
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mt-2">
                                 <div class="col-1 ps-0 text-end">
                                     <h5 class="fw-normal">
                                         3.
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mt-2">
                                 <div class="col-1 ps-0 text-end">
                                     <h5 class="fw-normal">
                                         4.
@@ -150,7 +150,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mt-2">
                                 <div class="col-1 ps-0 text-end">
                                     <h5>
                                         *
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mt-2">
                                 <div class="col-1 ps-0 text-end">
                                     <h5>
                                         **
@@ -177,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-7 px-5 p-lg-0 mt-5 order-1 order-lg-2">
+                        <div class="col-lg-5 px-5 p-lg-0 mt-5 order-1 order-lg-2">
                             <img class="img-fluid w-100" src="/images/estimates/schema.png" alt="">
                         </div>
                     </div>
@@ -186,548 +186,469 @@
         </div>
     </div>
 
-    <div id="estimation1" class="container-fluid" style="background-color: #849092">
+    <div id="estimation1" class="container-fluid">
         <div class="container px-0 py-sm-5 p-lg-5">
             <div class="row justify-content-center px-0 p-lg-5">
                 <div class="col-lg-9 p-2 p-lg-5" style="border: 4px solid #72e0df;">
-                    <h2 class="fw-bold mb-5 text-white">
+                    <h2 class="fw-bold mb-3">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
-                    <form method="post" class="footer-form text-white" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
+                    <form method="post" class="footer-form" enctype="multipart/form-data" action="{{route('processingScanShort')}}">
                         @csrf
 
-                        <input
-                            class="form-control form-control-lg fw-bold border border-0 border-3 border-bottom border-white shadow-none rounded-0"
-                            type="email"
-                            name="email"
-                            placeholder="Email*"
-                            value="{{old('email', '')}}"
-                            aria-label=".form-control-lg example"
-                        />
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email*</label>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" value="{{old('email', '')}}" required>
+                        </div>
 
-                        <h4 class="fw-bold my-4">
-                            Disciplines*
-                        </h4>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name*</label>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="John Dou" value="{{old('name', '')}}" required>
+                        </div>
 
-                        <div class="row">
+
+                        <label class="form-label m-0">Disciplines*</label>
+
+                        <div class="row mb-3">
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none fw-bold text-white"
-                                           type="checkbox" name="disciplines[]"
-                                           value="Architectural" @if(is_array(old('disciplines')) && in_array('Architectural', old('disciplines'))) checked @endif
-                                           id="disciplines1"
-                                           style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Architectural" id="disciplines1" @if(is_array(old('disciplines')) && in_array('Architectural', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines1">
                                         Architectural
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Structural" @if(is_array(old('disciplines')) && in_array('Structural', old('disciplines'))) checked @endif id="disciplines2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines2">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Structural" id="disciplines2" @if(is_array(old('disciplines')) && in_array('Structural', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines2">
                                         Structural
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Mechanical" @if(is_array(old('disciplines')) && in_array('Mechanical', old('disciplines'))) checked @endif id="disciplines3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines3">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Mechanical" id="disciplines3" @if(is_array(old('disciplines')) && in_array('Mechanical', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines3">
                                         Mechanical
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Electrical" @if(is_array(old('disciplines')) && in_array('Electrical', old('disciplines'))) checked @endif id="disciplines4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines4">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Electrical" id="disciplines4" @if(is_array(old('disciplines')) && in_array('Electrical', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines4">
                                         Electrical
                                     </label>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Plumbing" @if(is_array(old('disciplines')) && in_array('Plumbing', old('disciplines'))) checked @endif id="disciplines5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Plumbing" id="disciplines5" @if(is_array(old('disciplines')) && in_array('Plumbing', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines5">
                                         Plumbing
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Fire Protection" @if(is_array(old('disciplines')) && in_array('Fire Protection', old('disciplines'))) checked @endif id="disciplines6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines6">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Fire Protection" id="disciplines6" @if(is_array(old('disciplines')) && in_array('Fire Protection', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines6">
                                         Fire Protection
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Site" @if(is_array(old('disciplines')) && in_array('Site', old('disciplines'))) checked @endif id="disciplines7" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines7">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Site" id="disciplines7" @if(is_array(old('disciplines')) && in_array('Site', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines7">
                                         Site
                                     </label>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="disciplines[]" value="Other" @if(is_array(old('disciplines')) && in_array('Other', old('disciplines'))) checked @endif id="disciplines8" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="disciplines8">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="disciplines[]" value="Other" id="disciplines8" @if(is_array(old('disciplines')) && in_array('Other', old('disciplines'))) checked @endif>
+                                    <label class="form-check-label" for="disciplines8">
                                         Other
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="disciplines-other" value="{{old('disciplines-other', '')}}" placeholder="Write your discipline">
+
+                            <div id="other-discipline" class="col-12 d-none">
+                                <div class="mb-4">
+                                    <label for="other-discipline" class="form-label">Other discipline</label>
+                                    <input name="other-discipline" type="text" class="form-control" id="other-discipline" value="{{old('other-discipline', '')}}" placeholder="Write your variant here...">
                                 </div>
                             </div>
                         </div>
 
-                        <h4 class="fw-bold my-4">
-                            Type of the building\construction*
-                        </h4>
+                        <script>
+                            const el = document.getElementById('disciplines8');
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Residential Building" {{ (old('type') == 'Residential Building' ) ? 'checked' : '' }} id="type1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type1">
-                                        Residential Building
-                                    </label>
-                                </div>
+                            const box = document.getElementById('other-discipline');
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Industrial Building" {{ (old('type') == 'Industrial Building' ) ? 'checked' : '' }} id="type2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type2">
-                                        Industrial Building
-                                    </label>
-                                </div>
+                            if(el.checked) {
+                                if (box.classList.contains('d-none')) {
+                                    box.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!box.classList.contains('d-none')) {
+                                    box.classList.add('d-none')
+                                }
+                            }
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Storage" {{ (old('type') == 'Storage' ) ? 'checked' : '' }} id="type3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type3">
-                                        Storage
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Historical building" {{ (old('type') == 'Historical Building' ) ? 'checked' : '' }} id="type4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type4">
-                                        Historical Building
-                                    </label>
-                                </div>
+                            el.addEventListener('change', function handleChange(event) {
+                                box.classList.toggle('d-none');
+                            });
+                        </script>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Commercial building" {{ (old('type') == 'Commercial Building' ) ? 'checked' : '' }} id="type5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type5">
-                                        Commercial Building
-                                    </label>
-                                </div>
-                            </div>
+
+                        <label class="form-label mb-2">Type of the building\construction*</label>
+
+{{--                        {{ (old('type') == 'Residential Building' ) ? 'checked' : '' }}--}}
+                        <select name="type" id="type-select" class="form-select mb-3" aria-label="Default select example">
+                            <option selected value="Residential Building">Residential Building</option>
+                            <option value="Industrial Building">Industrial Building</option>
+                            <option value="Storage">Storage</option>
+                            <option value="Historical Building">Historical Building</option>
+                            <option value="Commercial Building">Commercial Building</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <div id="other-type-box" class="mb-4 d-none">
+                            <label for="other-type" class="form-label">Other type of the building\construction*</label>
+                            <input name="other-type" type="text" class="form-control" id="other-type" value="{{old('other-type', '')}}" placeholder="Write your variant here...">
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="type" value="Other" {{ (old('type') == 'Other' ) ? 'checked' : '' }} id="type6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="type6">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="type-other" value="{{old('type-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
+                        <script>
+                            const typeSelect = document.getElementById('type-select');
+
+                            const typeBox = document.getElementById('other-type-box');
+
+                            if (typeSelect.value === 'Other') {
+                                if (typeBox.classList.contains('d-none')) {
+                                    typeBox.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!typeBox.classList.contains('d-none')) {
+                                    typeBox.classList.add('d-none');
+                                }
+                            }
+
+                            typeSelect.addEventListener('change', function handleChange(event) {
+                                if (typeBox.classList.contains('d-none')) {
+                                    if (event.target.value === 'Other') {
+                                        typeBox.classList.remove('d-none');
+                                    }
+                                } else {
+                                    typeBox.classList.add('d-none');
+                                }
+                            });
+                        </script>
+
+                        <div class="mb-3">
+                            <label for="area" class="form-label">Building/construction area*</label>
+                            <input name="area" type="text" class="form-control" id="area" placeholder="500m2" value="{{old('area', '')}}">
                         </div>
 
-                        <div class="my-3">
-                            <input class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0" type="text" name="area" value="{{old('area', '')}}" placeholder="Building/construction area*" aria-label=".form-control-lg example">
-                        </div>
-
-                        <div class="my-3">
-                            <input class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0" type="text" name="height" value="{{old('height', '')}}" placeholder="Height of a building/construction*" aria-label=".form-control-lg example">
+                        <div class="mb-3">
+                            <label for="height" class="form-label">Height of a building/construction*</label>
+                            <input name="height" type="text" class="form-control" id="height" placeholder="10m" value="{{old('height', '')}}">
                         </div>
 
 
-                        <h4 class="fw-bold my-4">
+
+                        <label class="form-label m-0">
                             Task for modeling*
-                        </h4>
+                        </label>
 
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="3D model" @if(is_array(old('task')) && in_array('3D model', old('task'))) checked @endif id="task1" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="3D model" id="task1" @if(is_array(old('task')) && in_array('3D model', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task1">
                                         3D model
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Floor plans" @if(is_array(old('task')) && in_array('Floor plans', old('task'))) checked @endif id="task2" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task2">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="Floor plans" id="task2" @if(is_array(old('task')) && in_array('Floor plans', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task2">
                                         Floor plans
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Ceilings plans" @if(is_array(old('task')) && in_array('Ceilings plans', old('task'))) checked @endif id="task3" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task3">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="Ceilings plans" id="task3" @if(is_array(old('task')) && in_array('Ceilings plans', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task3">
                                         Ceilings plans
                                     </label>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Elevations" @if(is_array(old('task')) && in_array('Elevations', old('task'))) checked @endif id="task4" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="Elevations" id="task4" @if(is_array(old('task')) && in_array('Elevations', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task4">
                                         Elevations
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Sections" @if(is_array(old('task')) && in_array('Sections', old('task'))) checked @endif id="task5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task5">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="Sections" id="task5" @if(is_array(old('task')) && in_array('Sections', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task5">
                                         Sections
                                     </label>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="checkbox" name="task[]" value="Other" @if(is_array(old('task')) && in_array('Other', old('task'))) checked @endif id="task6" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="task6">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="task[]" value="Other" id="task6" @if(is_array(old('task')) && in_array('Other', old('task'))) checked @endif>
+                                    <label class="form-check-label" for="task6">
                                         Other
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="task-other" value="{{old('task-other', '')}}" placeholder="Write your variant" aria-label=".form-control-lg example">
+
+                            <div id="other-task-box" class="col-12 d-none">
+                                <div class="mb-4">
+                                    <label for="other-task" class="form-label">Other task</label>
+                                    <input name="other-task" type="text" class="form-control" id="other-task" value="{{old('other-task', '')}}" placeholder="Write your variant here...">
                                 </div>
                             </div>
                         </div>
 
+                        <script>
+                            const taskEl = document.getElementById('task6');
 
-                        <h4 class="fw-bold my-4">
+                            const taskBox = document.getElementById('other-task-box');
+
+                            if(taskEl.checked) {
+                                if (taskBox.classList.contains('d-none')) {
+                                    taskBox.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!taskBox.classList.contains('d-none')) {
+                                    taskBox.classList.add('d-none')
+                                }
+                            }
+
+                            taskEl.addEventListener('change', function handleChange(event) {
+                                taskBox.classList.toggle('d-none');
+                            });
+                        </script>
+
+                        <label class="form-label m-0">
                             LOD (Level of Detail)*
-                        </h4>
+                        </label>
 
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="lod[]"
-                                        value="LOD 100"
-                                        @if(is_array(old('lod')) && in_array('LOD 100', old('lod'))) checked @endif
-                                        id="lod1"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="lod1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lod[]" value="LOD 100" id="lod1" @if(is_array(old('lod')) && in_array('LOD 100', old('lod'))) checked @endif>
+                                    <label class="form-check-label" for="lod1">
                                         LOD 100
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="lod[]"
-                                        value="LOD 200"
-                                        @if(is_array(old('lod')) && in_array('LOD 200', old('lod'))) checked @endif
-                                        id="lod2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="lod2">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lod[]" value="LOD 200" id="lod2" @if(is_array(old('lod')) && in_array('LOD 200', old('lod'))) checked @endif>
+                                    <label class="form-check-label" for="lod2">
                                         LOD 200
                                     </label>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="lod[]"
-                                        value="LOD 300"
-                                        @if(is_array(old('lod')) && in_array('LOD 300', old('lod'))) checked @endif
-                                        id="lod3"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="lod3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lod[]" value="LOD 300" id="lod3" @if(is_array(old('lod')) && in_array('LOD 300', old('lod'))) checked @endif>
+                                    <label class="form-check-label" for="lod3">
                                         LOD 300
                                     </label>
                                 </div>
+                            </div>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="lod[]"
-                                        value="LOD 350"
-                                        @if(is_array(old('lod')) && in_array('LOD 350', old('lod'))) checked @endif
-                                        id="lod4"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="lod4">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lod[]" value="LOD 350" id="lod4" @if(is_array(old('lod')) && in_array('LOD 350', old('lod'))) checked @endif>
+                                    <label class="form-check-label" for="lod4">
                                         LOD 350
                                     </label>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="checkbox"
-                                        name="lod[]"
-                                        value="Other"
-                                        @if(is_array(old('lod')) && in_array('Other', old('lod'))) checked @endif
-                                        id="lod5"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="lod5">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="lod[]" value="Other" id="lod5" @if(is_array(old('lod')) && in_array('Other', old('lod'))) checked @endif>
+                                    <label class="form-check-label" for="lod5">
                                         Other
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="lod-other" value="{{old('lod-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
+
+                            <div id="other-lod-box" class="col-12 d-none">
+                                <div class="mb-4">
+                                    <label for="other-lod" class="form-label">Other lod</label>
+                                    <input name="other-lod" type="text" class="form-control" id="other-lod" value="{{old('other-lod', '')}}" placeholder="Write your variant here...">
                                 </div>
                             </div>
                         </div>
 
+                        <script>
+                            const lodEl = document.getElementById('lod5');
 
-                        <h4 class="fw-bold my-4">
+                            const lodBox = document.getElementById('other-lod-box');
+
+                            if(lodEl.checked) {
+                                if (lodBox.classList.contains('d-none')) {
+                                    lodBox.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!lodBox.classList.contains('d-none')) {
+                                    lodBox.classList.add('d-none')
+                                }
+                            }
+
+                            lodEl.addEventListener('change', function handleChange(event) {
+                                lodBox.classList.toggle('d-none');
+                            });
+                        </script>
+
+                        <label class="form-label m-0">
                             Project accuracy*
-                        </h4>
+                        </label>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="accuracy"
-                                        value="5 mm"
-                                        {{ (old('accuracy') == '5 mm' ) ? 'checked' : '' }}
-                                        id="accuracy1"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="accuracy1">
-                                        5 mm
-                                    </label>
-                                </div>
+                        <select name="accuracy" id="accuracy-select" class="form-select mb-3" aria-label="Default select example">
+                            <option value="5 mm">5 mm</option>
+                            <option value="10-15 mm">10-15 mm</option>
+                            <option value="20-30 mm">20-30 mm</option>
+                            <option value="30-40 mm">30-40 mm</option>
+                            <option value="Other">Other</option>
+                        </select>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="accuracy"
-                                        value="10-15 mm"
-                                        {{ (old('accuracy') == '10-15 mm' ) ? 'checked' : '' }}
-                                        id="accuracy2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="accuracy2">
-                                        10-15 mm
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="accuracy"
-                                        value="20-30 mm"
-                                        {{ (old('accuracy') == '20-30 mm' ) ? 'checked' : '' }}
-                                        id="accuracy3"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="accuracy3">
-                                        20-30 mm
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="accuracy"
-                                        value="30-40 mm"
-                                        {{ (old('accuracy') == '30-40 mm' ) ? 'checked' : '' }}
-                                        id="accuracy4"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="accuracy4">
-                                        30-40 mm
-                                    </label>
-                                </div>
-                            </div>
+                        <div id="other-accuracy-box" class="mb-4 d-none">
+                            <label for="other-accuracy" class="form-label">Other accuracy</label>
+                            <input name="other-accuracy" type="text" class="form-control" id="other-accuracy" value="{{old('other-accuracy', '')}}" placeholder="Write your variant here...">
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="accuracy" value="Other" {{ (old('accuracy') == 'Other' ) ? 'checked' : '' }} id="accuracy5" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="accuracy5">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="accuracy-other" value="{{old('accuracy-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
-                        </div>
+                        <script>
+                            const accuracySelect = document.getElementById('accuracy-select');
 
+                            const accuracyBox = document.getElementById('other-accuracy-box');
 
-                        <h4 class="fw-bold my-4">
+                            if (accuracySelect.value === 'Other') {
+                                if (accuracyBox.classList.contains('d-none')) {
+                                    accuracyBox.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!accuracyBox.classList.contains('d-none')) {
+                                    accuracyBox.classList.add('d-none');
+                                }
+                            }
+
+                            accuracySelect.addEventListener('change', function handleChange(event) {
+                                if (accuracyBox.classList.contains('d-none')) {
+                                    if (event.target.value === 'Other') {
+                                        accuracyBox.classList.remove('d-none');
+                                    }
+                                } else {
+                                    accuracyBox.classList.add('d-none');
+                                }
+                            });
+                        </script>
+
+                        <label class="form-label m-0">
                             In which currency to specify the price?*
-                        </h4>
+                        </label>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="currency"
-                                        value="€ EUR"
-                                        {{ (old('currency') == '€ EUR' ) ? 'checked' : '' }}
-                                        id="currency1"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="currency1">
-                                        € EUR
-                                    </label>
-                                </div>
+                        <select name="currency" id="currency-select" class="form-select mb-3" aria-label="Default select example">
+                            <option value="€ EUR">€ EUR</option>
+                            <option value="$ USD">$ USD</option>
+                            <option value="₤ GBP">₤ GBP</option>
+                            <option value="A$ AUD">A$ AUD</option>
+                            <option value="Other">Other</option>
+                        </select>
 
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="currency"
-                                        value="$ USD"
-                                        {{ (old('currency') == '$ USD' ) ? 'checked' : '' }}
-                                        id="currency2"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="currency2">
-                                        $ USD
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="currency"
-                                        value="₤ GBP"
-                                        {{ (old('currency') == '₤ GBP' ) ? 'checked' : '' }}
-                                        id="currency3"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="currency3">
-                                        ₤ GBP
-                                    </label>
-                                </div>
-
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input
-                                        class="form-check-input fw-bold border border-3 border-white shadow-none"
-                                        type="radio"
-                                        name="currency"
-                                        value="A$ AUD"
-                                        {{ (old('currency') == 'A$ AUD' ) ? 'checked' : '' }}
-                                        id="currency4"
-                                        style="width: 30px; height: 30px;"
-                                    >
-                                    <label class="form-check-label ms-1 mt-2 h5" for="currency4">
-                                        A$ AUD
-                                    </label>
-                                </div>
-                            </div>
+                        <div id="other-currency-box" class="mb-4 d-none">
+                            <label for="other-currency" class="form-label">Other currency</label>
+                            <input name="other-currency" type="text" class="form-control" id="other-currency" value="{{old('other-currency', '')}}" placeholder="Write your variant here...">
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="form-check d-flex align-items-center mb-3">
-                                    <input class="form-check-input fw-bold border border-3 border-white shadow-none" type="radio" name="currency" value="Other" {{ (old('currency') == 'Other' ) ? 'checked' : '' }} id="currency10" style="width: 30px; height: 30px;">
-                                    <label class="form-check-label ms-1 mt-2 h5" for="currency10">
-                                        Other
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-sm-9">
-                                <div class="mb-3">
-                                    <input class="form-control form-control-lg border-0 border-bottom border-3 border-white rounded-0 px-2 shadow-none" type="text" name="currency-other" value="{{old('currency-other', '')}}" placeholder="Write other variant" aria-label=".form-control-lg example">
-                                </div>
-                            </div>
+                        <script>
+                            const currencySelect = document.getElementById('currency-select');
+
+                            const currencyBox = document.getElementById('other-currency-box');
+
+                            if (currencySelect.value === 'Other') {
+                                if (currencyBox.classList.contains('d-none')) {
+                                    currencyBox.classList.toggle('d-none');
+                                }
+                            } else {
+                                if (!currencyBox.classList.contains('d-none')) {
+                                    currencyBox.classList.add('d-none');
+                                }
+                            }
+
+                            currencySelect.addEventListener('change', function handleChange(event) {
+                                if (currencyBox.classList.contains('d-none')) {
+                                    if (event.target.value === 'Other') {
+                                        currencyBox.classList.remove('d-none');
+                                    }
+                                } else {
+                                    currencyBox.classList.add('d-none');
+                                }
+                            });
+                        </script>
+
+                        <div class="mb-3">
+                            <label for="start" class="form-label">
+                                Start and finish of the project
+                            </label>
+                            <input name="start" type="text" class="form-control" id="start" placeholder="30.01.2024 - 30.05.2024" value="{{old('start', '')}}">
                         </div>
 
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="start"
-                            placeholder="Start and finish of the project"
-                            value="{{old('start', '')}}"
-                            aria-label=".form-control-lg example"
-                        />
+                        <div class="mb-3">
+                            <label for="address" class="form-label">
+                                Object address
+                            </label>
+                            <input name="address" type="text" class="form-control" id="address" placeholder="20 W 34th St., New York, NY 10001, United States" value="{{old('address', '')}}">
+                        </div>
 
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="address"
-                            placeholder="Object address"
-                            value="{{old('address', '')}}"
-                            aria-label=".form-control-lg example"
-                        />
+                        <div class="mb-3">
+                            <label for="link" class="form-label">
+                                Link to a Google Map
+                            </label>
+                            <input name="link" type="text" class="form-control" id="link" placeholder="https://www.google.com/maps" value="{{old('link', '')}}">
+                        </div>
 
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="link"
-                            placeholder="Link to a Google Map"
-                            value="{{old('link', '')}}"
-                            aria-label=".form-control-lg example"
-                        />
+                        <div class="mb-3">
+                            <label for="comment" class="form-label">
+                                Comment
+                            </label>
+                            <textarea name="comment" class="form-control" id="comment" rows="1"></textarea>
+                        </div>
 
-
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-0 border-3 border-bottom border-white shadow-none rounded-0 mt-4"
-                            type="text"
-                            name="comment"
-                            placeholder="Comment"
-                            value="{{old('comment', '')}}"
-                            aria-label=".form-control-lg example"
-                        />
-
-                        <h4 class="fw-semibold text-white mt-4 py-3">
-                            Select files to upload...
-                        </h4>
-
-                        <input
-                            class="form-control form-control-lg fw-semibold border border-3 border-white shadow-none rounded-0 mt-4 rounded-4"
-                            type="file"
-                            name="files[]"
-                            placeholder="Select files"
-                            id="files"
-                            multiple
-                        />
+                        <div class="mb-3">
+                            <label for="files" class="form-label">Select files to upload...</label>
+                            <input name="files[]" class="form-control" type="file" id="files" multiple>
+                        </div>
 
                         <div class="mt-5">
                             <x-turnstile data-theme="light" />
