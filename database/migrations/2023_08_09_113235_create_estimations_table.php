@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('estimations', function (Blueprint $table) {
             $table->id();
             $table->string('email');
+            $table->string('name');
             $table->json('disciplines');
             $table->text('units');
             $table->text('type');

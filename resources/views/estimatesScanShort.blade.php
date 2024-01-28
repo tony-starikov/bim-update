@@ -84,7 +84,7 @@
     </div>
 
     <div class="container-fluid" style="background-image: url(/images/estimates/about.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
-        <div class="container px-0 p-lg-5">
+        <div class="container px-0 px-lg-5">
             <div class="row py-5 px-lg-5">
 
                 <div class="col-12">
