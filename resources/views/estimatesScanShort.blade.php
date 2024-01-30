@@ -190,7 +190,7 @@
         <div class="container px-0 py-sm-5 p-lg-5">
             <div class="row justify-content-center px-0 p-lg-5">
                 <div class="col-lg-9 p-2 p-lg-5" style="border: 4px solid #72e0df;">
-                    <h2 class="fw-bold mb-3">
+                    <h2 class="fw-bold mb-4">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
                     <form method="post" class="footer-form" enctype="multipart/form-data" action="{{route('processingScanShort')}}">

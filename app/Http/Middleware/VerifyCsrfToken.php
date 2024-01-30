@@ -14,5 +14,10 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         '/estimates-project-scan-to-bim',
         '/scan-to-bim-estimates-project',
+        '/estimates-scan-to-bim-processing',
+        '/estimates-scan-to-bim-short-processing',
+        '/mep-estimates-project',
+        '/estimates-mep-short-processing',
+        '/estimates-mep-processing',
     ];
 }

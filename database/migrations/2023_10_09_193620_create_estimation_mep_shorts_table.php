@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('estimation_mep_shorts', function (Blueprint $table) {
             $table->id();
             $table->string('email');
+            $table->string('name');
             $table->json('disciplines');
             $table->json('services');
             $table->text('lod');
