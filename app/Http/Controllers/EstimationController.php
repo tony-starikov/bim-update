@@ -427,193 +427,224 @@ class EstimationController extends Controller
         return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
     }
 
-    public function processingMep(EstimationMepRequest $request)
+    public function processingMep(Request $request)
     {
+        $log = EstimationLog::create(['email' => $request->email, 'name' => $request->name]);
+
+        $validated = $request->validate([
+            'email' => 'required|email|max:255',
+            'name' => 'required|string|max:255',
+            'type' => 'required|string',
+            'language' => 'required|string',
+            'units' => 'required|string',
+            'disciplines' => 'required|array',
+            'services' => 'required|array',
+            'lod' => 'required|string',
+            'data' => 'required|array',
+            'version' => 'required|string',
+            'coordination' => 'nullable|array',
+            'fabrication' => 'nullable|string',
+            'duration' => 'required|string',
+            'draftsmen' => 'nullable|string',
+            'modelers' => 'nullable|string',
+            'coordinators' => 'nullable|string',
+            'managers' => 'nullable|string',
+            'deliverables' => 'required|array',
+            'downtime' => 'required|string',
+            'decisions' => 'required|string',
+            'reports' => 'nullable|string',
+            'comment' => 'nullable|string',
+            'files' => 'required|array',
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
+        ]);
+
         $parameters = $request->all();
 
-        if ( $parameters['type'] == 'Other' and !$request->filled('type-other') ) {
+        if ( $parameters['type'] == 'Other' and !$request->filled('other-type') ) {
             return back()->withErrors('Please, write your type of the building\construction.')->withInput();
         } else {
-            if ($parameters['type-other']) {
-                $parameters['type'] = $parameters['type-other'];
+            if ($parameters['other-type']) {
+                $parameters['type'] = $parameters['other-type'];
             }
-            unset($parameters['type-other']);
+            unset($parameters['other-type']);
         }
 
-        if ( $parameters['language'] == 'Other' and !$request->filled('language-other') ) {
+        if ( $parameters['language'] == 'Other' and !$request->filled('other-language') ) {
             return back()->withErrors('Please, write your language.')->withInput();
         } else {
-            if ($parameters['language-other']) {
-                $parameters['language'] = $parameters['language-other'];
+            if ($parameters['other-language']) {
+                $parameters['language'] = $parameters['other-language'];
             }
-            unset($parameters['language-other']);
+            unset($parameters['other-language']);
         }
 
-        if ( $parameters['units'] == 'Other' and !$request->filled('units-other') ) {
+        if ( $parameters['units'] == 'Other' and !$request->filled('other-units') ) {
             return back()->withErrors('Please, write your units.')->withInput();
         } else {
-            if ($parameters['units-other']) {
-                $parameters['units'] = $parameters['units-other'];
+            if ($parameters['other-units']) {
+                $parameters['units'] = $parameters['other-units'];
             }
-            unset($parameters['units-other']);
+            unset($parameters['other-units']);
         }
 
-        if (in_array('Other', $parameters['disciplines']) and !$request->filled('disciplines-other') ) {
+        if (in_array('Other', $parameters['disciplines']) and !$request->filled('other-disciplines') ) {
             return back()->withErrors('Please, write your discipline.')->withInput();
         } else {
             if (in_array('Other', $parameters['disciplines'])) {
                 $index = array_search('Other', $parameters['disciplines']);
                 unset($parameters['disciplines'][$index]);
-                $parameters['disciplines'][$index] = "Other: " . $parameters['disciplines-other'];
+                $parameters['disciplines'][$index] = "Other: " . $parameters['other-disciplines'];
             }
-            unset($parameters['disciplines-other']);
+            unset($parameters['other-disciplines']);
         }
 
-        if (in_array('Other', $parameters['services']) and !$request->filled('services-other') ) {
-            return back()->withErrors('Please, write your services.')->withInput();
+        if (in_array('Other', $parameters['services']) and !$request->filled('other-service') ) {
+            return back()->withErrors('Please, write your service.')->withInput();
         } else {
             if (in_array('Other', $parameters['services'])) {
                 $index = array_search('Other', $parameters['services']);
                 unset($parameters['services'][$index]);
-                $parameters['services'][$index] = "Other: " . $parameters['services-other'];
+                $parameters['services'][$index] = "Other: " . $parameters['other-service'];
             }
-            unset($parameters['services-other']);
+            unset($parameters['other-service']);
         }
 
-        if ( $parameters['lod'] == 'Other' and !$request->filled('lod-other') ) {
+        if ( $parameters['lod'] == 'Other' and !$request->filled('other-lod') ) {
             return back()->withErrors('Please, write your lod.')->withInput();
         } else {
-            if ($parameters['lod-other']) {
-                $parameters['lod'] = $parameters['lod-other'];
+            if ($parameters['other-lod']) {
+                $parameters['lod'] = $parameters['other-lod'];
             }
-            unset($parameters['lod-other']);
+            unset($parameters['other-lod']);
         }
 
-        if (in_array('Other', $parameters['data']) and !$request->filled('data-other') ) {
+        if (in_array('Other', $parameters['data']) and !$request->filled('other-data') ) {
             return back()->withErrors('Please, write your incoming data variant.')->withInput();
         } else {
             if (in_array('Other', $parameters['data'])) {
                 $index = array_search('Other', $parameters['data']);
                 unset($parameters['data'][$index]);
-                $parameters['data'][$index] = "Other: " . $parameters['data-other'];
+                $parameters['data'][$index] = "Other: " . $parameters['other-data'];
             }
-            unset($parameters['data-other']);
+            unset($parameters['other-data']);
         }
 
-        if ( $parameters['version'] == 'Other' and !$request->filled('version-other') ) {
+        if ( $parameters['version'] == 'Other' and !$request->filled('other-version') ) {
             return back()->withErrors('Please, write your Revit version variant.')->withInput();
         } else {
-            if ($parameters['version-other']) {
-                $parameters['version'] = $parameters['version-other'];
+            if ($parameters['other-version']) {
+                $parameters['version'] = $parameters['other-version'];
             }
-            unset($parameters['version-other']);
+            unset($parameters['other-version']);
         }
 
-        if (isset($parameters['coordinationSoftware'])) {
-            if (in_array('Other', $parameters['coordinationSoftware']) and !$request->filled('coordinationSoftware-other') ) {
+        if (isset($parameters['coordination'])) {
+            if (in_array('Other', $parameters['coordination']) and !$request->filled('other-coordination') ) {
                 return back()->withErrors('Please, write your coordination software variant.')->withInput();
             } else {
-                if (in_array('Other', $parameters['coordinationSoftware'])) {
-                    $index = array_search('Other', $parameters['coordinationSoftware']);
-                    unset($parameters['coordinationSoftware'][$index]);
-                    $parameters['coordinationSoftware'][$index] = "Other: " . $parameters['coordinationSoftware-other'];
+                if (in_array('Other', $parameters['coordination'])) {
+                    $index = array_search('Other', $parameters['coordination']);
+                    unset($parameters['coordination'][$index]);
+                    $parameters['coordination'][$index] = "Other: " . $parameters['other-coordination'];
                 }
             }
         }
 
-        unset($parameters['coordinationSoftware-other']);
+        unset($parameters['other-coordination']);
 
-        if (isset($parameters['fabrication_software'])) {
-            if ( $parameters['fabrication_software'] == 'Other' and !$request->filled('fabrication_software-other') ) {
+        if (isset($parameters['fabrication'])) {
+            if ( $parameters['fabrication'] == 'Other' and !$request->filled('other-fabrication') ) {
                 return back()->withErrors('Please, write your fabrication software variant.')->withInput();
             } else {
-                if ($parameters['fabrication_software-other']) {
-                    $parameters['fabrication_software'] = $parameters['fabrication_software-other'];
+                if ($parameters['other-fabrication']) {
+                    $parameters['fabrication'] = $parameters['other-fabrication'];
                 }
             }
         }
 
-        unset($parameters['fabrication_software-other']);
+        unset($parameters['other-fabrication']);
+
+
 
         if (isset($parameters['duration'])) {
-            if ( $parameters['duration'] == 'Other' and !$request->filled('duration-other') ) {
+            if ( $parameters['duration'] == 'Other' and !$request->filled('other-duration') ) {
                 return back()->withErrors('Please, write your duration variant.')->withInput();
             } else {
-                if ($parameters['duration-other']) {
-                    $parameters['duration'] = $parameters['duration-other'];
+                if ($parameters['other-duration']) {
+                    $parameters['duration'] = $parameters['other-duration'];
                 }
             }
         }
 
-        unset($parameters['duration-other']);
+        unset($parameters['other-duration']);
 
         if (isset($parameters['draftsmen'])) {
-            if ( $parameters['draftsmen'] == 'Other' and !$request->filled('draftsmen-other') ) {
-                return back()->withErrors('Please, write your draftsmens variant.')->withInput();
+            if ( $parameters['draftsmen'] == 'Other' and !$request->filled('other-draftsmen') ) {
+                return back()->withErrors('Please, write your draftsmen variant.')->withInput();
             } else {
-                if ($parameters['draftsmen-other']) {
-                    $parameters['draftsmen'] = $parameters['draftsmen-other'];
+                if ($parameters['other-draftsmen']) {
+                    $parameters['draftsmen'] = $parameters['other-draftsmen'];
                 }
             }
         }
 
-        unset($parameters['draftsmen-other']);
+        unset($parameters['other-draftsmen']);
 
         if (isset($parameters['modelers'])) {
-            if ( $parameters['modelers'] == 'Other' and !$request->filled('modelers-other') ) {
+            if ( $parameters['modelers'] == 'Other' and !$request->filled('other-modelers') ) {
                 return back()->withErrors('Please, write your modelers variant.')->withInput();
             } else {
-                if ($parameters['modelers-other']) {
-                    $parameters['modelers'] = $parameters['modelers-other'];
+                if ($parameters['other-modelers']) {
+                    $parameters['modelers'] = $parameters['other-modelers'];
                 }
             }
         }
 
-        unset($parameters['modelers-other']);
+        unset($parameters['other-modelers']);
 
         if (isset($parameters['coordinators'])) {
-            if ( $parameters['coordinators'] == 'Other' and !$request->filled('coordinators-other') ) {
+            if ( $parameters['coordinators'] == 'Other' and !$request->filled('other-coordinators') ) {
                 return back()->withErrors('Please, write your coordinators variant.')->withInput();
             } else {
-                if ($parameters['coordinators-other']) {
-                    $parameters['coordinators'] = $parameters['coordinators-other'];
+                if ($parameters['other-coordinators']) {
+                    $parameters['coordinators'] = $parameters['other-coordinators'];
                 }
             }
         }
 
-        unset($parameters['coordinators-other']);
+        unset($parameters['other-coordinators']);
 
         if (isset($parameters['managers'])) {
-            if ( $parameters['managers'] == 'Other' and !$request->filled('managers-other') ) {
+            if ( $parameters['managers'] == 'Other' and !$request->filled('other-managers') ) {
                 return back()->withErrors('Please, write your managers variant.')->withInput();
             } else {
-                if ($parameters['managers-other']) {
-                    $parameters['managers'] = $parameters['managers-other'];
+                if ($parameters['other-managers']) {
+                    $parameters['managers'] = $parameters['other-managers'];
                 }
             }
         }
 
-        unset($parameters['managers-other']);
+        unset($parameters['other-managers']);
 
-        if (in_array('Other', $parameters['deliverables']) and !$request->filled('deliverables-other') ) {
+        if (in_array('Other', $parameters['deliverables']) and !$request->filled('other-deliverables') ) {
             return back()->withErrors('Please, write your deliverables variant.')->withInput();
         } else {
             if (in_array('Other', $parameters['deliverables'])) {
                 $index = array_search('Other', $parameters['deliverables']);
                 unset($parameters['deliverables'][$index]);
-                $parameters['deliverables'][$index] = "Other: " . $parameters['deliverables-other'];
+                $parameters['deliverables'][$index] = "Other: " . $parameters['other-deliverables'];
             }
-            unset($parameters['deliverables-other']);
+            unset($parameters['other-deliverables']);
         }
 
         if (isset($parameters['reports'])) {
-            if ( $parameters['reports'] == 'Other' and !$request->filled('reports-other') ) {
+            if ( $parameters['reports'] == 'Other' and !$request->filled('other-reports') ) {
                 return back()->withErrors('Please, write your reports variant.')->withInput();
             } else {
-                if ($parameters['reports-other']) {
-                    $parameters['reports'] = $parameters['reports-other'];
+                if ($parameters['other-reports']) {
+                    $parameters['reports'] = $parameters['other-reports'];
                 }
-                unset($parameters['reports-other']);
+                unset($parameters['other-reports']);
             }
         }
 

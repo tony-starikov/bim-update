@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('estimation_meps', function (Blueprint $table) {
             $table->id();
             $table->string('email');
+            $table->string('name');
             $table->text('type');
             $table->text('language');
             $table->text('units');
@@ -22,8 +23,8 @@ return new class extends Migration
             $table->text('lod');
             $table->json('data');
             $table->text('version');
-            $table->json('coordinationSoftware')->nullable();
-            $table->text('fabrication_software')->nullable();
+            $table->json('coordination')->nullable();
+            $table->text('fabrication')->nullable();
             $table->text('duration');
             $table->text('draftsmen')->nullable();
             $table->text('modelers')->nullable();

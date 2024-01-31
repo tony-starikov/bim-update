@@ -17,6 +17,7 @@ class VerifyCsrfToken extends Middleware
         '/estimates-scan-to-bim-processing',
         '/estimates-scan-to-bim-short-processing',
         '/mep-estimates-project',
+        '/estimates-project-mep',
         '/estimates-mep-short-processing',
         '/estimates-mep-processing',
     ];
