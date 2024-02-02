@@ -197,17 +197,17 @@
                         @csrf
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email*</label>
+                            <label for="email" class="form-label fw-semibold">Email*</label>
                             <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" value="{{old('email', '')}}" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name*</label>
+                            <label for="name" class="form-label fw-semibold">Name*</label>
                             <input name="name" type="text" class="form-control" id="name" placeholder="John Dou" value="{{old('name', '')}}" required>
                         </div>
 
 
-                        <label class="form-label m-0">Disciplines*</label>
+                        <label class="form-label m-0 fw-semibold">Disciplines*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -311,7 +311,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Type of the building\construction*</label>
+                        <label class="form-label mb-2 fw-semibold">Type of the building\construction*</label>
 
 {{--                        {{ (old('type') == 'Residential Building' ) ? 'checked' : '' }}--}}
                         <select name="type" id="type-select" class="form-select mb-3" aria-label="Default select example">
@@ -355,18 +355,18 @@
                         </script>
 
                         <div class="mb-3">
-                            <label for="area" class="form-label">Building/construction area*</label>
+                            <label for="area" class="form-label fw-semibold">Building/construction area*</label>
                             <input name="area" type="text" class="form-control" id="area" placeholder="500m2" value="{{old('area', '')}}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="height" class="form-label">Height of a building/construction*</label>
+                            <label for="height" class="form-label fw-semibold">Height of a building/construction*</label>
                             <input name="height" type="text" class="form-control" id="height" placeholder="10m" value="{{old('height', '')}}">
                         </div>
 
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Task for modeling*
                         </label>
 
@@ -453,7 +453,7 @@
                             });
                         </script>
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             LOD (Level of Detail)*
                         </label>
 
@@ -531,7 +531,7 @@
                             });
                         </script>
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Project accuracy*
                         </label>
 
@@ -574,7 +574,7 @@
                             });
                         </script>
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             In which currency to specify the price?*
                         </label>
 
@@ -618,35 +618,35 @@
                         </script>
 
                         <div class="mb-3">
-                            <label for="start" class="form-label">
+                            <label for="start" class="form-label fw-semibold">
                                 Start and finish of the project
                             </label>
                             <input name="start" type="text" class="form-control" id="start" placeholder="30.01.2024 - 30.05.2024" value="{{old('start', '')}}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="address" class="form-label">
+                            <label for="address" class="form-label fw-semibold">
                                 Object address
                             </label>
                             <input name="address" type="text" class="form-control" id="address" placeholder="20 W 34th St., New York, NY 10001, United States" value="{{old('address', '')}}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="link" class="form-label">
+                            <label for="link" class="form-label fw-semibold">
                                 Link to a Google Map
                             </label>
                             <input name="link" type="text" class="form-control" id="link" placeholder="https://www.google.com/maps" value="{{old('link', '')}}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="comment" class="form-label">
+                            <label for="comment" class="form-label fw-semibold">
                                 Comment
                             </label>
                             <textarea name="comment" class="form-control" id="comment" rows="1"></textarea>
                         </div>
 
                         <div class="mb-3">
-                            <label for="files" class="form-label">Select files to upload...</label>
+                            <label for="files" class="form-label fw-semibold">Select files to upload...</label>
                             <input name="files[]" class="form-control" type="file" id="files" multiple>
                         </div>
 

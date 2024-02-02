@@ -201,7 +201,7 @@
         <div class="container px-0 py-sm-5 p-lg-5">
             <div class="row justify-content-center px-0 p-lg-5">
                 <div class="col-lg-9 p-2 p-lg-5" style="border: 4px solid #72e0df;">
-                    <h2 class="fw-bold mb-3">
+                    <h2 class="fw-bold mb-4">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
                     <form method="post" class="footer-form" enctype="multipart/form-data"
@@ -209,19 +209,19 @@
                         @csrf
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email*</label>
+                            <label for="email" class="form-label fw-semibold">Email*</label>
                             <input name="email" type="email" class="form-control" id="email"
                                    placeholder="name@example.com" value="{{old('email', '')}}" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name*</label>
+                            <label for="name" class="form-label fw-semibold">Name*</label>
                             <input name="name" type="text" class="form-control" id="name" placeholder="John Dou"
                                    value="{{old('name', '')}}" required>
                         </div>
 
 
-                        <label class="form-label m-0">Disciplines*</label>
+                        <label class="form-label fw-semibold m-0">Disciplines*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -343,7 +343,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Project Units*</label>
+                        <label class="form-label mb-2 fw-semibold">Project Units*</label>
 
                         {{--                        {{ (old('type') == 'Residential Building' ) ? 'checked' : '' }}--}}
                         <select name="units" id="units-select" class="form-select mb-3"
@@ -386,7 +386,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Type of the building\construction*</label>
+                        <label class="form-label mb-2 fw-semibold">Type of the building\construction*</label>
 
                         {{--                        {{ (old('type') == 'Residential Building' ) ? 'checked' : '' }}--}}
                         <select name="type" id="type-select" class="form-select mb-3"
@@ -432,19 +432,19 @@
                         </script>
 
                         <div class="mb-3">
-                            <label for="area" class="form-label">Building/construction area*</label>
+                            <label for="area" class="form-label fw-semibold">Building/construction area*</label>
                             <input name="area" type="text" class="form-control" id="area" placeholder="500m2"
                                    value="{{old('area', '')}}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="height" class="form-label">Height of a building/construction*</label>
+                            <label for="height" class="form-label fw-semibold">Height of a building/construction*</label>
                             <input name="height" type="text" class="form-control" id="height" placeholder="10m"
                                    value="{{old('height', '')}}">
                         </div>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Incoming Point Cloud*
                         </label>
 
@@ -640,7 +640,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Task for modeling*
                         </label>
 
@@ -741,7 +741,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Deliverables*
                         </label>
 
@@ -864,7 +864,7 @@
                             });
                         </script>
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Revit version*
                         </label>
 
@@ -912,7 +912,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             LOD (Level of Detail)*
                         </label>
 
@@ -1001,7 +1001,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             LOI (Level of Information)*
                         </label>
 
@@ -1088,7 +1088,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Project accuracy*
                         </label>
 
@@ -1133,7 +1133,7 @@
                             });
                         </script>
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             In which currency to specify the price?*
                         </label>
 
@@ -1179,7 +1179,7 @@
                         </script>
 
                         <div class="mb-3">
-                            <label for="start" class="form-label">
+                            <label for="start" class="form-label fw-semibold">
                                 Start and finish of the project
                             </label>
                             <input name="start" type="text" class="form-control" id="start"
@@ -1187,7 +1187,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="address" class="form-label">
+                            <label for="address" class="form-label fw-semibold">
                                 Object address
                             </label>
                             <input name="address" type="text" class="form-control" id="address"
@@ -1196,7 +1196,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="link" class="form-label">
+                            <label for="link" class="form-label fw-semibold">
                                 Link to a Google Map
                             </label>
                             <input name="link" type="text" class="form-control" id="link"
@@ -1204,19 +1204,19 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="comment" class="form-label">
+                            <label for="comment" class="form-label fw-semibold">
                                 Comment
                             </label>
                             <textarea name="comment" class="form-control" id="comment" rows="1"></textarea>
                         </div>
 
                         <div class="mb-3">
-                            <label for="files" class="form-label">Select files to upload...</label>
+                            <label for="files" class="form-label fw-semibold">Select files to upload...</label>
                             <input name="files[]" class="form-control" type="file" id="files" multiple>
                         </div>
 
                         <div class="mb-3">
-                            <label for="reference" class="form-label">Reference to the object</label>
+                            <label for="reference" class="form-label fw-semibold">Reference to the object</label>
                             <input
                                 class="form-control"
                                 type="text"

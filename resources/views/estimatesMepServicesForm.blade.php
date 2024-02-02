@@ -201,19 +201,19 @@
                         @csrf
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email*</label>
+                            <label for="email" class="form-label fw-semibold">Email*</label>
                             <input name="email" type="email" class="form-control" id="email"
                                    placeholder="name@example.com" value="{{old('email', '')}}" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name*</label>
+                            <label for="name" class="form-label fw-semibold">Name*</label>
                             <input name="name" type="text" class="form-control" id="name" placeholder="John Dou"
                                    value="{{old('name', '')}}" required>
                         </div>
 
 
-                        <label class="form-label mb-2">Type of the building\construction*</label>
+                        <label class="form-label mb-2 fw-semibold">Type of the building\construction*</label>
 
                         <select name="type" id="type-select" class="form-select mb-3" aria-label="Default select example">
                             <option {{ old('type') == 'Residential Building' ? "selected" : "" }} value="Residential Building">Residential Building</option>
@@ -255,7 +255,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Project language*</label>
+                        <label class="form-label mb-2 fw-semibold">Project language*</label>
 
                         <select name="language" id="language-select" class="form-select mb-3" aria-label="Default select example">
                             <option {{ old('language') == 'English' ? "selected" : "" }} value="English">English</option>
@@ -298,7 +298,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Project units*</label>
+                        <label class="form-label mb-2 fw-semibold">Project units*</label>
 
                         <select name="units" id="units-select" class="form-select mb-3" aria-label="Default select example">
                             <option {{ old('units') == 'Metric' ? "selected" : "" }} value="Metric">Metric</option>
@@ -339,7 +339,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">Disciplines*</label>
+                        <label class="form-label m-0 fw-semibold">Disciplines*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -428,7 +428,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">Services*</label>
+                        <label class="form-label m-0 fw-semibold">Services*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -517,7 +517,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">LOD (Level of development)*</label>
+                        <label class="form-label mb-2 fw-semibold">LOD (Level of development)*</label>
 
                         <select name="lod" id="lod-select" class="form-select mb-3" aria-label="Default select example">
                             <option {{ old('lod') == '100' ? "selected" : "" }} value="100">100</option>
@@ -560,7 +560,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">Incoming data*</label>
+                        <label class="form-label m-0 fw-semibold">Incoming data*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -681,7 +681,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Revit version*
                         </label>
 
@@ -729,7 +729,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">Coordination software</label>
+                        <label class="form-label m-0 fw-semibold">Coordination software</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -817,7 +817,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">
+                        <label class="form-label m-0 fw-semibold">
                             Fabrication software
                         </label>
 
@@ -863,7 +863,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Expected project duration*</label>
+                        <label class="form-label mb-2 fw-semibold">Expected project duration*</label>
 
                         <select name="duration" id="duration-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -912,7 +912,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Required number of draftsmen</label>
+                        <label class="form-label mb-2 fw-semibold">Required number of draftsmen</label>
 
                         <select name="draftsmen" id="draftsmen-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -955,7 +955,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Required number of modelers</label>
+                        <label class="form-label mb-2 fw-semibold">Required number of modelers</label>
 
                         <select name="modelers" id="modelers-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -998,7 +998,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Required number of coordinators</label>
+                        <label class="form-label mb-2 fw-semibold">Required number of coordinators</label>
 
                         <select name="coordinators" id="coordinators-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -1041,7 +1041,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">Required number of BIM managers</label>
+                        <label class="form-label mb-2 fw-semibold">Required number of BIM managers</label>
 
                         <select name="managers" id="managers-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -1084,7 +1084,7 @@
                         </script>
 
 
-                        <label class="form-label m-0">Deliverables*</label>
+                        <label class="form-label m-0 fw-semibold">Deliverables*</label>
 
                         <div class="row mb-3">
                             <div class="col-md-6">
@@ -1205,7 +1205,7 @@
                         </script>
 
 
-                        <label class="form-label mb-2">
+                        <label class="form-label mb-2 fw-semibold">
                             In the absence of initial data or answers from the customer, the contractor has the right to independently indicate the delivery of the project for the number of downtime days.*
                         </label>
 
@@ -1216,7 +1216,7 @@
                         </select>
 
 
-                        <label class="form-label mb-2">
+                        <label class="form-label mb-2 fw-semibold">
                             Possibility of making independent technical decisions by the performer.*
                         </label>
 
@@ -1227,7 +1227,7 @@
                         </select>
 
 
-                        <label class="form-label mb-2">Providing models and / or reports to control the work process.</label>
+                        <label class="form-label mb-2 fw-semibold">Providing models and / or reports to control the work process.</label>
 
                         <select name="reports" id="reports-select" class="form-select mb-3"
                                 aria-label="Default select example">
@@ -1273,7 +1273,7 @@
 
 
                         <div class="mb-3">
-                            <label for="comment" class="form-label">
+                            <label for="comment" class="form-label fw-semibold">
                                 Comment
                             </label>
                             <textarea name="comment" class="form-control" id="comment" rows="1"></textarea>
@@ -1281,7 +1281,7 @@
 
 
                         <div class="mb-3">
-                            <label for="files" class="form-label">Select files to upload*</label>
+                            <label for="files" class="form-label fw-semibold">Select files to upload*</label>
                             <input  name="files[]" class="form-control" type="file" id="files" multiple>
                             <div id="filesHelp" class="form-text">Architectural plan, MEP design drawings, rvt models, ifc models (jpg, pdf, dwg, rvt, ifc)</div>
                         </div>
