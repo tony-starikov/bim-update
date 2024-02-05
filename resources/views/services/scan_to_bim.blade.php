@@ -55,6 +55,33 @@
                 "caption": "BIMprove"
             }
         }
+    },
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "@id": "https://bim-prove.com/service/scan-to-bim/#breadcrumblist",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "@id": "https://bim-prove.com/#listItem",
+            "position": "1",
+            "name": "Home",
+            "item": {
+                "@type": "Thing",
+                "@id": "https://bim-prove.com/"
+            },
+            "nextItem": {
+                "@type": "ListItem",
+                "@id": "https://bim-prove.com/service/scan-to-bim/#listItem"
+            }
+        },{
+            "@type": "ListItem",
+            "@id": "https://bim-prove.com/service/scan-to-bim/#listItem",
+            "position": "2",
+            "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
+            "previousItem": {
+                "@type": "ListItem",
+                "name": "https://bim-prove.com/#listItem"
+            }
+        }]
     }
 }
 </script>
