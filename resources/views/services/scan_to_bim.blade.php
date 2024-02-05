@@ -14,19 +14,49 @@
 
 @section('schema')
 <script type="application/ld+json">
-    {
-    "@context": "http://schema.org",
-    "@type": "LocalBusiness",
-    "description": "Our Scan to BIM Services offer precise parametric As-built BIM Models and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.",
-    "name": "BIMprove | Scan to BIM Service",
-    "image": "https://bim-prove.com/images/bim_prove.png",
-    "url": "https://bim-prove.com/",
-    "@id": "https://bim-prove.com/",
-    "telephone": "+380668901648",
-    "email": "info@bim-prove.com",
-    "sameAs" : [ "https://www.scantobimservices.com/",
-    "https://origin-team.com/services/building-information-modeling-bim/"]
+{
+    "@type": "WebPage",
+    "@id": "https://bim-prove.com/service/scan-to-bim/#webpage",
+    "url": "https://bim-prove.com/service/scan-to-bim",
+    "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
+    "description": "Our Scan to BIM Services or Point Cloud to BIM Modeling delivers an accurate As-Built BIM Model depicting all elements in and around the building.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://bim-prove.com/#website",
+        "url": "https://bim-prove.com/",
+        "name": "BIMprove",
+        "description": "BIM Modeling Services - Scan to BIM, As-built drawings, MEP Coordination, Telecom design",
+        "inLanguage": "en-US",
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://bim-prove.com/#organization",
+            "url": "https://bim-prove.com/",
+            "name": "BIMprove llc",
+            "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld"],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://bim-prove.com/#organizationLogo",
+                "url": "https://bim-prove.com/images/bim_prove.png",
+                "width": "108",
+                "height": "140",
+                "caption": "BIMprove",
+                "telephone": "380668901648",
+                "contactType": "none"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://engbim.com/#/schema/logo/image/",
+                "url": "https://bim-prove.com/images/bim_prove.png",
+                "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+                "inLanguage": "en-US",
+                "width": "800",
+                "height": "600",
+                "caption": "BIMprove"
+            }
+        }
     }
+}
 </script>
 @endsection
 
@@ -38,8 +68,7 @@
                 <div class="row px-5 mt-5 text-center">
                     <div class="col-12 mt-5">
                         <h1 class="text-white mt-4 fw-bold">
-                            SCAN TO BIM<br>
-                            BIM MODELING SERVICES
+                            SCAN TO BIM SERVICES
                         </h1>
                         <div class="mt-4 row justify-content-center">
                             <div class="col-md-10 col-xl-7">
@@ -70,7 +99,7 @@
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
                         <img src="/images/service/scan_to_bim_images/icons/icon2-min.webp" loading="lazy" alt="icon2" class="img-fluid">
                         <h3 class="h6 text-white fw-semibold mt-4 text-center text-uppercase">
-                            REALITY CAPTURE
+                            BIM MODELING
                         </h3>
                     </div>
                     <div class="col-6 col-lg-3 p-2 p-lg-4 text-center">
@@ -388,7 +417,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -400,7 +429,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -412,7 +441,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -424,7 +453,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -436,7 +465,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -448,7 +477,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -460,7 +489,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -472,7 +501,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -484,7 +513,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -496,7 +525,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -508,7 +537,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -520,7 +549,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -532,7 +561,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -544,7 +573,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -556,7 +585,7 @@
                             <div class="col-sm-6 col-lg-4">
                                 <div class="row mt-4 pt-3">
                                     <div class="col-2 pe-0">
-                                        <img src="/images/dot.png" loading="lazy" alt="dot" class="images-fluid">
+                                        <img src="/images/dot2.png" loading="lazy" alt="dot" class="images-fluid">
                                     </div>
                                     <div class="col-10">
                                         <h3 class="h4 fw-bold">
@@ -743,17 +772,24 @@
                     <div class="row mt-4">
                         @foreach($works as $work)
                             <div class="col-md-6 mt-4">
-                                <div class="portfolio-container">
-                                    <div class="card border-0 text-bg-dark">
-                                        <img src="/images/{{ $work->image }}" loading="lazy" class="card-img" alt="...">
-                                    </div>
-                                    <div class="overlay">
-                                        <div class="row m-0 text-white">
-                                            <div class="col-12 p-0 text-center">
-                                                <img src="/images/{{ $work->image_overlay }}" class="img-fluid w-100" alt="...">
+                                <div class="card border-0">
+                                    <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                        <img src="/images/{{ $work->image }}" class="card-img" alt="{{ $work->title }}">
+                                        <div class="row align-items-center">
+                                            <div class="col-7 mt-2">
+                                                <a class="text-decoration-none" href="{{ route('portfolio.project', $work->slug) }}">
+                                                    <h3 class="text-dark h6 fw-bold m-0">{{ $work->title }}</h3>
+                                                </a>
+                                            </div>
+                                            <div class="col-5 mt-2">
+                                                <a href="{{ route('portfolio.project', $work->slug) }}" class="text-decoration-none">
+                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                        <span class="fw-bold h6 d-block my-1">EXPLORE</span>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         @endforeach
@@ -964,8 +1000,10 @@
                                     </span>
                                 </a>
                                 <div class="collapse" id="collapseExample1">
-                                    <div class="card card-body h5 fw-normal border-0">
-                                        Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document. We create BIM models by the Point Cloud in LODs: 100, 200, 300, 350.
+                                    <div class="card card-body border-0">
+                                        <p class="h5 fw-normal m-0">
+                                            Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document. We create BIM models by the Point Cloud in LODs: 100, 200, 300, 350. <a href="https://bim-prove.com/post/what-is-lod-level-of-detail-in-bim" class="text-dark">Learn more about Level of Detail in our article.</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
