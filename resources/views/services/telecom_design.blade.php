@@ -509,9 +509,9 @@
                     </h3>
                     <div class="row">
                         <div class="col-md-12 col-xxl-9">
-                            <button id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                <span class="fw-bold h4 d-block my-2">GO TO CALENDAR</span>
-                            </button>
+                            <a href="{{ route('contact') }}" id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100 mt-4" style="background-color: #6bdcdb" type="button">
+                                <span class="fw-bold h4 d-block my-2">CONTACT US</span>
+                            </a>
                         </div>
                     </div>
                 </div>
