@@ -33,7 +33,7 @@
                 <div class="col-lg-7">
                     @if($project->images)
                         @foreach($project->images as $image)
-                            <a data-fslightbox="gallery" href="http://localhost/images/{{ $image }}">
+                            <a data-fslightbox="gallery" href="{{ env('APP_URL') }}/images/{{ $image }}">
                                 <img class="img-fluid w-100 mb-4" src="/images/{{ $image }}" alt="{{ $image }}">
                             </a>
                         @endforeach
