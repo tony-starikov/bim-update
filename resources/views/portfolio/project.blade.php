@@ -31,7 +31,17 @@
                     <p class="text-secondary h6 fw-bold">{{ $project->service }}</p>
                 </div>
                 <div class="col-lg-7">
-                    <img class="img-fluid w-100" src="/images/{{ $project->image }}" alt="{{ $project->title }}">
+                    @if($project->images)
+                        @foreach($project->images as $image)
+                            <a data-fslightbox="gallery" href="http://localhost/images/{{ $image }}">
+                                <img class="img-fluid w-100 mb-4" src="/images/{{ $image }}" alt="{{ $image }}">
+                            </a>
+                        @endforeach
+                    @else
+                        <a data-fslightbox="gallery" href="http://localhost/images/{{ $project->image }}">
+                            <img class="img-fluid w-100" src="/images/{{ $project->image }}" alt="{{ $project->title }}">
+                        </a>
+                    @endif
                 </div>
                 <div class="col-lg-5 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
                     {!! $project->content !!}
@@ -121,6 +131,8 @@
             </div>
         </div>
     </div>
+
+    <script src="/images/js/fslightbox.js"></script>
 
 @endsection
 

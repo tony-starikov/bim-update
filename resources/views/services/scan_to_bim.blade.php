@@ -4,7 +4,7 @@
     @if($og)
         <meta property="og:title" content="{{ $og->title }}"/>
         <meta property="og:description" content="{{ $og->description }}"/>
-        <meta property="og:image" content="https://bim-prove.com/images/bim_prove.png">
+        <meta id="image" property="og:image" content="https://bim-prove.com/images/bim_prove.png">
         <meta property="og:image:width" content="122"/>
         <meta property="og:image:height" content="100"/>
         <meta property='og:type' content="website"/>
@@ -46,13 +46,18 @@
             },
             "image": {
                 "@type": "ImageObject",
-                "@id": "https://engbim.com/#/schema/logo/image/",
+                "@id": "https://bim-prove.com/#image",
                 "url": "https://bim-prove.com/images/bim_prove.png",
                 "contentUrl": "https://bim-prove.com/images/bim_prove.png",
                 "inLanguage": "en-US",
-                "width": "800",
-                "height": "600",
+                "width": "122",
+                "height": "100",
                 "caption": "BIMprove"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "380668901648",
+                "contactType": "none",
             }
         }
     },

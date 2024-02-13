@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Work;
 
 use MoonShine\Decorations\Block;
+use MoonShine\Fields\File;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
@@ -30,6 +31,13 @@ class WorkResource extends Resource
                 Slug::make('Slug')->from('title')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
                 Text::make('Service', 'service')->sortable()->required(),
                 TinyMce::make('Content')->hideOnIndex(),
+                Image::make('Files', 'images')
+                    ->disk('public')
+                    ->dir('works_images')
+                    ->multiple()
+                    ->removable()
+                    ->hideOnIndex()
+                    ->keepOriginalFileName(),
                 Image::make('Image')->disk('public')->dir('works')->removable(),
             ]),
         ];

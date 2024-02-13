@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('service')->nullable();
             $table->text('department')->nullable();
             $table->text('image')->nullable();
+            $table->json('images')->nullable();
             $table->text('image_small')->nullable();
             $table->text('image_overlay')->nullable();
             $table->text('content')->nullable();
