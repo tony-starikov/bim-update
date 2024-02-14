@@ -57,7 +57,7 @@
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "380668901648",
-                "contactType": "none",
+                "contactType": "none"
             }
         }
     },
