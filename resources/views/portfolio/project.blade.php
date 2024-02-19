@@ -30,7 +30,7 @@
                     <h1 class="text-dark h4 fw-bold m-0">{{ $project->title }}</h1>
                     <p class="text-secondary h6 fw-bold">{{ $project->service }}</p>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 order-2 order-lg-1">
                     <a data-fslightbox="gallery" href="http://localhost/images/{{ $project->image }}">
                         <img class="img-fluid w-100 mb-4" src="/images/{{ $project->image }}" alt="{{ $project->title }}">
                     </a>
@@ -46,10 +46,10 @@
                         </div>
                     @endif
                 </div>
-                <div class="col-lg-5 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
+                <div class="col-lg-5 order-1 order-lg-2 mt-4 mt-lg-0" style="font-family: 'Montserrat', sans-serif !important;">
                     {!! $project->content !!}
 
-                    <div class="row mt-5 justify-content-center justify-content-lg-start">
+                    <div class="row my-4 justify-content-center justify-content-lg-start">
                         <div class="col-sm-8 col-md-6 col-lg-12 col-xl-10 col-xxl-8">
                             @if($project->service === 'Scan to BIM')
                                 <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 mt-5">
+                <div class="col-12 order-3 mt-5">
                     <p class="text-dark text-center h4 fw-bold mt-5">OTHER PROJECTS</p>
                     <div class="row justify-content-evenly">
                         @foreach($other_projects as $work)
