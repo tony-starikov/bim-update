@@ -13,82 +13,88 @@
 @endsection
 
 @section('schema')
+
 <script type="application/ld+json">
-{
-    "@type": "WebPage",
-    "@id": "https://bim-prove.com/service/scan-to-bim/#webpage",
-    "url": "https://bim-prove.com/service/scan-to-bim",
-    "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
-    "description": "Our Scan to BIM Services or Point Cloud to BIM Modeling delivers an accurate As-Built BIM Model depicting all elements in and around the building.",
-    "inLanguage": "en-US",
-    "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://bim-prove.com/#website",
-        "url": "https://bim-prove.com/",
-        "name": "BIMprove",
-        "description": "BIM Modeling Services - Scan to BIM, As-built drawings, MEP Coordination, Telecom design",
-        "inLanguage": "en-US",
-        "publisher": {
-            "@type": "Organization",
-            "@id": "https://bim-prove.com/#organization",
-            "url": "https://bim-prove.com/",
-            "name": "BIMprove llc",
-            "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld"],
-            "logo": {
-                "@type": "ImageObject",
-                "@id": "https://bim-prove.com/#organizationLogo",
-                "url": "https://bim-prove.com/images/bim_prove.png",
-                "width": "108",
-                "height": "140",
-                "caption": "BIMprove",
-                "telephone": "380668901648",
-                "contactType": "none"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "@id": "https://bim-prove.com/#image",
-                "url": "https://bim-prove.com/images/bim_prove.png",
-                "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+    {
+        "@context":"https://schema.org",
+        "@graph":
+        [
+            {
+                "@type": "WebPage",
+                "@id": "https://bim-prove.com/service/scan-to-bim/#webpage",
+                "url": "https://bim-prove.com/service/scan-to-bim",
+                "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
+                "description": "Our Scan to BIM Services or Point Cloud to BIM Modeling delivers an accurate As-Built BIM Model depicting all elements in and around the building.",
                 "inLanguage": "en-US",
-                "width": "122",
-                "height": "100",
-                "caption": "BIMprove"
-            },
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "380668901648",
-                "contactType": "none"
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://bim-prove.com/#website",
+                    "url": "https://bim-prove.com/",
+                    "name": "BIMprove",
+                    "description": "BIM Modeling Services - Scan to BIM, As-built drawings, MEP Coordination, Telecom design",
+                    "inLanguage": "en-US",
+                    "publisher": {
+                        "@type": "Organization",
+                        "@id": "https://bim-prove.com/#organization",
+                        "url": "https://bim-prove.com/",
+                        "name": "BIMprove llc",
+                        "telephone": "+380668901648",
+                        "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld"],
+                        "logo": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#organizationLogo",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "width": "108",
+                            "height": "140",
+                            "caption": "BIMprove"
+                        },
+                        "image": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#image",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+                            "inLanguage": "en-US",
+                            "width": "122",
+                            "height": "100",
+                            "caption": "BIMprove"
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "380668901648",
+                            "contactType": "none"
+                        }
+                    }
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://bim-prove.com/service/scan-to-bim/#breadcrumblist",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "@id": "https://bim-prove.com/#listItem",
+                        "position": "1",
+                        "name": "Home",
+                        "item": {
+                            "@type": "Thing",
+                            "@id": "https://bim-prove.com/"
+                        },
+                        "nextItem": {
+                            "@type": "ListItem",
+                            "@id": "https://bim-prove.com/service/scan-to-bim/#listItem"
+                        }
+                    },{
+                        "@type": "ListItem",
+                        "@id": "https://bim-prove.com/service/scan-to-bim/#listItem",
+                        "position": "2",
+                        "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
+                        "previousItem": {
+                            "@type": "ListItem",
+                            "name": "https://bim-prove.com/#listItem"
+                        }
+                    }]
+                }
             }
-        }
-    },
-    "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "@id": "https://bim-prove.com/service/scan-to-bim/#breadcrumblist",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "@id": "https://bim-prove.com/#listItem",
-            "position": "1",
-            "name": "Home",
-            "item": {
-                "@type": "Thing",
-                "@id": "https://bim-prove.com/"
-            },
-            "nextItem": {
-                "@type": "ListItem",
-                "@id": "https://bim-prove.com/service/scan-to-bim/#listItem"
-            }
-        },{
-            "@type": "ListItem",
-            "@id": "https://bim-prove.com/service/scan-to-bim/#listItem",
-            "position": "2",
-            "name": "Scan to BIM Services | Point Cloud to BIM Modeling",
-            "previousItem": {
-                "@type": "ListItem",
-                "name": "https://bim-prove.com/#listItem"
-            }
-        }]
+        ]
     }
-}
 </script>
 @endsection
 

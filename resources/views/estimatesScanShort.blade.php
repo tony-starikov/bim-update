@@ -17,7 +17,7 @@
 @endsection
 
 @section('main')
-    <div class="container-fluid" style="background-image: url(/images/estimates/header_main.png); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover; min-height: 100vh;">
+    <div class="container-fluid" style="background-image: url(/images/estimates/header_main.webp); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row py-5 px-lg-5">
 
@@ -39,40 +39,24 @@
 
                 <div class="col-12 my-3">
                     <div class="row">
-                        <div class="col-12 mt-3">
-                            <h1 class="text-white fw-bold mt-5 mb-0">
-                                BIM ESTIMATES FOR YOUR PROJECT<br>
+                        <div class="col-12 px-md-0 mt-3">
+                            <h2 class="display-5 text-white fw-bold mt-5 mb-0">
+                                BIM PROJECT ESTIMATE IN 24 HOURS<br>
                                 SCAN TO BIM SERVICE
-                            </h1>
+                            </h2>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md-11 col-xl-10 mt-5">
-                            <h4 class="text-white">
-                                Get an estimate for your BIM project from BIMprove LLC. Personalized approach to each client.
-                            </h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-9 col-xl-8 mt-5">
+                        <div class="col-8 px-md-0 mt-5">
                             <h4 class="text-white">
                                 Our team of experts will analyze the unique requirements of your project and provide an accurate and detailed estimate.
                             </h4>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6 mt-5">
-                            <h4 class="text-white">
-                                Request a free estimate now! Maximize the potential of your BIM project.
-                            </h4>
-                        </div>
-                    </div>
-
                     <div class="row pt-2">
-                        <div class="col-md-5 col-xl-4 mt-5">
+                        <div class="col-md-5 col-xl-4 mt-5 p-md-0">
                             <a href="{{ route('showService', 'scan-to-bim') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center" style="background-color: #43aeb6">
                                 <span class="fw-bold h5 d-block my-2">SCAN TO BIM SERVICE</span>
                             </a>
