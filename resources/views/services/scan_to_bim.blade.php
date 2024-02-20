@@ -96,6 +96,70 @@
         ]
     }
 </script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What are the benefits of scan to BIM service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scan to BIM service offers several benefits, such as accurate and detailed documentation of existing conditions, improved project planning and coordination, reduced construction time and costs, and enhanced facility management. Scan to BIM service can also help to identify potential clashes or design issues early on, minimizing rework and changes during the construction phase. Overall, scan to BIM service can lead to more efficient and cost-effective project delivery."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is Level of detail (LOD)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Level of Design / Development / Detail (LOD) is the overall state of your information model at a particular point in its design process. This includes not only graphical objects, but also the data associated with the objects. Your model should develop over time from a very coarse design to the record drawings and as-builts. This process has been distilled down into five distinct categories as formalized in the AIA E202 contract document. We create BIM models by the Point Cloud in LODs: 100, 200, 300, 350. Learn more about Level of Detail in our article."
+        }
+      },{
+        "@type": "Question",
+        "name": "How long does it take to complete a project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The duration of a Scan to BIM modeling depends on several factors such as the complexity of the project, the scope of work, the size of the area to be scanned, and the accuracy required. Typically, a scan to BIM project can take anywhere from a from few days to 1-2 months."
+        }
+      },{
+        "@type": "Question",
+        "name": "What results will you get by using our service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The deliverables of a Scan to BIM service can vary depending on the requirements of the project. However, some common deliverables include 3D BIM models, 2D drawings, point clouds, clash detection reports, and as-built documentation. These deliverables can be used for various purposes such as construction planning, facility management, and renovation projects."
+        }
+      },{
+        "@type": "Question",
+        "name": "What types of projects can 3D modeling be helpful for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scan to BIM service can benefit a wide range of projects, including those in the architecture, engineering, and construction industries. Some examples include renovation and retrofit projects, heritage preservation, building information modeling, and plant design and construction."
+        }
+      },{
+        "@type": "Question",
+        "name": "Who will benefit from our Point Cloud BIM modeling services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With 7 years of BIM modeling experience, our team has extensive knowledge with a variety of clients. BIM modeling services (also known as Scan to BIM) are suitable for company types such as Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies."
+        }
+      },{
+        "@type": "Question",
+        "name": "Why Choose Our Scan to BIM Services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BIMprove employs Point Cloud specialists, BIM modelers and CAD drafters who can accurately process Point Cloud data, then create a 3D BIM models with the required LOD, and create 2D drawings with dimensions, annotations and overlay layers if required. We guarantee on-time delivery: Accurate point cloud reproduction / 3D BIM models with the required LOD level from 100 to 350 / 2D drawings with required data."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is As-built?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An As-built drawing is a drawing that we, as a digital construction contractor, create after the successful completion of a project based on BIM models. Construction workers typically compare the construction drawing to the original drawings and specifications created at the beginning of the project. These are required documents on every construction project."
+        }
+      }]
+    }
+</script>
 @endsection
 
 @section('main')

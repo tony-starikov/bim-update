@@ -31,7 +31,7 @@
                     <p class="text-secondary h6 fw-bold">{{ $project->service }}</p>
                 </div>
                 <div class="col-lg-7 order-2 order-lg-1">
-                    <a data-fslightbox="gallery" href="http://localhost/images/{{ $project->image }}">
+                    <a data-fslightbox="gallery" href="{{ env('APP_URL') }}/images/{{ $project->image }}">
                         <img class="img-fluid w-100 mb-4" src="/images/{{ $project->image }}" alt="{{ $project->title }}">
                     </a>
                     @if($project->images)
