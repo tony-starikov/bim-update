@@ -12,48 +12,112 @@
     @endif
 @endsection
 
-{{--@section('schema')--}}
-{{--    @if($og)--}}
-{{--        <script type="application/ld+json" class="yoast-schema-graph">--}}
-{{--          {--}}
-{{--            "@context": "https://bim-prove.com/",--}}
-{{--            "@graph": [--}}
-{{--              {--}}
-{{--                "@type": "WebPage",--}}
-{{--                "@id": "https://bim-prove.com/",--}}
-{{--                "url": "https://bim-prove.com/",--}}
-{{--                "name": "{{ $og->title }}",--}}
-{{--                "isPartOf": { "@id": "https://bim-prove.com/#website" },--}}
-{{--                "primaryImageOfPage": { "@id": "https://bim-prove.com/images/bim_prove.png" },--}}
-{{--                "image": { "@id": "https://bim-prove.com/images/bim_prove.png" },--}}
-{{--                "thumbnailUrl": "https://bim-prove.com/images/bim_prove.png",--}}
-{{--                "description": "{{ $og->description }}",--}}
-{{--                "inLanguage": "en-US"--}}
-{{--              },--}}
-{{--              {--}}
-{{--                "@type": "ImageObject",--}}
-{{--                "inLanguage": "en-US",--}}
-{{--                "@id": "https://bim-prove.com/#primaryimage",--}}
-{{--                "url": "https://bim-prove.com/images/bim_prove.png",--}}
-{{--                "contentUrl": "https://bim-prove.com/images/bim_prove.png",--}}
-{{--                "width": 122,--}}
-{{--                "height": 100,--}}
-{{--                "caption": "logo"--}}
-{{--              },--}}
-{{--              {--}}
-{{--                "@type": "WebSite",--}}
-{{--                "@id": "https://bim-prove.com/",--}}
-{{--                "url": "https://bim-prove.com/",--}}
-{{--                "name": "{{ $og->title }}",--}}
-{{--                "description": "{{ $og->description }}",--}}
-{{--                "publisher": { "@id": "https://bim-prove.com/" },--}}
-{{--                "inLanguage": "en-US"--}}
-{{--              },--}}
-{{--            ]--}}
-{{--          }--}}
-{{--        </script>--}}
-{{--    @endif--}}
-{{--@endsection--}}
+@section('schema')
+
+<script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@graph":
+        [
+            {
+                "@type": "WebPage",
+                "@id": "https://bim-prove.com/#webpage",
+                "url": "https://bim-prove.com/",
+                "name": "Revit Modeling Services | BIMprove",
+                "description": "BIM outsourcing at a favorable price. Accurate and fully coordinated BIM models. We work in the USA | EU",
+                "inLanguage": "en-US",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://bim-prove.com/#website",
+                    "url": "https://bim-prove.com/",
+                    "name": "BIMprove",
+                    "description": "BIM Modeling Services - Scan to BIM, As-built drawings, MEP Coordination, Telecom design",
+                    "inLanguage": "en-US",
+                    "publisher": {
+                        "@type": "Organization",
+                        "@id": "https://bim-prove.com/#organization",
+                        "url": "https://bim-prove.com/",
+                        "name": "BIMprove llc",
+                        "telephone": "+380668901648",
+                        "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld", "https://www.youtube.com/@bimpr0ve"],
+                        "logo": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#organizationLogo",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "width": "108",
+                            "height": "140",
+                            "caption": "BIMprove"
+                        },
+                        "image": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#image",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+                            "inLanguage": "en-US",
+                            "width": "122",
+                            "height": "100",
+                            "caption": "BIMprove"
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "380668901648",
+                            "contactType": "none",
+                            "address": "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, GB"
+                        }
+                    }
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://bim-prove.com/#breadcrumblist",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "@id": "https://bim-prove.com/#listItem",
+                        "position": "1",
+                        "name": "Home",
+                        "item": {
+                            "@type": "Thing",
+                            "@id": "https://bim-prove.com/"
+                        }
+                    }]
+                },
+                "about": {
+                        "@type": "Organization",
+                        "@id": "https://bim-prove.com/#organization",
+                        "url": "https://bim-prove.com/",
+                        "name": "BIMprove llc",
+                        "telephone": "+380668901648",
+                        "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld", "https://www.youtube.com/@bimpr0ve"],
+                        "logo": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#organizationLogo",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "width": "108",
+                            "height": "140",
+                            "caption": "BIMprove"
+                        },
+                        "image": {
+                            "@type": "ImageObject",
+                            "@id": "https://bim-prove.com/#image",
+                            "url": "https://bim-prove.com/images/bim_prove.png",
+                            "contentUrl": "https://bim-prove.com/images/bim_prove.png",
+                            "inLanguage": "en-US",
+                            "width": "122",
+                            "height": "100",
+                            "caption": "BIMprove"
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "380668901648",
+                            "contactType": "none",
+                            "address": "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, GB"
+                        }
+                }
+            }
+        ]
+    }
+</script>
+
+@endsection
 
 @section('main')
 

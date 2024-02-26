@@ -17,7 +17,7 @@
 @endsection
 
 @section('main')
-    <div class="container-fluid" style="background-image: url(/images/estimates/header_main.webp); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
+    <div class="container-fluid" style="background-image: url(/images/estimates/header_main1.webp); background-position: center; background-repeat: no-repeat; background-attachment: local; background-size: cover;">
         <div class="container px-0 p-lg-5">
             <div class="row py-5 px-lg-5">
 
@@ -74,8 +74,8 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="fw-bold mb-0">
-                                PROJECT ESTIMATE IN 24 HOURS
+                            <h2 class="fw-semibold text-uppercase h3 mb-0">
+                                Personalized approach to each client from BIMprove LLC.
                             </h2>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
         <div class="container px-0 py-sm-5 p-lg-5">
             <div class="row justify-content-center px-0 p-lg-5">
                 <div class="col-lg-9 p-2 p-lg-5" style="border: 4px solid #72e0df;">
-                    <h2 class="fw-bold mb-4">
+                    <h2 class="fw-semibold h3 mb-4">
                         ESTIMATE YOUR PROJECT RIGHT NOW!
                     </h2>
                     <form method="post" class="footer-form" enctype="multipart/form-data" action="{{route('processingScanShort')}}">

@@ -39,7 +39,7 @@
                         "url": "https://bim-prove.com/",
                         "name": "BIMprove llc",
                         "telephone": "+380668901648",
-                        "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld"],
+                        "sameAs": ["https://www.linkedin.com/company/bimprove/", "https://www.instagram.com/bimprove/", "https://www.facebook.com/bimproveworld", "https://www.youtube.com/@bimpr0ve"],
                         "logo": {
                             "@type": "ImageObject",
                             "@id": "https://bim-prove.com/#organizationLogo",
@@ -61,7 +61,8 @@
                         "contactPoint": {
                             "@type": "ContactPoint",
                             "telephone": "380668901648",
-                            "contactType": "none"
+                            "contactType": "none",
+                            "address": "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, GB"
                         }
                     }
                 },
