@@ -232,6 +232,10 @@
             background: linear-gradient(to right, #b2f3ee, #eaefee);
         }
 
+        .horizontal-gradient-docs {
+            background: linear-gradient(to right, #eaefee, #5cd8d4);
+        }
+
         .horizontal-gradient-calendar {
             background: linear-gradient(to right, #aabcbf, #c4d8db);
         }
@@ -446,6 +450,12 @@
                                                 FAMILIES
                                             </a>
                                         </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold"
+                                               href="{{ route('docs') }}">
+                                                DOCUMENTS
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
@@ -459,6 +469,13 @@
                                     <a href="{{ route('families') }}" class="nav-link">
                                         <p class="h6 m-0 fw-bold text-dark">
                                             FAMILIES
+                                        </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
+                                    <a href="{{ route('docs') }}" class="nav-link">
+                                        <p class="h6 m-0 fw-bold text-dark">
+                                            DOCUMENTS
                                         </p>
                                     </a>
                                 </li>

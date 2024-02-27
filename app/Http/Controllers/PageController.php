@@ -75,6 +75,54 @@ class PageController extends Controller
         return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
     }
 
+    public function bookMeeting(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $page_info = Page::where('name', 'contact')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('bookMeeting', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+    }
+
+    public function docs(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $page_info = Page::where('name', 'contact')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        return view('docs', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+    }
+
     public function thank_you(Request $request)
     {
         $og = null;

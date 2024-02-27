@@ -29,9 +29,11 @@ use Spatie\Sitemap\Tags\Url;
 
 Route::get('/', [PageController::class, 'main'])->name('main');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::get('/book-a-meeting', [PageController::class, 'bookMeeting'])->name('bookMeeting');
 //Route::get('/success', [PageController::class, 'success'])->name('success');
 Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
+Route::get('/checking-the-model-in-revit-scan-to-bim', [PageController::class, 'docs'])->name('docs');
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/portfolio/{slug}', [PortfolioController::class, 'project'])->name('portfolio.project');

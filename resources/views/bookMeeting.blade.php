@@ -18,12 +18,21 @@
         <div class="container p-0 p-lg-5">
             <div class="row pt-5 pb-2 px-0 px-lg-5">
                 <div class="col-lg-6 mt-5">
-                    <h1 class="text-white fw-bold my-2">CONTACT US</h1>
+                    <h1 class="text-white fw-bold my-2">BOOK A MEETING</h1>
 
-                    <script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="a9502e08c5db13bf4b8dc917463d33adc65e4914cbc0158eb7e7866b8c7edf7a"></script>
-
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget mt-lg-4 w-100" data-url="https://calendly.com/bimprove/30min" style="height:1000px;"></div>
+                    <script type="text/javascript">
+                        window.addEventListener('DOMContentLoaded', (event) => {
+                            let script = document.createElement('script');
+                            script.src = "https://assets.calendly.com/assets/external/widget.js";
+                            script.innerHTML = ''
+                            document.body.appendChild(script);
+                        });
+                    </script>
+                    <!-- Calendly inline widget end -->
                 </div>
-                <div class="col-lg-6 mt-lg-5 p-5 p-lg-0 d-flex align-items-center">
+                <div class="col-lg-6 mt-5 p-5 p-lg-0 d-flex align-items-center">
                     <div class="row px-0 p-lg-5">
                         <div class="col-12">
                             <h2 class="text-white h2 fw-bold">
@@ -92,21 +101,6 @@
                                             Let's Talk: {{ $contacts->where('name', 'phone')->first()->info }}
                                         </p>
                                     </a>
-                                    <div class="row align-items-center">
-                                        <div class="col">
-                                            <p class="h5 text-white fw-semibold">
-                                                Let's Meeting:
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-xl-8 justify-content-start">
-                                            <a href="{{ route('bookMeeting') }}"
-                                               class="text-white text-decoration-none">
-                                                <button id="button-five-stars-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #6de1df" type="button">
-                                                    <span class="fw-bold h6 d-block my-2">BOOK AN APPOINTMENT</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
