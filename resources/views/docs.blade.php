@@ -24,7 +24,7 @@
 
                 <div class="col-lg-7">
                     <h1 class="fw-bold">
-                        Model-checking tools in Revit?
+                        Model-checking tools in Revit
                     </h1>
                     <h2 class="h3 fw-bold text-white mb-5">
                         Get a checklist detailing 10 effective tools
@@ -33,15 +33,15 @@
                 </div>
             </div>
 
-            <div class="row p-5 rounded-5 bg-white">
+            <div class="row mb-5 p-5 rounded-5 bg-white">
                 <div class="col-12">
-                    <p class="h5">
-                        Are you tired of struggling with bringing your ideas to life inside Revit? Wait is over, and the solution is here! We have created a precise step-by-step manual for proper 3D models to delve into the world of both stunning and professional designs in Revit. Get a checklist detailing 10 effective tools to master the art of 3D modeling with precision and finesse that only true experts can!
+                    <p class="h5 mb-4">
+                        Are you tired of struggling with bringing your ideas to life inside Revit, <a class="text-dark" href="https://bim-prove.com/service/scan-to-bim"><span>working in Scan to BIM</span></a>? Wait is over, and the solution is here! We have created a precise step-by-step manual for proper 3D models on Scan to BIM to delve into the world of both stunning and professional designs in Revit. Get a checklist detailing 10 effective tools to master the art of <a class="text-dark" href="https://bim-prove.com/service/scan-to-bim"><span>3D modeling by Point Cloud</span></a> with precision and finesse that only true Scan to BIM experts can!
                     </p>
                     <p class="h5">
                         You’ll learn about:
                     </p>
-                    <ul>
+                    <ul class="mb-4">
                         <li class="h5">The process of preparing and creating a floor plan</li>
                         <li class="h5">
                             Setting the correct phase and creating sections
@@ -73,6 +73,6 @@
 
 @section('canonical')
     @if($page_info->canonical)
-        <link rel="canonical" href="{{ $page_info->canonical }}">
+        <link rel="canonical" href="https://bim-prove.com/checking-the-model-in-revit-scan-to-bim">
     @endif
 @endsection

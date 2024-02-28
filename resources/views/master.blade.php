@@ -453,7 +453,7 @@
                                         <li>
                                             <a class="dropdown-item fw-semibold"
                                                href="{{ route('docs') }}">
-                                                DOCUMENTS
+                                                CHECKLISTS
                                             </a>
                                         </li>
                                     </ul>
@@ -475,7 +475,7 @@
                                 <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
                                     <a href="{{ route('docs') }}" class="nav-link">
                                         <p class="h6 m-0 fw-bold text-dark">
-                                            DOCUMENTS
+                                            CHECKLISTS
                                         </p>
                                     </a>
                                 </li>
