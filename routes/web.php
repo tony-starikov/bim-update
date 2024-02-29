@@ -102,6 +102,7 @@ Route::get('/sitemap', function() {
     $sitemap->add(Url::create("https://bim-prove.com/products/families"));
 
     $sitemap
+        ->add(Url::create('https://bim-prove.com/checking-the-model-in-revit-scan-to-bim'))
         ->add(Url::create('https://bim-prove.com/contact'))
         ->add(Url::create('https://bim-prove.com/policy'));
 

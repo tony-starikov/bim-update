@@ -33,11 +33,6 @@
                 <div class="col-lg-11 col-xl-9">
                     <div class="row">
                         <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 ps-sm-0">
-                            <a href="{{ route('products') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
-                                <span class="fw-bold h5 my-2">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 pe-sm-0">
                             <a href="{{ route('families') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
                                 <span class="fw-bold h5 my-2">REVIT FAMILIES</span>
                             </a>

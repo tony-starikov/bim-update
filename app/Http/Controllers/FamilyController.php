@@ -26,7 +26,7 @@ class FamilyController extends Controller
 
         $page_info = Page::where('name', 'families')->first();
 
-        $families = Family::orderBy('id', 'desc')->paginate(6);
+        $families = Family::orderBy('id', 'desc')->get();
 
         $services = Service::all();
 

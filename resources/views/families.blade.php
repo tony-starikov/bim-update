@@ -26,7 +26,7 @@
                         Families in Autodesk Revit are the foundation of all digital modeling. Without them, there would be no 3D models, which are now so prevalent in AEC. Moreover, the creation of families in Revit has already gone beyond the realm of AEC and covers much bigger horizons.
                     </p>
                     <p class="h6 fw-semibold mt-4">
-                        On this page, you will find scripts and plugins from our development team free of charge.
+                        On this page you can find Revit families from our BIM content creation team for free.
                     </p>
                 </div>
 
@@ -35,11 +35,6 @@
                         <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 ps-sm-0">
                             <a href="{{ route('products') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
                                 <span class="fw-bold h5 my-2">REVIT PLUGINS</span>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-4 mt-4 mt-sm-5 pe-sm-0">
-                            <a href="{{ route('families') }}" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
-                                <span class="fw-bold h5 my-2">REVIT FAMILIES</span>
                             </a>
                         </div>
                     </div>
