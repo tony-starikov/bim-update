@@ -57,22 +57,22 @@
                 </div>
                 @foreach($families as $family)
                     <div class="col-md-6 col-xl-4 mt-4">
-                        <div class="card rounded-4 h-100 px-2 border-0" style="background-color: rgba(168,175,175,0.2);">
-                            <div class="card-body">
-                                <div class="row" style="min-height: 50px;">
-                                    <div class="col-12">
-                                        <h6 class="h5 fw-bold">
-                                            {{ $family->title_en }}
-                                        </h6>
-                                    </div>
-                                </div>
+                        <div class="card shadow-sm rounded-4 h-100 px-2" style="border: 4px solid #6bdcdb;">
+                            <div class="card-body pb-0">
                                 <div class="row justify-content-center">
                                     <div class="col-11 py-2">
                                         <img class="img-fluid w-100 rounded" src="/images/{{ $family->image }}" alt="{{ $family->title_en }}">
                                     </div>
                                 </div>
+                                <div class="row" style="min-height: 50px;">
+                                    <div class="col-12">
+                                        <h6 class="h5 fw-semibold">
+                                            {{ $family->title_en }}
+                                        </h6>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer border-0 bg-transparent mt-2">
+                            <div class="card-footer border-0 bg-transparent">
                                 <div class="row">
                                     <div class="col-12">
                                         <h6 class="h5 fw-bold">
