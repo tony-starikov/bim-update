@@ -14,62 +14,13 @@
 
 @section('main')
 
-    <div class="d-none d-xl-block container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
+    <div class="container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
         <div class="container p-5">
             <div class="row p-5">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
+                <div class="col-12 px-0 mt-5">
+                    <h5 class="text-white fw-bold h1 mt-5">
                         BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-none d-lg-block d-xl-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container p-5">
-            <div class="row p-5">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-none d-md-block d-lg-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container">
-            <div class="row px-0 py-5">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-none d-sm-block d-md-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container">
-            <div class="row px-0 py-5">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="d-block d-sm-none container-fluid" style="background: url(/images/main_page/cubes.png) no-repeat center center local; background-size: cover;">
-
-        <div class="container">
-            <div class="row px-0 py-5">
-                <div class="col-12 px-0 mt-5 order-first">
-                    <h1 class="text-white display-5 fw-bold mt-5">
-                        BIMPROVE BLOG
-                    </h1>
+                    </h5>
                 </div>
             </div>
         </div>
@@ -77,147 +28,31 @@
 
     <div class="container-fluid">
         <div class="container p-md-0 p-lg-5">
-
-            <div class="d-none d-xxl-flex row p-5 pt-1">
+            <div class="row">
                 @foreach($posts as $post)
-                    <div class="col-6 mt-4">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                        <h5 class="text-secondary mt-2">
-                            {{ $post->date }}
-                        </h5>
-                        <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                            <h6 class="h3 fw-bold">
-                                {{ $post->title_en }}
-                            </h6>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-
-            <div class="d-none d-xl-flex d-xxl-none row p-5 pt-1">
-                @foreach($posts as $post)
-                    <div class="col-6 mt-4">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                        <h5 class="text-secondary mt-2">
-                            {{ $post->date }}
-                        </h5>
-                        <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                            <h6 class="h4 fw-bold">
-                                {{ $post->title_en }}
-                            </h6>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-
-            <div class="d-none d-lg-flex d-xl-none row p-5 pt-1">
-                @foreach($posts as $post)
-                    <div class="col-6 mt-4">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                        <h5 class="text-secondary mt-2">
-                            {{ $post->date }}
-                        </h5>
-                        <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                            <h6 class="h5 fw-bold">
-                                {{ $post->title_en }}
-                            </h6>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-
-            @foreach($posts as $post)
-                <div class="d-none d-md-flex d-lg-none row pt-5">
-                    <div class="col-12">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                                <h6 class="h4 fw-bold">
-                                    {{ $post->title_en }}
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <h6 class="text-secondary">
-                                {{ $post->date }}
-                            </h6>
-                        </div>
-                        <div class="row w-100">
-                            <div class="col-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
-                                    <span class="fw-bold h5 d-block my-1">READ MORE</span>
+                    <div class="col-md-6 mt-4">
+                        <div class="card shadow-sm rounded-4 h-100 overflow-hidden" style="border: 4px solid #6bdcdb;">
+                            <div class="card-body p-0">
+                                <a class="rounded-3" href="{{ route('post', $post->slug) }}">
+                                    <img class="img-fluid w-100 rounded-top" src="/images/{{ $post->image }}" alt="">
                                 </a>
+                                <div class="row px-2">
+                                    <div class="col-12">
+                                        <h5 class="h6 text-secondary mt-2">
+                                            {{ $post->date }}
+                                        </h5>
+                                        <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
+                                            <h6 class="h5 text-uppercase fw-semibold">
+                                                {{ $post->title_en }}
+                                            </h6>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-none d-sm-flex d-md-none row pt-5">
-                    <div class="col-12">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                                <h6 class="h4 fw-bold">
-                                    {{ $post->title_en }}
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <h6 class="text-secondary">
-                                {{ $post->date }}
-                            </h6>
-                        </div>
-                        <div class="row w-100">
-                            <div class="col-6">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
-                                    <span class="fw-bold h5 d-block my-1">READ MORE</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex d-sm-none row pt-5">
-                    <div class="col-12">
-                        <a href="{{ route('post', $post->slug) }}">
-                            <img class="img-fluid w-100" src="/images/{{ $post->image }}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="row">
-                            <a class="text-dark text-decoration-none" href="{{ route('post', $post->slug) }}">
-                                <h6 class="h4 fw-bold">
-                                    {{ $post->title_en }}
-                                </h6>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <h6 class="text-secondary">
-                                {{ $post->date }}
-                            </h6>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <a class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none mx-auto" style="background-color: #6bdcdb" href="{{ route('post', $post->slug) }}" role="button">
-                                    <span class="fw-bold h5 d-block my-1">READ MORE</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+                @endforeach
+            </div>
 
                 <div class="row d-lg-none p-5">
                     <div class="col-12">
