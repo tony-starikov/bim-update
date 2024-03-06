@@ -140,8 +140,8 @@ class WorkSeeder extends Seeder
                 'slug' => 'the-stacks-part-b',
                 'service' => 'MEP modeling',
                 'department' => '',
-                'image' => 'works/Stacks B detached Type 3.webp',
-                'images' => '["works_images\/The Stacks Part B.webp","works_images\/The Stacks Part B Type 1.webp","works_images\/The Stacks Part B Type 2.webp"]',
+                'image' => 'works/Stacks_B_3.webp',
+                'images' => '["works_images\/The_Stacks.webp","works_images\/Stacks_B_1.webp","works_images\/Stacks_B_2.webp"]',
                 'image_small' => '',
                 'image_overlay' => '',
                 'content' => '<p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">LOD:</span></strong> 350<br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Area:</span></strong> <span style="white-space: pre-wrap;">40830m2</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Floors:</span></strong> <span style="white-space: pre-wrap;">15</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Disciplines:</span></strong> <span style="white-space: pre-wrap;">Residential Building</span><br></span></p><p><span lang="ru-UA">The Stacks is an energetic multi-use development in DC set in the heart of the iconic Buzzard Point district. The enormous scale of this project was the biggest challenges that the team faced during fabrication, coordination and production shop drawings. This required a high level of coordination between team members, as well as effective communication with other teams  involved in the project.&nbsp;</span></p>'
