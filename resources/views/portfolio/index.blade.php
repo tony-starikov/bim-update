@@ -23,7 +23,7 @@
                         Portfolio
                     </h1>
                     <p class="h5 mt-4">
-                        Having successfully completed 1200+ BIM projects, BIMprove is a reliable outsourcing company, trusted by major companies in the United States, United Kingdom, Germany, Australia, Belgium and other countries.
+                        Having successfully completed 1200+ BIM projects, BIMPROVE is a reliable outsourcing company, trusted by major companies in the United States, United Kingdom, Germany, Australia, Belgium and other countries.
                     </p>
                     <p class="h5 mt-4">
                         We have experience in 3D BIM modeling in industries such as manufacturing and warehouses, airports, residential buildings, educational, commercial, medical centers etc.

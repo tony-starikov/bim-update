@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                     <p class="h5">
-                        Bonus! BIMprove add-ins: free Revit plugin from the Software development department and other basic useful tools.
+                        Bonus! BIMPROVE add-ins: free Revit plugin from the Software development department and other basic useful tools.
                     </p>
                 </div>
             </div>

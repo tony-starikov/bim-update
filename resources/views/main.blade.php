@@ -186,7 +186,7 @@
                         our five-stars in BIM modeling:
                     </h2>
                     <p class="h5 fw-normal mb-4 mt-5">
-                        BIMprove outsourced BIM company providing 3D BIM modeling services in Revit in different lines. We provide services to architects, designers, civil engineers, MEP engineers, general contractors and construction managers, subcontractors, equipment manufacturers, Telecom companies.
+                        BIMPROVE outsourced BIM company providing 3D BIM modeling services in Revit in different lines. We provide services to architects, designers, civil engineers, MEP engineers, general contractors and construction managers, subcontractors, equipment manufacturers, Telecom companies.
                     </p>
                 </div>
             </div>
@@ -304,7 +304,7 @@
                         {{ $page_info->pageItems->where('name', 'services_header')->first()->value }}
                     </h2>
                     <p class="h5 fw-normal my-5">
-                        With over 7 years of experience in the AEC industry as an outsourcing company, we have successfully completed over <a href="{{ route('portfolio.index') }}" class="text-dark">1,400+ BIM projects</a> in the United States, Canada, Germany, Belgium, UK, Australia, New Zealand, etc. BIMprove is a confident player in the digital construction market. We offer 3D BIM Modeling Services in industries such as manufacturing and warehousing, airports, residential, education, commercial, medical centers, etc.
+                        With over 7 years of experience in the AEC industry as an outsourcing company, we have successfully completed over <a href="{{ route('portfolio.index') }}" class="text-dark">1,400+ BIM projects</a> in the United States, Canada, Germany, Belgium, UK, Australia, New Zealand, etc. BIMPROVE is a confident player in the digital construction market. We offer 3D BIM Modeling Services in industries such as manufacturing and warehousing, airports, residential, education, commercial, medical centers, etc.
                     </p>
                 </div>
             </div>
@@ -482,7 +482,7 @@
                     <h2 class="h1 fw-bold text-uppercase">
 {{--                        {{ $page_info->pageItems->where('name', 'about_header')->first()->value }}--}}
                         Discover the Comprehensive<br>
-                        BIM Services of BIMprove
+                        BIM Services of BIMPROVE
                     </h2>
                 </div>
                 <div class="col-12">
@@ -490,11 +490,11 @@
                         <div class="col-xl-5 mt-4">
                             <h3 class="h5 mb-3 fw-semibold">
 {{--                                {{ $page_info->pageItems->where('name', 'about_subheader')->first()->value }}--}}
-                                The BIMprove team will let you forget about worrying for the project.
+                                The BIMPROVE team will let you forget about worrying for the project.
                             </h3>
                             <p class="h6 mb-3 fw-normal">
 {{--                                {{ $page_info->pageItems->where('name', 'about_text')->first()->value }}--}}
-                                BIMprove is, first and foremost, about people. A team of specialists passionate about BIM technology and 3D modeling. Our vision for the team is to continuously grow, develop, and bring digital construction and digital twins to life.
+                                BIMPROVE is, first and foremost, about people. A team of specialists passionate about BIM technology and 3D modeling. Our vision for the team is to continuously grow, develop, and bring digital construction and digital twins to life.
                             </p>
                             <p class="h6 mb-3 fw-normal">
                                 As a business, we aim to provide BIM services at a five-star level with personalized support. Our priorities are quality, speed, accountability, process optimization, and customer savings.

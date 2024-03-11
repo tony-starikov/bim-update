@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->text('title_en')->nullable();
+            $table->string('author')->nullable();
+            $table->text('banner_header')->nullable();
+            $table->text('banner_header_url')->nullable();
+            $table->text('banner_footer')->nullable();
+            $table->text('banner_footer_url')->nullable();
             $table->string('slug')->nullable();
             $table->text('image')->nullable();
             $table->text('bg_image')->nullable();

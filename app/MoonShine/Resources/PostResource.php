@@ -13,6 +13,7 @@ use MoonShine\Fields\TinyMce;
 use MoonShine\Resources\Resource;
 use MoonShine\Fields\ID;
 use MoonShine\Actions\FiltersAction;
+use MoonShine\Fields\Url;
 
 class PostResource extends Resource
 {
@@ -30,10 +31,15 @@ class PostResource extends Resource
             Block::make([
                 Text::make('Title', 'title_en')->sortable()->required(),
                 Slug::make('Slug')->from('title_en')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
-                Text::make('Date', 'date')->sortable()->hint('Month, Day, Year - Time'),
+                Text::make('Author', 'author')->sortable()->required()->hideOnIndex(),
+                Image::make('Background image', 'bg_image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
+                Text::make('Date', 'date')->sortable()->hint('Month, Day, Year - Time')->hideOnIndex(),
                 TinyMce::make('Content')->hideOnIndex(),
-                Image::make('Image')->disk('public')->dir('posts')->removable(),
-                Image::make('Background image', 'bg_image')->disk('public')->dir('posts')->removable(),
+                Image::make('Image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
+                Image::make('Banner Header', 'banner_header')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
+                Url::make('Banner Header URL', 'banner_header_url')->hideOnIndex(),
+                Image::make('Banner Footer', 'banner_footer')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
+                Url::make('Banner Footer URL', 'banner_footer_url')->hideOnIndex(),
             ]),
 
         ];

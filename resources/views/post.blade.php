@@ -28,14 +28,53 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="col-lg-8 p-4 rounded shadow" style="font-family: 'Montserrat', sans-serif !important;">
-                    <h1 class="h2 fw-bold text-uppercase">
-                        {{ $post->title_en }}
-                    </h1>
-                    <h6>
-                        {{ $post->date }}
-                    </h6>
-                    {!! $post->content !!}
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-8 p-4 rounded shadow" style="font-family: 'Montserrat', sans-serif !important;">
+                            <h1 class="h2 fw-bold text-uppercase">
+                                {{ $post->title_en }}
+                            </h1>
+                            <h6>
+                                {{ $post->author }}
+                            </h6>
+                            <h6>
+                                {{ $post->date }}
+                            </h6>
+                            <div class="row">
+                                <div class="col-12">
+                                    {!! $post->content !!}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 px-0 py-5 p-lg-4">
+                            @if($post->banner_header and $post->banner_header_url)
+                                <a href="{{ $post->banner_header_url }}" target="_blank">
+                                    <img class="img-fluid w-100" src="/images/{{ $post->banner_header }}" alt="">
+                                </a>
+                            @endif
+                            <h5 class="mt-4">
+                                Newest articles:
+                            </h5>
+                            <ol>
+                                @foreach($posts as $item)
+                                <li>
+                                    <a target="_blank" class="text-decoration-none text-dark h6" href="{{ route('post', $item->slug) }}">
+                                        {{ $item->title_en }}
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ol>
+                        </div>
+                    </div>
+                    @if($post->banner_footer and $post->banner_footer_url)
+                        <div class="row pt-0 pt-lg-5">
+                            <div class="col-12 px-0">
+                                <a href="{{ $post->banner_footer_url }}" target="_blank">
+                                    <img class="img-fluid w-100" src="/images/{{ $post->banner_footer }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

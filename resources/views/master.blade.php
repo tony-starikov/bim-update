@@ -678,6 +678,9 @@
                             <a class="text-decoration-none p-0 m-0" href="{{ route('families') }}">
                                 <p class="h6 text-white border-bottom-2 border-white small">Families</p>
                             </a>
+                            <a class="text-decoration-none p-0 m-0" href="{{ route('docs') }}">
+                                <p class="h6 text-white border-bottom-2 border-white small">Checklists</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -693,7 +696,7 @@
             <div class="row p-5">
                 <div class="col-12 text-center">
                     <p class="card-text text-white fw-bold h6">
-                        &copy; Copyright BIMprove company LLC. All rights reserved {{ date("Y") }}. <a
+                        &copy; Copyright BIMPROVE company LLC. All rights reserved {{ date("Y") }}. <a
                             class="text-white" href="{{ route('policy') }}">Privacy Policy</a>.
                     </p>
                 </div>
