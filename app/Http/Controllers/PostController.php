@@ -25,7 +25,7 @@ class PostController extends Controller
 
         $page_info = Page::where('name', 'blog')->first();
 
-        $posts = Post::orderBy('id', 'desc')->paginate(6);
+        $posts = Post::orderBy('id')->paginate(6);
 
         $menuItems = MenuItem::all();
 
@@ -39,6 +39,8 @@ class PostController extends Controller
     public function show($slug, Request $request)
     {
         $og = null;
+        $prev = null;
+        $next = null;
 
         if ($request->path() == '/') {
             $og = Seo::where('url', $request->path())->first();
@@ -48,6 +50,16 @@ class PostController extends Controller
         }
 
         $post = Post::where('slug', $slug)->first();
+        $allPosts = Post::all()->count();
+
+        if ($post->id == 1 ) {
+            $next = Post::where('id', $post->id + 1)->first();
+        } elseif($post->id == $allPosts) {
+            $prev = Post::where('id', $post->id - 1)->first();
+        } else {
+            $prev = Post::where('id', $post->id - 1)->first();
+            $next = Post::where('id', $post->id + 1)->first();
+        }
 
         $services = Service::all();
 
@@ -57,6 +69,6 @@ class PostController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('post', compact('post', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        return view('post', compact('post', 'services', 'menuItems', 'contacts', 'posts', 'og', 'prev', 'next'));
     }
 }

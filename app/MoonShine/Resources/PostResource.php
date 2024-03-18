@@ -10,6 +10,7 @@ use MoonShine\Fields\Image;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\TinyMce;
+use MoonShine\CKEditor\Fields\CKEditor;
 use MoonShine\Resources\Resource;
 use MoonShine\Fields\ID;
 use MoonShine\Actions\FiltersAction;
@@ -37,7 +38,7 @@ class PostResource extends Resource
                 TinyMce::make('Content')->hideOnIndex(),
                 Image::make('Image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
                 Image::make('Banner Header', 'banner_header')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
-                Url::make('Banner Header URL', 'banner_header_url')->hideOnIndex(),
+                Text::make('Banner Header URL', 'banner_header_url')->hideOnIndex(),
                 Image::make('Banner Footer', 'banner_footer')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
                 Url::make('Banner Footer URL', 'banner_footer_url')->hideOnIndex(),
             ]),

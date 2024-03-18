@@ -44,7 +44,7 @@ class WorkSeeder extends Seeder
                 'slug' => 'landscape-of-the-industrial-territory',
                 'service' => 'Scan to BIM',
                 'department' => 'scan-to-bim',
-                'image' => 'works/Landscape of the industrial territory.webp',
+                'image' => 'works/Landscape of the industrial territory 1.webp',
                 'images' => '["works_images\/Landscape of the industrial territory Type 1.webp","works_images\/Landscape of the industrial territory Type 2.webp"]',
                 'image_small' => 'works/Landscape_small.webp',
                 'image_overlay' => 'works/overlay/Landscape_overlay.webp',

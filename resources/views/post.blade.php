@@ -12,6 +12,18 @@
     @endif
 @endsection
 
+@section('shareon')
+    <link
+        href="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.min.css"
+        rel="stylesheet"
+    >
+    <script
+        src="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.iife.js"
+        defer
+        init
+    ></script>
+@endsection
+
 @section('main')
 
     <img class="img-fluid w-100 mt-5" src="/images/{{ $post->bg_image }}" alt="">
@@ -40,6 +52,18 @@
                             <h6>
                                 {{ $post->date }}
                             </h6>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="shareon">
+                                        <a class="facebook"></a>
+                                        <a class="linkedin"></a>
+                                        <a class="telegram"></a>
+                                        <a class="twitter"></a>
+                                        <a class="whatsapp"></a>
+                                        <a class="copy-url"></a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="row">
                                 <div class="col-12">
                                     {!! $post->content !!}
@@ -72,6 +96,24 @@
                                 <a href="{{ $post->banner_footer_url }}" target="_blank">
                                     <img class="img-fluid w-100" src="/images/{{ $post->banner_footer }}" alt="">
                                 </a>
+                            </div>
+                        </div>
+                    @endif
+                    @if($prev or $next)
+                        <div class="row mt-5">
+                            <div class="col-6 px-5">
+                                @if($prev)
+                                    <a href="{{ route('post', $prev->slug) }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                        <span class="fw-bold h5 d-block my-2">PREVIOUS POST</span>
+                                    </a>
+                                @endif
+                            </div>
+                            <div class="col-6 px-5">
+                                @if($next)
+                                    <a href="{{ route('post', $next->slug) }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                        <span class="fw-bold h5 d-block my-2">NEXT POST</span>
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     @endif

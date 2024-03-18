@@ -11,6 +11,7 @@
     @yield('turnstile')
     @yield('og')
     @yield('schema')
+    @yield('shareon')
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
