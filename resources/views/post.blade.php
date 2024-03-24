@@ -42,33 +42,45 @@
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-lg-8 p-4 rounded shadow" style="font-family: 'Montserrat', sans-serif !important;">
-                            <h1 class="h2 fw-bold text-uppercase">
-                                {{ $post->title_en }}
-                            </h1>
-                            <h6>
-                                {{ $post->author }}
-                            </h6>
-                            <h6>
-                                {{ $post->date }}
-                            </h6>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="shareon">
-                                        <a class="facebook"></a>
-                                        <a class="linkedin"></a>
-                                        <a class="telegram"></a>
-                                        <a class="twitter"></a>
-                                        <a class="whatsapp"></a>
-                                        <a class="copy-url"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
+                        <div class="col-lg-8">
+                            <div class="p-4 rounded shadow" style="font-family: 'Montserrat', sans-serif !important;">
+                                <h1 class="h2 fw-bold text-uppercase">
+                                    {{ $post->title_en }}
+                                </h1>
+                                <h6>
+                                    {{ $post->author }}
+                                </h6>
+                                <h6>
+                                    {{ $post->date }}
+                                </h6>
+                                <div class="content w-100">
                                     {!! $post->content !!}
                                 </div>
+                                <div class="shareon">
+                                    <a class="facebook"></a>
+                                    <a class="linkedin"></a>
+                                    <a class="twitter"></a>
+                                    <a class="copy-url"></a>
+                                </div>
                             </div>
+                            @if($prev or $next)
+                                <div class="row mt-5 justify-content-between">
+                                    <div class="col-6 col-lg-4">
+                                        @if($prev)
+                                            <a href="{{ route('post', $prev->slug) }}" role="button" class="btn btn-primary shadow-none btn border-4 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
+                                                <span style="color: #43aeb6" class="fw-bold h6 d-block my-2">PREVIOUS POST</span>
+                                            </a>
+                                        @endif
+                                    </div>
+                                    <div class="col-6 col-lg-4">
+                                        @if($next)
+                                            <a href="{{ route('post', $next->slug) }}" role="button" class="btn btn-primary shadow-none btn border-4 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
+                                                <span style="color: #43aeb6" class="fw-bold h6 d-block my-2">NEXT POST</span>
+                                            </a>
+                                        @endif
+                                    </div>
+                                </div>
+                            @endif
                         </div>
                         <div class="col-lg-4 px-0 py-5 p-lg-4">
                             @if($post->banner_header and $post->banner_header_url)
@@ -76,13 +88,13 @@
                                     <img class="img-fluid w-100" src="/images/{{ $post->banner_header }}" alt="">
                                 </a>
                             @endif
-                            <h5 class="mt-4">
+                            <h4 class="mt-4 fw-semibold">
                                 Newest articles:
-                            </h5>
+                            </h4>
                             <ol>
                                 @foreach($posts as $item)
-                                <li>
-                                    <a target="_blank" class="text-decoration-none text-dark h6" href="{{ route('post', $item->slug) }}">
+                                <li class="h5 mt-3 fw-semibold">
+                                    <a target="_blank" class="text-decoration-none text-dark" href="{{ route('post', $item->slug) }}">
                                         {{ $item->title_en }}
                                     </a>
                                 </li>
@@ -99,28 +111,35 @@
                             </div>
                         </div>
                     @endif
-                    @if($prev or $next)
-                        <div class="row mt-5">
-                            <div class="col-6 px-5">
-                                @if($prev)
-                                    <a href="{{ route('post', $prev->slug) }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                                        <span class="fw-bold h5 d-block my-2">PREVIOUS POST</span>
-                                    </a>
-                                @endif
-                            </div>
-                            <div class="col-6 px-5">
-                                @if($next)
-                                    <a href="{{ route('post', $next->slug) }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
-                                        <span class="fw-bold h5 d-block my-2">NEXT POST</span>
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    @endif
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        let content = document.querySelector('.content');
+        let images = content.querySelectorAll('img');
+        images.forEach((element) => {
+            element.removeAttribute('width');
+            element.removeAttribute('height');
+            element.classList.add('img-fluid');
+            element.classList.add('w-100');
+        });
+        let titlesList = document.createElement('ol');
+        let hs = content.querySelectorAll('h2');
+        hs.forEach((element, index) => {
+            element.id = 'title_' + index;
+
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            a.innerText = element.innerText;
+            a.href = '#' + element.id;
+            li.appendChild(a);
+            titlesList.appendChild(li);
+        });
+
+        content.insertAdjacentElement('afterbegin', titlesList);
+    </script>
 
 @endsection
 
