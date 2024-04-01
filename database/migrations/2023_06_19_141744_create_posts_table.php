@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text('title_en')->nullable();
             $table->string('author')->nullable();
+            $table->string('author_url')->nullable();
             $table->text('banner_header')->nullable();
             $table->text('banner_header_url')->nullable();
             $table->text('banner_footer')->nullable();

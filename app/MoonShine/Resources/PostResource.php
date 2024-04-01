@@ -33,6 +33,7 @@ class PostResource extends Resource
                 Text::make('Title', 'title_en')->sortable()->required(),
                 Slug::make('Slug')->from('title_en')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
                 Text::make('Author', 'author')->sortable()->required()->hideOnIndex(),
+                Url::make('Author URL', 'author_url')->hideOnIndex(),
                 Image::make('Background image', 'bg_image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
                 Text::make('Date', 'date')->sortable()->hint('Month, Day, Year - Time')->hideOnIndex(),
                 TinyMce::make('Content')->hideOnIndex(),
@@ -40,7 +41,7 @@ class PostResource extends Resource
                 Image::make('Banner Header', 'banner_header')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
                 Text::make('Banner Header URL', 'banner_header_url')->hideOnIndex(),
                 Image::make('Banner Footer', 'banner_footer')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
-                Url::make('Banner Footer URL', 'banner_footer_url')->hideOnIndex(),
+                Text::make('Banner Footer URL', 'banner_footer_url')->hideOnIndex(),
             ]),
 
         ];

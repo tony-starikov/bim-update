@@ -47,6 +47,10 @@
             background-color: #ffffff;
         }
 
+        .my-ul {
+            list-style-type: none;
+        }
+
         /*form.footer-form input {*/
         /*    -webkit-appearance: none;*/
         /*    -moz-appearance: none;*/

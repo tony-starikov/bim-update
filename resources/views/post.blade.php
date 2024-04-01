@@ -47,15 +47,21 @@
                                 <h1 class="h2 fw-bold text-uppercase">
                                     {{ $post->title_en }}
                                 </h1>
-                                <h6>
-                                    {{ $post->author }}
-                                </h6>
+                                <a target="_blank" class="text-decoration-none" href="{{ $post->author_url }}">
+                                    <img class="mb-1" width="20" height="20" src="https://img.icons8.com/ios-filled/30/linkedin.png" alt="linkedin"/>
+                                    <h6 class="d-inline-block m-0 text-dark">
+                                        {{ $post->author }}
+                                    </h6>
+                                </a>
                                 <h6>
                                     {{ $post->date }}
                                 </h6>
                                 <div class="content w-100">
                                     {!! $post->content !!}
                                 </div>
+                                <h5>
+                                    Share:
+                                </h5>
                                 <div class="shareon">
                                     <a class="facebook"></a>
                                     <a class="linkedin"></a>
@@ -67,14 +73,14 @@
                                 <div class="row mt-5 justify-content-between">
                                     <div class="col-6 col-lg-4">
                                         @if($prev)
-                                            <a href="{{ route('post', $prev->slug) }}" role="button" class="btn btn-primary shadow-none btn border-4 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
+                                            <a href="{{ route('post', $prev->slug) }}" role="button" class="btn btn-primary shadow-none btn border-2 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
                                                 <span style="color: #43aeb6" class="fw-bold h6 d-block my-2">PREVIOUS POST</span>
                                             </a>
                                         @endif
                                     </div>
                                     <div class="col-6 col-lg-4">
                                         @if($next)
-                                            <a href="{{ route('post', $next->slug) }}" role="button" class="btn btn-primary shadow-none btn border-4 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
+                                            <a href="{{ route('post', $next->slug) }}" role="button" class="btn btn-primary shadow-none btn border-2 rounded-0 w-100 text-center" style="border-color: #43aeb6; background-color: white">
                                                 <span style="color: #43aeb6" class="fw-bold h6 d-block my-2">NEXT POST</span>
                                             </a>
                                         @endif
@@ -91,15 +97,22 @@
                             <h4 class="mt-4 fw-semibold">
                                 Newest articles:
                             </h4>
-                            <ol>
+                            <ul class="my-ul px-0">
                                 @foreach($posts as $item)
-                                <li class="h5 mt-3 fw-semibold">
-                                    <a target="_blank" class="text-decoration-none text-dark" href="{{ route('post', $item->slug) }}">
-                                        {{ $item->title_en }}
+                                    <a class="text-decoration-none text-dark" href="{{ route('post', $item->slug) }}">
+                                        <li class="h6 mt-3 fw-semibold">
+                                            <div class="row align-items-center">
+                                                <div class="col-4">
+                                                    <img class="img-fluid w-100" src="/images/{{ $item->image }}" alt="">
+                                                </div>
+                                                <div class="col-8">
+                                                    {{ $item->title_en }}
+                                                </div>
+                                            </div>
+                                        </li>
                                     </a>
-                                </li>
                                 @endforeach
-                            </ol>
+                            </ul>
                         </div>
                     </div>
                     @if($post->banner_footer and $post->banner_footer_url)
@@ -126,19 +139,28 @@
             element.classList.add('w-100');
         });
         let titlesList = document.createElement('ol');
+        titlesList.classList.add('my-ul');
+        titlesList.classList.add('px-1');
         let hs = content.querySelectorAll('h2');
         hs.forEach((element, index) => {
             element.id = 'title_' + index;
 
             let li = document.createElement('li');
+            li.classList.add('py-1');
             let a = document.createElement('a');
+            a.classList.add('text-decoration-none');
             a.innerText = element.innerText;
             a.href = '#' + element.id;
             li.appendChild(a);
             titlesList.appendChild(li);
         });
 
+        let heading = document.createElement('h5');
+        heading.classList.add('fw-semibold');
+        heading.classList.add('mt-3');
+        heading.innerText = 'Table of contents';
         content.insertAdjacentElement('afterbegin', titlesList);
+        content.insertAdjacentElement('afterbegin', heading);
     </script>
 
 @endsection
