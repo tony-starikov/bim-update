@@ -113,13 +113,43 @@
                                     </a>
                                 @endforeach
                             </ul>
+                                <div class="row d-none d-lg-flex">
+                                    <div class="col-12">
+                                        <h4 class="mt-4 fw-semibold">
+                                            Social media:
+                                        </h4>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <a target="_blank" href="https://www.facebook.com/bimproveworld">
+                                                    <img class="img-fluid w-100" src="/images/social/dark/Facebook.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a target="_blank" href="https://www.instagram.com/bimprove/">
+                                                    <img class="img-fluid w-100" src="/images/social/dark/Instagram.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a target="_blank" href="https://www.linkedin.com/company/bimprove">
+                                                    <img class="img-fluid w-100" src="/images/social/dark/LinkedIn.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-3">
+                                                <a target="_blank" href="https://www.youtube.com/channel/UCV1vjjoglXxiC_t2yH9VD-A">
+                                                    <img class="img-fluid w-100" src="/images/social/dark/YouTube.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
-                    @if($post->banner_footer and $post->banner_footer_url)
+                    @if($post->banner_footer and $post->banner_footer_small and $post->banner_footer_url)
                         <div class="row pt-0 pt-lg-5">
                             <div class="col-12 px-0">
                                 <a href="{{ $post->banner_footer_url }}" target="_blank">
-                                    <img class="img-fluid w-100" src="/images/{{ $post->banner_footer }}" alt="">
+                                    <img class="img-fluid w-100 d-none d-lg-block" src="/images/{{ $post->banner_footer }}" alt="">
+                                    <img class="img-fluid w-100 d-lg-none" src="/images/{{ $post->banner_footer_small }}" alt="">
                                 </a>
                             </div>
                         </div>
@@ -133,20 +163,31 @@
         let content = document.querySelector('.content');
         let images = content.querySelectorAll('img');
         images.forEach((element) => {
+            let row = document.createElement('div');
+            row.classList.add('row');
+            row.classList.add('justify-content-center');
+
+            let col = document.createElement('div');
+            col.classList.add('col-lg-9');
+
+            row.appendChild(col);
+
+            element.insertAdjacentElement('beforebegin', row);
+
             element.removeAttribute('width');
             element.removeAttribute('height');
             element.classList.add('img-fluid');
             element.classList.add('w-100');
+
+            col.appendChild(element);
         });
-        let titlesList = document.createElement('ol');
-        titlesList.classList.add('my-ul');
-        titlesList.classList.add('px-1');
+        let titlesList = document.createElement('ul');
         let hs = content.querySelectorAll('h2');
         hs.forEach((element, index) => {
             element.id = 'title_' + index;
 
             let li = document.createElement('li');
-            li.classList.add('py-1');
+            li.classList.add('py-2');
             let a = document.createElement('a');
             a.classList.add('text-decoration-none');
             a.innerText = element.innerText;
@@ -157,7 +198,8 @@
 
         let heading = document.createElement('h5');
         heading.classList.add('fw-semibold');
-        heading.classList.add('mt-3');
+        // heading.classList.add('pt-4');
+        heading.classList.add('mt-4');
         heading.innerText = 'Table of contents';
         content.insertAdjacentElement('afterbegin', titlesList);
         content.insertAdjacentElement('afterbegin', heading);

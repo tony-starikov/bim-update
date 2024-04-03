@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('banner_header')->nullable();
             $table->text('banner_header_url')->nullable();
             $table->text('banner_footer')->nullable();
+            $table->text('banner_footer_small')->nullable();
             $table->text('banner_footer_url')->nullable();
             $table->string('slug')->nullable();
             $table->text('image')->nullable();
