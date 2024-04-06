@@ -31,16 +31,18 @@ class PostResource extends Resource
 
             Block::make([
                 Text::make('Title', 'title_en')->sortable()->required(),
+                Url::make('Canonical URL', 'canonical')->required()->hideOnIndex(),
                 Slug::make('Slug')->from('title_en')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
                 Text::make('Author', 'author')->sortable()->required()->hideOnIndex(),
                 Url::make('Author URL', 'author_url')->hideOnIndex(),
+                Image::make('Main Image', 'image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
                 Image::make('Background image', 'bg_image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
                 Text::make('Date', 'date')->sortable()->hint('Month, Day, Year - Time')->hideOnIndex(),
                 TinyMce::make('Content')->hideOnIndex(),
-                Image::make('Image')->disk('public')->dir('posts')->removable()->hideOnIndex(),
                 Image::make('Banner Header', 'banner_header')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
                 Text::make('Banner Header URL', 'banner_header_url')->hideOnIndex(),
                 Image::make('Banner Footer', 'banner_footer')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
+                Image::make('Banner Footer Small', 'banner_footer_small')->disk('public')->dir('posts/banners')->removable()->hideOnIndex(),
                 Text::make('Banner Footer URL', 'banner_footer_url')->hideOnIndex(),
             ]),
 
