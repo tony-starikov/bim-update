@@ -41,7 +41,7 @@ class ContactSeeder extends Seeder
             [
                 'id' => 5,
                 'name' => 'phone',
-                'info' => '+380668901648',
+                'info' => '+447490493720',
                 'image' => '',
             ],
             [

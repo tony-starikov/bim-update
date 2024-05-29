@@ -27,7 +27,7 @@
     </div>
 
     <div class="container-fluid">
-        <div class="container p-md-0 p-lg-5">
+        <div class="container p-md-0 pt-lg-5">
             <div class="row">
                 @foreach($posts as $post)
                     <div class="col-md-6 mt-4">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="row d-none d-lg-flex">
+                <div class="row d-none d-lg-flex p-5">
                     <div class="col-12">
                         <div class="d-flex justify-content-center">
                             {{ $posts->links('vendor.pagination.custom') }}

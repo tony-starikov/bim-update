@@ -15,8 +15,8 @@ class TeammateSeeder extends Seeder
     {
         DB::table('teammates')->insert([
             [
-                'name_en' => 'Vitaliy',
-                'surname_en' => 'Vynogradov',
+                'name_en' => 'Vitalii',
+                'surname_en' => 'Vynohradov',
                 'position_en' => 'CEO',
                 'image' => 'teammates/Vitaly.webp',
                 'linkedin_url' => 'https://www.linkedin.com/in/vitaliy-vynogradov/',
@@ -57,8 +57,8 @@ class TeammateSeeder extends Seeder
                 'linkedin_url' => 'https://www.linkedin.com/in/denys-moshenskyi/',
             ],
             [
-                'name_en' => 'Olga',
-                'surname_en' => 'Vynogradova',
+                'name_en' => 'Olha',
+                'surname_en' => 'Vynohradova',
                 'position_en' => 'Director of Operations',
                 'image' => 'teammates/Olga.webp',
                 'linkedin_url' => 'https://www.linkedin.com/in/olgavynogradova/',

@@ -197,9 +197,11 @@
                         <div class="col-12 col-sm-6 col-xl-4 mt-4">
                             <div class="card p-0 h-100" style="border: none; border-radius: 0;">
                                 <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df">
-                                    <button id="button-five-stars-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                                        <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
-                                    </button>
+                                    <a class="d-flex w-100 text-decoration-none" href="/contact">
+                                        <button id="button-five-stars-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            <span class="fw-bold h6 d-block my-2">BOOK A MEETING</span>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

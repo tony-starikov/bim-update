@@ -15,6 +15,7 @@ class ServiceSeeder extends Seeder
     {
         DB::table('services')->insert([
             [
+                'id' => 1,
                 'title_en' => 'MEP BIM Modeling',
                 'description_en' => 'We make drawings not only informative but also convenient for the user. Shop drawings, Coordination, Fabrication, 3D modeling in Revit.',
                 'image' => 'service/MEP_coordination_3.png',
@@ -24,6 +25,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/mep-coordination',
             ],
             [
+                'id' => 2,
                 'title_en' => 'Telecom Design',
                 'description_en' => 'Creation of design drawings for the Telecom sector. Preparation of documentation, sites, metalwork. Creation of informational 3D models (Digital twins).',
                 'image' => 'service/Telecom_3.png',
@@ -33,6 +35,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/telecom-design',
             ],
             [
+                'id' => 3,
                 'title_en' => 'Scan to BIM',
                 'description_en' => 'Creation of quality BIM models by the Point Clouds according to customers requirements with excellent accuracy. Also As-built services.',
                 'image' => 'service/Scan_to_BIM_3.png',
@@ -42,6 +45,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => 'https://bim-prove.com/service/scan-to-bim',
             ],
             [
+                'id' => 4,
                 'title_en' => 'BIM modeling',
                 'description_en' => 'Developing 3D Revit Architectural BIM models for each building design phase. Creating visualizations. Interior designs. Coordination with other disciplines.',
                 'image' => 'service/Modeling_3.png',
@@ -51,6 +55,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => '',
             ],
             [
+                'id' => 5,
                 'title_en' => 'BIM content creation',
                 'description_en' => 'Developmenting unique parametric and non-parametric Revit families for all types of architectural, structural, MEP, HVAC and other elements for clients in various industries.',
                 'image' => 'service/BIM_content_creation_3.png',
@@ -60,6 +65,7 @@ class ServiceSeeder extends Seeder
                 'canonical' => '',
             ],
             [
+                'id' => 6,
                 'title_en' => 'Software development',
                 'description_en' => 'Buisiness automations. Projects development from scratch using BIM-technologies on all stages of production. Revit API, Python, C#, Dynamo, Scripting.',
                 'image' => 'service/Software_development_3.png',

@@ -4,16 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Service extends Model
+class ServiceBlock extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
 
-    public function blocks(): HasMany
+    public function items()
     {
-        return $this->hasMany(ServiceBlock::class);
+        return $this->hasMany(ServiceItem::class);
     }
 }
