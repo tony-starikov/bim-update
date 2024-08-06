@@ -25,8 +25,13 @@ return new class extends Migration
             $table->text('content')->nullable();
             $table->text('presentation_url')->nullable();
             $table->text('canonical')->nullable();
+            $table->text('schema_main')->nullable();
+            $table->text('schema_faq')->nullable();
             $table->integer('status')->default(1);
+            $table->integer('show_on_main_page')->default(1);
+            $table->integer('order')->default(0);
             $table->integer('show_page')->default(0);
+            $table->integer('service_menu_item_id')->nullable();
             $table->timestamps();
         });
     }

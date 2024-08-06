@@ -245,8 +245,16 @@
             background: linear-gradient(to right, #aabcbf, #c4d8db);
         }
 
-        .dropdown:hover .dropdown-menu {
+        .dropdown:hover > .dropdown-menu {
             display: block;
+        }
+
+        .dropend:hover > .dropdown-menu {
+            display: block;
+            top: 0;
+            right: auto;
+            left: 100%;
+            margin-top: 0;
         }
 
         .dropdown .dropdown-menu .dropdown-item:active {
@@ -382,13 +390,35 @@
                                         </p>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        @foreach($services as $service)
-                                            <li>
-                                                <a class="dropdown-item fw-semibold text-uppercase"
-                                                   @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
-                                                    {{ $service->title_en }}
-                                                </a>
-                                            </li>
+                                        @foreach($service_menu_items as $menu_item)
+                                            @if($menu_item->services->count() == 1)
+                                                @foreach($menu_item->services as $service)
+                                                    <li>
+                                                        <a class="dropdown-item fw-semibold text-uppercase"
+                                                           @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
+                                                            {{ $service->title_en }}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            @elseif($menu_item->services->count() > 1)
+                                                <li class="dropend">
+                                                    <a class="dropdown-item fw-semibold text-uppercase dropdown-toggle" role="button">
+                                                        {{$menu_item->title_en}}
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        @foreach($menu_item->services as $service)
+                                                            <li>
+                                                                <a class="dropdown-item fw-semibold text-uppercase"
+                                                                   @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif>
+                                                                    {{ $service->title_en }}
+                                                                </a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </li>
+                                            @else
+                                                {{--TODO--}}
+                                            @endif
                                         @endforeach
                                     </ul>
                                 </li>
@@ -442,7 +472,7 @@
                                             PRODUCTS
                                         </p>
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu dropdown-menu-main">
                                         <li>
                                             <a class="dropdown-item fw-semibold"
                                                href="{{ route('products') }}">

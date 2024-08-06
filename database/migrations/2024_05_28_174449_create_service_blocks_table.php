@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('service_blocks', function (Blueprint $table) {
             $table->id();
-            $table->integer('service_id');
-            $table->text('name');
-            $table->text('background_image')->nullable();
+            $table->integer('type_id')->nullable();
+            $table->text('name')->nullable();
+            $table->text('template')->nullable();
             $table->integer('show_status')->default(1);
+            $table->integer('order')->nullable();
+            $table->foreignId('service_id')->constrained('services')->onDelete('cascade');
             $table->timestamps();
         });
     }

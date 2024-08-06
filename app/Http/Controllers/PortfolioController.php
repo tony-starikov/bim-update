@@ -7,6 +7,7 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use App\Models\Work;
 use Illuminate\Http\Request;
 use Leeto\Seo\Models\Seo;
@@ -36,7 +37,9 @@ class PortfolioController extends Controller
 
         $projects = Work::all();
 
-        return view('portfolio.index', compact('page_info', 'posts', 'services', 'menuItems', 'contacts', 'og', 'projects'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('portfolio.index', compact('page_info', 'posts', 'services', 'menuItems', 'contacts', 'og', 'projects', 'service_menu_items'));
     }
 
     public function project($slug, Request $request)
@@ -62,6 +65,8 @@ class PortfolioController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('portfolio.project', compact('services', 'menuItems', 'contacts', 'posts', 'og', 'project', 'other_projects'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('portfolio.project', compact('services', 'menuItems', 'contacts', 'posts', 'og', 'project', 'other_projects', 'service_menu_items'));
     }
 }

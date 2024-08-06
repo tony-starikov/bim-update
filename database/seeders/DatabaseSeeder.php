@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\ServiceBlockType;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -28,6 +29,10 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             MoonshineUserSeeder::class,
             ServiceBlockSeeder::class,
+            ServiceMenuItemSeeder::class,
+            ServiceBlockTypeSeeder::class,
+            ItemTypeSeeder::class,
+            ServiceItemSeeder::class,
 //            SeoSeeder::class,
         ]);
     }

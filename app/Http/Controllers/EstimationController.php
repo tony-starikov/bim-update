@@ -16,6 +16,7 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Leeto\Seo\Models\Seo;
@@ -41,7 +42,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimates', compact( 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function showScanShort(Request $request)
@@ -65,7 +68,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesScanShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimatesScanShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
     public function showServicesForm(Request $request)
@@ -89,7 +94,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimatesServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
     public function processing(Request $request)
@@ -376,7 +383,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimatesMep', compact( 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function showMepShort(Request $request)
@@ -400,7 +409,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMepShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimatesMepShort', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
     public function showMepServicesForm(Request $request)
@@ -424,7 +435,9 @@ class EstimationController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('estimatesMepServicesForm', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
     public function processingMep(Request $request)

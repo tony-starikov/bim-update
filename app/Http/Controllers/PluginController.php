@@ -8,6 +8,7 @@ use App\Models\Page;
 use App\Models\Plugin;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use Illuminate\Http\Request;
 use Leeto\Seo\Models\Seo;
 
@@ -36,7 +37,9 @@ class PluginController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('plugins', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('plugins', compact('page_info', 'plugins', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function downloadPlugin($slug)

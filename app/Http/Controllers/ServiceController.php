@@ -8,6 +8,7 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use App\Models\Star;
 use App\Models\Teammate;
 use App\Models\Testimonial;
@@ -21,6 +22,10 @@ class ServiceController extends Controller
     {
         $service = Service::where('slug', $slug)->firstOrFail();
 
+        if (!$service->presentation) {
+            return abort(404);
+        }
+
         $myFile = 'images/' . $service->presentation;
 
         $headers = ['Content-Type: application/pdf'];
@@ -28,7 +33,7 @@ class ServiceController extends Controller
         return response()->file($myFile, $headers);
     }
 
-    public function showService($slug, Request $request)
+    public function showService(Request $request, $slug)
     {
         $og = null;
 
@@ -53,8 +58,8 @@ class ServiceController extends Controller
 
         $posts = Post::take(5)->get();
 
-        $viewName = 'services.' . str_replace("-", "_", $slug);
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
 
-        return view($viewName, compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts', 'service', 'og'));
+        return view('services.main_template', compact('menuItems', 'services', 'contacts', 'page_info', 'works', 'posts', 'service', 'og', 'service_menu_items'));
     }
 }

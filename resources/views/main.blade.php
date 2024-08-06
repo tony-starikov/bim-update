@@ -312,47 +312,49 @@
             </div>
             <div class="row px-lg-5">
 
-                @foreach($services as $service)
-                    <div class="col-12 col-md-6 col-xxl-4 my-3">
-                        <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
-                            <div class="card-body px-0 pt-0">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-8 col-md-8 col-lg-8 col-xl-9 col-xxl-7 px-0 d-flex align-items-center">
-                                            <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif class="text-decoration-none text-dark" style="position: relative; bottom: 25px;">
-                                                <h3 class="h5 fw-bold ps-3">
-                                                    <small>
-                                                        {{ $service->title_en }}
-                                                    </small>
-                                                </h3>
-                                            </a>
-                                        </div>
-                                        <div class="col-4 col-md-4 col-lg-4 col-xl-3 col-xxl-5 p-0 ps-2">
-                                            @if($service->video_url)
-                                                <a href="#{{ $service->slug }}" class="m-0 p-0" data-bs-toggle="modal" data-bs-target="#{{ $service->slug }}">
-                                                    <img src="/images/{{ $service->image }}" class="img-fluid w-100 bg-transparent position-relative" style="z-index: 10;position: relative; bottom: 30px; left: 4px">
+                @foreach($services->sortBy('order') as $service)
+                    @if($service->show_on_main_page)
+                        <div class="col-12 col-md-6 col-xxl-4 my-3">
+                            <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">
+                                <div class="card-body px-0 pt-0">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-8 col-md-8 col-lg-8 col-xl-9 col-xxl-7 px-0 d-flex align-items-center">
+                                                <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif class="text-decoration-none text-dark" style="position: relative; bottom: 25px;">
+                                                    <h3 class="h5 fw-bold ps-3">
+                                                        <small>
+                                                            {{ $service->title_en }}
+                                                        </small>
+                                                    </h3>
                                                 </a>
-                                            @else
-                                                <img src="/images/{{ $service->image }}" class="img-fluid w-100 bg-transparent position-relative" style="position: relative; bottom: 30px; left: 4px">
-                                            @endif
+                                            </div>
+                                            <div class="col-4 col-md-4 col-lg-4 col-xl-3 col-xxl-5 p-0 ps-2">
+                                                @if($service->video_url)
+                                                    <a href="#{{ $service->slug }}" class="m-0 p-0" data-bs-toggle="modal" data-bs-target="#{{ $service->slug }}">
+                                                        <img src="/images/{{ $service->image }}" class="img-fluid w-100 bg-transparent position-relative" style="z-index: 10;position: relative; bottom: 30px; left: 4px">
+                                                    </a>
+                                                @else
+                                                    <img src="/images/{{ $service->image }}" class="img-fluid w-100 bg-transparent position-relative" style="position: relative; bottom: 30px; left: 4px">
+                                                @endif
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <p class="h6 text-secondary">
-                                                {{ $service->description_en }}
-                                            </p>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="h6 text-secondary">
+                                                    {{ $service->description_en }}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent">
-                                <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6">
-                                    <span class="fw-bold h5 d-block my-2">EXPLORE</span>
-                                </a>
+                                <div class="card-footer p-3 pt-0 p-lg-3 border-0 d-flex align-items-center bg-transparent">
+                                    <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100 shadow-none" style="background-color: #43aeb6">
+                                        <span class="fw-bold h5 d-block my-2">EXPLORE</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endif
                 @endforeach
 
             </div>

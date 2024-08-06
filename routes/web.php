@@ -12,6 +12,7 @@ use App\Models\Plugin;
 use App\Models\Post;
 use App\Models\Service;
 use App\Models\Work;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;

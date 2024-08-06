@@ -8,6 +8,7 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use App\Models\Star;
 use App\Models\Teammate;
 use App\Models\Testimonial;
@@ -48,7 +49,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('main', compact('page_info', 'services', 'achievements', 'stars', 'teammates', 'menuItems', 'testimonials', 'works', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function contact(Request $request)
@@ -72,7 +75,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('contact', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function bookMeeting(Request $request)
@@ -96,7 +101,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('bookMeeting', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('bookMeeting', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function docs(Request $request)
@@ -120,7 +127,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('docs', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('docs', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function thank_you(Request $request)
@@ -144,7 +153,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
     public function policy(Request $request)
@@ -168,7 +179,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('policy', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('policy', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items'));
     }
 
     public function test()
@@ -183,7 +196,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('test', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('test', compact('services', 'menuItems', 'contacts', 'posts', 'page_info', 'service_menu_items'));
     }
 
     public function content()
@@ -198,7 +213,9 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('content', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('content', compact('services', 'menuItems', 'contacts', 'posts', 'page_info', 'service_menu_items'));
     }
 
     public function architectural(Request $request)
@@ -213,6 +230,8 @@ class PageController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('architectural', compact('services', 'menuItems', 'contacts', 'posts', 'page_info'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('architectural', compact('services', 'menuItems', 'contacts', 'posts', 'page_info', 'service_menu_items'));
     }
 }

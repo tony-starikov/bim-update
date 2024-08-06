@@ -8,6 +8,10 @@ use App\Models\EstimationMep;
 use App\Models\EstimationMepShort;
 use App\Models\EstimationScanShort;
 use App\Models\Post;
+use App\Models\Service;
+use App\Models\ServiceBlock;
+use App\Models\ServiceItem;
+use App\Models\ServiceMenuItem;
 use App\Models\Work;
 use App\MoonShine\Resources\EstimationLogResource;
 use App\MoonShine\Resources\EstimationMepResource;
@@ -16,6 +20,10 @@ use App\MoonShine\Resources\EstimationResource;
 use App\MoonShine\Resources\EstimationScanShortResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\SeoResource;
+use App\MoonShine\Resources\ServiceBlockResource;
+use App\MoonShine\Resources\ServiceItemResource;
+use App\MoonShine\Resources\ServiceMenuItemResource;
+use App\MoonShine\Resources\ServiceResource;
 use App\MoonShine\Resources\WorkResource;
 use Illuminate\Support\ServiceProvider;
 use MoonShine\MoonShine;
@@ -44,6 +52,22 @@ class MoonShineServiceProvider extends ServiceProvider
             MenuItem::make('Posts', new PostResource())
                 ->icon('heroicons.outline.book-open')
                 ->badge(fn() => Post::query()->count()),
+
+            MenuItem::make('Services', new ServiceResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => Service::query()->count()),
+
+            MenuItem::make('Service Menu Items', new ServiceMenuItemResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => ServiceMenuItem::query()->count()),
+
+            MenuItem::make('Service Blocks', new ServiceBlockResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => ServiceBlock::query()->count()),
+
+            MenuItem::make('Service Items', new ServiceItemResource())
+                ->icon('heroicons.outline.book-open')
+                ->badge(fn() => ServiceItem::query()->count()),
 
             MenuItem::make('Estimation-Scan', new EstimationResource())
                 ->icon('heroicons.outline.book-open')

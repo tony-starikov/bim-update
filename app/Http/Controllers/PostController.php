@@ -7,6 +7,7 @@ use App\Models\MenuItem;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\Service;
+use App\Models\ServiceMenuItem;
 use Illuminate\Http\Request;
 use Leeto\Seo\Models\Seo;
 
@@ -33,7 +34,9 @@ class PostController extends Controller
 
         $contacts = Contact::all();
 
-        return view('blog', compact('page_info', 'posts', 'services', 'menuItems', 'contacts', 'og'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('blog', compact('page_info', 'posts', 'services', 'menuItems', 'contacts', 'og', 'service_menu_items'));
     }
 
     public function show($slug, Request $request)
@@ -69,6 +72,8 @@ class PostController extends Controller
 
         $posts = Post::take(5)->get();
 
-        return view('post', compact('post', 'services', 'menuItems', 'contacts', 'posts', 'og', 'prev', 'next'));
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('post', compact('post', 'services', 'menuItems', 'contacts', 'posts', 'og', 'prev', 'next', 'service_menu_items'));
     }
 }
