@@ -30,6 +30,22 @@ class ItemTypeSeeder extends Seeder
                 'id' => 4,
                 'name' => 'text_editor',
             ],
+            [
+                'id' => 5,
+                'name' => 'color',
+            ],
+            [
+                'id' => 6,
+                'name' => 'shadow',
+            ],
+            [
+                'id' => 7,
+                'name' => 'file',
+            ],
+            [
+                'id' => 8,
+                'name' => 'code',
+            ],
         ]);
     }
 }

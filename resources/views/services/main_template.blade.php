@@ -177,7 +177,7 @@
 
 @section('main')
 
-    @foreach($service->blocks as $block)
+    @foreach($service->blocks->where('show_status', 1)->sortBy('order') as $block)
         @include('service_blocks.' . $block->type->name)
     @endforeach
 

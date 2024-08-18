@@ -13,6 +13,12 @@ class ServiceBlockObserver
      */
     public function created(ServiceBlock $serviceBlock): void
     {
+        $max_block_order = $serviceBlock->service()->first()->blocks->pluck('order', 'order')->max();
+
+        $serviceBlock->order = $max_block_order + 1;
+        $serviceBlock->order_dump = $max_block_order + 1;
+        $serviceBlock->saveQuietly();
+
         if ($serviceBlock->type->name === 'scan_to_bim_1') {
             Storage::disk('public')->copy('service_default/scan-to-bim-background-new.webp', 'service_block/scan-to-bim-background-new_' . $serviceBlock->id . '.webp');
             ServiceItem::create(['name' => 'background_image', 'value' => 'service_block/scan-to-bim-background-new_' . $serviceBlock->id . '.webp', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
@@ -20,6 +26,8 @@ class ServiceBlockObserver
             ServiceItem::create(['name' => 'main_header', 'value' => 'SCAN TO BIM SERVICES', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
             ServiceItem::create(['name' => 'text_under_the_header', 'value' => 'Guarantee of models quality. Daily reports. 3D modeling by Point Cloud specialists with over 7 years of experience in all disciplines.', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
             ServiceItem::create(['name' => 'button_text', 'value' => 'ESTIMATE YOUR PROJECT', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'button_color', 'value' => '#43aeb6', 'service_block_id' => $serviceBlock->id, 'type_id' => 5])->save();
+            ServiceItem::create(['name' => 'button_shadow', 'value' => 'lg', 'service_block_id' => $serviceBlock->id, 'type_id' => 6])->save();
             ServiceItem::create(['name' => 'button_url', 'value' => 'https://www.google.com/', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
 
             ServiceItem::create(['name' => 'the_first_sub_service_header', 'value' => 'Point cloud registration', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
@@ -37,6 +45,583 @@ class ServiceBlockObserver
             ServiceItem::create(['name' => 'the_fourth_sub_service_header', 'value' => 'AS-BUILT SERVICES', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
             Storage::disk('public')->copy('service_default/scan-to-bim-icon4.webp', 'service_block/scan-to-bim-icon4_'. $serviceBlock->id .'.webp');
             ServiceItem::create(['name' => 'the_fourth_sub_service_image', 'value' => 'service_block/scan-to-bim-icon4_' . $serviceBlock->id . '.webp', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_2') {
+            ServiceItem::create(['name' => 'breadcrumb_item_active', 'value' => 'Scan To Bim Service' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_3') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'What advantages you will get' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p>Our <b class="fw-bold">Scan to BIM Services</b> offer precise parametric <b class="fw-bold">As-built BIM Models</b> and 2D CAD Models showcasing details like pipes, walls, slabs, roof plans, facades, and landscapes within and around the building.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_2',
+                    'value' => '<p>Our <b class="fw-bold">Point Cloud</b> to <b class="fw-bold">BIM Modeling Services</b> deliver models ranging from LOD 100 to 350, encompassing Architectural, Structural, Site, MEPFP Elements. We also include Clash Detection for projects involving Renovation, Refurbishment, Retrofit, or Reconstruction.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon1.png', 'service_block/scan-to-bim-block-3-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => '3D Content Creation', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon2.png', 'service_block/scan-to-bim-block-3-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'HIGH QUALITY', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon3.png', 'service_block/scan-to-bim-block-3-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'ADHERENCE TO DEADLINES', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon4.png', 'service_block/scan-to-bim-block-3-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'Tasks solving', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon5.png', 'service_block/scan-to-bim-block-3-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'Project adjustmnent', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon6.png', 'service_block/scan-to-bim-block-3-icon6_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon6_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => 'Communication', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon7.png', 'service_block/scan-to-bim-block-3-icon7_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_seventh_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon7_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_seventh_item_header', 'value' => 'Certified team', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon8.png', 'service_block/scan-to-bim-block-3-icon8_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_eighth_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon8_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_eighth_item_header', 'value' => 'Work process organization', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-3-icon9.png', 'service_block/scan-to-bim-block-3-icon9_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_ninth_item_image', 'value' => 'service_block/scan-to-bim-block-3-icon9_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_ninth_item_header', 'value' => 'Test', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_4') {
+            Storage::disk('public')->copy('service_default/scan-to-bim.pdf', 'service_block/scan-to-bim_'. $serviceBlock->id .'.pdf');
+            ServiceItem::create(['name' => 'file_to_download', 'value' => 'service_block/scan-to-bim_'. $serviceBlock->id .'.pdf', 'service_block_id' => $serviceBlock->id, 'type_id' => 7])->save();
+
+            ServiceItem::create(['name' => 'button_text', 'value' => 'DOWNLOAD PRESENTATION' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'button_color', 'value' => '#6bdcdb' , 'service_block_id' => $serviceBlock->id, 'type_id' => 5])->save();
+            ServiceItem::create(['name' => 'button_shadow', 'value' => 'lg' , 'service_block_id' => $serviceBlock->id, 'type_id' => 6])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_5') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'More about our Scan to BIM Services' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p>Our <b class="fw-bold">Scan to BIM Services</b> (also known as Point Cloud <b class="fw-bold">BIM Modeling services</b>) are suitable for Laser Scanning Companies, Architectural Design Companies, Surveyors, MEP Engineering Companies, Property Owners, and General Contractors or Construction Management Companies.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'BIM modeling' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon1.png', 'service_block/scan-to-bim-block-5-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_first_item_text', 'value' => 'Creation of 3D Revit BIM-model by tracing the data from the Point Cloud. Parameterization of BIM elements.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'As-built drawings' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon2.png', 'service_block/scan-to-bim-block-5-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_second_item_text', 'value' => 'Design of As-built drawings based on 3D BIM models from Revit created by the scanning.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'QA\QC' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon3.png', 'service_block/scan-to-bim-block-5-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_third_item_text', 'value' => 'Checking of 3D BIM model accuracy, building and engineering logic, elements clashing.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'Progress Reports' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon4.png', 'service_block/scan-to-bim-block-5-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fourth_item_text', 'value' => 'Creation of every day project reports. Own reporting system to inform about the progress of the modeling process.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'Export to other formats' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon5.png', 'service_block/scan-to-bim-block-5-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fifth_item_text', 'value' => 'Export the Revit model in the format you need: IFC, NWC, NWF, DWG, PDF, DGN, FBX, STEP, SKP' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => 'Our Software skills' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon6.png', 'service_block/scan-to-bim-block-5-icon6_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon6_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_sixth_item_text', 'value' => 'The main program for creating 3D BIM models is Revit. But our team is also proficient in other programs: AutoCAD, ArchiCAD, SketchUp, Navisworks.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_seventh_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon7.png', 'service_block/scan-to-bim-block-5-icon7_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_seventh_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon7_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_seventh_item_text', 'value' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_eighth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon8.png', 'service_block/scan-to-bim-block-5-icon8_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_eighth_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon8_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_eighth_item_text', 'value' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_ninth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-5-icon9.png', 'service_block/scan-to-bim-block-5-icon9_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_ninth_item_image', 'value' => 'service_block/scan-to-bim-block-5-icon9_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_ninth_item_text', 'value' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_6') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'WE HAVE EXPERIENCE AND EXPERTISE IN THE FIELDS:' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p>Our top priorities: <b class="fw-bold">quality, accuracy and logic</b>. Our experience includes developing parametric 3D BIM and 2D CAD models. We work with all disciplines: Architectural, Structural, Mechanical, Electrical, Plumbing, Fire Protection, Site.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'Residential Buildings' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'Educational Buildings' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'Institutional Buildings' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon6_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon6_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_seventh_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon7_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_seventh_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon7_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_eighth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon8_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_eighth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon8_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_ninth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon9_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_ninth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon9_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_tenth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon10_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_tenth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon10_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_eleventh_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon11_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_eleventh_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon11_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_twelfth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon12_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_twelfth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon12_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_thirteenth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon13_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_thirteenth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon13_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fourteenth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon14_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourteenth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon14_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fifteenth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-6-icon.png', 'service_block/scan-to-bim-block-6-icon15_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifteenth_item_image', 'value' => 'service_block/scan-to-bim-block-6-icon15_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_7') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'HOW DO WE WORK?' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p>Our <b class="fw-bold">Scan to BIM Modeling</b> team is skilled in producing accurate 3D BIM models or 2D drawings for purposes such as design validation, planning, comparison, interference checks, MEP or construction elements demolition or addition, documentation of existing building conditions.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon1.png', 'service_block/scan-to-bim-block-7-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_first_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_first_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_first_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon2.png', 'service_block/scan-to-bim-block-7-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_second_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_second_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_second_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon3.png', 'service_block/scan-to-bim-block-7-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_third_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_third_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_third_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon4.png', 'service_block/scan-to-bim-block-7-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fourth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fourth_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fourth_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon5.png', 'service_block/scan-to-bim-block-7-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fifth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fifth_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fifth_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-7-icon6.png', 'service_block/scan-to-bim-block-7-icon6_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => 'service_block/scan-to-bim-block-7-icon6_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => 'Test' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_sixth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_sixth_item_paragraph_2',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_sixth_item_paragraph_3',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_8') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'OUR SCAN TO BIM PROJECTS' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_first_project_url', 'value' => 'http://localhost/portfolio/metallurgy-combine-from-ukraine', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+            ServiceItem::create(['name' => 'the_second_project_url', 'value' => 'http://localhost/portfolio/industrial-plant-northern-gzk', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+            ServiceItem::create(['name' => 'the_third_project_url', 'value' => 'http://localhost/portfolio/landscape-of-the-industrial-territory', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+            ServiceItem::create(['name' => 'the_fourth_project_url', 'value' => 'http://localhost/portfolio/hypermarket-billa', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+
+            ServiceItem::create(['name' => 'estimation_button_url', 'value' => 'http://localhost/scan-to-bim-estimates-project', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+
+            ServiceItem::create(['name' => 'estimation_button_text', 'value' => 'ESTIMATE YOUR PROJECT' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_9') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'OUR BENEFITS' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-9-icon1.png', 'service_block/scan-to-bim-block-9-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-9-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'REVIEWING' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_first_item_paragraph_1',
+                    'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-9-icon2.png', 'service_block/scan-to-bim-block-9-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-9-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'DEVELOPMENT' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_second_item_paragraph_1',
+                    'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-9-icon3.png', 'service_block/scan-to-bim-block-9-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-9-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'ORGANIZATION' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_third_item_paragraph_1',
+                    'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_10') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'WHAT IS THE SCAN TO BIM SERVICE?' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p style="text-align: justify;">Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps create a comprehensive and detailed building model, which can be used for renovation, restoration, or retrofitting purposes. The BIM modeling service is essential in creating a collaborative environment for developing and executing efficient construction projects.</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: justify;">The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings of 28%, greater accuracy, and reduced risk of errors by 40%. It helps minimize on-site work and disruptions reduces the chances of rework, and allows for better visualization and analysis of the building\'s structure. Additionally, the 3D BIM models enable stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_11') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'COUNTRIES WE WORKED WITH' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-11-icon1.png', 'service_block/scan-to-bim-block-11-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'map_image', 'value' => 'service_block/scan-to-bim-block-11-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_12') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'FREQUENTLY ASKED QUESTIONS' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon1.png', 'service_block/scan-to-bim-block-12-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_first_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon2.png', 'service_block/scan-to-bim-block-12-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_second_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon3.png', 'service_block/scan-to-bim-block-12-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_third_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon4.png', 'service_block/scan-to-bim-block-12-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fourth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon5.png', 'service_block/scan-to-bim-block-12-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_fifth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon6.png', 'service_block/scan-to-bim-block-12-icon6_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon6_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_sixth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon7.png', 'service_block/scan-to-bim-block-12-icon7_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_seventh_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon7_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_seventh_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_seventh_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon8.png', 'service_block/scan-to-bim-block-12-icon8_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_eighth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon8_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_eighth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_eighth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon9.png', 'service_block/scan-to-bim-block-12-icon9_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_ninth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon9_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_ninth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_ninth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-12-icon10.png', 'service_block/scan-to-bim-block-12-icon10_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_tenth_item_image', 'value' => 'service_block/scan-to-bim-block-12-icon10_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_tenth_item_header', 'value' => 'Lorem Ipsum is simply dummy text.' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'the_tenth_item_paragraph_1',
+                    'value' => '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_13') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-13-icon1.webp', 'service_block/scan-to-bim-block-13-icon1_'. $serviceBlock->id .'.webp');
+            ServiceItem::create(['name' => 'image', 'value' => 'service_block/scan-to-bim-block-13-icon1_'. $serviceBlock->id .'.webp', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(
+                [
+                    'name' => 'script',
+                    'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="36e8ffcfd59d981ac14ebb11c74e5a169f998a7a9419bd84afbb87074fba57e4"></script>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 8
+                ]
+            )->save();
         }
     }
 
@@ -45,15 +630,379 @@ class ServiceBlockObserver
      */
     public function updated(ServiceBlock $serviceBlock): void
     {
-        //
+        $blocks = $serviceBlock->service()->first()->blocks->where('order', $serviceBlock->order);
+
+        if ($blocks->count() == 2) {
+            $old_order = $serviceBlock->order_dump;
+
+            $serviceBlock->order_dump = $serviceBlock->order;
+            $serviceBlock->saveQuietly();
+
+            $to_update = $blocks->where('id', '!=', $serviceBlock->id)->first();
+
+            $to_update->order = $old_order;
+            $to_update->order_dump = $old_order;
+
+            $to_update->saveQuietly();
+        }
     }
 
     /**
-     * Handle the ServiceBlock "deleted" event.
+     * Handle the ServiceBlock "deleting" event.
      */
-    public function deleted(ServiceBlock $serviceBlock): void
+    public function deleting(ServiceBlock $serviceBlock)
     {
-        //
+        if ($serviceBlock->type->name === 'scan_to_bim_1') {
+            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'background_image')->first()->value)) {
+                Storage::disk('public')->delete($serviceBlock->items->where('name', 'background_image')->first()->value);
+            }
+
+            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value)) {
+                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value);
+            }
+
+            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value)) {
+                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value);
+            }
+
+            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value)) {
+                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value);
+            }
+
+            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value)) {
+                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value);
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_3') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_4') {
+            if ($serviceBlock->items->where('name', 'file_to_download')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'file_to_download')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'file_to_download')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_5') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_6') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eleventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eleventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eleventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_twelfth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_twelfth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_twelfth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_thirteenth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_thirteenth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_thirteenth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourteenth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourteenth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourteenth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifteenth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifteenth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifteenth_item_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_7') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_9') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_11') {
+            if ($serviceBlock->items->where('name', 'map_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'map_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'map_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'scan_to_bim_12') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_tenth_item_image')->first()->value);
+                }
+            }
+        }  elseif ($serviceBlock->type->name === 'scan_to_bim_13') {
+            if ($serviceBlock->items->where('name', 'image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'image')->first()->value);
+                }
+            }
+        }
     }
 
     /**

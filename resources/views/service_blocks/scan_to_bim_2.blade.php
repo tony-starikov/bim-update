@@ -5,7 +5,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a class="text-dark" href="{{ route('main') }}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Scan To Bim Service</li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ $block->items->where('name', 'breadcrumb_item_active')->first()->value }}</li>
                     </ol>
                 </nav>
             </div>

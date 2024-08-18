@@ -29,20 +29,31 @@ class ServiceResource extends Resource
         'blocks',
     ];
 
+    public static string $orderField = 'order'; // Поле сортировки по умолчанию
+
+    public static string $orderType = 'ASC'; // Тип сортировки по умолчанию
+
 	public function fields(): array
 	{
 		return [
 		    ID::make()->sortable(),
             Text::make('Title', 'title_en')->sortable()->required(),
             Text::make('Description', 'description_en')->sortable()->required()->hideOnIndex(),
-            Image::make('Image', 'image')->disk('public')->dir('service')->removable()->hideOnIndex(),
+            Image::make('Image', 'image')
+                ->disk('public')
+                ->dir('service')
+                ->keepOriginalFileName()
+                ->allowedExtensions(['jpg', 'png', 'webp'])
+                ->removable()
+                ->hideOnIndex(),
             Slug::make('Slug')->from('title_en')->unique()->hint('You can leave this field empty it will generate automatically from title.'),
             File::make('Presentation', 'presentation')->disk('public')->dir('presentations')->allowedExtensions(['pdf'])->hideOnIndex()->removable(),
             SwitchBoolean::make('Show Page', 'show_page')->onValue(1)->offValue(0)->autoUpdate(true),
             SwitchBoolean::make('Show On The Main Page', 'show_on_main_page')->onValue(1)->offValue(0)->autoUpdate(true),
-            Number::make('Order', 'order')
-                ->min(0)
-                ->max(10000000),
+            Select::make('Main Page Order', 'order')
+                ->options(
+                    Service::all()->pluck('order', 'order')->sort()->all()
+                )->hideOnCreate(),
             Select::make('Menu Item', 'service_menu_item_id')->nullable()->options(
                 ServiceMenuItem::all()->pluck('title_en', 'id')->toArray()
             )->hideOnIndex(),

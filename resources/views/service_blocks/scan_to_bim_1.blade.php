@@ -1,6 +1,6 @@
 <div id="main">
-    <div class="container-fluid" style="background: url('{{ '/images/' . $block->items->where('name', 'background_image')->first()->value }}') no-repeat center center local; background-size: cover; min-height: 100vh;">
-        <div class="container mt-5 pb-0 px-0 p-lg-5">
+    <div class="container-fluid pt-5" style="background: url('{{ '/images/' . $block->items->where('name', 'background_image')->first()->value }}') no-repeat center center local; background-size: cover; min-height: 100vh;">
+        <div class="container pb-0 px-0 p-lg-5">
             <div class="row px-5 mt-5 text-center">
                 <div class="col-12 mt-5">
                     <h1 class="text-white mt-4 text-uppercase fw-bold">{{ $block->items->where('name', 'main_header')->first()->value }}</h1>
@@ -14,8 +14,7 @@
 
             <div class="row px-5 pb-4 mt-5 justify-content-center">
                 <div class="col-lg-6 col-xl-5">
-{{--                    /scan-to-bim-estimates-project--}}
-                    <a id="estimate-first-screen-scantobim" href="{{ $block->items->where('name', 'button_url')->first()->value }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6">
+                    <a id="estimate-first-screen-scantobim" href="{{ $block->items->where('name', 'button_url')->first()->value }}" role="button" class="btn btn-primary shadow-{{ $block->items->where('name', 'button_shadow')->first()->value }} btn-lg border-0 rounded-4 w-100 p-3" style="background-color: {{ $block->items->where('name', 'button_color')->first()->value }}">
                         <span class="fw-bold h5 my-2 text-uppercase">{{ $block->items->where('name', 'button_text')->first()->value }}</span>
                     </a>
                 </div>

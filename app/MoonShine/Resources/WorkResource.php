@@ -21,6 +21,10 @@ class WorkResource extends Resource
 
 	public static string $title = 'Works';
 
+    public static string $orderField = 'id'; // Поле сортировки по умолчанию
+
+    public static string $orderType = 'ASC'; // Тип сортировки по умолчанию
+
 	public function fields(): array
 	{
 		return [

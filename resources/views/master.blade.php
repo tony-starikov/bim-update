@@ -347,7 +347,7 @@
 <nav id="nav" class="navbar navbar-expand-lg shadow-lg bg-white fixed-top py-1 main-width">
     <div class="container main-container py-lg-2 py-xl-0 px-lg-0">
         <a class="navbar-brand p-0 m-0" href="{{ route('main') }}">
-            <img id="primaryimage" src="/images/bim_prove.png" class="img-fluid logo" alt="logo">
+            <img id="primaryimage" src="/images/bim_logo.png" class="img-fluid logo" alt="logo">
         </a>
         <div class="d-flex justify-content-end align-items-center">
             <a href="{{ route('contact') }}" role="button"

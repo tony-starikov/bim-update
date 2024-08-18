@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('template')->nullable();
             $table->integer('show_status')->default(1);
             $table->integer('order')->nullable();
+            $table->integer('order_dump')->nullable();
             $table->foreignId('service_id')->constrained('services')->onDelete('cascade');
             $table->timestamps();
         });

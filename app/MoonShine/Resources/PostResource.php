@@ -22,6 +22,10 @@ class PostResource extends Resource
 
 	public static string $title = 'Posts';
 
+    public static string $orderField = 'id'; // Поле сортировки по умолчанию
+
+    public static string $orderType = 'ASC'; // Тип сортировки по умолчанию
+
 //	public static array $activeActions = ['show', 'edit'];
 
 	public function fields(): array

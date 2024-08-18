@@ -17,6 +17,10 @@ class ServiceMenuItemResource extends Resource
 
 	public static string $title = 'ServiceMenuItems';
 
+    public static string $orderField = 'order'; // Поле сортировки по умолчанию
+
+    public static string $orderType = 'ASC'; // Тип сортировки по умолчанию
+
 	public function fields(): array
 	{
 		return [

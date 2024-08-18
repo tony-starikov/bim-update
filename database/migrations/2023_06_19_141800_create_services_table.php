@@ -29,7 +29,8 @@ return new class extends Migration
             $table->text('schema_faq')->nullable();
             $table->integer('status')->default(1);
             $table->integer('show_on_main_page')->default(1);
-            $table->integer('order')->default(0);
+            $table->integer('order')->nullable();
+            $table->integer('order_dump')->nullable();
             $table->integer('show_page')->default(0);
             $table->integer('service_menu_item_id')->nullable();
             $table->timestamps();
