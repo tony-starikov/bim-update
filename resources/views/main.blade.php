@@ -312,7 +312,7 @@
             </div>
             <div class="row px-lg-5">
 
-                @foreach($services->sortBy('order') as $service)
+                @foreach($services->where('show_on_main_page', 1)->sortBy('order') as $service)
                     @if($service->show_on_main_page)
                         <div class="col-12 col-md-6 col-xxl-4 my-3">
                             <div class="card p-0 h-100" style="border: 4px solid #6bdcdb; border-radius: 0;">

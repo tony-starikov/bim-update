@@ -301,6 +301,30 @@ class ServiceBlockSeeder extends Seeder
                 'order' => 11,
                 'order_dump' => 11,
             ],
+            [
+                'id' => 36,
+                'service_id' => 7,
+                'type_id' => 36,
+                'name' => 'mep_bim_modeling_1',
+                'order' => 1,
+                'order_dump' => 1,
+            ],
+            [
+                'id' => 37,
+                'service_id' => 7,
+                'type_id' => 37,
+                'name' => 'mep_bim_modeling_2',
+                'order' => 2,
+                'order_dump' => 2,
+            ],
+            [
+                'id' => 38,
+                'service_id' => 7,
+                'type_id' => 38,
+                'name' => 'mep_bim_modeling_3',
+                'order' => 3,
+                'order_dump' => 3,
+            ],
         ]);
     }
 }

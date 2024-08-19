@@ -154,6 +154,18 @@ class ServiceBlockTypeSeeder extends Seeder
                 'id' => 35,
                 'name' => 'telecom_design_11',
             ],
+            [
+                'id' => 36,
+                'name' => 'mep_bim_modeling_1',
+            ],
+            [
+                'id' => 37,
+                'name' => 'mep_bim_modeling_2',
+            ],
+            [
+                'id' => 38,
+                'name' => 'mep_bim_modeling_3',
+            ],
         ]);
     }
 }

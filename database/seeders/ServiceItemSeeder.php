@@ -119,6 +119,8 @@ class ServiceItemSeeder extends Seeder
                 'service_block_id' => 1,
                 'type_id' => 6,
             ],
+
+
             [
                 'id' => 16,
                 'name' => 'breadcrumb_item_active',
@@ -1423,6 +1425,346 @@ class ServiceItemSeeder extends Seeder
                 'value' => 'service_block/scan-to-bim-block-13-icon1_13.webp',
                 'service_block_id' => 13,
                 'type_id' => 2,
+            ],
+
+
+
+
+            [
+                'id' => 191,
+                'name' => 'background_image',
+                'value' => 'service_block/mep-bim-modeling-background_36.webp',
+                'service_block_id' => 36,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 192,
+                'name' => 'main_header',
+                'value' => 'MEP BIM MODELING SERVICES',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 193,
+                'name' => 'text_under_the_header',
+                'value' => 'Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 194,
+                'name' => 'button_text',
+                'value' => 'ESTIMATE YOUR PROJECT',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 195,
+                'name' => 'button_url',
+                'value' => '/mep-estimates-project',
+                'service_block_id' => 36,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 196,
+                'name' => 'the_first_sub_service_header',
+                'value' => 'MEP MODELING',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 197,
+                'name' => 'the_first_sub_service_image',
+                'value' => 'service_block/mep-bim-modeling-icon1_36.png',
+                'service_block_id' => 36,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 198,
+                'name' => 'the_second_sub_service_header',
+                'value' => 'BIM COORDINATION',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 199,
+                'name' => 'the_second_sub_service_image',
+                'value' => 'service_block/mep-bim-modeling-icon2_36.png',
+                'service_block_id' => 36,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 200,
+                'name' => 'the_third_sub_service_header',
+                'value' => 'FABRICATION',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 201,
+                'name' => 'the_third_sub_service_image',
+                'value' => 'service_block/mep-bim-modeling-icon3_36.png',
+                'service_block_id' => 36,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 202,
+                'name' => 'the_fourth_sub_service_header',
+                'value' => 'SHOP DRAWINGS CREATION',
+                'service_block_id' => 36,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 203,
+                'name' => 'the_fourth_sub_service_image',
+                'value' => 'service_block/mep-bim-modeling-icon4_36.png',
+                'service_block_id' => 36,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 204,
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 36,
+                'type_id' => 5,
+            ],
+            [
+                'id' => 205,
+                'name' => 'button_shadow',
+                'value' => 'lg',
+                'service_block_id' => 36,
+                'type_id' => 6,
+            ],
+
+
+            [
+                'id' => 206,
+                'name' => 'breadcrumb_item_active_1',
+                'value' => 'MEP Services',
+                'service_block_id' => 37,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 207,
+                'name' => 'breadcrumb_item_active_2',
+                'value' => 'MEP Bim Modeling Service',
+                'service_block_id' => 37,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'id' => 208,
+                'name' => 'block_header',
+                'value' => 'MEP sub-contractor Services',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 209,
+                'name' => 'paragraph_1',
+                'value' => '<p>MEP drawings and MEP coordination are integral elements of any construction project. Whatever your goal is whether it\'s a new building or the renovation of an existing building, you will need to prepare drawings and a required a 3D model for BIM.</p><p style="text-align: justify;">&nbsp;</p><p>Our MEP BIM coordination and modeling department specializes in the development of an accurate and detailed MEP models and drawings.</p>',
+                'service_block_id' => 38,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 210,
+                'name' => 'the_first_item_header',
+                'value' => 'BIM Coordination',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 211,
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-3-icon1_38.png',
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 212,
+                'name' => 'the_first_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 213,
+                'name' => 'the_second_item_header',
+                'value' => 'MEP Modeling',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 214,
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-3-icon2_38.png',
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 215,
+                'name' => 'the_second_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 216,
+                'name' => 'the_third_item_header',
+                'value' => 'Drawings creation',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 217,
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-3-icon3_38.png',
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 218,
+                'name' => 'the_third_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 219,
+                'name' => 'the_fourth_item_header',
+                'value' => 'MEP Fabrication',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 220,
+                'name' => 'the_fourth_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-3-icon4_38.png',
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 221,
+                'name' => 'the_fourth_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 222,
+                'name' => 'the_fifth_item_header',
+                'value' => 'MEP Families Creation',
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 223,
+                'name' => 'the_fifth_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-3-icon5_38.png',
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 224,
+                'name' => 'the_fifth_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 225,
+                'name' => 'the_sixth_item_header',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 226,
+                'name' => 'the_sixth_item_image',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 227,
+                'name' => 'the_sixth_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 228,
+                'name' => 'the_seventh_item_header',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 229,
+                'name' => 'the_seventh_item_image',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 230,
+                'name' => 'the_seventh_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 231,
+                'name' => 'the_eighth_item_header',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 232,
+                'name' => 'the_eighth_item_image',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 233,
+                'name' => 'the_eighth_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 234,
+                'name' => 'the_ninth_item_header',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 235,
+                'name' => 'the_ninth_item_image',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 236,
+                'name' => 'the_ninth_item_text',
+                'value' => null,
+                'service_block_id' => 38,
+                'type_id' => 1,
             ],
         ]);
     }

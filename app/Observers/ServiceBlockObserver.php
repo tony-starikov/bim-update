@@ -622,6 +622,86 @@ class ServiceBlockObserver
                     'type_id' => 8
                 ]
             )->save();
+        }  elseif ($serviceBlock->type->name === 'mep_bim_modeling_1') {
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-background.webp', 'service_block/mep-bim-modeling-background_' . $serviceBlock->id . '.webp');
+            ServiceItem::create(['name' => 'background_image', 'value' => 'service_block/mep-bim-modeling-background_' . $serviceBlock->id . '.webp', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'main_header', 'value' => 'MEP BIM MODELING SERVICES', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'text_under_the_header', 'value' => 'Utilize the services of one skilled professional to strengthen your team or order the entire project to be completed by a group of specialists.', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'button_text', 'value' => 'ESTIMATE YOUR PROJECT', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'button_color', 'value' => '#43aeb6', 'service_block_id' => $serviceBlock->id, 'type_id' => 5])->save();
+            ServiceItem::create(['name' => 'button_shadow', 'value' => 'lg', 'service_block_id' => $serviceBlock->id, 'type_id' => 6])->save();
+            ServiceItem::create(['name' => 'button_url', 'value' => 'https://www.google.com/', 'service_block_id' => $serviceBlock->id, 'type_id' => 3])->save();
+
+            ServiceItem::create(['name' => 'the_first_sub_service_header', 'value' => 'MEP MODELING', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-icon1.png', 'service_block/mep-bim-modeling-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_sub_service_image', 'value' => 'service_block/mep-bim-modeling-icon1_' . $serviceBlock->id . '.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_second_sub_service_header', 'value' => 'BIM COORDINATION', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-icon2.png', 'service_block/mep-bim-modeling-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_sub_service_image', 'value' => 'service_block/mep-bim-modeling-icon2_' . $serviceBlock->id . '.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_third_sub_service_header', 'value' => 'FABRICATION', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-icon3.png', 'service_block/mep-bim-modeling-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_sub_service_image', 'value' => 'service_block/mep-bim-modeling-icon3_' . $serviceBlock->id . '.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+
+            ServiceItem::create(['name' => 'the_fourth_sub_service_header', 'value' => 'SHOP DRAWINGS CREATION', 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-icon4.png', 'service_block/mep-bim-modeling-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_sub_service_image', 'value' => 'service_block/mep-bim-modeling-icon4_' . $serviceBlock->id . '.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+        } elseif ($serviceBlock->type->name === 'mep_bim_modeling_2') {
+            ServiceItem::create(['name' => 'breadcrumb_item_active_1', 'value' => 'MEP Services' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'breadcrumb_item_active_2', 'value' => 'MEP Bim Modeling Service' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+        } elseif ($serviceBlock->type->name === 'mep_bim_modeling_3') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'MEP sub-contractor Services' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(
+                [
+                    'name' => 'paragraph_1',
+                    'value' => '<p>MEP drawings and MEP coordination are integral elements of any construction project. Whatever your goal is whether it\'s a new building or the renovation of an existing building, you will need to prepare drawings and a required a 3D model for BIM.</p><p style="text-align: justify;">&nbsp;</p><p>Our MEP BIM coordination and modeling department specializes in the development of an accurate and detailed MEP models and drawings.</p>',
+                    'service_block_id' => $serviceBlock->id,
+                    'type_id' => 4
+                ]
+            )->save();
+
+            ServiceItem::create(['name' => 'the_first_item_header', 'value' => 'BIM Coordination' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-block-3-icon1.png', 'service_block/mep-bim-modeling-block-3-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_first_item_image', 'value' => 'service_block/mep-bim-modeling-block-3-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_first_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_second_item_header', 'value' => 'MEP Modeling' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-block-3-icon2.png', 'service_block/mep-bim-modeling-block-3-icon2_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_second_item_image', 'value' => 'service_block/mep-bim-modeling-block-3-icon2_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_second_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_third_item_header', 'value' => 'Drawings creation' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-block-3-icon3.png', 'service_block/mep-bim-modeling-block-3-icon3_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_third_item_image', 'value' => 'service_block/mep-bim-modeling-block-3-icon3_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_third_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_fourth_item_header', 'value' => 'MEP Fabrication' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-block-3-icon4.png', 'service_block/mep-bim-modeling-block-3-icon4_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fourth_item_image', 'value' => 'service_block/mep-bim-modeling-block-3-icon4_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fourth_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_fifth_item_header', 'value' => 'MEP Families Creation' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            Storage::disk('public')->copy('service_default/mep-bim-modeling-block-3-icon5.png', 'service_block/mep-bim-modeling-block-3-icon5_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'the_fifth_item_image', 'value' => 'service_block/mep-bim-modeling-block-3-icon5_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_fifth_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_sixth_item_header', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'the_sixth_item_image', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_sixth_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_seventh_item_header', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'the_seventh_item_image', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_seventh_item_text', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_eighth_item_header', 'value' => null , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'the_eighth_item_image', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_eighth_item_text', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create(['name' => 'the_ninth_item_header', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'the_ninth_item_image', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            ServiceItem::create(['name' => 'the_ninth_item_text', 'value' => null, 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
         }
     }
 
@@ -653,24 +733,34 @@ class ServiceBlockObserver
     public function deleting(ServiceBlock $serviceBlock)
     {
         if ($serviceBlock->type->name === 'scan_to_bim_1') {
-            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'background_image')->first()->value)) {
-                Storage::disk('public')->delete($serviceBlock->items->where('name', 'background_image')->first()->value);
+            if ($serviceBlock->items->where('name', 'background_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'background_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'background_image')->first()->value);
+                }
             }
 
-            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value)) {
-                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value);
+            if ($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value);
+                }
             }
 
-            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value)) {
-                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value);
+            if ($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value);
+                }
             }
 
-            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value)) {
-                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value);
+            if ($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value);
+                }
             }
 
-            if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value)) {
-                Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value);
+            if ($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value);
+                }
             }
         } elseif ($serviceBlock->type->name === 'scan_to_bim_3') {
             if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
@@ -1000,6 +1090,90 @@ class ServiceBlockObserver
             if ($serviceBlock->items->where('name', 'image')->first()->value) {
                 if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'image')->first()->value)) {
                     Storage::disk('public')->delete($serviceBlock->items->where('name', 'image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'mep_bim_modeling_1') {
+            if ($serviceBlock->items->where('name', 'background_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'background_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'background_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_sub_service_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_sub_service_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_sub_service_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_sub_service_image')->first()->value);
+                }
+            }
+        } elseif ($serviceBlock->type->name === 'mep_bim_modeling_3') {
+            if ($serviceBlock->items->where('name', 'the_first_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_first_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_first_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_second_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_second_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_second_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_third_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_third_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_third_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fourth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_fifth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_sixth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_seventh_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_eighth_item_image')->first()->value);
+                }
+            }
+
+            if ($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value) {
+                if (Storage::disk('public')->exists($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value)) {
+                    Storage::disk('public')->delete($serviceBlock->items->where('name', 'the_ninth_item_image')->first()->value);
                 }
             }
         }
