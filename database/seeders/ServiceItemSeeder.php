@@ -1426,10 +1426,10 @@ class ServiceItemSeeder extends Seeder
                 'service_block_id' => 13,
                 'type_id' => 2,
             ],
+        ]);
 
 
-
-
+        DB::table('service_items')->insert([
             [
                 'id' => 191,
                 'name' => 'background_image',
