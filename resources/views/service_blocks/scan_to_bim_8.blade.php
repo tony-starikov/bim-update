@@ -1,4 +1,4 @@
-<div id="PROJECTS" class="container-fluid">
+<div class="container-fluid">
     <div class="container py-5 p-lg-5 pt-lg-0">
         <div class="row p-lg-5 pt-lg-0">
             <div class="col-12">

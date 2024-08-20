@@ -166,6 +166,46 @@ class ServiceBlockTypeSeeder extends Seeder
                 'id' => 38,
                 'name' => 'mep_bim_modeling_3',
             ],
+            [
+                'id' => 39,
+                'name' => 'mep_bim_modeling_4',
+            ],
+            [
+                'id' => 40,
+                'name' => 'mep_bim_modeling_5',
+            ],
+            [
+                'id' => 41,
+                'name' => 'mep_bim_modeling_6',
+            ],
+            [
+                'id' => 42,
+                'name' => 'mep_bim_modeling_7',
+            ],
+            [
+                'id' => 43,
+                'name' => 'mep_bim_modeling_8',
+            ],
+            [
+                'id' => 44,
+                'name' => 'mep_bim_modeling_9',
+            ],
+            [
+                'id' => 45,
+                'name' => 'mep_bim_modeling_10',
+            ],
+            [
+                'id' => 46,
+                'name' => 'mep_bim_modeling_11',
+            ],
+            [
+                'id' => 47,
+                'name' => 'mep_bim_modeling_12',
+            ],
+            [
+                'id' => 48,
+                'name' => 'mep_bim_modeling_13',
+            ],
         ]);
     }
 }

@@ -1766,6 +1766,746 @@ class ServiceItemSeeder extends Seeder
                 'service_block_id' => 38,
                 'type_id' => 1,
             ],
+
+
+
+            [
+                'id' => 237,
+                'name' => 'block_header',
+                'value' => 'Benefits of hiring our experts',
+                'service_block_id' => 39,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 238,
+                'name' => 'paragraph_1',
+                'value' => '<p>We create 3D models and drawings in disciplines such as mechanical, fire protection and plumbing. You will receive BIM models according to project conditions and requirements - schematic design, design documents and construction documents.</p>&nbsp;<p>We provide MEP BIM models in the desired Revit versions - 2019/20/21/22/23/24 and in 3D Revit, DWG and IFC format (as required). We work with any LOD 100-500.</p>&nbsp;<p>We specialize in MEP outsourcing services, delivering precise 3D MEP models to MEP contractors, consultants, construction companies, design-build companies, and component manufacturers. Enhance efficiency in optimizing the design, detailing, quantity, fabrication, and installation of MEP building systems.</p>',
+                'service_block_id' => 39,
+                'type_id' => 4,
+            ],
+            [
+                'id' => 239,
+                'name' => 'contact_us_text',
+                'value' => 'Utilize the services of one skilled professional to strengthen your team or order an entire project made by a group of specialists.',
+                'service_block_id' => 39,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 240,
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 39,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 241,
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 39,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 242,
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 39,
+                'type_id' => 5,
+            ],
+            [
+                'id' => 243,
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 39,
+                'type_id' => 6,
+            ],
+
+
+
+            [
+                'id' => 244,
+                'name' => 'block_header',
+                'value' => 'Disciplines we work with',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 245,
+                'name' => 'paragraph_1',
+                'value' => '<p>We help you prepare a complete package of design data for the design phase. We create accurate component drawings, analyze them and create 3D models. The finished data is compiled into a detailed report.</p>',
+                'service_block_id' => 40,
+                'type_id' => 4,
+            ],
+
+
+            [
+                'id' => 246,
+                'name' => 'the_first_item_header',
+                'value' => "HVAC systems",
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 247,
+                'name' => 'the_first_item_text',
+                'value' => 'This includes heating, ventilation and air conditioning systems and air ducts.',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 248,
+                'name' => 'the_second_item_header',
+                'value' => 'Plumbing Systems',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 249,
+                'name' => 'the_second_item_text',
+                'value' => 'This includes the sanitary sewerage system, garbage disposals, pipelines and their placement.',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 250,
+                'name' => 'the_third_item_header',
+                'value' => 'Fire protection system',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 251,
+                'name' => 'the_third_item_text',
+                'value' => 'This includes converting a detailed fire sprinkler design into a 3D fire protection model.',
+                'service_block_id' => 40,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'id' => 252,
+                'name' => 'block_header',
+                'value' => 'MORE ABOUT OUR MEP SERVICES',
+                'service_block_id' => 41,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 253,
+                'name' => 'subheader_1',
+                'value' => '3D MEP Modeling',
+                'service_block_id' => 41,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 254,
+                'name' => 'paragraph_1',
+                'value' => '<p>We can offer modeling primary coordination of MEP systems “from scratch” by design drawings for such disciplines: HVAC, Plumbing, Electrical, Fire Protection.</p>',
+                'service_block_id' => 41,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 255,
+                'name' => 'subheader_2',
+                'value' => 'Fabrication',
+                'service_block_id' => 41,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 256,
+                'name' => 'paragraph_2',
+                'value' => '<p>Using CAMduct or SysQue software our team are capable to implement Fabrication of MEP systems according to technical information provided by customer. HVAC and Fire Protection are our main directions in this field.</p>',
+                'service_block_id' => 41,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 257,
+                'name' => 'subheader_3',
+                'value' => 'Coordination process',
+                'service_block_id' => 41,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 258,
+                'name' => 'paragraph_3',
+                'value' => '<p>At this stage we have two main objectives: find and solve all interdisciplinary clashes which occur, optimize MEP systems routing to achieve a balance between system efficiency  and its  moderate  cost.</p>',
+                'service_block_id' => 41,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 259,
+                'name' => 'subheader_4',
+                'value' => 'Drawings creation',
+                'service_block_id' => 41,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 260,
+                'name' => 'paragraph_4',
+                'value' => '<p>During the drawings creation process we always try to represent all required information about MEP components and optimize them to make drawings not only informative but convenient in usage.</p>',
+                'service_block_id' => 41,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+            [
+                'id' => 261,
+                'name' => 'the_first_item_header',
+                'value' => '7',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 262,
+                'name' => 'the_first_item_subheader',
+                'value' => 'YEARS EXPERIENCE',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 263,
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-7-icon1_42.png',
+                'service_block_id' => 42,
+                'type_id' => 2,
+            ],
+
+            [
+                'id' => 264,
+                'name' => 'the_second_item_header',
+                'value' => '110+',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 265,
+                'name' => 'the_second_item_subheader',
+                'value' => 'COMPLETED PROJECTS',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 266,
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-7-icon2_42.png',
+                'service_block_id' => 42,
+                'type_id' => 2,
+            ],
+
+            [
+                'id' => 267,
+                'name' => 'the_third_item_header',
+                'value' => '80%',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 268,
+                'name' => 'the_third_item_subheader',
+                'value' => 'CLIENTS STAY WITH US',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 269,
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-7-icon3_42.png',
+                'service_block_id' => 42,
+                'type_id' => 2,
+            ],
+
+            [
+                'id' => 270,
+                'name' => 'the_fourth_item_header',
+                'value' => '500+',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 271,
+                'name' => 'the_fourth_item_subheader',
+                'value' => 'DESIGNED FAMILIES',
+                'service_block_id' => 42,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 272,
+                'name' => 'the_fourth_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-7-icon4_42.png',
+                'service_block_id' => 42,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'id' => 273,
+                'name' => 'block_header',
+                'value' => 'HOW DO WE WORK?',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 274,
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon1_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 275,
+                'name' => 'item_text_1',
+                'value' => 'Analysing incoming contract drawings and submittals.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 276,
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon2_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 277,
+                'name' => 'item_text_2',
+                'value' => 'Project template adjustments.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 278,
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon3_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 279,
+                'name' => 'item_text_3',
+                'value' => 'CAMduct creation or SysQue systems adjustment.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 280,
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon4_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 281,
+                'name' => 'item_text_4',
+                'value' => 'MEP Fabrication.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 282,
+                'name' => 'item_image_5',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon5_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 283,
+                'name' => 'item_text_5',
+                'value' => 'Modeling MEP systems as per design drawings.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 284,
+                'name' => 'item_image_6',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon6_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 285,
+                'name' => 'item_text_6',
+                'value' => 'Preparing all necessary families.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 286,
+                'name' => 'item_image_7',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon7_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 287,
+                'name' => 'item_text_7',
+                'value' => 'Coordination with other trades.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 288,
+                'name' => 'item_image_8',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon8_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 289,
+                'name' => 'item_text_8',
+                'value' => 'Creating Shop drawings.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 290,
+                'name' => 'item_image_9',
+                'value' => 'service_block/mep-bim-modeling-block-8-icon9_43.png',
+                'service_block_id' => 43,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 291,
+                'name' => 'item_text_9',
+                'value' => 'Creating Spool drawings and worksheets.',
+                'service_block_id' => 43,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'id' => 292,
+                'name' => 'block_header',
+                'value' => 'OUR SOFTWARE SKILLS',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+
+            [
+                'id' => 293,
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon1_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 294,
+                'name' => 'item_text_1',
+                'value' => 'Autodesk Revit',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 295,
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon2_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 296,
+                'name' => 'item_text_2',
+                'value' => 'Autodesk AutoCAD',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 297,
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon3_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 298,
+                'name' => 'item_text_3',
+                'value' => 'Revizto',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 299,
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon4_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 300,
+                'name' => 'item_text_4',
+                'value' => 'Fabrication CAMduct',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 301,
+                'name' => 'item_image_5',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon5_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 302,
+                'name' => 'item_text_5',
+                'value' => 'Autodesk Navisworks',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 303,
+                'name' => 'item_image_6',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon6_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 304,
+                'name' => 'item_text_6',
+                'value' => 'Graphisoft Arhicad',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 305,
+                'name' => 'item_image_7',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon7_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 306,
+                'name' => 'item_text_7',
+                'value' => 'SysQue',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 307,
+                'name' => 'item_image_8',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon8_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 308,
+                'name' => 'item_text_8',
+                'value' => 'BIMcollab',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 309,
+                'name' => 'item_image_9',
+                'value' => 'service_block/mep-bim-modeling-block-9-icon9_44.png',
+                'service_block_id' => 44,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 310,
+                'name' => 'item_text_9',
+                'value' => 'Autodesk ReCap',
+                'service_block_id' => 44,
+                'type_id' => 1,
+            ],
+
+
+
+
+
+            [
+                'id' => 311,
+                'name' => 'block_header',
+                'value' => 'OUR MEP PROJECTS',
+                'service_block_id' => 45,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 312,
+                'name' => 'project_url_1',
+                'value' => 'http://localhost/portfolio/reston-gateway-block-c-hotel',
+                'service_block_id' => 45,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 313,
+                'name' => 'project_url_2',
+                'value' => 'http://localhost/portfolio/the-stacks-part-b',
+                'service_block_id' => 45,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 314,
+                'name' => 'project_url_3',
+                'value' => 'http://localhost/portfolio/balfour-at-palisades',
+                'service_block_id' => 45,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 315,
+                'name' => 'button_url',
+                'value' => 'http://localhost/contact',
+                'service_block_id' => 45,
+                'type_id' => 3,
+            ],
+            [
+                'id' => 316,
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 45,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 317,
+                'name' => 'text',
+                'value' => 'Any questions? We\'re here to help. Leave your question and we\'ll get back to you.',
+                'service_block_id' => 45,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'id' => 318,
+                'name' => 'block_header',
+                'value' => 'OUR BENEFITS',
+                'service_block_id' => 46,
+                'type_id' => 1,
+            ],
+
+            [
+                'id' => 319,
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-11-icon1_46.png',
+                'service_block_id' => 46,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 320,
+                'name' => 'the_first_item_header',
+                'value' => 'REVIEWING',
+                'service_block_id' => 46,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 321,
+                'name' => 'the_first_item_paragraph_1',
+                'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                'service_block_id' => 46,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 322,
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-11-icon2_46.png',
+                'service_block_id' => 46,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 323,
+                'name' => 'the_second_item_header',
+                'value' => 'DEVELOPMENT',
+                'service_block_id' => 46,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 324,
+                'name' => 'the_second_item_paragraph_1',
+                'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                'service_block_id' => 46,
+                'type_id' => 4,
+            ],
+
+            [
+                'id' => 325,
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-modeling-block-11-icon3_46.png',
+                'service_block_id' => 46,
+                'type_id' => 2,
+            ],
+            [
+                'id' => 326,
+                'name' => 'the_third_item_header',
+                'value' => 'ORGANIZATION',
+                'service_block_id' => 46,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 327,
+                'name' => 'the_third_item_paragraph_1',
+                'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                'service_block_id' => 46,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'id' => 328,
+                'name' => 'block_header',
+                'value' => 'GEOGRAPHY OF OUR SERVICES',
+                'service_block_id' => 47,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 329,
+                'name' => 'map_image',
+                'value' => 'service_block/mep-bim-modeling-block-12-icon1_47.png',
+                'service_block_id' => 47,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'id' => 330,
+                'name' => 'block_header',
+                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+                'service_block_id' => 48,
+                'type_id' => 1,
+            ],
+            [
+                'id' => 331,
+                'name' => 'script',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="36e8ffcfd59d981ac14ebb11c74e5a169f998a7a9419bd84afbb87074fba57e4"></script>',
+                'service_block_id' => 48,
+                'type_id' => 8,
+            ],
+            [
+                'id' => 332,
+                'name' => 'image',
+                'value' => 'service_block/mep-bim-modeling-block-13-icon1_48.webp',
+                'service_block_id' => 48,
+                'type_id' => 2,
+            ],
         ]);
     }
 }
