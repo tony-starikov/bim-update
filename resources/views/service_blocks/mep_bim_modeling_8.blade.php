@@ -5,7 +5,7 @@
                 <h2 class="fw-bold mb-5">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>
             </div>
 
-            <div class="col-12 px-3">
+            <div class="col-12">
                 <div class="row">
                     <div class="col-md-6 col-xl-4 mb-4">
                         <div class="card h-100" style="border: 4px solid #6de0de">
@@ -125,7 +125,6 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
     </div>

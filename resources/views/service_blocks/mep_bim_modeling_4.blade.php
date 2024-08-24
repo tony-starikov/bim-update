@@ -1,14 +1,14 @@
 <div id="PROPOSE" class="container-fluid">
-    <div class="container py-5 p-lg-5 py-lg-3">
-        <div class="row p-lg-5">
+    <div class="container py-5 p-lg-5 py-lg-0">
+        <div class="row justify-content-center p-lg-5">
             <div class="col-12">
                 <h2 class="fw-bold text-uppercase">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>
                 <div class="h5 fw-normal mt-5">
                     {!! $block->items->where('name', 'paragraph_1')->first()->value !!}
                 </div>
             </div>
-            <div class="col-12 mt-4">
-                <div class="row align-items-center p-4" style="border: 4px solid; border-color: #6ad9d8;">
+            <div class="col-lg-11 col-xl-9 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
+                <div class="row align-items-center p-4">
                     <div class="col-md-8">
                         <h3 class="h4 fw-bold m-0">{{ $block->items->where('name', 'contact_us_text')->first()->value }}</h3>
                     </div>

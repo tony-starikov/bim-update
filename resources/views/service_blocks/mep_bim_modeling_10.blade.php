@@ -74,9 +74,9 @@
                         </div>
                     </div>
 
-                    <div class="col-12 px-4">
-                        <div class="row mt-4 px-4 py-5 p-lg-5 justify-content-center" style="border: 4px solid; border-color: #6ad9d8;">
-                            <div class="col-lg-6 text-center">
+                    <div class="col-md-6 mt-4 p-xl-5">
+                        <div class="row h-100 align-items-center justify-content-center" style="border: 4px solid; border-color: #6ad9d8;">
+                            <div class="col-9 col-md-10 col-xxl-8 px-5 py-3 text-center">
                                 <p class="fw-bold my-3">{{ $block->items->where('name', 'text')->first()->value }}</p>
                                 <a href="{{ env('APP_URL') . '/' . explode('/', $block->items->where('name', 'button_url')->first()->value)[3] }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
                                     <p class="fw-bold h5 my-2 text-uppercase">{{ $block->items->where('name', 'button_text')->first()->value }}</p>

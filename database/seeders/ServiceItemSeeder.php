@@ -1415,7 +1415,7 @@ class ServiceItemSeeder extends Seeder
             [
                 'id' => 189,
                 'name' => 'script',
-                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="36e8ffcfd59d981ac14ebb11c74e5a169f998a7a9419bd84afbb87074fba57e4"></script>',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
                 'service_block_id' => 13,
                 'type_id' => 8,
             ],
@@ -1547,7 +1547,7 @@ class ServiceItemSeeder extends Seeder
             [
                 'id' => 207,
                 'name' => 'breadcrumb_item_active_2',
-                'value' => 'MEP Bim Modeling Service',
+                'value' => 'MEP BIM Modeling Service',
                 'service_block_id' => 37,
                 'type_id' => 1,
             ],
@@ -1564,7 +1564,7 @@ class ServiceItemSeeder extends Seeder
             [
                 'id' => 209,
                 'name' => 'paragraph_1',
-                'value' => '<p>MEP drawings and MEP coordination are integral elements of any construction project. Whatever your goal is whether it\'s a new building or the renovation of an existing building, you will need to prepare drawings and a required a 3D model for BIM.</p><p style="text-align: justify;">&nbsp;</p><p>Our MEP BIM coordination and modeling department specializes in the development of an accurate and detailed MEP models and drawings.</p>',
+                'value' => '<p>MEP drawings and MEP coordination are integral elements of any construction project. Whatever your goal is whether it\'s a new building or the renovation of an existing building, you will need to prepare drawings and a required a 3D model for BIM.</p>&nbsp;<p>Our MEP BIM coordination and modeling department specializes in the development of an accurate and detailed MEP models and drawings.</p>',
                 'service_block_id' => 38,
                 'type_id' => 4,
             ],
@@ -2495,7 +2495,7 @@ class ServiceItemSeeder extends Seeder
             [
                 'id' => 331,
                 'name' => 'script',
-                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="36e8ffcfd59d981ac14ebb11c74e5a169f998a7a9419bd84afbb87074fba57e4"></script>',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
                 'service_block_id' => 48,
                 'type_id' => 8,
             ],

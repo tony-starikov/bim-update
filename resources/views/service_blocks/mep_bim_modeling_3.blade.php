@@ -1,5 +1,5 @@
 <div id="PROPOSE" class="container-fluid">
-    <div class="container py-5 p-lg-5 py-lg-3">
+    <div class="container py-5 p-lg-5 py-lg-0">
         <div class="row p-lg-5">
             <div class="col-12">
                 <h2 class="fw-bold text-uppercase">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>
@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="row justify-content-center mt-lg-4">
+                <div class="row justify-content-center mt-lg-0">
                     @if($block->items->where('name', 'the_first_item_header')->first()->value != null and Storage::disk('public')->exists($block->items->where('name', 'the_first_item_image')->first()->value) == true)
                         <div class="col-md-6 col-xl-4 p-4 pb-0">
                             <div class="row align-items-center p-2 py-4 h-100" style="border: 4px solid; border-color: #6ad9d8;">
