@@ -934,13 +934,13 @@ class ServiceBlockObserver
         } elseif ($serviceBlock->type->name === 'mep_bim_modeling_13') {
             ServiceItem::create(['name' => 'block_header', 'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
 
-            Storage::disk('public')->copy('service_default/scan-to-bim-block-13-icon1.webp', 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.webp');
-            ServiceItem::create(['name' => 'image', 'value' => 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.webp', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
+            Storage::disk('public')->copy('service_default/scan-to-bim-block-13-icon1.png', 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.png');
+            ServiceItem::create(['name' => 'image', 'value' => 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
 
             ServiceItem::create(
                 [
                     'name' => 'script',
-                    'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="36e8ffcfd59d981ac14ebb11c74e5a169f998a7a9419bd84afbb87074fba57e4"></script>',
+                    'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
                     'service_block_id' => $serviceBlock->id,
                     'type_id' => 8
                 ]
