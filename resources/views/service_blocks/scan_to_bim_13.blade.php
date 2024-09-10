@@ -1,4 +1,4 @@
-<div id="calendar" class="container-fluid horizontal-gradient-calendar py-3">
+<div id="calendar" class="container-fluid mt-lg-5 horizontal-gradient-calendar py-3">
     <div class="container py-5 p-lg-5">
         <div class="row px-lg-5">
             <div class="col-12">

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="container pb-5 p-lg-5 py-lg-0">
+    <div class="container pb-5 p-lg-5 pt-lg-0">
         <div class="row px-lg-5">
             <div class="col-12">
                 <div class="row justify-content-between">

@@ -1,4 +1,4 @@
-<div id="COUNTRIES" class="container-fluid" style="background-color: #f1faf9;">
+<div id="COUNTRIES" class="container-fluid my-lg-5" style="background-color: #f1faf9;">
     <div class="container py-5 p-lg-5">
         <div class="row p-lg-5">
             <div class="col-12">

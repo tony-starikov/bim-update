@@ -2238,5 +2238,1551 @@ class ServiceItemSeeder extends Seeder
                 'type_id' => 2,
             ],
         ]);
+
+
+        DB::table('service_items')->insert([
+            [
+                'name' => 'background_image',
+                'value' => 'service_block/mep-bim-coordination-background_49.webp',
+                'service_block_id' => 49,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'main_header',
+                'value' => 'MEP BIM COORDINATION SERVICES',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text_under_the_header',
+                'value' => 'MEP coordination experts with over four years of experience in Clash Detection for your project. Over 180+ accomplished projects. Daily reports.',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'ESTIMATE YOUR PROJECT',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/mep-estimates-project',
+                'service_block_id' => 49,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_first_sub_service_header',
+                'value' => 'Clash Detection',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_sub_service_image',
+                'value' => 'service_block/mep-bim-coordination-icon1_49.png',
+                'service_block_id' => 49,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_sub_service_header',
+                'value' => 'COORDINATION',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_sub_service_image',
+                'value' => 'service_block/mep-bim-coordination-icon2_49.png',
+                'service_block_id' => 49,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_sub_service_header',
+                'value' => 'Design optimization',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_sub_service_image',
+                'value' => 'service_block/mep-bim-coordination-icon3_49.png',
+                'service_block_id' => 49,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_header',
+                'value' => 'Clash Report Generation',
+                'service_block_id' => 49,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_image',
+                'value' => 'service_block/mep-bim-coordination-icon4_49.png',
+                'service_block_id' => 49,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 49,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'lg',
+                'service_block_id' => 49,
+                'type_id' => 6,
+            ],
+
+
+            [
+                'name' => 'breadcrumb_item_active_1',
+                'value' => 'MEP Services',
+                'service_block_id' => 50,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_item_active_2',
+                'value' => 'MEP BIM Coordination Service',
+                'service_block_id' => 50,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'MEP BIM Coordination Services',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Building systems—Mechanical, Electrical, Plumbing (MEP), and Fire Safety (FS)— form a fundamental mix of components, considered to be 60% of total project costs. Our MEP coordination service is dedicated to harmonizing these critical systems with other building disciplines, encompassing structure and the external envelope.</p>&nbsp;<p>Expertise in design, construction, operations and maintenance is a necessity for successful MEP coordination. This involves precise horizontal and vertical placement of system components within defined architectural and structural constraints.</p>',
+                'service_block_id' => 51,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'HVAC Coordination',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-3-icon1_51.png',
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_text',
+                'value' => 'Clash detection in Mechanical systems: mechanical ducts, mechanical pipes, mechanical equipment, etc.',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'Plumbing Coordination',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-3-icon2_51.png',
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_text',
+                'value' => 'Clash detection in Plumbing systems: cold and hot water pipes, sanitary and drainage pipes, vent pipes, rain water pipes, plumbing fixtures, etc.',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'Fire protection Coordination',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-3-icon3_51.png',
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_text',
+                'value' => 'Clash detection in Fire Protection systems: wet and dry piping systems, sprinkler systems, pumps, etc.',
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fourth_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fifth_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fifth_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fifth_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_sixth_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_sixth_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_sixth_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_seventh_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_seventh_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_seventh_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_eighth_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_eighth_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_eighth_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_ninth_item_header',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_ninth_item_image',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_ninth_item_text',
+                'value' => null,
+                'service_block_id' => 51,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR SOFTWARE SKILLS',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_1_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'Advance Steel',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_2_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'Autodesk AutoCAD',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_3_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'Autodesk Navisworks',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_4_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => 'Graphisoft Archicad',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_5',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_5_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_5',
+                'value' => 'Lumion',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_6',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_6_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_6',
+                'value' => 'Revit RECAP',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_7',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_7_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_7',
+                'value' => 'Rhinoceros',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_8',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_8_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_8',
+                'value' => 'Robot structural analysis',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_9',
+                'value' => 'service_block/mep-bim-coordination-block-4-icon_9_52.png',
+                'service_block_id' => 52,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_9',
+                'value' => 'SketchUp',
+                'service_block_id' => 52,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Benefits of working with us',
+                'service_block_id' => 53,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>MEP coordination is not just about preventing clashes between disciplines. It is a professional approach to detecting and resolving problems before construction begins, helping to avoid costly disruptions and ensure a smooth construction process that can potentially save millions in construction costs.</p>&nbsp;<p><strong>When you work with our outsourced team of MEP specialists you get the added benefits of:</strong></p><ul><li><span style="white-space: pre-wrap;">Cost and time saving by minimizing project errors;</span></li><li><span style="white-space: pre-wrap;">Freeing your employees from routine tasks;</span></li><li><span style="white-space: pre-wrap;">You will get experienced specialists in all disciplines;</span></li></ul>',
+                'service_block_id' => 53,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'contact_us_text',
+                'value' => 'Utilize the services of one skilled professional to strengthen your team or order an entire project made by a group of specialists.',
+                'service_block_id' => 53,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 53,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 53,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 53,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 53,
+                'type_id' => 6,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'HOW DO WE WORK?',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'paragraph',
+                'value' => '<p>We use <strong>Autodesk Navisworks</strong> to detect collisions and report coordination issues. BIM MEP coordination is a specific and complex process; outsourcing it to proven experts is the best, if possible.</p>',
+                'service_block_id' => 54,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon1_54.png',
+                'service_block_id' => 54,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_1',
+                'value' => 'NWC export and Creation of combined NWF file',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'Preparing files for work. We use the latest NWC files for export.',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon2_54.png',
+                'service_block_id' => 54,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_2',
+                'value' => 'Clash detective and clash analyzing',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'Collision detection, creating Clash Detective tests. Running tests and identifying the critical collisions. Creating viewpoints and organizing them.',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon3_54.png',
+                'service_block_id' => 54,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_3',
+                'value' => 'Coordination and optimization of MEP systems',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'After detecting errors, we start the process of model correction and searching for an optimal solution.',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon4_54.png',
+                'service_block_id' => 54,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_4',
+                'value' => 'Creating clash report',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => 'Prepare a progress report for project approval and delivery.',
+                'service_block_id' => 54,
+                'type_id' => 1,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Benefits of BIM Coordination',
+                'service_block_id' => 55,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Autodesk Revit and Navisworks main tools. We use them to assist AEC professionals in all phases of design and construction. Our goal is to save you time and resources.</p>&nbsp;<ul><li><span style="white-space: pre-wrap;">Detect design errors before the construction process begins.</span></li><li><span style="white-space: pre-wrap;">We provide daily or weekly reports. This will improve teamwork among all stakeholders.</span></li><li><span style="white-space: pre-wrap;">Minimize errors, resulting in resource savings.</span></li></ul>&nbsp;<p>We work with general contractors, owners, the entire project subcontractor team, architects and engineers. Our coordinators will help to coordinate your activities and get you to the desired result.</p>',
+                'service_block_id' => 55,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR MEP PROJECTS',
+                'service_block_id' => 56,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'project_url_1',
+                'value' => 'http://localhost/portfolio/reston-gateway-block-c-hotel',
+                'service_block_id' => 56,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'project_url_2',
+                'value' => 'http://localhost/portfolio/the-stacks-part-b',
+                'service_block_id' => 56,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'project_url_3',
+                'value' => 'http://localhost/portfolio/balfour-at-palisades',
+                'service_block_id' => 56,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => 'http://localhost/contact',
+                'service_block_id' => 56,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 56,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text',
+                'value' => 'Any questions? We\'re here to help. Leave your question and we\'ll get back to you.',
+                'service_block_id' => 56,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR BENEFITS',
+                'service_block_id' => 57,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-9-icon1_57.png',
+                'service_block_id' => 57,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'REVIEWING',
+                'service_block_id' => 57,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_paragraph_1',
+                'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                'service_block_id' => 57,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-9-icon2_57.png',
+                'service_block_id' => 57,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'DEVELOPMENT',
+                'service_block_id' => 57,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_paragraph_1',
+                'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                'service_block_id' => 57,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-coordination-block-9-icon3_57.png',
+                'service_block_id' => 57,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'ORGANIZATION',
+                'service_block_id' => 57,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_paragraph_1',
+                'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                'service_block_id' => 57,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'GEOGRAPHY OF OUR SERVICES',
+                'service_block_id' => 58,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'map_image',
+                'value' => 'service_block/mep-bim-coordination-block-10-icon1_58.png',
+                'service_block_id' => 58,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+                'service_block_id' => 59,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => 'CONTACT US',
+                'service_block_id' => 59,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_2',
+                'value' => 'How can we help you?',
+                'service_block_id' => 59,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+                'service_block_id' => 59,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'script',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
+                'service_block_id' => 59,
+                'type_id' => 8,
+            ],
+            [
+                'name' => 'image',
+                'value' => 'service_block/mep-bim-coordination-block-11-icon1_59.png',
+                'service_block_id' => 59,
+                'type_id' => 2,
+            ],
+        ]);
+
+
+        DB::table('service_items')->insert([
+            [
+                'name' => 'background_image',
+                'value' => 'service_block/mep-bim-fabrication-background_60.webp',
+                'service_block_id' => 60,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'main_header',
+                'value' => 'MEP BIM FABRICATION SERVICES',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text_under_the_header',
+                'value' => 'MEP Fabrication experts in creating detailed Shop Drawings and models for your project. Over 80+ accomplished projects. Daily reports. Large team.',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'ESTIMATE YOUR PROJECT',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/mep-estimates-project',
+                'service_block_id' => 60,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_first_sub_service_header',
+                'value' => 'Clash Detection',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_sub_service_image',
+                'value' => 'service_block/mep-bim-fabrication-icon1_60.png',
+                'service_block_id' => 60,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_sub_service_header',
+                'value' => 'COORDINATION',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_sub_service_image',
+                'value' => 'service_block/mep-bim-fabrication-icon2_60.png',
+                'service_block_id' => 60,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_sub_service_header',
+                'value' => 'Design optimization',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_sub_service_image',
+                'value' => 'service_block/mep-bim-fabrication-icon3_60.png',
+                'service_block_id' => 60,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_header',
+                'value' => 'Clash Report Generation',
+                'service_block_id' => 60,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_image',
+                'value' => 'service_block/mep-bim-fabrication-icon4_60.png',
+                'service_block_id' => 60,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 60,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'lg',
+                'service_block_id' => 60,
+                'type_id' => 6,
+            ],
+
+
+
+
+
+            [
+                'name' => 'breadcrumb_item_active_1',
+                'value' => 'MEP Services',
+                'service_block_id' => 61,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_item_active_2',
+                'value' => 'MEP BIM Fabrication Service',
+                'service_block_id' => 61,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Sub-contractor\'s services for fabrication',
+                'service_block_id' => 62,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p><strong>Manufacturing MEP</strong> parts is a very responsible and important process. Mistakes in this business are very costly. One of the steps that is crucial is the part drawings from which the MEP systems are manufactured.</p>&nbsp;<p>Improper creation of these drawings leads to many problems. <strong>Timelines are violated, additional costs are incurred, etc.</strong> To avoid this, everything must be done correctly, in a coordinated, error-free manner. Modern tools can help you avoid all these problems. But, of course, the experience of the team is also important, without which unfortunate mistakes can be made.</p>&nbsp;<p>With state-of-the-art tools and skilled employees, <strong>BIMPROVE</strong> can help you create drawings and 3D models of your engineering systems without overlays, ready for installation and suitable for production.</p>',
+                'service_block_id' => 62,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'BIM Fabrication Services',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '',
+                'service_block_id' => 63,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'MEP families creation',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon1_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'Accurate BIM Drafting Services',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon2_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'Fabrication shop drawings',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon3_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fourth_item_header',
+                'value' => 'BIM fabrication integration',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon4_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fifth_item_header',
+                'value' => 'MEP CAD DRAWINGS',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fifth_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon5_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fifth_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_sixth_item_header',
+                'value' => 'Fabrication productivity',
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_sixth_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-4-icon6_63.png',
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_sixth_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_seventh_item_header',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_seventh_item_image',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_seventh_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_eighth_item_header',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_eighth_item_image',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_eighth_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_ninth_item_header',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_ninth_item_image',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_ninth_item_text',
+                'value' => null,
+                'service_block_id' => 63,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR SOFTWARE SKILLS',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_1_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'Advance Steel',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_2_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'Autodesk AutoCAD',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_3_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'Autodesk Navisworks',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_4_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => 'Graphisoft Archicad',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_5',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_5_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_5',
+                'value' => 'Lumion',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_6',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_6_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_6',
+                'value' => 'Revit RECAP',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_7',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_7_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_7',
+                'value' => 'Rhinoceros',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_8',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_8_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_8',
+                'value' => 'Robot structural analysis',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_9',
+                'value' => 'service_block/mep-bim-fabrication-block-5-icon_9_64.png',
+                'service_block_id' => 64,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_9',
+                'value' => 'SketchUp',
+                'service_block_id' => 64,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Expert BIM Fabrication',
+                'service_block_id' => 65,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p><strong>BIMPROVE</strong> offers expert <strong>BIM Fabrication</strong> and prefabrication services tailored to different construction sectors. Our prefabrication services yield substantial benefits by boosting and optimizing productivity, reducing project timelines, and enhancing overall profitability.</p>&nbsp;<p>Using CAMduct or SysQue software our team are capable to implement Fabrication of MEP systems according to technical information provided by customer. HVAC and Fire Protection are our main directions in this field.</p>&nbsp;<p><strong>When you work with our outsourced team of MEP specialists you get the added benefits of:</strong></p>&nbsp;<ul><li><span style="white-space: pre-wrap;">Cost and time saving by minimizing project errors;</span></li><li><span style="white-space: pre-wrap;">Freeing your employees from routine tasks;</span></li><li><span style="white-space: pre-wrap;">You will get experienced specialists in all disciplines;</span></li></ul>',
+                'service_block_id' => 65,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'HOW DO WE WORK?',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-fabrication-block-7-icon1_66.png',
+                'service_block_id' => 66,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'Every project starts with adjusting its own database. At this first stage we take into account all data provided by customers concerning materials, connections, insulation and services types of ducts and pipes to model HVAC components in the most authentic way.',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-fabrication-block-7-icon2_66.png',
+                'service_block_id' => 66,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'Using submittals information we download all necessary families from official manufacturer websites or create these families ourselves if they aren’t available on the internet. This approach can guarantee 100% model conformity to clients requirements.',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-fabrication-block-7-icon3_66.png',
+                'service_block_id' => 66,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'We can offer modeling primary coordination of MEP systems “from scratch” by design drawings for such disciplines: HVAC, Plumbing, Electrical, Fire Protection.',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'contact_us_text',
+                'value' => 'Utilize the services of one skilled professional to strengthen your team or order an entire project made by a group of specialists.',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 66,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 66,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 66,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 66,
+                'type_id' => 6,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Benefits of BIM Fabrication',
+                'service_block_id' => 67,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Our goal is to save you time and resources.</p>&nbsp;<ul><li><span style="white-space: pre-wrap;">Detect design errors before the construction process begins.</span></li><li><span style="white-space: pre-wrap;">We provide daily or weekly reports. This will improve teamwork among all stakeholders.</span></li><li><span style="white-space: pre-wrap;">Minimize errors, resulting in resource savings.</span></li></ul>&nbsp;<p>We work with general contractors, owners, the entire project subcontractor team, architects and engineers. Our coordinators will help to coordinate your activities and get you to the desired result.</p>',
+                'service_block_id' => 67,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR MEP PROJECTS',
+                'service_block_id' => 68,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'project_url_1',
+                'value' => 'http://localhost/portfolio/reston-gateway-block-c-hotel',
+                'service_block_id' => 68,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'project_url_2',
+                'value' => 'http://localhost/portfolio/the-stacks-part-b',
+                'service_block_id' => 68,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'project_url_3',
+                'value' => 'http://localhost/portfolio/balfour-at-palisades',
+                'service_block_id' => 68,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => 'http://localhost/contact',
+                'service_block_id' => 68,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 68,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text',
+                'value' => 'Any questions? We\'re here to help. Leave your question and we\'ll get back to you.',
+                'service_block_id' => 68,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'WHAT IS THE MEP FABRICATION SERVICE?',
+                'service_block_id' => 69,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>MEP fabrication is the process of creating detailed shop drawings and models for mechanical, electrical, and plumbing systems in construction. It ensures precise installation and coordination of MEP components, improving efficiency and quality.</p>&nbsp;<p>During MEP fabrication, the design and engineering data from the building\'s MEP design are translated into highly accurate fabrication-level models and drawings. These models and drawings contain specific details, dimensions, and installation information needed for manufacturing the components and installing the MEP systems on-site.</p>',
+                'service_block_id' => 69,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR BENEFITS',
+                'service_block_id' => 70,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-11-icon1_70.png',
+                'service_block_id' => 70,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'REVIEWING',
+                'service_block_id' => 70,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_paragraph_1',
+                'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                'service_block_id' => 70,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-11-icon2_70.png',
+                'service_block_id' => 70,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'DEVELOPMENT',
+                'service_block_id' => 70,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_paragraph_1',
+                'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                'service_block_id' => 70,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/mep-bim-fabrication-block-11-icon3_70.png',
+                'service_block_id' => 70,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'ORGANIZATION',
+                'service_block_id' => 70,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_paragraph_1',
+                'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                'service_block_id' => 70,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'GEOGRAPHY OF OUR SERVICES',
+                'service_block_id' => 71,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'map_image',
+                'value' => 'service_block/mep-bim-fabrication-block-12-icon1_71.png',
+                'service_block_id' => 71,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+                'service_block_id' => 72,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => 'CONTACT US',
+                'service_block_id' => 72,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_2',
+                'value' => 'How can we help you?',
+                'service_block_id' => 72,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+                'service_block_id' => 72,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'script',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
+                'service_block_id' => 72,
+                'type_id' => 8,
+            ],
+            [
+                'name' => 'image',
+                'value' => 'service_block/mep-bim-fabrication-block-13-icon1_72.png',
+                'service_block_id' => 72,
+                'type_id' => 2,
+            ],
+
+
+
+
+
+
+
+
+//            [
+//                'name' => 'block_header',
+//                'value' => 'GEOGRAPHY OF OUR SERVICES',
+//                'service_block_id' => 58,
+//                'type_id' => 1,
+//            ],
+//            [
+//                'name' => 'map_image',
+//                'value' => 'service_block/mep-bim-coordination-block-10-icon1_58.png',
+//                'service_block_id' => 58,
+//                'type_id' => 2,
+//            ],
+//
+//
+//
+//            [
+//                'name' => 'block_header',
+//                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+//                'service_block_id' => 59,
+//                'type_id' => 1,
+//            ],
+//            [
+//                'name' => 'subheader_1',
+//                'value' => 'CONTACT US',
+//                'service_block_id' => 59,
+//                'type_id' => 1,
+//            ],
+//            [
+//                'name' => 'subheader_2',
+//                'value' => 'How can we help you?',
+//                'service_block_id' => 59,
+//                'type_id' => 1,
+//            ],
+//            [
+//                'name' => 'paragraph',
+//                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+//                'service_block_id' => 59,
+//                'type_id' => 4,
+//            ],
+//            [
+//                'name' => 'script',
+//                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
+//                'service_block_id' => 59,
+//                'type_id' => 8,
+//            ],
+//            [
+//                'name' => 'image',
+//                'value' => 'service_block/mep-bim-coordination-block-11-icon1_59.png',
+//                'service_block_id' => 59,
+//                'type_id' => 2,
+//            ],
+        ]);
     }
 }

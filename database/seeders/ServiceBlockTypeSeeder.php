@@ -206,6 +206,14 @@ class ServiceBlockTypeSeeder extends Seeder
                 'id' => 48,
                 'name' => 'mep_bim_modeling_13',
             ],
+            [
+                'id' => 49,
+                'name' => 'mep_bim_coordination_6',
+            ],
+            [
+                'id' => 50,
+                'name' => 'mep_bim_fabrication_7',
+            ],
         ]);
     }
 }

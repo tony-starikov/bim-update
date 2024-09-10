@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="container pb-0 p-lg-5">
+    <div class="container p-lg-5 py-lg-0">
         <div class="row py-5 p-lg-5 pb-0">
             <div class="col-12">
                 <h2 class="fw-bold mb-5">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>

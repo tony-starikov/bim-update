@@ -933,6 +933,15 @@ class ServiceBlockObserver
 
         } elseif ($serviceBlock->type->name === 'mep_bim_modeling_13') {
             ServiceItem::create(['name' => 'block_header', 'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'subheader_1', 'value' => 'CONTACT US' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+            ServiceItem::create(['name' => 'subheader_2', 'value' => 'How can we help you?' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create([
+                'name' => 'paragraph',
+                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 4
+            ])->save();
 
             Storage::disk('public')->copy('service_default/scan-to-bim-block-13-icon1.png', 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.png');
             ServiceItem::create(['name' => 'image', 'value' => 'service_block/mep-bim-modeling-block-13-icon1_'. $serviceBlock->id .'.png', 'service_block_id' => $serviceBlock->id, 'type_id' => 2])->save();
@@ -945,6 +954,127 @@ class ServiceBlockObserver
                     'type_id' => 8
                 ]
             )->save();
+        } elseif ($serviceBlock->type->name === 'mep_bim_coordination_6') {
+            ServiceItem::create(['name' => 'block_header', 'value' => 'HOW DO WE WORK?' , 'service_block_id' => $serviceBlock->id, 'type_id' => 1])->save();
+
+            ServiceItem::create([
+                'name' => 'paragraph',
+                'value' => '<p>We use <strong>Autodesk Navisworks</strong> to detect collisions and report coordination issues. BIM MEP coordination is a specific and complex process; outsourcing it to proven experts is the best, if possible.</p>',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 4,
+            ])->save();
+
+
+
+            Storage::disk('public')
+                ->copy(
+                    'service_default/mep-bim-modeling-block-8-icon1.png',
+                    'service_block/mep-bim-coordination-block-6-icon1_'. $serviceBlock->id .'.png'
+                );
+            ServiceItem::create([
+                'name' => 'item_image_1',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon1_'. $serviceBlock->id .'.png',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 2
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_header_1',
+                'value' => 'Lorem Ipsum is simply dummy text.',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_text_1',
+                'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, provident?',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+
+
+            Storage::disk('public')
+                ->copy(
+                    'service_default/mep-bim-modeling-block-8-icon2.png',
+                    'service_block/mep-bim-coordination-block-6-icon2_'. $serviceBlock->id .'.png'
+                );
+            ServiceItem::create([
+                'name' => 'item_image_2',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon2_'. $serviceBlock->id .'.png',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 2
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_header_2',
+                'value' => 'Lorem Ipsum is simply dummy text.',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_text_2',
+                'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, provident?',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+
+
+            Storage::disk('public')
+                ->copy(
+                    'service_default/mep-bim-modeling-block-8-icon3.png',
+                    'service_block/mep-bim-coordination-block-6-icon3_'. $serviceBlock->id .'.png'
+                );
+            ServiceItem::create([
+                'name' => 'item_image_3',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon3_'. $serviceBlock->id .'.png',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 2
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_header_3',
+                'value' => 'Lorem Ipsum is simply dummy text.',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_text_3',
+                'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, provident?',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+
+
+            Storage::disk('public')
+                ->copy(
+                    'service_default/mep-bim-modeling-block-8-icon4.png',
+                    'service_block/mep-bim-coordination-block-6-icon4_'. $serviceBlock->id .'.png'
+                );
+            ServiceItem::create([
+                'name' => 'item_image_4',
+                'value' => 'service_block/mep-bim-coordination-block-6-icon4_'. $serviceBlock->id .'.png',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 2
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_header_4',
+                'value' => 'Lorem Ipsum is simply dummy text.',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
+
+            ServiceItem::create([
+                'name' => 'item_text_4',
+                'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, provident?',
+                'service_block_id' => $serviceBlock->id,
+                'type_id' => 1
+            ])->save();
         }
     }
 

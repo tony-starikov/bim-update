@@ -1,5 +1,5 @@
 <div id="BENEFITS" class="container-fluid horizontal-gradient">
-    <div class="container py-5 p-lg-5">
+    <div class="container py-5 p-lg-5 mt-lg-5">
         <div class="row p-lg-5">
             <div class="col-12">
                 <h2 class="fw-bold text-uppercase">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>

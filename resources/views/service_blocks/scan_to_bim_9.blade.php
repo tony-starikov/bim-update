@@ -1,4 +1,4 @@
-<div id="BENEFITS" class="container-fluid horizontal-gradient">
+<div id="BENEFITS" class="container-fluid my-lg-5 horizontal-gradient">
     <div class="container py-5 p-lg-5">
         <div class="row p-lg-5">
             <div class="col-12">
