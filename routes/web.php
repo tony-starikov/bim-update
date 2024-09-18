@@ -39,9 +39,9 @@ Route::get('/checking-the-model-in-revit-scan-to-bim', [PageController::class, '
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/portfolio/{slug}', [PortfolioController::class, 'project'])->name('portfolio.project');
 
-Route::get('/soft', [PageController::class, 'test'])->name('test');
-Route::get('/content', [PageController::class, 'content'])->name('content');
-Route::get('/architectural', [PageController::class, 'architectural'])->name('architectural');
+//Route::get('/soft', [PageController::class, 'test'])->name('test');
+//Route::get('/content', [PageController::class, 'content'])->name('content');
+//Route::get('/architectural', [PageController::class, 'architectural'])->name('architectural');
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post');

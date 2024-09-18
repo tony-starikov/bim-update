@@ -175,6 +175,13 @@ class FamilySeeder extends Seeder
                 'image' => 'families/Washbasin mixer.jpg',
                 'file' => 'families/Washbasin mixer.zip',
             ],
+            [
+                'title_en' => 'Hoist HA20 RTJ PRO R2',
+                'slug' => 'Hoist HA20 RTJ PRO R2',
+                'description_en' => "",
+                'image' => 'families/Hoist HA20 RTJ PRO R2.jpg',
+                'file' => 'families/Hoist HA20 RTJ PRO R2.zip',
+            ],
         ]);
     }
 }

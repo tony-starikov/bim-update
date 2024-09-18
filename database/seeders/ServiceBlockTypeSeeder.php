@@ -214,6 +214,50 @@ class ServiceBlockTypeSeeder extends Seeder
                 'id' => 50,
                 'name' => 'mep_bim_fabrication_7',
             ],
+            [
+                'id' => 51,
+                'name' => 'steelwork_design_1',
+            ],
+            [
+                'id' => 52,
+                'name' => 'steelwork_design_4',
+            ],
+            [
+                'id' => 53,
+                'name' => 'steelwork_design_6',
+            ],
+            [
+                'id' => 54,
+                'name' => 'bim_content_creation_3',
+            ],
+            [
+                'id' => 55,
+                'name' => 'bim_content_creation_4',
+            ],
+            [
+                'id' => 56,
+                'name' => 'bim_content_creation_5',
+            ],
+            [
+                'id' => 57,
+                'name' => 'bim_content_creation_6',
+            ],
+            [
+                'id' => 58,
+                'name' => 'software_development_3',
+            ],
+            [
+                'id' => 59,
+                'name' => 'software_development_5',
+            ],
+            [
+                'id' => 60,
+                'name' => 'software_development_6',
+            ],
+            [
+                'id' => 61,
+                'name' => 'software_development_7',
+            ],
         ]);
     }
 }

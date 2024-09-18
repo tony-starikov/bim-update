@@ -1,4 +1,4 @@
-<div class="container-fluid pt-5" style="background: url('{{ '/images/' . $block->items->where('name', 'background_image')->first()->value }}') no-repeat center center local; background-size: cover;">
+<div class="container-fluid pt-5" style="background: url('{{ '/images/' . $block->items->where('name', 'background_image')->first()->value }}') no-repeat center center local; background-size: cover; min-height: 100vh;">
     <div class="container p-lg-5">
         <div class="row px-lg-5 mt-5 text-center">
             <div class="col-12 mt-5 order-first">

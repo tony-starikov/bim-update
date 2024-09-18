@@ -10,7 +10,7 @@
             <div class="col-lg-11 col-xl-9 mt-4" style="border: 4px solid; border-color: #6ad9d8;">
                 <div class="row align-items-center p-4">
                     <div class="col-md-8">
-                        <h3 class="h4 fw-bold m-0">{{ $block->items->where('name', 'contact_us_text')->first()->value }}</h3>
+                        <h3 class="h4 fw-semibold m-0">{{ $block->items->where('name', 'contact_us_text')->first()->value }}</h3>
                     </div>
                     <div class="col-md-4 mt-4 mt-md-0 text-center">
                         <a href="{{ $block->items->where('name', 'button_url')->first()->value }}" id="go-to-calendar-home-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-{{ $block->items->where('name', 'button_shadow')->first()->value }} w-100" style="background-color: {{ $block->items->where('name', 'button_color')->first()->value }}" type="button">

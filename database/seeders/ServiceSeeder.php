@@ -158,6 +158,22 @@ class ServiceSeeder extends Seeder
                 'order' => 9,
                 'order_dump' => 9,
             ],
+            [
+                'id' => 10,
+                'title_en' => 'Steelwork Design',
+                'description_en' => 'Production of high-quality drawings for steel structures, ensuring all customer requirements are met within the specified time frame.',
+                'image' => null,
+                'slug' => 'steelwork-design',
+                'presentation' => null,
+                'show_page' => 1,
+                'show_on_main_page' => 0,
+                'canonical' => 'https://bim-prove.com/service/steelwork-design',
+                'service_menu_item_id' => null,
+                'schema_main' => '',
+                'schema_faq' => '',
+                'order' => 10,
+                'order_dump' => 10,
+            ],
         ]);
     }
 }
