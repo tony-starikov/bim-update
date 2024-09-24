@@ -998,7 +998,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'paragraph_1',
-                'value' => '<p style="text-align: justify;">Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps create a comprehensive and detailed building model, which can be used for renovation, restoration, or retrofitting purposes. The BIM modeling service is essential in creating a collaborative environment for developing and executing efficient construction projects.</p><p style="text-align: justify;">&nbsp;</p><p style="text-align: justify;">The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings of 28%, greater accuracy, and reduced risk of errors by 40%. It helps minimize on-site work and disruptions reduces the chances of rework, and allows for better visualization and analysis of the building\'s structure. Additionally, the 3D BIM models enable stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.</p>',
+                'value' => '<p style="text-align: justify;">Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps create a comprehensive and detailed building model, which can be used for renovation, restoration, or retrofitting purposes. The BIM modeling service is essential in creating a collaborative environment for developing and executing efficient construction projects.</p>&nbsp;<p style="text-align: justify;">The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings of 28%, greater accuracy, and reduced risk of errors by 40%. It helps minimize on-site work and disruptions reduces the chances of rework, and allows for better visualization and analysis of the building\'s structure. Additionally, the 3D BIM models enable stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.</p>',
                 'service_block_id' => 10,
                 'type_id' => 4,
             ],
@@ -3748,7 +3748,7 @@ class ServiceItemSeeder extends Seeder
         DB::table('service_items')->insert([
             [
                 'name' => 'background_image',
-                'value' => 'service_block/mep-bim-fabrication-background_60.webp',
+                'value' => 'service_block/steelwork-design-background-73.webp',
                 'service_block_id' => 73,
                 'type_id' => 2,
             ],
@@ -4170,7 +4170,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'contact_us_text',
-                'value' => 'Our close collaboration with you results in maximizing the outcome of your project. The experience of the team is matched to achieving the success of your steel design project.',
+                'value' => 'Our close collaboration with you maximizes the successful outcome of your steel design project.',
                 'service_block_id' => 80,
                 'type_id' => 1,
             ],
@@ -4324,7 +4324,7 @@ class ServiceItemSeeder extends Seeder
         DB::table('service_items')->insert([
             [
                 'name' => 'background_image',
-                'value' => 'service_block/bim-content-creation-background_84.webp',
+                'value' => 'service_block/bim-content-creation-background-84.webp',
                 'service_block_id' => 84,
                 'type_id' => 2,
             ],
@@ -4453,7 +4453,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'paragraph_1',
-                'value' => '<p>BIM Content Creation department, where we specialize in developing top-quality Revit families. Our team is dedicated to creating families that are not only visually stunning but also highly functional and optimized for maximum efficiency. We take pride in our commitment to delivering products of the highest quality, with beautiful geometry and unique functionality that truly stands out.</p>&nbsp;<p>Our families are designed to be both easy to use and optimized for fast and reliable operation, allowing you to focus on your project and not worry about technical issues. We also understand that every project is unique, which is why we offer a high degree of flexibility in our services.</p>',
+                'value' => '<p>BIM Content Creation department specializes in developing top-quality Revit families. Our team is dedicated to creating families that are not only visually stunning but also highly functional and optimized for maximum efficiency. We are proud of our commitment to delivering products of the highest quality, with beautiful geometry and unique functionality that truly stands out.</p>&nbsp;<p>Our families are designed to be both easy to use and optimized for fast and reliable operation, allowing you to focus on your project and not worry about technical issues. We also understand that every project is unique, which is why we offer a high degree of flexibility in our services.</p>',
                 'service_block_id' => 86,
                 'type_id' => 4,
             ],
@@ -4534,7 +4534,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'item_text_8',
-                'value' => '<p><strong>Quality assurance: </strong>We have a strong attention to detail and focus on quality control to ensure that the final product meets or exceeds your expectations.</p>',
+                'value' => '<p><strong>Quality assurance: </strong>We pay a lot of attention to detail and focus on quality control to ensure that the final product meets or exceeds your expectations.</p>',
                 'service_block_id' => 87,
                 'type_id' => 4,
             ],
@@ -4727,7 +4727,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'family_title_2',
-                'value' => 'Communication Device LineArray',
+                'value' => 'Furniture Meeting Room',
                 'service_block_id' => 89,
                 'type_id' => 1,
             ],
@@ -4890,13 +4890,13 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'paragraph_1',
-                'value' => '<p>BIM technology is an indispensable part of the modern world. AEC industry is developing and it is impossible to imagine projects without 3D models. But the efficiency and quality result is achieved by filling and accuracy of the model content. Information is the cornerstone that is valued in BIM. The families created in Revit fill the 3D model with information and make it as efficient and accurate as possible.</p>&nbsp;<p>Our team, with years of experience, strategy and individuality approaches every project. Your staff can stay focused on their core tasks and do their jobs well, while we create and fill in the missing elements.</p>&nbsp;<p>Please contact us for a consultation or to discuss a project. We are here to help you.</p>',
+                'value' => '<p>BIM technology is an indispensable part of the modern world. The AEC industry is developing, and it is impossible to imagine projects without 3D models. However, an efficient and high-quality result can be achieved only with accurate model content. Information is the cornerstone that is valued in BIM. The families created in Revit fill the 3D model with information and make it as efficient and accurate as possible.</p>&nbsp;<p>Our team handles every project with years of experience, a solid strategy, and a personalized approach.</p>',
                 'service_block_id' => 91,
                 'type_id' => 4,
             ],
             [
                 'name' => 'contact_us_text',
-                'value' => 'Our close collaboration with you results in maximizing the outcome of your project. The experience of the team is matched to achieving the success of your steel design project.',
+                'value' => 'Our close collaboration with you will ensure the most successful outcome of your project in Content Creation in Revit.',
                 'service_block_id' => 91,
                 'type_id' => 1,
             ],
@@ -5053,7 +5053,7 @@ class ServiceItemSeeder extends Seeder
         DB::table('service_items')->insert([
             [
                 'name' => 'background_image',
-                'value' => 'service_block/bim-content-creation-background_84.webp',
+                'value' => 'service_block/software-development-background-95.webp',
                 'service_block_id' => 95,
                 'type_id' => 2,
             ],
@@ -5417,7 +5417,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'image',
-                'value' => 'service_block/software-development-image_99.png',
+                'value' => 'service_block/software-development-image-99.png',
                 'service_block_id' => 99,
                 'type_id' => 2,
             ],

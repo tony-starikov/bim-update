@@ -357,6 +357,19 @@
                     @endif
                 @endforeach
 
+                    <div class="col-12 col-md-6 col-xxl-4 my-3">
+                        <div class="card p-0 h-100" style="border: none; border-radius: 0;">
+                            <div class="d-flex align-items-center h-50 px-5" style="background-color: #6de1df; min-height: 150px">
+                                <a class="d-flex w-100 text-decoration-none" href="/services">
+                                    <button id="button-five-stars-xxl" class="btn btn-primary btn-lg border-0 rounded-4 shadow-none w-100" style="background-color: #43aeb6" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <span class="fw-bold h5 d-block my-2">ALL SERVICES</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
         </div>
     </div>
@@ -582,7 +595,7 @@
                     </div>
                 </div>
                 <div class="col-6 d-none d-md-flex align-items-center">
-                    <img src="/images/{{ $page_info->pageItems->where('name', 'calendar_image')->first()->value }}" class="img-fluid w-100" alt="mail_photo">
+                    <img src="/images/contact_us.png" class="img-fluid w-100" alt="mail_photo">
                 </div>
             </div>
         </div>

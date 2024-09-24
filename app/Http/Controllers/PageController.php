@@ -33,7 +33,7 @@ class PageController extends Controller
 
         $menuItems = MenuItem::all();
 
-        $services = Service::all();
+        $services = Service::where('show_on_main_page', 1)->orderBy('order')->take(5)->get();
 
         $achievements = Achievement::all();
 
@@ -233,5 +233,33 @@ class PageController extends Controller
         $service_menu_items = ServiceMenuItem::all()->sortBy('order');
 
         return view('architectural', compact('services', 'menuItems', 'contacts', 'posts', 'page_info', 'service_menu_items'));
+    }
+
+    public function services(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $achievements = Achievement::all();
+
+        $page_info = Page::where('name', 'services')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::where('show_on_main_page', 1)->orderBy('order')->get();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('services', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items', 'achievements'));
     }
 }

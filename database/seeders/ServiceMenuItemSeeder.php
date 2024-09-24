@@ -16,12 +16,12 @@ class ServiceMenuItemSeeder extends Seeder
         DB::table('service_menu_items')->insert([
             [
                 'id' => 1,
-                'title_en' => 'MEP BIM Modeling',
+                'title_en' => 'MEP BIM SERVICES',
                 'order' => '10',
             ],
             [
                 'id' => 2,
-                'title_en' => 'Telecom Design',
+                'title_en' => 'Steelwork Design',
                 'order' => '20',
             ],
             [

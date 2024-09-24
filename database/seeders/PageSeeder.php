@@ -58,6 +58,10 @@ class PageSeeder extends Seeder
                 'name' => 'portfolio',
                 'canonical' => 'https://bim-prove.com/portfolio',
             ],
+            [
+                'name' => 'services',
+                'canonical' => 'https://bim-prove.com/services',
+            ],
 
 //            [
 //                'name' => 'policy',
