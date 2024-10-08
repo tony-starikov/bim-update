@@ -158,6 +158,30 @@ class WorkSeeder extends Seeder
                 'image_overlay' => '',
                 'content' => '<p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">LOD:</span></strong> 350<br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Area:</span></strong> <span style="white-space: pre-wrap;">28000m2</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Floors:</span></strong> <span style="white-space: pre-wrap;">16</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Disciplines:</span></strong> <span style="white-space: pre-wrap;">Residential Building</span><br></span></p><p><span lang="ru-UA">The dual branded AC Hotel and Residence Inn are an integral part of the 4.8 million square feet of new mixed-use development at the north entrance to the Reston Town Center Metro Station. One of the biggest challenges that the team faced was the tight deadlines. Despite this, the team was able to stay focused and organized, and ultimately completed all work.&nbsp;</span></p>'
             ],
+            [
+                'id' => 13,
+                'title' => 'Special structure with camouflage for installation of telecom equipment',
+                'slug' => 'special-structure-with-camouflage-for-installation-of-telecom-equipment',
+                'service' => 'Telecom design',
+                'department' => '',
+                'image' => 'works/special-structure-with-camouflage.webp',
+                'images' => '["works_images\/Special structure with camouflage for installation of telecom equipment_02.webp","works_images\/Special structure with camouflage for installation of telecom equipment_03.webp","works_images\/Special structure with camouflage for installation of telecom equipment_04.webp", "works_images\/Special structure with camouflage for installation of telecom equipment_05.webp", "works_images\/Special structure with camouflage for installation of telecom equipment_06.webp", "works_images\/Special structure with camouflage for installation of telecom equipment_07.webp", "works_images\/Special structure with camouflage for installation of telecom equipment_08.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Time spent:</span></strong> 30<br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Single parts:</span></strong> <span style="white-space: pre-wrap;">85</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Assemblies:</span></strong> <span style="white-space: pre-wrap;">25</span><br></span></p><p><span lang="ru-UA">A 3D model with structural drawings for a special structure with camouflage for installation of telecom equipment was produced based on a site survey and a stability calculation report. The drawing package includes all necessary global views, sections, assemblies, and single parts&nbsp;</span></p>'
+            ],
+            [
+                'id' => 14,
+                'title' => 'Special structure for installation of telecom equipment',
+                'slug' => 'special-structure-for-installation-of-telecom-equipment',
+                'service' => 'Telecom design',
+                'department' => '',
+                'image' => 'works/special-structure.webp',
+                'images' => '["works_images\/Special structure for installation of telecom equipment_02.webp","works_images\/Special structure for installation of telecom equipment_03.webp","works_images\/Special structure for installation of telecom equipment_04.webp", "works_images\/Special structure for installation of telecom equipment_05.webp", "works_images\/Special structure for installation of telecom equipment_06.webp", "works_images\/Special structure for installation of telecom equipment_07.webp", "works_images\/Special structure for installation of telecom equipment_08.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Time spent:</span></strong> 25<br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Single parts:</span></strong> <span style="white-space: pre-wrap;">72</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Assemblies:</span></strong> <span style="white-space: pre-wrap;">24</span><br></span></p><p><span lang="ru-UA">A 3D model with structural drawings for a special structure for installation of telecom equipment was produced based on a site survey and a stability calculation report. The drawing package includes all necessary global views, sections, assemblies, and single parts.&nbsp;</span></p>'
+            ],
         ]);
     }
 }

@@ -35,6 +35,7 @@ Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/thank-you-page', [PageController::class, 'thank_you'])->name('thanks');
 Route::get('/policy', [PageController::class, 'policy'])->name('policy');
 Route::get('/checking-the-model-in-revit-scan-to-bim', [PageController::class, 'docs'])->name('docs');
+Route::get('/bimprove-add-in', [PageController::class, 'bimprove_add_in'])->name('bimprove_add_in');
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/portfolio/{slug}', [PortfolioController::class, 'project'])->name('portfolio.project');
@@ -57,20 +58,20 @@ Route::get('/download-service/{slug}', [ServiceController::class, 'downloadServi
 
 //Route::get('/estimates-scan-to-bim-project', [EstimationController::class, 'show'])->name('showScanShort');
 Route::get('/scan-to-bim-estimates-project', [EstimationController::class, 'showScanShort'])->name('estimates');
-Route::get('/thks-scantobim-estimates', [PageController::class, 'thank_you'])->name('thanksShortScanToBim');
+//Route::get('/thks-scantobim-estimates', [PageController::class, 'thank_you'])->name('thanksShortScanToBim');
 
 Route::get('/estimates-project-scan-to-bim', [EstimationController::class, 'showServicesForm'])->name('estimatesServicesForm');
-Route::get('/thks-estimates-scantobim', [PageController::class, 'thank_you'])->name('thanksScanToBim');
+Route::get('/thks-estimates-scantobim', [PageController::class, 'thank_scan'])->name('thanksScanToBim');
 
 Route::post('/estimates-scan-to-bim-processing', [EstimationController::class, 'processing'])->name('estimatesProcessing');
 Route::post('/estimates-scan-to-bim-short-processing', [EstimationController::class, 'processingScanShort'])->name('processingScanShort');
 
 //Route::get('/estimates-mep-project', [EstimationController::class, 'showMep'])->name('showMepShort');
 Route::get('/mep-estimates-project', [EstimationController::class, 'showMepShort'])->name('estimatesMep');
-Route::get('/thks-mep-estimates', [PageController::class, 'thank_you'])->name('thanksShortMep');
+//Route::get('/thks-mep-estimates', [PageController::class, 'thank_you'])->name('thanksShortMep');
 
 Route::get('/estimates-project-mep', [EstimationController::class, 'showMepServicesForm'])->name('estimatesMepServicesForm');
-Route::get('/thks-estimates-mep', [PageController::class, 'thank_you'])->name('thanksMepServicesForm');
+Route::get('/thks-estimates-mep', [PageController::class, 'thank_mep'])->name('thanksMepServicesForm');
 
 Route::post('/estimates-mep-processing', [EstimationController::class, 'processingMep'])->name('estimatesProcessingMep');
 Route::post('/estimates-mep-short-processing', [EstimationController::class, 'processingMepShort'])->name('processingMepShort');

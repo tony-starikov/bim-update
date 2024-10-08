@@ -139,8 +139,6 @@
 
 @endsection
 
-{{--@section('canonical')--}}
-{{--    @if($page_info->canonical)--}}
-{{--        <link rel="canonical" href="{{ $page_info->canonical }}">--}}
-{{--    @endif--}}
-{{--@endsection--}}
+@section('canonical')
+    <link rel="canonical" href="{{ env('APP.ENV') . '/portfolio/' . $project->slug }}">
+@endsection

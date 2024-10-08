@@ -45,7 +45,7 @@ class EstimationMepRequest extends FormRequest
             'reports' => 'nullable|string',
             'comment' => 'nullable|string',
             'files' => 'required|array',
-            'cf-turnstile-response' => ['required', Rule::turnstile()],
+//            'cf-turnstile-response' => ['required', Rule::turnstile()],
         ];
     }
 

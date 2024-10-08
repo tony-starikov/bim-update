@@ -369,7 +369,7 @@
             </div>
             <div class="offcanvas-body d-flex flex-column flex-lg-row">
                 <ul class="navbar-nav justify-content-center align-items-center flex-grow-1">
-                    @foreach($menuItems as $menuItem)
+                    @foreach( \App\Models\MenuItem::all() as $menuItem)
                         @if($menuItem->show_status === '1')
                             @switch($menuItem->item_name)
                                 @case('Home')
@@ -384,13 +384,13 @@
 
                                 @case('Services')
                                 <li class="nav-item mx-2 dropdown d-none d-lg-block">
-                                    <a class="nav-link text-dark dropdown-toggle" href="{{ route('services') }}" role="button">
+                                    <a class="nav-link text-dark dropdown-toggle" href="{{ route('main') }}#services" role="button">
                                         <p class="h6 d-inline m-0 fw-bold text-dark">
                                             SERVICES
                                         </p>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        @foreach($service_menu_items as $menu_item)
+                                        @foreach(\App\Models\ServiceMenuItem::all() as $menu_item)
                                             @if($menu_item->services->count() == 1)
                                                 @foreach($menu_item->services as $service)
                                                     <li>
@@ -422,7 +422,7 @@
                                         @endforeach
                                     </ul>
                                 </li>
-                                @foreach($services as $service)
+                                @foreach(\App\Models\Service::all() as $service)
                                     <li class="nav-item mx-2 d-lg-none" data-bs-dismiss="offcanvas">
                                         <a @if($service->show_page) href="{{ route('showService', [$service->slug]) }}" @else target="_blank" href="{{ route('downloadService', [$service->slug]) }}" @endif class="nav-link">
                                             <p class="h6 m-0 fw-bold text-dark text-uppercase text-center">
@@ -573,7 +573,7 @@
                         <div class="col-9 col-sm-6 col-lg-12 px-0">
                             <div class="row">
                                 <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
-                                    <a href="{{ $contacts->where('name', 'social_1')->first()->info }}" target="_blank"
+                                    <a href="{{ \App\Models\Contact::where('name', 'social_1')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
                                              src="/images/main_page/social/min/LinkedIn.webp"
@@ -581,7 +581,7 @@
                                     </a>
                                 </div>
                                 <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
-                                    <a href="{{ $contacts->where('name', 'social_2')->first()->info }}" target="_blank"
+                                    <a href="{{ \App\Models\Contact::where('name', 'social_2')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
                                              src="/images/main_page/social/min/Instagram.webp"
@@ -589,7 +589,7 @@
                                     </a>
                                 </div>
                                 <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
-                                    <a href="{{ $contacts->where('name', 'social_3')->first()->info }}" target="_blank"
+                                    <a href="{{ \App\Models\Contact::where('name', 'social_3')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
                                              src="/images/main_page/social/min/Facebook.webp"
@@ -597,7 +597,7 @@
                                     </a>
                                 </div>
                                 <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
-                                    <a href="{{ $contacts->where('name', 'social_4')->first()->info }}" target="_blank"
+                                    <a href="{{ \App\Models\Contact::where('name', 'social_4')->first()->info }}" target="_blank"
                                        class="text-white h4 text-decoration-none">
                                         <img class="img-fluid w-100"
                                              src="/images/main_page/social/min/YouTube.webp"
@@ -616,36 +616,36 @@
 
                     <div class="row mt-4 pt-2">
                         <div class="col-12 d-none d-lg-block">
-                            <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
+                            <a href="tel:{{ \App\Models\Contact::where('name', 'phone')->first()->info }}"
                                class="text-white text-decoration-none">
                                 <p class="h5">
-                                    {{ $contacts->where('name', 'phone')->first()->info }}
+                                    {{ \App\Models\Contact::where('name', 'phone')->first()->info }}
                                 </p>
                             </a>
                         </div>
                         <div class="col-12 d-none d-lg-block">
-                            <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
+                            <a href="mailto:{{ \App\Models\Contact::where('name', 'email')->first()->info }}"
                                class="text-white text-decoration-none">
                                 <p class="h5">
-                                    {{ $contacts->where('name', 'email')->first()->info }}
+                                    {{ \App\Models\Contact::where('name', 'email')->first()->info }}
                                 </p>
                             </a>
                         </div>
                         <div class="col-12 d-lg-none">
                             <div class="row">
                                 <div class="col-12">
-                                    <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
+                                    <a href="tel:{{ \App\Models\Contact::where('name', 'phone')->first()->info }}"
                                        class="text-white text-decoration-none">
                                         <p class="h5">
-                                            {{ $contacts->where('name', 'phone')->first()->info }}
+                                            {{ \App\Models\Contact::where('name', 'phone')->first()->info }}
                                         </p>
                                     </a>
                                 </div>
                                 <div class="col-12 mt-4">
-                                    <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
+                                    <a href="mailto:{{ \App\Models\Contact::where('name', 'email')->first()->info }}"
                                        class="text-white text-decoration-none">
                                         <p class="h5">
-                                            {{ $contacts->where('name', 'email')->first()->info }}
+                                            {{ \App\Models\Contact::where('name', 'email')->first()->info }}
                                         </p>
                                     </a>
                                 </div>
@@ -663,7 +663,7 @@
                         <p class="h5 fw-semibold text-white mb-4">Services</p>
                     </a>
                     <div class="d-none d-md-block">
-                        @foreach($services as $service)
+                        @foreach(\App\Models\Service::latest()->limit(5)->get() as $service)
                             <a class="text-decoration-none p-0 m-0"
                                @if($service->show_page === 1) href="{{ route('showService', $service->slug) }}"
                                @else href="{{ route('downloadService', $service->slug) }}" @endif >
@@ -694,7 +694,7 @@
                         <p class="h5 fw-semibold text-white mb-4">Blog</p>
                     </a>
                     <div class="d-none d-md-block">
-                        @foreach($posts as $post)
+                        @foreach(\App\Models\Post::latest()->limit(5)->get() as $post)
                             <a class="text-decoration-none p-0 m-0" href="{{ route('post', $post->slug) }}">
                                 <p class="h6 text-white border-bottom-2 border-white small">{{ $post->title_en }}</p>
                             </a>

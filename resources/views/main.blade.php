@@ -130,24 +130,22 @@
 
         <div class="container-fluid video-container" style="min-height: 100vh;">
             <div class="container" style="min-height: 100vh;">
-                <div class="row pb-0 px-0 p-lg-5 align-items-center align-items-center" style="min-height: 100vh;">
+                <div class="row pb-0 px-0 p-lg-5 align-items-center" style="min-height: 100vh;">
                     <div class="col-12 mt-5 text-center">
                         <div class="row">
                             <h1 class="text-white fw-bold mt-xl-5">
                                 THE INDIVIDUAL FIVE-STAR BIM SERVICE:
-                                {{--                                {{ $page_info->pageItems->where('name', 'main_header')->first()->value }}--}}
                             </h1>
                             <h2 class="text-white h2 fw-semibold">
                                 <small>
                                     Unlock your AEC company's full potential with our customized BIM support, delivering a five-star BIM service experience tailored specifically for you.
-                                    {{--                                    {{ $page_info->pageItems->where('name', 'main_subheader')->first()->value }}--}}
                                 </small>
                             </h2>
                         </div>
 
                         <div class="row p-4 p-xl-5 d-flex justify-content-center">
                             <div class="col-12 col-md-7 col-lg-5">
-                                <a id="button-first-screen-xxl" href="#services" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
+                                <a id="button-first-screen-xxl" href="{{ route('services') }}" role="button" class="btn btn-primary shadow-lg btn-lg border-0 rounded-4 w-100 text-center button-first-screen-xxl" style="background-color: #43aeb6">
                                     <span class="fw-bold h5 d-block my-2">OUR SERVICES</span>
                                 </a>
                             </div>

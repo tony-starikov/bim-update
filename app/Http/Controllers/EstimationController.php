@@ -257,7 +257,7 @@ class EstimationController extends Controller
 
         Estimation::create($parameters);
 
-        return redirect()->route('thanksShortScanToBim');
+        return redirect()->route('thanksScanToBim');
     }
 
     public function processingScanShort(Request $request)
@@ -780,6 +780,6 @@ class EstimationController extends Controller
 
         EstimationMepShort::create($parameters);
 
-        return redirect()->route('thanksShortMep');
+        return redirect()->route('thanksMepServicesForm');
     }
 }

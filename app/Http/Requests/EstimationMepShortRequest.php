@@ -32,7 +32,7 @@ class EstimationMepShortRequest extends FormRequest
             'deliverables' => 'required|array',
             'comment' => 'nullable|string',
             'files' => 'required|array',
-            'cf-turnstile-response' => ['required', Rule::turnstile()],
+//            'cf-turnstile-response' => ['required', Rule::turnstile()],
         ];
     }
 

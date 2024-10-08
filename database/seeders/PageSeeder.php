@@ -62,6 +62,10 @@ class PageSeeder extends Seeder
                 'name' => 'services',
                 'canonical' => 'https://bim-prove.com/services',
             ],
+            [
+                'name' => 'bimprove_add_in',
+                'canonical' => 'https://bim-prove.com/bimprove-add-in',
+            ],
 
 //            [
 //                'name' => 'policy',

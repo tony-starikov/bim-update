@@ -158,6 +158,58 @@ class PageController extends Controller
         return view('thanks', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
     }
 
+    public function thank_scan(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $page_info = Page::where('name', 'thank-you-page')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('thanks-scan', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
+    }
+
+    public function thank_mep(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $page_info = Page::where('name', 'thank-you-page')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::all();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('thanks-mep', compact( 'services', 'menuItems', 'contacts', 'posts', 'page_info', 'og', 'service_menu_items'));
+    }
+
     public function policy(Request $request)
     {
         $og = null;
@@ -261,5 +313,33 @@ class PageController extends Controller
         $service_menu_items = ServiceMenuItem::all()->sortBy('order');
 
         return view('services', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items', 'achievements'));
+    }
+
+    public function bimprove_add_in(Request $request)
+    {
+        $og = null;
+
+        if ($request->path() == '/') {
+            $og = Seo::where('url', $request->path())->first();
+        } else {
+            $url = '/'. $request->path();
+            $og = Seo::where('url', $url)->first();
+        }
+
+        $achievements = Achievement::all();
+
+        $page_info = Page::where('name', 'services')->first();
+
+        $menuItems = MenuItem::all();
+
+        $services = Service::where('show_on_main_page', 1)->orderBy('order')->get();
+
+        $contacts = Contact::all();
+
+        $posts = Post::take(5)->get();
+
+        $service_menu_items = ServiceMenuItem::all()->sortBy('order');
+
+        return view('bimprove_add_in', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items', 'achievements'));
     }
 }
