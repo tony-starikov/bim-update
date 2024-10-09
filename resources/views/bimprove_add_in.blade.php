@@ -14,7 +14,7 @@
 
 @section('main')
     <div id="main">
-        <div class="container-fluid pt-5" style="background: url('/images/service/all/background_services.png') no-repeat center center local; background-size: cover; min-height: 75vh;">
+        <div class="container-fluid pt-5" style="background: url('/images/background_page_plugin.png') no-repeat center center local; background-size: cover; min-height: 75vh;">
             <div class="container mt-5 pb-0 px-0 p-lg-5">
                 <div class="row px-5 mt-xl-5 align-items-center">
                     <div class="col-12 mt-5">
