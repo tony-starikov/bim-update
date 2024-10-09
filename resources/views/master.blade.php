@@ -614,8 +614,39 @@
 
                     <h2 class="text-white h2 fw-bold mt-5">CONTACTS</h2>
 
-                    <div class="row mt-4 pt-2">
-                        <div class="col-12 d-none d-lg-block">
+                    <div class="row mt-4">
+                        <div class="col-9 col-sm-6 col-lg-12 px-0">
+                            <div class="row">
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
+                                    <a href="https://t.me/bimprovebest" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/social/Telegram.png"
+                                             alt="Telegram">
+                                    </a>
+                                </div>
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
+                                    <a href="viber://add?number=447490493720" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/social/Viber.png"
+                                             alt="Viber">
+                                    </a>
+                                </div>
+                                <div class="col-3 col-sm-6 col-lg-2 p-4 pt-0">
+                                    <a href="https://wa.me/qr/W6RUGTUI6E5FD1" target="_blank"
+                                       class="text-white h4 text-decoration-none">
+                                        <img class="img-fluid w-100"
+                                             src="/images/social/Whatsapp.png"
+                                             alt="Whatsapp">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-xl-4 mt-3">
                             <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
                                class="text-white text-decoration-none">
                                 <p class="h5">
@@ -623,33 +654,13 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="col-12 d-none d-lg-block">
+                        <div class="col-12 col-lg-7 mt-3">
                             <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
                                class="text-white text-decoration-none">
                                 <p class="h5">
                                     {{ $contacts->where('name', 'email')->first()->info }}
                                 </p>
                             </a>
-                        </div>
-                        <div class="col-12 d-lg-none">
-                            <div class="row">
-                                <div class="col-12">
-                                    <a href="tel:{{ $contacts->where('name', 'phone')->first()->info }}"
-                                       class="text-white text-decoration-none">
-                                        <p class="h5">
-                                            {{ $contacts->where('name', 'phone')->first()->info }}
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <a href="mailto:{{ $contacts->where('name', 'email')->first()->info }}"
-                                       class="text-white text-decoration-none">
-                                        <p class="h5">
-                                            {{ $contacts->where('name', 'email')->first()->info }}
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
