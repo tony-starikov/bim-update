@@ -1,9 +1,28 @@
 <!doctype html>
 <html prefix="og: http://ogp.me/ns#" class="w-100" lang="en">
 <head>
+{{--    <script>--}}
+{{--        // Define dataLayer and the gtag function.--}}
+{{--        window.dataLayer = window.dataLayer || [];--}}
+{{--        function gtag(){dataLayer.push(arguments);}--}}
+
+{{--        // Set default consent to 'denied' as a placeholder--}}
+{{--        // Determine actual values based on your own requirements--}}
+{{--        gtag('consent', 'default', {--}}
+{{--            'ad_storage': 'denied',--}}
+{{--            'ad_user_data': 'denied',--}}
+{{--            'ad_personalization': 'denied',--}}
+{{--            'analytics_storage': 'denied'--}}
+{{--        });--}}
+{{--    </script>--}}
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T276DWG');</script>
     <!-- End Google Tag Manager -->
+
+{{--    <button class="js-cookie-consent-agree cookie-consent__agree btn btn-primary btn shadow-none border-0 mx-2 rounded-4" style="background-color: #43aeb6">--}}
+{{--        Allow cookies--}}
+{{--    </button>--}}
 
     <!-- Required meta tags -->
     @yield('meta')
@@ -489,6 +508,12 @@
                                             <a class="dropdown-item fw-semibold"
                                                href="{{ route('docs') }}">
                                                 CHECKLISTS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fw-semibold"
+                                               href="{{ route('bimprove_add_in') }}">
+                                                BIMPROVE ADD-IN
                                             </a>
                                         </li>
                                     </ul>

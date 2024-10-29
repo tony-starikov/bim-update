@@ -14,10 +14,10 @@
 
 @section('main')
     <div id="main">
-        <div class="container-fluid pt-5" style="background: url('/images/background_page_plugin.png') no-repeat center center local; background-size: cover; min-height: 75vh;">
+        <div class="container-fluid pt-5" style="background: url('/images/background_page_plugin.png') no-repeat center center local; background-size: cover; min-height: 60vh;">
             <div class="container mt-5 pb-0 px-0 p-lg-5">
-                <div class="row px-5 mt-xl-5 align-items-center">
-                    <div class="col-12 mt-5">
+                <div class="row mt-5 px-5 align-items-center">
+                    <div class="col-12 mt-5 mt-lg-0">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-1 p-0">
                                 <img src="/images/add-in.png" loading="lazy" alt="icon1" class="img-fluid">
@@ -35,7 +35,7 @@
 
                     <div class="col-12">
                         <div class="row px-5 mt-5 justify-content-center">
-                            <div class="col-lg-6 col-xl-5">
+                            <div class="col-lg-6 col-xl-3">
                                 <a target="_blank" href="https://apps.autodesk.com/RVT/en/Detail/Index?id=7674884213406283426&appLang=en&os=Win64" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6;">
                                     <span class="fw-bold h5 my-2 text-uppercase">DOWNLOAD</span>
                                 </a>
@@ -89,12 +89,13 @@
         <div class="container-fluid">
             <div class="container py-5 p-lg-5 py-lg-0">
                 <div class="row justify-content-center align-items-center p-lg-5">
-                    <div class="col-12">
-                        <a href="https://www.youtube.com/watch?v=HZ6AunDGONU" target="_blank">
-                            <img src='/images/video_blog.png' loading="lazy" alt="icon1" class="w-100 bg-secondary img-fluid">
-                        </a>
+                    <div class="col-lg-10">
+                        <iframe style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/HZ6AunDGONU?si=F67Czxh3QVlEf6DT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{{--                        <a href="https://www.youtube.com/watch?v=HZ6AunDGONU" target="_blank">--}}
+{{--                            <img src='/images/video_blog.png' loading="lazy" alt="icon1" class="w-100 bg-secondary img-fluid">--}}
+{{--                        </a>--}}
                     </div>
-                    <div class="col-12">
+                    <div class="col-md-10">
                         <div class="row px-5 justify-content-between">
                             <div class="col-lg-6 col-xl-5 mt-4">
                                 <a target="_blank" href="https://apps.autodesk.com/RVT/en/Detail/Index?id=7674884213406283426&appLang=en&os=Win64" role="button" class="btn btn-primary shadow btn-lg border-0 rounded-4 w-100 p-3" style="background-color: #43aeb6;">
@@ -272,131 +273,62 @@
 
         <div class="container-fluid">
             <div class="container py-5 p-lg-5">
-                <div class="row px-lg-5 pt-lg-0">
+                <div class="row justify-content-center px-lg-5 pt-lg-0">
                     <div class="col-12">
                         <h2 class="fw-bold text-uppercase">OUR plugins and scripts for Revit</h2>
                     </div>
 
-                    <div class="col-12">
-                        <div class="row justify-content-center mt-4">
-                            <div class="col-md-6 col-xl-4 mt-4">
-                                <div class="card shadow-sm rounded-4 h-100 px-2" style="border: 4px solid #6bdcdb;">
-                                    <div class="card-body pb-0">
-                                        <div class="row justify-content-center">
-                                            <div class="col-11 py-2">
-                                                <img class="img-fluid w-100 rounded" src="/images/{{ \App\Models\Family::where('title_en', 'Furniture Audience Seatings')->first()->image }}" alt="Furniture Audience Seatings">
-                                            </div>
-                                        </div>
-                                        <div class="row" style="min-height: 50px;">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-semibold">
-                                                    Furniture Audience Seatings
-                                                </h6>
-                                            </div>
+                    @foreach($plugins as $plugin)
+                        <div class="col-sm-6 col-lg-4 mt-4">
+                            <div class="card rounded-4 h-100 px-2 border-0" style="background-color: rgba(168,175,175,0.2);">
+                                <div class="card-body">
+                                    <div class="row" style="min-height: 15%;">
+                                        <div class="col-12">
+                                            <h6 class="h5 fw-bold">
+                                                {{ $plugin->title_en }}
+                                            </h6>
                                         </div>
                                     </div>
-                                    <div class="card-footer border-0 bg-transparent">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-bold">
-                                                    <span class="badge bg-success">Free</span>
-                                                </h6>
-                                            </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-8 py-2">
+                                            <img class="img-fluid w-100" src="/images/{{ $plugin->logo }}" alt="{{ $plugin->title_en }}">
                                         </div>
-                                        <div class="row pb-3">
-                                            <div class="col-12">
-                                                <a href="{{ route('downloadFamily', \App\Models\Family::where('title_en', 'Furniture Audience Seatings')->first()->slug) }}" class="text-decoration-none">
-                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                        <span class="fw-bold h6 d-block my-1">DOWNLOAD</span>
-                                                    </button>
-                                                </a>
-                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="h5 fw-bold">
+                                                <span class="badge bg-success">Free</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="row py-3">
+                                        <div class="col-12">
+                                            <p class="text-secondary m-0">
+                                                {{ $plugin->description_en }}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="col-md-6 col-xl-4 mt-4">
-                                <div class="card shadow-sm rounded-4 h-100 px-2" style="border: 4px solid #6bdcdb;">
-                                    <div class="card-body pb-0">
-                                        <div class="row justify-content-center">
-                                            <div class="col-11 py-2">
-                                                <img class="img-fluid w-100 rounded" src="/images/{{ \App\Models\Family::where('title_en', 'Furniture Meeting Room')->first()->image }}" alt="Furniture Meeting Room">
-                                            </div>
-                                        </div>
-                                        <div class="row" style="min-height: 50px;">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-semibold">
-                                                    Furniture Meeting Room
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer border-0 bg-transparent">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-bold">
-                                                    <span class="badge bg-success">Free</span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-3">
-                                            <div class="col-12">
-                                                <a href="{{ route('downloadFamily', \App\Models\Family::where('title_en', 'Furniture Meeting Room')->first()->slug) }}" class="text-decoration-none">
-                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                        <span class="fw-bold h6 d-block my-1">DOWNLOAD</span>
-                                                    </button>
-                                                </a>
-                                            </div>
+                                <div class="card-footer border-0 bg-transparent mt-2">
+                                    <div class="row pb-3">
+                                        <div class="col-12">
+                                            <a href="{{ route('downloadPlugin', $plugin->slug) }}" class="text-decoration-none">
+                                                <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
+                                                    <span class="fw-bold h6 d-block my-1">DOWNLOAD</span>
+                                                </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-md-6 col-xl-4 mt-4">
-                                <div class="card shadow-sm rounded-4 h-100 px-2" style="border: 4px solid #6bdcdb;">
-                                    <div class="card-body pb-0">
-                                        <div class="row justify-content-center">
-                                            <div class="col-11 py-2">
-                                                <img class="img-fluid w-100 rounded" src="/images/{{ \App\Models\Family::where('title_en', 'Doors Sliding Outswing')->first()->image }}" alt="Doors Sliding Outswing">
-                                            </div>
-                                        </div>
-                                        <div class="row" style="min-height: 50px;">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-semibold">
-                                                    Doors Sliding Outswing
-                                                </h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer border-0 bg-transparent">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <h6 class="h5 fw-bold">
-                                                    <span class="badge bg-success">Free</span>
-                                                </h6>
-                                            </div>
-                                        </div>
-                                        <div class="row pb-3">
-                                            <div class="col-12">
-                                                <a href="{{ route('downloadFamily', \App\Models\Family::where('title_en', 'Doors Sliding Outswing')->first()->slug) }}" class="text-decoration-none">
-                                                    <button class="btn btn-primary btn-lg border-0 shadow-none rounded-4 w-100" style="background-color: #43aeb6" type="button">
-                                                        <span class="fw-bold h6 d-block my-1">DOWNLOAD</span>
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                            </div>
                         </div>
-                    </div>
+                    @endforeach
 
                     <div class="col-12 px-4">
                         <div class="row mt-4 px-4 py-5 p-lg-5 justify-content-center" style="border: 4px solid; border-color: #6ad9d8;">
-                            <div class="col-lg-6 text-center">
-                                <a href="{{ route('families') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
+                            <div class="col-7 col-lg-4 text-center">
+                                <a href="{{ route('products') }}" role="button" class="btn btn-primary btn-lg border-0 rounded-4 w-100" style="background-color: #43aeb6">
                                     <p class="fw-bold h5 my-2 text-uppercase">VIEW ALL</p>
                                 </a>
                             </div>
@@ -442,8 +374,6 @@
 
 @endsection
 
-{{--@section('canonical')--}}
-{{--    @if($service->canonical)--}}
-{{--        <link rel="canonical" href="{{ $service->canonical }}">--}}
-{{--    @endif--}}
-{{--@endsection--}}
+@section('canonical')
+    <link rel="canonical" href="{{ $page_info->canonical }}">
+@endsection

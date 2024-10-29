@@ -6,6 +6,7 @@ use App\Models\Achievement;
 use App\Models\Contact;
 use App\Models\MenuItem;
 use App\Models\Page;
+use App\Models\Plugin;
 use App\Models\Post;
 use App\Models\Service;
 use App\Models\ServiceMenuItem;
@@ -326,9 +327,11 @@ class PageController extends Controller
             $og = Seo::where('url', $url)->first();
         }
 
+        $plugins = Plugin::take(3)->get();
+
         $achievements = Achievement::all();
 
-        $page_info = Page::where('name', 'services')->first();
+        $page_info = Page::where('name', 'bimprove_add_in')->first();
 
         $menuItems = MenuItem::all();
 
@@ -340,6 +343,6 @@ class PageController extends Controller
 
         $service_menu_items = ServiceMenuItem::all()->sortBy('order');
 
-        return view('bimprove_add_in', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items', 'achievements'));
+        return view('bimprove_add_in', compact('page_info', 'services', 'menuItems', 'contacts', 'posts', 'og', 'service_menu_items', 'achievements', 'plugins'));
     }
 }
