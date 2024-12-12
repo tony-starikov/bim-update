@@ -865,6 +865,135 @@ class ServiceBlockSeeder extends Seeder
                 'order' => 9,
                 'order_dump' => 9,
             ],
+
+
+
+
+
+
+
+
+            [
+                'id' => 104,
+                'service_id' => 11,
+                'type_id' => 51,
+                'name' => 'bim_structural_engineering_1',
+                'order' => 1,
+                'order_dump' => 1,
+            ],
+            [
+                'id' => 105,
+                'service_id' => 11,
+                'type_id' => 37,
+                'name' => 'bim_structural_engineering_2',
+                'order' => 2,
+                'order_dump' => 2,
+            ],
+            [
+                'id' => 106,
+                'service_id' => 11,
+                'type_id' => 10,
+                'name' => 'bim_structural_engineering_3',
+                'order' => 3,
+                'order_dump' => 3,
+            ],
+
+
+
+
+            [
+                'id' => 107,
+                'service_id' => 11,
+                'type_id' => 5,
+                'name' => 'bim_structural_engineering_4',
+                'order' => 4,
+                'order_dump' => 4,
+            ],
+
+
+
+
+            [
+                'id' => 108,
+                'service_id' => 11,
+                'type_id' => 62,
+                'name' => 'bim_structural_engineering_5',
+                'order' => 5,
+                'order_dump' => 5,
+            ],
+
+
+
+
+            [
+                'id' => 109,
+                'service_id' => 11,
+                'type_id' => 63,
+                'name' => 'bim_structural_engineering_6',
+                'order' => 6,
+                'order_dump' => 6,
+            ],
+
+
+            [
+                'id' => 110,
+                'service_id' => 11,
+                'type_id' => 64,
+                'name' => 'bim_structural_engineering_7',
+                'order' => 7,
+                'order_dump' => 7,
+            ],
+
+
+            [
+                'id' => 111,
+                'service_id' => 11,
+                'type_id' => 65,
+                'name' => 'bim_structural_engineering_8',
+                'order' => 8,
+                'order_dump' => 8,
+            ],
+
+            [
+                'id' => 112,
+                'service_id' => 11,
+                'type_id' => 8,
+                'name' => 'bim_structural_engineering_9',
+                'order' => 9,
+                'order_dump' => 9,
+            ],
+            [
+                'id' => 113,
+                'service_id' => 11,
+                'type_id' => 46,
+                'name' => 'bim_structural_engineering_10',
+                'order' => 10,
+                'order_dump' => 10,
+            ],
+            [
+                'id' => 114,
+                'service_id' => 11,
+                'type_id' => 10,
+                'name' => 'bim_structural_engineering_11',
+                'order' => 11,
+                'order_dump' => 11,
+            ],
+            [
+                'id' => 115,
+                'service_id' => 11,
+                'type_id' => 47,
+                'name' => 'bim_structural_engineering_12',
+                'order' => 12,
+                'order_dump' => 12,
+            ],
+            [
+                'id' => 116,
+                'service_id' => 11,
+                'type_id' => 48,
+                'name' => 'bim_structural_engineering_13',
+                'order' => 13,
+                'order_dump' => 13,
+            ],
         ]);
     }
 }

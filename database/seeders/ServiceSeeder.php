@@ -184,6 +184,23 @@ class ServiceSeeder extends Seeder
                 'order' => 7,
                 'order_dump' => 7,
             ],
+            [
+                'id' => 11,
+                'title_en' => 'BIM Structural Engineering',
+                'description_en' => 'Tailored Structural Design Services: Leverage Our Expertise And Comprehensive Solutions For Your Project\'s Success',
+                'description' => 'Tailored Structural Design Services: Leverage Our Expertise And Comprehensive Solutions For Your Project\'s Success',
+                'image' => 'service/steelwork-design.png',
+                'slug' => 'bim-structural-engineering',
+                'presentation' => null,
+                'show_page' => 1,
+                'show_on_main_page' => 0,
+                'canonical' => 'https://bim-prove.com/service/bim-structural-engineering',
+                'service_menu_item_id' => 7,
+                'schema_main' => '',
+                'schema_faq' => '',
+                'order' => 8,
+                'order_dump' => 8,
+            ],
         ]);
     }
 }

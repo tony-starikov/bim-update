@@ -8,11 +8,11 @@
             <div class="col-12">
                 <div class="row justify-content-center mt-4">
 
-                    @if($block->items->where('name', 'the_first_project_url')->first()->value)
+                    @if($block->items->where('name', 'the_first_project_url')->first()->value and (\App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4])->first() != null))
                         <div class="col-md-6 mt-4">
                             <div class="card border-0">
                                 <a class="text-decoration-none" href="{{ route('portfolio.project', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4]) }}">
-                                    <img src="{{ '/images/' . \App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4])->first()->image }}" class="card-img" alt="{{ \App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4])->first()->title }}">
+                                    <img src="{{ '/images/' . \App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4])->first()->image }}" class="card-img" alt="{{ \App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_first_project_url')->firstOrFail()->value)[4])->first()->title }}">
                                     <div class="row align-items-center">
                                         <div class="col-7 mt-2">
                                             <a class="text-decoration-none" href="{{ route('portfolio.project', explode('/', $block->items->where('name', 'the_first_project_url')->first()->value)[4]) }}">
@@ -32,7 +32,7 @@
                         </div>
                     @endif
 
-                    @if($block->items->where('name', 'the_second_project_url')->first()->value)
+                    @if($block->items->where('name', 'the_second_project_url')->first()->value and (\App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_second_project_url')->first()->value)[4])->first() != null))
                         <div class="col-md-6 mt-4">
                             <div class="card border-0">
                                 <a class="text-decoration-none" href="{{ route('portfolio.project', explode('/', $block->items->where('name', 'the_second_project_url')->first()->value)[4]) }}">
@@ -56,7 +56,7 @@
                         </div>
                     @endif
 
-                    @if($block->items->where('name', 'the_third_project_url')->first()->value)
+                    @if($block->items->where('name', 'the_third_project_url')->first()->value and (\App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_third_project_url')->first()->value)[4])->first() != null))
                         <div class="col-md-6 mt-4">
                             <div class="card border-0">
                                 <a class="text-decoration-none" href="{{ route('portfolio.project', explode('/', $block->items->where('name', 'the_third_project_url')->first()->value)[4]) }}">
@@ -80,7 +80,7 @@
                         </div>
                     @endif
 
-                    @if($block->items->where('name', 'the_fourth_project_url')->first()->value)
+                    @if($block->items->where('name', 'the_fourth_project_url')->first()->value and (\App\Models\Work::where('slug', explode('/', $block->items->where('name', 'the_fourth_project_url')->first()->value)[4])->first() != null))
                         <div class="col-md-6 mt-4">
                             <div class="card border-0">
                                 <a class="text-decoration-none" href="{{ route('portfolio.project', explode('/', $block->items->where('name', 'the_fourth_project_url')->first()->value)[4]) }}">

@@ -887,7 +887,7 @@ class ServiceItemSeeder extends Seeder
             ],
             [
                 'name' => 'the_first_project_url',
-                'value' => 'http://localhost/portfolio/metallurgy-combine-from-ukraine',
+                'value' => 'http://localhost/portfolio/ukrainian-metallurgical-plant',
                 'service_block_id' => 8,
                 'type_id' => 3,
             ],
@@ -5668,6 +5668,986 @@ class ServiceItemSeeder extends Seeder
                 'name' => 'image',
                 'value' => 'service_block/software-development-9_103.png',
                 'service_block_id' => 103,
+                'type_id' => 2,
+            ],
+        ]);
+
+
+        DB::table('service_items')->insert([
+            [
+                'name' => 'background_image',
+                'value' => 'service_block/bim-structural-engineering-background-104.webp',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'main_header',
+                'value' => 'BIM Structural Engineering Services',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text_under_the_header',
+                'value' => 'Tailored Structural Design Services: Leverage Our Expertise And Comprehensive Solutions For Your Project\'s Success',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'Contact us',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 104,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 104,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'lg',
+                'service_block_id' => 104,
+                'type_id' => 6,
+            ],
+            [
+                'name' => 'item_header_1',
+                'value' => 'Design of Reinforced Concrete Structures',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/Design of Reinforced Concrete Structures.png',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_2',
+                'value' => 'Design of Metal Structures',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/Design of Metal Structures.png',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_3',
+                'value' => 'Creation and Evaluation of Project Options',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/Creation and Evaluation of Project Options.png',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_4',
+                'value' => 'Reconstruction',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/Reconstruction.png',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_5',
+                'value' => 'Interdisciplinary Coordination for Comprehensive Design Alignment',
+                'service_block_id' => 104,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_image_5',
+                'value' => 'service_block/Interdisciplinary Coordination for Comprehensive Design Alignment.png',
+                'service_block_id' => 104,
+                'type_id' => 2,
+            ],
+
+
+
+
+
+            [
+                'name' => 'breadcrumb_item_active_1',
+                'value' => 'BIM Structural Engineering Services',
+                'service_block_id' => 105,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_item_active_2',
+                'value' => null,
+                'service_block_id' => 105,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_background_color',
+                'value' => null,
+                'service_block_id' => 105,
+                'type_id' => 5,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Sub-contracting services for Structural Engineering',
+                'service_block_id' => 106,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Our team offers comprehensive <b class="fw-bold">Design solutions for building structures,</b> with a primary focus on <b class="fw-bold">reinforced concrete design.</b> We meet the needs of a wide range of clients, including contractors, developers, architects, and structural engineers.</p>&nbsp;<p>As experts in building structure design, we possess the technical expertise and sufficient resources to solve complex design challenges. For many years, we have been delivering high-quality services, adhering to international industry standards and the specific requirements of our clients.</p>',
+                'service_block_id' => 106,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'BIM Structural Engineering Services',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'BIM Modeling and Coordination',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/BIM Modeling and Coordination.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_text',
+                'value' => 'We integrate new structural designs with all project disciplines, ensuring alignment with existing decisions for seamless project execution.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'Design for Seismically Active Zones',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/Design for Seismically Active Zones.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_text',
+                'value' => 'We provide expert structural design for seismic areas, applying the necessary solutions to ensure safety and compliance.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'Design Based on Client Sketches',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/Design Based on Client Sketches.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_text',
+                'value' => 'We develop detailed construction drawings from client or representative sketches, incorporating their vision and creating ready-to-manufacture solutions.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fourth_item_header',
+                'value' => 'Structural Analysis and Optimization',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_item_image',
+                'value' => 'service_block/Structural Analysis and Optimization.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_item_text',
+                'value' => 'We optimize structural designs to align with client needs, ensuring safety, reliability, and cost-effective solutions.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fifth_item_header',
+                'value' => 'Reinforcement of Existing Structures',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fifth_item_image',
+                'value' => 'service_block/Reinforcement and Upgrading of Existing Structures.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fifth_item_text',
+                'value' => 'We optimize structural designs to align with client needs, ensuring safety, reliability, and cost-effective solutions.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_sixth_item_header',
+                'value' => 'Multiple Structural Solutions',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_sixth_item_image',
+                'value' => 'service_block/Multiple Structural Solutions.png',
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_sixth_item_text',
+                'value' => 'We provide clients with various design options for the same project, offering alternatives in concrete, steel, or hybrid structures to meet their needs.',
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_seventh_item_header',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_seventh_item_image',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_seventh_item_text',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_eighth_item_header',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_eighth_item_image',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_eighth_item_text',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_ninth_item_header',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_ninth_item_image',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_ninth_item_text',
+                'value' => null,
+                'service_block_id' => 107,
+                'type_id' => 1,
+            ],
+
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Our Design Experience',
+                'service_block_id' => 108,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>With over 11 years of experience, we have completed more than 1,000 projects, most of which have been built and are in successful operation.</p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+
+
+            [
+                'name' => 'image',
+                'value' => 'service_block/software-development-3-image_97.png',
+                'service_block_id' => 108,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => '<p><strong>Industrial Framed Buildings and Facilities</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => '<p><strong>Tunnels</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => '<p><strong>Transportation Structures</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => '<p><strong>Multi-Level Pits</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_5',
+                'value' => '<p><strong>Silos</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_6',
+                'value' => '<p><strong>Retaining Walls</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_7',
+                'value' => '<p><strong>Rotary Kilns</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_8',
+                'value' => '<p><strong>Precast Structures</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_9',
+                'value' => '<p><strong>Storage Tanks for Water and Other Liquids</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_10',
+                'value' => '<p><strong>Steel Platforms</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_11',
+                'value' => '<p><strong>Railcar Dumpers</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_12',
+                'value' => '<p><strong>Steel Staircases</strong></p>',
+                'service_block_id' => 108,
+                'type_id' => 4,
+            ],
+
+
+            [
+                'name' => 'contact_us_header',
+                'value' => 'Your Partner in Every New Project',
+                'service_block_id' => 108,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'contact_us_paragraph',
+                'value' => 'We are ready for your next project and strive to become your trusted partner for years to come!',
+                'service_block_id' => 108,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 108,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 108,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 108,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 108,
+                'type_id' => 6,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR SOFTWARE SKILLS',
+                'service_block_id' => 109,
+                'type_id' => 1,
+            ],
+
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/Autodesk Revit.png',
+                'service_block_id' => 109,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'Autodesk Revit',
+                'service_block_id' => 109,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/Autodesk AutoCAD.png',
+                'service_block_id' => 109,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'Autodesk AutoCAD',
+                'service_block_id' => 109,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/Scad office.png',
+                'service_block_id' => 109,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'Scad office',
+                'service_block_id' => 109,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/Autodesk Navisworks.png',
+                'service_block_id' => 109,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => 'Autodesk Navisworks',
+                'service_block_id' => 109,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>We provide comprehensive BIM services for the design of building structures, offering optimization to reduce costs and timelines, as well as seamless integration with other engineering disciplines. Our team supports you through every phase of the project—from concept to operation—strictly adhering to international standards.</p>&nbsp;<p>Our engineers and BIM specialists have extensive knowledge and experience in international projects. We deliver high-quality and innovative solutions, maintaining a high level of professionalism to efficiently handle tasks of any complexity.</p>&nbsp;<p>We focus on the individual requirements of each client, ensuring flexibility and quick adaptation to changes. By utilizing advanced technologies and precise 3D models, we help you make informed decisions, driving the success of your projects.</p>',
+                'service_block_id' => 109,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'HOW DO WE WORK?',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'paragraph',
+                'value' => null,
+                'service_block_id' => 110,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'item_image_1',
+                'value' => 'service_block/digit-1.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_1',
+                'value' => 'Data Collection',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => 'We gather and analyze all the necessary initial data to fully understand your project requirements.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_2',
+                'value' => 'service_block/digit-2.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_2',
+                'value' => 'Team Formation and Planning',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => 'We assemble a team of our specialists and create a detailed work schedule to ensure project success.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_3',
+                'value' => 'service_block/digit-3.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_3',
+                'value' => 'Proposal Development',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => 'We identify potential challenges and provide solutions to improve project efficiency and optimization.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_4',
+                'value' => 'service_block/digit-4.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_4',
+                'value' => 'Client Coordination',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => 'We coordinate the schedule and conceptual solutions with you to ensure compliance with all requirements.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_5',
+                'value' => 'service_block/digit-5.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_5',
+                'value' => 'Project Delivery and Feedback',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_5',
+                'value' => 'We submit the project for your review and gather your comments and suggestions for further adjustments.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'item_image_6',
+                'value' => 'service_block/digit-6.png',
+                'service_block_id' => 110,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_header_6',
+                'value' => 'Final Project Version',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'item_text_6',
+                'value' => 'We implement the necessary revisions and deliver the final version of the project, fully ready for implementation.',
+                'service_block_id' => 110,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Benefits of Structural Engineering',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => 'Experienced Team',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Specialists with years of experience in structural design and BIM modeling for international projects</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_2',
+                'value' => 'Comprehensive Approach',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_2',
+                'value' => '<p>Integration of all engineering disciplines into a single model for optimal results and efficient collaboration.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_3',
+                'value' => 'Cost and Time Optimization',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_3',
+                'value' => '<p>We develop solutions that help reduce budgets and accelerate project timelines without compromising quality or reliability.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_4',
+                'value' => 'Flexibility and Adaptability',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_4',
+                'value' => '<p>We quickly respond to project changes, adapting structural solutions to meet new requirements.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_5',
+                'value' => 'Accurate 3D Models',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_5',
+                'value' => '<p>High-precision BIM models and detailed drawings ensure clarity and reduce the risk of construction errors.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_6',
+                'value' => 'Effective Communication ',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_6',
+                'value' => '<p>Regular task reports provide transparency and a complete understanding of project progress.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_7',
+                'value' => 'Solving Complex Challenges',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_7',
+                'value' => '<p>We find solutions for unique and challenging projects, using advanced technologies and engineering approaches.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_8',
+                'value' => 'Support at Every Stage',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_8',
+                'value' => '<p>We provide full support from concept development to project completion, ensuring quality guidance at every stage.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_9',
+                'value' => 'Long-Term Partnership',
+                'service_block_id' => 111,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_9',
+                'value' => '<p>We strive for long-term collaboration and are ready to support your future projects, contributing to your success.</p>',
+                'service_block_id' => 111,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR PROJECTS',
+                'service_block_id' => 112,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_project_url',
+                'value' => 'http://localhost/portfolio/framed-commercial-building',
+                'service_block_id' => 112,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_second_project_url',
+                'value' => 'http://localhost/portfolio/railcar-dumper',
+                'service_block_id' => 112,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_third_project_url',
+                'value' => 'http://localhost/portfolio/airport-control-tower',
+                'service_block_id' => 112,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_fourth_project_url',
+                'value' => 'http://localhost/portfolio/industrial-framed-building-for-electrical-rooms',
+                'service_block_id' => 112,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'estimation_button_url',
+                'value' => 'http://localhost/scan-to-bim-estimates-project',
+                'service_block_id' => 112,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'estimation_button_text',
+                'value' => 'ESTIMATE YOUR PROJECT',
+                'service_block_id' => 112,
+                'type_id' => 1,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR BENEFITS',
+                'service_block_id' => 113,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/steelwork-design-block-9-icon1_81.png',
+                'service_block_id' => 113,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'REVIEWING',
+                'service_block_id' => 113,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_paragraph_1',
+                'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                'service_block_id' => 113,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/steelwork-design-block-9-icon2_81.png',
+                'service_block_id' => 113,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'DEVELOPMENT',
+                'service_block_id' => 113,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_paragraph_1',
+                'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                'service_block_id' => 113,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/steelwork-design-block-9-icon3_81.png',
+                'service_block_id' => 113,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'ORGANIZATION',
+                'service_block_id' => 113,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_paragraph_1',
+                'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                'service_block_id' => 113,
+                'type_id' => 4,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'WHAT IS THE Structural Engineering SERVICE?',
+                'service_block_id' => 114,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Structural Engineering Service involves the analysis, design, and planning of building structures to ensure they are safe, durable, and efficient. It includes creating solutions for both new constructions and the reinforcement or upgrading of existing structures. Our service also integrates multiple engineering disciplines, using advanced tools like BIM to optimize costs, improve timelines, and ensure compliance with all safety and regulatory standards. We provide tailored solutions that meet the specific needs of each project, whether it\'s residential, commercial, or industrial.</p>',
+                'service_block_id' => 114,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'WHAT COUNTRIES HAVE WE WORKED WITH?',
+                'service_block_id' => 115,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'map_image',
+                'value' => 'service_block/bim_structural_engineering_map.png',
+                'service_block_id' => 115,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+                'service_block_id' => 116,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => 'CONTACT US',
+                'service_block_id' => 116,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_2',
+                'value' => 'How can we help you?',
+                'service_block_id' => 116,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+                'service_block_id' => 116,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'script',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
+                'service_block_id' => 116,
+                'type_id' => 8,
+            ],
+            [
+                'name' => 'image',
+                'value' => 'service_block/steelwork-design-block-11-icon1_83.png',
+                'service_block_id' => 116,
                 'type_id' => 2,
             ],
         ]);

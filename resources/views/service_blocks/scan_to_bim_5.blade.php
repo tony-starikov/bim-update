@@ -1,11 +1,13 @@
 <div id="PROPOSE" class="container-fluid">
-    <div class="container py-5 p-lg-5 py-lg-3">
+    <div class="container py-5 p-lg-5 py-lg-0">
         <div class="row p-lg-5">
             <div class="col-12">
                 <h2 class="fw-bold text-uppercase">{{ $block->items->where('name', 'block_header')->first()->value }}</h2>
-                <div class="h5 fw-normal mt-5">
-                    {!! $block->items->where('name', 'paragraph_1')->first()->value !!}
-                </div>
+                @if($block->items->where('name', 'paragraph_1')->first()->value != null)
+                    <div class="h5 fw-normal mt-5">
+                        {!! $block->items->where('name', 'paragraph_1')->first()->value !!}
+                    </div>
+                @endif
             </div>
             <div class="col-12">
                 <div class="row mt-lg-4">

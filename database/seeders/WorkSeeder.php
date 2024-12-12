@@ -16,8 +16,8 @@ class WorkSeeder extends Seeder
         DB::table('works')->insert([
             [
                 'id' => 1,
-                'title' => 'Metallurgy Combine from Ukraine',
-                'slug' => 'metallurgy-combine-from-ukraine',
+                'title' => 'A Ukrainian metallurgical plant',
+                'slug' => 'ukrainian-metallurgical-plant',
                 'service' => 'Scan to BIM',
                 'department' => 'scan-to-bim',
                 'image' => 'works/metallurgy-combine-from-ukraine.webp',
@@ -181,6 +181,54 @@ class WorkSeeder extends Seeder
                 'image_small' => '',
                 'image_overlay' => '',
                 'content' => '<p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Time spent:</span></strong> 25<br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Single parts:</span></strong> <span style="white-space: pre-wrap;">72</span><br></span></p><p><span lang="ru-UA"><strong><span style="white-space: pre-wrap;">Assemblies:</span></strong> <span style="white-space: pre-wrap;">24</span><br></span></p><p><span lang="ru-UA">A 3D model with structural drawings for a special structure for installation of telecom equipment was produced based on a site survey and a stability calculation report. The drawing package includes all necessary global views, sections, assemblies, and single parts.&nbsp;</span></p>'
+            ],
+            [
+                'id' => 15,
+                'title' => 'Framed Commercial Building',
+                'slug' => 'framed-commercial-building',
+                'service' => 'BIM Structural Engineering',
+                'department' => '',
+                'image' => 'works/framed-commercial-building-1.webp',
+                'images' => '["works_images\/framed-commercial-building-2.webp","works_images\/framed-commercial-building-3.webp", "works_images\/framed-commercial-building-4.webp", "works_images\/framed-commercial-building-5.webp", "works_images\/framed-commercial-building-6.webp", "works_images\/framed-commercial-building-7.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p dir="ltr"><strong>LOD</strong>: 300&nbsp;</p><p dir="ltr"><strong>Area</strong>: -&nbsp;</p><p dir="ltr"><strong>Disciplines</strong>: Structural&nbsp;</p><p>This modern commercial building features three levels of underground parking and nine above-ground floors, maximizing space use in an urban environment. The structure consists of a reinforced concrete frame with two shear cores for stability under horizontal and vertical loads. At the client&rsquo;s request, additional floors were successfully added using steel floor beams, showcasing the flexibility and adaptability of the design. The structural solutions ensure efficient land use, as well as safety and durability in operation.</p>'
+            ],
+            [
+                'id' => 16,
+                'title' => 'Railcar Dumper',
+                'slug' => 'railcar-dumper',
+                'service' => 'BIM Structural Engineering',
+                'department' => '',
+                'image' => 'works/railcar-dumper-1.webp',
+                'images' => '["works_images\/railcar-dumper-2.webp","works_images\/railcar-dumper-3.webp", "works_images\/railcar-dumper-4.webp", "works_images\/railcar-dumper-5.webp", "works_images\/railcar-dumper-6.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p dir="ltr"><strong>LOD</strong>: 300&nbsp;</p><p dir="ltr"><strong>Area</strong>: 20.300 m x 34.250 m&nbsp;</p><p dir="ltr"><strong>Disciplines</strong>: Structural&nbsp;</p><p>The railcar dumper is a monolithic reinforced concrete pit located in a seismically active area, designed for unloading and transporting production materials. Due to space constraints and the need to minimize the excavation size, large cantilever beams were implemented to support railcar loads and ensure structural stability. Considering the high groundwater level, external waterproofing was applied to ensure durability. The walls are 0.8 m thick, with reinforcements up to 1.4 m at equipment support points and cantilever locations. The structure features a monolithic foundation slab with a pile base, distributing loads across 435 precast concrete piles. The bottom elevation is -13.650 m.</p>'
+            ],
+            [
+                'id' => 17,
+                'title' => 'Airport Control Tower',
+                'slug' => 'airport-control-tower',
+                'service' => 'BIM Structural Engineering',
+                'department' => '',
+                'image' => 'works/airport-control-tower-1.webp',
+                'images' => '["works_images\/airport-control-tower-2.webp","works_images\/airport-control-tower-3.webp", "works_images\/airport-control-tower-4.webp", "works_images\/airport-control-tower-5.webp", "works_images\/airport-control-tower-6.webp", "works_images\/airport-control-tower-7.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p dir="ltr"><strong>LOD</strong>: 300&nbsp;</p><p dir="ltr"><strong>Area</strong>: -&nbsp;</p><p dir="ltr"><strong>Disciplines</strong>: Structural&nbsp;</p><p>The airport control tower is a six-level structure with an observation deck and technical rooms for air traffic control. The main frame is made of reinforced concrete, ensuring the structure’s strength and stability. The tower’s foundation consists of bored piles, effectively distributing vertical loads and providing stability on challenging soils, particularly in high wind conditions. The upper section is designed to provide full panoramic visibility, essential for airport operations. The use of modern BIM technologies ensured high precision and coordination at every stage of design and construction, delivering a reliable and long-lasting solution for airport infrastructure.</p>'
+            ],
+            [
+                'id' => 18,
+                'title' => 'Industrial Framed Building for Electrical Rooms',
+                'slug' => 'industrial-framed-building-for-electrical-rooms',
+                'service' => 'BIM Structural Engineering',
+                'department' => '',
+                'image' => 'works/industrial-framed-building-for-electrical-rooms-1.webp',
+                'images' => '["works_images\/industrial-framed-building-for-electrical-rooms-2.webp","works_images\/industrial-framed-building-for-electrical-rooms-3.webp", "works_images\/industrial-framed-building-for-electrical-rooms-4.webp", "works_images\/industrial-framed-building-for-electrical-rooms-5.webp", "works_images\/industrial-framed-building-for-electrical-rooms-6.webp", "works_images\/industrial-framed-building-for-electrical-rooms-7.webp"]',
+                'image_small' => '',
+                'image_overlay' => '',
+                'content' => '<p dir="ltr"><strong>LOD</strong>: 300&nbsp;</p><p dir="ltr"><strong>Area</strong>: -&nbsp;</p><p dir="ltr"><strong>Disciplines</strong>: Structural&nbsp;</p><p>This three-story industrial building is designed to house electrical equipment at a newly constructed metallurgical plant. Located in a seismically active zone with an 8-point seismic rating, the building’s frame utilizes a rigid and braced frame structure, ensuring high stability and operational safety. The brick walls serve solely as enclosures, reducing the risk of damage from seismic forces. The monolithic foundation slab evenly distributes loads, enhancing stability on complex soil conditions. The building is intended for temporary use by maintenance personnel and contains no sanitary or living facilities.</p>'
             ],
         ]);
     }

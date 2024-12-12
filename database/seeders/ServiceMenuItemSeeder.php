@@ -44,6 +44,11 @@ class ServiceMenuItemSeeder extends Seeder
                 'title_en' => 'Software development',
                 'order' => '60',
             ],
+            [
+                'id' => 7,
+                'title_en' => 'BIM Structural Engineering',
+                'order' => '70',
+            ],
         ]);
     }
 }
