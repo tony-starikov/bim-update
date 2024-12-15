@@ -11,8 +11,8 @@
             </div>
         </div>
 
-        <div class="row px-lg-5 pb-4 mt-5 justify-content-center">
-            <div class="col-lg-5 col-xl-4">
+        <div class="row px-lg-5 py-5 justify-content-center">
+            <div class="col-7 col-md-6 col-lg-5 col-xl-4">
                 <a id="estimate-first-screen-mep" href="{{ $block->items->where('name', 'button_url')->first()->value }}" role="button" class="btn btn-primary shadow-{{ $block->items->where('name', 'button_shadow')->first()->value }} btn-lg border-0 rounded-4 w-100 p-3" style="background-color: {{ $block->items->where('name', 'button_color')->first()->value }}">
                     <span class="fw-bold h5 text-uppercase my-2">{{ $block->items->where('name', 'button_text')->first()->value }}</span>
                 </a>

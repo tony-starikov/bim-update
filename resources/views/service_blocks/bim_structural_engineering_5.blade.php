@@ -10,10 +10,10 @@
                 @endif
             </div>
             <div class="col-12">
-                <div class="row">
+                <div class="row justify-content-center">
 
                     @if($block->items->where('name', 'item_text_1')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -28,7 +28,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_2')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -43,7 +43,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_3')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -58,7 +58,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_4')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -73,7 +73,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_5')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -88,7 +88,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_6')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -103,7 +103,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_7')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -118,7 +118,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_8')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -133,7 +133,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_9')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -148,7 +148,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_10')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -163,7 +163,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_11')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
@@ -178,7 +178,7 @@
                     @endif
 
                     @if($block->items->where('name', 'item_text_12')->first()->value)
-                        <div class="col-xl-6">
+                        <div class="col-xl-5">
                             <div class="row align-items-center mt-4">
                                 <div class="col-1 col-xl-2">
                                     <img src="{{ '/images/' . $block->items->where('name', 'image')->first()->value }}" loading="lazy" alt="dot" class="img-fluid mb-3 ms-xl-4">
