@@ -274,6 +274,22 @@ class ServiceBlockTypeSeeder extends Seeder
                 'id' => 65,
                 'name' => 'bim_structural_engineering_8',
             ],
+            [
+                'id' => 66,
+                'name' => 'scan_to_bim_services_in_uk_4',
+            ],
+            [
+                'id' => 67,
+                'name' => 'scan_to_bim_services_in_uk_5',
+            ],
+            [
+                'id' => 68,
+                'name' => 'scan_to_bim_services_in_uk_6',
+            ],
+            [
+                'id' => 69,
+                'name' => 'scan_to_bim_services_in_uk_7',
+            ],
         ]);
     }
 }

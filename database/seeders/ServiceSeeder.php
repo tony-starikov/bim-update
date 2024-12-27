@@ -201,6 +201,23 @@ class ServiceSeeder extends Seeder
                 'order' => 8,
                 'order_dump' => 8,
             ],
+            [
+                'id' => 12,
+                'title_en' => 'Scan to BIM Services in UK',
+                'description_en' => 'A complete solution for your project. Scanning, BIM modeling, As-built',
+                'description' => 'A complete solution for your project. Scanning, BIM modeling, As-built',
+                'image' => 'service/steelwork-design.png',
+                'slug' => 'scan-to-bim-services-in-uk',
+                'presentation' => null,
+                'show_page' => 1,
+                'show_on_main_page' => 0,
+                'canonical' => 'https://bim-prove.com/service/scan-to-bim-services-in-uk',
+                'service_menu_item_id' => null,
+                'schema_main' => '',
+                'schema_faq' => '',
+                'order' => 9,
+                'order_dump' => 9,
+            ],
         ]);
     }
 }

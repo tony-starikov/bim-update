@@ -6651,5 +6651,778 @@ class ServiceItemSeeder extends Seeder
                 'type_id' => 2,
             ],
         ]);
+
+
+
+        DB::table('service_items')->insert([
+            [
+                'name' => 'background_image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_1.webp',
+                'service_block_id' => 117,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'main_header',
+                'value' => 'Scan to BIM Services in UK',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'text_under_the_header',
+                'value' => 'A complete solution for your project. Scanning, BIM modeling, As-built',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'MAKE AN ENQUIRY',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/scan-to-bim-estimates-project',
+                'service_block_id' => 117,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_first_sub_service_header',
+                'value' => 'Laser scanning',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_sub_service_image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_header_1.png',
+                'service_block_id' => 117,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_sub_service_header',
+                'value' => 'Point cloud registration',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_sub_service_image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_header_2.png',
+                'service_block_id' => 117,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_sub_service_header',
+                'value' => 'REVIT MODELLING',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_sub_service_image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_header_3.png',
+                'service_block_id' => 117,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_header',
+                'value' => 'FACILITY MANAGEMENT',
+                'service_block_id' => 117,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_sub_service_image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_header_4.png',
+                'service_block_id' => 117,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 117,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'lg',
+                'service_block_id' => 117,
+                'type_id' => 6,
+            ],
+
+
+
+
+
+            [
+                'name' => 'breadcrumb_item_active_1',
+                'value' => 'Scan To Bim',
+                'service_block_id' => 118,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_item_active_2',
+                'value' => 'Scan To Bim Service In UK',
+                'service_block_id' => 118,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'breadcrumb_background_color',
+                'value' => null,
+                'service_block_id' => 118,
+                'type_id' => 5,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Scan to BIM Advantages',
+                'service_block_id' => 119,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>The most expensive and valuable resource is time. This is especially true for business, when projects need to be realized in a short period of time. Therefore, it is very important for us to help you achieve quality results and on time.</p>&nbsp;<p>Our team of laser scanning experts and 3D BIM modelers will help you realize your projects according to the requirements and deadlines.We are ready to join at any stage of your project for laser scanning, registration of scans, work with coordinate systems, noise cleaning, point cloud export, BIM modeling, and 2D drawing. The required detailing (LOD), criteria, fill and support at every stage are all included in a complete solution for Scan to BIM projects.</p>&nbsp;<p>Our raw data processing and point cloud to BIM modeling conversion services cover architectural, structural, building elements, MEPFP elements. We have no problem working with data from different scanners and E57 or RCP formats. We also include collision detection for projects involving renovation, renovation, modernization or reconstruction.</p>',
+                'service_block_id' => 119,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'More about our Scan to BIM Services',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>Comprehensive <strong>Scan to BIM services the United Kingdom</strong> includes scanning your objects according to project requirements, raw data processing and further 3D modeling work on the <strong>Point Cloud.</strong></p>',
+                'service_block_id' => 120,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'Photography',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/scan-to-bim-block-5-icon1_5.png',
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_text',
+                'value' => 'Virtual tours and 360° photography providing additional project value for real estate and other business.',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'Laser Scanning',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/scan-to-bim-block-5-icon2_5.png',
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_text',
+                'value' => 'Laser scanning and raw data processing of any objects regardless of type and complexity.',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'BIM modeling',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/scan-to-bim-block-5-icon3_5.png',
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_text',
+                'value' => 'Creation of 3D BIM-models in Revit by converting the data from the Point Cloud. Parameterization of BIM elements.',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fourth_item_header',
+                'value' => 'As-Built drawings',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fourth_item_image',
+                'value' => 'service_block/scan-to-bim-block-5-icon4_5.png',
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fourth_item_text',
+                'value' => 'Design of As-built drawings based on 3D BIM models from Revit created by the scanning.',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_fifth_item_header',
+                'value' => 'Progress Reports',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_fifth_item_image',
+                'value' => 'service_block/scan-to-bim-block-5-icon5_5.png',
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_fifth_item_text',
+                'value' => 'Creation of daily project reports. Own reporting system to inform about the progress of the modeling process.',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_sixth_item_header',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_sixth_item_image',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_sixth_item_text',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_seventh_item_header',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_seventh_item_image',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_seventh_item_text',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_eighth_item_header',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_eighth_item_image',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_eighth_item_text',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_ninth_item_header',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_ninth_item_image',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_ninth_item_text',
+                'value' => null,
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+
+
+            [
+                'name' => 'last_item_header',
+                'value' => 'Learn more about our Scan to BIM services',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'MORE',
+                'service_block_id' => 120,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 120,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 120,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 120,
+                'type_id' => 6,
+            ],
+
+
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'Types of objects we work with',
+                'service_block_id' => 121,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>In our 7 years of experience in BIM modeling, we have completed over 2000+ projects from small to large. The team of more than 20 people in Scan to BIM department allows us to work on projects of different levels of complexity. Types of objects:</p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+
+
+            [
+                'name' => 'image',
+                'value' => 'service_block/software-development-3-image_97.png',
+                'service_block_id' => 121,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'item_text_1',
+                'value' => '<p><strong>Residential Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_2',
+                'value' => '<p><strong>Educational Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_3',
+                'value' => '<p><strong>Institutional Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_4',
+                'value' => '<p><strong>Historical Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_5',
+                'value' => '<p><strong>Business Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_6',
+                'value' => '<p><strong>Mercantile Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_7',
+                'value' => '<p><strong>Industrial Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_8',
+                'value' => '<p><strong>Storages</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_9',
+                'value' => '<p><strong>Parkings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_10',
+                'value' => '<p><strong>Special Buildings</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_11',
+                'value' => '<p><strong>Bridges</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_12',
+                'value' => '<p><strong>Roads</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_13',
+                'value' => '<p><strong>Transmission towers</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_14',
+                'value' => '<p><strong>Radio masts and towers</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'item_text_15',
+                'value' => '<p><strong>Monuments</strong></p>',
+                'service_block_id' => 121,
+                'type_id' => 4,
+            ],
+
+
+
+
+            [
+                'name' => 'image',
+                'value' => 'service_block/scan_to_bim_services_in_uk_6.webp',
+                'service_block_id' => 122,
+                'type_id' => 2,
+            ],
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'HOW DO WE WORK?',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>Our <strong>Scan to BIM Modeling</strong> team is skilled in producing accurate 3D BIM models or 2D drawings for design validation, planning, comparison, interference checks, MEP or construction elements demolition or addition, documentation of existing building conditions.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => null,
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p>In the <strong>United Kingdom, BIMPROVE</strong> has partnered with <strong>AOP Associates</strong> to provide comprehensive Scan to BIM services.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_2',
+                'value' => 'Laser scanning',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_2',
+                'value' => '<p>After consultation and discussion of project details, we will scan your objects to convert them into a Point Cloud.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_3',
+                'value' => 'Point cloud registration',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_3',
+                'value' => '<p>We make registration and cleaning noise to get correct point cloud for our model team. We usually use RCP and E57 formats for modeling.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_4',
+                'value' => '3D BIM Modeling',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_4',
+                'value' => '<p>In the next stage, our team will start recreating the 3D model from the Point Cloud within the agreed requirements.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'subheader_5',
+                'value' => 'QA/QC and Report',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_5',
+                'value' => '<p>Next, we will fill the BIM model with information (if necessary) and the BIM manager will check the entire model.</p>&nbsp;<p>After these steps, we will provide you with the finished project.</p>',
+                'service_block_id' => 123,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'contact_us_text',
+                'value' => 'It is very important for us to provide quality services and not to let the client down. Therefore, we are constantly in touch with the client and provide a daily report on the progress of the project. ',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_text',
+                'value' => 'CONTACT US',
+                'service_block_id' => 123,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'button_url',
+                'value' => '/contact',
+                'service_block_id' => 123,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'button_color',
+                'value' => '#43aeb6',
+                'service_block_id' => 123,
+                'type_id' => 5,
+            ],
+            [
+                'name' => 'button_shadow',
+                'value' => 'none',
+                'service_block_id' => 123,
+                'type_id' => 6,
+            ],
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR SCAN TO BIM PROJECTS',
+                'service_block_id' => 124,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_project_url',
+                'value' => 'http://localhost/portfolio/ukrainian-metallurgical-plant',
+                'service_block_id' => 124,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_second_project_url',
+                'value' => 'http://localhost/portfolio/industrial-plant-northern-gzk',
+                'service_block_id' => 124,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_third_project_url',
+                'value' => 'http://localhost/portfolio/landscape-of-the-industrial-territory',
+                'service_block_id' => 124,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'the_fourth_project_url',
+                'value' => 'http://localhost/portfolio/hypermarket-billa',
+                'service_block_id' => 124,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'estimation_button_url',
+                'value' => 'http://localhost/scan-to-bim-estimates-project',
+                'service_block_id' => 124,
+                'type_id' => 3,
+            ],
+            [
+                'name' => 'estimation_button_text',
+                'value' => 'ESTIMATE YOUR PROJECT',
+                'service_block_id' => 124,
+                'type_id' => 1,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'OUR BENEFITS',
+                'service_block_id' => 125,
+                'type_id' => 1,
+            ],
+
+            [
+                'name' => 'the_first_item_image',
+                'value' => 'service_block/scan-to-bim-block-9-icon1_9.png',
+                'service_block_id' => 125,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_first_item_header',
+                'value' => 'REVIEWING',
+                'service_block_id' => 125,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_first_item_paragraph_1',
+                'value' => '<p>- Verification using BIMprove Add-In or check-list</p><p>- Checking the 3D model against engineering logic</p><p>- Reviewing drawings by customer requirements</p>',
+                'service_block_id' => 125,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_second_item_image',
+                'value' => 'service_block/scan-to-bim-block-9-icon2_9.png',
+                'service_block_id' => 125,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_second_item_header',
+                'value' => 'DEVELOPMENT',
+                'service_block_id' => 125,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_second_item_paragraph_1',
+                'value' => '<p>- Continuous development of Add-In and Dynamo Scripts</p><p>- Development and constant updating of the template</p><p>- Developing parametric families</p><p>- Creating our own database</p>',
+                'service_block_id' => 125,
+                'type_id' => 4,
+            ],
+
+            [
+                'name' => 'the_third_item_image',
+                'value' => 'service_block/scan-to-bim-block-9-icon3_9.png',
+                'service_block_id' => 125,
+                'type_id' => 2,
+            ],
+            [
+                'name' => 'the_third_item_header',
+                'value' => 'ORGANIZATION',
+                'service_block_id' => 125,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'the_third_item_paragraph_1',
+                'value' => '<p>- Unique project management technologies</p><p>- Individual approach in communication with the client</p><p>- Continuous analysis of the finished work</p>',
+                'service_block_id' => 125,
+                'type_id' => 4,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'WHAT COUNTRIES HAVE WE WORKED WITH?',
+                'service_block_id' => 126,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'map_image',
+                'value' => 'service_block/scan-to-bim-services-in-uk-map.webp',
+                'service_block_id' => 126,
+                'type_id' => 2,
+            ],
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'WHAT IS THE SCAN TO BIM SERVICE?',
+                'service_block_id' => 127,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph_1',
+                'value' => '<p style="text-align: justify;">Scan to BIM (Building Information Modeling) service is a process of capturing accurate and detailed measurements of an existing building or structure through 3D laser scanning technology. The scanned data is then used to create a digital representation of the building in BIM software. This process helps create a comprehensive and detailed building model, which can be used for renovation, restoration, or retrofitting purposes. The BIM modeling service is essential in creating a collaborative environment for developing and executing efficient construction projects.</p>&nbsp;<p style="text-align: justify;">The Scan to BIM service offers several benefits over traditional methods of surveying, which include time and cost savings of 28%, greater accuracy, and reduced risk of errors by 40%. It helps minimize on-site work and disruptions reduces the chances of rework, and allows for better visualization and analysis of the building\'s structure. Additionally, the 3D BIM models enable stakeholders to identify potential issues and conflicts early in the project lifecycle, leading to more effective decision-making and problem-solving.</p>',
+                'service_block_id' => 127,
+                'type_id' => 4,
+            ],
+
+
+
+
+
+            [
+                'name' => 'block_header',
+                'value' => 'UNLOCK THE FULL POTENTIAL OF OUR SERVICES',
+                'service_block_id' => 128,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_1',
+                'value' => 'CONTACT US',
+                'service_block_id' => 128,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'subheader_2',
+                'value' => 'How can we help you?',
+                'service_block_id' => 128,
+                'type_id' => 1,
+            ],
+            [
+                'name' => 'paragraph',
+                'value' => '<p>Do you still have questions? We are glad to answer them. Feel free to contact us. Fill out the form below and we will quickly respond.</p>',
+                'service_block_id' => 128,
+                'type_id' => 4,
+            ],
+            [
+                'name' => 'script',
+                'value' => '<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="ef9276b1dfe6bd5d2b711696c5bd46e4c08feb4f8a0a0a5c3cf0fd60e0eee9b5"></script>',
+                'service_block_id' => 128,
+                'type_id' => 8,
+            ],
+            [
+                'name' => 'image',
+                'value' => 'service_block/scan-to-bim-block-13-icon1_13.png',
+                'service_block_id' => 128,
+                'type_id' => 2,
+            ],
+        ]);
     }
 }
